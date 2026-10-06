@@ -4,137 +4,43 @@ from datetime import datetime, timezone
 
 import requests
 
+from market_scanner import MarketScanner
+from catalyst_scanner import find_catalyst_for_asset
+from scoring import score_setup
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-AV_KEY = os.environ["ALPHA_VANTAGE_API_KEY"]
-TG_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TG_CHAT = os.environ["TELEGRAM_CHAT_ID"]
-
-# Initial filters — we'll tune these after observing real alerts.
-STOCK_MIN_CHANGE = 5.0
-STOCK_MIN_VOLUME = 500_000
-
-CRYPTO_MIN_CHANGE = 3.0
-CRYPTO_MIN_QUOTE_VOLUME = 5_000_000
+TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID")
 
 MAX_ALERTS = 8
 
 
-def telegram(message):
+def telegram(message: str) -> None:
+    if not TG_TOKEN or not TG_CHAT:
+        logger.error("Telegram bot credentials are missing.")
+        return
+
     url = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage"
     try:
-        r = requests.post(
+        response = requests.post(
             url,
             json={
                 "chat_id": TG_CHAT,
                 "text": message,
                 "disable_web_page_preview": True,
+                "parse_mode": "HTML",
             },
             timeout=15,
         )
-        r.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        logger.exception("Telegram send failed: %s", e)
-        raise
+        response.raise_for_status()
+    except requests.exceptions.RequestException as exc:
+        logger.exception("Telegram send failed: %s", exc)
 
 
-def stock_scan():
-    """
-    Alpha Vantage TOP_GAINERS_LOSERS gives us broad discovery
-    without requesting hundreds of individual tickers.
-    """
-    url = "https://www.alphavantage.co/query"
-    params = {
-        "function": "TOP_GAINERS_LOSERS",
-        "apikey": AV_KEY,
-    }
-
-    try:
-        r = requests.get(url, params=params, timeout=20)
-        r.raise_for_status()
-        data = r.json()
-    except requests.exceptions.RequestException as e:
-        logger.exception("Stock scan API failed: %s", e)
-        return []
-
-    candidates = []
-
-    for stock in data.get("top_gainers", []):
-        try:
-            ticker = stock["ticker"]
-            price = float(stock["price"])
-            change = float(stock["change_percentage"].replace("%", ""))
-            volume = int(stock["volume"])
-
-            if change >= STOCK_MIN_CHANGE and volume >= STOCK_MIN_VOLUME:
-                candidates.append(
-                    {
-                        "ticker": ticker,
-                        "price": price,
-                        "change": change,
-                        "volume": volume,
-                    }
-                )
-        except (KeyError, ValueError, TypeError):
-            continue
-
-    return candidates[:MAX_ALERTS]
-
-
-def crypto_scan():
-    """
-    CoinGecko public market feed.
-    No API key required.
-    """
-    url = "https://api.coingecko.com/api/v3/coins/markets"
-    params = {
-        "vs_currency": "usd",
-        "order": "market_cap_desc",
-        "per_page": 250,
-        "sparkline": False,
-        "price_change_percentage": "24h",
-    }
-
-    try:
-        r = requests.get(url, params=params, timeout=20)
-        r.raise_for_status()
-        data = r.json()
-    except requests.exceptions.RequestException as e:
-        logger.exception("CoinGecko API request failed: %s", e)
-        return []
-
-    candidates = []
-
-    for coin in data:
-        try:
-            symbol = coin["symbol"].upper()
-            price = float(coin["current_price"])
-            change = float(coin["price_change_percentage_24h"])
-            volume = float(coin["total_volume"] or 0)
-
-            if (
-                abs(change) >= CRYPTO_MIN_CHANGE
-                and volume >= CRYPTO_MIN_QUOTE_VOLUME
-            ):
-                candidates.append(
-                    {
-                        "symbol": symbol,
-                        "price": price,
-                        "change": change,
-                        "volume": volume,
-                    }
-                )
-        except (KeyError, ValueError, TypeError):
-            continue
-
-    candidates.sort(key=lambda x: abs(x["change"]), reverse=True)
-    return candidates[:MAX_ALERTS]
-
-
-def build_message(stocks, crypto):
+def build_market_snapshot(stocks, crypto):
     timestamp = datetime.now(timezone.utc).strftime("%H:%M UTC")
-
     lines = [
         "🚨 MARKET RADAR",
         f"Scan: {timestamp}",
@@ -142,50 +48,85 @@ def build_message(stocks, crypto):
     ]
 
     if stocks:
-        lines.append("📈 STOCK MOVERS")
-        for x in stocks:
+        lines.append("📈 STOCK WATCHLIST")
+        for item in stocks:
+            score = item.get("score", {}).get("score", 0)
+            catalyst = item.get("catalyst", {})
+            catalyst_text = catalyst.get("summary", "Macro flow / rotation")
             lines.append(
-                f"{x['ticker']} | "
-                f"${x['price']:.4f} | "
-                f"+{x['change']:.1f}% | "
-                f"Vol {x['volume']:,}"
+                f"• {item['ticker']} | {item['change']:.1f}% | Vol {item['volume']:,} | "
+                f"score {score}/10 | {catalyst_text}"
             )
     else:
-        lines.append("📈 Stocks: no qualifying candidates")
+        lines.append("📈 Stocks: no strong setups")
 
     lines.append("")
 
     if crypto:
-        lines.append("🪙 CRYPTO MOVERS")
-        for x in crypto:
-            sign = "+" if x["change"] >= 0 else ""
+        lines.append("🪙 CRYPTO WATCHLIST")
+        for item in crypto:
+            score = item.get("score", {}).get("score", 0)
+            catalyst = item.get("catalyst", {})
+            catalyst_text = catalyst.get("summary", "Momentum / macro rotation")
             lines.append(
-                f"{x['symbol']} | "
-                f"{x['price']:.6g} | "
-                f"{sign}{x['change']:.1f}% | "
-                f"${x['volume']:,.0f} 24h volume"
+                f"• {item['symbol']} | {item['change_24h']:.1f}% | Vol ${item['volume']:,.0f} | "
+                f"score {score}/10 | {catalyst_text}"
             )
     else:
-        lines.append("🪙 Crypto: no qualifying candidates")
+        lines.append("🪙 Crypto: no strong setups")
 
-    lines.extend(
-        [
-            "",
-            "⚠️ RADAR ONLY — not a trade signal.",
-            "Send interesting ticker(s) to ChatGPT for catalyst, dilution, live-price and R:R analysis.",
-        ]
-    )
-
+    lines.extend([
+        "",
+        "⚠️ RADAR ONLY — not financial advice.",
+        "Use this for catalyst-aware monitoring, not as a trade recommendation.",
+    ])
     return "\n".join(lines)
 
 
-def main():
-    stocks = stock_scan()
-    crypto = crypto_scan()
+def collect_stock_candidates(scanner: MarketScanner):
+    candidates = []
+    for item in scanner.scan_stocks()[:MAX_ALERTS]:
+        ticker = item["ticker"]
+        fundamentals = scanner.get_stock_fundamentals(ticker)
+        earnings = scanner.get_stock_earnings_date(ticker)
+        catalyst = find_catalyst_for_asset(ticker, asset_type="stock")
+        score = score_setup(
+            item,
+            catalyst,
+            fundamentals=fundamentals,
+            near_term_event=earnings,
+        )
 
-    # For initial testing we send every run.
-    # Once confirmed working we'll change this to candidate-only alerts.
-    telegram(build_message(stocks, crypto))
+        item["fundamentals"] = fundamentals
+        item["earnings"] = earnings
+        item["catalyst"] = catalyst
+        item["score"] = score
+        candidates.append(item)
+
+    candidates.sort(key=lambda x: x["score"]["score"], reverse=True)
+    return candidates[:MAX_ALERTS]
+
+
+def collect_crypto_candidates(scanner: MarketScanner):
+    candidates = []
+    for item in scanner.scan_crypto()[:MAX_ALERTS]:
+        symbol = item["symbol"]
+        catalyst = find_catalyst_for_asset(symbol, asset_type="crypto")
+        score = score_setup(item, catalyst, fundamentals=None)
+        item["catalyst"] = catalyst
+        item["score"] = score
+        candidates.append(item)
+
+    candidates.sort(key=lambda x: x["score"]["score"], reverse=True)
+    return candidates[:MAX_ALERTS]
+
+
+def main():
+    scanner = MarketScanner()
+    stocks = collect_stock_candidates(scanner)
+    crypto = collect_crypto_candidates(scanner)
+    message = build_market_snapshot(stocks, crypto)
+    telegram(message)
 
 
 if __name__ == "__main__":
