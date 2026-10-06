@@ -2,8 +2,12 @@ name: Market Radar
 
 on:
   schedule:
-     - cron: '*/15 * * * *' 
+    - cron: '*/15 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   scan:
@@ -12,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -23,9 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run market radar
+      - name: Run market radar and save structured scan
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python radar.py
+        run: python run_radar.py
+
+      - name: Publish qualifying scan to ChatGPT event bridge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python publish_alert.py
