@@ -1,4 +1,4 @@
-"""Update the rolling draft PR used as the ChatGPT event bridge."""
+"""Update the rolling draft PR branch used as the ChatGPT event bridge."""
 import json
 import os
 import subprocess
@@ -7,8 +7,6 @@ from pathlib import Path
 
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "Chiizzie/market-radar")
-OWNER, _ = REPO.split("/", 1)
-BASE_BRANCH = "main"
 ALERT_BRANCH = "radar-alert-live"
 
 
@@ -19,26 +17,6 @@ def run(args, *, capture=False, check=True):
         text=True,
         stdout=subprocess.PIPE if capture else None,
         stderr=subprocess.PIPE if capture else None,
-    )
-
-
-def ensure_alert_pr_is_open():
-    result = run(
-        [
-            "gh", "pr", "list", "--repo", REPO, "--head", f"{OWNER}:{ALERT_BRANCH}",
-            "--state", "all", "--json", "number,state",
-        ],
-        capture=True,
-    )
-    prs = json.loads(result.stdout)
-    if any(pr["state"] == "OPEN" for pr in prs):
-        return
-    if prs:
-        raise RuntimeError(
-            "The radar alert PR is closed or merged. Reopen it in GitHub to restore alerts."
-        )
-    raise RuntimeError(
-        "The initial radar alert PR has not been created yet; open it from the connected GitHub account."
     )
 
 
@@ -53,11 +31,17 @@ def main():
         print("No potential signals passed the pre-filter; no GitHub event sent.")
         return
 
-    ensure_alert_pr_is_open()
+    remote_branch = run(
+        ["git", "ls-remote", "--heads", "origin", ALERT_BRANCH],
+        capture=True,
+    )
+    if not remote_branch.stdout.strip():
+        raise RuntimeError(
+            "The rolling alert branch is missing. Restore the radar-alert-live branch in GitHub."
+        )
 
     run(["git", "config", "user.name", "github-actions[bot]"])
     run(["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"])
-    run(["git", "fetch", "origin", BASE_BRANCH])
     run(["git", "fetch", "origin", ALERT_BRANCH])
     run(["git", "checkout", "--force", "-B", ALERT_BRANCH, f"origin/{ALERT_BRANCH}"])
 
