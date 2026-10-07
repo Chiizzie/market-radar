@@ -13,6 +13,7 @@ from event_timing import event_timing
 logger = logging.getLogger(__name__)
 GOOGLE_NEWS_URL = 'https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en'
 EVENTS = {
+    'filing': r'\b8-K regulatory filing\b',
     'earnings': r'\b(earnings|quarterly results|reports? (?:its )?(?:financial|fiscal|quarterly) results|raises? (?:its )?(?:guidance|revenue|forecast)|revenue target|cuts? (?:its )?guidance)\b',
     'merger': r'\b(acquires?|acquisition|merger|takeover|buyout)\b',
     'product_launch': r'\b(launches?|unveils?|rolls? out|releases? new)\b',
@@ -23,9 +24,10 @@ EVENTS = {
 }
 NEGATIVE = r'\b(misses|cuts (?:its )?guidance|lawsuit|sues|charges|hack|exploit|stock offering|share offering|public offering|bond offering|rights offering|million offering|dilution|bankruptcy|token unlock|trial failure|phase (?:3|iii) failure)\b'
 COMMENTARY = r'\b(price prediction|should you buy|stocks? to buy|buy before|looks? undervalued|earnings outlook|earnings season|growth runway|investment narrative|change.{0,30}narrative|highs and lows|technical analysis|could (?:rise|surge)|may (?:rise|surge)|rumou?r|speculation|possible|potential|total assets of)\b'
-EVENT_ASSERTION = r'\b(reports?|announces?|raises?|cuts?|beats?|miss(?:es)?|results|transcript|presentation|acquires?|acquisition|merger|takeover|approv(?:es?|al)|launch(?:es)?|unveils?|partners? with|partnership|signs?|wins?|awarded|contract|agreement|upgrade|mainnet|burn|unlock|offering|bankruptcy|dilution|trial|clinical)\b'
+EVENT_ASSERTION = r'\b(files|reports?|announces?|raises?|cuts?|beats?|miss(?:es)?|results|transcript|presentation|acquires?|acquisition|merger|takeover|approv(?:es?|al)|launch(?:es)?|unveils?|partners? with|partnership|signs?|wins?|awarded|contract|agreement|upgrade|mainnet|burn|unlock|offering|bankruptcy|dilution|trial|clinical)\b'
 
 ASSERTIONS = {
+    'filing': r'\bfiles\b',
     'earnings': r'\b(reports?|announces?|posts?|results|earnings call|raises?|cuts?|beats?|misses)\b',
     'merger': r'\b(acquires?|agrees?|announces?|completes?|signs?|approved|approves?|acquisition proposal|merger vote|buyout offer)\b',
     'product_launch': r'\b(launches?|unveils?|rolls? out|releases? new)\b',

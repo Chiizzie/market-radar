@@ -144,6 +144,9 @@ def discover_catalysts(universe, asset_type='stock', now=None):
                 errors.append(query + ': ' + items[0]['retrieval_error'])
             else:
                 articles.extend(items)
+    from primary_news import fetch_primary
+    direct_articles, primary_health = fetch_primary(asset_type)
+    articles.extend(direct_articles)
     unique = {x.get('link') or x.get('title'): x for x in articles}
     alias_map = defaultdict(set)
     for symbol, name in universe.items():
@@ -170,7 +173,8 @@ def discover_catalysts(universe, asset_type='stock', now=None):
                 hits[symbol] = catalyst
     return hits, {'queries': len(queries), 'headlines_received': len(unique), 'matched_events': mapped,
                   'matched_assets': len(hits), 'failed_queries': len(errors), 'errors': errors,
-                  'scope': 'Bounded broad event-news searches; not an exhaustive newswire'}
+                  'primary_sources': primary_health,
+                  'scope': 'Broad news search plus direct announcement feeds; not an exhaustive newswire'}
 
 
 def stock_candidate_priority(quote):

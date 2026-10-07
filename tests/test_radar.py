@@ -154,25 +154,27 @@ class DataReportingTests(unittest.TestCase):
         coins = [{'id': f'coin-{i}', 'symbol': f'C{i}', 'name': f'Coin {i}', 'current_price': 100,
                   'total_volume': 60_000_000 - i * 1_000_000, 'price_change_percentage_24h': 3,
                   'last_updated': NOW.isoformat(), 'price_change_percentage_1h_in_currency': 1} for i in range(6)]
-        prices = [[int((NOW - timedelta(hours=48-i)).timestamp()*1000), 100] for i in range(48)]
+        frame = pd.DataFrame({'Open':[100]*40,'High':[101]*40,'Low':[99]*40,'Close':[100]*40,'Volume':[10]*40},
+                             index=pd.date_range(end=NOW-timedelta(minutes=5),periods=40,freq='5min'))
         market = Mock(); market.json.return_value = coins
-        chart = Mock(); chart.json.return_value = {'prices': prices}
-        failed = Mock(); failed.status_code = 429
-        failed.raise_for_status.side_effect = requests.HTTPError(response=failed)
-        with patch('discovery.discover_catalysts', return_value=({}, {})), patch('market_scanner.requests.get', side_effect=[market, chart, chart, chart, chart, failed]) as get:
+        evidence = {'provider':'Kraken','pair':'CEUR','currency':'EUR'}
+        with patch('discovery.discover_catalysts', return_value=({}, {})), patch('market_scanner.requests.get', return_value=market), patch('crypto_candles.CandleProvider') as factory:
+            provider = factory.return_value.load.return_value
+            provider.pairs = {}; provider.errors = []
+            provider.candles.side_effect = [(frame,evidence)]*5 + [ValueError('both venues unavailable')]
             scanner = MarketScanner(NOW)
             items = scanner.scan_crypto()
-            self.assertEqual(get.call_count, 6)
+            self.assertEqual(provider.candles.call_count, 6)
         h = scanner.health['crypto']
         self.assertEqual(h['status'], 'PARTIAL')
-        self.assertEqual((h['price_records'], h['history_received'], h['chart_failures'], h['history_not_requested']), (6, 4, 1, 1))
-        self.assertEqual(items[4]['data_issue'], 'Chart request failed: HTTP 429')
-        self.assertEqual(items[5]['history_status'], 'NOT_REQUESTED')
+        self.assertEqual((h['price_records'], h['history_received'], h['chart_failures'], h['history_not_requested']), (6, 5, 1, 0))
+        self.assertIn('both venues unavailable', items[5]['data_issue'])
+        self.assertEqual(items[5]['history_status'], 'FAILED')
         for item in items:
             item['catalyst'] = {'eligible_for_points': False, 'retrieval_status': 'OK', 'headlines_checked': 3}
             item['qualification'] = classify_setup(item, item['catalyst'], NOW)
         message = build_market_snapshot([], items, scanner.health)
-        for value in ['6 price records', 'charts 4/5 received', '1 failed', '1 not requested', 'Coin 0', 'DATA_UNAVAILABLE', 'NOT_EVALUATED']:
+        for value in ['6 price records', 'charts 5/6 received', '1 failed', '0 not requested', 'Coin 0', 'DATA_UNAVAILABLE']:
             self.assertIn(value, message)
         self.assertNotIn('Source: none', message)
         self.assertNotIn('Insufficient intraday structure', message)

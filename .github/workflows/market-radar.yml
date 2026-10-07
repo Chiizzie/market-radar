@@ -57,6 +57,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run_radar.py
+      - name: Persist research outcomes
+        continue-on-error: true
+        run: python outcome_tracker.py
       - name: Publish qualifying scan to ChatGPT event bridge
         run: python publish_alert.py
       - name: Save scan and bridge diagnostics
@@ -67,5 +70,7 @@ jobs:
           path: |
             latest_scan.json
             bridge_status.json
+            radar_outcomes.json
+            outcome_summary.json
           retention-days: 7
           if-no-files-found: warn

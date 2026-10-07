@@ -10,6 +10,9 @@ from run_radar import build_potential_signals
 NOW = datetime(2026, 10, 7, 15, tzinfo=timezone.utc)
 
 class DiscoveryTests(unittest.TestCase):
+    def setUp(self):
+        p = patch('primary_news.fetch_primary', return_value=([], {})); p.start(); self.addCleanup(p.stop)
+
     def test_universe_accepts_unlisted_watchlist_company_and_filters_derivatives(self):
         text = 'Symbol|Security Name|Test Issue|ETF\nPENG|Penguin Solutions, Inc. - Ordinary Shares|N|N\nNEWX|New Company Common Stock|N|N\nFUND|ETF Fund|N|Y\nZZ|Test Common Stock|Y|N\nNEWXW|New Company Warrants|N|N\n'
         self.assertEqual(parse_directory(text), {'PENG': 'Penguin Solutions', 'NEWX': 'New Company'})
@@ -81,7 +84,8 @@ class DiscoveryTests(unittest.TestCase):
             {'id':'old','symbol':'OLD','name':'Old Token','current_price':1,'total_volume':50_000_000,
              'price_change_percentage_24h':10,'price_change_percentage_1h_in_currency':-.1,'last_updated':NOW.isoformat()}]
         history=Mock(); history.json.return_value={'prices':[[int((NOW.timestamp()-3600*(48-i))*1000),1] for i in range(48)]}
-        with patch('discovery.discover_catalysts',return_value=({},{})), patch('market_scanner.requests.get',side_effect=[market,history]):
+        with patch('crypto_candles.CandleProvider') as provider, patch('discovery.discover_catalysts',return_value=({},{})), patch('market_scanner.requests.get',return_value=market):
+            provider.return_value.load.return_value.candles.side_effect = ValueError('No test EUR pair')
             items=MarketScanner(NOW).scan_crypto()
         self.assertEqual([x['symbol'] for x in items],['EARLY'])
 
