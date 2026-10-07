@@ -9,7 +9,7 @@ EXTENDED = 'EXTENDED—DO NOT CHASE'
 REJECTED = 'REJECTED'
 
 
-def classify_setup(asset, catalyst, now=None):
+def _classify_setup(asset, catalyst, now=None, chart=False):
     now = now or datetime.now(timezone.utc)
     reasons = []
     result = {'status': REJECTED, 'reasons': reasons, 'plan': None}
@@ -26,6 +26,8 @@ def classify_setup(asset, catalyst, now=None):
     except (KeyError, TypeError, ValueError):
         reasons.append('Price timestamp missing.')
     history_status = asset.get('history_status')
+    if chart and history_status != 'OK':
+        reasons.append('Chart-led assessment requires fresh completed OHLCV.')
     if history_status in {'FAILED', 'STALE', 'NOT_REQUESTED'}:
         result['status'] = 'NOT_EVALUATED' if history_status == 'NOT_REQUESTED' else 'DATA_UNAVAILABLE'
         reasons.append(asset.get('data_issue', 'Historical data unavailable.'))
@@ -34,11 +36,11 @@ def classify_setup(asset, catalyst, now=None):
         reasons.append('News retrieval failed; catalyst could not be assessed.')
     elif catalyst.get('adverse'):
         reasons.append('Matched headline contains an adverse event; no bullish catalyst credit.')
-    elif catalyst.get('headlines') and catalyst.get('event_time_status') != 'REPORTED_RECENT':
+    elif not chart and catalyst.get('headlines') and catalyst.get('event_time_status') != 'REPORTED_RECENT':
         reasons.append(catalyst.get('timing_reason', 'Underlying event date is unverified.'))
-    elif not catalyst.get('eligible_for_points'):
+    elif not chart and not catalyst.get('eligible_for_points'):
         reasons.append('No qualifying fresh catalyst found; this does not mean the asset identity is missing.')
-    elif catalyst.get('event_time_status') != 'REPORTED_RECENT':
+    elif not chart and catalyst.get('event_time_status') != 'REPORTED_RECENT':
         reasons.append('Underlying event date is unverified.')
     required = ['price', 'entry', 'support', 'resistance_1', 'resistance_2', 'momentum_pct', 'extension_pct', 'dollar_volume']
     missing = [k for k in required if not isinstance(asset.get(k), (int, float)) or not math.isfinite(asset[k])]
@@ -59,16 +61,18 @@ def classify_setup(asset, catalyst, now=None):
         reasons.append('No positive recent momentum; a daily gain alone is insufficient.')
     if asset['asset_type'] == 'stock' and asset.get('volume_spike', 0) < 1.5:
         reasons.append('Recent same-time relative volume is below 1.5x.')
+    if chart and asset['asset_type'] == 'crypto' and (asset.get('chart_analysis', {}).get('recent_volume_ratio') or 0) < 1.5:
+        reasons.append('Recent crypto bar volume is below 1.5x its preceding baseline.')
     if not support < entry < tp1 < tp2:
         reasons.append('No ordered support, trigger and two historical resistance targets.')
-    if reasons:
+    if reasons and not chart:
         return result
     broker = asset.get('broker_availability', {})
     if broker.get('status') not in {'LISTED_PUBLIC', 'LISTED_API'}:
         return {**result, 'status': 'BROKER_UNVERIFIED' if broker.get('status') not in {'NOT_LISTED', 'RESTRICTED'} else 'BROKER_UNAVAILABLE',
-                'reasons': [broker.get('reason', 'Broker eligibility is unverified.')]}
+                'reasons': reasons + [broker.get('reason', 'Broker eligibility is unverified.')]}
     if asset['extension_pct'] > 3 or (price / entry - 1) * 100 > 0.75:
-        return {**result, 'status': EXTENDED, 'reasons': ['Price is extended above the recent average or the entry trigger.']}
+        return {**result, 'status': EXTENDED, 'reasons': reasons + ['Price is extended above the recent average or the entry trigger.']}
     # Stop below observed support; targets come from history, never invented multiples.
     stop = support * 0.999
     executable_entry = max(price, entry)
@@ -86,6 +90,8 @@ def classify_setup(asset, catalyst, now=None):
     if price < entry * 0.99:
         reasons.append('Price is more than 1% below the trigger; wait for structure to improve.')
         return result
+    if reasons:
+        return result
     risk_eur = risk * fx
     units = min(5 / risk_eur, 500 / (executable_entry * fx))
     plan = {'currency': 'EUR', 'entry': executable_entry * fx, 'entry_trigger': entry * fx,
@@ -94,6 +100,48 @@ def classify_setup(asset, catalyst, now=None):
             'position_eur': round(units * executable_entry * fx, 2),
             'planned_loss_eur': round(units * risk_eur, 2), 'risk_ceiling_eur': 20,
             'exit_by': local.replace(hour=22, minute=0, second=0, microsecond=0).isoformat(),
-            'invalidation': 'Support/stop fails, catalyst is disproved, or momentum reverses.',
+            'invalidation': ('Pattern/support fails, adverse news emerges, or momentum reverses.' if chart else 'Support/stop fails, catalyst is disproved, or momentum reverses.'),
             'review_required': 'Verify broker availability, bid/ask spread, source article, fees and fresh price.'}
-    return {'status': status, 'reasons': ['Observed trigger, positive momentum, fresh headline evidence and structural R:R pass.'], 'plan': plan}
+    return {'status': status, 'reasons': [('Confirmed chart pattern, positive momentum, volume and projected/observed R:R pass.' if chart else 'Observed trigger, positive momentum, fresh headline evidence and structural R:R pass.')], 'plan': plan}
+
+
+SOFT_BLOCKERS = {
+    'Recent same-time relative volume is below 1.5x.',
+    'Recent crypto bar volume is below 1.5x its preceding baseline.',
+    'No positive recent momentum; a daily gain alone is insufficient.',
+    'Stop width or achievable reward/risk fails the entry filter.',
+    'Price is more than 1% below the trigger; wait for structure to improve.',
+}
+
+
+def classify_setup(asset, catalyst, now=None):
+    """Assess news and chart routes independently; neither bypasses risk gates."""
+    news = {**_classify_setup(asset, catalyst, now), 'route': 'CATALYST_LED'}
+    assessments = [news]
+    for pattern in asset.get('chart_analysis', {}).get('setups', []):
+        candidate = {**asset, **{k: pattern[k] for k in ['entry', 'support', 'resistance_1', 'resistance_2', 'momentum_pct', 'extension_pct']}}
+        try:
+            observed = datetime.fromisoformat(pattern['observed_at'].replace('Z', '+00:00'))
+            evidence_fresh = 0 <= ((now or datetime.now(timezone.utc)) - observed).total_seconds() <= 900
+        except (KeyError, TypeError, ValueError):
+            evidence_fresh = False
+        if not evidence_fresh:
+            candidate['history_status'] = 'STALE'
+            candidate['data_issue'] = 'Pattern evidence timestamp is missing or stale.'
+        chart = {**_classify_setup(candidate, catalyst, now, chart=True),
+                 'route': 'CHART_LED', 'pattern': pattern['pattern'],
+                 'target_method': pattern['target_method'], 'pattern_evidence': pattern}
+        if chart.get('plan'):
+            chart['plan'].update(target_method=pattern['target_method'], pattern=pattern['pattern'])
+        # Only technical near-misses become research watches; never data/broker/news faults.
+        fx = asset.get('eur_per_unit', 1 if asset.get('currency') == 'EUR' else None)
+        safe = (asset.get('broker_availability', {}).get('status') in {'LISTED_PUBLIC', 'LISTED_API'}
+                and isinstance(fx, (int, float)) and math.isfinite(fx) and fx > 0
+                and pattern['extension_pct'] <= 3 and asset['price'] <= pattern['entry']*1.0075)
+        if chart['status'] == REJECTED and safe and 1 <= len(chart['reasons']) <= 2 and set(chart['reasons']) <= SOFT_BLOCKERS:
+            chart.update(status='TECHNICAL WATCH', research_only=True, plan=None,
+                         blockers=list(chart['reasons']))
+        assessments.append(chart)
+    priority = {ACTIONABLE: 5, WATCH: 4, 'TECHNICAL WATCH': 3, EXTENDED: 2}
+    best = max(assessments, key=lambda q: (priority.get(q['status'], 0), (q.get('plan') or {}).get('rr1', 0)))
+    return {**best, 'assessments': assessments}

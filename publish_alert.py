@@ -30,9 +30,19 @@ def material_change(previous, current):
     for field in ['event_time_status', 'event_at']:
         if previous.get('catalyst', {}).get(field) != current.get('catalyst', {}).get(field):
             return True
+    for field in ['route', 'pattern', 'blockers']:
+        if previous.get('qualification', {}).get(field) != current['qualification'].get(field):
+            return True
     old, new = previous.get('qualification', {}).get('plan') or {}, current['qualification'].get('plan') or {}
     if not old and not new:
-        # News watches have no executable plan; stable news must not wake the task every scan.
+        if current['qualification'].get('route') == 'CHART_LED':
+            old_pattern = previous.get('qualification', {}).get('pattern_evidence', {})
+            new_pattern = current['qualification'].get('pattern_evidence', {})
+            for field in ['entry', 'support', 'resistance_1', 'resistance_2']:
+                a, b = old_pattern.get(field), new_pattern.get(field)
+                if a and b and abs(b/a-1) >= .01:
+                    return True
+        # Stable research evidence must not wake the task every scan.
         return False
     if bool(old) != bool(new):
         return True

@@ -6,6 +6,7 @@ import pandas as pd
 import pandas_market_calendars as mcal
 import requests
 import yfinance as yf
+from chart_analysis import analyse_chart
 
 logger = logging.getLogger(__name__)
 MAX_CANDIDATES = 12
@@ -133,6 +134,7 @@ class MarketScanner:
                             volume=int(today['Volume'].sum()), dollar_volume=float((today['Close']*today['Volume']).sum()),
                             volume_spike=float(last['Volume'].sum()/baseline) if baseline > 0 else 0,
                             history_status='OK', source='yfinance completed 5-minute bars', **structure(history))
+                item['chart_analysis'] = analyse_chart(history, 'stock', self.now)
                 item.pop('data_issue', None)
             except Exception as exc:
                 item.update(history_status='FAILED', data_issue='Stock chart failed: ' + type(exc).__name__)
@@ -208,6 +210,7 @@ class MarketScanner:
             try:
                 frame, evidence = provider.candles(item)
                 item.update(structure(frame))
+                item['chart_analysis'] = analyse_chart(frame, 'crypto', self.now)
                 item.update(history_status='OK', price=float(frame.Close.iloc[-1]),
                             observed_at=(frame.index[-1] + pd.Timedelta(minutes=5)).isoformat(),
                             structure_observed_at=(frame.index[-1] + pd.Timedelta(minutes=5)).isoformat(),
