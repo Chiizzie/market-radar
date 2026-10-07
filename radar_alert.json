@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-07T10:59:20.047837+00:00",
+  "generated_at": "2026-10-07T11:16:00.579211+00:00",
   "potential_signals": [
     {
       "ticker": "BKSY",
@@ -236,101 +236,6 @@
             "id": "c388dfc713c22c0fc69d",
             "type": "earnings",
             "age_hours": 2.15,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "PENG",
-      "name": "Penguin Solutions",
-      "asset_type": "stock",
-      "price": 64.21,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 5.76511,
-      "volume": 15549740.0,
-      "dollar_volume": 998448805.3999999,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Penguin Solutions, Inc. 2026 Q4 - Results - Earnings Call Presentation (NASDAQ:PENG) 2026-10-07 - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQajE4V2pyaTRpV3A0dGJmRGtOeWpDTnpTV3k0M2Rtd25ncm9OQnA4Nk95eGk2eE9UdEgtV0hGeXN4Ri1nV1VtcC16WE1jMU5JQVpfZDJJcTFxdG9mbWx3RUNqTkxrVWlHSExOeUxKRHNoYlF6SkpweE9wRk9ZWElwUWxneVFSdHctLUdtZjVUNEI2ckVJSHBPS1ZyRTVDbjdWbVkwYkVxM1Q?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-07T06:30:54+00:00",
-        "id": "ad097e62abc60a7b96e2",
-        "type": "earnings",
-        "age_hours": 3.64,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Penguin Solutions, Inc. 2026 Q4 - Results - Earnings Call Presentation (NASDAQ:PENG) 2026-10-07 - Seeking Alpha",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Penguin Solutions, Inc. 2026 Q4 - Results - Earnings Call Presentation (NASDAQ:PENG) 2026-10-07 - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQajE4V2pyaTRpV3A0dGJmRGtOeWpDTnpTV3k0M2Rtd25ncm9OQnA4Nk95eGk2eE9UdEgtV0hGeXN4Ri1nV1VtcC16WE1jMU5JQVpfZDJJcTFxdG9mbWx3RUNqTkxrVWlHSExOeUxKRHNoYlF6SkpweE9wRk9ZWElwUWxneVFSdHctLUdtZjVUNEI2ckVJSHBPS1ZyRTVDbjdWbVkwYkVxM1Q?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-07T06:30:54+00:00",
-            "id": "ad097e62abc60a7b96e2",
-            "type": "earnings",
-            "age_hours": 3.64,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -935,6 +840,99 @@
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
           "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "VERI",
+      "name": "Veritone",
+      "asset_type": "stock",
+      "price": 0.7464,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.82408,
+      "volume": 4403244.0,
+      "dollar_volume": 3286581.3216,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T03:51:44+00:00",
+        "id": "d8d88683215446c04a90",
+        "type": "financing",
+        "age_hours": 7.39,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T03:51:44+00:00",
+            "id": "d8d88683215446c04a90",
+            "type": "financing",
+            "age_hours": 7.39,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-10-07T11:15:20.937206+00:00",
+        "source": "https://www.trading212.com/trading-instruments/invest",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Broker catalogue unavailable; availability is unknown."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
         ],
         "plan": null,
         "missing_fields": [
@@ -1608,16 +1606,112 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "STRK",
+      "name": "Starknet",
+      "coin_id": "starknet",
+      "asset_type": "crypto",
+      "price": 0.04463332,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -3.56875,
+      "change_1h": 0.5237,
+      "acceleration": 0.6723979166666667,
+      "discovery_route": "recent_momentum",
+      "change_7d": 18.2991,
+      "volume": 41885440.0,
+      "dollar_volume": 41885440.0,
+      "market_cap": 331266229,
+      "session": "24/7",
+      "observed_at": "2026-10-07T11:13:40.000Z",
+      "source": "coingecko EUR",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Chart not requested: five-chart budget per scan.",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-07T11:15:20.937206+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "catalyst": {
+        "title": "Starknet v0.14.4 goes live on mainnet with bigger proofs and gas tweaks - Crypto Briefing",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YWXpmTzB4TWdIMkdEbklEZEhmSkhhaEtzZ3hGeklTeThJSkF6aTNZR0EybDdBNDdvWlVaRVpoZjBCRU5zWEJ3LTFrZjM1bU1OX2VrdEtVdkphbFRUU3BIbXJ0aE1FUWZDellObw?oc=5",
+        "source": "Crypto Briefing",
+        "published_at": "2026-10-06T17:12:29+00:00",
+        "id": "929a1812a3724235e7c1",
+        "type": "crypto_event",
+        "age_hours": 18.06,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Starknet v0.14.4 goes live on mainnet with bigger proofs and gas tweaks - Crypto Briefing",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Starknet v0.14.4 goes live on mainnet with bigger proofs and gas tweaks - Crypto Briefing",
+            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YWXpmTzB4TWdIMkdEbklEZEhmSkhhaEtzZ3hGeklTeThJSkF6aTNZR0EybDdBNDdvWlVaRVpoZjBCRU5zWEJ3LTFrZjM1bU1OX2VrdEtVdkphbFRUU3BIbXJ0aE1FUWZDellObw?oc=5",
+            "source": "Crypto Briefing",
+            "published_at": "2026-10-06T17:12:29+00:00",
+            "id": "929a1812a3724235e7c1",
+            "type": "crypto_event",
+            "age_hours": 18.06,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 3
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Chart not requested: five-chart budget per scan.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
     }
   ],
   "changed_signals": [
-    "stock:BKSY",
-    "stock:CCLD",
-    "stock:POLA",
-    "stock:STI"
+    "stock:VERI",
+    "crypto:starknet"
   ],
   "invalidated_signals": [
-    "stock:VERI"
+    "stock:PENG"
   ],
   "health": {
     "stocks": {
@@ -1627,8 +1721,8 @@
       "listed_assets": 5946,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7834,
-        "snapshot_records": 7834,
+        "provider_total": 7823,
+        "snapshot_records": 7823,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1637,8 +1731,8 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 148,
-        "matched_events": 17,
+        "headlines_received": 147,
+        "matched_events": 16,
         "matched_assets": 16,
         "failed_queries": 0,
         "errors": [],
@@ -1654,12 +1748,12 @@
     "crypto": {
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 5,
-      "history_requested": 3,
-      "history_received": 3,
-      "chart_failures": 0,
+      "price_records": 12,
+      "history_requested": 5,
+      "history_received": 4,
+      "chart_failures": 1,
       "history_stale": 0,
-      "history_not_requested": 2,
+      "history_not_requested": 7,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 60,
@@ -1676,7 +1770,7 @@
       "stock": {
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/invest",
-        "checked_at": "2026-10-07T10:58:44.787085+00:00",
+        "checked_at": "2026-10-07T11:15:20.937206+00:00",
         "error": "HTTPError",
         "http_status": 403
       },
@@ -1684,11 +1778,11 @@
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-07T10:58:44.787085+00:00"
+        "checked_at": "2026-10-07T11:15:20.937206+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 28,
       "failed": 0
     }
   },
