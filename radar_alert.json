@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-07T23:26:23.154509+00:00",
+  "generated_at": "2026-10-07T23:41:28.673191+00:00",
   "potential_signals": [
     {
       "ticker": "LEVI",
@@ -1276,868 +1276,6 @@
       }
     },
     {
-      "symbol": "JUP",
-      "name": "Jupiter",
-      "coin_id": "jupiter-exchange-solana",
-      "asset_type": "crypto",
-      "price": 0.31985,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 1.92779,
-      "change_1h": 5.5405,
-      "acceleration": 5.460175416666666,
-      "discovery_route": "recent_momentum",
-      "change_7d": 9.1907,
-      "volume": 109532002.0,
-      "dollar_volume": 109532002.0,
-      "market_cap": 1060561214,
-      "session": "24/7",
-      "observed_at": "2026-10-07T23:25:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-07T23:25:32.138742+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 0.32036,
-      "support": 0.31461,
-      "momentum_pct": 0.7306396246024027,
-      "reference_price": 0.31727939535778293,
-      "extension_pct": 0.8102022002778764,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.32036,
-            "support": 0.31753,
-            "resistance_1": 0.325865,
-            "resistance_2": 0.33473,
-            "momentum_pct": 0.7306396246024027,
-            "extension_pct": 0.8102022002778764,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.317,
-              "measured_height": 0.017730000000000024,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.325865,
-                0.33473
-              ],
-              "overhead_levels": []
-            },
-            "observed_at": "2026-10-07T23:25:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-07T21:25:00+00:00",
-              "range_end": "2026-10-07T22:50:00+00:00",
-              "range_high": 0.317,
-              "range_low": 0.29927,
-              "retest_low": 0.31753,
-              "breakout_close": 0.31813,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.723928260600615,
-        "observed_at": "2026-10-07T23:25:00+00:00"
-      },
-      "structure_observed_at": "2026-10-07T23:25:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "JUPEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 7
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.32036,
-          "support": 0.31753,
-          "resistance_1": 0.325865,
-          "resistance_2": 0.33473,
-          "momentum_pct": 0.7306396246024027,
-          "extension_pct": 0.8102022002778764,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.317,
-            "measured_height": 0.017730000000000024,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.325865,
-              0.33473
-            ],
-            "overhead_levels": []
-          },
-          "observed_at": "2026-10-07T23:25:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-07T21:25:00+00:00",
-            "range_end": "2026-10-07T22:50:00+00:00",
-            "range_high": 0.317,
-            "range_low": 0.29927,
-            "retest_low": 0.31753,
-            "breakout_close": 0.31813,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.32036,
-              "support": 0.31753,
-              "resistance_1": 0.325865,
-              "resistance_2": 0.33473,
-              "momentum_pct": 0.7306396246024027,
-              "extension_pct": 0.8102022002778764,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.317,
-                "measured_height": 0.017730000000000024,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.325865,
-                  0.33473
-                ],
-                "overhead_levels": []
-              },
-              "observed_at": "2026-10-07T23:25:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-07T21:25:00+00:00",
-                "range_end": "2026-10-07T22:50:00+00:00",
-                "range_high": 0.317,
-                "range_low": 0.29927,
-                "retest_low": 0.31753,
-                "breakout_close": 0.31813,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "symbol": "CRV",
-      "name": "Curve DAO",
-      "coin_id": "curve-dao-token",
-      "asset_type": "crypto",
-      "price": 0.33598,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 4.66824,
-      "change_1h": 4.2967,
-      "acceleration": 4.10219,
-      "discovery_route": "recent_momentum",
-      "change_7d": -4.9675,
-      "volume": 69226838.0,
-      "dollar_volume": 69226838.0,
-      "market_cap": 528472077,
-      "session": "24/7",
-      "observed_at": "2026-10-07T23:25:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-07T23:25:32.138742+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.33538,
-      "support": 0.32864,
-      "momentum_pct": 1.122648607975929,
-      "reference_price": 0.332277103711664,
-      "extension_pct": 1.1144000736051929,
-      "resistance_1": 0.33636,
-      "resistance_2": 0.33745,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.33538,
-            "support": 0.33141,
-            "resistance_1": 0.33602,
-            "resistance_2": 0.33713,
-            "momentum_pct": 1.122648607975929,
-            "extension_pct": 1.1144000736051929,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.33182,
-              "measured_height": 0.012929999999999997,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.338285,
-                0.34475
-              ],
-              "overhead_levels": [
-                0.33602,
-                0.33608,
-                0.33609,
-                0.33627
-              ]
-            },
-            "observed_at": "2026-10-07T23:25:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-07T21:25:00+00:00",
-              "range_end": "2026-10-07T22:50:00+00:00",
-              "range_high": 0.33182,
-              "range_low": 0.31889,
-              "retest_low": 0.33141,
-              "breakout_close": 0.33244,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 0.33538,
-            "support": 0.33141,
-            "resistance_1": 0.33602,
-            "resistance_2": 0.33713,
-            "momentum_pct": 1.122648607975929,
-            "extension_pct": 1.1144000736051929,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.33141,
-              "measured_height": 0.010700000000000043,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.33676,
-                0.34211
-              ],
-              "overhead_levels": [
-                0.33602,
-                0.33608,
-                0.33609,
-                0.33627
-              ]
-            },
-            "observed_at": "2026-10-07T23:25:00+00:00",
-            "evidence": {
-              "impulse_high": 0.33312,
-              "impulse_low": 0.32242,
-              "pullback_low": 0.33141,
-              "ema9": 0.33182362494645,
-              "ema21": 0.32771515636213233,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.1810588664072599,
-        "observed_at": "2026-10-07T23:25:00+00:00"
-      },
-      "structure_observed_at": "2026-10-07T23:25:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "CRVEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 1
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.33538,
-          "support": 0.33141,
-          "resistance_1": 0.33602,
-          "resistance_2": 0.33713,
-          "momentum_pct": 1.122648607975929,
-          "extension_pct": 1.1144000736051929,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.33182,
-            "measured_height": 0.012929999999999997,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.338285,
-              0.34475
-            ],
-            "overhead_levels": [
-              0.33602,
-              0.33608,
-              0.33609,
-              0.33627
-            ]
-          },
-          "observed_at": "2026-10-07T23:25:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-07T21:25:00+00:00",
-            "range_end": "2026-10-07T22:50:00+00:00",
-            "range_high": 0.33182,
-            "range_low": 0.31889,
-            "retest_low": 0.33141,
-            "breakout_close": 0.33244,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.33538,
-              "support": 0.33141,
-              "resistance_1": 0.33602,
-              "resistance_2": 0.33713,
-              "momentum_pct": 1.122648607975929,
-              "extension_pct": 1.1144000736051929,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.33182,
-                "measured_height": 0.012929999999999997,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.338285,
-                  0.34475
-                ],
-                "overhead_levels": [
-                  0.33602,
-                  0.33608,
-                  0.33609,
-                  0.33627
-                ]
-              },
-              "observed_at": "2026-10-07T23:25:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-07T21:25:00+00:00",
-                "range_end": "2026-10-07T22:50:00+00:00",
-                "range_high": 0.33182,
-                "range_low": 0.31889,
-                "retest_low": 0.33141,
-                "breakout_close": 0.33244,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 0.33538,
-              "support": 0.33141,
-              "resistance_1": 0.33602,
-              "resistance_2": 0.33713,
-              "momentum_pct": 1.122648607975929,
-              "extension_pct": 1.1144000736051929,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.33141,
-                "measured_height": 0.010700000000000043,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.33676,
-                  0.34211
-                ],
-                "overhead_levels": [
-                  0.33602,
-                  0.33608,
-                  0.33609,
-                  0.33627
-                ]
-              },
-              "observed_at": "2026-10-07T23:25:00+00:00",
-              "evidence": {
-                "impulse_high": 0.33312,
-                "impulse_low": 0.32242,
-                "pullback_low": 0.33141,
-                "ema9": 0.33182362494645,
-                "ema21": 0.32771515636213233,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "symbol": "UNI",
-      "name": "Uniswap",
-      "coin_id": "uniswap",
-      "asset_type": "crypto",
-      "price": 7.0367,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -7.81503,
-      "change_1h": 1.2108,
-      "acceleration": 1.53642625,
-      "discovery_route": "recent_momentum",
-      "change_7d": -10.8729,
-      "volume": 713580024.0,
-      "dollar_volume": 713580024.0,
-      "market_cap": 4398510053,
-      "session": "24/7",
-      "observed_at": "2026-10-07T23:25:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-07T23:25:32.138742+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 7.0131,
-      "support": 6.9917,
-      "momentum_pct": 0.4467981842578572,
-      "reference_price": 7.0115056234548465,
-      "extension_pct": 0.35932904996713866,
-      "resistance_1": 7.0444,
-      "resistance_2": 7.066,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 7.0131,
-            "support": 7.008,
-            "resistance_1": 7.0208,
-            "resistance_2": 7.0444,
-            "momentum_pct": 0.4467981842578572,
-            "extension_pct": 0.35932904996713866,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 6.9983,
-              "measured_height": 0.09890000000000043,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                7.047750000000001,
-                7.097200000000001
-              ],
-              "overhead_levels": [
-                7.0208,
-                7.0228,
-                7.0234,
-                7.024
-              ]
-            },
-            "observed_at": "2026-10-07T23:25:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-07T21:25:00+00:00",
-              "range_end": "2026-10-07T22:50:00+00:00",
-              "range_high": 6.9983,
-              "range_low": 6.8994,
-              "retest_low": 7.008,
-              "breakout_close": 7.0087,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 7.0131,
-            "support": 7.008,
-            "resistance_1": 7.0208,
-            "resistance_2": 7.0444,
-            "momentum_pct": 0.4467981842578572,
-            "extension_pct": 0.35932904996713866,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 7.008,
-              "measured_height": 0.044500000000000206,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                7.0302500000000006,
-                7.0525
-              ],
-              "overhead_levels": [
-                7.0208,
-                7.0228,
-                7.0234,
-                7.024
-              ]
-            },
-            "observed_at": "2026-10-07T23:25:00+00:00",
-            "evidence": {
-              "impulse_high": 7.0087,
-              "impulse_low": 6.9642,
-              "pullback_low": 7.008,
-              "ema9": 7.0043870376238235,
-              "ema21": 6.981816940008864,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.4263538302233493,
-        "observed_at": "2026-10-07T23:25:00+00:00"
-      },
-      "structure_observed_at": "2026-10-07T23:25:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "UNIEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 12
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 7.0131,
-          "support": 7.008,
-          "resistance_1": 7.0208,
-          "resistance_2": 7.0444,
-          "momentum_pct": 0.4467981842578572,
-          "extension_pct": 0.35932904996713866,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 6.9983,
-            "measured_height": 0.09890000000000043,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              7.047750000000001,
-              7.097200000000001
-            ],
-            "overhead_levels": [
-              7.0208,
-              7.0228,
-              7.0234,
-              7.024
-            ]
-          },
-          "observed_at": "2026-10-07T23:25:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-07T21:25:00+00:00",
-            "range_end": "2026-10-07T22:50:00+00:00",
-            "range_high": 6.9983,
-            "range_low": 6.8994,
-            "retest_low": 7.008,
-            "breakout_close": 7.0087,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 7.0131,
-              "support": 7.008,
-              "resistance_1": 7.0208,
-              "resistance_2": 7.0444,
-              "momentum_pct": 0.4467981842578572,
-              "extension_pct": 0.35932904996713866,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 6.9983,
-                "measured_height": 0.09890000000000043,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  7.047750000000001,
-                  7.097200000000001
-                ],
-                "overhead_levels": [
-                  7.0208,
-                  7.0228,
-                  7.0234,
-                  7.024
-                ]
-              },
-              "observed_at": "2026-10-07T23:25:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-07T21:25:00+00:00",
-                "range_end": "2026-10-07T22:50:00+00:00",
-                "range_high": 6.9983,
-                "range_low": 6.8994,
-                "retest_low": 7.008,
-                "breakout_close": 7.0087,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 7.0131,
-              "support": 7.008,
-              "resistance_1": 7.0208,
-              "resistance_2": 7.0444,
-              "momentum_pct": 0.4467981842578572,
-              "extension_pct": 0.35932904996713866,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 7.008,
-                "measured_height": 0.044500000000000206,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  7.0302500000000006,
-                  7.0525
-                ],
-                "overhead_levels": [
-                  7.0208,
-                  7.0228,
-                  7.0234,
-                  7.024
-                ]
-              },
-              "observed_at": "2026-10-07T23:25:00+00:00",
-              "evidence": {
-                "impulse_high": 7.0087,
-                "impulse_low": 6.9642,
-                "pullback_low": 7.008,
-                "ema9": 7.0043870376238235,
-                "ema21": 6.981816940008864,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
       "symbol": "ZRO",
       "name": "LayerZero",
       "coin_id": "layerzero",
@@ -2266,15 +1404,231 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "coin_id": "jupiter-exchange-solana",
+      "asset_type": "crypto",
+      "price": 0.31893,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 2.08673,
+      "change_1h": 5.5405,
+      "acceleration": 5.453552916666666,
+      "discovery_route": "recent_momentum",
+      "change_7d": 9.1907,
+      "volume": 110597047.0,
+      "dollar_volume": 110597047.0,
+      "market_cap": 1059661935,
+      "session": "24/7",
+      "observed_at": "2026-10-07T23:40:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-07T23:40:38.448890+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 0.32036,
+      "support": 0.31753,
+      "momentum_pct": -0.2876348288260222,
+      "reference_price": 0.31922503149946907,
+      "extension_pct": -0.09242116700035607,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "RANGE_BREAKOUT_RETEST",
+            "entry": 0.32007,
+            "support": 0.31849,
+            "resistance_1": 0.32874499999999995,
+            "resistance_2": 0.33857,
+            "momentum_pct": -0.2876348288260222,
+            "extension_pct": -0.09242116700035607,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 0.31892,
+              "measured_height": 0.01965,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                0.32874499999999995,
+                0.33857
+              ],
+              "overhead_levels": []
+            },
+            "observed_at": "2026-10-07T23:40:00+00:00",
+            "evidence": {
+              "range_start": "2026-10-07T21:40:00+00:00",
+              "range_end": "2026-10-07T23:05:00+00:00",
+              "range_high": 0.31892,
+              "range_low": 0.29927,
+              "retest_low": 0.31849,
+              "breakout_close": 0.32036,
+              "confirmation": "Break above range, hold/retest, bullish latest bar"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 2.011606630540394,
+        "observed_at": "2026-10-07T23:40:00+00:00"
+      },
+      "structure_observed_at": "2026-10-07T23:40:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "JUPEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 7
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "No positive recent momentum; a daily gain alone is insufficient."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "RANGE_BREAKOUT_RETEST",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "RANGE_BREAKOUT_RETEST",
+          "entry": 0.32007,
+          "support": 0.31849,
+          "resistance_1": 0.32874499999999995,
+          "resistance_2": 0.33857,
+          "momentum_pct": -0.2876348288260222,
+          "extension_pct": -0.09242116700035607,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 0.31892,
+            "measured_height": 0.01965,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              0.32874499999999995,
+              0.33857
+            ],
+            "overhead_levels": []
+          },
+          "observed_at": "2026-10-07T23:40:00+00:00",
+          "evidence": {
+            "range_start": "2026-10-07T21:40:00+00:00",
+            "range_end": "2026-10-07T23:05:00+00:00",
+            "range_high": 0.31892,
+            "range_low": 0.29927,
+            "retest_low": 0.31849,
+            "breakout_close": 0.32036,
+            "confirmation": "Break above range, hold/retest, bullish latest bar"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "No positive recent momentum; a daily gain alone is insufficient."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "No positive recent momentum; a daily gain alone is insufficient."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "RANGE_BREAKOUT_RETEST",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "RANGE_BREAKOUT_RETEST",
+              "entry": 0.32007,
+              "support": 0.31849,
+              "resistance_1": 0.32874499999999995,
+              "resistance_2": 0.33857,
+              "momentum_pct": -0.2876348288260222,
+              "extension_pct": -0.09242116700035607,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 0.31892,
+                "measured_height": 0.01965,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  0.32874499999999995,
+                  0.33857
+                ],
+                "overhead_levels": []
+              },
+              "observed_at": "2026-10-07T23:40:00+00:00",
+              "evidence": {
+                "range_start": "2026-10-07T21:40:00+00:00",
+                "range_end": "2026-10-07T23:05:00+00:00",
+                "range_high": 0.31892,
+                "range_low": 0.29927,
+                "retest_low": 0.31849,
+                "breakout_close": 0.32036,
+                "confirmation": "Break above range, hold/retest, bullish latest bar"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "No positive recent momentum; a daily gain alone is insufficient."
+            ]
+          }
+        ]
+      }
     }
   ],
   "changed_signals": [
-    "stock:RKLB",
-    "crypto:jupiter-exchange-solana",
+    "crypto:jupiter-exchange-solana"
+  ],
+  "invalidated_signals": [
     "crypto:curve-dao-token",
     "crypto:uniswap"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -2376,14 +1730,14 @@
         "status": "OK",
         "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-07T23:25:32.138742+00:00",
+        "checked_at": "2026-10-07T23:40:38.448890+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-07T23:25:32.138742+00:00"
+        "checked_at": "2026-10-07T23:40:38.448890+00:00"
       }
     },
     "news": {
