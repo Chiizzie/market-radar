@@ -9,7 +9,7 @@ from radar import MarketScanner, collect_stock_candidates, collect_crypto_candid
 
 
 def build_potential_signals(stocks, crypto):
-    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH'}
+    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH', 'TECHNICAL WATCH'}
             and item.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}]
 
 
@@ -23,6 +23,9 @@ def main():
                               'failed': sum(x['catalyst'].get('retrieval_status') == 'FAILED' for x in stocks + crypto)}
     payload = {'schema_version': 2, 'generated_at': datetime.now(timezone.utc).isoformat(),
                'scan_interval_minutes': 15, 'stocks': stocks, 'crypto': crypto,
+               'assessment_diagnostics': {'routes': dict(Counter(x['qualification'].get('route') for x in stocks + crypto)),
+                   'chart_patterns': dict(Counter(p['pattern'] for x in stocks + crypto for p in x.get('chart_analysis', {}).get('setups', []))),
+                   'near_misses': [{'symbol': x.get('ticker', x.get('symbol')), 'pattern': x['qualification'].get('pattern'), 'blockers': x['qualification'].get('blockers')} for x in stocks + crypto if x['qualification']['status'] == 'TECHNICAL WATCH']},
                'health': scanner.health, 'potential_signals': build_potential_signals(stocks, crypto),
                'tracking_prices': scanner.tracking_prices + stocks + crypto,
                'display_timezone': 'Europe/Dublin', 'generated_at_display': irish_time(datetime.now(timezone.utc)),

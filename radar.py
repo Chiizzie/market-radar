@@ -37,7 +37,7 @@ def enrich(items, brokers=None):
         item['score'] = score_setup(item, catalyst)
         item['qualification'] = classify_setup(item, catalyst)
         q = item['qualification']
-        if catalyst.get('headlines') and q['status'] not in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'EXTENDED—DO NOT CHASE'}:
+        if catalyst.get('headlines') and q['status'] not in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'EXTENDED—DO NOT CHASE', 'TECHNICAL WATCH'}:
             item['qualification'] = {**q, 'status': 'CATALYST WATCH', 'trade_assessment_status': q['status'],
                                      'research_only': True, 'plan': None,
                                      'reasons': ['News lead for research; event timing and entry require verification.'] + q['reasons']}
@@ -77,6 +77,8 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
         p = item['qualification'].get('plan')
         if p:
             lines.append(f"{item.get('ticker', item.get('symbol'))}: EUR entry {p['entry']:.4f} | SL {p['stop_loss']:.4f} | TP1 {p['tp1']:.4f} | TP2 {p['tp2']:.4f}")
+    if any(x['qualification'].get('route') == 'CHART_LED' for x in actions + watches):
+        lines.append('Chart-led targets are measured-move projections capped at observed highs; not guaranteed resistance.')
     if actions:
         lines.append('Check live broker price, spread and source before acting.')
     if health:
@@ -93,9 +95,13 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     lines.append('Results: ' + (', '.join(f'{v} {k}' for k, v in counts.items()) or 'No screened movers'))
     if health and health.get('brokers'):
         lines.append('Broker catalogues: ' + ', '.join(k + ' ' + v['status'] for k, v in health['brokers'].items()))
-    lines.append('Discovery: broad stock snapshots + fresh events; crypto recent momentum + events.')
+    lines.append('Assessment: catalyst-led + chart-led patterns; all plans require live review.')
+    near = [x for x in stocks + crypto if x['qualification']['status'] == 'TECHNICAL WATCH']
+    for x in near[:3]:
+        q = x['qualification']
+        lines.append('Nearly qualified — ' + x.get('ticker', x.get('symbol')) + ' | ' + q.get('pattern', '') + ': ' + '; '.join(q.get('blockers', [])) + ' No entry yet.')
     blocks = []
-    ordered = sorted(stocks + crypto, key=lambda x: ({'ACTIONABLE NOW': 3, 'WATCH FOR ENTRY': 2, 'CATALYST WATCH': 1}.get(x['qualification']['status'], 0), x['qualification']['status'] == 'CATALYST WATCH', x.get('catalyst', {}).get('published_at', ''), x.get('score', {}).get('score', 0)), reverse=True)
+    ordered = sorted(stocks + crypto, key=lambda x: ({'ACTIONABLE NOW': 3, 'WATCH FOR ENTRY': 2, 'TECHNICAL WATCH': 2, 'CATALYST WATCH': 1}.get(x['qualification']['status'], 0), x['qualification']['status'] == 'CATALYST WATCH', x.get('catalyst', {}).get('published_at', ''), x.get('score', {}).get('score', 0)), reverse=True)
     watch_symbols = [x.get('ticker', x.get('symbol')) for x in ordered if x['qualification']['status'] == 'CATALYST WATCH']
     if watch_symbols:
         lines.append('Catalyst watch: ' + ', '.join(watch_symbols))
@@ -106,6 +112,8 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
         quote_text = f"{item.get('currency', '')} {item['price']:.6g}" if item.get('price') is not None else 'Quote unavailable'
         block = [f"{symbol} ({item.get('name', symbol)}): {q['status']}",
                  f"{quote_text} | move {change:+.2f}% | observed {irish_time(item.get('observed_at'))}"]
+        if q.get('route') == 'CHART_LED':
+            block.append('Chart-led: ' + q.get('pattern', '') + ' | ' + q.get('target_method', ''))
         broker = item.get('broker_availability', {})
         block.append('Broker: ' + broker.get('broker', 'unverified') + ' | ' + broker.get('status', 'UNVERIFIED'))
         if c.get('title'):
