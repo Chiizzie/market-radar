@@ -24,6 +24,12 @@ def material_change(previous, current):
         return True
     if previous.get('catalyst', {}).get('id') != current.get('catalyst', {}).get('id'):
         return True
+    for field in ['status']:
+        if previous.get('broker_availability', {}).get(field) != current.get('broker_availability', {}).get(field):
+            return True
+    for field in ['event_time_status', 'event_at']:
+        if previous.get('catalyst', {}).get(field) != current.get('catalyst', {}).get(field):
+            return True
     old, new = previous.get('qualification', {}).get('plan') or {}, current['qualification'].get('plan') or {}
     if not old and not new:
         # News watches have no executable plan; stable news must not wake the task every scan.

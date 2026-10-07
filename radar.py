@@ -28,9 +28,10 @@ def telegram(message):
         return 'FAILED'
 
 
-def enrich(items):
+def enrich(items, brokers=None):
     for item in items:
         catalyst = item.get('catalyst') or find_catalyst_for_asset(item.get('ticker', item.get('symbol')), item['asset_type'], item['name'])
+        item['broker_availability'] = brokers.check(item) if brokers else {'status': 'UNVERIFIED', 'reason': 'Broker catalogue not loaded.'}
         item['catalyst'] = catalyst
         item['score'] = score_setup(item, catalyst)
         item['qualification'] = classify_setup(item, catalyst)
@@ -38,16 +39,16 @@ def enrich(items):
         if catalyst.get('headlines') and q['status'] not in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'EXTENDED—DO NOT CHASE'}:
             item['qualification'] = {**q, 'status': 'CATALYST WATCH', 'trade_assessment_status': q['status'],
                                      'research_only': True, 'plan': None,
-                                     'reasons': ['Fresh event for research; no entry approved.'] + q['reasons']}
+                                     'reasons': ['News lead for research; event timing and entry require verification.'] + q['reasons']}
     return sorted(items, key=lambda x: x['score']['score'], reverse=True)
 
 
 def collect_stock_candidates(scanner):
-    return enrich(scanner.scan_stocks())
+    return enrich(scanner.scan_stocks(), getattr(scanner, 'brokers', None))
 
 
 def collect_crypto_candidates(scanner):
-    return enrich(scanner.scan_crypto())
+    return enrich(scanner.scan_crypto(), getattr(scanner, 'brokers', None))
 
 
 def build_market_snapshot(stocks, crypto, health=None):
@@ -63,6 +64,8 @@ def build_market_snapshot(stocks, crypto, health=None):
                      f"{h.get('chart_failures', 0)} failed, {h.get('history_not_requested', 0)} not requested.")
     counts = Counter(x['qualification']['status'] for x in stocks + crypto)
     lines.append('Results: ' + (', '.join(f'{v} {k}' for k, v in counts.items()) or 'No screened movers'))
+    if health and health.get('brokers'):
+        lines.append('Broker catalogues: ' + ', '.join(k + ' ' + v['status'] for k, v in health['brokers'].items()))
     lines.append('Discovery: broad stock snapshots + fresh events; crypto recent momentum + events.')
     blocks = []
     ordered = sorted(stocks + crypto, key=lambda x: (x['qualification']['status'] in {'ACTIONABLE NOW', 'WATCH FOR ENTRY'}, x['qualification']['status'] == 'CATALYST WATCH', x.get('catalyst', {}).get('published_at', ''), x.get('score', {}).get('score', 0)), reverse=True)
@@ -76,8 +79,10 @@ def build_market_snapshot(stocks, crypto, health=None):
         quote_text = f"{item.get('currency', '')} {item['price']:.6g}" if item.get('price') is not None else 'Quote unavailable'
         block = [f"{symbol} ({item.get('name', symbol)}): {q['status']}",
                  f"{quote_text} | move {change:+.2f}% | observed {item.get('observed_at') or 'snapshot timestamp unavailable'}"]
+        broker = item.get('broker_availability', {})
+        block.append('Broker: ' + broker.get('broker', 'unverified') + ' | ' + broker.get('status', 'UNVERIFIED'))
         if c.get('title'):
-            block.extend([c['summary'], f"{c['source']} | {c['published_at']}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
+            block.extend([c['summary'], f"{c['source']} | Published {c['published_at']} | Event: {c.get('event_at') or 'unverified'}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
             # Full source URLs remain in the structured scan; long RSS redirects would hide other leads.
         elif c.get('retrieval_status') == 'FAILED':
             block.append(c['summary'])
