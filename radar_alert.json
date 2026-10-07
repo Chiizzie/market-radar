@@ -1,8 +1,198 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-07T13:08:16.369099+00:00",
+  "generated_at": "2026-10-07T13:33:44.327516+00:00",
   "potential_signals": [
+    {
+      "ticker": "VRSN",
+      "name": "VeriSign",
+      "asset_type": "stock",
+      "price": 295.1,
+      "currency": "USD",
+      "eur_per_unit": 0.8942000269889832,
+      "change": 0.68236095,
+      "volume": 713193.0,
+      "dollar_volume": 210463254.3,
+      "session": "REGULAR",
+      "observed_at": "2026-10-07T13:31:39+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "market_snapshot",
+      "history_status": "STALE",
+      "data_issue": "No fresh completed regular-session bar.",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:32:48.423532+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "VRSN_US_EQ",
+        "isin": "US92343E1029",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "catalyst": {
+        "title": "Verisign stock heads toward October 22 earnings report - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaU4wVXBhQTJHa1lYNXpkakpzWFktTm9HejhwM3NoOVFEMW5xcW5UZ0hXNFA5aTFVZ1NtY0xlQUxmUU9IT1FxdFZ6NlNCZDdsVFN5R1oxT0VhR2dIM0ZVal9mZ3dxYThLVlRvYkZtQUViejVQVFdQQnY2NEVtWS05SS1kRG91M3V5LTV3UUNTdFNBQllwV1BON3V2QldsUUtuQmZSNElJZzBkbV9xMWlVT1N0MA?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T02:14:55+00:00",
+        "id": "ed7661467fcef64eeb2c",
+        "type": "earnings",
+        "age_hours": 11.31,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Verisign stock heads toward October 22 earnings report - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Verisign stock heads toward October 22 earnings report - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaU4wVXBhQTJHa1lYNXpkakpzWFktTm9HejhwM3NoOVFEMW5xcW5UZ0hXNFA5aTFVZ1NtY0xlQUxmUU9IT1FxdFZ6NlNCZDdsVFN5R1oxT0VhR2dIM0ZVal9mZ3dxYThLVlRvYkZtQUViejVQVFdQQnY2NEVtWS05SS1kRG91M3V5LTV3UUNTdFNBQllwV1BON3V2QldsUUtuQmZSNElJZzBkbV9xMWlVT1N0MA?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T02:14:55+00:00",
+            "id": "ed7661467fcef64eeb2c",
+            "type": "earnings",
+            "age_hours": 11.31,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 2
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "No fresh completed regular-session bar.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "DATA_UNAVAILABLE",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "WS",
+      "name": "Worthington Steel",
+      "asset_type": "stock",
+      "price": 34.22,
+      "currency": "USD",
+      "eur_per_unit": 0.8942000269889832,
+      "change": -10.619926,
+      "volume": 58013.0,
+      "dollar_volume": 1985204.8599999999,
+      "session": "REGULAR",
+      "observed_at": "2026-10-07T13:33:17+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "STALE",
+      "data_issue": "No fresh completed regular-session bar.",
+      "catalyst": {
+        "title": "Worthington Steel Q1 2027 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQm1EamY2eGQzZWRrLU51cVRxcHFMRktvOS04YVdWak1tMThtamZjQnlyQVdVLTlydTlHTnlnVFR2R2hnbkhhTUJSRzE5R3VzbzJaTmpOa0l0aUxiaUhzYWFsa1drUlQwckhHOXhRSjVyVEg2RmFzRjZhUnZ3NDBfamNZaUxGajdkYURyaU55MHJlcHc3YnlSUlgxbw?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-07T13:14:10+00:00",
+        "id": "4507e3e666690575c7ad",
+        "type": "earnings",
+        "age_hours": 0.31,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Worthington Steel Q1 2027 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Worthington Steel Q1 2027 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQm1EamY2eGQzZWRrLU51cVRxcHFMRktvOS04YVdWak1tMThtamZjQnlyQVdVLTlydTlHTnlnVFR2R2hnbkhhTUJSRzE5R3VzbzJaTmpOa0l0aUxiaUhzYWFsa1drUlQwckhHOXhRSjVyVEg2RmFzRjZhUnZ3NDBfamNZaUxGajdkYURyaU55MHJlcHc3YnlSUlgxbw?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-07T13:14:10+00:00",
+            "id": "4507e3e666690575c7ad",
+            "type": "earnings",
+            "age_hours": 0.31,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:32:48.423532+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "WS_US_EQ",
+        "isin": "US9821041012",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "No fresh completed regular-session bar.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "DATA_UNAVAILABLE",
+        "research_only": true
+      }
+    },
     {
       "ticker": "IIPR",
       "name": "Innovative Industrial Properties",
@@ -185,6 +375,292 @@
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
           "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "AMRX",
+      "name": "Amneal Pharmaceuticals",
+      "asset_type": "stock",
+      "price": 20.29,
+      "currency": "USD",
+      "eur_per_unit": 0.8942000269889832,
+      "change": -0.024632474,
+      "volume": 26305.0,
+      "dollar_volume": 533728.45,
+      "session": "REGULAR",
+      "observed_at": "2026-10-07T13:33:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "STALE",
+      "data_issue": "No fresh completed regular-session bar.",
+      "catalyst": {
+        "title": "Amneal announces FDA approval and Amneal Pharmaceuticals stock matches its EUR 18.05 prior close - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNEhWRkNva2k3N1RnSXN2OGNMejN6WFZrVFBNSU9OQTJ4eTN2YlE1bkZmX0VUN2NJcUpkUzRDUmxUbmJEUzQzeENDWE84VFlBcHdjOUNkcXByajJnWHk0dllHNXYyNmdONTFzdE4weWpFLUwxQWU4WDNsZ0IyN3pxRkRJcXltMi1KZm1HYkdSZy1walJNaVk0aEktem9PY1hIczdoVWFWMjdsbEVBc19TT1poVE9LZkpvd3JIWVgzZ1FvSWtkVFJadm0yWWRkdw?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T06:20:54+00:00",
+        "id": "b2abf5fe0ce4f07eb36a",
+        "type": "regulatory",
+        "age_hours": 7.2,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Amneal announces FDA approval and Amneal Pharmaceuticals stock matches its EUR 18.05 prior close - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Amneal announces FDA approval and Amneal Pharmaceuticals stock matches its EUR 18.05 prior close - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNEhWRkNva2k3N1RnSXN2OGNMejN6WFZrVFBNSU9OQTJ4eTN2YlE1bkZmX0VUN2NJcUpkUzRDUmxUbmJEUzQzeENDWE84VFlBcHdjOUNkcXByajJnWHk0dllHNXYyNmdONTFzdE4weWpFLUwxQWU4WDNsZ0IyN3pxRkRJcXltMi1KZm1HYkdSZy1walJNaVk0aEktem9PY1hIczdoVWFWMjdsbEVBc19TT1poVE9LZkpvd3JIWVgzZ1FvSWtkVFJadm0yWWRkdw?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T06:20:54+00:00",
+            "id": "b2abf5fe0ce4f07eb36a",
+            "type": "regulatory",
+            "age_hours": 7.2,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:32:48.423532+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "AMRX_US_EQ",
+        "isin": "US03168L1052",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "No fresh completed regular-session bar.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "DATA_UNAVAILABLE",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "VERI",
+      "name": "Veritone",
+      "asset_type": "stock",
+      "price": 0.7464,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.82408,
+      "volume": 4403244.0,
+      "dollar_volume": 3286581.3216,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T03:51:44+00:00",
+        "id": "d8d88683215446c04a90",
+        "type": "financing",
+        "age_hours": 9.2,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T03:51:44+00:00",
+            "id": "d8d88683215446c04a90",
+            "type": "financing",
+            "age_hours": 9.2,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "VERI_US_EQ",
+        "isin": "US92347M1009",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "ISPC",
+      "name": "iSpecimen",
+      "asset_type": "stock",
+      "price": 1.07,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.90477,
+      "volume": 102636.0,
+      "dollar_volume": 109820.52,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdER4LS1qT0QtdWVvbjhSUGpvTm9rc1Zoa1ZqaTlGTXpzb3RxWndQVTFHVWpHdldDdl9OaDRHQ0FkNHVWemtiWlVOVUU0dEZjZ2h4aXBUM1FlSVVjZlRlRHc0T0xocnZwMW95RjA0c25EWUVYWWV3ZzFmY0ZxN0p0SEFNSkkwNDNYYUg5aENLSEVnY2N1SEMwU1VYbS0xZ3lGVzlpRGlKV0ZobkZtbGZj?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T02:05:04+00:00",
+        "id": "e1ad12667fdd127b8d48",
+        "type": "financing",
+        "age_hours": 10.98,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdER4LS1qT0QtdWVvbjhSUGpvTm9rc1Zoa1ZqaTlGTXpzb3RxWndQVTFHVWpHdldDdl9OaDRHQ0FkNHVWemtiWlVOVUU0dEZjZ2h4aXBUM1FlSVVjZlRlRHc0T0xocnZwMW95RjA0c25EWUVYWWV3ZzFmY0ZxN0p0SEFNSkkwNDNYYUg5aENLSEVnY2N1SEMwU1VYbS0xZ3lGVzlpRGlKV0ZobkZtbGZj?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T02:05:04+00:00",
+            "id": "e1ad12667fdd127b8d48",
+            "type": "financing",
+            "age_hours": 10.98,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ISPC_US_EQ",
+        "isin": "US45032V3069",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
         ],
         "plan": null,
         "missing_fields": [
@@ -393,294 +869,6 @@
       }
     },
     {
-      "ticker": "BBDC",
-      "name": "Barings BDC",
-      "asset_type": "stock",
-      "price": 8.51,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.467836,
-      "volume": 543018.0,
-      "dollar_volume": 4621083.18,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Barings BDC Q2 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamozMjY4MTRsSENXT2wwOHJsZ1hsZjhRRkhWVE9FYzRBUUxDUzN3dVdyZ2tUdVpGekZ1UDd0cG9JXzluSnIxeUxkZE96MnNGeENfZkNrYldJbXlleEIwOXI5TkdRTE9UWjA4eFd3aVVUQkRYZGE4bXFlNmc5al9xS1JMc0dvZmRQTWNoWTZ5aTE1Zmc?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-07T07:43:00+00:00",
-        "id": "730faed5752995fedf22",
-        "type": "earnings",
-        "age_hours": 5.35,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Barings BDC Q2 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Barings BDC Q2 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamozMjY4MTRsSENXT2wwOHJsZ1hsZjhRRkhWVE9FYzRBUUxDUzN3dVdyZ2tUdVpGekZ1UDd0cG9JXzluSnIxeUxkZE96MnNGeENfZkNrYldJbXlleEIwOXI5TkdRTE9UWjA4eFd3aVVUQkRYZGE4bXFlNmc5al9xS1JMc0dvZmRQTWNoWTZ5aTE1Zmc?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-07T07:43:00+00:00",
-            "id": "730faed5752995fedf22",
-            "type": "earnings",
-            "age_hours": 5.35,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-07T13:03:57.919595+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BBDC_US_EQ",
-        "isin": "US06759L1035",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "VERI",
-      "name": "Veritone",
-      "asset_type": "stock",
-      "price": 0.7464,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 2.82408,
-      "volume": 4403244.0,
-      "dollar_volume": 3286581.3216,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
-        "source": "AD HOC NEWS",
-        "published_at": "2026-10-07T03:51:44+00:00",
-        "id": "d8d88683215446c04a90",
-        "type": "financing",
-        "age_hours": 9.2,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
-            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
-            "source": "AD HOC NEWS",
-            "published_at": "2026-10-07T03:51:44+00:00",
-            "id": "d8d88683215446c04a90",
-            "type": "financing",
-            "age_hours": 9.2,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-07T13:03:57.919595+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "VERI_US_EQ",
-        "isin": "US92347M1009",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "ISPC",
-      "name": "iSpecimen",
-      "asset_type": "stock",
-      "price": 1.07,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.90477,
-      "volume": 102636.0,
-      "dollar_volume": 109820.52,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdER4LS1qT0QtdWVvbjhSUGpvTm9rc1Zoa1ZqaTlGTXpzb3RxWndQVTFHVWpHdldDdl9OaDRHQ0FkNHVWemtiWlVOVUU0dEZjZ2h4aXBUM1FlSVVjZlRlRHc0T0xocnZwMW95RjA0c25EWUVYWWV3ZzFmY0ZxN0p0SEFNSkkwNDNYYUg5aENLSEVnY2N1SEMwU1VYbS0xZ3lGVzlpRGlKV0ZobkZtbGZj?oc=5",
-        "source": "AD HOC NEWS",
-        "published_at": "2026-10-07T02:05:04+00:00",
-        "id": "e1ad12667fdd127b8d48",
-        "type": "financing",
-        "age_hours": 10.98,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
-            "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdER4LS1qT0QtdWVvbjhSUGpvTm9rc1Zoa1ZqaTlGTXpzb3RxWndQVTFHVWpHdldDdl9OaDRHQ0FkNHVWemtiWlVOVUU0dEZjZ2h4aXBUM1FlSVVjZlRlRHc0T0xocnZwMW95RjA0c25EWUVYWWV3ZzFmY0ZxN0p0SEFNSkkwNDNYYUg5aENLSEVnY2N1SEMwU1VYbS0xZ3lGVzlpRGlKV0ZobkZtbGZj?oc=5",
-            "source": "AD HOC NEWS",
-            "published_at": "2026-10-07T02:05:04+00:00",
-            "id": "e1ad12667fdd127b8d48",
-            "type": "financing",
-            "age_hours": 10.98,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-07T13:03:57.919595+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "ISPC_US_EQ",
-        "isin": "US45032V3069",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "CHMI",
       "name": "Cherry Hill Mortgage Investment",
       "asset_type": "stock",
@@ -873,54 +1061,62 @@
       }
     },
     {
-      "symbol": "HYPE",
-      "name": "Hyperliquid",
-      "coin_id": "hyperliquid",
-      "asset_type": "crypto",
-      "price": 79.9,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -3.56772,
-      "change_1h": -1.0695,
-      "acceleration": -0.9208449999999999,
-      "discovery_route": "catalyst_first",
-      "change_7d": 3.8161,
-      "volume": 912784243.0,
-      "dollar_volume": 912784243.0,
-      "market_cap": 17781296373,
-      "session": "24/7",
-      "observed_at": "2026-10-07T10:07:30.000Z",
-      "source": "coingecko EUR",
-      "history_status": "OK",
+      "ticker": "SECZ",
+      "name": "Securitize",
+      "asset_type": "stock",
+      "price": 12.15,
+      "currency": "USD",
+      "eur_per_unit": 0.8942000269889832,
+      "change": -4.255319,
+      "volume": 148821.0,
+      "dollar_volume": 1808175.1500000001,
+      "session": "REGULAR",
+      "observed_at": "2026-10-07T13:32:41+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "market_snapshot",
+      "history_status": "STALE",
+      "data_issue": "No fresh completed regular-session bar.",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:32:48.423532+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CEPT_US_EQ",
+        "isin": "US81517B1017",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
       "catalyst": {
-        "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-10-07T05:05:00+00:00",
-        "id": "05dea1e180011a48d478",
-        "type": "crypto_event",
-        "age_hours": 5.07,
+        "title": "Securitize partners with LG CNS on tokenized assets in Korea By Investing.com - Investing.com Nigeria",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZ2NIUjZ5V0liWHdtdm13ZkxhOWYtZ0pGaWc3QmllY09qWnJxVHJpNDVoMXNwZG1CaUZQQ0xXX1lKRHl0YldFQ3RlRTkxMXlOcWhNMWtGbW9QNkhhM1dzS2NfaHgtUzRaVFdjZnpoUEpVLUZKVHlyWTdDNUV3c0dpR3FrZjRPOFJPcHc3UkdGdGgyZktfdXNyWUMtUXNSaTBTdGVhaGNuYnhXWVhXbDVyVkxHZDRXRndvNU9xYzNB?oc=5",
+        "source": "Investing.com Nigeria",
+        "published_at": "2026-10-06T16:09:29+00:00",
+        "id": "aa43ef19e3029ffbc6c0",
+        "type": "partnership",
+        "age_hours": 21.4,
         "confidence": "headline_evidence",
-        "adverse": true,
+        "adverse": false,
         "event_at": null,
         "event_date_source": null,
         "event_date_precision": null,
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+        "summary": "Securitize partners with LG CNS on tokenized assets in Korea By Investing.com - Investing.com Nigeria",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-10-07T05:05:00+00:00",
-            "id": "05dea1e180011a48d478",
-            "type": "crypto_event",
-            "age_hours": 5.07,
+            "title": "Securitize partners with LG CNS on tokenized assets in Korea By Investing.com - Investing.com Nigeria",
+            "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZ2NIUjZ5V0liWHdtdm13ZkxhOWYtZ0pGaWc3QmllY09qWnJxVHJpNDVoMXNwZG1CaUZQQ0xXX1lKRHl0YldFQ3RlRTkxMXlOcWhNMWtGbW9QNkhhM1dzS2NfaHgtUzRaVFdjZnpoUEpVLUZKVHlyWTdDNUV3c0dpR3FrZjRPOFJPcHc3UkdGdGgyZktfdXNyWUMtUXNSaTBTdGVhaGNuYnhXWVhXbDVyVkxHZDRXRndvNU9xYzNB?oc=5",
+            "source": "Investing.com Nigeria",
+            "published_at": "2026-10-06T16:09:29+00:00",
+            "id": "aa43ef19e3029ffbc6c0",
+            "type": "partnership",
+            "age_hours": 21.4,
             "confidence": "headline_evidence",
-            "adverse": true,
+            "adverse": false,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -931,46 +1127,158 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
+        "headlines_checked": 12
       },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official public broker catalogue."
-      },
-      "history_samples": 47,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 81.14369804795318,
-      "support": 80.24234615414247,
-      "momentum_pct": -0.2645407581025272,
-      "reference_price": 80.80515466832759,
-      "extension_pct": 0.06336012263461477,
-      "resistance_1": 81.35942355381916,
-      "resistance_2": 81.67209910014829,
-      "structure_source": "CoinGecko historical price samples; broker chart confirmation required",
-      "structure_observed_at": "2026-10-07T09:00:00+00:00",
       "score": {
-        "score": 2,
+        "score": 0,
         "label": "Research rank only",
-        "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
+        "reasons": []
       },
       "qualification": {
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "Matched headline contains an adverse event; no bullish catalyst credit.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "No fresh completed regular-session bar.",
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
-        "trade_assessment_status": "REJECTED",
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "DATA_UNAVAILABLE",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "BEEM",
+      "name": "Beam Global",
+      "asset_type": "stock",
+      "price": 1.09,
+      "currency": "USD",
+      "eur_per_unit": 0.8942000269889832,
+      "change": -1.8018,
+      "volume": 470965.0,
+      "dollar_volume": 513351.85000000003,
+      "session": "REGULAR",
+      "observed_at": "2026-10-07T13:31:43+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "market_snapshot",
+      "history_status": "STALE",
+      "data_issue": "No fresh completed regular-session bar.",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:32:48.423532+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "EVSI_US_EQ",
+        "isin": "US07373B1098",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "catalyst": {
+        "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - markets.businessinsider.com",
+        "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOYWlGR2hmRVJlRVBLMU1TSHNtSWRqWkU1N3c1VVpqc3h5d2JKQllLUXc2aGZzSW5EOUZjR0ZaaE1ER2lFRmt0OVdNbFFYZ2RtZExnMmhLalVQSTdJOXRPYVAyem1OMnB2V1VnS0hsb1Vqc3JxYmo3Zm5KcDFSRTYtTWM2YlJOZGJyeGItY2JCWjVpOXAta3BzR1RUdDVtdXJxdUQ1T3ZMLTlpVjVSeURiLWJ0SFZxV1g5ckpDbG1tMjFCUjJ1amc5cTdmWGdQX0pManUzeXhEVVpRRzZZMDdUZXRNd3o0a09Mc0tZSUhROHRybXRnZDFVWC1Jdm96a19vd1pVYkxpSnVJTnZMd0ptN2gxbEwzSWdGQVZ2Qkg2Y0hnVEtacnFDM3JoNk9UMG9pS1V4d1RGcllHekFKeDJKdFhEdVdHc1VKMnFGbQ?oc=5",
+        "source": "markets.businessinsider.com",
+        "published_at": "2026-10-07T11:56:58+00:00",
+        "id": "a44efc77a22140dcfe9d",
+        "type": "merger",
+        "age_hours": 1.61,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - markets.businessinsider.com",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - markets.businessinsider.com",
+            "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOYWlGR2hmRVJlRVBLMU1TSHNtSWRqWkU1N3c1VVpqc3h5d2JKQllLUXc2aGZzSW5EOUZjR0ZaaE1ER2lFRmt0OVdNbFFYZ2RtZExnMmhLalVQSTdJOXRPYVAyem1OMnB2V1VnS0hsb1Vqc3JxYmo3Zm5KcDFSRTYtTWM2YlJOZGJyeGItY2JCWjVpOXAta3BzR1RUdDVtdXJxdUQ1T3ZMLTlpVjVSeURiLWJ0SFZxV1g5ckpDbG1tMjFCUjJ1amc5cTdmWGdQX0pManUzeXhEVVpRRzZZMDdUZXRNd3o0a09Mc0tZSUhROHRybXRnZDFVWC1Jdm96a19vd1pVYkxpSnVJTnZMd0ptN2gxbEwzSWdGQVZ2Qkg2Y0hnVEtacnFDM3JoNk9UMG9pS1V4d1RGcllHekFKeDJKdFhEdVdHc1VKMnFGbQ?oc=5",
+            "source": "markets.businessinsider.com",
+            "published_at": "2026-10-07T11:56:58+00:00",
+            "id": "a44efc77a22140dcfe9d",
+            "type": "merger",
+            "age_hours": 1.61,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Beam Global to Acquire Drone Inspector ScoutDI AS - TipRanks",
+            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT0F4ZUpSLTBZYklWc1hRblRHMXNtZ2pHRzA5RGE2YlN3MHR5ZTlvb0trRGhXeUloX1BXTXM2RGdrV0hKclNSZkY2ZkpUYVhwWWJmdzNZSng1ZFZEQ19iczJwZ1RiTmp1QTcxUXhhMHdPZjlIM2NFM2J4R1BNZS1ud3dqbGNWeUs4dFVvVjFNZk5oRGNRLV9oWm55OFhFcUphLVdF?oc=5",
+            "source": "TipRanks",
+            "published_at": "2026-10-07T11:39:09+00:00",
+            "id": "e70f23067d493d7df8ad",
+            "type": "merger",
+            "age_hours": 1.9,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Beam Global To Acquire Norwegian Drone Company ScoutDI For $24 Million In Cash & Stock - TradingView",
+            "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNNmIyMFpJSjNGV29EbmVNQVFkNENnc1lkeXgtRXRQWTZsc0xkenJId3RBQnNVSVVYYWRma2dsR1FrN3ZGSHVyTlRwXzM5b05sOEM3dDRuX2V2ejJKQ01tMkxhcHpQZW1tRmJwT1VPdi0zaXJvajVDX3c4YW9kS2stbHpGX0xqTXpINTR0NXJrcHNrclNOZkRTMm1wYTdnVFlycnV5OTJoOHRyTVR5N0ViNkh5bERuN1Uwa2xYRmk5d0M1M2pLWUhNbDFrYlpJdmtBWllRdkQwUzlvaVNJajdySTJQaG95U0li?oc=5",
+            "source": "TradingView",
+            "published_at": "2026-10-07T11:30:01+00:00",
+            "id": "a93608939ab750da98b1",
+            "type": "merger",
+            "age_hours": 2.06,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 5
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "No fresh completed regular-session bar.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "DATA_UNAVAILABLE",
         "research_only": true
       }
     },
@@ -1169,24 +1477,130 @@
         "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "HYPE",
+      "name": "Hyperliquid",
+      "coin_id": "hyperliquid",
+      "asset_type": "crypto",
+      "price": 79.9,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -3.56772,
+      "change_1h": -1.0695,
+      "acceleration": -0.9208449999999999,
+      "discovery_route": "catalyst_first",
+      "change_7d": 3.8161,
+      "volume": 912784243.0,
+      "dollar_volume": 912784243.0,
+      "market_cap": 17781296373,
+      "session": "24/7",
+      "observed_at": "2026-10-07T10:07:30.000Z",
+      "source": "coingecko EUR",
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
+        "source": "CoinMarketCap",
+        "published_at": "2026-10-07T05:05:00+00:00",
+        "id": "05dea1e180011a48d478",
+        "type": "crypto_event",
+        "age_hours": 5.07,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
+            "source": "CoinMarketCap",
+            "published_at": "2026-10-07T05:05:00+00:00",
+            "id": "05dea1e180011a48d478",
+            "type": "crypto_event",
+            "age_hours": 5.07,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-07T10:09:02.002398+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official public broker catalogue."
+      },
+      "history_samples": 47,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 81.14369804795318,
+      "support": 80.24234615414247,
+      "momentum_pct": -0.2645407581025272,
+      "reference_price": 80.80515466832759,
+      "extension_pct": 0.06336012263461477,
+      "resistance_1": 81.35942355381916,
+      "resistance_2": 81.67209910014829,
+      "structure_source": "CoinGecko historical price samples; broker chart confirmation required",
+      "structure_observed_at": "2026-10-07T09:00:00+00:00",
+      "score": {
+        "score": 2,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Matched headline contains an adverse event; no bullish catalyst credit.",
+          "No positive recent momentum; a daily gain alone is insufficient."
+        ],
+        "plan": null,
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
     }
   ],
   "changed_signals": [
-    "stock:DDS"
+    "stock:VRSN",
+    "stock:WS",
+    "stock:AMRX",
+    "stock:SECZ",
+    "stock:BEEM"
   ],
   "invalidated_signals": [
-    "stock:AMRX"
+    "stock:BBDC"
   ],
   "health": {
     "stocks": {
-      "session": "CLOSED",
+      "session": "REGULAR",
       "status": "PARTIAL",
       "universe": "US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings",
       "listed_assets": 5948,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7823,
-        "snapshot_records": 7823,
+        "provider_total": 7834,
+        "snapshot_records": 7834,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1196,8 +1610,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 188,
-        "matched_events": 9,
-        "matched_assets": 9,
+        "matched_events": 10,
+        "matched_assets": 10,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1214,12 +1628,12 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5898,
-      "discovered_candidates": 9,
-      "selected_candidates": 9,
-      "deferred_candidates": 0,
-      "unquoted_listings": 50,
-      "chart_failures": 0
+      "listed_snapshot_records": 5899,
+      "discovered_candidates": 211,
+      "selected_candidates": 30,
+      "deferred_candidates": 181,
+      "unquoted_listings": 49,
+      "chart_failures": 29
     },
     "crypto": {
       "candle_providers": {
@@ -1264,20 +1678,20 @@
     "brokers": {
       "stock": {
         "status": "OK",
-        "records": 17054,
+        "records": 17052,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-07T13:07:23.807939+00:00",
+        "checked_at": "2026-10-07T13:32:48.423532+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-07T13:07:23.807939+00:00"
+        "checked_at": "2026-10-07T13:32:48.423532+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 42,
       "failed": 0
     }
   },
