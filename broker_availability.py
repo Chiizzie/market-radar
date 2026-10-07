@@ -1,5 +1,6 @@
 """Read-only public broker catalogues. Listing evidence is not account permission."""
 import json
+import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -9,6 +10,7 @@ import requests
 from catalyst_scanner import company_name
 
 T212_URL = 'https://www.trading212.com/trading-instruments/invest'
+T212_API_URL = 'https://live.trading212.com/api/v0/equity/metadata/instruments'
 RH_URL = 'https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/'
 
 
@@ -70,6 +72,21 @@ class BrokerAvailability:
     def load(self):
         def fetch(key, url, parser):
             try:
+                if key == 'stock' and (os.environ.get('TRADING212_API_KEY') or os.environ.get('TRADING212_API_SECRET')):
+                    api_key, api_secret = os.environ.get('TRADING212_API_KEY'), os.environ.get('TRADING212_API_SECRET')
+                    if not api_key or not api_secret:
+                        raise ValueError('Both metadata credentials are required')
+                    response = requests.get(T212_API_URL, auth=(api_key, api_secret), timeout=(5, 25))
+                    response.raise_for_status()
+                    data = response.json()
+                    if not isinstance(data, list) or not data:
+                        raise ValueError('Invalid instrument metadata')
+                    rows = [{'shortName': r.get('shortName'), 'fullName': r.get('name'), 'description': r.get('name'),
+                             'ticker': r.get('ticker'), 'type': r.get('type'), 'currency': r.get('currencyCode'),
+                             'isin': r.get('isin'), 'maxOpenLong': r.get('maxOpenQuantity', 0),
+                             'maxTrade': r.get('maxOpenQuantity', 0)} for r in data]
+                    return key, rows, {'status': 'OK', 'records': len(rows), 'source': T212_API_URL,
+                                       'checked_at': self.now.isoformat(), 'evidence': 'authenticated_metadata'}
                 urls = [url, 'https://www.trading212.com/en/trading-instruments/invest'] if key == 'stock' else [url]
                 failure = None
                 for candidate_url in urls:
@@ -108,9 +125,12 @@ class BrokerAvailability:
         if rows is None:
             result['reason'] = 'Broker catalogue unavailable; availability is unknown.'
             return result
+        if self.health.get(kind, {}).get('evidence') == 'authenticated_metadata':
+            result['source'] = T212_API_URL
+            result['note'] = 'Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.'
         symbol = asset.get('ticker', asset.get('symbol', '')).upper()
         if kind == 'stock':
-            matches = [r for r in rows if r.get('shortName', '').replace('.', '-') == symbol.replace('.', '-')
+            matches = [r for r in rows if (r.get('shortName') or '').replace('.', '-') == symbol.replace('.', '-')
                        and r.get('type') == 'STOCK' and r.get('currency') == 'USD']
             if not matches:
                 return {**result, 'status': 'NOT_LISTED', 'reason': 'No matching USD stock in the public Invest catalogue.'}
@@ -130,4 +150,5 @@ class BrokerAvailability:
                 return {**result, 'status': 'NOT_LISTED', 'reason': 'Not listed on the official Robinhood Europe spot-crypto support page.'}
             if identity(rows[symbol]) != identity(asset.get('name', '')):
                 return {**result, 'reason': 'Crypto symbol matches but name differs; identity needs verification.'}
-        return {**result, 'status': 'LISTED_PUBLIC', 'reason': 'Asset identity matched the official public broker catalogue.'}
+        return {**result, 'status': 'LISTED_API' if result['source'] == T212_API_URL else 'LISTED_PUBLIC',
+                'reason': 'Asset identity matched the official broker instrument catalogue.'}

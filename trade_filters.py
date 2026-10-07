@@ -34,10 +34,12 @@ def classify_setup(asset, catalyst, now=None):
         reasons.append('News retrieval failed; catalyst could not be assessed.')
     elif catalyst.get('adverse'):
         reasons.append('Matched headline contains an adverse event; no bullish catalyst credit.')
-    elif catalyst.get('event_time_status') != 'REPORTED_RECENT':
+    elif catalyst.get('headlines') and catalyst.get('event_time_status') != 'REPORTED_RECENT':
         reasons.append(catalyst.get('timing_reason', 'Underlying event date is unverified.'))
     elif not catalyst.get('eligible_for_points'):
         reasons.append('No qualifying fresh catalyst found; this does not mean the asset identity is missing.')
+    elif catalyst.get('event_time_status') != 'REPORTED_RECENT':
+        reasons.append('Underlying event date is unverified.')
     required = ['price', 'entry', 'support', 'resistance_1', 'resistance_2', 'momentum_pct', 'extension_pct', 'dollar_volume']
     missing = [k for k in required if not isinstance(asset.get(k), (int, float)) or not math.isfinite(asset[k])]
     if missing:
@@ -62,7 +64,7 @@ def classify_setup(asset, catalyst, now=None):
     if reasons:
         return result
     broker = asset.get('broker_availability', {})
-    if broker.get('status') != 'LISTED_PUBLIC':
+    if broker.get('status') not in {'LISTED_PUBLIC', 'LISTED_API'}:
         return {**result, 'status': 'BROKER_UNVERIFIED' if broker.get('status') not in {'NOT_LISTED', 'RESTRICTED'} else 'BROKER_UNAVAILABLE',
                 'reasons': [broker.get('reason', 'Broker eligibility is unverified.')]}
     if asset['extension_pct'] > 3 or (price / entry - 1) * 100 > 0.75:

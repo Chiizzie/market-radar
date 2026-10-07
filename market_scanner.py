@@ -182,7 +182,7 @@ class MarketScanner:
         if getattr(self, 'brokers', None):
             for item in movers:
                 item['broker_availability'] = self.brokers.check(item)
-        movers.sort(key=lambda x: (x.get('broker_availability', {}).get('status') == 'LISTED_PUBLIC', bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
+        movers.sort(key=lambda x: (x.get('broker_availability', {}).get('status') in {'LISTED_PUBLIC', 'LISTED_API'}, bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
         chart_candidates = [x for x in movers[:MAX_CANDIDATES] if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}][:5]
         for item in movers:
             if item.get('broker_availability', {}).get('status') in {'NOT_LISTED', 'RESTRICTED'}:
