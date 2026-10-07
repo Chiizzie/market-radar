@@ -47,6 +47,7 @@ class DiscoveryTests(unittest.TestCase):
 
     def test_commentary_and_drilling_not_material_regulatory_event(self):
         for title in ['Penguin Solutions: Buy Before Earnings As The Growth Runway Extends',
+                      'Penguin Solutions Looks Cheaper As Acquisition Synergy Hopes Meet A Sharp Pullback',
                       'Penguin Solutions Completes Phase 3 Drilling Program',
                       'Can Penguin Solutions Lead Again This Earnings Season?']:
             c=classify_catalyst([{'title':title,'published_at':NOW.isoformat(),'source':'News','link':'https://example.com'}], 'PENG','Penguin Solutions', now=NOW)

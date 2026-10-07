@@ -24,6 +24,16 @@ NEGATIVE = r'\b(misses|cuts (?:its )?guidance|lawsuit|sues|charges|hack|exploit|
 COMMENTARY = r'\b(price prediction|should you buy|stocks? to buy|buy before|looks? undervalued|earnings outlook|earnings season|growth runway|investment narrative|change.{0,30}narrative|highs and lows|technical analysis|could (?:rise|surge)|may (?:rise|surge)|rumou?r|speculation|possible|potential|total assets of)\b'
 EVENT_ASSERTION = r'\b(reports?|announces?|raises?|cuts?|beats?|miss(?:es)?|results|transcript|presentation|acquires?|acquisition|merger|takeover|approv(?:es?|al)|launch(?:es)?|unveils?|partners? with|partnership|signs?|wins?|awarded|contract|agreement|upgrade|mainnet|burn|unlock|offering|bankruptcy|dilution|trial|clinical)\b'
 
+ASSERTIONS = {
+    'earnings': r'\b(reports?|announces?|posts?|results|earnings call|raises?|cuts?|beats?|misses)\b',
+    'merger': r'\b(acquires?|agrees?|announces?|completes?|signs?|approved|approves?|acquisition proposal|merger vote|buyout offer)\b',
+    'product_launch': r'\b(launches?|unveils?|rolls? out|releases? new)\b',
+    'regulatory': r'\b(announces?|reports?|approval|approved|approves?|sues|lawsuit|trial success|trial failure|phase (?:3|iii) (?:success|failure)|FDA aligns)\b',
+    'partnership': r'\b(announces?|signs?|wins?|awarded|partners? with|expands?|enters?|secures?|launches?|extends?)\b',
+    'crypto_event': r'\b(announces?|launches?|upgrade|mainnet|token burn|token unlock|ETF approval)\b',
+    'financing': r'\b(announces?|offering results|launches?|prices?|files?|proposes?|bankruptcy|dilution)\b',
+}
+
 
 
 def utcnow():
@@ -92,7 +102,7 @@ def classify_catalyst(headlines, symbol='', name='', asset_type='stock', now=Non
         if '?' in title or re.search(COMMENTARY, title, re.I) or not re.search(EVENT_ASSERTION, title, re.I):
             continue
         category = next((k for k, pattern in EVENTS.items() if re.search(pattern, title, re.I)), None)
-        if not category:
+        if not category or not re.search(ASSERTIONS[category], title, re.I):
             continue
         if category == 'regulatory' and re.search(r'phase (3|iii)', title, re.I) and not re.search(r'FDA|clinical|trial|drug', title, re.I):
             continue
