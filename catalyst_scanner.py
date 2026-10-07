@@ -33,6 +33,8 @@ def fetch_news(query, limit=12):
         response = requests.get(GOOGLE_NEWS_URL.format(query=quote_plus(query)), timeout=12)
         response.raise_for_status()
         feed = feedparser.parse(response.content)
+        if feed.bozo and not feed.entries:
+            raise ValueError('Invalid news feed')
         items = []
         for e in feed.entries[:limit]:
             published = None
@@ -104,4 +106,4 @@ def find_catalyst_for_asset(query, asset_type='stock', name='', now=None):
     if items and items[0].get('retrieval_error'):
         return {'type': 'unverified', 'summary': 'News provider unavailable: ' + items[0]['retrieval_error'],
                 'eligible_for_points': False, 'headlines': [], 'freshness': 'UNAVAILABLE', 'retrieval_status': 'FAILED'}
-    return {**classify_catalyst(items, query, name, asset_type, now), 'retrieval_status': 'OK'}
+    return {**classify_catalyst(items, query, name, asset_type, now), 'retrieval_status': 'OK', 'headlines_checked': len(items)}

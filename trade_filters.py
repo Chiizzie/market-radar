@@ -25,9 +25,24 @@ def classify_setup(asset, catalyst, now=None):
             reasons.append('Price data is stale or future-dated.')
     except (KeyError, TypeError, ValueError):
         reasons.append('Price timestamp missing.')
+    history_status = asset.get('history_status')
+    if history_status in {'FAILED', 'STALE', 'NOT_REQUESTED'}:
+        result['status'] = 'NOT_EVALUATED' if history_status == 'NOT_REQUESTED' else 'DATA_UNAVAILABLE'
+        reasons.append(asset.get('data_issue', 'Historical data unavailable.'))
+    if catalyst.get('retrieval_status') == 'FAILED':
+        result['status'] = 'DATA_UNAVAILABLE'
+        reasons.append('News retrieval failed; catalyst could not be assessed.')
+    elif catalyst.get('adverse'):
+        reasons.append('Matched headline contains an adverse event; no bullish catalyst credit.')
+    elif not catalyst.get('eligible_for_points'):
+        reasons.append('No qualifying fresh catalyst found; this does not mean the asset identity is missing.')
     required = ['price', 'entry', 'support', 'resistance_1', 'resistance_2', 'momentum_pct', 'extension_pct', 'dollar_volume']
-    if any(not isinstance(asset.get(k), (int, float)) or not math.isfinite(asset[k]) for k in required):
-        reasons.append('Insufficient intraday structure, liquidity or target evidence.')
+    missing = [k for k in required if not isinstance(asset.get(k), (int, float)) or not math.isfinite(asset[k])]
+    if missing:
+        result['missing_fields'] = missing
+        reasons.extend(asset.get('structure_issues', []))
+        if not asset.get('structure_issues') and history_status not in {'FAILED', 'STALE', 'NOT_REQUESTED'}:
+            reasons.append('Missing or invalid fields: ' + ', '.join(missing) + '.')
         return result
     price, entry, support = asset['price'], asset['entry'], asset['support']
     tp1, tp2 = asset['resistance_1'], asset['resistance_2']
@@ -40,14 +55,12 @@ def classify_setup(asset, catalyst, now=None):
         reasons.append('No positive recent momentum; a daily gain alone is insufficient.')
     if asset['asset_type'] == 'stock' and asset.get('volume_spike', 0) < 1.5:
         reasons.append('Recent same-time relative volume is below 1.5x.')
-    if not catalyst.get('eligible_for_points'):
-        reasons.append('Fresh material catalyst is unverified or adverse.')
     if not support < entry < tp1 < tp2:
         reasons.append('No ordered support, trigger and two historical resistance targets.')
     if reasons:
         return result
     if asset['extension_pct'] > 3 or (price / entry - 1) * 100 > 0.75:
-        return {**result, 'status': EXTENDED, 'reasons': ['Price is extended above recent VWAP or the entry trigger.']}
+        return {**result, 'status': EXTENDED, 'reasons': ['Price is extended above the recent average or the entry trigger.']}
     # Stop below observed support; targets come from history, never invented multiples.
     stop = support * 0.999
     executable_entry = max(price, entry)
