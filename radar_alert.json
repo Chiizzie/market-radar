@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-07T11:16:00.579211+00:00",
+  "generated_at": "2026-10-07T11:34:19.122716+00:00",
   "potential_signals": [
     {
       "ticker": "BKSY",
@@ -384,6 +384,101 @@
       }
     },
     {
+      "ticker": "DDS",
+      "name": "Dillard's",
+      "asset_type": "stock",
+      "price": 655.25,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -5.76688,
+      "volume": 204526.0,
+      "dollar_volume": 134015661.5,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Dilution adjustment of Dillard's, Inc. \u2013 AMEX:DDS - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdxdE1zRUlvVVJ3TkdReF9hUVJTLWNNbWp3aUk4UFN0dWdQT29wZ0tnenphYlN3Xy1pWWhvRlFnUmpucXgxcDZuaThzT2YwNUhlVXJJdnVnSGNKRDR0TFAyT2RHZ0N3Yk9LbTVpUkZ2X2xzbDBmYU82MzZ5QWs2czJuWlE3bkFyTDNxS0RIa3BlUmFkcTBKdA?oc=5",
+        "source": "TradingView",
+        "published_at": "2026-10-06T23:39:21+00:00",
+        "id": "b2e7d994accae8943ad8",
+        "type": "financing",
+        "age_hours": 11.91,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Dilution adjustment of Dillard's, Inc. \u2013 AMEX:DDS - TradingView",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Dilution adjustment of Dillard's, Inc. \u2013 AMEX:DDS - TradingView",
+            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdxdE1zRUlvVVJ3TkdReF9hUVJTLWNNbWp3aUk4UFN0dWdQT29wZ0tnenphYlN3Xy1pWWhvRlFnUmpucXgxcDZuaThzT2YwNUhlVXJJdnVnSGNKRDR0TFAyT2RHZ0N3Yk9LbTVpUkZ2X2xzbDBmYU82MzZ5QWs2czJuWlE3bkFyTDNxS0RIa3BlUmFkcTBKdA?oc=5",
+            "source": "TradingView",
+            "published_at": "2026-10-06T23:39:21+00:00",
+            "id": "b2e7d994accae8943ad8",
+            "type": "financing",
+            "age_hours": 11.91,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-10-07T11:33:42.603419+00:00",
+        "source": "https://www.trading212.com/trading-instruments/invest",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Broker catalogue unavailable; availability is unknown."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "RCAT",
       "name": "Red Cat Holdings",
       "asset_type": "stock",
@@ -521,101 +616,6 @@
             "id": "bf782982624983fc749f",
             "type": "regulatory",
             "age_hours": 21.44,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "BA",
-      "name": "Boeing Company (The)",
-      "asset_type": "stock",
-      "price": 189.82,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -1.50477,
-      "volume": 7691016.0,
-      "dollar_volume": 1459908657.12,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Boeing Wins $14.7 Billion PAC-3 Seeker Production Contract From Lockheed - Boeing (NYSE:BA) - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYk1ESFhmWUxTMDZHWTBhLXY3NDF6QW9QQUVpSGxmTHV6NGlQSXAtdmhJbVJ4SlBPM3oyR2ViVmpLRzdJeU51OEdWNUEyYWVJdjhvQkZZc0puNWpfZTNkQzhRNnVUUTdUSmw4b1RXSjdGbHZqZ3g1amtOM1IwNi1Sbktoa3Jub0p0dHE3NXU3dXBCRXQ1MklqS2xRcmw2X3JLV1hub2ZUU1Y4UVJqeUZvcDVZZ3dGYlhiOEZiRnN1b0E2UldtWVJJWg?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-06T11:18:39+00:00",
-        "id": "573c691551bee38e2b6e",
-        "type": "partnership",
-        "age_hours": 22.84,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Boeing Wins $14.7 Billion PAC-3 Seeker Production Contract From Lockheed - Boeing (NYSE:BA) - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Boeing Wins $14.7 Billion PAC-3 Seeker Production Contract From Lockheed - Boeing (NYSE:BA) - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYk1ESFhmWUxTMDZHWTBhLXY3NDF6QW9QQUVpSGxmTHV6NGlQSXAtdmhJbVJ4SlBPM3oyR2ViVmpLRzdJeU51OEdWNUEyYWVJdjhvQkZZc0puNWpfZTNkQzhRNnVUUTdUSmw4b1RXSjdGbHZqZ3g1amtOM1IwNi1Sbktoa3Jub0p0dHE3NXU3dXBCRXQ1MklqS2xRcmw2X3JLV1hub2ZUU1Y4UVJqeUZvcDVZZ3dGYlhiOEZiRnN1b0E2UldtWVJJWg?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-06T11:18:39+00:00",
-            "id": "573c691551bee38e2b6e",
-            "type": "partnership",
-            "age_hours": 22.84,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1227,99 +1227,6 @@
       }
     },
     {
-      "ticker": "POLA",
-      "name": "Polar Power",
-      "asset_type": "stock",
-      "price": 1.14,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.869564,
-      "volume": 60177.0,
-      "dollar_volume": 68601.78,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Solidion Technology (NASDAQ: STI) Sees no Basis to Increase Its Offer to Polar Power, Inc. (NASDAQ: POLA) in Response to Board Rejection of All-Cash Asset Acquisition Proposal - Lelezard",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaEI1WW5zT2puSUctdXhDUFBvaUtfck5SWnBaTVByR3lxY2EwU2dydTlTTDlwdXkyRTNGNlYxNUh0RzRMYlJKa1IwbnFYVmRyZ0RJR1M5ZDY4cDFlQVNGVXlzR1poMFozejNxV3VLZ0R0N3dKdFdnS1RBc3ZqcHROSTc3YU15MnFhMTNxQ2FweEJDT29ZY0V0bV9GWFVPNEFVZG10R1FmU3E3QVZJYU5jdEZHTUtoRnNR?oc=5",
-        "source": "Lelezard",
-        "published_at": "2026-10-06T12:12:15+00:00",
-        "id": "28cfb4b91b978e14f05a",
-        "type": "merger",
-        "age_hours": 22.77,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Solidion Technology (NASDAQ: STI) Sees no Basis to Increase Its Offer to Polar Power, Inc. (NASDAQ: POLA) in Response to Board Rejection of All-Cash Asset Acquisition Proposal - Lelezard",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Solidion Technology (NASDAQ: STI) Sees no Basis to Increase Its Offer to Polar Power, Inc. (NASDAQ: POLA) in Response to Board Rejection of All-Cash Asset Acquisition Proposal - Lelezard",
-            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaEI1WW5zT2puSUctdXhDUFBvaUtfck5SWnBaTVByR3lxY2EwU2dydTlTTDlwdXkyRTNGNlYxNUh0RzRMYlJKa1IwbnFYVmRyZ0RJR1M5ZDY4cDFlQVNGVXlzR1poMFozejNxV3VLZ0R0N3dKdFdnS1RBc3ZqcHROSTc3YU15MnFhMTNxQ2FweEJDT29ZY0V0bV9GWFVPNEFVZG10R1FmU3E3QVZJYU5jdEZHTUtoRnNR?oc=5",
-            "source": "Lelezard",
-            "published_at": "2026-10-06T12:12:15+00:00",
-            "id": "28cfb4b91b978e14f05a",
-            "type": "merger",
-            "age_hours": 22.77,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:58:44.787085+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "STI",
       "name": "Solidion Technology",
       "asset_type": "stock",
@@ -1413,50 +1320,50 @@
       }
     },
     {
-      "ticker": "RIV",
-      "name": "RiverNorth Opportunities Fund",
+      "ticker": "POLA",
+      "name": "Polar Power",
       "asset_type": "stock",
-      "price": 10.47,
+      "price": 1.14,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": 0.673083,
-      "volume": 60850.0,
-      "dollar_volume": 637099.5,
+      "change": -0.869564,
+      "volume": 60177.0,
+      "dollar_volume": 68601.78,
       "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:02+00:00",
+      "observed_at": "2026-10-06T20:00:00+00:00",
       "source": "Yahoo broad exchange snapshot",
       "discovery_route": "catalyst_first",
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "RIV's Rights Offering Results (NYSE:RIV) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB0V2xFUEtNVEJOd2hoWmlwdVljVTRSWW9MNDI4c3g2YmJpelpvc0ZTUDhqYkVpT21wcVlfRzFQVm02MG1BMDZrVUE1QVNzYU04dnlxaEkxY1F5TFBzaEppMjdJbjRxbElra2RyV3NXampJZmNJVFM1dA?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-06T11:23:01+00:00",
-        "id": "4b932bab5a5f42593c76",
-        "type": "financing",
+        "title": "Solidion Technology (NASDAQ: STI) Sees no Basis to Increase Its Offer to Polar Power, Inc. (NASDAQ: POLA) in Response to Board Rejection of All-Cash Asset Acquisition Proposal - Lelezard",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaEI1WW5zT2puSUctdXhDUFBvaUtfck5SWnBaTVByR3lxY2EwU2dydTlTTDlwdXkyRTNGNlYxNUh0RzRMYlJKa1IwbnFYVmRyZ0RJR1M5ZDY4cDFlQVNGVXlzR1poMFozejNxV3VLZ0R0N3dKdFdnS1RBc3ZqcHROSTc3YU15MnFhMTNxQ2FweEJDT29ZY0V0bV9GWFVPNEFVZG10R1FmU3E3QVZJYU5jdEZHTUtoRnNR?oc=5",
+        "source": "Lelezard",
+        "published_at": "2026-10-06T12:12:15+00:00",
+        "id": "28cfb4b91b978e14f05a",
+        "type": "merger",
         "age_hours": 22.77,
         "confidence": "headline_evidence",
-        "adverse": true,
+        "adverse": false,
         "event_at": null,
         "event_date_source": null,
         "event_date_precision": null,
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "RIV's Rights Offering Results (NYSE:RIV) - Seeking Alpha",
+        "summary": "Solidion Technology (NASDAQ: STI) Sees no Basis to Increase Its Offer to Polar Power, Inc. (NASDAQ: POLA) in Response to Board Rejection of All-Cash Asset Acquisition Proposal - Lelezard",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "RIV's Rights Offering Results (NYSE:RIV) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB0V2xFUEtNVEJOd2hoWmlwdVljVTRSWW9MNDI4c3g2YmJpelpvc0ZTUDhqYkVpT21wcVlfRzFQVm02MG1BMDZrVUE1QVNzYU04dnlxaEkxY1F5TFBzaEppMjdJbjRxbElra2RyV3NXampJZmNJVFM1dA?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-06T11:23:01+00:00",
-            "id": "4b932bab5a5f42593c76",
-            "type": "financing",
+            "title": "Solidion Technology (NASDAQ: STI) Sees no Basis to Increase Its Offer to Polar Power, Inc. (NASDAQ: POLA) in Response to Board Rejection of All-Cash Asset Acquisition Proposal - Lelezard",
+            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaEI1WW5zT2puSUctdXhDUFBvaUtfck5SWnBaTVByR3lxY2EwU2dydTlTTDlwdXkyRTNGNlYxNUh0RzRMYlJKa1IwbnFYVmRyZ0RJR1M5ZDY4cDFlQVNGVXlzR1poMFozejNxV3VLZ0R0N3dKdFdnS1RBc3ZqcHROSTc3YU15MnFhMTNxQ2FweEJDT29ZY0V0bV9GWFVPNEFVZG10R1FmU3E3QVZJYU5jdEZHTUtoRnNR?oc=5",
+            "source": "Lelezard",
+            "published_at": "2026-10-06T12:12:15+00:00",
+            "id": "28cfb4b91b978e14f05a",
+            "type": "merger",
             "age_hours": 22.77,
             "confidence": "headline_evidence",
-            "adverse": true,
+            "adverse": false,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -1472,7 +1379,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
+        "checked_at": "2026-10-07T10:58:44.787085+00:00",
         "source": "https://www.trading212.com/trading-instruments/invest",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
@@ -1490,7 +1397,7 @@
           "US regular market session is closed.",
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "missing_fields": [
@@ -1707,11 +1614,11 @@
     }
   ],
   "changed_signals": [
-    "stock:VERI",
-    "crypto:starknet"
+    "stock:DDS"
   ],
   "invalidated_signals": [
-    "stock:PENG"
+    "stock:BA",
+    "stock:RIV"
   ],
   "health": {
     "stocks": {
@@ -1732,15 +1639,15 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 147,
-        "matched_events": 16,
-        "matched_assets": 16,
+        "matched_events": 15,
+        "matched_assets": 15,
         "failed_queries": 0,
         "errors": [],
         "scope": "Bounded broad event-news searches; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5898,
-      "discovered_candidates": 16,
-      "selected_candidates": 16,
+      "discovered_candidates": 15,
+      "selected_candidates": 15,
       "deferred_candidates": 0,
       "unquoted_listings": 48,
       "chart_failures": 0
@@ -1770,7 +1677,7 @@
       "stock": {
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/invest",
-        "checked_at": "2026-10-07T11:15:20.937206+00:00",
+        "checked_at": "2026-10-07T11:33:42.603419+00:00",
         "error": "HTTPError",
         "http_status": 403
       },
@@ -1778,11 +1685,11 @@
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-07T11:15:20.937206+00:00"
+        "checked_at": "2026-10-07T11:33:42.603419+00:00"
       }
     },
     "news": {
-      "checked": 28,
+      "checked": 27,
       "failed": 0
     }
   },
