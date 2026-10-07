@@ -70,14 +70,25 @@ class BrokerAvailability:
     def load(self):
         def fetch(key, url, parser):
             try:
-                response = requests.get(url, timeout=(5, 25))
-                response.raise_for_status()
-                rows = parser(response.text)
+                urls = [url, 'https://www.trading212.com/en/trading-instruments/invest'] if key == 'stock' else [url]
+                failure = None
+                for candidate_url in urls:
+                    try:
+                        response = requests.get(candidate_url, headers={'User-Agent': 'MarketRadar/2 (public instrument catalogue research)', 'Accept': 'text/html'}, timeout=(5, 25))
+                        response.raise_for_status()
+                        rows = parser(response.text)
+                        url = candidate_url
+                        break
+                    except (requests.RequestException, ValueError, KeyError) as exc:
+                        failure = exc
+                else:
+                    raise failure
                 return key, rows, {'status': 'OK', 'records': len(rows), 'source': url,
                                    'checked_at': self.now.isoformat()}
             except Exception as exc:
                 return key, None, {'status': 'UNVERIFIED', 'source': url,
-                                   'checked_at': self.now.isoformat(), 'error': type(exc).__name__}
+                                   'checked_at': self.now.isoformat(), 'error': type(exc).__name__,
+                                   'http_status': getattr(getattr(exc, 'response', None), 'status_code', None)}
         with ThreadPoolExecutor(max_workers=2) as pool:
             futures = [pool.submit(fetch, 'stock', T212_URL, parse_t212),
                        pool.submit(fetch, 'crypto', RH_URL, parse_robinhood)]
