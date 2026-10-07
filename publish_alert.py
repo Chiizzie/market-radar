@@ -25,6 +25,11 @@ def material_change(previous, current):
     if previous.get('catalyst', {}).get('id') != current.get('catalyst', {}).get('id'):
         return True
     old, new = previous.get('qualification', {}).get('plan') or {}, current['qualification'].get('plan') or {}
+    if not old and not new:
+        # News watches have no executable plan; stable news must not wake the task every scan.
+        return False
+    if bool(old) != bool(new):
+        return True
     for field in ['entry_trigger', 'stop_loss', 'tp1', 'tp2']:
         if old.get(field) is None or new.get(field) is None:
             return True

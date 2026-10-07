@@ -8,11 +8,6 @@ import requests
 import yfinance as yf
 
 logger = logging.getLogger(__name__)
-# Explicit liquid universe; avoid silently scanning only the first 100 alphabetic names.
-STOCKS = ['AAPL','MSFT','GOOGL','AMZN','NVDA','TSLA','META','AMD','AVGO','MRVL','ARM','SMCI',
-          'MSTR','COIN','PLTR','MP','MU','QCOM','INTC','ORCL','NFLX','CRM','ADBE','PYPL',
-          'JPM','V','MA','WMT','COST','LLY','UNH','XOM','CVX','CAT','GE','BA','RDDT','HOOD',
-          'SOFI','RKLB','ASTS','IONQ','RGTI','QBTS','HIMS','CRWD','NET','SNOW']
 MAX_CANDIDATES = 12
 
 
@@ -59,69 +54,88 @@ def structure(frame):
 class MarketScanner:
     def __init__(self, now=None):
         self.now = now or datetime.now(timezone.utc)
-        self.sp500_tickers = STOCKS
         self.health = {'stocks': {}, 'crypto': {}, 'errors': []}
 
     def scan_stocks(self):
+        from discovery import listed_universe, broad_quotes, discover_catalysts, select_stock_candidates, finite
+        from concurrent.futures import ThreadPoolExecutor
         session = stock_session(self.now)
-        self.health['stocks']['session'] = session
-        if session != 'REGULAR':
-            self.health['stocks']['status'] = 'SKIPPED_MARKET_CLOSED'
+        universe, directory_errors = listed_universe()
+        # Discovery keeps running while the exchange is closed; stale prices cannot be entries.
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            quote_future = pool.submit(broad_quotes)
+            news_future = pool.submit(discover_catalysts, universe, 'stock', self.now)
+            quotes, quote_health = quote_future.result()
+            catalysts, news_health = news_future.result()
+        selected, selection_health = select_stock_candidates(quotes, universe, catalysts, session == 'REGULAR', self.now)
+        complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings']
+        self.health['stocks'] = {'session': session, 'status': 'OK' if complete else 'PARTIAL',
+                                 'universe': 'US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings',
+                                 'listed_assets': len(universe), 'directory_errors': directory_errors,
+                                 'snapshots': quote_health, 'catalyst_discovery': news_health, **selection_health}
+        if not universe:
+            self.health['stocks']['status'] = 'DATA_UNAVAILABLE'
             return []
-        movers = []
-        try:
-            fx = yf.Ticker('USDEUR=X').history(period='1d', interval='5m')
-            fx_age = (self.now - fx.index[-1].to_pydatetime()).total_seconds()
-            eur_per_usd = float(fx['Close'].iloc[-1]) if 0 <= fx_age <= 1800 else None
-        except Exception:
-            eur_per_usd = None
-        failed, observed = 0, 0
-        for symbol in self.sp500_tickers:
+        eur_per_usd = None
+        if session == 'REGULAR' and selected:
+            try:
+                fx = yf.Ticker('USDEUR=X').history(period='1d', interval='5m')
+                fx_age = (self.now - fx.index[-1].to_pydatetime()).total_seconds()
+                eur_per_usd = float(fx['Close'].iloc[-1]) if 0 <= fx_age <= 1800 else None
+            except Exception:
+                pass
+        def analyse(candidate):
+            symbol, q = candidate['ticker'], candidate['quote']
+            stamp = finite(q.get('regularMarketTime'))
+            item = {'ticker': symbol, 'name': candidate['name'], 'asset_type': 'stock',
+                    'price': finite(q.get('regularMarketPrice'), None), 'currency': 'USD', 'eur_per_unit': eur_per_usd,
+                    'change': finite(q.get('regularMarketChangePercent')), 'volume': finite(q.get('regularMarketVolume')),
+                    'dollar_volume': finite(q.get('regularMarketPrice')) * finite(q.get('regularMarketVolume')),
+                    'session': session, 'observed_at': datetime.fromtimestamp(stamp, timezone.utc).isoformat() if stamp else None,
+                    'source': q.get('snapshot_source', 'Yahoo broad exchange snapshot'), 'discovery_route': candidate['discovery_route'],
+                    'history_status': 'NOT_REQUESTED', 'data_issue': 'Regular-session chart checks wait for the market to open.'}
+            if candidate['catalyst']:
+                item['catalyst'] = candidate['catalyst']
+            if session != 'REGULAR':
+                return item
             try:
                 history = yf.Ticker(symbol).history(period='5d', interval='5m', prepost=False, auto_adjust=True)
                 if history.empty:
-                    raise ValueError('empty data')
+                    raise ValueError('empty history')
                 history = history.loc[history.index + pd.Timedelta(minutes=5) <= self.now].dropna()
-                if len(history) < 30:
-                    continue
+                if history.empty:
+                    raise ValueError('no completed bars')
                 stamp = history.index[-1].to_pydatetime() + timedelta(minutes=5)
                 if not 0 <= (self.now - stamp).total_seconds() <= 900:
-                    continue
-                observed += 1
-                price = float(history['Close'].iloc[-1])
-                current_day = history.index[-1].date()
-                today = history.loc[[t.date() == current_day for t in history.index]]
-                prior = history.loc[[t.date() < current_day for t in history.index]]
-                if prior.empty or len(today) < 4:
-                    continue
-                change = (price / float(prior['Close'].iloc[-1]) - 1) * 100
-                # Compare the latest 15-minute volume with that exact slot on prior sessions.
+                    item.update(history_status='STALE', data_issue='No fresh completed regular-session bar.')
+                    return item
+                day = history.index[-1].date()
+                today = history.loc[[t.date() == day for t in history.index]]
+                prior = history.loc[[t.date() < day for t in history.index]]
                 last = today.iloc[-3:]
                 slots = {t.time() for t in last.index}
                 matching = prior.loc[[t.time() in slots for t in prior.index]]
                 baseline = matching.groupby(matching.index.date)['Volume'].sum().mean()
-                relative = float(last['Volume'].sum() / baseline) if baseline > 0 else 0
-                if change < 2 and relative < 1.5:
-                    continue
-                daily_vol = int(today['Volume'].sum())
-                info = yf.Ticker(symbol).info
-                movers.append({'ticker': symbol, 'name': info.get('shortName', symbol), 'asset_type': 'stock',
-                               'price': price, 'currency': 'USD', 'eur_per_unit': eur_per_usd,
-                               'change': change, 'volume': daily_vol, 'dollar_volume': float((today['Close'] * today['Volume']).sum()),
-                               'volume_spike': relative, 'session': session, 'observed_at': stamp.isoformat(),
-                               'source': 'yfinance completed 5-minute bars', 'history_status': 'OK', **structure(history)})
+                item.update(price=float(history['Close'].iloc[-1]), observed_at=stamp.isoformat(),
+                            volume=int(today['Volume'].sum()), dollar_volume=float((today['Close']*today['Volume']).sum()),
+                            volume_spike=float(last['Volume'].sum()/baseline) if baseline > 0 else 0,
+                            history_status='OK', source='yfinance completed 5-minute bars', **structure(history))
+                item.pop('data_issue', None)
             except Exception as exc:
-                failed += 1
-                logger.warning('Stock data failed for %s (%s)', symbol, type(exc).__name__)
-        self.health['stocks'].update(status='OK' if observed else 'DATA_UNAVAILABLE', fresh_assets=observed, failed_assets=failed)
-        movers.sort(key=lambda x: x['volume_spike'], reverse=True)
-        return movers[:MAX_CANDIDATES]
+                item.update(history_status='FAILED', data_issue='Stock chart failed: ' + type(exc).__name__)
+            return item
+        with ThreadPoolExecutor(max_workers=3) as pool:
+            candidates = list(pool.map(analyse, selected))
+        self.health['stocks']['chart_failures'] = sum(x['history_status'] in {'FAILED', 'STALE'} for x in candidates)
+        if self.health['stocks']['chart_failures'] or selection_health['deferred_candidates']:
+            self.health['stocks']['status'] = 'PARTIAL'
+        return candidates
 
     def scan_crypto(self):
         try:
             response = requests.get('https://api.coingecko.com/api/v3/coins/markets', params={
-                'vs_currency': 'eur', 'order': 'market_cap_desc', 'per_page': 100,
-                'sparkline': 'false', 'price_change_percentage': '24h,7d'}, timeout=20)
+                'vs_currency': 'eur', 'order': 'market_cap_desc', 'per_page': 250,
+                'sparkline': 'false', 'price_change_percentage': '1h,24h,7d'}, timeout=20)
             response.raise_for_status()
             data = response.json()
             if not isinstance(data, list):
@@ -130,24 +144,37 @@ class MarketScanner:
             self.health['crypto']['status'] = 'DATA_UNAVAILABLE'
             self.health['errors'].append('Crypto markets retrieval failed: ' + type(exc).__name__)
             return []
+        from discovery import discover_catalysts, finite
+        liquid = [x for x in data if finite(x.get('total_volume')) >= 10_000_000]
+        identities = {x['symbol'].upper(): x['name'] for x in liquid}
+        # Ambiguous duplicate symbols are not eligible for name-based news matching.
+        duplicates = {s for s in identities if sum(x['symbol'].upper() == s for x in liquid) > 1}
+        for symbol in duplicates:
+            identities.pop(symbol)
+        news_hits, news_health = discover_catalysts(identities, 'crypto', self.now)
         movers = []
-        for coin in data:
+        for coin in liquid:
             try:
                 volume = float(coin.get('total_volume') or 0)
                 change = float(coin.get('price_change_percentage_24h') or 0)
-                if volume < 10_000_000 or change < 2:
+                hour_change = finite(coin.get('price_change_percentage_1h_in_currency'))
+                catalyst = news_hits.get(coin['symbol'].upper())
+                acceleration = hour_change - change / 24
+                if not catalyst and not (hour_change >= .3 and acceleration >= .15):
                     continue
                 price = float(coin['current_price'])
                 item = {'symbol': coin['symbol'].upper(), 'name': coin['name'], 'coin_id': coin['id'],
                         'asset_type': 'crypto', 'price': price, 'currency': 'EUR', 'eur_per_unit': 1,
-                        'change_24h': change, 'change_7d': coin.get('price_change_percentage_7d_in_currency'),
+                        'change_24h': change, 'change_1h': hour_change, 'acceleration': acceleration, 'discovery_route': 'catalyst_first' if catalyst else 'recent_momentum', 'change_7d': coin.get('price_change_percentage_7d_in_currency'),
                         'volume': volume, 'dollar_volume': volume, 'market_cap': coin.get('market_cap'),
                         'session': '24/7', 'observed_at': coin.get('last_updated'), 'source': 'coingecko EUR',
                         'history_status': 'NOT_REQUESTED', 'data_issue': 'Chart not requested: five-chart budget per scan.'}
+                if catalyst:
+                    item['catalyst'] = catalyst
                 movers.append(item)
             except (ValueError, KeyError, TypeError):
                 continue
-        movers.sort(key=lambda x: x['volume'], reverse=True)
+        movers.sort(key=lambda x: (bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
         # Keep free API request budget bounded. Missing history must never become actionable.
         chart_failures = 0
         history_successes = 0
@@ -187,5 +214,5 @@ class MarketScanner:
         self.health['crypto'].update(status=('DATA_UNAVAILABLE' if not data else 'PARTIAL' if chart_failures or not_requested or stale else 'OK'),
                                      screened_assets=len(data), price_records=len(returned), history_requested=min(5, len(movers)),
                                      history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
-                                     universe='Top 100 by market cap; history enriched for 5 liquid movers')
+                                     catalyst_discovery=news_health, universe='Top 250 by market cap; liquid assets screened for fresh news or recent momentum; 5 chart requests')
         return movers[:MAX_CANDIDATES]

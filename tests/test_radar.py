@@ -62,10 +62,16 @@ class SessionTests(unittest.TestCase):
         self.assertEqual(stock_session(NOW), 'REGULAR')
         self.assertEqual(stock_session(datetime(2026, 11, 2, 14, 0, tzinfo=timezone.utc)), 'CLOSED')
 
-    def test_closed_stocks_make_no_data_requests(self):
-        with patch('market_scanner.yf.Ticker') as ticker:
-            s = MarketScanner(datetime(2026, 10, 7, 7, tzinfo=timezone.utc))
-            self.assertEqual(s.scan_stocks(), [])
+    def test_closed_stocks_discover_news_without_fetching_charts(self):
+        catalyst = {'headlines': [{'title': 'Penguin Solutions reports earnings'}], 'id': 'event1', 'eligible_for_points': True}
+        with patch('discovery.listed_universe', return_value=({'PENG': 'Penguin Solutions'}, [])), \
+             patch('discovery.broad_quotes', return_value=([], {'pagination_complete': True, 'errors': []})), \
+             patch('discovery.discover_catalysts', return_value=({'PENG': catalyst}, {'failed_queries': 0})), \
+             patch('market_scanner.yf.Ticker') as ticker:
+            scanner = MarketScanner(datetime(2026, 10, 7, 7, tzinfo=timezone.utc))
+            result = scanner.scan_stocks()
+            self.assertEqual(result[0]['ticker'], 'PENG')
+            self.assertEqual(result[0]['discovery_route'], 'catalyst_first')
             ticker.assert_not_called()
 
     def test_no_fabricated_targets(self):
@@ -147,13 +153,13 @@ class DataReportingTests(unittest.TestCase):
         from radar import build_market_snapshot
         coins = [{'id': f'coin-{i}', 'symbol': f'C{i}', 'name': f'Coin {i}', 'current_price': 100,
                   'total_volume': 60_000_000 - i * 1_000_000, 'price_change_percentage_24h': 3,
-                  'last_updated': NOW.isoformat()} for i in range(6)]
+                  'last_updated': NOW.isoformat(), 'price_change_percentage_1h_in_currency': 1} for i in range(6)]
         prices = [[int((NOW - timedelta(hours=48-i)).timestamp()*1000), 100] for i in range(48)]
         market = Mock(); market.json.return_value = coins
         chart = Mock(); chart.json.return_value = {'prices': prices}
         failed = Mock(); failed.status_code = 429
         failed.raise_for_status.side_effect = requests.HTTPError(response=failed)
-        with patch('market_scanner.requests.get', side_effect=[market, chart, chart, chart, chart, failed]) as get:
+        with patch('discovery.discover_catalysts', return_value=({}, {})), patch('market_scanner.requests.get', side_effect=[market, chart, chart, chart, chart, failed]) as get:
             scanner = MarketScanner(NOW)
             items = scanner.scan_crypto()
             self.assertEqual(get.call_count, 6)

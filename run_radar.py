@@ -8,7 +8,7 @@ from radar import MarketScanner, collect_stock_candidates, collect_crypto_candid
 
 
 def build_potential_signals(stocks, crypto):
-    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY'}]
+    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH'}]
 
 
 def main():
