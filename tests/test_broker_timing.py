@@ -1,5 +1,6 @@
 import json
 import unittest
+from unittest.mock import patch, Mock
 from datetime import datetime, timezone
 from broker_availability import BrokerAvailability, parse_t212, parse_robinhood
 from catalyst_scanner import classify_catalyst
@@ -19,6 +20,20 @@ class BrokerTests(unittest.TestCase):
                     'type': 'STOCK', 'currency': 'USD', 'isin': 'US7069151055', 'maxOpenLong': 100, 'maxTrade': 100}
         self.b.catalogues = {'stock': [self.row], 'crypto': {'ZRO': 'LayerZero'}}
         self.stock = {'ticker': 'PENG', 'name': 'Penguin Solutions', 'asset_type': 'stock'}
+
+    def test_metadata_api_is_read_only_and_credentials_never_in_result(self):
+        response = Mock()
+        response.json.return_value = [{'ticker': 'SGH_US_EQ', 'shortName': 'PENG', 'name': 'Penguin Solutions',
+                                      'currencyCode': 'USD', 'type': 'STOCK', 'isin': 'US7069151055', 'maxOpenQuantity': 100}]
+        with patch.dict('os.environ', {'TRADING212_API_KEY': 'example-key', 'TRADING212_API_SECRET': 'example-secret'}), \
+             patch('broker_availability.requests.get', return_value=response) as get:
+            b = BrokerAvailability(NOW).load()
+        calls = [c for c in get.call_args_list if 'trading212' in c.args[0]]
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0].args[0], 'https://live.trading212.com/api/v0/equity/metadata/instruments')
+        result = b.check(self.stock)
+        self.assertEqual(result['status'], 'LISTED_API')
+        self.assertNotIn('example-secret', json.dumps(b.health) + json.dumps(result))
 
     def test_renamed_instrument_matches_company_and_symbol(self):
         result = self.b.check(self.stock)
