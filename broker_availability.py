@@ -73,6 +73,7 @@ class BrokerAvailability:
         def fetch(key, url, parser):
             try:
                 if key == 'stock' and (os.environ.get('TRADING212_API_KEY') or os.environ.get('TRADING212_API_SECRET')):
+                    url = T212_API_URL
                     api_key, api_secret = os.environ.get('TRADING212_API_KEY'), os.environ.get('TRADING212_API_SECRET')
                     if not api_key or not api_secret:
                         raise ValueError('Both metadata credentials are required')
@@ -105,6 +106,7 @@ class BrokerAvailability:
             except Exception as exc:
                 return key, None, {'status': 'UNVERIFIED', 'source': url,
                                    'checked_at': self.now.isoformat(), 'error': type(exc).__name__,
+                                   'api_credentials_configured': bool(os.environ.get('TRADING212_API_KEY') and os.environ.get('TRADING212_API_SECRET')),
                                    'http_status': getattr(getattr(exc, 'response', None), 'status_code', None)}
         with ThreadPoolExecutor(max_workers=2) as pool:
             futures = [pool.submit(fetch, 'stock', T212_URL, parse_t212),

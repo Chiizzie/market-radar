@@ -5,7 +5,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from broker_availability import BrokerAvailability
-from radar import MarketScanner, collect_stock_candidates, collect_crypto_candidates, build_market_snapshot, telegram
+from radar import MarketScanner, collect_stock_candidates, collect_crypto_candidates, build_market_snapshot, telegram, irish_time
 
 
 def build_potential_signals(stocks, crypto):
@@ -24,6 +24,8 @@ def main():
     payload = {'schema_version': 2, 'generated_at': datetime.now(timezone.utc).isoformat(),
                'scan_interval_minutes': 15, 'stocks': stocks, 'crypto': crypto,
                'health': scanner.health, 'potential_signals': build_potential_signals(stocks, crypto),
+               'tracking_prices': scanner.tracking_prices + stocks + crypto,
+               'display_timezone': 'Europe/Dublin', 'generated_at_display': irish_time(datetime.now(timezone.utc)),
                'classifications': dict(Counter(x['qualification']['status'] for x in stocks + crypto)),
                'notice': 'Scores rank research only. ACTIONABLE NOW is provisional and requires live price, broker availability, spread, fees and source verification.'}
     payload['telegram_delivery'] = telegram(build_market_snapshot(stocks, crypto, scanner.health))

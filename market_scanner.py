@@ -55,6 +55,7 @@ class MarketScanner:
     def __init__(self, now=None):
         self.now = now or datetime.now(timezone.utc)
         self.health = {'stocks': {}, 'crypto': {}, 'errors': []}
+        self.tracking_prices = []
 
     def scan_stocks(self):
         from discovery import listed_universe, broad_quotes, discover_catalysts, select_stock_candidates, finite
@@ -67,8 +68,11 @@ class MarketScanner:
             news_future = pool.submit(discover_catalysts, universe, 'stock', self.now)
             quotes, quote_health = quote_future.result()
             catalysts, news_health = news_future.result()
+        self.tracking_prices.extend({'asset_type': 'stock', 'ticker': q.get('symbol'), 'price': q.get('regularMarketPrice'), 'currency': 'USD',
+                                     'observed_at': datetime.fromtimestamp(q['regularMarketTime'], timezone.utc).isoformat()}
+                                    for q in quotes if q.get('regularMarketTime') and q.get('symbol') in universe)
         selected, selection_health = select_stock_candidates(quotes, universe, catalysts, session == 'REGULAR', self.now)
-        complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings']
+        complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings'] and not news_health.get('primary_sources', {}).get('failures')
         self.health['stocks'] = {'session': session, 'status': 'OK' if complete else 'PARTIAL',
                                  'universe': 'US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings',
                                  'listed_assets': len(universe), 'directory_errors': directory_errors,
@@ -150,6 +154,8 @@ class MarketScanner:
             self.health['errors'].append('Crypto markets retrieval failed: ' + type(exc).__name__)
             return []
         from discovery import discover_catalysts, finite
+        self.tracking_prices.extend({'asset_type': 'crypto', 'coin_id': x.get('id'), 'symbol': x.get('symbol', '').upper(),
+                                     'price': x.get('current_price'), 'currency': 'EUR', 'observed_at': x.get('last_updated')} for x in data)
         liquid = [x for x in data if finite(x.get('total_volume')) >= 10_000_000]
         identities = {x['symbol'].upper(): x['name'] for x in liquid}
         # Ambiguous duplicate symbols are not eligible for name-based news matching.
@@ -173,7 +179,7 @@ class MarketScanner:
                         'change_24h': change, 'change_1h': hour_change, 'acceleration': acceleration, 'discovery_route': 'catalyst_first' if catalyst else 'recent_momentum', 'change_7d': coin.get('price_change_percentage_7d_in_currency'),
                         'volume': volume, 'dollar_volume': volume, 'market_cap': coin.get('market_cap'),
                         'session': '24/7', 'observed_at': coin.get('last_updated'), 'source': 'coingecko EUR',
-                        'history_status': 'NOT_REQUESTED', 'data_issue': 'Chart not requested: five-chart budget per scan.'}
+                        'history_status': 'NOT_REQUESTED', 'data_issue': 'Chart not requested: candidate limit or broker restriction.'}
                 if catalyst:
                     item['catalyst'] = catalyst
                 movers.append(item)
@@ -183,48 +189,34 @@ class MarketScanner:
             for item in movers:
                 item['broker_availability'] = self.brokers.check(item)
         movers.sort(key=lambda x: (x.get('broker_availability', {}).get('status') in {'LISTED_PUBLIC', 'LISTED_API'}, bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
-        chart_candidates = [x for x in movers[:MAX_CANDIDATES] if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}][:5]
+        chart_candidates = [x for x in movers[:MAX_CANDIDATES] if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'} and x['symbol'] not in duplicates]
         for item in movers:
             if item.get('broker_availability', {}).get('status') in {'NOT_LISTED', 'RESTRICTED'}:
                 item['data_issue'] = 'Chart skipped: no supported broker listing for this instrument.'
-        # Keep free API request budget bounded. Missing history must never become actionable.
+        from crypto_candles import CandleProvider
+        provider = CandleProvider(self.now).load() if chart_candidates else None
         chart_failures = 0
         history_successes = 0
         for item in chart_candidates:
             try:
-                response = requests.get(f"https://api.coingecko.com/api/v3/coins/{item['coin_id']}/market_chart",
-                                        params={'vs_currency': 'eur', 'days': 2}, timeout=15)
-                response.raise_for_status()
-                prices = response.json()['prices']
-                frame = pd.DataFrame(prices, columns=['timestamp', 'Close'])
-                frame.index = pd.to_datetime(frame['timestamp'], unit='ms', utc=True)
-                # Hourly snapshots are not OHLC candles. Use observed prices only and label it.
-                frame = frame.loc[frame.index <= self.now - timedelta(minutes=5)]
-                frame['High'] = frame['Low'] = frame['Close']
-                frame['Volume'] = 1
-                if frame.empty:
-                    raise ValueError('empty history')
-                item.pop('data_issue', None)
-                item['history_status'] = 'OK'
-                history_successes += 1
+                frame, evidence = provider.candles(item)
                 item.update(structure(frame))
-                item['structure_source'] = 'CoinGecko historical price samples; broker chart confirmation required'
-                item['structure_observed_at'] = frame.index[-1].isoformat()
-                if (self.now - frame.index[-1].to_pydatetime()).total_seconds() > 7200:
-                    item['history_status'] = 'STALE'
-                    item['data_issue'] = 'Latest historical sample is over two hours old.'
-                    for key in ['entry','support','resistance_1','resistance_2','momentum_pct','extension_pct']:
-                        item.pop(key, None)
+                item.update(history_status='OK', price=float(frame.Close.iloc[-1]),
+                            observed_at=(frame.index[-1] + pd.Timedelta(minutes=5)).isoformat(),
+                            structure_observed_at=(frame.index[-1] + pd.Timedelta(minutes=5)).isoformat(),
+                            structure_source=evidence['provider'] + ' completed 5-minute EUR OHLCV',
+                            candle_evidence=evidence, source=evidence['provider'] + ' EUR candles')
+                item.pop('data_issue', None)
+                history_successes += 1
             except Exception as exc:
                 chart_failures += 1
-                item['history_status'] = 'FAILED'
-                response_status = getattr(getattr(exc, 'response', None), 'status_code', None)
-                item['data_issue'] = 'Chart request failed: ' + (f'HTTP {response_status}' if response_status else type(exc).__name__)
+                item.update(history_status='FAILED', data_issue='Candle retrieval failed: ' + str(exc))
+        self.health['crypto']['candle_providers'] = {'pairs': {k: len(v) for k,v in provider.pairs.items()}, 'errors': provider.errors} if provider else {}
         returned = movers[:MAX_CANDIDATES]
         not_requested = sum(x['history_status'] == 'NOT_REQUESTED' for x in returned)
         stale = sum(x['history_status'] == 'STALE' for x in returned)
         self.health['crypto'].update(status=('DATA_UNAVAILABLE' if not data else 'PARTIAL' if chart_failures or not_requested or stale else 'OK'),
                                      screened_assets=len(data), price_records=len(returned), history_requested=len(chart_candidates),
                                      history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
-                                     catalyst_discovery=news_health, universe='Top 250 by market cap; liquid assets screened for fresh news or recent momentum; 5 chart requests')
+                                     catalyst_discovery=news_health, universe='Top 250 by market cap; up to 12 candidates; every broker-eligible selected candidate gets an EUR candle attempt')
         return movers[:MAX_CANDIDATES]

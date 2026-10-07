@@ -3,6 +3,7 @@ import logging
 import os
 from datetime import datetime, timezone
 import requests
+from zoneinfo import ZoneInfo
 from market_scanner import MarketScanner
 from catalyst_scanner import find_catalyst_for_asset
 from scoring import score_setup
@@ -51,9 +52,33 @@ def collect_crypto_candidates(scanner):
     return enrich(scanner.scan_crypto(), getattr(scanner, 'brokers', None))
 
 
-def build_market_snapshot(stocks, crypto, health=None):
+def irish_time(value):
+    if not value:
+        return 'unverified'
+    if isinstance(value, str) and len(value) == 10:
+        return value + ' (date only)'
+    try:
+        d = datetime.fromisoformat(value.replace('Z', '+00:00')) if isinstance(value, str) else value
+        if d.tzinfo is None:
+            return 'unverified'
+        return d.astimezone(ZoneInfo('Europe/Dublin')).strftime('%d %b %H:%M') + ' Irish time'
+    except (TypeError, ValueError):
+        return 'unverified'
+
+
+def build_market_snapshot(stocks, crypto, health=None, now=None):
     from collections import Counter
-    lines = ['MARKET RADAR V2 — ' + datetime.now(timezone.utc).strftime('%H:%M UTC')]
+    actions = [x for x in stocks + crypto if x['qualification']['status'] == 'ACTIONABLE NOW']
+    watches = [x for x in stocks + crypto if x['qualification']['status'] == 'WATCH FOR ENTRY']
+    symbols = lambda items: ', '.join(x.get('ticker', x.get('symbol')) for x in items)
+    headline = ('🚨 CHECK NOW — ' + symbols(actions) + ' | provisional setup') if actions else ('👀 WATCH FOR ENTRY — ' + symbols(watches)) if watches else 'NO ACTIONABLE SETUP'
+    lines = [headline, 'MARKET RADAR — ' + irish_time(now or datetime.now(timezone.utc))]
+    for item in actions + watches:
+        p = item['qualification'].get('plan')
+        if p:
+            lines.append(f"{item.get('ticker', item.get('symbol'))}: EUR entry {p['entry']:.4f} | SL {p['stop_loss']:.4f} | TP1 {p['tp1']:.4f} | TP2 {p['tp2']:.4f}")
+    if actions:
+        lines.append('Check live broker price, spread and source before acting.')
     if health:
         h = health['crypto']
         stock = health['stocks']
@@ -68,7 +93,7 @@ def build_market_snapshot(stocks, crypto, health=None):
         lines.append('Broker catalogues: ' + ', '.join(k + ' ' + v['status'] for k, v in health['brokers'].items()))
     lines.append('Discovery: broad stock snapshots + fresh events; crypto recent momentum + events.')
     blocks = []
-    ordered = sorted(stocks + crypto, key=lambda x: (x['qualification']['status'] in {'ACTIONABLE NOW', 'WATCH FOR ENTRY'}, x['qualification']['status'] == 'CATALYST WATCH', x.get('catalyst', {}).get('published_at', ''), x.get('score', {}).get('score', 0)), reverse=True)
+    ordered = sorted(stocks + crypto, key=lambda x: ({'ACTIONABLE NOW': 3, 'WATCH FOR ENTRY': 2, 'CATALYST WATCH': 1}.get(x['qualification']['status'], 0), x['qualification']['status'] == 'CATALYST WATCH', x.get('catalyst', {}).get('published_at', ''), x.get('score', {}).get('score', 0)), reverse=True)
     watch_symbols = [x.get('ticker', x.get('symbol')) for x in ordered if x['qualification']['status'] == 'CATALYST WATCH']
     if watch_symbols:
         lines.append('Catalyst watch: ' + ', '.join(watch_symbols))
@@ -78,11 +103,11 @@ def build_market_snapshot(stocks, crypto, health=None):
         change = item.get('change', item.get('change_24h', 0))
         quote_text = f"{item.get('currency', '')} {item['price']:.6g}" if item.get('price') is not None else 'Quote unavailable'
         block = [f"{symbol} ({item.get('name', symbol)}): {q['status']}",
-                 f"{quote_text} | move {change:+.2f}% | observed {item.get('observed_at') or 'snapshot timestamp unavailable'}"]
+                 f"{quote_text} | move {change:+.2f}% | observed {irish_time(item.get('observed_at'))}"]
         broker = item.get('broker_availability', {})
         block.append('Broker: ' + broker.get('broker', 'unverified') + ' | ' + broker.get('status', 'UNVERIFIED'))
         if c.get('title'):
-            block.extend([c['summary'], f"{c['source']} | Published {c['published_at']} | Event: {c.get('event_at') or 'unverified'}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
+            block.extend([c['summary'], f"{c['source']} | Published {irish_time(c['published_at'])} | Event: {irish_time(c.get('event_at'))}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
             # Full source URLs remain in the structured scan; long RSS redirects would hide other leads.
         elif c.get('retrieval_status') == 'FAILED':
             block.append(c['summary'])
