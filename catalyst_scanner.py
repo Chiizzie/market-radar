@@ -1,98 +1,103 @@
+"""Entity-bound, dated headline evidence. RSS evidence is not fact verification."""
+import hashlib
 import logging
-from typing import Dict, List, Optional
+import re
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from urllib.parse import quote_plus
 
 import feedparser
+import requests
 
 logger = logging.getLogger(__name__)
-
-GOOGLE_NEWS_URL = "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
-
-KEYWORD_CATEGORIES = {
-    "earnings": ["earnings", "guidance", "quarterly results", "results beat", "revenue beat"],
-    "merger": ["merger", "acquisition", "takeover", "buyout", "deal"],
-    "product_launch": ["product launch", "launch", "release", "rollout", "new feature"],
-    "regulatory": ["regulation", "approval", "fda", "sec", "warning"],
-    "partnership": ["partnership", "alliance", "collaboration", "deal with", "investment"],
-    "supply_chain": ["supply chain", "chip shortage", "shipment", "factory", "production"],
-    "macro": ["fed", "rate cut", "inflation", "recession", "growth", "jobs report"],
-    "crypto_event": ["etf", "upgrade", "fork", "tokenomics", "partnership", "launch", "mainnet"],
+GOOGLE_NEWS_URL = 'https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en'
+EVENTS = {
+    'earnings': r'\b(earnings|quarterly results|raises? (?:its )?(?:guidance|revenue|forecast)|revenue target|cuts? (?:its )?guidance)\b',
+    'merger': r'\b(acquires?|acquisition|merger|takeover|buyout)\b',
+    'product_launch': r'\b(launches?|unveils?|rolls? out|releases? new)\b',
+    'regulatory': r'\b(approves?|approval|lawsuit|sues|sec charges|fda)\b',
+    'partnership': r'\b(partnership|partners? with|collaboration|contract|agreement)\b',
+    'crypto_event': r'\b(mainnet|upgrade|hard fork|token burn|token unlock|etf approval)\b',
+    'financing': r'\b(offering|dilution|convertible notes|at.the.market|bankruptcy)\b',
 }
+NEGATIVE = r'\b(misses|cuts|lawsuit|sues|charges|hack|exploit|offering|dilution|bankruptcy|token unlock)\b'
+COMMENTARY = r'\b(price prediction|should you buy|stocks? to buy|technical analysis|could (?:rise|surge)|may (?:rise|surge)|rumou?r|possible|potential)\b'
 
 
-def fetch_news(query: str, limit: int = 5) -> List[Dict]:
-    target = GOOGLE_NEWS_URL.format(query=quote_plus(query))
+def utcnow():
+    return datetime.now(timezone.utc)
+
+
+def fetch_news(query, limit=12):
     try:
-        feed = feedparser.parse(target)
+        response = requests.get(GOOGLE_NEWS_URL.format(query=quote_plus(query)), timeout=12)
+        response.raise_for_status()
+        feed = feedparser.parse(response.content)
         items = []
-        for entry in feed.entries[:limit]:
-            title = getattr(entry, "title", "") or ""
-            link = getattr(entry, "link", "") or ""
-            summary = getattr(entry, "summary", "") or ""
-            items.append({"title": title, "link": link, "summary": summary})
+        for e in feed.entries[:limit]:
+            published = None
+            try:
+                published = parsedate_to_datetime(e.get('published', '')).astimezone(timezone.utc).isoformat()
+            except (ValueError, TypeError):
+                pass
+            items.append({'title': e.get('title', ''), 'link': e.get('link', ''),
+                          'source': e.get('source', {}).get('title', ''), 'published_at': published})
         return items
     except Exception as exc:
-        logger.debug("Failed to fetch news for %s: %s", query, exc)
+        logger.warning('News retrieval unavailable for %s (%s)', query, type(exc).__name__)
         return []
 
 
-def classify_catalyst(headlines: List[Dict]) -> Optional[Dict]:
-    if not headlines:
-        return None
-
-    text_blob = " ".join(
-        (item.get("title", "") + " " + item.get("summary", ""))
-        for item in headlines
-    ).lower()
-
-    for category, keywords in KEYWORD_CATEGORIES.items():
-        for keyword in keywords:
-            if keyword in text_blob:
-                return {
-                    "type": category,
-                    "summary": f"Possible {category.replace('_', ' ')} catalyst in market narrative.",
-                    "headlines": headlines[:3],
-                }
-
-    return {
-        "type": "market_momentum",
-        "summary": "Price action and market rotation appear to be driving current move.",
-        "headlines": headlines[:3],
-    }
+def entity_matches(title, symbol, name, asset_type):
+    title = title.lower()
+    # Company names must be distinctive; bare stock tickers require financial context.
+    clean = re.sub(r'\b(incorporated|corporation|inc|corp|limited|ltd|holdings|plc)\b\.?', '', name or '', flags=re.I).strip(' .,')
+    name_match = bool(clean and re.search(r'(?<!\w)' + re.escape(clean.lower()) + r'(?!\w)', title))
+    ticker_match = bool(re.search(r'(?<!\w)' + re.escape(symbol.lower()) + r'(?!\w)', title))
+    if asset_type == 'crypto':
+        context = bool(re.search(r'\b(crypto|token|blockchain|defi|mainnet|dex|coin|protocol)\b', title))
+        # ORCA and other common words cannot qualify on their symbol alone.
+        return (name_match or ticker_match) and context
+    context = bool(re.search(r'\b(stock|shares|nasdaq|nyse|earnings|revenue|guidance)\b', title))
+    return name_match or (ticker_match and context)
 
 
-def find_catalyst_for_asset(query: str, asset_type: str = "stock") -> Dict:
-    base_query = query.strip()
-    if asset_type == "crypto":
-        search_terms = [
-            f"{base_query} token",
-            f"{base_query} ETF",
-            f"{base_query} partnership",
-            f"{base_query} upgrade",
-            f"{base_query} regulation",
-            f"{base_query} mainnet",
-        ]
-    else:
-        search_terms = [
-            f"{base_query} earnings",
-            f"{base_query} product launch",
-            f"{base_query} merger",
-            f"{base_query} acquisition",
-            f"{base_query} earnings guidance",
-            f"{base_query} analyst upgrade",
-            f"{base_query} revenue",
-        ]
+def classify_catalyst(headlines, symbol='', name='', asset_type='stock', now=None):
+    now = now or utcnow()
+    evidence, seen = [], set()
+    for item in headlines:
+        title = item.get('title', '')
+        key = hashlib.sha256(re.sub(r'\s+', ' ', title.lower()).encode()).hexdigest()[:20]
+        if key in seen or not entity_matches(title, symbol, name, asset_type):
+            continue
+        seen.add(key)
+        try:
+            published = datetime.fromisoformat((item.get('published_at') or '').replace('Z', '+00:00'))
+            if published.tzinfo is None:
+                continue
+            age = (now - published).total_seconds() / 3600
+        except (KeyError, ValueError, TypeError):
+            continue
+        if age < -0.1 or age > 24 or not item.get('source') or not item.get('link'):
+            continue
+        if re.search(COMMENTARY, title, re.I):
+            continue
+        category = next((k for k, pattern in EVENTS.items() if re.search(pattern, title, re.I)), None)
+        if not category:
+            continue
+        evidence.append({**item, 'id': key, 'type': category, 'age_hours': round(age, 2),
+                         'confidence': 'headline_evidence', 'adverse': bool(re.search(NEGATIVE, title, re.I)),
+                         'freshness': 'NEW CATALYST' if age <= 6 else 'ONGOING CATALYST'})
+    evidence.sort(key=lambda x: x['published_at'], reverse=True)
+    if not evidence:
+        return {'type': 'unverified', 'summary': 'No fresh, entity-matched event found.',
+                'eligible_for_points': False, 'headlines': [], 'freshness': 'STALE/UNVERIFIED'}
+    best = evidence[0]
+    return {**best, 'summary': best['title'], 'eligible_for_points': not best['adverse'],
+            'headlines': evidence[:3], 'verification': 'Headline and asset identity matched; read source before trading.'}
 
-    headlines = []
-    for term in search_terms:
-        headlines.extend(fetch_news(term, limit=2))
 
-    catalyst = classify_catalyst(headlines)
-    if catalyst:
-        return catalyst
-
-    return {
-        "type": "market_momentum",
-        "summary": "No clear external catalyst detected; move may be driven by momentum or macro flow.",
-        "headlines": [],
-    }
+def find_catalyst_for_asset(query, asset_type='stock', name='', now=None):
+    identity = name or query
+    search = f'"{identity}" {"crypto token" if asset_type == "crypto" else "stock"} when:1d'
+    return classify_catalyst(fetch_news(search), query, name, asset_type, now)
