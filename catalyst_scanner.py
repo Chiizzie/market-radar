@@ -45,7 +45,7 @@ def fetch_news(query, limit=12):
         return items
     except Exception as exc:
         logger.warning('News retrieval unavailable for %s (%s)', query, type(exc).__name__)
-        return []
+        return [{'retrieval_error': type(exc).__name__}]
 
 
 def entity_matches(title, symbol, name, asset_type):
@@ -100,4 +100,8 @@ def classify_catalyst(headlines, symbol='', name='', asset_type='stock', now=Non
 def find_catalyst_for_asset(query, asset_type='stock', name='', now=None):
     identity = name or query
     search = f'"{identity}" {"crypto token" if asset_type == "crypto" else "stock"} when:1d'
-    return classify_catalyst(fetch_news(search), query, name, asset_type, now)
+    items = fetch_news(search)
+    if items and items[0].get('retrieval_error'):
+        return {'type': 'unverified', 'summary': 'News provider unavailable: ' + items[0]['retrieval_error'],
+                'eligible_for_points': False, 'headlines': [], 'freshness': 'UNAVAILABLE', 'retrieval_status': 'FAILED'}
+    return {**classify_catalyst(items, query, name, asset_type, now), 'retrieval_status': 'OK'}

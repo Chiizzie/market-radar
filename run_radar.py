@@ -15,6 +15,8 @@ def main():
     logging.basicConfig(level=logging.INFO)
     scanner = MarketScanner()
     stocks, crypto = collect_stock_candidates(scanner), collect_crypto_candidates(scanner)
+    scanner.health['news'] = {'checked': len(stocks + crypto),
+                              'failed': sum(x['catalyst'].get('retrieval_status') == 'FAILED' for x in stocks + crypto)}
     payload = {'schema_version': 2, 'generated_at': datetime.now(timezone.utc).isoformat(),
                'scan_interval_minutes': 15, 'stocks': stocks, 'crypto': crypto,
                'health': scanner.health, 'potential_signals': build_potential_signals(stocks, crypto),
