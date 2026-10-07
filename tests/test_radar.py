@@ -22,12 +22,12 @@ def asset():
     return {'ticker': 'MRVL', 'asset_type': 'stock', 'price': 100, 'entry': 100, 'support': 99,
             'resistance_1': 103, 'resistance_2': 105, 'momentum_pct': .5, 'extension_pct': 1,
             'dollar_volume': 20_000_000, 'volume_spike': 2, 'session': 'REGULAR',
-            'observed_at': NOW.isoformat(), 'currency': 'EUR'}
+            'observed_at': NOW.isoformat(), 'currency': 'EUR', 'broker_availability': {'status': 'LISTED_PUBLIC'}}
 
 
 class CatalystTests(unittest.TestCase):
     def test_specific_event_and_details(self):
-        c = classify_catalyst([news('Marvell raises revenue target to $20 billion')], 'MRVL', 'Marvell', now=NOW)
+        c = classify_catalyst([news('Marvell raises revenue target to $20 billion on October 7, 2026')], 'MRVL', 'Marvell', now=NOW)
         self.assertTrue(c['eligible_for_points'])
         self.assertIn('$20 billion', c['summary'])
         self.assertEqual(c['source'], 'Example News')
@@ -87,14 +87,14 @@ class SessionTests(unittest.TestCase):
 
 class QualificationTests(unittest.TestCase):
     def test_valid_and_risk_in_eur(self):
-        q = classify_setup(asset(), {'eligible_for_points': True}, NOW)
+        q = classify_setup(asset(), {'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}, NOW)
         self.assertEqual(q['status'], ACTIONABLE)
         self.assertLessEqual(q['plan']['planned_loss_eur'], 5)
         self.assertLessEqual(q['plan']['position_eur'], 500)
 
     def test_watch_extended_rejected(self):
-        self.assertEqual(classify_setup({**asset(), 'price': 99.8}, {'eligible_for_points': True}, NOW)['status'], WATCH)
-        self.assertEqual(classify_setup({**asset(), 'extension_pct': 4}, {'eligible_for_points': True}, NOW)['status'], EXTENDED)
+        self.assertEqual(classify_setup({**asset(), 'price': 99.8}, {'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}, NOW)['status'], WATCH)
+        self.assertEqual(classify_setup({**asset(), 'extension_pct': 4}, {'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}, NOW)['status'], EXTENDED)
         self.assertEqual(classify_setup(asset(), {'eligible_for_points': False}, NOW)['status'], REJECTED)
 
     def test_data_momentum_rr_liquidity_and_fx(self):
@@ -103,17 +103,17 @@ class QualificationTests(unittest.TestCase):
                      {'price': float('nan')}, {'currency': 'USD'}, {'session': 'CLOSED'}]
         for change in mutations:
             with self.subTest(change=change):
-                self.assertEqual(classify_setup({**asset(), **change}, {'eligible_for_points': True}, NOW)['status'], REJECTED)
+                self.assertEqual(classify_setup({**asset(), **change}, {'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}, NOW)['status'], REJECTED)
 
     def test_dublin_cutoff_summer_and_winter(self):
         for now in [datetime(2026, 10, 7, 20, 40, tzinfo=timezone.utc), datetime(2026, 11, 2, 21, 40, tzinfo=timezone.utc)]:
-            self.assertEqual(classify_setup({**asset(), 'observed_at': now.isoformat()}, {'eligible_for_points': True}, now)['status'], REJECTED)
+            self.assertEqual(classify_setup({**asset(), 'observed_at': now.isoformat()}, {'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}, now)['status'], REJECTED)
 
 
 class DedupeTests(unittest.TestCase):
     def payload(self):
         a = asset()
-        a['catalyst'] = {'id': 'news1', 'eligible_for_points': True}
+        a['catalyst'] = {'id': 'news1', 'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}
         a['qualification'] = classify_setup(a, a['catalyst'], NOW)
         return {'generated_at': NOW.isoformat(), 'potential_signals': [a]}
 

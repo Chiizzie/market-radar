@@ -8,6 +8,7 @@ from urllib.parse import quote_plus
 
 import feedparser
 import requests
+from event_timing import event_timing
 
 logger = logging.getLogger(__name__)
 GOOGLE_NEWS_URL = 'https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en'
@@ -108,13 +109,13 @@ def classify_catalyst(headlines, symbol='', name='', asset_type='stock', now=Non
             continue
         evidence.append({**item, 'id': key, 'type': category, 'age_hours': round(age, 2),
                          'confidence': 'headline_evidence', 'adverse': bool(re.search(NEGATIVE, title, re.I)),
-                         'freshness': 'NEW CATALYST' if age <= 6 else 'ONGOING CATALYST'})
+                         **event_timing(item, now)})
     evidence.sort(key=lambda x: x['published_at'], reverse=True)
     if not evidence:
         return {'type': 'unverified', 'summary': 'No fresh, entity-matched event found.',
                 'eligible_for_points': False, 'headlines': [], 'freshness': 'STALE/UNVERIFIED'}
     best = evidence[0]
-    return {**best, 'summary': best['title'], 'eligible_for_points': not best['adverse'],
+    return {**best, 'summary': best['title'], 'eligible_for_points': not best['adverse'] and best['event_time_status'] == 'REPORTED_RECENT',
             'headlines': evidence[:3], 'verification': 'Headline and asset identity matched; read source before trading.'}
 
 

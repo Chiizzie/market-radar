@@ -34,6 +34,8 @@ def classify_setup(asset, catalyst, now=None):
         reasons.append('News retrieval failed; catalyst could not be assessed.')
     elif catalyst.get('adverse'):
         reasons.append('Matched headline contains an adverse event; no bullish catalyst credit.')
+    elif catalyst.get('event_time_status') != 'REPORTED_RECENT':
+        reasons.append(catalyst.get('timing_reason', 'Underlying event date is unverified.'))
     elif not catalyst.get('eligible_for_points'):
         reasons.append('No qualifying fresh catalyst found; this does not mean the asset identity is missing.')
     required = ['price', 'entry', 'support', 'resistance_1', 'resistance_2', 'momentum_pct', 'extension_pct', 'dollar_volume']
@@ -59,6 +61,10 @@ def classify_setup(asset, catalyst, now=None):
         reasons.append('No ordered support, trigger and two historical resistance targets.')
     if reasons:
         return result
+    broker = asset.get('broker_availability', {})
+    if broker.get('status') != 'LISTED_PUBLIC':
+        return {**result, 'status': 'BROKER_UNVERIFIED' if broker.get('status') not in {'NOT_LISTED', 'RESTRICTED'} else 'BROKER_UNAVAILABLE',
+                'reasons': [broker.get('reason', 'Broker eligibility is unverified.')]}
     if asset['extension_pct'] > 3 or (price / entry - 1) * 100 > 0.75:
         return {**result, 'status': EXTENDED, 'reasons': ['Price is extended above the recent average or the entry trigger.']}
     # Stop below observed support; targets come from history, never invented multiples.

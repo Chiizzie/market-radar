@@ -96,6 +96,11 @@ class MarketScanner:
                     'history_status': 'NOT_REQUESTED', 'data_issue': 'Regular-session chart checks wait for the market to open.'}
             if candidate['catalyst']:
                 item['catalyst'] = candidate['catalyst']
+            if getattr(self, 'brokers', None):
+                item['broker_availability'] = self.brokers.check(item)
+                if item['broker_availability']['status'] in {'NOT_LISTED', 'RESTRICTED'}:
+                    item['data_issue'] = 'Chart skipped: no supported broker listing for this instrument.'
+                    return item
             if session != 'REGULAR':
                 return item
             try:
@@ -174,11 +179,18 @@ class MarketScanner:
                 movers.append(item)
             except (ValueError, KeyError, TypeError):
                 continue
-        movers.sort(key=lambda x: (bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
+        if getattr(self, 'brokers', None):
+            for item in movers:
+                item['broker_availability'] = self.brokers.check(item)
+        movers.sort(key=lambda x: (x.get('broker_availability', {}).get('status') == 'LISTED_PUBLIC', bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
+        chart_candidates = [x for x in movers[:MAX_CANDIDATES] if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}][:5]
+        for item in movers:
+            if item.get('broker_availability', {}).get('status') in {'NOT_LISTED', 'RESTRICTED'}:
+                item['data_issue'] = 'Chart skipped: no supported broker listing for this instrument.'
         # Keep free API request budget bounded. Missing history must never become actionable.
         chart_failures = 0
         history_successes = 0
-        for item in movers[:5]:
+        for item in chart_candidates:
             try:
                 response = requests.get(f"https://api.coingecko.com/api/v3/coins/{item['coin_id']}/market_chart",
                                         params={'vs_currency': 'eur', 'days': 2}, timeout=15)
@@ -212,7 +224,7 @@ class MarketScanner:
         not_requested = sum(x['history_status'] == 'NOT_REQUESTED' for x in returned)
         stale = sum(x['history_status'] == 'STALE' for x in returned)
         self.health['crypto'].update(status=('DATA_UNAVAILABLE' if not data else 'PARTIAL' if chart_failures or not_requested or stale else 'OK'),
-                                     screened_assets=len(data), price_records=len(returned), history_requested=min(5, len(movers)),
+                                     screened_assets=len(data), price_records=len(returned), history_requested=len(chart_candidates),
                                      history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
                                      catalyst_discovery=news_health, universe='Top 250 by market cap; liquid assets screened for fresh news or recent momentum; 5 chart requests')
         return movers[:MAX_CANDIDATES]

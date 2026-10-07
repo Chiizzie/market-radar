@@ -4,16 +4,20 @@ import logging
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from broker_availability import BrokerAvailability
 from radar import MarketScanner, collect_stock_candidates, collect_crypto_candidates, build_market_snapshot, telegram
 
 
 def build_potential_signals(stocks, crypto):
-    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH'}]
+    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH'}
+            and item.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}]
 
 
 def main():
     logging.basicConfig(level=logging.INFO)
     scanner = MarketScanner()
+    scanner.brokers = BrokerAvailability().load()
+    scanner.health['brokers'] = scanner.brokers.health
     stocks, crypto = collect_stock_candidates(scanner), collect_crypto_candidates(scanner)
     scanner.health['news'] = {'checked': len(stocks + crypto),
                               'failed': sum(x['catalyst'].get('retrieval_status') == 'FAILED' for x in stocks + crypto)}
