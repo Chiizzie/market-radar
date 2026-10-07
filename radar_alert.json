@@ -1,8 +1,106 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-07T12:48:28.723822+00:00",
+  "generated_at": "2026-10-07T13:04:38.308170+00:00",
   "potential_signals": [
+    {
+      "ticker": "IIPR",
+      "name": "Innovative Industrial Properties",
+      "asset_type": "stock",
+      "price": 50.26,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.554022,
+      "volume": 478809.0,
+      "dollar_volume": 24064940.34,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:03+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Innovative Industrial Properties Announces Launch of Series B Preferred Stock Offering - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMGxqdU9RMEJRQU96OUZDbXI4Y2V3QVlocnZhcmtMMUlpZ2hvaTZGOUVaMVRIZWI5NHFOekF0N0JJOFZXNER6NERUX2FjWFUzX2tzUW9LdGJsVlRmeGdhSmc3SnpXZFVSRmRjV1pxcjd3ajB5aGpzbXR6OFIxSkEyWHhqZHlJdFZmVVRZdEtxTGY2dkZMZWlaUzhKakhRdmRrRHpQd2psZEtoX29nNmZpN1AwTnRzVXNrVDloREVOeV9tZk1SYzJOVlJoLUVZd3BUOGFTVWlLZkpwMHc?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-07T12:59:00+00:00",
+        "id": "6ed7215f2a7969419f82",
+        "type": "financing",
+        "age_hours": 0.08,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Innovative Industrial Properties Announces Launch of Series B Preferred Stock Offering - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Innovative Industrial Properties Announces Launch of Series B Preferred Stock Offering - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMGxqdU9RMEJRQU96OUZDbXI4Y2V3QVlocnZhcmtMMUlpZ2hvaTZGOUVaMVRIZWI5NHFOekF0N0JJOFZXNER6NERUX2FjWFUzX2tzUW9LdGJsVlRmeGdhSmc3SnpXZFVSRmRjV1pxcjd3ajB5aGpzbXR6OFIxSkEyWHhqZHlJdFZmVVRZdEtxTGY2dkZMZWlaUzhKakhRdmRrRHpQd2psZEtoX29nNmZpN1AwTnRzVXNrVDloREVOeV9tZk1SYzJOVlJoLUVZd3BUOGFTVWlLZkpwMHc?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-07T12:59:00+00:00",
+            "id": "6ed7215f2a7969419f82",
+            "type": "financing",
+            "age_hours": 0.08,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "IIPR_US_EQ",
+        "isin": "US45781V1017",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "ACIW",
       "name": "ACI Worldwide",
@@ -26,7 +124,7 @@
         "published_at": "2026-10-07T10:38:08+00:00",
         "id": "3ddbc5fc55e20f94a9b2",
         "type": "earnings",
-        "age_hours": 0.08,
+        "age_hours": 2.43,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -45,7 +143,7 @@
             "published_at": "2026-10-07T10:38:08+00:00",
             "id": "3ddbc5fc55e20f94a9b2",
             "type": "earnings",
-            "age_hours": 0.08,
+            "age_hours": 2.43,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -62,12 +160,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:42:49.036764+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ACIW_US_EQ",
+        "isin": "US0044981019",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 1,
@@ -121,7 +222,7 @@
         "published_at": "2026-10-07T06:20:54+00:00",
         "id": "b2abf5fe0ce4f07eb36a",
         "type": "regulatory",
-        "age_hours": 3.8,
+        "age_hours": 6.72,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -140,7 +241,7 @@
             "published_at": "2026-10-07T06:20:54+00:00",
             "id": "b2abf5fe0ce4f07eb36a",
             "type": "regulatory",
-            "age_hours": 3.8,
+            "age_hours": 6.72,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -157,12 +258,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "AMRX_US_EQ",
+        "isin": "US03168L1052",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 1,
@@ -179,101 +283,6 @@
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
           "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "DDS",
-      "name": "Dillard's",
-      "asset_type": "stock",
-      "price": 655.25,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -5.76688,
-      "volume": 204526.0,
-      "dollar_volume": 134015661.5,
-      "session": "CLOSED",
-      "observed_at": "2026-10-06T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Dilution adjustment of Dillard's, Inc. \u2013 AMEX:DDS - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdxdE1zRUlvVVJ3TkdReF9hUVJTLWNNbWp3aUk4UFN0dWdQT29wZ0tnenphYlN3Xy1pWWhvRlFnUmpucXgxcDZuaThzT2YwNUhlVXJJdnVnSGNKRDR0TFAyT2RHZ0N3Yk9LbTVpUkZ2X2xzbDBmYU82MzZ5QWs2czJuWlE3bkFyTDNxS0RIa3BlUmFkcTBKdA?oc=5",
-        "source": "TradingView",
-        "published_at": "2026-10-06T23:39:21+00:00",
-        "id": "b2e7d994accae8943ad8",
-        "type": "financing",
-        "age_hours": 11.91,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Dilution adjustment of Dillard's, Inc. \u2013 AMEX:DDS - TradingView",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Dilution adjustment of Dillard's, Inc. \u2013 AMEX:DDS - TradingView",
-            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHdxdE1zRUlvVVJ3TkdReF9hUVJTLWNNbWp3aUk4UFN0dWdQT29wZ0tnenphYlN3Xy1pWWhvRlFnUmpucXgxcDZuaThzT2YwNUhlVXJJdnVnSGNKRDR0TFAyT2RHZ0N3Yk9LbTVpUkZ2X2xzbDBmYU82MzZ5QWs2czJuWlE3bkFyTDNxS0RIa3BlUmFkcTBKdA?oc=5",
-            "source": "TradingView",
-            "published_at": "2026-10-06T23:39:21+00:00",
-            "id": "b2e7d994accae8943ad8",
-            "type": "financing",
-            "age_hours": 11.91,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T11:33:42.603419+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
         ],
         "plan": null,
         "missing_fields": [
@@ -406,7 +415,7 @@
         "published_at": "2026-10-07T07:43:00+00:00",
         "id": "730faed5752995fedf22",
         "type": "earnings",
-        "age_hours": 2.43,
+        "age_hours": 5.35,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -425,7 +434,7 @@
             "published_at": "2026-10-07T07:43:00+00:00",
             "id": "730faed5752995fedf22",
             "type": "earnings",
-            "age_hours": 2.43,
+            "age_hours": 5.35,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -442,12 +451,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "BBDC_US_EQ",
+        "isin": "US06759L1035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 0,
@@ -462,6 +474,198 @@
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
           "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "VERI",
+      "name": "Veritone",
+      "asset_type": "stock",
+      "price": 0.7464,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.82408,
+      "volume": 4403244.0,
+      "dollar_volume": 3286581.3216,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T03:51:44+00:00",
+        "id": "d8d88683215446c04a90",
+        "type": "financing",
+        "age_hours": 9.2,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T03:51:44+00:00",
+            "id": "d8d88683215446c04a90",
+            "type": "financing",
+            "age_hours": 9.2,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "VERI_US_EQ",
+        "isin": "US92347M1009",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "ISPC",
+      "name": "iSpecimen",
+      "asset_type": "stock",
+      "price": 1.07,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.90477,
+      "volume": 102636.0,
+      "dollar_volume": 109820.52,
+      "session": "CLOSED",
+      "observed_at": "2026-10-06T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdER4LS1qT0QtdWVvbjhSUGpvTm9rc1Zoa1ZqaTlGTXpzb3RxWndQVTFHVWpHdldDdl9OaDRHQ0FkNHVWemtiWlVOVUU0dEZjZ2h4aXBUM1FlSVVjZlRlRHc0T0xocnZwMW95RjA0c25EWUVYWWV3ZzFmY0ZxN0p0SEFNSkkwNDNYYUg5aENLSEVnY2N1SEMwU1VYbS0xZ3lGVzlpRGlKV0ZobkZtbGZj?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-07T02:05:04+00:00",
+        "id": "e1ad12667fdd127b8d48",
+        "type": "financing",
+        "age_hours": 10.98,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "iSpecimen stock faces an October 9 vote on dilution - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdER4LS1qT0QtdWVvbjhSUGpvTm9rc1Zoa1ZqaTlGTXpzb3RxWndQVTFHVWpHdldDdl9OaDRHQ0FkNHVWemtiWlVOVUU0dEZjZ2h4aXBUM1FlSVVjZlRlRHc0T0xocnZwMW95RjA0c25EWUVYWWV3ZzFmY0ZxN0p0SEFNSkkwNDNYYUg5aENLSEVnY2N1SEMwU1VYbS0xZ3lGVzlpRGlKV0ZobkZtbGZj?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-07T02:05:04+00:00",
+            "id": "e1ad12667fdd127b8d48",
+            "type": "financing",
+            "age_hours": 10.98,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ISPC_US_EQ",
+        "isin": "US45032V3069",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
         ],
         "plan": null,
         "missing_fields": [
@@ -499,7 +703,7 @@
         "published_at": "2026-10-06T22:44:57+00:00",
         "id": "022233be7fe8a65a57ac",
         "type": "merger",
-        "age_hours": 11.4,
+        "age_hours": 14.32,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -518,7 +722,7 @@
             "published_at": "2026-10-06T22:44:57+00:00",
             "id": "022233be7fe8a65a57ac",
             "type": "merger",
-            "age_hours": 11.4,
+            "age_hours": 14.32,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -535,12 +739,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CHMI_US_EQ",
+        "isin": "US1646511014",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 0,
@@ -592,7 +799,7 @@
         "published_at": "2026-10-06T16:30:50+00:00",
         "id": "3bf8be83263161b6bbc6",
         "type": "partnership",
-        "age_hours": 17.64,
+        "age_hours": 20.55,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -611,7 +818,7 @@
             "published_at": "2026-10-06T16:30:50+00:00",
             "id": "3bf8be83263161b6bbc6",
             "type": "partnership",
-            "age_hours": 17.64,
+            "age_hours": 20.55,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -628,12 +835,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T10:09:02.002398+00:00",
-        "source": "https://www.trading212.com/trading-instruments/invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Broker catalogue unavailable; availability is unknown."
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "HUGE_US_EQ",
+        "isin": "CA74764Y2050",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 0,
@@ -763,24 +973,229 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "ENA",
+      "name": "Ethena",
+      "coin_id": "ethena",
+      "asset_type": "crypto",
+      "price": 0.206552,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -3.19104,
+      "change_1h": 0.7672,
+      "acceleration": 0.90016,
+      "discovery_route": "recent_momentum",
+      "change_7d": -9.9962,
+      "volume": 355013822.0,
+      "dollar_volume": 355013822.0,
+      "market_cap": 2760090853,
+      "session": "24/7",
+      "observed_at": "2026-10-07T13:02:30.000Z",
+      "source": "coingecko EUR",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Chart not requested: five-chart budget per scan.",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "catalyst": {
+        "title": "Ether.fi Launches Stablecoin Using Ethena\u2019s White-Label Infrastructure - The Crypto Times",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdVFUTmlSaUVmVnpHZUtobnN2ODAzeVMta21iRGpCQVp4ajM5WGdCWFI0RkJudzVWSGg4NnhnX1J5V2ZDdURvRkVDRkxEMzluZjV2bDFsSFBQNUc1aG41dTdNc0tua1RvSUVVSElBOEg5bmRMRk1VZS05RlFBV0Q1dGJpZzZwZUgyN2dDMmVwZGp5dGtjMW9ubTBJV3o5YXJqaThHRzZnMkR4Z3lE?oc=5",
+        "source": "The Crypto Times",
+        "published_at": "2026-10-06T15:17:01+00:00",
+        "id": "742c1bff7ffe9412d6c4",
+        "type": "product_launch",
+        "age_hours": 21.79,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Ether.fi Launches Stablecoin Using Ethena\u2019s White-Label Infrastructure - The Crypto Times",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Ether.fi Launches Stablecoin Using Ethena\u2019s White-Label Infrastructure - The Crypto Times",
+            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdVFUTmlSaUVmVnpHZUtobnN2ODAzeVMta21iRGpCQVp4ajM5WGdCWFI0RkJudzVWSGg4NnhnX1J5V2ZDdURvRkVDRkxEMzluZjV2bDFsSFBQNUc1aG41dTdNc0tua1RvSUVVSElBOEg5bmRMRk1VZS05RlFBV0Q1dGJpZzZwZUgyN2dDMmVwZGp5dGtjMW9ubTBJV3o5YXJqaThHRzZnMkR4Z3lE?oc=5",
+            "source": "The Crypto Times",
+            "published_at": "2026-10-06T15:17:01+00:00",
+            "id": "742c1bff7ffe9412d6c4",
+            "type": "product_launch",
+            "age_hours": 21.79,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 8
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Chart not requested: five-chart budget per scan.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "symbol": "ZRO",
+      "name": "LayerZero",
+      "coin_id": "layerzero",
+      "asset_type": "crypto",
+      "price": 1.92,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -1.35673,
+      "change_1h": 0.6138,
+      "acceleration": 0.6703304166666667,
+      "discovery_route": "recent_momentum",
+      "change_7d": 23.2741,
+      "volume": 116878450.0,
+      "dollar_volume": 116878450.0,
+      "market_cap": 766818730,
+      "session": "24/7",
+      "observed_at": "2026-10-07T13:02:30.000Z",
+      "source": "coingecko EUR",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Chart not requested: five-chart budget per scan.",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "catalyst": {
+        "title": "LayerZero's ZRO token surges 125% since September, eyeing $3 amid buybacks and upcoming token unlock. - Pluang",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdDZEVUlZNU5rc3RmNDdNQ3lvVUhHWU4tbkVzcWcyek5wOVE2SkM5Y0xaNDBINVd2MTB4LVM0b1c3aF9VM2FOaDA4NXY2QUtiZFlHdktqeXJkaWp2NERHMXJ1WEZ0NWZuUldsbmloSzlmZXNQX2hBeDZkbk9Ea1pNMndQaDJaM0xrV3lqd2E2dlBid1NHRndEeEEyVHExQmY2WUVscw?oc=5",
+        "source": "Pluang",
+        "published_at": "2026-10-06T17:29:05+00:00",
+        "id": "94d8ab935be49be3a5ce",
+        "type": "crypto_event",
+        "age_hours": 19.59,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "LayerZero's ZRO token surges 125% since September, eyeing $3 amid buybacks and upcoming token unlock. - Pluang",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "LayerZero's ZRO token surges 125% since September, eyeing $3 amid buybacks and upcoming token unlock. - Pluang",
+            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdDZEVUlZNU5rc3RmNDdNQ3lvVUhHWU4tbkVzcWcyek5wOVE2SkM5Y0xaNDBINVd2MTB4LVM0b1c3aF9VM2FOaDA4NXY2QUtiZFlHdktqeXJkaWp2NERHMXJ1WEZ0NWZuUldsbmloSzlmZXNQX2hBeDZkbk9Ea1pNMndQaDJaM0xrV3lqd2E2dlBid1NHRndEeEEyVHExQmY2WUVscw?oc=5",
+            "source": "Pluang",
+            "published_at": "2026-10-06T17:29:05+00:00",
+            "id": "94d8ab935be49be3a5ce",
+            "type": "crypto_event",
+            "age_hours": 19.59,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 9
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Chart not requested: five-chart budget per scan.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
     }
   ],
-  "changed_signals": [],
-  "invalidated_signals": [
-    "stock:GMAB",
+  "changed_signals": [
+    "stock:IIPR",
+    "stock:ACIW",
+    "stock:AMRX",
+    "stock:BBDC",
     "stock:VERI",
-    "stock:ISPC"
+    "stock:ISPC",
+    "stock:CHMI",
+    "stock:QNTM",
+    "crypto:ethena",
+    "crypto:layerzero"
+  ],
+  "invalidated_signals": [
+    "stock:DDS"
   ],
   "health": {
     "stocks": {
       "session": "CLOSED",
       "status": "PARTIAL",
       "universe": "US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings",
-      "listed_assets": 5947,
+      "listed_assets": 5948,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7834,
-        "snapshot_records": 7834,
+        "provider_total": 7823,
+        "snapshot_records": 7823,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -789,29 +1204,29 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 147,
-        "matched_events": 7,
-        "matched_assets": 7,
+        "headlines_received": 148,
+        "matched_events": 9,
+        "matched_assets": 9,
         "failed_queries": 0,
         "errors": [],
         "scope": "Bounded broad event-news searches; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5898,
-      "discovered_candidates": 7,
-      "selected_candidates": 7,
+      "discovered_candidates": 9,
+      "selected_candidates": 9,
       "deferred_candidates": 0,
-      "unquoted_listings": 49,
+      "unquoted_listings": 50,
       "chart_failures": 0
     },
     "crypto": {
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 9,
-      "history_requested": 3,
-      "history_received": 3,
-      "chart_failures": 0,
+      "price_records": 12,
+      "history_requested": 5,
+      "history_received": 4,
+      "chart_failures": 1,
       "history_stale": 0,
-      "history_not_requested": 6,
+      "history_not_requested": 7,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 60,
@@ -826,21 +1241,21 @@
     "errors": [],
     "brokers": {
       "stock": {
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/invest",
-        "checked_at": "2026-10-07T12:47:51.940739+00:00",
-        "error": "HTTPError",
-        "http_status": 403
+        "status": "OK",
+        "records": 17054,
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "checked_at": "2026-10-07T13:03:57.919595+00:00",
+        "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-07T12:47:51.940739+00:00"
+        "checked_at": "2026-10-07T13:03:57.919595+00:00"
       }
     },
     "news": {
-      "checked": 16,
+      "checked": 21,
       "failed": 0
     }
   },
