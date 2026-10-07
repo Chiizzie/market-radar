@@ -71,7 +71,7 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     actions = [x for x in stocks + crypto if x['qualification']['status'] == 'ACTIONABLE NOW']
     watches = [x for x in stocks + crypto if x['qualification']['status'] == 'WATCH FOR ENTRY']
     symbols = lambda items: ', '.join(x.get('ticker', x.get('symbol')) for x in items)
-    headline = ('🚨 CHECK NOW — ' + symbols(actions) + ' | provisional setup') if actions else ('👀 WATCH FOR ENTRY — ' + symbols(watches)) if watches else 'NO ACTIONABLE SETUP'
+    headline = ('🚨 CHECK NOW — ' + symbols(actions) + ' | provisional setup') if actions else ('👀 WATCH FOR ENTRY — ' + symbols(watches)) if watches else 'NO ACTIONABLE SETUP AMONG CHECKED CANDIDATES'
     lines = [headline, 'MARKET RADAR — ' + irish_time(now or datetime.now(timezone.utc))]
     for item in actions + watches:
         p = item['qualification'].get('plan')
@@ -84,7 +84,9 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
         stock = health['stocks']
         lines.append('Stocks: ' + stock.get('status', 'UNKNOWN') + ' | session ' + stock.get('session', 'UNKNOWN') + ' | Crypto data: ' + h.get('status', 'UNKNOWN'))
         if 'listed_assets' in stock:
-            lines.append(f"US listed universe: {stock['listed_assets']}; quote coverage: {stock.get('listed_snapshot_records', 0)}; news leads: {stock.get('catalyst_discovery', {}).get('matched_assets', 0)}; candidates: {stock.get('selected_candidates', 0)} checked / {stock.get('deferred_candidates', 0)} deferred.")
+            lines.append(f"US listed universe: {stock['listed_assets']}; quote coverage: {stock.get('listed_snapshot_records', 0)}; news leads: {stock.get('catalyst_discovery', {}).get('matched_assets', 0)}; shortlisted: {stock.get('shortlisted_candidates', stock.get('selected_candidates', 0))}; selected: {stock.get('selected_candidates', 0)}; deferred: {stock.get('deferred_candidates', 0)}; broker-excluded: {stock.get('broker_excluded_candidates', 0)}.")
+        if 'listed_assets' in stock:
+            lines.append(f"Stock charts: {stock.get('history_received', 0)}/{stock.get('history_requested', 0)} received; {stock.get('history_not_requested', 0)} not requested. Deferred candidates have not had a deep check.")
         lines.append(f"Crypto: {h.get('price_records', len(crypto))} price records; charts {h.get('history_received', 0)}/{h.get('history_requested', 0)} received, "
                      f"{h.get('chart_failures', 0)} failed, {h.get('history_not_requested', 0)} not requested.")
     counts = Counter(x['qualification']['status'] for x in stocks + crypto)

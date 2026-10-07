@@ -178,38 +178,78 @@ def discover_catalysts(universe, asset_type='stock', now=None):
 
 
 def stock_candidate_priority(quote):
+    """Cheap discovery score, never a substitute for completed intraday bars.
+
+    Missing average volume/acceleration is unknown, not evidence of a surge.
+    Daily change is only a modest early-move signal and an extension penalty.
+    """
     price = finite(quote.get('regularMarketPrice'))
     volume = finite(quote.get('regularMarketVolume'))
     average = finite(quote.get('averageDailyVolume3Month') or quote.get('averageDailyVolume10Day'))
     change = finite(quote.get('regularMarketChangePercent'))
-    relative = volume / average if average > 0 else 0
+    relative = volume / average if average > 0 else None
     notional = price * volume
-    # These are discovery thresholds only. Intraday validation follows separately.
-    eligible = notional >= 500_000 and (abs(change) >= 1 or relative >= .5)
-    return eligible, min(abs(change), 15) + min(relative * 5, 15)
+    eligible = notional >= 500_000 and (abs(change) >= 1 or (relative is not None and relative >= .5))
+    liquidity = min(math.log10(max(notional / 500_000, 1)) * 3, 9)
+    volume_score = min(relative * 4, 12) if relative is not None else 0
+    early_move = min(max(change, 0), 3)
+    extension_penalty = min(max(change - 5, 0) * 1.5, 30)
+    downside_penalty = min(max(-change, 0) * 2, 20)
+    return eligible, liquidity + volume_score + early_move - extension_penalty - downside_penalty
 
 
-def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=30):
+def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
+                            shortlist_limit=150, catalyst_slots=20, broker_check=None):
+    """Broad screen -> broker-aware ranked shortlist -> bounded chart checks.
+
+    Reserve a third of deep checks for fresh, non-adverse news; unused slots
+    flow back to the ranking. Catalogue exclusions never consume chart slots.
+    Publication freshness is research evidence, not verified event timing.
+    """
     records = {q['symbol']: q for q in quotes if q.get('symbol') in universe}
-    news_order = sorted(catalysts, key=lambda s: catalysts[s].get('published_at', ''), reverse=True)
-    movers = []
-    if regular:
-        for symbol, q in records.items():
-            stamp = finite(q.get('regularMarketTime'))
-            if not q.get('snapshot_time_unverified') and not 0 <= now.timestamp() - stamp <= 900:
-                continue
-            eligible, rank = stock_candidate_priority(q)
-            if eligible:
-                movers.append((rank, symbol))
-    movers.sort(reverse=True)
-    # Reserve room for both routes so one cannot crowd the other out.
-    order = []
-    for i in range(max(len(news_order), len(movers))):
-        for symbol in ([news_order[i]] if i < len(news_order) else []) + ([movers[i][1]] if i < len(movers) else []):
-            if symbol not in order:
-                order.append(symbol)
-    selected = [{'ticker': s, 'name': universe[s], 'quote': records.get(s, {}),
-                 'catalyst': catalysts.get(s), 'discovery_route': 'catalyst_first' if s in catalysts else 'market_snapshot'} for s in order[:limit]]
-    return selected, {'listed_snapshot_records': len(records), 'discovered_candidates': len(order),
-                      'selected_candidates': len(selected), 'deferred_candidates': max(0, len(order)-limit),
+    ranked, excluded = [], []
+    for symbol in sorted(set(records) | (set(catalysts) & set(universe))):
+        q, catalyst = records.get(symbol, {}), catalysts.get(symbol)
+        fresh_news = False
+        if catalyst:
+            try:
+                published = datetime.fromisoformat(catalyst.get('published_at', '').replace('Z', '+00:00'))
+                fresh_news = 0 <= (now - published).total_seconds() <= 86400
+            except (ValueError, TypeError):
+                pass
+        stamp = finite(q.get('regularMarketTime'))
+        quote_usable = q.get('snapshot_time_unverified') or 0 <= now.timestamp() - stamp <= 900
+        eligible, score = stock_candidate_priority(q)
+        if not fresh_news and not (regular and quote_usable and eligible):
+            continue
+        broker = broker_check({'ticker': symbol, 'name': universe[symbol], 'asset_type': 'stock'}) if broker_check else {'status': 'UNVERIFIED'}
+        adverse = bool(catalyst and catalyst.get('adverse'))
+        candidate = {'ticker': symbol, 'name': universe[symbol], 'quote': q,
+                     'catalyst': catalyst, 'broker_availability': broker,
+                     'discovery_route': 'catalyst_first' if fresh_news else 'market_snapshot',
+                     'selection_evidence': {'fresh_publication': fresh_news, 'adverse': adverse,
+                         'broker_status': broker['status'], 'snapshot_score': round(score, 3),
+                         'relative_volume_available': finite(q.get('averageDailyVolume3Month') or q.get('averageDailyVolume10Day')) > 0,
+                         'acceleration_status': 'UNAVAILABLE_FROM_SINGLE_SNAPSHOT'}}
+        if broker['status'] in {'NOT_LISTED', 'RESTRICTED'}:
+            excluded.append(symbol)
+            continue
+        # Adverse events remain research candidates, but rank behind long-side leads.
+        priority = (not adverse, fresh_news, broker['status'] in {'LISTED_PUBLIC', 'LISTED_API'}, score)
+        ranked.append((priority, candidate))
+    ranked.sort(key=lambda row: row[0], reverse=True)
+    shortlist = [row[1] for row in ranked[:max(limit, shortlist_limit)]]
+    reserved = [x for x in shortlist if x['selection_evidence']['fresh_publication'] and not x['selection_evidence']['adverse']][:min(limit, catalyst_slots)]
+    reserved_symbols = {x['ticker'] for x in reserved}
+    selected = (reserved + [x for x in shortlist if x['ticker'] not in reserved_symbols])[:limit]
+    return selected, {'listed_snapshot_records': len(records),
+                      'discovered_candidates': len(ranked) + len(excluded),
+                      'broker_excluded_candidates': len(excluded),
+                      'shortlisted_candidates': len(shortlist), 'shortlist_limit': max(limit, shortlist_limit),
+                      'deep_check_limit': limit, 'catalyst_reserved_slots': min(limit, catalyst_slots),
+                      'catalyst_selected': sum(x['selection_evidence']['fresh_publication'] for x in selected),
+                      'selected_candidates': len(selected), 'deferred_candidates': max(0, len(ranked)-len(selected)),
+                      'outside_shortlist': max(0, len(ranked)-len(shortlist)),
+                      'selection_policy': 'fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties',
+                      'acceleration_status': 'Single snapshots cannot measure acceleration; completed charts validate momentum.',
                       'unquoted_listings': len(set(universe)-set(records))}

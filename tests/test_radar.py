@@ -63,7 +63,7 @@ class SessionTests(unittest.TestCase):
         self.assertEqual(stock_session(datetime(2026, 11, 2, 14, 0, tzinfo=timezone.utc)), 'CLOSED')
 
     def test_closed_stocks_discover_news_without_fetching_charts(self):
-        catalyst = {'headlines': [{'title': 'Penguin Solutions reports earnings'}], 'id': 'event1', 'eligible_for_points': True}
+        catalyst = {'published_at': '2026-10-07T06:00:00+00:00', 'headlines': [{'title': 'Penguin Solutions reports earnings'}], 'id': 'event1', 'eligible_for_points': True}
         with patch('discovery.listed_universe', return_value=({'PENG': 'Penguin Solutions'}, [])), \
              patch('discovery.broad_quotes', return_value=([], {'pagination_complete': True, 'errors': []})), \
              patch('discovery.discover_catalysts', return_value=({'PENG': catalyst}, {'failed_queries': 0})), \
