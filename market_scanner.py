@@ -71,7 +71,10 @@ class MarketScanner:
         self.tracking_prices.extend({'asset_type': 'stock', 'ticker': q.get('symbol'), 'price': q.get('regularMarketPrice'), 'currency': 'USD',
                                      'observed_at': datetime.fromtimestamp(q['regularMarketTime'], timezone.utc).isoformat()}
                                     for q in quotes if q.get('regularMarketTime') and q.get('symbol') in universe)
-        selected, selection_health = select_stock_candidates(quotes, universe, catalysts, session == 'REGULAR', self.now)
+        brokers = getattr(self, 'brokers', None)
+        selected, selection_health = select_stock_candidates(
+            quotes, universe, catalysts, session == 'REGULAR', self.now,
+            broker_check=brokers.check if brokers else None)
         complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings'] and not news_health.get('primary_sources', {}).get('failures')
         self.health['stocks'] = {'session': session, 'status': 'OK' if complete else 'PARTIAL',
                                  'universe': 'US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings',
@@ -97,11 +100,12 @@ class MarketScanner:
                     'dollar_volume': finite(q.get('regularMarketPrice')) * finite(q.get('regularMarketVolume')),
                     'session': session, 'observed_at': datetime.fromtimestamp(stamp, timezone.utc).isoformat() if stamp else None,
                     'source': q.get('snapshot_source', 'Yahoo broad exchange snapshot'), 'discovery_route': candidate['discovery_route'],
+                    'selection_evidence': candidate['selection_evidence'],
                     'history_status': 'NOT_REQUESTED', 'data_issue': 'Regular-session chart checks wait for the market to open.'}
             if candidate['catalyst']:
                 item['catalyst'] = candidate['catalyst']
             if getattr(self, 'brokers', None):
-                item['broker_availability'] = self.brokers.check(item)
+                item['broker_availability'] = candidate['broker_availability']
                 if item['broker_availability']['status'] in {'NOT_LISTED', 'RESTRICTED'}:
                     item['data_issue'] = 'Chart skipped: no supported broker listing for this instrument.'
                     return item
@@ -135,6 +139,9 @@ class MarketScanner:
             return item
         with ThreadPoolExecutor(max_workers=3) as pool:
             candidates = list(pool.map(analyse, selected))
+        self.health['stocks']['history_requested'] = sum(x['history_status'] != 'NOT_REQUESTED' for x in candidates)
+        self.health['stocks']['history_received'] = sum(x['history_status'] == 'OK' for x in candidates)
+        self.health['stocks']['history_not_requested'] = sum(x['history_status'] == 'NOT_REQUESTED' for x in candidates)
         self.health['stocks']['chart_failures'] = sum(x['history_status'] in {'FAILED', 'STALE'} for x in candidates)
         if self.health['stocks']['chart_failures'] or selection_health['deferred_candidates']:
             self.health['stocks']['status'] = 'PARTIAL'
