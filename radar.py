@@ -30,10 +30,15 @@ def telegram(message):
 
 def enrich(items):
     for item in items:
-        catalyst = find_catalyst_for_asset(item.get('ticker', item.get('symbol')), item['asset_type'], item['name'])
+        catalyst = item.get('catalyst') or find_catalyst_for_asset(item.get('ticker', item.get('symbol')), item['asset_type'], item['name'])
         item['catalyst'] = catalyst
         item['score'] = score_setup(item, catalyst)
         item['qualification'] = classify_setup(item, catalyst)
+        q = item['qualification']
+        if catalyst.get('headlines') and q['status'] not in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'EXTENDED—DO NOT CHASE'}:
+            item['qualification'] = {**q, 'status': 'CATALYST WATCH', 'trade_assessment_status': q['status'],
+                                     'research_only': True, 'plan': None,
+                                     'reasons': ['Fresh event for research; no entry approved.'] + q['reasons']}
     return sorted(items, key=lambda x: x['score']['score'], reverse=True)
 
 
@@ -50,19 +55,24 @@ def build_market_snapshot(stocks, crypto, health=None):
     lines = ['MARKET RADAR V2 — ' + datetime.now(timezone.utc).strftime('%H:%M UTC')]
     if health:
         h = health['crypto']
-        lines.append('Stocks: ' + health['stocks'].get('status', 'UNKNOWN') + ' | Crypto data: ' + h.get('status', 'UNKNOWN'))
+        stock = health['stocks']
+        lines.append('Stocks: ' + stock.get('status', 'UNKNOWN') + ' | session ' + stock.get('session', 'UNKNOWN') + ' | Crypto data: ' + h.get('status', 'UNKNOWN'))
+        if 'listed_assets' in stock:
+            lines.append(f"US listed universe: {stock['listed_assets']}; quote coverage: {stock.get('listed_snapshot_records', 0)}; news leads: {stock.get('catalyst_discovery', {}).get('matched_assets', 0)}; candidates: {stock.get('selected_candidates', 0)} checked / {stock.get('deferred_candidates', 0)} deferred.")
         lines.append(f"Crypto: {h.get('price_records', len(crypto))} price records; charts {h.get('history_received', 0)}/{h.get('history_requested', 0)} received, "
                      f"{h.get('chart_failures', 0)} failed, {h.get('history_not_requested', 0)} not requested.")
     counts = Counter(x['qualification']['status'] for x in stocks + crypto)
     lines.append('Results: ' + (', '.join(f'{v} {k}' for k, v in counts.items()) or 'No screened movers'))
-    lines.append('Movers enter the screen on price/volume; news and chart checks follow.')
+    lines.append('Discovery: broad stock snapshots + fresh events; crypto recent momentum + events.')
     blocks = []
-    for item in stocks + crypto:
+    ordered = sorted(stocks + crypto, key=lambda x: (x['qualification']['status'] in {'ACTIONABLE NOW', 'WATCH FOR ENTRY'}, x['qualification']['status'] == 'CATALYST WATCH', x.get('score', {}).get('score', 0)), reverse=True)
+    for item in ordered:
         q, c = item['qualification'], item['catalyst']
         symbol = item.get('ticker', item.get('symbol'))
         change = item.get('change', item.get('change_24h', 0))
+        quote_text = f"{item.get('currency', '')} {item['price']:.6g}" if item.get('price') is not None else 'Quote unavailable'
         block = [f"{symbol} ({item.get('name', symbol)}): {q['status']}",
-                 f"{item.get('currency', '')} {item['price']:.6g} | move {change:+.2f}% | observed {item.get('observed_at', 'unknown')}"]
+                 f"{quote_text} | move {change:+.2f}% | observed {item.get('observed_at', 'unknown')}"]
         if c.get('title'):
             block.extend([c['summary'], f"{c['source']} | {c['published_at']}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
             if c.get('link'):

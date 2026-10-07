@@ -12,16 +12,18 @@ import requests
 logger = logging.getLogger(__name__)
 GOOGLE_NEWS_URL = 'https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en'
 EVENTS = {
-    'earnings': r'\b(earnings|quarterly results|raises? (?:its )?(?:guidance|revenue|forecast)|revenue target|cuts? (?:its )?guidance)\b',
+    'earnings': r'\b(earnings|quarterly results|reports? (?:its )?(?:financial|fiscal|quarterly) results|raises? (?:its )?(?:guidance|revenue|forecast)|revenue target|cuts? (?:its )?guidance)\b',
     'merger': r'\b(acquires?|acquisition|merger|takeover|buyout)\b',
     'product_launch': r'\b(launches?|unveils?|rolls? out|releases? new)\b',
-    'regulatory': r'\b(approves?|approval|lawsuit|sues|sec charges|fda)\b',
+    'regulatory': r'\b(approves?|approval|clinical trial|phase 3|phase iii|lawsuit|sues|sec charges|fda)\b',
     'partnership': r'\b(partnership|partners? with|collaboration|contract|agreement)\b',
     'crypto_event': r'\b(mainnet|upgrade|hard fork|token burn|token unlock|etf approval)\b',
     'financing': r'\b(offering|dilution|convertible notes|at.the.market|bankruptcy)\b',
 }
-NEGATIVE = r'\b(misses|cuts|lawsuit|sues|charges|hack|exploit|offering|dilution|bankruptcy|token unlock)\b'
-COMMENTARY = r'\b(price prediction|should you buy|stocks? to buy|technical analysis|could (?:rise|surge)|may (?:rise|surge)|rumou?r|possible|potential)\b'
+NEGATIVE = r'\b(misses|cuts (?:its )?guidance|lawsuit|sues|charges|hack|exploit|stock offering|share offering|public offering|bond offering|rights offering|million offering|dilution|bankruptcy|token unlock|trial failure|phase (?:3|iii) failure)\b'
+COMMENTARY = r'\b(price prediction|should you buy|stocks? to buy|buy before|looks? undervalued|earnings outlook|earnings season|growth runway|investment narrative|change.{0,30}narrative|highs and lows|technical analysis|could (?:rise|surge)|may (?:rise|surge)|rumou?r|speculation|possible|potential|total assets of)\b'
+EVENT_ASSERTION = r'\b(reports?|announces?|raises?|cuts?|beats?|miss(?:es)?|results|transcript|presentation|acquires?|acquisition|merger|takeover|approv(?:es?|al)|launch(?:es)?|unveils?|partners? with|partnership|signs?|wins?|awarded|contract|agreement|upgrade|mainnet|burn|unlock|offering|bankruptcy|dilution|trial|clinical)\b'
+
 
 
 def utcnow():
@@ -50,10 +52,15 @@ def fetch_news(query, limit=12):
         return [{'retrieval_error': type(exc).__name__}]
 
 
+def company_name(name):
+    name = re.split(r' - |\b(?:Class [A-Z] |Common Stock|Common Shares|Ordinary Shares|American Depositary|American Depository)\b', name or '', maxsplit=1, flags=re.I)[0]
+    return re.sub(r'\b(incorporated|corporation|inc|corp|limited|ltd|plc)\b\.?', '', name, flags=re.I).strip(' .,')
+
+
 def entity_matches(title, symbol, name, asset_type):
     title = title.lower()
     # Company names must be distinctive; bare stock tickers require financial context.
-    clean = re.sub(r'\b(incorporated|corporation|inc|corp|limited|ltd|holdings|plc)\b\.?', '', name or '', flags=re.I).strip(' .,')
+    clean = company_name(name)
     name_match = bool(clean and re.search(r'(?<!\w)' + re.escape(clean.lower()) + r'(?!\w)', title))
     ticker_match = bool(re.search(r'(?<!\w)' + re.escape(symbol.lower()) + r'(?!\w)', title))
     if asset_type == 'crypto':
@@ -82,10 +89,12 @@ def classify_catalyst(headlines, symbol='', name='', asset_type='stock', now=Non
             continue
         if age < -0.1 or age > 24 or not item.get('source') or not item.get('link'):
             continue
-        if re.search(COMMENTARY, title, re.I):
+        if '?' in title or re.search(COMMENTARY, title, re.I) or not re.search(EVENT_ASSERTION, title, re.I):
             continue
         category = next((k for k, pattern in EVENTS.items() if re.search(pattern, title, re.I)), None)
         if not category:
+            continue
+        if category == 'regulatory' and re.search(r'phase (3|iii)', title, re.I) and not re.search(r'FDA|clinical|trial|drug', title, re.I):
             continue
         evidence.append({**item, 'id': key, 'type': category, 'age_hours': round(age, 2),
                          'confidence': 'headline_evidence', 'adverse': bool(re.search(NEGATIVE, title, re.I)),
