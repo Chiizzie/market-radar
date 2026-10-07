@@ -46,18 +46,41 @@ def collect_crypto_candidates(scanner):
 
 
 def build_market_snapshot(stocks, crypto, health=None):
+    from collections import Counter
     lines = ['MARKET RADAR V2 — ' + datetime.now(timezone.utc).strftime('%H:%M UTC')]
     if health:
-        lines.append('Stocks: ' + health['stocks'].get('status', 'UNKNOWN') + ' | Crypto: ' + health['crypto'].get('status', 'UNKNOWN'))
-    for item in (stocks + crypto)[:8]:
+        h = health['crypto']
+        lines.append('Stocks: ' + health['stocks'].get('status', 'UNKNOWN') + ' | Crypto data: ' + h.get('status', 'UNKNOWN'))
+        lines.append(f"Crypto: {h.get('price_records', len(crypto))} price records; charts {h.get('history_received', 0)}/{h.get('history_requested', 0)} received, "
+                     f"{h.get('chart_failures', 0)} failed, {h.get('history_not_requested', 0)} not requested.")
+    counts = Counter(x['qualification']['status'] for x in stocks + crypto)
+    lines.append('Results: ' + (', '.join(f'{v} {k}' for k, v in counts.items()) or 'No screened movers'))
+    lines.append('Movers enter the screen on price/volume; news and chart checks follow.')
+    blocks = []
+    for item in stocks + crypto:
         q, c = item['qualification'], item['catalyst']
-        lines.extend(['', f"{item.get('ticker', item.get('symbol'))}: {q['status']}",
-                      c['summary'], f"Source: {c.get('source', 'none')} | Published: {c.get('published_at', 'unverified')}",
-                      '; '.join(q['reasons'])])
-        if c.get('link'):
-            lines.append(c['link'])
+        symbol = item.get('ticker', item.get('symbol'))
+        change = item.get('change', item.get('change_24h', 0))
+        block = [f"{symbol} ({item.get('name', symbol)}): {q['status']}",
+                 f"{item.get('currency', '')} {item['price']:.6g} | move {change:+.2f}% | observed {item.get('observed_at', 'unknown')}"]
+        if c.get('title'):
+            block.extend([c['summary'], f"{c['source']} | {c['published_at']}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
+            if c.get('link'):
+                block.append(c['link'])
+        elif c.get('retrieval_status') == 'FAILED':
+            block.append(c['summary'])
+        else:
+            block.append(f"News: no qualifying event in last 24h ({c.get('headlines_checked', '?')} headlines checked).")
+        block.append('; '.join(q['reasons']))
         if q['plan']:
             p = q['plan']
-            lines.append(f"EUR entry {p['entry']:.4f}, SL {p['stop_loss']:.4f}, TP1 {p['tp1']:.4f}, TP2 {p['tp2']:.4f}; R:R {p['rr1']}/{p['rr2']}")
-    lines.append('\nScanner classification is provisional. ChatGPT must verify live broker conditions before an alert.')
+            block.append(f"EUR entry {p['entry']:.4f}, SL {p['stop_loss']:.4f}, TP1 {p['tp1']:.4f}, TP2 {p['tp2']:.4f}; R:R {p['rr1']}/{p['rr2']}")
+        blocks.append('\n'.join(block))
+    # Preserve full asset blocks instead of cutting a headline or link mid-string.
+    for i, block in enumerate(blocks):
+        if len('\n'.join(lines)) + len(block) > 3650:
+            lines.append(f'Additional candidates: {len(blocks) - i}. Full details in the saved scan artifact.')
+            break
+        lines.extend(['', block])
+    lines.append('\nTrade plans require live broker/source verification. Data failures are not trade rejections.')
     return '\n'.join(lines)

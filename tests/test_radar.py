@@ -70,7 +70,13 @@ class SessionTests(unittest.TestCase):
 
     def test_no_fabricated_targets(self):
         frame = pd.DataFrame({'High': [100] * 40, 'Low': [99] * 40, 'Close': [100] * 40, 'Volume': [1000] * 40})
-        self.assertEqual(structure(frame), {})
+        result = structure(frame)
+        self.assertEqual(result['structure_status'], 'INCOMPLETE')
+        self.assertEqual(result['entry'], 100)
+        self.assertEqual(result['support'], 99)
+        self.assertIn('momentum_pct', result)
+        self.assertNotIn('resistance_1', result)
+        self.assertIn('No historical resistance', result['structure_issues'][0])
 
 
 class QualificationTests(unittest.TestCase):
@@ -123,6 +129,52 @@ class DedupeTests(unittest.TestCase):
         clear = prepare_alert({'generated_at': NOW.isoformat(), 'potential_signals': []}, previous)
         self.assertEqual(clear['invalidated_signals'], ['stock:MRVL'])
         self.assertIsNone(prepare_alert({'generated_at': NOW.isoformat(), 'potential_signals': []}, clear))
+
+
+class DataReportingTests(unittest.TestCase):
+    def test_missing_chart_is_not_a_market_rejection(self):
+        for state, expected in [('FAILED', 'DATA_UNAVAILABLE'), ('STALE', 'DATA_UNAVAILABLE'), ('NOT_REQUESTED', 'NOT_EVALUATED')]:
+            item = {**asset(), 'history_status': state, 'data_issue': 'specific chart issue'}
+            item.pop('entry')
+            q = classify_setup(item, {'eligible_for_points': False}, NOW)
+            self.assertEqual(q['status'], expected)
+            self.assertIn('specific chart issue', q['reasons'])
+            self.assertIn('entry', q['missing_fields'])
+
+    def test_mixed_chart_results_and_report(self):
+        from unittest.mock import Mock
+        import requests
+        from radar import build_market_snapshot
+        coins = [{'id': f'coin-{i}', 'symbol': f'C{i}', 'name': f'Coin {i}', 'current_price': 100,
+                  'total_volume': 60_000_000 - i * 1_000_000, 'price_change_percentage_24h': 3,
+                  'last_updated': NOW.isoformat()} for i in range(6)]
+        prices = [[int((NOW - timedelta(hours=48-i)).timestamp()*1000), 100] for i in range(48)]
+        market = Mock(); market.json.return_value = coins
+        chart = Mock(); chart.json.return_value = {'prices': prices}
+        failed = Mock(); failed.status_code = 429
+        failed.raise_for_status.side_effect = requests.HTTPError(response=failed)
+        with patch('market_scanner.requests.get', side_effect=[market, chart, chart, chart, chart, failed]) as get:
+            scanner = MarketScanner(NOW)
+            items = scanner.scan_crypto()
+            self.assertEqual(get.call_count, 6)
+        h = scanner.health['crypto']
+        self.assertEqual(h['status'], 'PARTIAL')
+        self.assertEqual((h['price_records'], h['history_received'], h['chart_failures'], h['history_not_requested']), (6, 4, 1, 1))
+        self.assertEqual(items[4]['data_issue'], 'Chart request failed: HTTP 429')
+        self.assertEqual(items[5]['history_status'], 'NOT_REQUESTED')
+        for item in items:
+            item['catalyst'] = {'eligible_for_points': False, 'retrieval_status': 'OK', 'headlines_checked': 3}
+            item['qualification'] = classify_setup(item, item['catalyst'], NOW)
+        message = build_market_snapshot([], items, scanner.health)
+        for value in ['6 price records', 'charts 4/5 received', '1 failed', '1 not requested', 'Coin 0', 'DATA_UNAVAILABLE', 'NOT_EVALUATED']:
+            self.assertIn(value, message)
+        self.assertNotIn('Source: none', message)
+        self.assertNotIn('Insufficient intraday structure', message)
+
+    def test_failed_news_is_visible(self):
+        q = classify_setup(asset(), {'eligible_for_points': False, 'retrieval_status': 'FAILED'}, NOW)
+        self.assertEqual(q['status'], 'DATA_UNAVAILABLE')
+        self.assertIn('News retrieval failed; catalyst could not be assessed.', q['reasons'])
 
 
 if __name__ == '__main__':

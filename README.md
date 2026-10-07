@@ -32,3 +32,9 @@ python run_radar.py
 ```
 
 `publish_alert.py` requires a git checkout with permission to push to `radar-alert-live`. The workflow uses its existing GitHub token; Telegram secrets remain optional. No OpenAI API key or API analysis is used in this scanner.
+
+## Interpreting the scan report
+
+A mover enters screening on price/volume before catalyst verification. Absence of qualifying news means no dated material headline passed the news filter; it does not mean the asset has no identity or market data. Each report includes the asset name, price, price timestamp, news result, and exact chart/level issue.
+
+Crypto health is `PARTIAL` if chart requests fail, history is stale, or candidates fall outside the five-chart request budget. `DATA_UNAVAILABLE` and `NOT_EVALUATED` describe incomplete assessment, separately from `REJECTED` trading setups. Counters show price records, chart responses, failed requests and unrequested charts. Observed support/entry/momentum fields are preserved even when no historical targets exist.

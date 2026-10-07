@@ -25,28 +25,35 @@ def stock_session(now=None):
 
 
 def structure(frame):
-    """Use completed bars: trigger from prior 8, stop from recent lows, targets from older highs."""
+    """Preserve observed fields even when history cannot supply two targets."""
+    result = {'history_samples': len(frame), 'structure_status': 'INCOMPLETE', 'structure_issues': []}
     if len(frame) < 30:
-        return {}
+        result['structure_issues'].append(f'Only {len(frame)} history samples; at least 30 required.')
+        return result
     recent, older = frame.iloc[-8:], frame.iloc[:-8]
     entry = float(recent['High'].iloc[:-1].max())
-    support = float(recent['Low'].min())
     price = float(frame['Close'].iloc[-1])
-    resistance = sorted(set(float(x) for x in older['High'] if float(x) > max(entry, price) * 1.001))
-    if len(resistance) < 2:
-        return {}
-    tp1 = resistance[0]
-    # Require a meaningfully separate second resistance.
-    tp2 = next((x for x in resistance[1:] if x > tp1 * 1.003), None)
-    if tp2 is None:
-        return {}
+    result.update(entry=entry, support=float(recent['Low'].min()),
+                  momentum_pct=(price / float(frame['Close'].iloc[-4]) - 1) * 100)
     volume = recent['Volume'].clip(lower=0)
-    vwap = float((((recent['High'] + recent['Low'] + recent['Close']) / 3) * volume).sum() / volume.sum()) if volume.sum() > 0 else 0
-    if not vwap:
-        return {}
-    return {'entry': entry, 'support': support, 'resistance_1': tp1, 'resistance_2': tp2,
-            'momentum_pct': (price / float(frame['Close'].iloc[-4]) - 1) * 100,
-            'extension_pct': (price / vwap - 1) * 100, 'vwap': vwap}
+    reference = float((((recent['High'] + recent['Low'] + recent['Close']) / 3) * volume).sum() / volume.sum()) if volume.sum() > 0 else 0
+    if reference > 0:
+        result.update(reference_price=reference, extension_pct=(price / reference - 1) * 100)
+    else:
+        result['structure_issues'].append('Recent volume does not support an average-price calculation.')
+    resistance = sorted(set(float(x) for x in older['High'] if float(x) > max(entry, price) * 1.001))
+    if resistance:
+        result['resistance_1'] = resistance[0]
+        tp2 = next((x for x in resistance[1:] if x > resistance[0] * 1.003), None)
+        if tp2 is not None:
+            result['resistance_2'] = tp2
+        else:
+            result['structure_issues'].append('No second distinct historical resistance target in the lookback.')
+    else:
+        result['structure_issues'].append('No historical resistance above the trigger/current history price in the lookback.')
+    if not result['structure_issues']:
+        result['structure_status'] = 'COMPLETE'
+    return result
 
 
 class MarketScanner:
@@ -102,7 +109,7 @@ class MarketScanner:
                                'price': price, 'currency': 'USD', 'eur_per_unit': eur_per_usd,
                                'change': change, 'volume': daily_vol, 'dollar_volume': float((today['Close'] * today['Volume']).sum()),
                                'volume_spike': relative, 'session': session, 'observed_at': stamp.isoformat(),
-                               'source': 'yfinance completed 5-minute bars', **structure(history)})
+                               'source': 'yfinance completed 5-minute bars', 'history_status': 'OK', **structure(history)})
             except Exception as exc:
                 failed += 1
                 logger.warning('Stock data failed for %s (%s)', symbol, type(exc).__name__)
@@ -135,13 +142,15 @@ class MarketScanner:
                         'asset_type': 'crypto', 'price': price, 'currency': 'EUR', 'eur_per_unit': 1,
                         'change_24h': change, 'change_7d': coin.get('price_change_percentage_7d_in_currency'),
                         'volume': volume, 'dollar_volume': volume, 'market_cap': coin.get('market_cap'),
-                        'session': '24/7', 'observed_at': coin.get('last_updated'), 'source': 'coingecko EUR'}
+                        'session': '24/7', 'observed_at': coin.get('last_updated'), 'source': 'coingecko EUR',
+                        'history_status': 'NOT_REQUESTED', 'data_issue': 'Chart not requested: five-chart budget per scan.'}
                 movers.append(item)
             except (ValueError, KeyError, TypeError):
                 continue
         movers.sort(key=lambda x: x['volume'], reverse=True)
         # Keep free API request budget bounded. Missing history must never become actionable.
         chart_failures = 0
+        history_successes = 0
         for item in movers[:5]:
             try:
                 response = requests.get(f"https://api.coingecko.com/api/v3/coins/{item['coin_id']}/market_chart",
@@ -154,15 +163,29 @@ class MarketScanner:
                 frame = frame.loc[frame.index <= self.now - timedelta(minutes=5)]
                 frame['High'] = frame['Low'] = frame['Close']
                 frame['Volume'] = 1
+                if frame.empty:
+                    raise ValueError('empty history')
+                item.pop('data_issue', None)
+                item['history_status'] = 'OK'
+                history_successes += 1
                 item.update(structure(frame))
                 item['structure_source'] = 'CoinGecko historical price samples; broker chart confirmation required'
                 item['structure_observed_at'] = frame.index[-1].isoformat()
                 if (self.now - frame.index[-1].to_pydatetime()).total_seconds() > 7200:
+                    item['history_status'] = 'STALE'
+                    item['data_issue'] = 'Latest historical sample is over two hours old.'
                     for key in ['entry','support','resistance_1','resistance_2','momentum_pct','extension_pct']:
                         item.pop(key, None)
             except Exception as exc:
                 chart_failures += 1
-                item['data_issue'] = 'Historical structure unavailable: ' + type(exc).__name__
-        self.health['crypto'].update(status='OK' if data else 'DATA_UNAVAILABLE', chart_failures=chart_failures,
+                item['history_status'] = 'FAILED'
+                response_status = getattr(getattr(exc, 'response', None), 'status_code', None)
+                item['data_issue'] = 'Chart request failed: ' + (f'HTTP {response_status}' if response_status else type(exc).__name__)
+        returned = movers[:MAX_CANDIDATES]
+        not_requested = sum(x['history_status'] == 'NOT_REQUESTED' for x in returned)
+        stale = sum(x['history_status'] == 'STALE' for x in returned)
+        self.health['crypto'].update(status=('DATA_UNAVAILABLE' if not data else 'PARTIAL' if chart_failures or not_requested or stale else 'OK'),
+                                     screened_assets=len(data), price_records=len(returned), history_requested=min(5, len(movers)),
+                                     history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
                                      universe='Top 100 by market cap; history enriched for 5 liquid movers')
         return movers[:MAX_CANDIDATES]
