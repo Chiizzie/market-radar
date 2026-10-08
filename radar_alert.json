@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T05:12:53.735781+00:00",
+  "generated_at": "2026-10-08T05:32:00.550794+00:00",
   "potential_signals": [
     {
       "ticker": "MORN",
@@ -333,134 +333,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "MA_US_EQ",
         "isin": "US57636Q1040",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "PENG",
-      "name": "Penguin Solutions",
-      "asset_type": "stock",
-      "price": 72.61,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 13.0821,
-      "volume": 20973895.0,
-      "dollar_volume": 1522914515.95,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.877,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Penguin Solutions rallied 13% after earnings beat (PENG:NASDAQ) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcEEzaGpkQU1Rb3dGSkNaUFNkd2NfOUJqV1JyR1F3RDZSQ0NuYmIzc1A2NUpQZ2NZSkZseWhvLXRlc0U4QUxTc0dBMFJ2NEp3bk4xbmloSk54ZC1Jc0ozZVZlWS01UlYtaFZNTkctaHZHTm83T3ItYzlFalhKVThlZU9FbEQtRWozM3dNTl9yQQ?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-07T20:30:16+00:00",
-        "id": "7efacb4113f7d22f8c98",
-        "type": "earnings",
-        "age_hours": 8.7,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Penguin Solutions rallied 13% after earnings beat (PENG:NASDAQ) - Seeking Alpha",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Penguin Solutions rallied 13% after earnings beat (PENG:NASDAQ) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcEEzaGpkQU1Rb3dGSkNaUFNkd2NfOUJqV1JyR1F3RDZSQ0NuYmIzc1A2NUpQZ2NZSkZseWhvLXRlc0U4QUxTc0dBMFJ2NEp3bk4xbmloSk54ZC1Jc0ozZVZlWS01UlYtaFZNTkctaHZHTm83T3ItYzlFalhKVThlZU9FbEQtRWozM3dNTl9yQQ?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-07T20:30:16+00:00",
-            "id": "7efacb4113f7d22f8c98",
-            "type": "earnings",
-            "age_hours": 8.7,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T05:12:13.905806+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SGH_US_EQ",
-        "isin": "US7069151055",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1282,132 +1154,6 @@
       }
     },
     {
-      "ticker": "BEEM",
-      "name": "Beam Global",
-      "asset_type": "stock",
-      "price": 1.08,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -2.7027,
-      "volume": 911864.0,
-      "dollar_volume": 984813.1200000001,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -1.154,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWdvZkdGRHRtLW9ZdUtyYl9taGlrRHdqTENNM3d2SXRscTZaR1pKMUNCYXY0ZjV1NXExNDlnR20xb3VyZlRDMng2dlBqUFRKSWlVc1RXWWM0bEtVNVZsbG1TU0JnU1ctdUQ3cy10TE1zNGxydDhBZzdYMXBzcHdRMmlkNmFHWURXZXJXYmlfckpPb1VtY3NPWno3aDBtYnFzbUhVeU9NY2RyLTM1Yl95VWZ6c2NOTlU?oc=5",
-        "source": "Nasdaq",
-        "published_at": "2026-10-07T11:30:00+00:00",
-        "id": "caf23f0fc8bc3445746f",
-        "type": "merger",
-        "age_hours": 17.7,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
-            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWdvZkdGRHRtLW9ZdUtyYl9taGlrRHdqTENNM3d2SXRscTZaR1pKMUNCYXY0ZjV1NXExNDlnR20xb3VyZlRDMng2dlBqUFRKSWlVc1RXWWM0bEtVNVZsbG1TU0JnU1ctdUQ3cy10TE1zNGxydDhBZzdYMXBzcHdRMmlkNmFHWURXZXJXYmlfckpPb1VtY3NPWno3aDBtYnFzbUhVeU9NY2RyLTM1Yl95VWZ6c2NOTlU?oc=5",
-            "source": "Nasdaq",
-            "published_at": "2026-10-07T11:30:00+00:00",
-            "id": "caf23f0fc8bc3445746f",
-            "type": "merger",
-            "age_hours": 17.7,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T05:12:13.905806+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "EVSI_US_EQ",
-        "isin": "US07373B1098",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "DSGR",
       "name": "Distribution Solutions Group",
       "asset_type": "stock",
@@ -1661,14 +1407,10 @@
       }
     }
   ],
-  "changed_signals": [
-    "stock:MORN",
-    "stock:PENG",
-    "stock:LYV",
-    "stock:BEEM"
-  ],
+  "changed_signals": [],
   "invalidated_signals": [
-    "crypto:hyperliquid"
+    "stock:PENG",
+    "stock:BEEM"
   ],
   "health": {
     "stocks": {
@@ -1678,8 +1420,8 @@
       "listed_assets": 5948,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7846,
-        "snapshot_records": 7846,
+        "provider_total": 7834,
+        "snapshot_records": 7834,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1689,8 +1431,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 187,
-        "matched_events": 12,
-        "matched_assets": 12,
+        "matched_events": 11,
+        "matched_assets": 11,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1708,14 +1450,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5899,
-      "discovered_candidates": 12,
-      "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 12,
+      "discovered_candidates": 11,
+      "broker_excluded_candidates": 1,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 12,
-      "selected_candidates": 12,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1723,7 +1465,7 @@
       "unquoted_listings": 49,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 12,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1771,18 +1513,18 @@
         "status": "OK",
         "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T05:12:13.905806+00:00",
+        "checked_at": "2026-10-08T05:31:22.693858+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T05:12:13.905806+00:00"
+        "checked_at": "2026-10-08T05:31:22.693858+00:00"
       }
     },
     "news": {
-      "checked": 14,
+      "checked": 12,
       "failed": 0
     }
   },
