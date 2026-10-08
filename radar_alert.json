@@ -1,8 +1,264 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T08:15:20.834228+00:00",
+  "generated_at": "2026-10-08T08:36:52.942464+00:00",
   "potential_signals": [
+    {
+      "ticker": "MORN",
+      "name": "Morningstar",
+      "asset_type": "stock",
+      "price": 200.65,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.53462,
+      "volume": 532084.0,
+      "dollar_volume": 106762654.60000001,
+      "session": "CLOSED",
+      "observed_at": "2026-10-07T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 15.879,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
+        "source": "Morningstar",
+        "published_at": "2026-10-08T00:24:10+00:00",
+        "id": "395eaf154bdfad1db398",
+        "type": "financing",
+        "age_hours": 8.2,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
+            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
+            "source": "Morningstar",
+            "published_at": "2026-10-08T00:24:10+00:00",
+            "id": "395eaf154bdfad1db398",
+            "type": "financing",
+            "age_hours": 8.2,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T08:36:02.691499+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "MORN_US_EQ",
+        "isin": "US6177001095",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TFX",
+      "name": "Teleflex",
+      "asset_type": "stock",
+      "price": 124.48,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.208429,
+      "volume": 928297.0,
+      "dollar_volume": 115554410.56,
+      "session": "CLOSED",
+      "observed_at": "2026-10-07T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 12.381,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Full Transcript: Teleflex Q2 2026 Earnings Call - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWUlBTGMwQTdYcW0wbDQ4alpPY25qUy1RV0lEOFNDZF9GR1I1LVl3aXNnUG9iLXlhWFpOWUFacnFMYW1uVUw3TjFWdmlGbmRmN2U0Qjg5ZkN6WGZ4bkl3d1ZiOF8wbDI5YmlCTzFyWHczMWh6R01BbUQtV1ZlUTM0MWc0ZG1UQnRtRkxUUFp1LWlFUk9qZHc?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-08T08:14:24+00:00",
+        "id": "6c08e069592e4cc29a79",
+        "type": "earnings",
+        "age_hours": 0.36,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Full Transcript: Teleflex Q2 2026 Earnings Call - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Full Transcript: Teleflex Q2 2026 Earnings Call - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWUlBTGMwQTdYcW0wbDQ4alpPY25qUy1RV0lEOFNDZF9GR1I1LVl3aXNnUG9iLXlhWFpOWUFacnFMYW1uVUw3TjFWdmlGbmRmN2U0Qjg5ZkN6WGZ4bkl3d1ZiOF8wbDI5YmlCTzFyWHczMWh6R01BbUQtV1ZlUTM0MWc0ZG1UQnRtRkxUUFp1LWlFUk9qZHc?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-08T08:14:24+00:00",
+            "id": "6c08e069592e4cc29a79",
+            "type": "earnings",
+            "age_hours": 0.36,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T08:36:02.691499+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "TFX_US_EQ",
+        "isin": "US8793691069",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "MA",
       "name": "Mastercard",
@@ -388,6 +644,134 @@
       }
     },
     {
+      "ticker": "VYX",
+      "name": "NCR Voyix",
+      "asset_type": "stock",
+      "price": 6.71,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.297177,
+      "volume": 3808776.0,
+      "dollar_volume": 25556886.96,
+      "session": "CLOSED",
+      "observed_at": "2026-10-07T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 10.607,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "NCR Voyix Q2 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQjJaWUdaQl9IMnNnTUJIMl9TV3RYNmtoa3MwdkJxcVk0em1Bc1djNzZuM1RCMl9jWllDcHdlanIybDk3VmVvV1ZYN3NDUC12YWdqZ0pXR05fWXNxVURiU1FwOERqMWxlTVNnN2xkSnh3NE92Nk53N2FuekF1RVBxUklKY19vdFBOd0NXSWk5bnE?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-08T08:19:50+00:00",
+        "id": "63006cf5c012182fbe95",
+        "type": "earnings",
+        "age_hours": 0.27,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "NCR Voyix Q2 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "NCR Voyix Q2 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQjJaWUdaQl9IMnNnTUJIMl9TV3RYNmtoa3MwdkJxcVk0em1Bc1djNzZuM1RCMl9jWllDcHdlanIybDk3VmVvV1ZYN3NDUC12YWdqZ0pXR05fWXNxVURiU1FwOERqMWxlTVNnN2xkSnh3NE92Nk53N2FuekF1RVBxUklKY19vdFBOd0NXSWk5bnE?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-08T08:19:50+00:00",
+            "id": "63006cf5c012182fbe95",
+            "type": "earnings",
+            "age_hours": 0.27,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T08:36:02.691499+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "NCR_US_EQ",
+        "isin": "US62886E1082",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "LYV",
       "name": "Live Nation Entertainment",
       "asset_type": "stock",
@@ -412,13 +796,13 @@
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - PR Newswire",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUc5UERnTWdwcHNIMF8zU1ZBbzFmak5JWW5IOU5CU3JPcUhuMGZGeFlBc2NMc2UzNXV2amwzTU9wc0tFR1pMV1ozbVowVGpEYy1qb1RxSU91OE9qNEFZUnhQMTFKLUYzNkwtSmJrM040dlppZjhQRHA0aS1NVF9RQlkwanhuNF9uNXJmWHRFWlc3dGxNdnJycDh0eEFTSGlXSEJvMkR3ejVQSlMyYmM0X0xvTG01NjdFbzFRREd6WGxRVWxtUFZSV0o4TnU?oc=5",
-        "source": "PR Newswire",
-        "published_at": "2026-10-08T00:00:00+00:00",
-        "id": "093f907cb98b8628ed62",
+        "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
+        "source": "Morningstar",
+        "published_at": "2026-10-08T00:24:10+00:00",
+        "id": "395eaf154bdfad1db398",
         "type": "financing",
-        "age_hours": 7.96,
+        "age_hours": 8.2,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -427,17 +811,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - PR Newswire",
+        "summary": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - PR Newswire",
-            "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUc5UERnTWdwcHNIMF8zU1ZBbzFmak5JWW5IOU5CU3JPcUhuMGZGeFlBc2NMc2UzNXV2amwzTU9wc0tFR1pMV1ozbVowVGpEYy1qb1RxSU91OE9qNEFZUnhQMTFKLUYzNkwtSmJrM040dlppZjhQRHA0aS1NVF9RQlkwanhuNF9uNXJmWHRFWlc3dGxNdnJycDh0eEFTSGlXSEJvMkR3ejVQSlMyYmM0X0xvTG01NjdFbzFRREd6WGxRVWxtUFZSV0o4TnU?oc=5",
-            "source": "PR Newswire",
-            "published_at": "2026-10-08T00:00:00+00:00",
-            "id": "093f907cb98b8628ed62",
+            "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
+            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
+            "source": "Morningstar",
+            "published_at": "2026-10-08T00:24:10+00:00",
+            "id": "395eaf154bdfad1db398",
             "type": "financing",
-            "age_hours": 7.96,
+            "age_hours": 8.2,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -455,7 +839,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-08T07:57:34.874212+00:00",
+        "checked_at": "2026-10-08T08:36:02.691499+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
@@ -1277,6 +1661,132 @@
       }
     },
     {
+      "ticker": "BEEM",
+      "name": "Beam Global",
+      "asset_type": "stock",
+      "price": 1.08,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -2.7027,
+      "volume": 911864.0,
+      "dollar_volume": 984813.1200000001,
+      "session": "CLOSED",
+      "observed_at": "2026-10-07T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -1.154,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWdvZkdGRHRtLW9ZdUtyYl9taGlrRHdqTENNM3d2SXRscTZaR1pKMUNCYXY0ZjV1NXExNDlnR20xb3VyZlRDMng2dlBqUFRKSWlVc1RXWWM0bEtVNVZsbG1TU0JnU1ctdUQ3cy10TE1zNGxydDhBZzdYMXBzcHdRMmlkNmFHWURXZXJXYmlfckpPb1VtY3NPWno3aDBtYnFzbUhVeU9NY2RyLTM1Yl95VWZ6c2NOTlU?oc=5",
+        "source": "Nasdaq",
+        "published_at": "2026-10-07T11:30:00+00:00",
+        "id": "caf23f0fc8bc3445746f",
+        "type": "merger",
+        "age_hours": 21.1,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWdvZkdGRHRtLW9ZdUtyYl9taGlrRHdqTENNM3d2SXRscTZaR1pKMUNCYXY0ZjV1NXExNDlnR20xb3VyZlRDMng2dlBqUFRKSWlVc1RXWWM0bEtVNVZsbG1TU0JnU1ctdUQ3cy10TE1zNGxydDhBZzdYMXBzcHdRMmlkNmFHWURXZXJXYmlfckpPb1VtY3NPWno3aDBtYnFzbUhVeU9NY2RyLTM1Yl95VWZ6c2NOTlU?oc=5",
+            "source": "Nasdaq",
+            "published_at": "2026-10-07T11:30:00+00:00",
+            "id": "caf23f0fc8bc3445746f",
+            "type": "merger",
+            "age_hours": 21.1,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T08:36:02.691499+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "EVSI_US_EQ",
+        "isin": "US07373B1098",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "DIBS",
       "name": "1stdibs.com",
       "asset_type": "stock",
@@ -1657,12 +2167,13 @@
     }
   ],
   "changed_signals": [
-    "stock:EXTR",
-    "stock:EQH"
+    "stock:MORN",
+    "stock:TFX",
+    "stock:VYX",
+    "stock:LYV",
+    "stock:BEEM"
   ],
-  "invalidated_signals": [
-    "stock:RPM"
-  ],
+  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1671,8 +2182,8 @@
       "listed_assets": 5948,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7835,
-        "snapshot_records": 7835,
+        "provider_total": 7847,
+        "snapshot_records": 7847,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1681,9 +2192,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 188,
-        "matched_events": 15,
-        "matched_assets": 13,
+        "headlines_received": 187,
+        "matched_events": 19,
+        "matched_assets": 17,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1701,14 +2212,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5900,
-      "discovered_candidates": 13,
+      "discovered_candidates": 17,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 12,
+      "shortlisted_candidates": 16,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 12,
-      "selected_candidates": 12,
+      "catalyst_selected": 16,
+      "selected_candidates": 16,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1716,7 +2227,7 @@
       "unquoted_listings": 48,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 12,
+      "history_not_requested": 16,
       "chart_failures": 0
     },
     "crypto": {
@@ -1764,18 +2275,18 @@
         "status": "OK",
         "records": 17052,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T08:14:27.771001+00:00",
+        "checked_at": "2026-10-08T08:36:02.691499+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T08:14:27.771001+00:00"
+        "checked_at": "2026-10-08T08:36:02.691499+00:00"
       }
     },
     "news": {
-      "checked": 24,
+      "checked": 28,
       "failed": 0
     }
   },
