@@ -1,136 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T10:02:09.030108+00:00",
+  "generated_at": "2026-10-08T10:33:02.063461+00:00",
   "potential_signals": [
-    {
-      "ticker": "MORN",
-      "name": "Morningstar",
-      "asset_type": "stock",
-      "price": 200.65,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 2.53462,
-      "volume": 532084.0,
-      "dollar_volume": 106762654.60000001,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 15.879,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
-        "source": "Morningstar",
-        "published_at": "2026-10-08T00:24:10+00:00",
-        "id": "395eaf154bdfad1db398",
-        "type": "financing",
-        "age_hours": 8.2,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
-            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
-            "source": "Morningstar",
-            "published_at": "2026-10-08T00:24:10+00:00",
-            "id": "395eaf154bdfad1db398",
-            "type": "financing",
-            "age_hours": 8.2,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T08:36:02.691499+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "MORN_US_EQ",
-        "isin": "US6177001095",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "TFX",
       "name": "Teleflex",
@@ -370,134 +242,6 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "EXTR",
-      "name": "Extreme Networks",
-      "asset_type": "stock",
-      "price": 24.6,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.244497,
-      "volume": 2060880.0,
-      "dollar_volume": 50697648.0,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.322,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Extreme Networks Q4 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUdoMjZiUUxwa1VLaTUwNjU3WGJzbFBxLUlTVk9PQWJ2eElWSlpYTlBhUF9OWjZDTkN2ZTZVNXIzbjlnSG5uYVZ1Qzk1Tm1PYkI0Z2tTODJqRGZfc25HdVpfWUR4cHFsTWNxeUFmYWVnQ0tmMUFwQzhraklnQjJ4M0xZMmtqeWFNRDB1TExVUWFNT2ZfZ2RhRGRB?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-08T07:56:41+00:00",
-        "id": "ede9492b9963754a8cf0",
-        "type": "earnings",
-        "age_hours": 0.3,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Extreme Networks Q4 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Extreme Networks Q4 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUdoMjZiUUxwa1VLaTUwNjU3WGJzbFBxLUlTVk9PQWJ2eElWSlpYTlBhUF9OWjZDTkN2ZTZVNXIzbjlnSG5uYVZ1Qzk1Tm1PYkI0Z2tTODJqRGZfc25HdVpfWUR4cHFsTWNxeUFmYWVnQ0tmMUFwQzhraklnQjJ4M0xZMmtqeWFNRDB1TExVUWFNT2ZfZ2RhRGRB?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-08T07:56:41+00:00",
-            "id": "ede9492b9963754a8cf0",
-            "type": "earnings",
-            "age_hours": 0.3,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T08:14:27.771001+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "EXTR_US_EQ",
-        "isin": "US30226D1063",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
             ],
             "plan": null,
             "missing_fields": [
@@ -796,13 +540,13 @@
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
-        "source": "Morningstar",
-        "published_at": "2026-10-08T00:24:10+00:00",
-        "id": "395eaf154bdfad1db398",
+        "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - PR Newswire",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUc5UERnTWdwcHNIMF8zU1ZBbzFmak5JWW5IOU5CU3JPcUhuMGZGeFlBc2NMc2UzNXV2amwzTU9wc0tFR1pMV1ozbVowVGpEYy1qb1RxSU91OE9qNEFZUnhQMTFKLUYzNkwtSmJrM040dlppZjhQRHA0aS1NVF9RQlkwanhuNF9uNXJmWHRFWlc3dGxNdnJycDh0eEFTSGlXSEJvMkR3ejVQSlMyYmM0X0xvTG01NjdFbzFRREd6WGxRVWxtUFZSV0o4TnU?oc=5",
+        "source": "PR Newswire",
+        "published_at": "2026-10-08T00:00:00+00:00",
+        "id": "093f907cb98b8628ed62",
         "type": "financing",
-        "age_hours": 8.2,
+        "age_hours": 10.54,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -811,17 +555,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
+        "summary": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - PR Newswire",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - Morningstar",
-            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNHg2LVlvSG1CRnVXdFNkQXdtV3ROeVRwR3NjdWhDTGZZZHVWM19La0JXbFA4YVgzS0JDS1BwakF6ZnkwNlVQN2NkUVRxVGc1MWlrMEcxT0F5b3ZNSWRmaXgxRlgyREtDV3c5bVJkRnJYSG1mZGNNWG50T1JtUVhma1czc2ZVYVY4TGNMQUM1TXNibEMxZk82WXRCYS1CaVR3NWM4VzZZU3lYYU9ZWVRkN3JITkN3d0lUR0JESE1FeEVzcEd4WXZINVpKOGJ4YTd6ZE1V?oc=5",
-            "source": "Morningstar",
-            "published_at": "2026-10-08T00:24:10+00:00",
-            "id": "395eaf154bdfad1db398",
+            "title": "Live Nation Entertainment Announces Pricing of Private Senior Notes Offering - PR Newswire",
+            "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUc5UERnTWdwcHNIMF8zU1ZBbzFmak5JWW5IOU5CU3JPcUhuMGZGeFlBc2NMc2UzNXV2amwzTU9wc0tFR1pMV1ozbVowVGpEYy1qb1RxSU91OE9qNEFZUnhQMTFKLUYzNkwtSmJrM040dlppZjhQRHA0aS1NVF9RQlkwanhuNF9uNXJmWHRFWlc3dGxNdnJycDh0eEFTSGlXSEJvMkR3ejVQSlMyYmM0X0xvTG01NjdFbzFRREd6WGxRVWxtUFZSV0o4TnU?oc=5",
+            "source": "PR Newswire",
+            "published_at": "2026-10-08T00:00:00+00:00",
+            "id": "093f907cb98b8628ed62",
             "type": "financing",
-            "age_hours": 8.2,
+            "age_hours": 10.54,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -839,7 +583,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-08T08:36:02.691499+00:00",
+        "checked_at": "2026-10-08T10:32:11.526241+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
@@ -2038,245 +1782,15 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "ONDO",
-      "name": "Ondo",
-      "coin_id": "ondo-finance",
-      "asset_type": "crypto",
-      "price": 0.43394,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 4.11489,
-      "change_1h": 2.4929,
-      "acceleration": 2.32144625,
-      "discovery_route": "recent_momentum",
-      "change_7d": -3.5576,
-      "volume": 155311404.0,
-      "dollar_volume": 155311404.0,
-      "market_cap": 2112275282,
-      "session": "24/7",
-      "observed_at": "2026-10-08T10:00:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-08T10:01:14.886580+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.43401,
-      "support": 0.42947,
-      "momentum_pct": 0.18007202881151763,
-      "reference_price": 0.43278386950941616,
-      "extension_pct": 0.2671380733053619,
-      "resistance_1": 0.43464,
-      "resistance_2": 0.43599,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.43401,
-            "support": 0.43242,
-            "resistance_1": 0.43464,
-            "resistance_2": 0.43599,
-            "momentum_pct": 0.18007202881151763,
-            "extension_pct": 0.2671380733053619,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.43245,
-              "measured_height": 0.013819999999999999,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.43936,
-                0.44627
-              ],
-              "overhead_levels": [
-                0.43464,
-                0.43478,
-                0.43484,
-                0.43496
-              ]
-            },
-            "observed_at": "2026-10-08T10:00:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-08T08:00:00+00:00",
-              "range_end": "2026-10-08T09:25:00+00:00",
-              "range_high": 0.43245,
-              "range_low": 0.41863,
-              "retest_low": 0.43242,
-              "breakout_close": 0.43316,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.903901566742498,
-        "observed_at": "2026-10-08T10:00:00+00:00"
-      },
-      "structure_observed_at": "2026-10-08T10:00:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "ONDOEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 12
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.43401,
-          "support": 0.43242,
-          "resistance_1": 0.43464,
-          "resistance_2": 0.43599,
-          "momentum_pct": 0.18007202881151763,
-          "extension_pct": 0.2671380733053619,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.43245,
-            "measured_height": 0.013819999999999999,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.43936,
-              0.44627
-            ],
-            "overhead_levels": [
-              0.43464,
-              0.43478,
-              0.43484,
-              0.43496
-            ]
-          },
-          "observed_at": "2026-10-08T10:00:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-08T08:00:00+00:00",
-            "range_end": "2026-10-08T09:25:00+00:00",
-            "range_high": 0.43245,
-            "range_low": 0.41863,
-            "retest_low": 0.43242,
-            "breakout_close": 0.43316,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.43401,
-              "support": 0.43242,
-              "resistance_1": 0.43464,
-              "resistance_2": 0.43599,
-              "momentum_pct": 0.18007202881151763,
-              "extension_pct": 0.2671380733053619,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.43245,
-                "measured_height": 0.013819999999999999,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.43936,
-                  0.44627
-                ],
-                "overhead_levels": [
-                  0.43464,
-                  0.43478,
-                  0.43484,
-                  0.43496
-                ]
-              },
-              "observed_at": "2026-10-08T10:00:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-08T08:00:00+00:00",
-                "range_end": "2026-10-08T09:25:00+00:00",
-                "range_high": 0.43245,
-                "range_low": 0.41863,
-                "retest_low": 0.43242,
-                "breakout_close": 0.43316,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
     }
   ],
   "changed_signals": [
-    "crypto:ondo-finance"
+    "stock:LYV"
   ],
   "invalidated_signals": [
-    "crypto:arbitrum"
+    "stock:MORN",
+    "stock:EXTR",
+    "crypto:ondo-finance"
   ],
   "health": {
     "stocks": {
@@ -2297,8 +1811,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 188,
-        "matched_events": 18,
-        "matched_assets": 16,
+        "matched_events": 15,
+        "matched_assets": 14,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2316,14 +1830,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5900,
-      "discovered_candidates": 16,
+      "discovered_candidates": 14,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 15,
+      "shortlisted_candidates": 13,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 15,
-      "selected_candidates": 15,
+      "catalyst_selected": 13,
+      "selected_candidates": 13,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -2331,7 +1845,7 @@
       "unquoted_listings": 48,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 15,
+      "history_not_requested": 13,
       "chart_failures": 0
     },
     "crypto": {
@@ -2379,18 +1893,18 @@
         "status": "OK",
         "records": 17052,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T10:01:14.886580+00:00",
+        "checked_at": "2026-10-08T10:32:11.526241+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T10:01:14.886580+00:00"
+        "checked_at": "2026-10-08T10:32:11.526241+00:00"
       }
     },
     "news": {
-      "checked": 27,
+      "checked": 25,
       "failed": 0
     }
   },
