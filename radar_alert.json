@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T06:41:46.256008+00:00",
+  "generated_at": "2026-10-08T07:03:55.140943+00:00",
   "potential_signals": [
     {
       "ticker": "RPM",
@@ -77,134 +77,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "RPM_US_EQ",
         "isin": "US7496851038",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "MA",
-      "name": "Mastercard",
-      "asset_type": "stock",
-      "price": 570.06,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.614208,
-      "volume": 1862680.0,
-      "dollar_volume": 1061839360.8,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 12.232,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "P&G AND THE McLAREN MASTERCARD FORMULA 1 TEAM ANNOUNCE PARTNERSHIP TO DRIVE CONSUMER ENGAGEMENT ACROSS ASIA PACIFIC - The Malaysian Reserve",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNUUhzcF82WHNkMWtkVkJ4a3FuWDZsLXlibzl2UHpQSE94cjJZbmtqVkxJaFBDVFBMeFZtRkN1UFpTT2M2OWRzYlFQQnlINlJ5d1R3LUJVeVBFemY2MER6R01CRWh3Z3ZlajN0WUJPdG51UzlubXF2YTBjd0Y0MzRNU1VVekNGeWdGb2hmN0x5ejV6NjFkdG1qVk1kSmdlWWhoYmFtR2lDSTdxWUl5b3BsVEMydmdIUWlmdUpfQlF4Y24zTWF1ZWFsLUNUbngzMmd1WkJfcHBnNmtCbGU5dE5UTGJwV2xZcTFMNnZWa1FZcw?oc=5",
-        "source": "The Malaysian Reserve",
-        "published_at": "2026-10-08T01:33:19+00:00",
-        "id": "facdac98e46e8c011613",
-        "type": "partnership",
-        "age_hours": 4.69,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "P&G AND THE McLAREN MASTERCARD FORMULA 1 TEAM ANNOUNCE PARTNERSHIP TO DRIVE CONSUMER ENGAGEMENT ACROSS ASIA PACIFIC - The Malaysian Reserve",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "P&G AND THE McLAREN MASTERCARD FORMULA 1 TEAM ANNOUNCE PARTNERSHIP TO DRIVE CONSUMER ENGAGEMENT ACROSS ASIA PACIFIC - The Malaysian Reserve",
-            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNUUhzcF82WHNkMWtkVkJ4a3FuWDZsLXlibzl2UHpQSE94cjJZbmtqVkxJaFBDVFBMeFZtRkN1UFpTT2M2OWRzYlFQQnlINlJ5d1R3LUJVeVBFemY2MER6R01CRWh3Z3ZlajN0WUJPdG51UzlubXF2YTBjd0Y0MzRNU1VVekNGeWdGb2hmN0x5ejV6NjFkdG1qVk1kSmdlWWhoYmFtR2lDSTdxWUl5b3BsVEMydmdIUWlmdUpfQlF4Y24zTWF1ZWFsLUNUbngzMmd1WkJfcHBnNmtCbGU5dE5UTGJwV2xZcTFMNnZWa1FZcw?oc=5",
-            "source": "The Malaysian Reserve",
-            "published_at": "2026-10-08T01:33:19+00:00",
-            "id": "facdac98e46e8c011613",
-            "type": "partnership",
-            "age_hours": 4.69,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T06:14:29.748145+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "MA_US_EQ",
-        "isin": "US57636Q1040",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -461,134 +333,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "QUBT_US_EQ",
         "isin": "US74766W1080",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "OII",
-      "name": "Oceaneering International",
-      "asset_type": "stock",
-      "price": 43.7,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -2.82411,
-      "volume": 889371.0,
-      "dollar_volume": 38865512.7,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 3.673,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "How Investors May Respond To Oceaneering International Stock After Navy Contract Win - Simply Wall Street",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOLUdoblByeWdhcTRsdThyaUlJV0RmalZPNENTV0RGLW42MlEzVjZrMERZQVhPVGhhQW5iTThaS2J4Q3ZIMXgycXlQQ21HVE1YRE55WG9DNTlMaGVVam9XX21MeVB4UU1JaGtsUGNiZEpLVGVJMW5QYmR5dmRDcWYwRjFDc19OUjhsM3JfUXN5NTB2RkZPZ0hYenMtVUl3VzhhV1VGODJPQ3BBZE9wS3RWVDU5SEkxdFFGYXVxQ2lSZVZMWmgtUlIyQUFkX3B6elBxZ21nSGZQaXNuNUHSAdsBQVVfeXFMTi1HaG5QcnlnYXE0bHU4cmlJSVdEZmpWTzRDU1dERi1uNjJRM1Y2azBEWUFYT1RoYUFuYk04WktieEN2SDF4MnF5UENtR1RNWEROeVhvQzU5TGhlVWpvV19tTHlQeFFNSWhrbFBjYmRKS1RlSTFuUGJkeXZkQ3FmMEYxQ3NfTlI4bDNyX1FzeTUwdkZGT2dIWHpzLVVJd1c4YVdVRjgyT0NwQWRPcEt0VlQ1OUhJMXRRRmF1cUNpUmVWTFpoLVJSMkFBZF9wenpQcWdtZ0hmUGlzbjVB?oc=5",
-        "source": "Simply Wall Street",
-        "published_at": "2026-10-08T05:20:47+00:00",
-        "id": "77ba1a11a12cd027026e",
-        "type": "partnership",
-        "age_hours": 1.34,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "How Investors May Respond To Oceaneering International Stock After Navy Contract Win - Simply Wall Street",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "How Investors May Respond To Oceaneering International Stock After Navy Contract Win - Simply Wall Street",
-            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOLUdoblByeWdhcTRsdThyaUlJV0RmalZPNENTV0RGLW42MlEzVjZrMERZQVhPVGhhQW5iTThaS2J4Q3ZIMXgycXlQQ21HVE1YRE55WG9DNTlMaGVVam9XX21MeVB4UU1JaGtsUGNiZEpLVGVJMW5QYmR5dmRDcWYwRjFDc19OUjhsM3JfUXN5NTB2RkZPZ0hYenMtVUl3VzhhV1VGODJPQ3BBZE9wS3RWVDU5SEkxdFFGYXVxQ2lSZVZMWmgtUlIyQUFkX3B6elBxZ21nSGZQaXNuNUHSAdsBQVVfeXFMTi1HaG5QcnlnYXE0bHU4cmlJSVdEZmpWTzRDU1dERi1uNjJRM1Y2azBEWUFYT1RoYUFuYk04WktieEN2SDF4MnF5UENtR1RNWEROeVhvQzU5TGhlVWpvV19tTHlQeFFNSWhrbFBjYmRKS1RlSTFuUGJkeXZkQ3FmMEYxQ3NfTlI4bDNyX1FzeTUwdkZGT2dIWHpzLVVJd1c4YVdVRjgyT0NwQWRPcEt0VlQ1OUhJMXRRRmF1cUNpUmVWTFpoLVJSMkFBZF9wenpQcWdtZ0hmUGlzbjVB?oc=5",
-            "source": "Simply Wall Street",
-            "published_at": "2026-10-08T05:20:47+00:00",
-            "id": "77ba1a11a12cd027026e",
-            "type": "partnership",
-            "age_hours": 1.34,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T06:40:57.530918+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "OII_US_EQ",
-        "isin": "US6752321025",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1021,137 +765,6 @@
       }
     },
     {
-      "symbol": "MORPHO",
-      "name": "Morpho",
-      "coin_id": "morpho",
-      "asset_type": "crypto",
-      "price": 2.28,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -1.70491,
-      "change_1h": 0.7779,
-      "acceleration": 0.8489379166666667,
-      "discovery_route": "recent_momentum",
-      "change_7d": -0.1498,
-      "volume": 17866515.0,
-      "dollar_volume": 17866515.0,
-      "market_cap": 1581966769,
-      "session": "24/7",
-      "observed_at": "2026-10-08T06:10:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-08T06:14:29.748145+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 719,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 2.28,
-      "support": 2.24724,
-      "momentum_pct": 0.0,
-      "reference_price": 2.28,
-      "extension_pct": 0.0,
-      "resistance_1": 2.28413,
-      "resistance_2": 2.29295,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.0,
-        "observed_at": "2026-10-08T06:10:00+00:00"
-      },
-      "structure_observed_at": "2026-10-08T06:10:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "MORPHOEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Ledger Launches Crypto Loans Through Morpho for Bitcoin Holders - CoinLaw",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE16Q1haczhVSXRfVDcxVEEyR2xfd2VHcTE0SDV4TkxJNVhJN29qR095UzVWR1loZThjS2FPZmJtcG42ZjJvazFNZ1hicXJrbWdYZUtZLUw1bUpYYzVEZUowRmczT0Rac1M0aGNNaC1kWQ?oc=5",
-        "source": "CoinLaw",
-        "published_at": "2026-10-07T17:49:13+00:00",
-        "id": "321e11e1e960a8ad8c8e",
-        "type": "product_launch",
-        "age_hours": 12.44,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Ledger Launches Crypto Loans Through Morpho for Bitcoin Holders - CoinLaw",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Ledger Launches Crypto Loans Through Morpho for Bitcoin Holders - CoinLaw",
-            "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE16Q1haczhVSXRfVDcxVEEyR2xfd2VHcTE0SDV4TkxJNVhJN29qR095UzVWR1loZThjS2FPZmJtcG42ZjJvazFNZ1hicXJrbWdYZUtZLUw1bUpYYzVEZUowRmczT0Rac1M0aGNNaC1kWQ?oc=5",
-            "source": "CoinLaw",
-            "published_at": "2026-10-07T17:49:13+00:00",
-            "id": "321e11e1e960a8ad8c8e",
-            "type": "product_launch",
-            "age_hours": 12.44,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 10
-      },
-      "score": {
-        "score": 2,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
       "symbol": "ZRO",
       "name": "LayerZero",
       "coin_id": "layerzero",
@@ -1282,12 +895,11 @@
       }
     }
   ],
-  "changed_signals": [
-    "stock:OII"
-  ],
+  "changed_signals": [],
   "invalidated_signals": [
-    "stock:LYV",
-    "stock:AMRX"
+    "stock:MA",
+    "stock:OII",
+    "crypto:morpho"
   ],
   "health": {
     "stocks": {
@@ -1308,8 +920,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 187,
-        "matched_events": 9,
-        "matched_assets": 9,
+        "matched_events": 7,
+        "matched_assets": 7,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1327,14 +939,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5899,
-      "discovered_candidates": 9,
+      "discovered_candidates": 7,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 8,
+      "shortlisted_candidates": 6,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 8,
-      "selected_candidates": 8,
+      "catalyst_selected": 6,
+      "selected_candidates": 6,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1342,7 +954,7 @@
       "unquoted_listings": 49,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 8,
+      "history_not_requested": 6,
       "chart_failures": 0
     },
     "crypto": {
@@ -1353,12 +965,12 @@
         },
         "errors": []
       },
-      "status": "PARTIAL",
+      "status": "OK",
       "screened_assets": 250,
       "price_records": 12,
       "history_requested": 12,
-      "history_received": 11,
-      "chart_failures": 1,
+      "history_received": 12,
+      "chart_failures": 0,
       "history_stale": 0,
       "history_not_requested": 0,
       "catalyst_discovery": {
@@ -1390,18 +1002,18 @@
         "status": "OK",
         "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T06:40:57.530918+00:00",
+        "checked_at": "2026-10-08T07:03:04.629033+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T06:40:57.530918+00:00"
+        "checked_at": "2026-10-08T07:03:04.629033+00:00"
       }
     },
     "news": {
-      "checked": 20,
+      "checked": 18,
       "failed": 0
     }
   },
