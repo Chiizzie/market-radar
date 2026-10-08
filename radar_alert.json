@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T22:58:47.945208+00:00",
+  "generated_at": "2026-10-08T23:13:51.217681+00:00",
   "potential_signals": [
     {
       "ticker": "HELE",
@@ -242,6 +242,134 @@
             "status": "NOT_EVALUATED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands International",
+      "asset_type": "stock",
+      "price": 70.66,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.77157,
+      "volume": 3480368.0,
+      "dollar_volume": 245922802.88,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:03+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 14.93,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
+        "link": "https://news.google.com/rss/articles/CBMilANBVV95cUxQWTZfNUxPOWpLNTQ0YmJqWHE3WDVlQVFkT1VzTUdTUklqak1zRGQ4Qzl3eFdNRTByT1l6aDBncGdMeGM4VVR1bVRXZ2Q3ODFYaXZqZmNUZnRIU3ZrYVg1YWVSLUx5ZXFkYkEydTZXdjBkRnVkZ0s5amFodU9EbjV2N0tuU0tyTUNEV05vTlFvbk9SOWxMLVZzWkEtaW44LUNmUU9NVUFZdmdGV2I4Qzk1RFRoNFkycWxPRG4zLWM4R3JrMTRKZ1VzcWRoOWJZTE1rTWVNQjcta1lveHhxMzI3OEw2cHFONVNCWVAyN3dZeUlYZXliZ1h1bHRkTUxWLVRDekF0OXpOWnZRV0xlcDZyTGNQbEUwT051d3FnS0o0c0lHaV9LYWRqNGZGVlM4MGN2TUtSU3lpWXYtdkFTRTlocEpfcW9PTDlGNjNTaURILU9jQXNzQ1BTLVJHeHdBOEU2cVNnR1RLZlNISVUza1RVWENRM3JRRnFEWGRtQjhXaW5ob2h3bUY2Um1iVUVhcUFxZU1IVg?oc=5",
+        "source": "Finansavisen",
+        "published_at": "2026-10-08T22:07:30+00:00",
+        "id": "bbfb0f551fdf2caf998d",
+        "type": "partnership",
+        "age_hours": 1.09,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
+            "link": "https://news.google.com/rss/articles/CBMilANBVV95cUxQWTZfNUxPOWpLNTQ0YmJqWHE3WDVlQVFkT1VzTUdTUklqak1zRGQ4Qzl3eFdNRTByT1l6aDBncGdMeGM4VVR1bVRXZ2Q3ODFYaXZqZmNUZnRIU3ZrYVg1YWVSLUx5ZXFkYkEydTZXdjBkRnVkZ0s5amFodU9EbjV2N0tuU0tyTUNEV05vTlFvbk9SOWxMLVZzWkEtaW44LUNmUU9NVUFZdmdGV2I4Qzk1RFRoNFkycWxPRG4zLWM4R3JrMTRKZ1VzcWRoOWJZTE1rTWVNQjcta1lveHhxMzI3OEw2cHFONVNCWVAyN3dZeUlYZXliZ1h1bHRkTUxWLVRDekF0OXpOWnZRV0xlcDZyTGNQbEUwT051d3FnS0o0c0lHaV9LYWRqNGZGVlM4MGN2TUtSU3lpWXYtdkFTRTlocEpfcW9PTDlGNjNTaURILU9jQXNzQ1BTLVJHeHdBOEU2cVNnR1RLZlNISVUza1RVWENRM3JRRnFEWGRtQjhXaW5ob2h3bUY2Um1iVUVhcUFxZU1IVg?oc=5",
+            "source": "Finansavisen",
+            "published_at": "2026-10-08T22:07:30+00:00",
+            "id": "bbfb0f551fdf2caf998d",
+            "type": "partnership",
+            "age_hours": 1.09,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T23:13:00.587175+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "QSR_US_EQ",
+        "isin": "CA76131D1033",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
@@ -1430,6 +1558,136 @@
       }
     },
     {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "coin_id": "ethereum",
+      "asset_type": "crypto",
+      "price": 2207.18,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -3.70979,
+      "change_1h": -0.2603,
+      "acceleration": -0.10572541666666666,
+      "discovery_route": "catalyst_first",
+      "change_7d": -8.2216,
+      "volume": 17069622539.0,
+      "dollar_volume": 17069622539.0,
+      "market_cap": 269460812195,
+      "session": "24/7",
+      "observed_at": "2026-10-08T23:10:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Ethereum\u2019s Glamsterdam upgrade could ease DeFi congestion, Curve says - Cryptonews.net",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yZjRmZDhVTl9tQ3czUGNYaEFEejJLZER2emtyS1V5dndsc2FtbTIwWUlDWHhocnJVSTBGZlVtZ2VQY1FVMkUxV0RnVVV0b0xjbTl1aGhQNFdfQQ?oc=5",
+        "source": "Cryptonews.net",
+        "published_at": "2026-10-08T22:15:16+00:00",
+        "id": "7f38b2a80e7c60233ebe",
+        "type": "crypto_event",
+        "age_hours": 0.96,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Ethereum\u2019s Glamsterdam upgrade could ease DeFi congestion, Curve says - Cryptonews.net",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Ethereum\u2019s Glamsterdam upgrade could ease DeFi congestion, Curve says - Cryptonews.net",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yZjRmZDhVTl9tQ3czUGNYaEFEejJLZER2emtyS1V5dndsc2FtbTIwWUlDWHhocnJVSTBGZlVtZ2VQY1FVMkUxV0RnVVV0b0xjbTl1aGhQNFdfQQ?oc=5",
+            "source": "Cryptonews.net",
+            "published_at": "2026-10-08T22:15:16+00:00",
+            "id": "7f38b2a80e7c60233ebe",
+            "type": "crypto_event",
+            "age_hours": 0.96,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-08T23:13:00.587175+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 2209.15,
+      "support": 2203.82,
+      "momentum_pct": 0.08071098213475736,
+      "reference_price": 2206.728445517443,
+      "extension_pct": 0.020462621192662844,
+      "resistance_1": 2211.66,
+      "resistance_2": 2230.83,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.2418917472835685,
+        "observed_at": "2026-10-08T23:10:00+00:00"
+      },
+      "structure_observed_at": "2026-10-08T23:10:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "XETHZEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
       "symbol": "DOT",
       "name": "Polkadot",
       "coin_id": "polkadot",
@@ -1578,319 +1836,14 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "LINK",
-      "name": "Chainlink",
-      "coin_id": "chainlink",
-      "asset_type": "crypto",
-      "price": 11.37968,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -4.13579,
-      "change_1h": 0.5848,
-      "acceleration": 0.7571245833333333,
-      "discovery_route": "recent_momentum",
-      "change_7d": -11.4905,
-      "volume": 423810379.0,
-      "dollar_volume": 423810379.0,
-      "market_cap": 8497680918,
-      "session": "24/7",
-      "observed_at": "2026-10-08T22:15:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-08T22:15:58.086839+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 11.36329,
-      "support": 11.3141,
-      "momentum_pct": 0.17641404129002947,
-      "reference_price": 11.338496468810005,
-      "extension_pct": 0.3632186269430182,
-      "resistance_1": 11.39472,
-      "resistance_2": 11.46421,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 11.36329,
-            "support": 11.34582,
-            "resistance_1": 11.38622,
-            "resistance_2": 11.43506,
-            "momentum_pct": 0.17641404129002947,
-            "extension_pct": 0.3632186269430182,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 11.33738,
-              "measured_height": 0.09768000000000043,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                11.38622,
-                11.43506
-              ],
-              "overhead_levels": [
-                11.39472,
-                11.46421,
-                11.50789,
-                11.51
-              ]
-            },
-            "observed_at": "2026-10-08T22:15:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-08T20:15:00+00:00",
-              "range_end": "2026-10-08T21:40:00+00:00",
-              "range_high": 11.33738,
-              "range_low": 11.2397,
-              "retest_low": 11.34582,
-              "breakout_close": 11.35964,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 11.36329,
-            "support": 11.34582,
-            "resistance_1": 11.387235,
-            "resistance_2": 11.428650000000001,
-            "momentum_pct": 0.17641404129002947,
-            "extension_pct": 0.3632186269430182,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 11.34582,
-              "measured_height": 0.08283000000000129,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                11.387235,
-                11.428650000000001
-              ],
-              "overhead_levels": [
-                11.39472,
-                11.46421,
-                11.50789,
-                11.51
-              ]
-            },
-            "observed_at": "2026-10-08T22:15:00+00:00",
-            "evidence": {
-              "impulse_high": 11.35964,
-              "impulse_low": 11.27681,
-              "pullback_low": 11.34582,
-              "ema9": 11.340919585940552,
-              "ema21": 11.301681797784545,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.9403077034299333,
-        "observed_at": "2026-10-08T22:15:00+00:00"
-      },
-      "structure_observed_at": "2026-10-08T22:15:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "LINKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Chainlink Launches CCIP Vault Adapters for Cross-Chain Deposits - The Crypto Times",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb0MtY2xScWZ2RHMtaVI3b2Uwb0dncHQtbHJUVUxuZHZ5X0FSZTVXNDZpcGYxcVdqMTJhYzRVcnZRRXZELXZvV3gtRXNJQmF2clhEbHQzemNVd0RCMklhRHRfN3lfYl9pRlBMaUowX1VFWVBacWNscGUxbG93a0E3eUhGcFRtVDV4TTJUbVhJX1VjNENQX3owLTktbFRzLUhfZ0p6cw?oc=5",
-        "source": "The Crypto Times",
-        "published_at": "2026-10-08T13:36:15+00:00",
-        "id": "59ec6f76c76da6722f99",
-        "type": "product_launch",
-        "age_hours": 8.68,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Chainlink Launches CCIP Vault Adapters for Cross-Chain Deposits - The Crypto Times",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Chainlink Launches CCIP Vault Adapters for Cross-Chain Deposits - The Crypto Times",
-            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb0MtY2xScWZ2RHMtaVI3b2Uwb0dncHQtbHJUVUxuZHZ5X0FSZTVXNDZpcGYxcVdqMTJhYzRVcnZRRXZELXZvV3gtRXNJQmF2clhEbHQzemNVd0RCMklhRHRfN3lfYl9pRlBMaUowX1VFWVBacWNscGUxbG93a0E3eUhGcFRtVDV4TTJUbVhJX1VjNENQX3owLTktbFRzLUhfZ0p6cw?oc=5",
-            "source": "The Crypto Times",
-            "published_at": "2026-10-08T13:36:15+00:00",
-            "id": "59ec6f76c76da6722f99",
-            "type": "product_launch",
-            "age_hours": 8.68,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 12
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 11.36329,
-              "support": 11.34582,
-              "resistance_1": 11.38622,
-              "resistance_2": 11.43506,
-              "momentum_pct": 0.17641404129002947,
-              "extension_pct": 0.3632186269430182,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 11.33738,
-                "measured_height": 0.09768000000000043,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  11.38622,
-                  11.43506
-                ],
-                "overhead_levels": [
-                  11.39472,
-                  11.46421,
-                  11.50789,
-                  11.51
-                ]
-              },
-              "observed_at": "2026-10-08T22:15:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-08T20:15:00+00:00",
-                "range_end": "2026-10-08T21:40:00+00:00",
-                "range_high": 11.33738,
-                "range_low": 11.2397,
-                "retest_low": 11.34582,
-                "breakout_close": 11.35964,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            }
-          },
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 11.36329,
-              "support": 11.34582,
-              "resistance_1": 11.387235,
-              "resistance_2": 11.428650000000001,
-              "momentum_pct": 0.17641404129002947,
-              "extension_pct": 0.3632186269430182,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 11.34582,
-                "measured_height": 0.08283000000000129,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  11.387235,
-                  11.428650000000001
-                ],
-                "overhead_levels": [
-                  11.39472,
-                  11.46421,
-                  11.50789,
-                  11.51
-                ]
-              },
-              "observed_at": "2026-10-08T22:15:00+00:00",
-              "evidence": {
-                "impulse_high": 11.35964,
-                "impulse_low": 11.27681,
-                "pullback_low": 11.34582,
-                "ema9": 11.340919585940552,
-                "ema21": 11.301681797784545,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            }
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
     }
   ],
   "changed_signals": [
-    "stock:MA",
-    "stock:BYRN"
+    "stock:QSR",
+    "crypto:ethereum"
   ],
   "invalidated_signals": [
-    "stock:ANGO"
+    "crypto:chainlink"
   ],
   "health": {
     "stocks": {
@@ -1910,9 +1863,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 183,
-        "matched_events": 16,
-        "matched_assets": 13,
+        "headlines_received": 184,
+        "matched_events": 17,
+        "matched_assets": 14,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1930,14 +1883,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5902,
-      "discovered_candidates": 13,
+      "discovered_candidates": 14,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 11,
+      "shortlisted_candidates": 12,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 11,
-      "selected_candidates": 11,
+      "catalyst_selected": 12,
+      "selected_candidates": 12,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1945,7 +1898,7 @@
       "unquoted_listings": 47,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 11,
+      "history_not_requested": 12,
       "chart_failures": 0
     },
     "crypto": {
@@ -1967,8 +1920,8 @@
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
-        "matched_events": 0,
-        "matched_assets": 0,
+        "matched_events": 1,
+        "matched_assets": 1,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1993,18 +1946,18 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T22:57:58.114731+00:00",
+        "checked_at": "2026-10-08T23:13:00.587175+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T22:57:58.114731+00:00"
+        "checked_at": "2026-10-08T23:13:00.587175+00:00"
       }
     },
     "news": {
-      "checked": 23,
+      "checked": 24,
       "failed": 0
     }
   },
