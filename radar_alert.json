@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T21:44:20.019369+00:00",
+  "generated_at": "2026-10-08T22:00:04.172059+00:00",
   "potential_signals": [
     {
       "ticker": "HELE",
@@ -207,6 +207,136 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "PKE_US_EQ",
         "isin": "US70014A1043",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SECZ",
+      "name": "Securitize",
+      "asset_type": "stock",
+      "price": 12.66,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 11.0526,
+      "volume": 7806309.0,
+      "dollar_volume": 98827871.94,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 12.147,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSVZVeUtTS0lSN1poNmdnVUVLbVNrTWxfSzRoWmVYbEdIeGEwVWc4T0p2RkhfRkdqRENDX3JseDBCeFFUUXhQZkNubEJRejBKc2xiX0JCMW5PRDBnR1Ezd0l0M01ycWtJM1hLcm5uWVZPZVZCZ1RVbnlVZVoxNHV6R0dTLTFwWU82c1Q4ejIwRWZaNTNuZ25oNmh5cEFqcmhYV2hmQ3B6UzZSRVFLdWxBYVBmbGRhVkc4Zk9n?oc=5",
+        "source": "The Defiant",
+        "published_at": "2026-10-08T16:12:39+00:00",
+        "id": "b6677c4871a5350891fe",
+        "type": "product_launch",
+        "age_hours": 5.78,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
+            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSVZVeUtTS0lSN1poNmdnVUVLbVNrTWxfSzRoWmVYbEdIeGEwVWc4T0p2RkhfRkdqRENDX3JseDBCeFFUUXhQZkNubEJRejBKc2xiX0JCMW5PRDBnR1Ezd0l0M01ycWtJM1hLcm5uWVZPZVZCZ1RVbnlVZVoxNHV6R0dTLTFwWU82c1Q4ejIwRWZaNTNuZ25oNmh5cEFqcmhYV2hmQ3B6UzZSRVFLdWxBYVBmbGRhVkc4Zk9n?oc=5",
+            "source": "The Defiant",
+            "published_at": "2026-10-08T16:12:39+00:00",
+            "id": "b6677c4871a5350891fe",
+            "type": "product_launch",
+            "age_hours": 5.78,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T21:59:11.741493+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CEPT_US_EQ",
+        "isin": "US81517B1017",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -2112,12 +2242,9 @@
     }
   ],
   "changed_signals": [
-    "stock:VYLR"
+    "stock:SECZ"
   ],
-  "invalidated_signals": [
-    "stock:MA",
-    "stock:TSM"
-  ],
+  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -2136,20 +2263,16 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 159,
-        "matched_events": 18,
-        "matched_assets": 15,
+        "headlines_received": 180,
+        "matched_events": 19,
+        "matched_assets": 16,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
           "feeds_requested": 3,
-          "feeds_received": 1,
-          "headlines_received": 20,
+          "feeds_received": 2,
+          "headlines_received": 40,
           "failures": [
-            {
-              "source": "GlobeNewswire issuer releases",
-              "error": "HTTPError"
-            },
             {
               "source": "SEC EDGAR 8-K filings",
               "error": "HTTPError"
@@ -2160,14 +2283,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5902,
-      "discovered_candidates": 15,
+      "discovered_candidates": 16,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 13,
+      "shortlisted_candidates": 14,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 13,
-      "selected_candidates": 13,
+      "catalyst_selected": 14,
+      "selected_candidates": 14,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -2175,7 +2298,7 @@
       "unquoted_listings": 47,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 13,
+      "history_not_requested": 14,
       "chart_failures": 0
     },
     "crypto": {
@@ -2223,18 +2346,18 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T21:43:26.481855+00:00",
+        "checked_at": "2026-10-08T21:59:11.741493+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
-        "records": 99,
+        "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T21:43:26.481855+00:00"
+        "checked_at": "2026-10-08T21:59:11.741493+00:00"
       }
     },
     "news": {
-      "checked": 25,
+      "checked": 26,
       "failed": 0
     }
   },
