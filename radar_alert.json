@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T03:14:12.245743+00:00",
+  "generated_at": "2026-10-08T03:58:07.338908+00:00",
   "potential_signals": [
     {
       "ticker": "RPM",
@@ -776,132 +776,6 @@
       }
     },
     {
-      "ticker": "IIPR",
-      "name": "Innovative Industrial Properties",
-      "asset_type": "stock",
-      "price": 51.225,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.9200163,
-      "volume": 363089.0,
-      "dollar_volume": 18599234.025000002,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T19:59:50+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": true,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 10.684,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Innovative Industrial Properties Announces Launch of Series B Preferred Stock Offering - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMGxqdU9RMEJRQU96OUZDbXI4Y2V3QVlocnZhcmtMMUlpZ2hvaTZGOUVaMVRIZWI5NHFOekF0N0JJOFZXNER6NERUX2FjWFUzX2tzUW9LdGJsVlRmeGdhSmc3SnpXZFVSRmRjV1pxcjd3ajB5aGpzbXR6OFIxSkEyWHhqZHlJdFZmVVRZdEtxTGY2dkZMZWlaUzhKakhRdmRrRHpQd2psZEtoX29nNmZpN1AwTnRzVXNrVDloREVOeV9tZk1SYzJOVlJoLUVZd3BUOGFTVWlLZkpwMHc?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-07T12:59:00+00:00",
-        "id": "6ed7215f2a7969419f82",
-        "type": "financing",
-        "age_hours": 7.17,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Innovative Industrial Properties Announces Launch of Series B Preferred Stock Offering - Business Wire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Innovative Industrial Properties Announces Launch of Series B Preferred Stock Offering - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMGxqdU9RMEJRQU96OUZDbXI4Y2V3QVlocnZhcmtMMUlpZ2hvaTZGOUVaMVRIZWI5NHFOekF0N0JJOFZXNER6NERUX2FjWFUzX2tzUW9LdGJsVlRmeGdhSmc3SnpXZFVSRmRjV1pxcjd3ajB5aGpzbXR6OFIxSkEyWHhqZHlJdFZmVVRZdEtxTGY2dkZMZWlaUzhKakhRdmRrRHpQd2psZEtoX29nNmZpN1AwTnRzVXNrVDloREVOeV9tZk1SYzJOVlJoLUVZd3BUOGFTVWlLZkpwMHc?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-07T12:59:00+00:00",
-            "id": "6ed7215f2a7969419f82",
-            "type": "financing",
-            "age_hours": 7.17,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-07T20:09:11.230364+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "IIPR_US_EQ",
-        "isin": "US45781V1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "CHAR",
       "name": "Charlton Aria Acquisition",
       "asset_type": "stock",
@@ -1024,36 +898,37 @@
       }
     },
     {
-      "ticker": "DSGR",
-      "name": "Distribution Solutions Group",
+      "ticker": "BEEM",
+      "name": "Beam Global",
       "asset_type": "stock",
-      "price": 35.07500076293945,
+      "price": 1.08,
       "currency": "USD",
-      "eur_per_unit": 0.8928999900817871,
-      "change": 0.07133103,
-      "volume": 96019,
-      "dollar_volume": 3366112.939743042,
-      "session": "REGULAR",
-      "observed_at": "2026-10-07T15:40:00-04:00",
-      "source": "yfinance completed 5-minute bars",
+      "eur_per_unit": null,
+      "change": -2.7027,
+      "volume": 911864.0,
+      "dollar_volume": 984813.1200000001,
+      "session": "CLOSED",
+      "observed_at": "2026-10-07T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
       "discovery_route": "catalyst_first",
       "selection_evidence": {
         "fresh_publication": true,
         "adverse": false,
-        "broker_status": "UNVERIFIED",
-        "snapshot_score": 4.401,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -1.154,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_status": "OK",
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Distribution Solutions Group Announces Senior Notes Offering Upsizing From $700 Million to $800 Million and Pricing - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQVmhzVGsybjF5TGYxNVVuUFBQWmkzeDVUVkpqb0JsVEZiSEFrcHl1dzY3RC1rZGZFWlNScTVkRmhvaHA5R3BZU001akZ0UVNjc093RGwwWEFHcE50S0dMZjZ0S203T3BiRmMxNkVhSEJnQnVYRDBmaGw1OV9ldkdtTjUxdzRleFY4S1pQU0xDWHlfRzN2SktyM0VtZXlXNmNkMXJSSkdiMTIybWRjTjRyMzJkSGtJZ3hvdG9PVGNPcEZzSVBzVWJIdU5jSVNPZFV2NmlsRWNKc3ByVENNQVRRRFIzNHg4bmpaN294WGJuMEE1Y3ZmTkhEVDNOU0VCclpYT3kweW9Cdw?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-07T19:30:00+00:00",
-        "id": "b2bb0f6ea314e030ebd9",
-        "type": "financing",
-        "age_hours": 0.2,
+        "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWdvZkdGRHRtLW9ZdUtyYl9taGlrRHdqTENNM3d2SXRscTZaR1pKMUNCYXY0ZjV1NXExNDlnR20xb3VyZlRDMng2dlBqUFRKSWlVc1RXWWM0bEtVNVZsbG1TU0JnU1ctdUQ3cy10TE1zNGxydDhBZzdYMXBzcHdRMmlkNmFHWURXZXJXYmlfckpPb1VtY3NPWno3aDBtYnFzbUhVeU9NY2RyLTM1Yl95VWZ6c2NOTlU?oc=5",
+        "source": "Nasdaq",
+        "published_at": "2026-10-07T11:30:00+00:00",
+        "id": "caf23f0fc8bc3445746f",
+        "type": "merger",
+        "age_hours": 16.45,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1062,17 +937,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Distribution Solutions Group Announces Senior Notes Offering Upsizing From $700 Million to $800 Million and Pricing - Business Wire",
+        "summary": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Distribution Solutions Group Announces Senior Notes Offering Upsizing From $700 Million to $800 Million and Pricing - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQVmhzVGsybjF5TGYxNVVuUFBQWmkzeDVUVkpqb0JsVEZiSEFrcHl1dzY3RC1rZGZFWlNScTVkRmhvaHA5R3BZU001akZ0UVNjc093RGwwWEFHcE50S0dMZjZ0S203T3BiRmMxNkVhSEJnQnVYRDBmaGw1OV9ldkdtTjUxdzRleFY4S1pQU0xDWHlfRzN2SktyM0VtZXlXNmNkMXJSSkdiMTIybWRjTjRyMzJkSGtJZ3hvdG9PVGNPcEZzSVBzVWJIdU5jSVNPZFV2NmlsRWNKc3ByVENNQVRRRFIzNHg4bmpaN294WGJuMEE1Y3ZmTkhEVDNOU0VCclpYT3kweW9Cdw?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-07T19:30:00+00:00",
-            "id": "b2bb0f6ea314e030ebd9",
-            "type": "financing",
-            "age_hours": 0.2,
+            "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets - Nasdaq",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWdvZkdGRHRtLW9ZdUtyYl9taGlrRHdqTENNM3d2SXRscTZaR1pKMUNCYXY0ZjV1NXExNDlnR20xb3VyZlRDMng2dlBqUFRKSWlVc1RXWWM0bEtVNVZsbG1TU0JnU1ctdUQ3cy10TE1zNGxydDhBZzdYMXBzcHdRMmlkNmFHWURXZXJXYmlfckpPb1VtY3NPWno3aDBtYnFzbUhVeU9NY2RyLTM1Yl95VWZ6c2NOTlU?oc=5",
+            "source": "Nasdaq",
+            "published_at": "2026-10-07T11:30:00+00:00",
+            "id": "caf23f0fc8bc3445746f",
+            "type": "merger",
+            "age_hours": 16.45,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1089,144 +964,13 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-07T19:41:46.653319+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "reason": "Ticker/company identity is ambiguous; manual verification required."
-      },
-      "volume_spike": 0.9329932306484843,
-      "history_samples": 288,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 35.08000183105469,
-      "support": 35.06999969482422,
-      "momentum_pct": 0.0,
-      "reference_price": 35.074588464241444,
-      "extension_pct": 0.001175491191940381,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No historical resistance above the trigger/current history price in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "resistance_1",
-          "resistance_2"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "VERI",
-      "name": "Veritone",
-      "asset_type": "stock",
-      "price": 0.6913,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -7.382104,
-      "volume": 9391532.0,
-      "dollar_volume": 6492366.0716,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": true,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -2.179,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
-        "source": "AD HOC NEWS",
-        "published_at": "2026-10-07T03:51:44+00:00",
-        "id": "d8d88683215446c04a90",
-        "type": "financing",
-        "age_hours": 16.29,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Veritone announces USD 15 million offering of Veritone stock - AD HOC NEWS",
-            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWZNN29FLXhVWDZlV3RPakxVUm5TOEVsTXdOa0pIMWwyWGMtZE9xQmVTRWxQUl9vM0F5ejU1eEpfOUdhdWpCRGQ3N19hNEx6M1JqMFpxYml5WHYyeTE2bDJSWVIwakhPTnpfOHZadzZfSlkzZFFHNDZsazhvT19ZdThiaUNHWlFIS0M5OG9mMlRsSkN0dTEtelpnVnRDdkxrT1I1T3BkWEFYakpuTE95Q1lZOXRsSWZjQXJV?oc=5",
-            "source": "AD HOC NEWS",
-            "published_at": "2026-10-07T03:51:44+00:00",
-            "id": "d8d88683215446c04a90",
-            "type": "financing",
-            "age_hours": 16.29,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-07T20:09:11.230364+00:00",
+        "checked_at": "2026-10-08T03:57:16.509096+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "VERI_US_EQ",
-        "isin": "US92347M1009",
+        "broker_instrument_id": "EVSI_US_EQ",
+        "isin": "US07373B1098",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1240,8 +984,9 @@
         "reasons": [
           "News lead for research; event timing and entry require verification.",
           "US regular market session is closed.",
+          "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "missing_fields": [
@@ -1258,8 +1003,9 @@
             "status": "NOT_EVALUATED",
             "reasons": [
               "US regular market session is closed.",
+              "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "missing_fields": [
@@ -1755,9 +1501,13 @@
     }
   ],
   "changed_signals": [
-    "stock:PENG"
+    "stock:BEEM"
   ],
-  "invalidated_signals": [],
+  "invalidated_signals": [
+    "stock:IIPR",
+    "stock:DSGR",
+    "stock:VERI"
+  ],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1766,8 +1516,8 @@
       "listed_assets": 5948,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7834,
-        "snapshot_records": 7834,
+        "provider_total": 7846,
+        "snapshot_records": 7846,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1776,9 +1526,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 188,
-        "matched_events": 11,
-        "matched_assets": 11,
+        "headlines_received": 160,
+        "matched_events": 8,
+        "matched_assets": 8,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1796,14 +1546,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5899,
-      "discovered_candidates": 11,
-      "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 10,
+      "discovered_candidates": 8,
+      "broker_excluded_candidates": 0,
+      "shortlisted_candidates": 8,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 10,
-      "selected_candidates": 10,
+      "catalyst_selected": 8,
+      "selected_candidates": 8,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1811,7 +1561,7 @@
       "unquoted_listings": 49,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 10,
+      "history_not_requested": 8,
       "chart_failures": 0
     },
     "crypto": {
@@ -1859,18 +1609,18 @@
         "status": "OK",
         "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T03:13:22.637164+00:00",
+        "checked_at": "2026-10-08T03:57:16.509096+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T03:13:22.637164+00:00"
+        "checked_at": "2026-10-08T03:57:16.509096+00:00"
       }
     },
     "news": {
-      "checked": 22,
+      "checked": 20,
       "failed": 0
     }
   },
