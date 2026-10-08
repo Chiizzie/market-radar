@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T23:13:51.217681+00:00",
+  "generated_at": "2026-10-08T23:47:17.458761+00:00",
   "potential_signals": [
     {
       "ticker": "HELE",
@@ -1042,6 +1042,134 @@
       }
     },
     {
+      "ticker": "ANGO",
+      "name": "AngioDynamics",
+      "asset_type": "stock",
+      "price": 11.23,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -20.859762,
+      "volume": 3063623.0,
+      "dollar_volume": 34404486.29,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -2.487,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "AngioDynamics, Inc. 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:ANGO) 2026-10-08 - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOU1FdGlFMzVOamxJTG5LZUNmQ0lWR1g3emdvWVQtSHRhQW9jcnFGZlFJcVZPOWtBX1FPaHRteVliZDB0eHdVX2hUTUk2X1BFVWpvQmRQVFdBWDdId1FFQWVLNDJOcExmamhrYk1QQThtVDdITThBNXVNeGRpVG5UNmhEQzlzX0tJY0pQVl9qeWJyTGdaNWxXZ1RJMndISDdyTXJR?oc=5",
+        "source": "Seeking Alpha",
+        "published_at": "2026-10-08T18:00:49+00:00",
+        "id": "69116e1c5c1b2dfcb019",
+        "type": "earnings",
+        "age_hours": 5.76,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "AngioDynamics, Inc. 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:ANGO) 2026-10-08 - Seeking Alpha",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "AngioDynamics, Inc. 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:ANGO) 2026-10-08 - Seeking Alpha",
+            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOU1FdGlFMzVOamxJTG5LZUNmQ0lWR1g3emdvWVQtSHRhQW9jcnFGZlFJcVZPOWtBX1FPaHRteVliZDB0eHdVX2hUTUk2X1BFVWpvQmRQVFdBWDdId1FFQWVLNDJOcExmamhrYk1QQThtVDdITThBNXVNeGRpVG5UNmhEQzlzX0tJY0pQVl9qeWJyTGdaNWxXZ1RJMndISDdyTXJR?oc=5",
+            "source": "Seeking Alpha",
+            "published_at": "2026-10-08T18:00:49+00:00",
+            "id": "69116e1c5c1b2dfcb019",
+            "type": "earnings",
+            "age_hours": 5.76,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T23:46:22.422695+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ANGO_US_EQ",
+        "isin": "US03475V1017",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "SXTC",
       "name": "China SXT Pharmaceuticals",
       "asset_type": "stock",
@@ -1839,12 +1967,9 @@
     }
   ],
   "changed_signals": [
-    "stock:QSR",
-    "crypto:ethereum"
+    "stock:ANGO"
   ],
-  "invalidated_signals": [
-    "crypto:chainlink"
-  ],
+  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1853,8 +1978,8 @@
       "listed_assets": 5949,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7837,
-        "snapshot_records": 7837,
+        "provider_total": 7826,
+        "snapshot_records": 7826,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1863,9 +1988,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 184,
-        "matched_events": 17,
-        "matched_assets": 14,
+        "headlines_received": 181,
+        "matched_events": 18,
+        "matched_assets": 15,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1883,14 +2008,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5902,
-      "discovered_candidates": 14,
+      "discovered_candidates": 15,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 12,
+      "shortlisted_candidates": 13,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 12,
-      "selected_candidates": 12,
+      "catalyst_selected": 13,
+      "selected_candidates": 13,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1898,7 +2023,7 @@
       "unquoted_listings": 47,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 12,
+      "history_not_requested": 13,
       "chart_failures": 0
     },
     "crypto": {
@@ -1946,18 +2071,18 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T23:13:00.587175+00:00",
+        "checked_at": "2026-10-08T23:46:22.422695+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T23:13:00.587175+00:00"
+        "checked_at": "2026-10-08T23:46:22.422695+00:00"
       }
     },
     "news": {
-      "checked": 24,
+      "checked": 25,
       "failed": 0
     }
   },
