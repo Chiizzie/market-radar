@@ -5,6 +5,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from broker_availability import BrokerAvailability
+from scan_state import load_state, cadence, finish_state, persist_state
 from radar import MarketScanner, collect_stock_candidates, collect_crypto_candidates, build_market_snapshot, telegram, irish_time
 
 
@@ -15,10 +16,16 @@ def build_potential_signals(stocks, crypto):
 
 def main():
     logging.basicConfig(level=logging.INFO)
+    state, state_health, parent = load_state()
     scanner = MarketScanner()
+    scanner.selection_state = state
+    scanner.health['cadence'] = cadence(state, scanner.now)
     scanner.brokers = BrokerAvailability().load()
     scanner.health['brokers'] = scanner.brokers.health
     stocks, crypto = collect_stock_candidates(scanner), collect_crypto_candidates(scanner)
+    finish_state(state, stocks+crypto, scanner.now)
+    scanner.health['rotation_state'] = persist_state(state, state_health, parent)
+    Path('chart_samples.json').write_text(json.dumps({'captured_at':scanner.now.isoformat(),'charts':scanner.chart_samples},allow_nan=False)+'\n')
     scanner.health['news'] = {'checked': len(stocks + crypto),
                               'failed': sum(x['catalyst'].get('retrieval_status') == 'FAILED' for x in stocks + crypto)}
     payload = {'schema_version': 2, 'generated_at': datetime.now(timezone.utc).isoformat(),

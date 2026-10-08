@@ -2,7 +2,7 @@ name: Market Radar
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -17,11 +17,12 @@ permissions:
   contents: write
 
 concurrency:
-  group: market-radar
+  group: ${{ github.event_name == 'pull_request' && github.ref || 'market-radar-live' }}
   cancel-in-progress: false
 
 jobs:
   test:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +33,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
   scan:
-    if: github.event_name != 'pull_request'
+    if: ${{ always() && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped') }}
     needs: test
     runs-on: ubuntu-24.04
     timeout-minutes: 12
@@ -48,8 +49,6 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run regression tests
-        run: python -m unittest discover -s tests -v
       - name: Run market radar and save structured scan
         env:
           TRADING212_API_KEY: ${{ secrets.TRADING212_API_KEY }}
@@ -72,5 +71,30 @@ jobs:
             bridge_status.json
             radar_outcomes.json
             outcome_summary.json
+            chart_samples.json
+            scan_state.json
           retention-days: 7
           if-no-files-found: warn
+
+  replay:
+    needs: scan
+    if: ${{ always() && needs.scan.result == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: radar-diagnostics-${{ github.run_id }}
+      - name: Replay captured charts without future bars
+        run: python replay_charts.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: radar-replay-${{ github.run_id }}
+          path: replay_report.json
+          retention-days: 7

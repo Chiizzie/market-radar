@@ -7,6 +7,7 @@ import pandas_market_calendars as mcal
 import requests
 import yfinance as yf
 from chart_analysis import analyse_chart
+from swing_zones import resistance_zones
 
 logger = logging.getLogger(__name__)
 MAX_CANDIDATES = 12
@@ -37,7 +38,9 @@ def structure(frame):
         result.update(reference_price=reference, extension_pct=(price / reference - 1) * 100)
     else:
         result['structure_issues'].append('Recent volume does not support an average-price calculation.')
-    resistance = sorted(set(float(x) for x in older['High'] if float(x) > max(entry, price) * 1.001))
+    zones = resistance_zones(older, max(entry, price))
+    result['resistance_zones'] = zones
+    resistance = [z['lower'] for z in zones if z['lower'] > max(entry, price)*1.001]
     if resistance:
         result['resistance_1'] = resistance[0]
         tp2 = next((x for x in resistance[1:] if x > resistance[0] * 1.003), None)
@@ -57,6 +60,13 @@ class MarketScanner:
         self.now = now or datetime.now(timezone.utc)
         self.health = {'stocks': {}, 'crypto': {}, 'errors': []}
         self.tracking_prices = []
+        self.chart_samples = []
+        self.selection_state = {'entries': {}}
+
+    def record_chart(self, item, frame):
+        self.chart_samples.append({'symbol':item.get('ticker',item.get('symbol')), 'asset_type':item['asset_type'],
+            'currency':item['currency'], 'captured_at':self.now.isoformat(),
+            'bars':[[t.isoformat()]+[float(row[c]) for c in ['Open','High','Low','Close','Volume']] for t,row in frame.iterrows()]})
 
     def scan_stocks(self):
         from discovery import listed_universe, broad_quotes, discover_catalysts, select_stock_candidates, finite
@@ -75,7 +85,7 @@ class MarketScanner:
         brokers = getattr(self, 'brokers', None)
         selected, selection_health = select_stock_candidates(
             quotes, universe, catalysts, session == 'REGULAR', self.now,
-            broker_check=brokers.check if brokers else None)
+            broker_check=brokers.check if brokers else None, rotation_state=self.selection_state)
         complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings'] and not news_health.get('primary_sources', {}).get('failures')
         self.health['stocks'] = {'session': session, 'status': 'OK' if complete else 'PARTIAL',
                                  'universe': 'US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings',
@@ -101,7 +111,7 @@ class MarketScanner:
                     'dollar_volume': finite(q.get('regularMarketPrice')) * finite(q.get('regularMarketVolume')),
                     'session': session, 'observed_at': datetime.fromtimestamp(stamp, timezone.utc).isoformat() if stamp else None,
                     'source': q.get('snapshot_source', 'Yahoo broad exchange snapshot'), 'discovery_route': candidate['discovery_route'],
-                    'selection_evidence': candidate['selection_evidence'],
+                    'selection_evidence': candidate['selection_evidence'], 'selection_lane':candidate.get('selection_lane'),
                     'history_status': 'NOT_REQUESTED', 'data_issue': 'Regular-session chart checks wait for the market to open.'}
             if candidate['catalyst']:
                 item['catalyst'] = candidate['catalyst']
@@ -135,6 +145,7 @@ class MarketScanner:
                             volume_spike=float(last['Volume'].sum()/baseline) if baseline > 0 else 0,
                             history_status='OK', source='yfinance completed 5-minute bars', **structure(history))
                 item['chart_analysis'] = analyse_chart(history, 'stock', self.now)
+                self.record_chart(item, history)
                 item.pop('data_issue', None)
             except Exception as exc:
                 item.update(history_status='FAILED', data_issue='Stock chart failed: ' + type(exc).__name__)
@@ -198,7 +209,12 @@ class MarketScanner:
             for item in movers:
                 item['broker_availability'] = self.brokers.check(item)
         movers.sort(key=lambda x: (x.get('broker_availability', {}).get('status') in {'LISTED_PUBLIC', 'LISTED_API'}, bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
-        chart_candidates = [x for x in movers[:MAX_CANDIDATES] if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'} and x['symbol'] not in duplicates]
+        from scan_state import rotate_candidates
+        eligible = [x for x in movers if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'} and x['symbol'] not in duplicates]
+        returned, rotation = rotate_candidates(eligible, self.selection_state, self.now, 'crypto', MAX_CANDIDATES, 4)
+        chart_candidates = returned
+        self.health['crypto'].update(rotation=rotation, discovered_candidates=len(movers),
+            broker_or_identity_excluded=len(movers)-len(eligible), deferred_candidates=max(0,len(eligible)-len(returned)))
         for item in movers:
             if item.get('broker_availability', {}).get('status') in {'NOT_LISTED', 'RESTRICTED'}:
                 item['data_issue'] = 'Chart skipped: no supported broker listing for this instrument.'
@@ -211,6 +227,7 @@ class MarketScanner:
                 frame, evidence = provider.candles(item)
                 item.update(structure(frame))
                 item['chart_analysis'] = analyse_chart(frame, 'crypto', self.now)
+                self.record_chart(item, frame)
                 item.update(history_status='OK', price=float(frame.Close.iloc[-1]),
                             observed_at=(frame.index[-1] + pd.Timedelta(minutes=5)).isoformat(),
                             structure_observed_at=(frame.index[-1] + pd.Timedelta(minutes=5)).isoformat(),
@@ -222,11 +239,10 @@ class MarketScanner:
                 chart_failures += 1
                 item.update(history_status='FAILED', data_issue='Candle retrieval failed: ' + str(exc))
         self.health['crypto']['candle_providers'] = {'pairs': {k: len(v) for k,v in provider.pairs.items()}, 'errors': provider.errors} if provider else {}
-        returned = movers[:MAX_CANDIDATES]
         not_requested = sum(x['history_status'] == 'NOT_REQUESTED' for x in returned)
         stale = sum(x['history_status'] == 'STALE' for x in returned)
         self.health['crypto'].update(status=('DATA_UNAVAILABLE' if not data else 'PARTIAL' if chart_failures or not_requested or stale else 'OK'),
                                      screened_assets=len(data), price_records=len(returned), history_requested=len(chart_candidates),
                                      history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
                                      catalyst_discovery=news_health, universe='Top 250 by market cap; up to 12 candidates; every broker-eligible selected candidate gets an EUR candle attempt')
-        return movers[:MAX_CANDIDATES]
+        return returned

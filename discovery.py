@@ -199,7 +199,7 @@ def stock_candidate_priority(quote):
 
 
 def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
-                            shortlist_limit=150, catalyst_slots=20, broker_check=None):
+                            shortlist_limit=150, catalyst_slots=20, broker_check=None, rotation_state=None):
     """Broad screen -> broker-aware ranked shortlist -> bounded chart checks.
 
     Reserve a third of deep checks for fresh, non-adverse news; unused slots
@@ -241,8 +241,13 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
     shortlist = [row[1] for row in ranked[:max(limit, shortlist_limit)]]
     reserved = [x for x in shortlist if x['selection_evidence']['fresh_publication'] and not x['selection_evidence']['adverse']][:min(limit, catalyst_slots)]
     reserved_symbols = {x['ticker'] for x in reserved}
-    selected = (reserved + [x for x in shortlist if x['ticker'] not in reserved_symbols])[:limit]
-    return selected, {'listed_snapshot_records': len(records),
+    order = reserved + [row[1] for row in ranked if row[1]['ticker'] not in reserved_symbols]
+    from scan_state import rotate_candidates
+    selected, rotation = rotate_candidates(order, rotation_state if rotation_state is not None else {'entries':{}}, now, 'stock', limit, min(20, limit//3) if regular else 0)
+    # Rotating candidates outside the top-ranked shortlist replace its tail.
+    selected_symbols = {x['ticker'] for x in selected}
+    shortlist = (selected + [x for x in shortlist if x['ticker'] not in selected_symbols])[:max(limit,shortlist_limit)]
+    return selected, {'listed_snapshot_records': len(records), 'rotation': rotation,
                       'discovered_candidates': len(ranked) + len(excluded),
                       'broker_excluded_candidates': len(excluded),
                       'shortlisted_candidates': len(shortlist), 'shortlist_limit': max(limit, shortlist_limit),

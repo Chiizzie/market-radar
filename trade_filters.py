@@ -77,10 +77,21 @@ def _classify_setup(asset, catalyst, now=None, chart=False):
     stop = support * 0.999
     executable_entry = max(price, entry)
     risk = executable_entry - stop
-    rr1, rr2 = (tp1 - executable_entry) / risk, (tp2 - executable_entry) / risk
-    if not 0.002 <= risk / executable_entry <= 0.05 or rr1 < 1.5 or rr2 < 2:
-        reasons.append('Stop width or achievable reward/risk fails the entry filter.')
+    if risk <= 0:
+        reasons.append('Stop must be below the executable entry.')
         return result
+    rr1, rr2 = (tp1 - executable_entry) / risk, (tp2 - executable_entry) / risk
+    result['metrics'] = {'stop_width_pct':round(risk/executable_entry*100,4),
+                         'rr1':round(rr1,4), 'rr2':round(rr2,4),
+                         'minimum_rr1':1.5, 'minimum_rr2':2.0}
+    if risk / executable_entry < .002:
+        reasons.append('Stop width is below 0.2%.')
+    if risk / executable_entry > .05:
+        reasons.append('Stop width exceeds 5%.')
+    if rr1 < 1.5:
+        reasons.append('TP1 reward/risk is below 1.5R.')
+    if rr2 < 2:
+        reasons.append('TP2 reward/risk is below 2R.')
     currency = asset.get('currency')
     fx = asset.get('eur_per_unit', 1 if currency == 'EUR' else None)
     if not fx or not math.isfinite(fx) or fx <= 0:
@@ -102,14 +113,17 @@ def _classify_setup(asset, catalyst, now=None, chart=False):
             'exit_by': local.replace(hour=22, minute=0, second=0, microsecond=0).isoformat(),
             'invalidation': ('Pattern/support fails, adverse news emerges, or momentum reverses.' if chart else 'Support/stop fails, catalyst is disproved, or momentum reverses.'),
             'review_required': 'Verify broker availability, bid/ask spread, source article, fees and fresh price.'}
-    return {'status': status, 'reasons': [('Confirmed chart pattern, positive momentum, volume and projected/observed R:R pass.' if chart else 'Observed trigger, positive momentum, fresh headline evidence and structural R:R pass.')], 'plan': plan}
+    return {'status': status, 'reasons': [('Confirmed chart pattern, positive momentum, volume and projected/observed R:R pass.' if chart else 'Observed trigger, positive momentum, fresh headline evidence and structural R:R pass.')], 'plan': plan, 'metrics': result['metrics']}
 
 
 SOFT_BLOCKERS = {
     'Recent same-time relative volume is below 1.5x.',
     'Recent crypto bar volume is below 1.5x its preceding baseline.',
     'No positive recent momentum; a daily gain alone is insufficient.',
-    'Stop width or achievable reward/risk fails the entry filter.',
+    'Stop width is below 0.2%.',
+    'Stop width exceeds 5%.',
+    'TP1 reward/risk is below 1.5R.',
+    'TP2 reward/risk is below 2R.',
     'Price is more than 1% below the trigger; wait for structure to improve.',
 }
 
@@ -138,7 +152,8 @@ def classify_setup(asset, catalyst, now=None):
         safe = (asset.get('broker_availability', {}).get('status') in {'LISTED_PUBLIC', 'LISTED_API'}
                 and isinstance(fx, (int, float)) and math.isfinite(fx) and fx > 0
                 and pattern['extension_pct'] <= 3 and asset['price'] <= pattern['entry']*1.0075)
-        if chart['status'] == REJECTED and safe and 1 <= len(chart['reasons']) <= 2 and set(chart['reasons']) <= SOFT_BLOCKERS:
+        blocker_groups = {('reward_risk' if r.startswith(('TP1 reward', 'TP2 reward')) else 'stop_width' if r.startswith('Stop width') else r) for r in chart['reasons']}
+        if chart['status'] == REJECTED and safe and 1 <= len(blocker_groups) <= 2 and set(chart['reasons']) <= SOFT_BLOCKERS:
             chart.update(status='TECHNICAL WATCH', research_only=True, plan=None,
                          blockers=list(chart['reasons']))
         assessments.append(chart)
