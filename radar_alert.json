@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T11:32:50.746930+00:00",
+  "generated_at": "2026-10-08T11:57:18.052790+00:00",
   "potential_signals": [
     {
       "ticker": "MORN",
@@ -370,134 +370,6 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "VVV",
-      "name": "Valvoline",
-      "asset_type": "stock",
-      "price": 30.73,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.453519,
-      "volume": 3037930.0,
-      "dollar_volume": 93355588.9,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 10.978,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Valvoline Reports Q3 2026 Results: Full Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG9pR2RMbWF3aXNPdjVNeE5ia1ZwVGNEdndFT0thV0w5aEZWR1BpVHlSb3RYZkpaQmJBd3pLbjQwYzR5NHhlb3pjWnhpc3J0alZDNnVOZEZGQzlqNTFwT2hMQWxHTVZjNHV6X2J3ckFNZWs2QXA5SHZoVVl5Qkk1ZERTR2pOa25YMlhXaE9RalV1TGFPNE1EajJkUWRmM1BYdUN4R1lFRkVqa0lj?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-08T10:36:01+00:00",
-        "id": "04dc5f36568b4ba1d0ce",
-        "type": "earnings",
-        "age_hours": 0.94,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Valvoline Reports Q3 2026 Results: Full Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Valvoline Reports Q3 2026 Results: Full Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG9pR2RMbWF3aXNPdjVNeE5ia1ZwVGNEdndFT0thV0w5aEZWR1BpVHlSb3RYZkpaQmJBd3pLbjQwYzR5NHhlb3pjWnhpc3J0alZDNnVOZEZGQzlqNTFwT2hMQWxHTVZjNHV6X2J3ckFNZWs2QXA5SHZoVVl5Qkk1ZERTR2pOa25YMlhXaE9RalV1TGFPNE1EajJkUWRmM1BYdUN4R1lFRkVqa0lj?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-08T10:36:01+00:00",
-            "id": "04dc5f36568b4ba1d0ce",
-            "type": "earnings",
-            "age_hours": 0.94,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T11:32:10.106903+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "VVV_US_EQ",
-        "isin": "US92047W1018",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
             ],
             "plan": null,
             "missing_fields": [
@@ -2050,14 +1922,9 @@
       }
     }
   ],
-  "changed_signals": [
-    "stock:MORN",
-    "stock:VVV",
-    "stock:LYV",
-    "stock:DRH"
-  ],
+  "changed_signals": [],
   "invalidated_signals": [
-    "stock:BEEM"
+    "stock:VVV"
   ],
   "health": {
     "stocks": {
@@ -2078,8 +1945,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 188,
-        "matched_events": 17,
-        "matched_assets": 16,
+        "matched_events": 16,
+        "matched_assets": 15,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2097,14 +1964,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5900,
-      "discovered_candidates": 16,
+      "discovered_candidates": 15,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 15,
+      "shortlisted_candidates": 14,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 15,
-      "selected_candidates": 15,
+      "catalyst_selected": 14,
+      "selected_candidates": 14,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -2112,7 +1979,7 @@
       "unquoted_listings": 48,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 15,
+      "history_not_requested": 14,
       "chart_failures": 0
     },
     "crypto": {
@@ -2160,18 +2027,18 @@
         "status": "OK",
         "records": 17052,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T11:32:10.106903+00:00",
+        "checked_at": "2026-10-08T11:56:39.797511+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T11:32:10.106903+00:00"
+        "checked_at": "2026-10-08T11:56:39.797511+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 20,
       "failed": 0
     }
   },
