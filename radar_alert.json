@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T21:20:11.806896+00:00",
+  "generated_at": "2026-10-08T21:44:20.019369+00:00",
   "potential_signals": [
     {
       "ticker": "HELE",
@@ -207,136 +207,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "PKE_US_EQ",
         "isin": "US70014A1043",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "MA",
-      "name": "Mastercard",
-      "asset_type": "stock",
-      "price": 574.76,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.824477,
-      "volume": 3390859.0,
-      "dollar_volume": 1948930118.84,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 14.615,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "P&G AND THE McLAREN MASTERCARD FORMULA 1 TEAM ANNOUNCE PARTNERSHIP TO DRIVE CONSUMER ENGAGEMENT ACROSS ASIA PACIFIC - The Manila Times",
-        "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOTzZ6T2xyUVpSYnZrSUFJWlZEOUQwdlVqX1NFLTh3bjlmdy1vSnNIaEx2TjBOYnNZaTlJT09nQXU5SU9UNjJ0enRiUEYwcjJPeHhqeElQYkhKQ2ZJdmVsbjg2M1BTOXNtUnZuekdVQnFRb1BQQk92RDJ0UmZFMzBwRzhYenFoNHNPb0NYVk9tMmNNQkxNTkpMeTE4WkM0VXlMMy1ucTFtTUJxc2tmWlZPMzgzNEpETE95X0lvNHVJS2hDblFBUGZMaEpJNEIweVQzLU1oNjdmNEw5ZDcwQ0tNS0diT0ZJT21icFVhVVdBNHRIcmo0R0paM3BxVm1IR1NsTUpVdGpNeHNIbGpOU3h1UWNMbjPSAZoCQVVfeXFMUGo1VGQzZTRhRXdFcmNvdDE4V1pXT0tDUlgxbTMyMkpPaUpJaEY2NFpLNzVJR0NrU1V3eU03NDhCdVRwNmZHaFRqWXFpVDFCaE41amduWVdScjdJLUl6c2tXbFY0VmFzeVZ2NVlQNU5vcXd6Y1BjUWpSekZncHJ6TXh0MFJublY1WVVBeEktYWprWUloaGdTQW9DZ3NaNnB2TXVhcUNYNVozdVNXRHpXSjFDNmhyaTBRZHdncllVbFhmVG4weTE0bndjSXh3d2ptSkQ2NVhUbFRuR05FbHJJUVVhTVV1UmJTY1NFUGZHYXktbjFCbVl3a0RwZmlIYkN1RDlzVUx6LUx2YUMtYXVtT3NrakJqRnZtb29B?oc=5",
-        "source": "The Manila Times",
-        "published_at": "2026-10-08T02:47:29+00:00",
-        "id": "4ebad9277f895957ae42",
-        "type": "partnership",
-        "age_hours": 18.53,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "P&G AND THE McLAREN MASTERCARD FORMULA 1 TEAM ANNOUNCE PARTNERSHIP TO DRIVE CONSUMER ENGAGEMENT ACROSS ASIA PACIFIC - The Manila Times",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "P&G AND THE McLAREN MASTERCARD FORMULA 1 TEAM ANNOUNCE PARTNERSHIP TO DRIVE CONSUMER ENGAGEMENT ACROSS ASIA PACIFIC - The Manila Times",
-            "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOTzZ6T2xyUVpSYnZrSUFJWlZEOUQwdlVqX1NFLTh3bjlmdy1vSnNIaEx2TjBOYnNZaTlJT09nQXU5SU9UNjJ0enRiUEYwcjJPeHhqeElQYkhKQ2ZJdmVsbjg2M1BTOXNtUnZuekdVQnFRb1BQQk92RDJ0UmZFMzBwRzhYenFoNHNPb0NYVk9tMmNNQkxNTkpMeTE4WkM0VXlMMy1ucTFtTUJxc2tmWlZPMzgzNEpETE95X0lvNHVJS2hDblFBUGZMaEpJNEIweVQzLU1oNjdmNEw5ZDcwQ0tNS0diT0ZJT21icFVhVVdBNHRIcmo0R0paM3BxVm1IR1NsTUpVdGpNeHNIbGpOU3h1UWNMbjPSAZoCQVVfeXFMUGo1VGQzZTRhRXdFcmNvdDE4V1pXT0tDUlgxbTMyMkpPaUpJaEY2NFpLNzVJR0NrU1V3eU03NDhCdVRwNmZHaFRqWXFpVDFCaE41amduWVdScjdJLUl6c2tXbFY0VmFzeVZ2NVlQNU5vcXd6Y1BjUWpSekZncHJ6TXh0MFJublY1WVVBeEktYWprWUloaGdTQW9DZ3NaNnB2TXVhcUNYNVozdVNXRHpXSjFDNmhyaTBRZHdncllVbFhmVG4weTE0bndjSXh3d2ptSkQ2NVhUbFRuR05FbHJJUVVhTVV1UmJTY1NFUGZHYXktbjFCbVl3a0RwZmlIYkN1RDlzVUx6LUx2YUMtYXVtT3NrakJqRnZtb29B?oc=5",
-            "source": "The Manila Times",
-            "published_at": "2026-10-08T02:47:29+00:00",
-            "id": "4ebad9277f895957ae42",
-            "type": "partnership",
-            "age_hours": 18.53,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T21:19:20.928828+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "MA_US_EQ",
-        "isin": "US57636Q1040",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1304,58 +1174,58 @@
       }
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company",
+      "ticker": "VYLR",
+      "name": "Vylor",
       "asset_type": "stock",
-      "price": 457.99,
+      "price": 72.79,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": -3.00932,
-      "volume": 13244224.0,
-      "dollar_volume": 6065722149.76,
+      "change": -0.274006,
+      "volume": 7950725.0,
+      "dollar_volume": 578733272.75,
       "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:02+00:00",
+      "observed_at": "2026-10-08T20:02:56+00:00",
       "source": "Yahoo broad exchange snapshot",
       "discovery_route": "catalyst_first",
       "selection_evidence": {
         "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "UNVERIFIED",
-        "snapshot_score": 7.664,
+        "adverse": true,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.032,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "TSMC Is Likely To Beat Q3 Earnings And Rise (Preview) (NYSE:TSM) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMW8tMGlBNm9wZ0hjbU1EQmFjOXJ0akk4U3pZb1d5MlN3OUJkUElCVzBWYXM3R3ZhMDZOM1FhUzNyVGNnV1hTTmt3UkFnS2JQeVA5NUhDYko5NklxNGFxalh1c0V2RkJYV0xDTVQ0cENwdUZUUnFxazNhcTF1UUJ1TjhYMW5LS0MyRkF6dDJRcE1tQ1ROS25F?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-08T16:31:42+00:00",
-        "id": "9d77f8f646a679d0798a",
-        "type": "earnings",
-        "age_hours": 4.79,
+        "title": "Dilution adjustment of Vylor Inc. \u2013 NYSE:VYLR - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPLWhfcE15SFAtb1VkVmhVdE9wbzRPMS1LSjA1MUtEbmhHZVUtTVRZdFlINjhZMFJURklGcFdHaG5wbkU3UGduX2NWT2VkZndCRkg3cC03RjRDZlRJMUZMMFpKaWZpeUJNS0RoMi11eWhCU0pfVHVWSW5RZ1ZHRExUX1hUUUlVaUcwc1VJM3V6QkprSzl3XzNEWHBB?oc=5",
+        "source": "TradingView",
+        "published_at": "2026-10-08T06:36:35+00:00",
+        "id": "50c4df578598bad8df04",
+        "type": "financing",
+        "age_hours": 15.11,
         "confidence": "headline_evidence",
-        "adverse": false,
+        "adverse": true,
         "event_at": null,
         "event_date_source": null,
         "event_date_precision": null,
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "TSMC Is Likely To Beat Q3 Earnings And Rise (Preview) (NYSE:TSM) - Seeking Alpha",
+        "summary": "Dilution adjustment of Vylor Inc. \u2013 NYSE:VYLR - TradingView",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "TSMC Is Likely To Beat Q3 Earnings And Rise (Preview) (NYSE:TSM) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMW8tMGlBNm9wZ0hjbU1EQmFjOXJ0akk4U3pZb1d5MlN3OUJkUElCVzBWYXM3R3ZhMDZOM1FhUzNyVGNnV1hTTmt3UkFnS2JQeVA5NUhDYko5NklxNGFxalh1c0V2RkJYV0xDTVQ0cENwdUZUUnFxazNhcTF1UUJ1TjhYMW5LS0MyRkF6dDJRcE1tQ1ROS25F?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-08T16:31:42+00:00",
-            "id": "9d77f8f646a679d0798a",
-            "type": "earnings",
-            "age_hours": 4.79,
+            "title": "Dilution adjustment of Vylor Inc. \u2013 NYSE:VYLR - TradingView",
+            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPLWhfcE15SFAtb1VkVmhVdE9wbzRPMS1LSjA1MUtEbmhHZVUtTVRZdFlINjhZMFJURklGcFdHaG5wbkU3UGduX2NWT2VkZndCRkg3cC03RjRDZlRJMUZMMFpKaWZpeUJNS0RoMi11eWhCU0pfVHVWSW5RZ1ZHRExUX1hUUUlVaUcwc1VJM3V6QkprSzl3XzNEWHBB?oc=5",
+            "source": "TradingView",
+            "published_at": "2026-10-08T06:36:35+00:00",
+            "id": "50c4df578598bad8df04",
+            "type": "financing",
+            "age_hours": 15.11,
             "confidence": "headline_evidence",
-            "adverse": false,
+            "adverse": true,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -1370,12 +1240,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-08T21:19:20.928828+00:00",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-08T21:43:26.481855+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "reason": "Ticker/company identity is ambiguous; manual verification required."
+        "broker_instrument_id": "VYLR_US_EQ",
+        "isin": "US92892R1086",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 1,
@@ -1392,7 +1265,7 @@
           "US regular market session is closed.",
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
+          "Matched headline contains an adverse event; no bullish catalyst credit."
         ],
         "plan": null,
         "missing_fields": [
@@ -1412,7 +1285,7 @@
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
+              "Matched headline contains an adverse event; no bullish catalyst credit."
             ],
             "plan": null,
             "missing_fields": [
@@ -2239,25 +2112,12 @@
     }
   ],
   "changed_signals": [
-    "stock:HELE",
-    "stock:PKE",
-    "stock:MA",
-    "stock:OII",
-    "stock:IOSP",
-    "stock:BIAF",
-    "stock:BYRN",
-    "stock:ALOY",
-    "stock:ANGO",
-    "stock:SXTC",
-    "stock:TSM",
-    "stock:AMWL",
-    "stock:SMRT",
-    "stock:BMGL",
-    "crypto:polkadot",
-    "crypto:pyth-network",
-    "crypto:cardano"
+    "stock:VYLR"
   ],
-  "invalidated_signals": [],
+  "invalidated_signals": [
+    "stock:MA",
+    "stock:TSM"
+  ],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -2266,8 +2126,8 @@
       "listed_assets": 5949,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7836,
-        "snapshot_records": 7836,
+        "provider_total": 7826,
+        "snapshot_records": 7826,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -2276,9 +2136,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 164,
-        "matched_events": 19,
-        "matched_assets": 16,
+        "headlines_received": 159,
+        "matched_events": 18,
+        "matched_assets": 15,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2300,14 +2160,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5902,
-      "discovered_candidates": 16,
+      "discovered_candidates": 15,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 14,
+      "shortlisted_candidates": 13,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 14,
-      "selected_candidates": 14,
+      "catalyst_selected": 13,
+      "selected_candidates": 13,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -2315,7 +2175,7 @@
       "unquoted_listings": 47,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 14,
+      "history_not_requested": 13,
       "chart_failures": 0
     },
     "crypto": {
@@ -2363,18 +2223,18 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T21:19:20.928828+00:00",
+        "checked_at": "2026-10-08T21:43:26.481855+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T21:19:20.928828+00:00"
+        "checked_at": "2026-10-08T21:43:26.481855+00:00"
       }
     },
     "news": {
-      "checked": 26,
+      "checked": 25,
       "failed": 0
     }
   },
