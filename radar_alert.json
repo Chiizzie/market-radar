@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-08T04:33:02.053143+00:00",
+  "generated_at": "2026-10-08T04:57:32.412419+00:00",
   "potential_signals": [
     {
       "ticker": "RPM",
@@ -205,134 +205,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "MA_US_EQ",
         "isin": "US57636Q1040",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "PENG",
-      "name": "Penguin Solutions",
-      "asset_type": "stock",
-      "price": 72.61,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 13.0821,
-      "volume": 20973895.0,
-      "dollar_volume": 1522914515.95,
-      "session": "CLOSED",
-      "observed_at": "2026-10-07T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.877,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Penguin Solutions rallied 13% after earnings beat (PENG:NASDAQ) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcEEzaGpkQU1Rb3dGSkNaUFNkd2NfOUJqV1JyR1F3RDZSQ0NuYmIzc1A2NUpQZ2NZSkZseWhvLXRlc0U4QUxTc0dBMFJ2NEp3bk4xbmloSk54ZC1Jc0ozZVZlWS01UlYtaFZNTkctaHZHTm83T3ItYzlFalhKVThlZU9FbEQtRWozM3dNTl9yQQ?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-07T20:30:16+00:00",
-        "id": "7efacb4113f7d22f8c98",
-        "type": "earnings",
-        "age_hours": 6.72,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Penguin Solutions rallied 13% after earnings beat (PENG:NASDAQ) - Seeking Alpha",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Penguin Solutions rallied 13% after earnings beat (PENG:NASDAQ) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcEEzaGpkQU1Rb3dGSkNaUFNkd2NfOUJqV1JyR1F3RDZSQ0NuYmIzc1A2NUpQZ2NZSkZseWhvLXRlc0U4QUxTc0dBMFJ2NEp3bk4xbmloSk54ZC1Jc0ozZVZlWS01UlYtaFZNTkctaHZHTm83T3ItYzlFalhKVThlZU9FbEQtRWozM3dNTl9yQQ?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-07T20:30:16+00:00",
-            "id": "7efacb4113f7d22f8c98",
-            "type": "earnings",
-            "age_hours": 6.72,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T03:13:22.637164+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SGH_US_EQ",
-        "isin": "US7069151055",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1149,136 +1021,6 @@
       }
     },
     {
-      "symbol": "HYPE",
-      "name": "Hyperliquid",
-      "coin_id": "hyperliquid",
-      "asset_type": "crypto",
-      "price": 78.94,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -4.11434,
-      "change_1h": -0.856,
-      "acceleration": -0.6845691666666667,
-      "discovery_route": "catalyst_first",
-      "change_7d": 2.1986,
-      "volume": 819419304.0,
-      "dollar_volume": 819419304.0,
-      "market_cap": 17560051426,
-      "session": "24/7",
-      "observed_at": "2026-10-07T15:25:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-10-07T05:05:00+00:00",
-        "id": "05dea1e180011a48d478",
-        "type": "crypto_event",
-        "age_hours": 10.37,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-10-07T05:05:00+00:00",
-            "id": "05dea1e180011a48d478",
-            "type": "crypto_event",
-            "age_hours": 10.37,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-07T15:26:58.357482+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 79.38,
-      "support": 78.65,
-      "momentum_pct": 0.2540005080010177,
-      "reference_price": 78.87377129562307,
-      "extension_pct": 0.083967969692611,
-      "resistance_1": 79.46,
-      "resistance_2": 79.7,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.3867860852881015,
-        "observed_at": "2026-10-07T15:25:00+00:00"
-      },
-      "structure_observed_at": "2026-10-07T15:25:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "HYPEEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
       "symbol": "ZRO",
       "name": "LayerZero",
       "coin_id": "layerzero",
@@ -1407,11 +1149,141 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "HYPE",
+      "name": "Hyperliquid",
+      "coin_id": "hyperliquid",
+      "asset_type": "crypto",
+      "price": 78.94,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -4.11434,
+      "change_1h": -0.856,
+      "acceleration": -0.6845691666666667,
+      "discovery_route": "catalyst_first",
+      "change_7d": 2.1986,
+      "volume": 819419304.0,
+      "dollar_volume": 819419304.0,
+      "market_cap": 17560051426,
+      "session": "24/7",
+      "observed_at": "2026-10-07T15:25:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
+        "source": "CoinMarketCap",
+        "published_at": "2026-10-07T05:05:00+00:00",
+        "id": "05dea1e180011a48d478",
+        "type": "crypto_event",
+        "age_hours": 10.37,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Hyperliquid (HYPE) Pullback: 3.4% Drop on Token Unlock - CoinMarketCap",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3TjN0QVI3WkdDbFp6YzQ2Rlp1RFJ4MFNQZUhlSE5yYlZrcksxb3NqQ0FYdG1EUFZldWJoR2lKZjZtdThERTVfWEdPaUp6bDBQeDlEOTVtTVR4b0ZhNjlfdXlaZWVScUZXeW1DVmVPQlo?oc=5",
+            "source": "CoinMarketCap",
+            "published_at": "2026-10-07T05:05:00+00:00",
+            "id": "05dea1e180011a48d478",
+            "type": "crypto_event",
+            "age_hours": 10.37,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-07T15:26:58.357482+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 79.38,
+      "support": 78.65,
+      "momentum_pct": 0.2540005080010177,
+      "reference_price": 78.87377129562307,
+      "extension_pct": 0.083967969692611,
+      "resistance_1": 79.46,
+      "resistance_2": 79.7,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.3867860852881015,
+        "observed_at": "2026-10-07T15:25:00+00:00"
+      },
+      "structure_observed_at": "2026-10-07T15:25:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "HYPEEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Matched headline contains an adverse event; no bullish catalyst credit."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Matched headline contains an adverse event; no bullish catalyst credit."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
     }
   ],
   "changed_signals": [],
   "invalidated_signals": [
-    "stock:LYV"
+    "stock:PENG"
   ],
   "health": {
     "stocks": {
@@ -1432,8 +1304,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 187,
-        "matched_events": 9,
-        "matched_assets": 9,
+        "matched_events": 8,
+        "matched_assets": 8,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1451,14 +1323,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5899,
-      "discovered_candidates": 9,
+      "discovered_candidates": 8,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 9,
+      "shortlisted_candidates": 8,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
-      "selected_candidates": 9,
+      "catalyst_selected": 8,
+      "selected_candidates": 8,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1466,7 +1338,7 @@
       "unquoted_listings": 49,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 9,
+      "history_not_requested": 8,
       "chart_failures": 0
     },
     "crypto": {
@@ -1479,12 +1351,12 @@
       },
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 9,
+      "price_records": 8,
       "history_requested": 2,
       "history_received": 2,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 6,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -1514,18 +1386,18 @@
         "status": "OK",
         "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-08T04:32:23.638504+00:00",
+        "checked_at": "2026-10-08T04:56:54.311872+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 99,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-08T04:32:23.638504+00:00"
+        "checked_at": "2026-10-08T04:56:54.311872+00:00"
       }
     },
     "news": {
-      "checked": 18,
+      "checked": 16,
       "failed": 0
     }
   },
