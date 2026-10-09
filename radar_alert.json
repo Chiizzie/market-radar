@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T08:15:46.733109+00:00",
+  "generated_at": "2026-10-09T08:37:17.874413+00:00",
   "potential_signals": [
     {
       "ticker": "QSR",
@@ -260,6 +260,134 @@
       }
     },
     {
+      "ticker": "PENN",
+      "name": "PENN Entertainment",
+      "asset_type": "stock",
+      "price": 15.76,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0.254453,
+      "volume": 3402571.0,
+      "dollar_volume": 53624518.96,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.126,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Full Transcript: PENN Entertainment Q2 2026 Earnings Call - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLWtQVWFROWZ2djUwb1pERkpvSDVHZ0tFRTJqNHd4VFY1NnNDSnBpN2dMVG5xUmdRc2F3MTVtRE80czdzbWJPUzlUaExRWmZwLVh2YjdBd3RnaXBRZDZINmd5ZzZzV2RYbTZMaElGMVJQRlpHZFZBZjNIRGZ0VWFpa2s4V1JpNFdvWUN4ZkNPR3VMU1VvYXA0RW5CdFNhSlhoZklz?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-09T08:25:02+00:00",
+        "id": "a83729f5b702b84cf2b9",
+        "type": "earnings",
+        "age_hours": 0.19,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Full Transcript: PENN Entertainment Q2 2026 Earnings Call - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Full Transcript: PENN Entertainment Q2 2026 Earnings Call - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLWtQVWFROWZ2djUwb1pERkpvSDVHZ0tFRTJqNHd4VFY1NnNDSnBpN2dMVG5xUmdRc2F3MTVtRE80czdzbWJPUzlUaExRWmZwLVh2YjdBd3RnaXBRZDZINmd5ZzZzV2RYbTZMaElGMVJQRlpHZFZBZjNIRGZ0VWFpa2s4V1JpNFdvWUN4ZkNPR3VMU1VvYXA0RW5CdFNhSlhoZklz?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-09T08:25:02+00:00",
+            "id": "a83729f5b702b84cf2b9",
+            "type": "earnings",
+            "age_hours": 0.19,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T08:36:26.919482+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "PENN_US_EQ",
+        "isin": "US7075691094",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "BIAF",
       "name": "bioAffinity Technologies",
       "asset_type": "stock",
@@ -368,134 +496,6 @@
             "status": "NOT_EVALUATED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "BYRN",
-      "name": "Byrna Technologies",
-      "asset_type": "stock",
-      "price": 4.73,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 16.7901,
-      "volume": 2724460.0,
-      "dollar_volume": 12886695.8,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 1.548,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWWVIUWJ3OVBFbWxQRkktbjFNZWVOMWVYak5HcUxDc2htb3BmOW05SHNwcjZ3U1pZcDRaSG9CVHV5cTlnRW9IVzhreE9sUGxWejA5Y3FfV05XLU01OW9NWi1SWlhOSGZ6UjJnNnVHQUIwY1I3a2RTMTJWM2VyN01CQjJIOFZ1SkU?oc=5",
-        "source": "Yahoo Finance UK",
-        "published_at": "2026-10-08T12:08:16+00:00",
-        "id": "b810e3ecefc15a63b7a5",
-        "type": "earnings",
-        "age_hours": 19.42,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - Yahoo Finance UK",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - Yahoo Finance UK",
-            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWWVIUWJ3OVBFbWxQRkktbjFNZWVOMWVYak5HcUxDc2htb3BmOW05SHNwcjZ3U1pZcDRaSG9CVHV5cTlnRW9IVzhreE9sUGxWejA5Y3FfV05XLU01OW9NWi1SWlhOSGZ6UjJnNnVHQUIwY1I3a2RTMTJWM2VyN01CQjJIOFZ1SkU?oc=5",
-            "source": "Yahoo Finance UK",
-            "published_at": "2026-10-08T12:08:16+00:00",
-            "id": "b810e3ecefc15a63b7a5",
-            "type": "earnings",
-            "age_hours": 19.42,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T07:33:30.166964+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BYRN_US_EQ",
-        "isin": "US12448X2018",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
@@ -648,6 +648,131 @@
       }
     },
     {
+      "ticker": "SNEX",
+      "name": "StoneX Group",
+      "asset_type": "stock",
+      "price": 60.1,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -2.21282,
+      "volume": 1398691.0,
+      "dollar_volume": 84061329.10000001,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "UNVERIFIED",
+        "snapshot_score": 8.029,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "StoneX Group Q3 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb3NXM292U0hPS21icVVuSnczeVFxdW4zY3Q5clJUV21qWUk0OU5sRlJwV3BBcGFXZzg1T0NCUkMyYzJNR0Vvei10YzVFaHljXzhKc0tibHEwVGlnVm9RS3huTWJsZnRLclA0M2phdW5BbUM0UjhVQ0hTcUtQN04wSk9pZEgtQW0xSjh2OEk1eUczTmx2?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-09T08:26:16+00:00",
+        "id": "91d821368239d4afc240",
+        "type": "earnings",
+        "age_hours": 0.17,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "StoneX Group Q3 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "StoneX Group Q3 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb3NXM292U0hPS21icVVuSnczeVFxdW4zY3Q5clJUV21qWUk0OU5sRlJwV3BBcGFXZzg1T0NCUkMyYzJNR0Vvei10YzVFaHljXzhKc0tibHEwVGlnVm9RS3huTWJsZnRLclA0M2phdW5BbUM0UjhVQ0hTcUtQN04wSk9pZEgtQW0xSjh2OEk1eUczTmx2?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-09T08:26:16+00:00",
+            "id": "91d821368239d4afc240",
+            "type": "earnings",
+            "age_hours": 0.17,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-10-09T08:36:26.919482+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "reason": "Ticker/company identity is ambiguous; manual verification required."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "IIPR",
       "name": "Innovative Industrial Properties",
       "asset_type": "stock",
@@ -758,6 +883,132 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Matched headline contains an adverse event; no bullish catalyst credit."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "CYD",
+      "name": "China Yuchai International",
+      "asset_type": "stock",
+      "price": 29.07,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 3.15827,
+      "volume": 339365.0,
+      "dollar_volume": 9865340.55,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 16.818,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "What China Yuchai International Stock Earnings Cut Means For Shareholders - Simply Wall Street",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNblNwME5RRmVQaFM1eHpxNVZSR3BSNVVfaWczc1h4V2JzRWc3UmFnNXliYV9QUG50RmxsMTZvV1o5NWFTcWNiMmxoM1pfZVd2ZWRZYWdjNHRYUFFkMmdLM2RRN2JLMlNkQzNNdVY3bGVGVERfRnlhcjk4WXZjeldNYTdaTDMtd1NjSW5rTG1HWU5nTmlMUnJ3dmpwWTREckF6ckhfbnVRTTJVOVlRUWpnSUZHbEdWYnJTSmF6cDgxa3BNRExyR201bG16YS1ud1p4YlJvWnk2cmdCdUdZWHgyZdIB5gFBVV95cUxOTkdVZlRLTlZhSDJzeXp1bGZiLUxZeFBVQ2tfb0VGY3ZoaUNlNS1kY29CMlQyOVJyTkJJNjFvZ3A3U3A5OUVZYzRxOGZXS2hLQW5SeXVCbmFwaWNSVGo3MU9EazN6V1hOS1dOSzdvUjdNM01zSTBOOVJDTWl6NWI1NTVnZGNMUVIyc2MwdDdxYXIwY2ZRX1RsSk5YSm0yUGFXSzdPdm5JTjJLS05xdkxzUWJUWVFlaUhjUnV2Y09nc3FHaGxHeTFUYzBmNVNRU1FjQVE4VjlQOVBjMUlPUlVlbHRIM1d4Zw?oc=5",
+        "source": "Simply Wall Street",
+        "published_at": "2026-10-09T08:25:39+00:00",
+        "id": "2ef610dbceb9b3c8bf6c",
+        "type": "earnings",
+        "age_hours": 0.18,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "What China Yuchai International Stock Earnings Cut Means For Shareholders - Simply Wall Street",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "What China Yuchai International Stock Earnings Cut Means For Shareholders - Simply Wall Street",
+            "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNblNwME5RRmVQaFM1eHpxNVZSR3BSNVVfaWczc1h4V2JzRWc3UmFnNXliYV9QUG50RmxsMTZvV1o5NWFTcWNiMmxoM1pfZVd2ZWRZYWdjNHRYUFFkMmdLM2RRN2JLMlNkQzNNdVY3bGVGVERfRnlhcjk4WXZjeldNYTdaTDMtd1NjSW5rTG1HWU5nTmlMUnJ3dmpwWTREckF6ckhfbnVRTTJVOVlRUWpnSUZHbEdWYnJTSmF6cDgxa3BNRExyR201bG16YS1ud1p4YlJvWnk2cmdCdUdZWHgyZdIB5gFBVV95cUxOTkdVZlRLTlZhSDJzeXp1bGZiLUxZeFBVQ2tfb0VGY3ZoaUNlNS1kY29CMlQyOVJyTkJJNjFvZ3A3U3A5OUVZYzRxOGZXS2hLQW5SeXVCbmFwaWNSVGo3MU9EazN6V1hOS1dOSzdvUjdNM01zSTBOOVJDTWl6NWI1NTVnZGNMUVIyc2MwdDdxYXIwY2ZRX1RsSk5YSm0yUGFXSzdPdm5JTjJLS05xdkxzUWJUWVFlaUhjUnV2Y09nc3FHaGxHeTFUYzBmNVNRU1FjQVE4VjlQOVBjMUlPUlVlbHRIM1d4Zw?oc=5",
+            "source": "Simply Wall Street",
+            "published_at": "2026-10-09T08:25:39+00:00",
+            "id": "2ef610dbceb9b3c8bf6c",
+            "type": "earnings",
+            "age_hours": 0.18,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T08:36:26.919482+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CYD_US_EQ",
+        "isin": "BMG210821051",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "missing_fields": [
@@ -1038,87 +1289,50 @@
       "name": "Polkadot",
       "coin_id": "polkadot",
       "asset_type": "crypto",
-      "price": 1.0578,
+      "price": 1.0498,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 8.07608,
+      "change_24h": 7.34358,
       "change_1h": 1.6112,
-      "acceleration": 1.2746966666666666,
+      "acceleration": 1.3052175,
       "discovery_route": "recent_momentum",
       "change_7d": -2.8373,
-      "volume": 272158066.0,
-      "dollar_volume": 272158066.0,
-      "market_cap": 1804823970,
+      "volume": 271262884.0,
+      "dollar_volume": 271262884.0,
+      "market_cap": 1792091377,
       "session": "24/7",
-      "observed_at": "2026-10-09T08:10:00+00:00",
+      "observed_at": "2026-10-09T08:35:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-09T08:14:57.015537+00:00",
+        "checked_at": "2026-10-09T08:36:26.919482+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "history_samples": 719,
+      "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 1.0591,
-      "support": 1.0437,
-      "momentum_pct": 0.06621890076625725,
-      "reference_price": 1.0538470949882361,
-      "extension_pct": 0.3750928413204013,
+      "entry": 1.0595,
+      "support": 1.0471,
+      "momentum_pct": -0.5117513267626883,
+      "reference_price": 1.0531532182856322,
+      "extension_pct": -0.31839795268258086,
       "resistance_1": 1.0611,
       "resistance_2": 1.065,
       "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 1.0591,
-            "support": 1.054,
-            "resistance_1": 1.0611,
-            "resistance_2": 1.065,
-            "momentum_pct": 0.06621890076625725,
-            "extension_pct": 0.3750928413204013,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 1.0533,
-              "measured_height": 0.02389999999999981,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                1.0652499999999998,
-                1.0771999999999997
-              ],
-              "overhead_levels": [
-                1.0611,
-                1.0614,
-                1.0622,
-                1.0626
-              ]
-            },
-            "observed_at": "2026-10-09T08:10:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-09T06:10:00+00:00",
-              "range_end": "2026-10-09T07:35:00+00:00",
-              "range_high": 1.0533,
-              "range_low": 1.0294,
-              "retest_low": 1.054,
-              "breakout_close": 1.0571,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
-        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 0.8666632243391407,
-        "observed_at": "2026-10-09T08:10:00+00:00"
+        "recent_volume_ratio": 4.391433263693424,
+        "observed_at": "2026-10-09T08:35:00+00:00"
       },
-      "structure_observed_at": "2026-10-09T08:10:00+00:00",
+      "structure_observed_at": "2026-10-09T08:35:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -1135,7 +1349,7 @@
         "published_at": "2026-10-08T20:24:46+00:00",
         "id": "ce0e794c818c2c1cfeb9",
         "type": "product_launch",
-        "age_hours": 11.85,
+        "age_hours": 12.21,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1154,7 +1368,7 @@
             "published_at": "2026-10-08T20:24:46+00:00",
             "id": "ce0e794c818c2c1cfeb9",
             "type": "product_launch",
-            "age_hours": 11.85,
+            "age_hours": 12.21,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1170,143 +1384,45 @@
         "headlines_checked": 9
       },
       "score": {
-        "score": 4,
+        "score": 1,
         "label": "Research rank only",
         "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
+          "notional liquidity"
         ]
       },
       "qualification": {
-        "status": "TECHNICAL WATCH",
+        "status": "CATALYST WATCH",
         "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No positive recent momentum; a daily gain alone is insufficient."
         ],
         "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 1.0591,
-          "support": 1.054,
-          "resistance_1": 1.0611,
-          "resistance_2": 1.065,
-          "momentum_pct": 0.06621890076625725,
-          "extension_pct": 0.3750928413204013,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 1.0533,
-            "measured_height": 0.02389999999999981,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              1.0652499999999998,
-              1.0771999999999997
-            ],
-            "overhead_levels": [
-              1.0611,
-              1.0614,
-              1.0622,
-              1.0626
-            ]
-          },
-          "observed_at": "2026-10-09T08:10:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-09T06:10:00+00:00",
-            "range_end": "2026-10-09T07:35:00+00:00",
-            "range_high": 1.0533,
-            "range_low": 1.0294,
-            "retest_low": 1.054,
-            "breakout_close": 1.0571,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
+        "route": "CATALYST_LED",
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No positive recent momentum; a daily gain alone is insufficient."
             ],
             "plan": null,
             "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 1.0591,
-              "support": 1.054,
-              "resistance_1": 1.0611,
-              "resistance_2": 1.065,
-              "momentum_pct": 0.06621890076625725,
-              "extension_pct": 0.3750928413204013,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 1.0533,
-                "measured_height": 0.02389999999999981,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  1.0652499999999998,
-                  1.0771999999999997
-                ],
-                "overhead_levels": [
-                  1.0611,
-                  1.0614,
-                  1.0622,
-                  1.0626
-                ]
-              },
-              "observed_at": "2026-10-09T08:10:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-09T06:10:00+00:00",
-                "range_end": "2026-10-09T07:35:00+00:00",
-                "range_high": 1.0533,
-                "range_low": 1.0294,
-                "retest_low": 1.054,
-                "breakout_close": 1.0571,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
           }
-        ]
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
       }
     }
   ],
   "changed_signals": [
-    "crypto:ethereum",
+    "stock:PENN",
+    "stock:SNEX",
+    "stock:CYD",
     "crypto:polkadot"
   ],
   "invalidated_signals": [
-    "stock:PKE",
-    "stock:BMGL",
-    "crypto:pyth-network",
-    "crypto:xdce-crowd-sale"
+    "stock:BYRN"
   ],
   "health": {
     "stocks": {
@@ -1316,8 +1432,8 @@
       "listed_assets": 5947,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7830,
-        "snapshot_records": 7830,
+        "provider_total": 7838,
+        "snapshot_records": 7838,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1327,8 +1443,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 189,
-        "matched_events": 12,
-        "matched_assets": 11,
+        "matched_events": 13,
+        "matched_assets": 12,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1346,14 +1462,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5901,
-      "discovered_candidates": 11,
-      "broker_excluded_candidates": 4,
-      "shortlisted_candidates": 7,
+      "discovered_candidates": 12,
+      "broker_excluded_candidates": 3,
+      "shortlisted_candidates": 9,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 7,
-      "selected_candidates": 7,
+      "catalyst_selected": 9,
+      "selected_candidates": 9,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1361,7 +1477,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 9,
       "chart_failures": 0
     },
     "crypto": {
@@ -1409,18 +1525,18 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T08:14:57.015537+00:00",
+        "checked_at": "2026-10-09T08:36:26.919482+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T08:14:57.015537+00:00"
+        "checked_at": "2026-10-09T08:36:26.919482+00:00"
       }
     },
     "news": {
-      "checked": 19,
+      "checked": 21,
       "failed": 0
     }
   },
