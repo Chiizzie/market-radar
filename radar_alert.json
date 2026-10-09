@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T04:57:51.364965+00:00",
+  "generated_at": "2026-10-09T05:13:13.276149+00:00",
   "potential_signals": [
     {
       "ticker": "HELE",
@@ -335,6 +335,134 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "QSR_US_EQ",
         "isin": "CA76131D1033",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SECZ",
+      "name": "Securitize",
+      "asset_type": "stock",
+      "price": 12.66,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 11.0526,
+      "volume": 7806309.0,
+      "dollar_volume": 98827871.94,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.739,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSVZVeUtTS0lSN1poNmdnVUVLbVNrTWxfSzRoWmVYbEdIeGEwVWc4T0p2RkhfRkdqRENDX3JseDBCeFFUUXhQZkNubEJRejBKc2xiX0JCMW5PRDBnR1Ezd0l0M01ycWtJM1hLcm5uWVZPZVZCZ1RVbnlVZVoxNHV6R0dTLTFwWU82c1Q4ejIwRWZaNTNuZ25oNmh5cEFqcmhYV2hmQ3B6UzZSRVFLdWxBYVBmbGRhVkc4Zk9n?oc=5",
+        "source": "The Defiant",
+        "published_at": "2026-10-08T16:12:39+00:00",
+        "id": "b6677c4871a5350891fe",
+        "type": "product_launch",
+        "age_hours": 13.0,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
+            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSVZVeUtTS0lSN1poNmdnVUVLbVNrTWxfSzRoWmVYbEdIeGEwVWc4T0p2RkhfRkdqRENDX3JseDBCeFFUUXhQZkNubEJRejBKc2xiX0JCMW5PRDBnR1Ezd0l0M01ycWtJM1hLcm5uWVZPZVZCZ1RVbnlVZVoxNHV6R0dTLTFwWU82c1Q4ejIwRWZaNTNuZ25oNmh5cEFqcmhYV2hmQ3B6UzZSRVFLdWxBYVBmbGRhVkc4Zk9n?oc=5",
+            "source": "The Defiant",
+            "published_at": "2026-10-08T16:12:39+00:00",
+            "id": "b6677c4871a5350891fe",
+            "type": "product_launch",
+            "age_hours": 13.0,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T05:12:21.962446+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CEPT_US_EQ",
+        "isin": "US81517B1017",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -908,131 +1036,6 @@
       }
     },
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company",
-      "asset_type": "stock",
-      "price": 457.99,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -3.00932,
-      "volume": 13244224.0,
-      "dollar_volume": 6065722149.76,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "UNVERIFIED",
-        "snapshot_score": 7.652,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "TSMC Is Likely To Beat Q3 Earnings And Rise (Preview) (NYSE:TSM) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMW8tMGlBNm9wZ0hjbU1EQmFjOXJ0akk4U3pZb1d5MlN3OUJkUElCVzBWYXM3R3ZhMDZOM1FhUzNyVGNnV1hTTmt3UkFnS2JQeVA5NUhDYko5NklxNGFxalh1c0V2RkJYV0xDTVQ0cENwdUZUUnFxazNhcTF1UUJ1TjhYMW5LS0MyRkF6dDJRcE1tQ1ROS25F?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-08T16:31:42+00:00",
-        "id": "9d77f8f646a679d0798a",
-        "type": "earnings",
-        "age_hours": 12.42,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "TSMC Is Likely To Beat Q3 Earnings And Rise (Preview) (NYSE:TSM) - Seeking Alpha",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "TSMC Is Likely To Beat Q3 Earnings And Rise (Preview) (NYSE:TSM) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMW8tMGlBNm9wZ0hjbU1EQmFjOXJ0akk4U3pZb1d5MlN3OUJkUElCVzBWYXM3R3ZhMDZOM1FhUzNyVGNnV1hTTmt3UkFnS2JQeVA5NUhDYko5NklxNGFxalh1c0V2RkJYV0xDTVQ0cENwdUZUUnFxazNhcTF1UUJ1TjhYMW5LS0MyRkF6dDJRcE1tQ1ROS25F?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-08T16:31:42+00:00",
-            "id": "9d77f8f646a679d0798a",
-            "type": "earnings",
-            "age_hours": 12.42,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-09T04:57:00.761876+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "reason": "Ticker/company identity is ambiguous; manual verification required."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "VYLR",
       "name": "Vylor",
       "asset_type": "stock",
@@ -1547,15 +1550,276 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "PYTH",
+      "name": "Pyth Network",
+      "coin_id": "pyth-network",
+      "asset_type": "crypto",
+      "price": 0.07362,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 11.90552,
+      "change_1h": 1.5304,
+      "acceleration": 1.0343366666666667,
+      "discovery_route": "recent_momentum",
+      "change_7d": 9.3728,
+      "volume": 97253409.0,
+      "dollar_volume": 97253409.0,
+      "market_cap": 578950935,
+      "session": "24/7",
+      "observed_at": "2026-10-09T05:10:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-09T05:12:21.962446+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 0.0741,
+      "support": 0.07312,
+      "momentum_pct": -0.16273393002440573,
+      "reference_price": 0.07354523007798804,
+      "extension_pct": 0.10166522279240198,
+      "resistance_1": 0.07419,
+      "resistance_2": 0.07442,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 1.3051202501634809,
+        "observed_at": "2026-10-09T05:10:00+00:00"
+      },
+      "structure_observed_at": "2026-10-09T05:10:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "PYTHEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "title": "Pyth Network DAO approves sending 100% of product revenue to PYTH buybacks - Crypto Briefing",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1pN0w4Zk5FbkxqYkJReVBzcWcyTElhUEZ2ZWE4QUJYNUVqQ25HajJ6LWpNeDBJR3JDbWg5V2FJR2F3b2poaWM1OXVLTk5DUVpfVkhOckxHUUpfN2FSRUpnMllMNlJocUljNF9qUU1Sc2hOQmNnem5IMVVIdw?oc=5",
+        "source": "Crypto Briefing",
+        "published_at": "2026-10-08T14:48:40+00:00",
+        "id": "9cc0371f0993a0ecdf40",
+        "type": "regulatory",
+        "age_hours": 14.41,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Pyth Network DAO approves sending 100% of product revenue to PYTH buybacks - Crypto Briefing",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Pyth Network DAO approves sending 100% of product revenue to PYTH buybacks - Crypto Briefing",
+            "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1pN0w4Zk5FbkxqYkJReVBzcWcyTElhUEZ2ZWE4QUJYNUVqQ25HajJ6LWpNeDBJR3JDbWg5V2FJR2F3b2poaWM1OXVLTk5DUVpfVkhOckxHUUpfN2FSRUpnMllMNlJocUljNF9qUU1Sc2hOQmNnem5IMVVIdw?oc=5",
+            "source": "Crypto Briefing",
+            "published_at": "2026-10-08T14:48:40+00:00",
+            "id": "9cc0371f0993a0ecdf40",
+            "type": "regulatory",
+            "age_hours": 14.41,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 8
+      },
+      "score": {
+        "score": 2,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No positive recent momentum; a daily gain alone is insufficient."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No positive recent momentum; a daily gain alone is insufficient."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "coin_id": "polkadot",
+      "asset_type": "crypto",
+      "price": 1.028,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 4.43216,
+      "change_1h": 0.8875,
+      "acceleration": 0.7028266666666666,
+      "discovery_route": "recent_momentum",
+      "change_7d": -3.0063,
+      "volume": 262380423.0,
+      "dollar_volume": 262380423.0,
+      "market_cap": 1754903659,
+      "session": "24/7",
+      "observed_at": "2026-10-09T05:10:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-09T05:12:21.962446+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 1.0347,
+      "support": 1.0266,
+      "momentum_pct": -0.44547743559945063,
+      "reference_price": 1.0314079170026094,
+      "extension_pct": -0.33041408219098845,
+      "resistance_1": 1.0365,
+      "resistance_2": 1.0519,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.7995916887535446,
+        "observed_at": "2026-10-09T05:10:00+00:00"
+      },
+      "structure_observed_at": "2026-10-09T05:10:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "DOTEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "title": "Polkadot Launches Native dotUSD Stablecoin Through OpenGov - The Crypto Times",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNHhpM0prTnJHNnZ4LW1JNXNoUHkzQVlEUGtyV2FsOWNCZlRkNkp0aVpOZldSaXhLd081NUtVV3Zmb1VjZ2ZpWnRubXlRbC1wMWFtalMxN2dSbDdwaVZYQWhsZzdPaWlLYVdFTWduc3FVUmIyMDVaY0xnVVM4MXJrdjF0ZTRwVDRTQ1BsSGhzSU80c1NBQlNKUzdkTDBMdw?oc=5",
+        "source": "The Crypto Times",
+        "published_at": "2026-10-08T20:24:46+00:00",
+        "id": "ce0e794c818c2c1cfeb9",
+        "type": "product_launch",
+        "age_hours": 8.81,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Polkadot Launches Native dotUSD Stablecoin Through OpenGov - The Crypto Times",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Polkadot Launches Native dotUSD Stablecoin Through OpenGov - The Crypto Times",
+            "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNHhpM0prTnJHNnZ4LW1JNXNoUHkzQVlEUGtyV2FsOWNCZlRkNkp0aVpOZldSaXhLd081NUtVV3Zmb1VjZ2ZpWnRubXlRbC1wMWFtalMxN2dSbDdwaVZYQWhsZzdPaWlLYVdFTWduc3FVUmIyMDVaY0xnVVM4MXJrdjF0ZTRwVDRTQ1BsSGhzSU80c1NBQlNKUzdkTDBMdw?oc=5",
+            "source": "The Crypto Times",
+            "published_at": "2026-10-08T20:24:46+00:00",
+            "id": "ce0e794c818c2c1cfeb9",
+            "type": "product_launch",
+            "age_hours": 8.81,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 10
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No positive recent momentum; a daily gain alone is insufficient."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No positive recent momentum; a daily gain alone is insufficient."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
     }
   ],
   "changed_signals": [
-    "stock:TSM"
+    "stock:SECZ",
+    "crypto:pyth-network",
+    "crypto:polkadot"
   ],
   "invalidated_signals": [
-    "stock:SECZ",
-    "crypto:curve-dao-token",
-    "crypto:sentient"
+    "stock:TSM"
   ],
   "health": {
     "stocks": {
@@ -1565,8 +1829,8 @@
       "listed_assets": 5949,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7829,
-        "snapshot_records": 7829,
+        "provider_total": 7837,
+        "snapshot_records": 7837,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1575,9 +1839,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 179,
-        "matched_events": 16,
-        "matched_assets": 15,
+        "headlines_received": 177,
+        "matched_events": 14,
+        "matched_assets": 13,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1595,8 +1859,8 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5901,
-      "discovered_candidates": 15,
-      "broker_excluded_candidates": 4,
+      "discovered_candidates": 13,
+      "broker_excluded_candidates": 2,
       "shortlisted_candidates": 11,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
@@ -1621,12 +1885,12 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
       "history_requested": 12,
-      "history_received": 12,
-      "chart_failures": 0,
+      "history_received": 11,
+      "chart_failures": 1,
       "history_stale": 0,
       "history_not_requested": 0,
       "catalyst_discovery": {
@@ -1658,14 +1922,14 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T04:57:00.761876+00:00",
+        "checked_at": "2026-10-09T05:12:21.962446+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T04:57:00.761876+00:00"
+        "checked_at": "2026-10-09T05:12:21.962446+00:00"
       }
     },
     "news": {
