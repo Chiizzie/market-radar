@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T21:10:05.375884+00:00",
+  "generated_at": "2026-10-09T21:29:47.021950+00:00",
   "potential_signals": [
     {
       "ticker": "TEVA",
@@ -250,135 +250,6 @@
             "reasons": [
               "Recent article publication does not establish when the underlying event occurred.",
               "Insufficient traded notional liquidity.",
-              "No positive recent momentum; a daily gain alone is insufficient.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "HP",
-      "name": "Helmerich & Payne",
-      "asset_type": "stock",
-      "price": 40.51499938964844,
-      "currency": "USD",
-      "eur_per_unit": 0.8925999999046326,
-      "change": 0.27363336,
-      "volume": 497491,
-      "dollar_volume": 20101205.88188553,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T14:45:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 6.786,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTFTM0JJdDdmdFRwR3lkdzc4QkV3dVFOam5ISS1ra2VDRV9zYXh0UnZteEVnbE5YdUNSb1dOb29LQkZLeEhLajZuVkhNQ2g3eWs0UW1VLWJ4Z3RGYTFfaHp1V0gxVjlDSVdzWWZ0dERJaWtYOTAzdHBTdEQ1YzB5ZWc2bGNGY2E3aEpUR1ZXcDQ4S3FlbjZPZw?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-09T13:45:21+00:00",
-        "id": "f7c49355272bc0c9e83a",
-        "type": "earnings",
-        "age_hours": 5.02,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTFTM0JJdDdmdFRwR3lkdzc4QkV3dVFOam5ISS1ra2VDRV9zYXh0UnZteEVnbE5YdUNSb1dOb29LQkZLeEhLajZuVkhNQ2g3eWs0UW1VLWJ4Z3RGYTFfaHp1V0gxVjlDSVdzWWZ0dERJaWtYOTAzdHBTdEQ1YzB5ZWc2bGNGY2E3aEpUR1ZXcDQ4S3FlbjZPZw?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-09T13:45:21+00:00",
-            "id": "f7c49355272bc0c9e83a",
-            "type": "earnings",
-            "age_hours": 5.02,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T18:46:28.170640+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "HP_US_EQ",
-        "isin": "US4234521015",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.7946355582068447,
-      "history_samples": 375,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 40.59000015258789,
-      "support": 40.474998474121094,
-      "momentum_pct": -0.03700811769108414,
-      "reference_price": 40.52594224218548,
-      "extension_pct": -0.027002092811678757,
-      "resistance_1": 40.6349983215332,
-      "resistance_2": 40.790000915527344,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.6010802933370769,
-        "observed_at": "2026-10-09T14:45:00-04:00"
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "No positive recent momentum; a daily gain alone is insufficient.",
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
               "No positive recent momentum; a daily gain alone is insufficient.",
               "Recent same-time relative volume is below 1.5x."
             ],
@@ -1555,11 +1426,10 @@
       }
     }
   ],
-  "changed_signals": [
-    "crypto:layerzero",
-    "crypto:jito-governance-token"
+  "changed_signals": [],
+  "invalidated_signals": [
+    "stock:HP"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1579,8 +1449,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 169,
-        "matched_events": 12,
-        "matched_assets": 12,
+        "matched_events": 11,
+        "matched_assets": 11,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1602,14 +1472,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5905,
-      "discovered_candidates": 12,
+      "discovered_candidates": 11,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 10,
+      "shortlisted_candidates": 9,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 10,
-      "selected_candidates": 10,
+      "catalyst_selected": 9,
+      "selected_candidates": 9,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1617,7 +1487,7 @@
       "unquoted_listings": 45,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 10,
+      "history_not_requested": 9,
       "chart_failures": 0
     },
     "crypto": {
@@ -1665,18 +1535,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T21:09:12.976189+00:00",
+        "checked_at": "2026-10-09T21:28:52.787140+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T21:09:12.976189+00:00"
+        "checked_at": "2026-10-09T21:28:52.787140+00:00"
       }
     },
     "news": {
-      "checked": 22,
+      "checked": 21,
       "failed": 0
     }
   },
