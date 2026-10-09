@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T09:45:09.440737+00:00",
+  "generated_at": "2026-10-09T10:22:13.392979+00:00",
   "potential_signals": [
     {
       "ticker": "QSR",
@@ -260,134 +260,6 @@
       }
     },
     {
-      "ticker": "SECZ",
-      "name": "Securitize",
-      "asset_type": "stock",
-      "price": 12.66,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 11.0526,
-      "volume": 7806309.0,
-      "dollar_volume": 98827871.94,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.739,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSVZVeUtTS0lSN1poNmdnVUVLbVNrTWxfSzRoWmVYbEdIeGEwVWc4T0p2RkhfRkdqRENDX3JseDBCeFFUUXhQZkNubEJRejBKc2xiX0JCMW5PRDBnR1Ezd0l0M01ycWtJM1hLcm5uWVZPZVZCZ1RVbnlVZVoxNHV6R0dTLTFwWU82c1Q4ejIwRWZaNTNuZ25oNmh5cEFqcmhYV2hmQ3B6UzZSRVFLdWxBYVBmbGRhVkc4Zk9n?oc=5",
-        "source": "The Defiant",
-        "published_at": "2026-10-08T16:12:39+00:00",
-        "id": "b6677c4871a5350891fe",
-        "type": "product_launch",
-        "age_hours": 13.0,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Securitize Launches Tokenized Apple, Nvidia and Tesla Stocks on Solana - The Defiant",
-            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSVZVeUtTS0lSN1poNmdnVUVLbVNrTWxfSzRoWmVYbEdIeGEwVWc4T0p2RkhfRkdqRENDX3JseDBCeFFUUXhQZkNubEJRejBKc2xiX0JCMW5PRDBnR1Ezd0l0M01ycWtJM1hLcm5uWVZPZVZCZ1RVbnlVZVoxNHV6R0dTLTFwWU82c1Q4ejIwRWZaNTNuZ25oNmh5cEFqcmhYV2hmQ3B6UzZSRVFLdWxBYVBmbGRhVkc4Zk9n?oc=5",
-            "source": "The Defiant",
-            "published_at": "2026-10-08T16:12:39+00:00",
-            "id": "b6677c4871a5350891fe",
-            "type": "product_launch",
-            "age_hours": 13.0,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T05:12:21.962446+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "CEPT_US_EQ",
-        "isin": "US81517B1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "PENN",
       "name": "PENN Entertainment",
       "asset_type": "stock",
@@ -461,6 +333,134 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "PENN_US_EQ",
         "isin": "US7075691094",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "UVV",
+      "name": "Universal",
+      "asset_type": "stock",
+      "price": 43.18,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0.817181,
+      "volume": 435425.0,
+      "dollar_volume": 18801651.5,
+      "session": "CLOSED",
+      "observed_at": "2026-10-08T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.044,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Universal Reports Q1 2027 Results: Full Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZE81RTI3NWxxR1E1bmxWWVlqNnJQNzZOR25RaWFjenFNT0hEMDQycFM0OTZTdjN3dGxtRm5YNmFrZ3NfOHVKeEFUbmhTZUxWMWlPNkJyZU5sZG1CSTV4YmQwUGZQNnZYZzY2bjNEdEVobjZmOXdLNUFsYkM3cTREY0Y1QUdxWllCMzlFbUg0NFg3cVpyZi1rMGRhc25oMkxuelczV3NnSWdMdUtD?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-09T10:04:48+00:00",
+        "id": "3115b41c0adab00393c5",
+        "type": "earnings",
+        "age_hours": 0.28,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Universal Reports Q1 2027 Results: Full Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Universal Reports Q1 2027 Results: Full Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZE81RTI3NWxxR1E1bmxWWVlqNnJQNzZOR25RaWFjenFNT0hEMDQycFM0OTZTdjN3dGxtRm5YNmFrZ3NfOHVKeEFUbmhTZUxWMWlPNkJyZU5sZG1CSTV4YmQwUGZQNnZYZzY2bjNEdEVobjZmOXdLNUFsYkM3cTREY0Y1QUdxWllCMzlFbUg0NFg3cVpyZi1rMGRhc25oMkxuelczV3NnSWdMdUtD?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-09T10:04:48+00:00",
+            "id": "3115b41c0adab00393c5",
+            "type": "earnings",
+            "age_hours": 0.28,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T10:21:25.490940+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "UVV_US_EQ",
+        "isin": "US9134561094",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1027,132 +1027,6 @@
       }
     },
     {
-      "ticker": "CYD",
-      "name": "China Yuchai International",
-      "asset_type": "stock",
-      "price": 29.07,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 3.15827,
-      "volume": 339365.0,
-      "dollar_volume": 9865340.55,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 16.818,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "What China Yuchai International Stock Earnings Cut Means For Shareholders - Simply Wall Street",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNblNwME5RRmVQaFM1eHpxNVZSR3BSNVVfaWczc1h4V2JzRWc3UmFnNXliYV9QUG50RmxsMTZvV1o5NWFTcWNiMmxoM1pfZVd2ZWRZYWdjNHRYUFFkMmdLM2RRN2JLMlNkQzNNdVY3bGVGVERfRnlhcjk4WXZjeldNYTdaTDMtd1NjSW5rTG1HWU5nTmlMUnJ3dmpwWTREckF6ckhfbnVRTTJVOVlRUWpnSUZHbEdWYnJTSmF6cDgxa3BNRExyR201bG16YS1ud1p4YlJvWnk2cmdCdUdZWHgyZdIB5gFBVV95cUxOTkdVZlRLTlZhSDJzeXp1bGZiLUxZeFBVQ2tfb0VGY3ZoaUNlNS1kY29CMlQyOVJyTkJJNjFvZ3A3U3A5OUVZYzRxOGZXS2hLQW5SeXVCbmFwaWNSVGo3MU9EazN6V1hOS1dOSzdvUjdNM01zSTBOOVJDTWl6NWI1NTVnZGNMUVIyc2MwdDdxYXIwY2ZRX1RsSk5YSm0yUGFXSzdPdm5JTjJLS05xdkxzUWJUWVFlaUhjUnV2Y09nc3FHaGxHeTFUYzBmNVNRU1FjQVE4VjlQOVBjMUlPUlVlbHRIM1d4Zw?oc=5",
-        "source": "Simply Wall Street",
-        "published_at": "2026-10-09T08:25:39+00:00",
-        "id": "2ef610dbceb9b3c8bf6c",
-        "type": "earnings",
-        "age_hours": 0.18,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "What China Yuchai International Stock Earnings Cut Means For Shareholders - Simply Wall Street",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "What China Yuchai International Stock Earnings Cut Means For Shareholders - Simply Wall Street",
-            "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNblNwME5RRmVQaFM1eHpxNVZSR3BSNVVfaWczc1h4V2JzRWc3UmFnNXliYV9QUG50RmxsMTZvV1o5NWFTcWNiMmxoM1pfZVd2ZWRZYWdjNHRYUFFkMmdLM2RRN2JLMlNkQzNNdVY3bGVGVERfRnlhcjk4WXZjeldNYTdaTDMtd1NjSW5rTG1HWU5nTmlMUnJ3dmpwWTREckF6ckhfbnVRTTJVOVlRUWpnSUZHbEdWYnJTSmF6cDgxa3BNRExyR201bG16YS1ud1p4YlJvWnk2cmdCdUdZWHgyZdIB5gFBVV95cUxOTkdVZlRLTlZhSDJzeXp1bGZiLUxZeFBVQ2tfb0VGY3ZoaUNlNS1kY29CMlQyOVJyTkJJNjFvZ3A3U3A5OUVZYzRxOGZXS2hLQW5SeXVCbmFwaWNSVGo3MU9EazN6V1hOS1dOSzdvUjdNM01zSTBOOVJDTWl6NWI1NTVnZGNMUVIyc2MwdDdxYXIwY2ZRX1RsSk5YSm0yUGFXSzdPdm5JTjJLS05xdkxzUWJUWVFlaUhjUnV2Y09nc3FHaGxHeTFUYzBmNVNRU1FjQVE4VjlQOVBjMUlPUlVlbHRIM1d4Zw?oc=5",
-            "source": "Simply Wall Street",
-            "published_at": "2026-10-09T08:25:39+00:00",
-            "id": "2ef610dbceb9b3c8bf6c",
-            "type": "earnings",
-            "age_hours": 0.18,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T08:36:26.919482+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "CYD_US_EQ",
-        "isin": "BMG210821051",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "AMWL",
       "name": "American Well",
       "asset_type": "stock",
@@ -1281,15 +1155,15 @@
       }
     },
     {
-      "ticker": "BMGL",
-      "name": "Basel Medical Group",
+      "ticker": "HITI",
+      "name": "High Tide",
       "asset_type": "stock",
-      "price": 3.6,
+      "price": 2.58,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": 9.7561,
-      "volume": 126841.0,
-      "dollar_volume": 456627.60000000003,
+      "change": -5.49451,
+      "volume": 967324.0,
+      "dollar_volume": 2495695.92,
       "session": "CLOSED",
       "observed_at": "2026-10-08T20:00:01+00:00",
       "source": "Yahoo broad exchange snapshot",
@@ -1298,20 +1172,22 @@
         "fresh_publication": true,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": -3.179,
+        "snapshot_score": -2.356,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Basel Medical Group Ltd (BMGL) Prices Registered Direct Offering - The Manila Times",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVHgzMEdRc2tGbFR3aTBwMU8xVXZnbzF4ckVhR0RZRG9lRnJ0cE9vYV85RS1TYjlSVkFJWkJoOVBLODBOWkpyQzB1dXEzWHg0dERwV19aYi1VRHJaYm0yY1RRNkNPZDItejgzUTh4V3NvZzZWNW5MbjJMV3QyM0pmWFNVVDRxTUVXcHpvT3BabkNXS3p5TEw0R1lLLWJsQXZmWFpoakFaMTR5M1BrUHF0WC1fX1ZadlBucFNhYkt6X0M4X3BVZ3l5VjlBcXpIMWJjVkHSAdcBQVVfeXFMUG5fVVZqR2thZWU2QjFJdmJqNWFxeEl6UEhEbXJPTWQ0QmRBYldoTzA5Y29Ec1RZX1RqTjFyRm5nUU91SDNZRmZzRmxHMm12VWtHeExHZkg3VExWUk1lMXd2R2NRa2NTdjBjNnF5UjhybTBaenZFYjUyMC1wSDNwNTBhcTFiemJ3R0wzSFllSW5Tc1NoWVRKUGN1MmYwRHozRDNIVGxWTHVvMm41Sm5ST0w2Vmc2S1NVMWxmbmhBWUhwdm5ZT2Z5MUttb0F1NjNscThxLVpDaTQ?oc=5",
-        "source": "The Manila Times",
-        "published_at": "2026-10-08T17:37:39+00:00",
-        "id": "4f6042d384a105160ab5",
-        "type": "financing",
-        "age_hours": 16.11,
+        "title": "High Tide Acquires Established Cannabis Store in Chestermere, Alberta",
+        "link": "https://www.prnewswire.com/news-releases/high-tide-acquires-established-cannabis-store-in-chestermere-alberta-302903111.html",
+        "published_at": "2026-10-09T10:00:00+00:00",
+        "source": "PR Newswire issuer releases",
+        "source_kind": "direct_announcement_feed",
+        "feed_url": "https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss",
+        "id": "29ba7d8939c98f2f561a",
+        "type": "merger",
+        "age_hours": 0.36,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1320,17 +1196,19 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Basel Medical Group Ltd (BMGL) Prices Registered Direct Offering - The Manila Times",
+        "summary": "High Tide Acquires Established Cannabis Store in Chestermere, Alberta",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Basel Medical Group Ltd (BMGL) Prices Registered Direct Offering - The Manila Times",
-            "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVHgzMEdRc2tGbFR3aTBwMU8xVXZnbzF4ckVhR0RZRG9lRnJ0cE9vYV85RS1TYjlSVkFJWkJoOVBLODBOWkpyQzB1dXEzWHg0dERwV19aYi1VRHJaYm0yY1RRNkNPZDItejgzUTh4V3NvZzZWNW5MbjJMV3QyM0pmWFNVVDRxTUVXcHpvT3BabkNXS3p5TEw0R1lLLWJsQXZmWFpoakFaMTR5M1BrUHF0WC1fX1ZadlBucFNhYkt6X0M4X3BVZ3l5VjlBcXpIMWJjVkHSAdcBQVVfeXFMUG5fVVZqR2thZWU2QjFJdmJqNWFxeEl6UEhEbXJPTWQ0QmRBYldoTzA5Y29Ec1RZX1RqTjFyRm5nUU91SDNZRmZzRmxHMm12VWtHeExHZkg3VExWUk1lMXd2R2NRa2NTdjBjNnF5UjhybTBaenZFYjUyMC1wSDNwNTBhcTFiemJ3R0wzSFllSW5Tc1NoWVRKUGN1MmYwRHozRDNIVGxWTHVvMm41Sm5ST0w2Vmc2S1NVMWxmbmhBWUhwdm5ZT2Z5MUttb0F1NjNscThxLVpDaTQ?oc=5",
-            "source": "The Manila Times",
-            "published_at": "2026-10-08T17:37:39+00:00",
-            "id": "4f6042d384a105160ab5",
-            "type": "financing",
-            "age_hours": 16.11,
+            "title": "High Tide Acquires Established Cannabis Store in Chestermere, Alberta",
+            "link": "https://www.prnewswire.com/news-releases/high-tide-acquires-established-cannabis-store-in-chestermere-alberta-302903111.html",
+            "published_at": "2026-10-09T10:00:00+00:00",
+            "source": "PR Newswire issuer releases",
+            "source_kind": "direct_announcement_feed",
+            "feed_url": "https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss",
+            "id": "29ba7d8939c98f2f561a",
+            "type": "merger",
+            "age_hours": 0.36,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1348,12 +1226,12 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-09T09:44:18.144621+00:00",
+        "checked_at": "2026-10-09T10:21:25.490940+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BMGL_US_EQ",
-        "isin": "VGG0864B1114",
+        "broker_instrument_id": "HITIF_US_EQ",
+        "isin": "CA42981E4013",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1538,10 +1416,14 @@
     }
   ],
   "changed_signals": [
-    "stock:INN",
+    "stock:UVV",
+    "stock:HITI"
+  ],
+  "invalidated_signals": [
+    "stock:SECZ",
+    "stock:CYD",
     "stock:BMGL"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1560,9 +1442,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 190,
-        "matched_events": 16,
-        "matched_assets": 15,
+        "headlines_received": 189,
+        "matched_events": 15,
+        "matched_assets": 14,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1580,14 +1462,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5901,
-      "discovered_candidates": 15,
+      "discovered_candidates": 14,
       "broker_excluded_candidates": 4,
-      "shortlisted_candidates": 11,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 11,
-      "selected_candidates": 11,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1595,7 +1477,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 11,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1606,14 +1488,14 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
-      "history_requested": 12,
-      "history_received": 12,
-      "chart_failures": 0,
+      "history_requested": 11,
+      "history_received": 10,
+      "chart_failures": 1,
       "history_stale": 0,
-      "history_not_requested": 0,
+      "history_not_requested": 1,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -1641,20 +1523,20 @@
     "brokers": {
       "stock": {
         "status": "OK",
-        "records": 17048,
+        "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T09:44:18.144621+00:00",
+        "checked_at": "2026-10-09T10:21:25.490940+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T09:44:18.144621+00:00"
+        "checked_at": "2026-10-09T10:21:25.490940+00:00"
       }
     },
     "news": {
-      "checked": 23,
+      "checked": 22,
       "failed": 0
     }
   },
