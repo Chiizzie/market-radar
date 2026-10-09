@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T10:44:43.415079+00:00",
+  "generated_at": "2026-10-09T11:00:21.885409+00:00",
   "potential_signals": [
     {
       "ticker": "QSR",
@@ -388,134 +388,6 @@
       }
     },
     {
-      "ticker": "PENN",
-      "name": "PENN Entertainment",
-      "asset_type": "stock",
-      "price": 15.76,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.254453,
-      "volume": 3402571.0,
-      "dollar_volume": 53624518.96,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.126,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Full Transcript: PENN Entertainment Q2 2026 Earnings Call - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLWtQVWFROWZ2djUwb1pERkpvSDVHZ0tFRTJqNHd4VFY1NnNDSnBpN2dMVG5xUmdRc2F3MTVtRE80czdzbWJPUzlUaExRWmZwLVh2YjdBd3RnaXBRZDZINmd5ZzZzV2RYbTZMaElGMVJQRlpHZFZBZjNIRGZ0VWFpa2s4V1JpNFdvWUN4ZkNPR3VMU1VvYXA0RW5CdFNhSlhoZklz?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-09T08:25:02+00:00",
-        "id": "a83729f5b702b84cf2b9",
-        "type": "earnings",
-        "age_hours": 0.19,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Full Transcript: PENN Entertainment Q2 2026 Earnings Call - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Full Transcript: PENN Entertainment Q2 2026 Earnings Call - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLWtQVWFROWZ2djUwb1pERkpvSDVHZ0tFRTJqNHd4VFY1NnNDSnBpN2dMVG5xUmdRc2F3MTVtRE80czdzbWJPUzlUaExRWmZwLVh2YjdBd3RnaXBRZDZINmd5ZzZzV2RYbTZMaElGMVJQRlpHZFZBZjNIRGZ0VWFpa2s4V1JpNFdvWUN4ZkNPR3VMU1VvYXA0RW5CdFNhSlhoZklz?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-09T08:25:02+00:00",
-            "id": "a83729f5b702b84cf2b9",
-            "type": "earnings",
-            "age_hours": 0.19,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T08:36:26.919482+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "PENN_US_EQ",
-        "isin": "US7075691094",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "UVV",
       "name": "Universal",
       "asset_type": "stock",
@@ -756,131 +628,6 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "SNEX",
-      "name": "StoneX Group",
-      "asset_type": "stock",
-      "price": 60.1,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -2.21282,
-      "volume": 1398691.0,
-      "dollar_volume": 84061329.10000001,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "UNVERIFIED",
-        "snapshot_score": 8.029,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "StoneX Group Q3 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb3NXM292U0hPS21icVVuSnczeVFxdW4zY3Q5clJUV21qWUk0OU5sRlJwV3BBcGFXZzg1T0NCUkMyYzJNR0Vvei10YzVFaHljXzhKc0tibHEwVGlnVm9RS3huTWJsZnRLclA0M2phdW5BbUM0UjhVQ0hTcUtQN04wSk9pZEgtQW0xSjh2OEk1eUczTmx2?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-09T08:26:16+00:00",
-        "id": "91d821368239d4afc240",
-        "type": "earnings",
-        "age_hours": 0.17,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "StoneX Group Q3 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "StoneX Group Q3 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb3NXM292U0hPS21icVVuSnczeVFxdW4zY3Q5clJUV21qWUk0OU5sRlJwV3BBcGFXZzg1T0NCUkMyYzJNR0Vvei10YzVFaHljXzhKc0tibHEwVGlnVm9RS3huTWJsZnRLclA0M2phdW5BbUM0UjhVQ0hTcUtQN04wSk9pZEgtQW0xSjh2OEk1eUczTmx2?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-09T08:26:16+00:00",
-            "id": "91d821368239d4afc240",
-            "type": "earnings",
-            "age_hours": 0.17,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-09T08:36:26.919482+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "reason": "Ticker/company identity is ambiguous; manual verification required."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
             ],
             "plan": null,
             "missing_fields": [
@@ -1541,12 +1288,10 @@
       }
     }
   ],
-  "changed_signals": [
-    "stock:SECZ",
-    "stock:BMGL"
-  ],
+  "changed_signals": [],
   "invalidated_signals": [
-    "stock:SXTC"
+    "stock:PENN",
+    "stock:SNEX"
   ],
   "health": {
     "stocks": {
@@ -1556,8 +1301,8 @@
       "listed_assets": 5947,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7830,
-        "snapshot_records": 7830,
+        "provider_total": 7838,
+        "snapshot_records": 7838,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1567,8 +1312,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 189,
-        "matched_events": 16,
-        "matched_assets": 14,
+        "matched_events": 15,
+        "matched_assets": 13,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1586,14 +1331,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5901,
-      "discovered_candidates": 14,
-      "broker_excluded_candidates": 3,
-      "shortlisted_candidates": 11,
+      "discovered_candidates": 13,
+      "broker_excluded_candidates": 4,
+      "shortlisted_candidates": 9,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 11,
-      "selected_candidates": 11,
+      "catalyst_selected": 9,
+      "selected_candidates": 9,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1601,7 +1346,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 11,
+      "history_not_requested": 9,
       "chart_failures": 0
     },
     "crypto": {
@@ -1649,18 +1394,18 @@
         "status": "OK",
         "records": 17051,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T10:43:55.402755+00:00",
+        "checked_at": "2026-10-09T10:59:35.032534+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T10:43:55.402755+00:00"
+        "checked_at": "2026-10-09T10:59:35.032534+00:00"
       }
     },
     "news": {
-      "checked": 23,
+      "checked": 21,
       "failed": 0
     }
   },
