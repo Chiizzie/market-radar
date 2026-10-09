@@ -1,136 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T03:31:08.408119+00:00",
+  "generated_at": "2026-10-09T03:51:29.049021+00:00",
   "potential_signals": [
-    {
-      "ticker": "HELE",
-      "name": "Helen of Troy",
-      "asset_type": "stock",
-      "price": 26.55,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 3.91389,
-      "volume": 2028014.0,
-      "dollar_volume": 53843771.7,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 21.096,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Helen of Troy (NASDAQ:HELE) Earnings Beat as Tariff Refunds Lift Margins Despite Revenue Miss - ChartMill",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaXZ2X3JwOUZUTFBURWJncG85TGNQeGJQQ3I2Vm9KcTBwa21DTTlINXBnNlZobmtFX2xrX0xtVndxV1BHTDVycG9FSmcxc3haY3FsTXlaaXNma2dva3RDOXJoMFpEOHRQR21rel9lU0Z5NDc1eDdhcUVZYmgxeE1PNU9iOTNNSmFVOGQ2dWFTOEZjLWJmUWU4QlZWUzZpcUhiSnJQZlNZWjBVNDBONHpvRElHMFNpbHJFTHgyNDNzNlZ0VVNHMG5qUFJlMmk3YU56MmNfYnU2b2pXUQ?oc=5",
-        "source": "ChartMill",
-        "published_at": "2026-10-08T12:25:59+00:00",
-        "id": "b29dbff34d3bce834ed6",
-        "type": "earnings",
-        "age_hours": 15.07,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Helen of Troy (NASDAQ:HELE) Earnings Beat as Tariff Refunds Lift Margins Despite Revenue Miss - ChartMill",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Helen of Troy (NASDAQ:HELE) Earnings Beat as Tariff Refunds Lift Margins Despite Revenue Miss - ChartMill",
-            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaXZ2X3JwOUZUTFBURWJncG85TGNQeGJQQ3I2Vm9KcTBwa21DTTlINXBnNlZobmtFX2xrX0xtVndxV1BHTDVycG9FSmcxc3haY3FsTXlaaXNma2dva3RDOXJoMFpEOHRQR21rel9lU0Z5NDc1eDdhcUVZYmgxeE1PNU9iOTNNSmFVOGQ2dWFTOEZjLWJmUWU4QlZWUzZpcUhiSnJQZlNZWjBVNDBONHpvRElHMFNpbHJFTHgyNDNzNlZ0VVNHMG5qUFJlMmk3YU56MmNfYnU2b2pXUQ?oc=5",
-            "source": "ChartMill",
-            "published_at": "2026-10-08T12:25:59+00:00",
-            "id": "b29dbff34d3bce834ed6",
-            "type": "earnings",
-            "age_hours": 15.07,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T03:30:15.452120+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "HELE_US_EQ",
-        "isin": "BMG4388N1065",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "PKE",
       "name": "Park Aerospace",
@@ -674,13 +546,13 @@
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - StockStory",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUkQ1UGhmUW1HNmRqU2NacElteVE1QkFLS00tRnRBSFlhZTE5RTBNbExWc3dNN0xfLU9KejRDRGdtaTczVTJrRWdJNHNBS1FpRE84b19rc09tTW5PcVFvbG5iUEJuWG5Bdjg0Z1BMSkVzRWVVOUphMXpNUHJrRkZTMnJrNFJWeUtaMy1fVmpLc0JFaGxRMm5SeGlmZXJwZ0hCdU0tbTd1UUJBUXZPM3FqMGJJUFQycmtJNGlzRzhfY0pyNGJlMkc0Q2xJbGtUZGNoa3dES0dGMFVKUElJVHc?oc=5",
-        "source": "StockStory",
-        "published_at": "2026-10-08T13:22:35+00:00",
-        "id": "e155ad56b2593c0cf5a2",
+        "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWWVIUWJ3OVBFbWxQRkktbjFNZWVOMWVYak5HcUxDc2htb3BmOW05SHNwcjZ3U1pZcDRaSG9CVHV5cTlnRW9IVzhreE9sUGxWejA5Y3FfV05XLU01OW9NWi1SWlhOSGZ6UjJnNnVHQUIwY1I3a2RTMTJWM2VyN01CQjJIOFZ1SkU?oc=5",
+        "source": "Yahoo Finance UK",
+        "published_at": "2026-10-08T12:08:16+00:00",
+        "id": "b810e3ecefc15a63b7a5",
         "type": "earnings",
-        "age_hours": 13.78,
+        "age_hours": 15.71,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -689,17 +561,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - StockStory",
+        "summary": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - Yahoo Finance UK",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - StockStory",
-            "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUkQ1UGhmUW1HNmRqU2NacElteVE1QkFLS00tRnRBSFlhZTE5RTBNbExWc3dNN0xfLU9KejRDRGdtaTczVTJrRWdJNHNBS1FpRE84b19rc09tTW5PcVFvbG5iUEJuWG5Bdjg0Z1BMSkVzRWVVOUphMXpNUHJrRkZTMnJrNFJWeUtaMy1fVmpLc0JFaGxRMm5SeGlmZXJwZ0hCdU0tbTd1UUJBUXZPM3FqMGJJUFQycmtJNGlzRzhfY0pyNGJlMkc0Q2xJbGtUZGNoa3dES0dGMFVKUElJVHc?oc=5",
-            "source": "StockStory",
-            "published_at": "2026-10-08T13:22:35+00:00",
-            "id": "e155ad56b2593c0cf5a2",
+            "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - Yahoo Finance UK",
+            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWWVIUWJ3OVBFbWxQRkktbjFNZWVOMWVYak5HcUxDc2htb3BmOW05SHNwcjZ3U1pZcDRaSG9CVHV5cTlnRW9IVzhreE9sUGxWejA5Y3FfV05XLU01OW9NWi1SWlhOSGZ6UjJnNnVHQUIwY1I3a2RTMTJWM2VyN01CQjJIOFZ1SkU?oc=5",
+            "source": "Yahoo Finance UK",
+            "published_at": "2026-10-08T12:08:16+00:00",
+            "id": "b810e3ecefc15a63b7a5",
             "type": "earnings",
-            "age_hours": 13.78,
+            "age_hours": 15.71,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -717,7 +589,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-09T03:09:22.591550+00:00",
+        "checked_at": "2026-10-09T03:50:36.475406+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
@@ -1553,9 +1425,11 @@
     }
   ],
   "changed_signals": [
+    "stock:BYRN"
+  ],
+  "invalidated_signals": [
     "stock:HELE"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1564,8 +1438,8 @@
       "listed_assets": 5949,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7828,
-        "snapshot_records": 7828,
+        "provider_total": 7836,
+        "snapshot_records": 7836,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1574,9 +1448,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 178,
-        "matched_events": 15,
-        "matched_assets": 13,
+        "headlines_received": 180,
+        "matched_events": 14,
+        "matched_assets": 12,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1594,14 +1468,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5901,
-      "discovered_candidates": 13,
+      "discovered_candidates": 12,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 11,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 11,
-      "selected_candidates": 11,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1609,7 +1483,7 @@
       "unquoted_listings": 48,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 11,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1657,18 +1531,18 @@
         "status": "OK",
         "records": 17048,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T03:30:15.452120+00:00",
+        "checked_at": "2026-10-09T03:50:36.475406+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T03:30:15.452120+00:00"
+        "checked_at": "2026-10-09T03:50:36.475406+00:00"
       }
     },
     "news": {
-      "checked": 23,
+      "checked": 22,
       "failed": 0
     }
   },
