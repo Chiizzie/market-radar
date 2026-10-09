@@ -1,8 +1,284 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-09T15:31:33.455062+00:00",
+  "generated_at": "2026-10-09T15:52:16.653766+00:00",
   "potential_signals": [
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "asset_type": "stock",
+      "price": 285.4100036621094,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 4.3225064,
+      "volume": 860932,
+      "dollar_volume": 242659613.94363403,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.932,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "DDOG_US_EQ",
+        "isin": "US23804L1035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 1.7771682035718455,
+      "history_samples": 340,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 286.0,
+      "support": 282.8800048828125,
+      "momentum_pct": 0.06135934213369332,
+      "reference_price": 284.8541807983291,
+      "extension_pct": 0.19512540143260537,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.6910485385004247,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "catalyst": {
+        "title": "Datadog stock trades at EUR 245.00 ahead of quarterly results - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZVd0OWcyNG82RFNkLVdFUjMzSnRFS1Z4OGNUa25yd1lnTjRBaWFzUW1Ka2tfMTZNUU5BR2ticEpkTkxCaFc4LS1KZlhaNzA3OEpTeTJEaVBFaWdNOTR2MV9DWlBpcjlQaDFhUXljUm1FTDl2c2hRYjZKWjdKLWhZNFJ4bEdxc0NybmRVeklubmVOTXNFMDdvUUVZZVAtcUk3T1QyeUZNbUVmQld3ellZSG5nbWM5NUtjQnlXUGp5OW9aUQ?oc=5",
+        "source": "AD HOC NEWS",
+        "published_at": "2026-10-09T13:04:49+00:00",
+        "id": "d0786214c90f51d25379",
+        "type": "earnings",
+        "age_hours": 2.78,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Datadog stock trades at EUR 245.00 ahead of quarterly results - AD HOC NEWS",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Datadog stock trades at EUR 245.00 ahead of quarterly results - AD HOC NEWS",
+            "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZVd0OWcyNG82RFNkLVdFUjMzSnRFS1Z4OGNUa25yd1lnTjRBaWFzUW1Ka2tfMTZNUU5BR2ticEpkTkxCaFc4LS1KZlhaNzA3OEpTeTJEaVBFaWdNOTR2MV9DWlBpcjlQaDFhUXljUm1FTDl2c2hRYjZKWjdKLWhZNFJ4bEdxc0NybmRVeklubmVOTXNFMDdvUUVZZVAtcUk3T1QyeUZNbUVmQld3ellZSG5nbWM5NUtjQnlXUGp5OW9aUQ?oc=5",
+            "source": "AD HOC NEWS",
+            "published_at": "2026-10-09T13:04:49+00:00",
+            "id": "d0786214c90f51d25379",
+            "type": "earnings",
+            "age_hours": 2.78,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 12
+      },
+      "score": {
+        "score": 6,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "same-time relative volume",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No historical resistance above the trigger/current history price in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_1",
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "BAM",
+      "name": "Brookfield Asset Management",
+      "asset_type": "stock",
+      "price": 46.13999938964844,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 2.2138588,
+      "volume": 1415797,
+      "dollar_volume": 64915987.9632225,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 10.711,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "BAM1_US_EQ",
+        "isin": "CA1130041058",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 1.8784989636740481,
+      "history_samples": 340,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 46.18000030517578,
+      "support": 45.880001068115234,
+      "momentum_pct": 0.10848174635500474,
+      "reference_price": 46.09252970428506,
+      "extension_pct": 0.10298780663140494,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 1.1062118017681195,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "catalyst": {
+        "title": "Brookfield Asset Management Q2FY26 Results: Fee-related earnings up 20% to $808 million - scanx.trade",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUTFRWVlsbF90T3U2SC1ONG9LZUg0Y2VkeEJrenlKMUd3dElYVndpVF9ibnFCTkVienpNX1l6ZVNwRVlPZm5Oa1N1TGw4bjNoeGotT0ZQcjhPT2g5TzlfVkdUWUo2WDNaejVGRG9QZURSNUhyRlZJTml0SW1aRGtpU3cycHA3NlI3d2FhTzdWZ0VVakxuNTlyS2QtUVJGSFlmR0JTS2Rlc3h0d3VlVjY1czhvdFRpeEJKSjhBRElVeDFnNi15?oc=5",
+        "source": "scanx.trade",
+        "published_at": "2026-10-08T16:09:01+00:00",
+        "id": "c1e718b9242f017b026f",
+        "type": "earnings",
+        "age_hours": 23.71,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Brookfield Asset Management Q2FY26 Results: Fee-related earnings up 20% to $808 million - scanx.trade",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Brookfield Asset Management Q2FY26 Results: Fee-related earnings up 20% to $808 million - scanx.trade",
+            "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUTFRWVlsbF90T3U2SC1ONG9LZUg0Y2VkeEJrenlKMUd3dElYVndpVF9ibnFCTkVienpNX1l6ZVNwRVlPZm5Oa1N1TGw4bjNoeGotT0ZQcjhPT2g5TzlfVkdUWUo2WDNaejVGRG9QZURSNUhyRlZJTml0SW1aRGtpU3cycHA3NlI3d2FhTzdWZ0VVakxuNTlyS2QtUVJGSFlmR0JTS2Rlc3h0d3VlVjY1czhvdFRpeEJKSjhBRElVeDFnNi15?oc=5",
+            "source": "scanx.trade",
+            "published_at": "2026-10-08T16:09:01+00:00",
+            "id": "c1e718b9242f017b026f",
+            "type": "earnings",
+            "age_hours": 23.71,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 12
+      },
+      "score": {
+        "score": 6,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "same-time relative volume",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No historical resistance above the trigger/current history price in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_1",
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "TEVA",
       "name": "Teva Pharmaceutical Industries",
@@ -133,24 +409,24 @@
       }
     },
     {
-      "ticker": "NTES",
-      "name": "NetEase",
+      "ticker": "TNGX",
+      "name": "Tango Therapeutics",
       "asset_type": "stock",
-      "price": 125.01000213623047,
+      "price": 23.309999465942383,
       "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 4.5234146,
-      "volume": 402965,
-      "dollar_volume": 50375886.58955383,
+      "eur_per_unit": 0.8931000232696533,
+      "change": 3.2786875,
+      "volume": 924885,
+      "dollar_volume": 21324824.58623123,
       "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
+      "observed_at": "2026-10-09T11:50:00-04:00",
       "source": "yfinance completed 5-minute bars",
       "discovery_route": "market_snapshot",
       "selection_evidence": {
         "fresh_publication": false,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 11.108,
+        "snapshot_score": 9.301,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
@@ -158,43 +434,465 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "NTES_US_EQ",
-        "isin": "US64110W1027",
+        "broker_instrument_id": "BCTG_US_EQ",
+        "isin": "US87583X1090",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "volume_spike": 1.5322548298683067,
-      "history_samples": 333,
+      "volume_spike": 0.6145300076244418,
+      "history_samples": 340,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 125.02999877929688,
-      "support": 124.5,
-      "momentum_pct": 0.2807624449215895,
-      "reference_price": 124.74939523720148,
-      "extension_pct": 0.20890433860096813,
-      "resistance_1": 125.16000366210938,
-      "resistance_2": 125.6449966430664,
+      "entry": 23.270000457763672,
+      "support": 22.94499969482422,
+      "momentum_pct": 0.6476667509435874,
+      "reference_price": 23.10720845444047,
+      "extension_pct": 0.8776093049134293,
+      "resistance_1": 23.34000015258789,
+      "resistance_2": 23.415000915527344,
       "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        "setups": [
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 23.270000457763672,
+            "support": 23.139999389648438,
+            "resistance_1": 23.29990005493164,
+            "resistance_2": 23.389999389648438,
+            "momentum_pct": 0.6476667509435874,
+            "extension_pct": 0.8776093049134293,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 23.139999389648438,
+              "measured_height": 0.375,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                23.327499389648438,
+                23.514999389648438
+              ],
+              "overhead_levels": [
+                23.29990005493164,
+                23.299999237060547,
+                23.309999465942383,
+                23.34000015258789
+              ]
+            },
+            "observed_at": "2026-10-09T11:50:00-04:00",
+            "evidence": {
+              "impulse_high": 23.260000228881836,
+              "impulse_low": 22.885000228881836,
+              "pullback_low": 23.139999389648438,
+              "ema9": 23.16879303002556,
+              "ema21": 23.067812957278385,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
         ],
+        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 0.4599728684037309,
-        "observed_at": "2026-10-09T11:30:00-04:00"
+        "recent_volume_ratio": 0.2510894284076321,
+        "observed_at": "2026-10-09T11:50:00-04:00"
       },
       "catalyst": {
-        "title": "NetEase Cloud Music partners with gamma. for China distribution By Investing.com - Investing.com Nigeria",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNM0JMaV9vd25aUUlpVmZWWS16R0xid19KVl90M1RyT1lNaFVWZHoyR2VyaXJSb1g4MS1VbzFTZmd3dHBBNTd5NVI3aG1jX2dKRzdEMmNocHdPRVhOOGxNWnRxcFh5QUh3YVk0YXdNSGFEeXlUb0ZEU05IYU54R1doT296VlNlTEpGNmhpUGZJVUNua21sQlNKN3hLaHBrdGRGdWxteklldlpMVXdLdXNNZG9fNkp5ZWJDS1NRUURuNVM?oc=5",
-        "source": "Investing.com Nigeria",
-        "published_at": "2026-10-08T15:39:47+00:00",
-        "id": "9635f367a0d0828931e8",
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 1
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Recent same-time relative volume is below 1.5x.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "TREND_PULLBACK_RECLAIM",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "TREND_PULLBACK_RECLAIM",
+          "entry": 23.270000457763672,
+          "support": 23.139999389648438,
+          "resistance_1": 23.29990005493164,
+          "resistance_2": 23.389999389648438,
+          "momentum_pct": 0.6476667509435874,
+          "extension_pct": 0.8776093049134293,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 23.139999389648438,
+            "measured_height": 0.375,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              23.327499389648438,
+              23.514999389648438
+            ],
+            "overhead_levels": [
+              23.29990005493164,
+              23.299999237060547,
+              23.309999465942383,
+              23.34000015258789
+            ]
+          },
+          "observed_at": "2026-10-09T11:50:00-04:00",
+          "evidence": {
+            "impulse_high": 23.260000228881836,
+            "impulse_low": 22.885000228881836,
+            "pullback_low": 23.139999389648438,
+            "ema9": 23.16879303002556,
+            "ema21": 23.067812957278385,
+            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Recent same-time relative volume is below 1.5x.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "Recent same-time relative volume is below 1.5x."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent same-time relative volume is below 1.5x.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 23.270000457763672,
+              "support": 23.139999389648438,
+              "resistance_1": 23.29990005493164,
+              "resistance_2": 23.389999389648438,
+              "momentum_pct": 0.6476667509435874,
+              "extension_pct": 0.8776093049134293,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 23.139999389648438,
+                "measured_height": 0.375,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  23.327499389648438,
+                  23.514999389648438
+                ],
+                "overhead_levels": [
+                  23.29990005493164,
+                  23.299999237060547,
+                  23.309999465942383,
+                  23.34000015258789
+                ]
+              },
+              "observed_at": "2026-10-09T11:50:00-04:00",
+              "evidence": {
+                "impulse_high": 23.260000228881836,
+                "impulse_low": 22.885000228881836,
+                "pullback_low": 23.139999389648438,
+                "ema9": 23.16879303002556,
+                "ema21": 23.067812957278385,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent same-time relative volume is below 1.5x.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "EAT",
+      "name": "Brinker International",
+      "asset_type": "stock",
+      "price": 193.7949981689453,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 2.0399606,
+      "volume": 531490,
+      "dollar_volume": 102055132.41445923,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.058,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "EAT_US_EQ",
+        "isin": "US1096411004",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.2854568390701027,
+      "history_samples": 340,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 194.17999267578125,
+      "support": 192.22999572753906,
+      "momentum_pct": 0.24829719446350929,
+      "reference_price": 192.73649024386268,
+      "extension_pct": 0.5491995437622244,
+      "resistance_1": 194.4324951171875,
+      "resistance_2": 195.1199951171875,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 193.75999450683594,
+            "support": 193.33999633789062,
+            "resistance_1": 193.97000122070312,
+            "resistance_2": 194.87249755859375,
+            "momentum_pct": 0.24829719446350929,
+            "extension_pct": 0.5491995437622244,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 193.33999633789062,
+              "measured_height": 2.709991455078125,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                194.6949920654297,
+                196.04998779296875
+              ],
+              "overhead_levels": [
+                193.97000122070312,
+                194.02000427246094,
+                194.0399932861328,
+                194.0500030517578
+              ]
+            },
+            "observed_at": "2026-10-09T11:50:00-04:00",
+            "evidence": {
+              "impulse_high": 194.17999267578125,
+              "impulse_low": 191.47000122070312,
+              "pullback_low": 193.33999633789062,
+              "ema9": 193.29546519760677,
+              "ema21": 192.52371583149196,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 0.09133051961530478,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 1
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Recent same-time relative volume is below 1.5x.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "TREND_PULLBACK_RECLAIM",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "TREND_PULLBACK_RECLAIM",
+          "entry": 193.75999450683594,
+          "support": 193.33999633789062,
+          "resistance_1": 193.97000122070312,
+          "resistance_2": 194.87249755859375,
+          "momentum_pct": 0.24829719446350929,
+          "extension_pct": 0.5491995437622244,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 193.33999633789062,
+            "measured_height": 2.709991455078125,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              194.6949920654297,
+              196.04998779296875
+            ],
+            "overhead_levels": [
+              193.97000122070312,
+              194.02000427246094,
+              194.0399932861328,
+              194.0500030517578
+            ]
+          },
+          "observed_at": "2026-10-09T11:50:00-04:00",
+          "evidence": {
+            "impulse_high": 194.17999267578125,
+            "impulse_low": 191.47000122070312,
+            "pullback_low": 193.33999633789062,
+            "ema9": 193.29546519760677,
+            "ema21": 192.52371583149196,
+            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Recent same-time relative volume is below 1.5x.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "Recent same-time relative volume is below 1.5x."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent same-time relative volume is below 1.5x.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 193.75999450683594,
+              "support": 193.33999633789062,
+              "resistance_1": 193.97000122070312,
+              "resistance_2": 194.87249755859375,
+              "momentum_pct": 0.24829719446350929,
+              "extension_pct": 0.5491995437622244,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 193.33999633789062,
+                "measured_height": 2.709991455078125,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  194.6949920654297,
+                  196.04998779296875
+                ],
+                "overhead_levels": [
+                  193.97000122070312,
+                  194.02000427246094,
+                  194.0399932861328,
+                  194.0500030517578
+                ]
+              },
+              "observed_at": "2026-10-09T11:50:00-04:00",
+              "evidence": {
+                "impulse_high": 194.17999267578125,
+                "impulse_low": 191.47000122070312,
+                "pullback_low": 193.33999633789062,
+                "ema9": 193.29546519760677,
+                "ema21": 192.52371583149196,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent same-time relative volume is below 1.5x.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands International",
+      "asset_type": "stock",
+      "price": 70.9000015258789,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 0.3113851,
+      "volume": 532473,
+      "dollar_volume": 37718472.84716034,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 6.737,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
+        "link": "https://news.google.com/rss/articles/CBMilANBVV95cUxQWTZfNUxPOWpLNTQ0YmJqWHE3WDVlQVFkT1VzTUdTUklqak1zRGQ4Qzl3eFdNRTByT1l6aDBncGdMeGM4VVR1bVRXZ2Q3ODFYaXZqZmNUZnRIU3ZrYVg1YWVSLUx5ZXFkYkEydTZXdjBkRnVkZ0s5amFodU9EbjV2N0tuU0tyTUNEV05vTlFvbk9SOWxMLVZzWkEtaW44LUNmUU9NVUFZdmdGV2I4Qzk1RFRoNFkycWxPRG4zLWM4R3JrMTRKZ1VzcWRoOWJZTE1rTWVNQjcta1lveHhxMzI3OEw2cHFONVNCWVAyN3dZeUlYZXliZ1h1bHRkTUxWLVRDekF0OXpOWnZRV0xlcDZyTGNQbEUwT051d3FnS0o0c0lHaV9LYWRqNGZGVlM4MGN2TUtSU3lpWXYtdkFTRTlocEpfcW9PTDlGNjNTaURILU9jQXNzQ1BTLVJHeHdBOEU2cVNnR1RLZlNISVUza1RVWENRM3JRRnFEWGRtQjhXaW5ob2h3bUY2Um1iVUVhcUFxZU1IVg?oc=5",
+        "source": "Finansavisen",
+        "published_at": "2026-10-08T22:07:30+00:00",
+        "id": "bbfb0f551fdf2caf998d",
         "type": "partnership",
-        "age_hours": 23.85,
+        "age_hours": 17.73,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -203,17 +901,459 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "NetEase Cloud Music partners with gamma. for China distribution By Investing.com - Investing.com Nigeria",
+        "summary": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "NetEase Cloud Music partners with gamma. for China distribution By Investing.com - Investing.com Nigeria",
-            "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNM0JMaV9vd25aUUlpVmZWWS16R0xid19KVl90M1RyT1lNaFVWZHoyR2VyaXJSb1g4MS1VbzFTZmd3dHBBNTd5NVI3aG1jX2dKRzdEMmNocHdPRVhOOGxNWnRxcFh5QUh3YVk0YXdNSGFEeXlUb0ZEU05IYU54R1doT296VlNlTEpGNmhpUGZJVUNua21sQlNKN3hLaHBrdGRGdWxteklldlpMVXdLdXNNZG9fNkp5ZWJDS1NRUURuNVM?oc=5",
-            "source": "Investing.com Nigeria",
-            "published_at": "2026-10-08T15:39:47+00:00",
-            "id": "9635f367a0d0828931e8",
+            "title": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
+            "link": "https://news.google.com/rss/articles/CBMilANBVV95cUxQWTZfNUxPOWpLNTQ0YmJqWHE3WDVlQVFkT1VzTUdTUklqak1zRGQ4Qzl3eFdNRTByT1l6aDBncGdMeGM4VVR1bVRXZ2Q3ODFYaXZqZmNUZnRIU3ZrYVg1YWVSLUx5ZXFkYkEydTZXdjBkRnVkZ0s5amFodU9EbjV2N0tuU0tyTUNEV05vTlFvbk9SOWxMLVZzWkEtaW44LUNmUU9NVUFZdmdGV2I4Qzk1RFRoNFkycWxPRG4zLWM4R3JrMTRKZ1VzcWRoOWJZTE1rTWVNQjcta1lveHhxMzI3OEw2cHFONVNCWVAyN3dZeUlYZXliZ1h1bHRkTUxWLVRDekF0OXpOWnZRV0xlcDZyTGNQbEUwT051d3FnS0o0c0lHaV9LYWRqNGZGVlM4MGN2TUtSU3lpWXYtdkFTRTlocEpfcW9PTDlGNjNTaURILU9jQXNzQ1BTLVJHeHdBOEU2cVNnR1RLZlNISVUza1RVWENRM3JRRnFEWGRtQjhXaW5ob2h3bUY2Um1iVUVhcUFxZU1IVg?oc=5",
+            "source": "Finansavisen",
+            "published_at": "2026-10-08T22:07:30+00:00",
+            "id": "bbfb0f551fdf2caf998d",
             "type": "partnership",
-            "age_hours": 23.85,
+            "age_hours": 17.73,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "QSR_US_EQ",
+        "isin": "CA76131D1033",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.21560549621333597,
+      "history_samples": 340,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No second distinct historical resistance target in the lookback."
+      ],
+      "entry": 71.04000091552734,
+      "support": 70.76000213623047,
+      "momentum_pct": 0.06350739794427351,
+      "reference_price": 70.91959217134355,
+      "extension_pct": -0.027623742417071107,
+      "resistance_1": 71.12999725341797,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "OPENING_RANGE_RETEST",
+            "entry": 70.9000015258789,
+            "support": 70.84500122070312,
+            "resistance_1": 70.98999786376953,
+            "resistance_2": 71.2699966430664,
+            "momentum_pct": 0.06350739794427351,
+            "extension_pct": -0.027623742417071107,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 70.81999969482422,
+              "measured_height": 0.6299972534179688,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                71.1349983215332,
+                71.44999694824219
+              ],
+              "overhead_levels": [
+                70.98999786376953,
+                71.0,
+                71.01000213623047,
+                71.02999877929688
+              ]
+            },
+            "observed_at": "2026-10-09T11:50:00-04:00",
+            "evidence": {
+              "range_start": "2026-10-09T09:30:00-04:00",
+              "range_end": "2026-10-09T09:55:00-04:00",
+              "range_high": 70.81999969482422,
+              "range_low": 70.19000244140625,
+              "retest_low": 70.84500122070312,
+              "breakout_close": 71.2699966430664,
+              "confirmation": "Break above range, hold/retest, bullish latest bar"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 0.2575868766264961,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "score": {
+        "score": 3,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Recent same-time relative volume is below 1.5x.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "OPENING_RANGE_RETEST",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "OPENING_RANGE_RETEST",
+          "entry": 70.9000015258789,
+          "support": 70.84500122070312,
+          "resistance_1": 70.98999786376953,
+          "resistance_2": 71.2699966430664,
+          "momentum_pct": 0.06350739794427351,
+          "extension_pct": -0.027623742417071107,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 70.81999969482422,
+            "measured_height": 0.6299972534179688,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              71.1349983215332,
+              71.44999694824219
+            ],
+            "overhead_levels": [
+              70.98999786376953,
+              71.0,
+              71.01000213623047,
+              71.02999877929688
+            ]
+          },
+          "observed_at": "2026-10-09T11:50:00-04:00",
+          "evidence": {
+            "range_start": "2026-10-09T09:30:00-04:00",
+            "range_end": "2026-10-09T09:55:00-04:00",
+            "range_high": 70.81999969482422,
+            "range_low": 70.19000244140625,
+            "retest_low": 70.84500122070312,
+            "breakout_close": 71.2699966430664,
+            "confirmation": "Break above range, hold/retest, bullish latest bar"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Recent same-time relative volume is below 1.5x.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No second distinct historical resistance target in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent same-time relative volume is below 1.5x.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "OPENING_RANGE_RETEST",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "OPENING_RANGE_RETEST",
+              "entry": 70.9000015258789,
+              "support": 70.84500122070312,
+              "resistance_1": 70.98999786376953,
+              "resistance_2": 71.2699966430664,
+              "momentum_pct": 0.06350739794427351,
+              "extension_pct": -0.027623742417071107,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 70.81999969482422,
+                "measured_height": 0.6299972534179688,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  71.1349983215332,
+                  71.44999694824219
+                ],
+                "overhead_levels": [
+                  70.98999786376953,
+                  71.0,
+                  71.01000213623047,
+                  71.02999877929688
+                ]
+              },
+              "observed_at": "2026-10-09T11:50:00-04:00",
+              "evidence": {
+                "range_start": "2026-10-09T09:30:00-04:00",
+                "range_end": "2026-10-09T09:55:00-04:00",
+                "range_high": 70.81999969482422,
+                "range_low": 70.19000244140625,
+                "retest_low": 70.84500122070312,
+                "breakout_close": 71.2699966430664,
+                "confirmation": "Break above range, hold/retest, bullish latest bar"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent same-time relative volume is below 1.5x.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "GH",
+      "name": "Guardant Health",
+      "asset_type": "stock",
+      "price": 168.67999267578125,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 1.9237725,
+      "volume": 469013,
+      "dollar_volume": 79130854.4283905,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.483,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "GH_US_EQ",
+        "isin": "US40131M1099",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.679285691789235,
+      "history_samples": 340,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 169.67999267578125,
+      "support": 166.97999572753906,
+      "momentum_pct": 0.017787595839036108,
+      "reference_price": 168.74320130199726,
+      "extension_pct": -0.03745847283227466,
+      "resistance_1": 169.86500549316406,
+      "resistance_2": 170.49000549316406,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.5984348796970533,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "catalyst": {
+        "title": "Guardant Health receives European approval for breast cancer test By Investing.com - Investing.com India",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcVRBVFRaX2RHZkRHUkh5dUNqamdqVWd1ajN6QW5CYnFRRVp2dm5MRVdPMWs1T1hEVVpMX1phYUNKeVkyYTFlUmdPeVBNWUxwQ05qaEtMLWM0bUxnR2pVZlNNNjg4ODFLLXlLV1gwX3ZidXRJLXhqTkwtakNYZ2h4czhRYWRuZ1pOX09wZlBQQ2xGbl9TbWZKdjM0Yy1mTW9GR2ZGZWtUNzMwTmVYOWxJMS1GbWNSWjdVUEd1V3FKNjh2Vjdu?oc=5",
+        "source": "Investing.com India",
+        "published_at": "2026-10-08T20:24:59+00:00",
+        "id": "5b053688eb06613cfbe9",
+        "type": "regulatory",
+        "age_hours": 19.45,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Guardant Health receives European approval for breast cancer test By Investing.com - Investing.com India",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Guardant Health receives European approval for breast cancer test By Investing.com - Investing.com India",
+            "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcVRBVFRaX2RHZkRHUkh5dUNqamdqVWd1ajN6QW5CYnFRRVp2dm5MRVdPMWs1T1hEVVpMX1phYUNKeVkyYTFlUmdPeVBNWUxwQ05qaEtMLWM0bUxnR2pVZlNNNjg4ODFLLXlLV1gwX3ZidXRJLXhqTkwtakNYZ2h4czhRYWRuZ1pOX09wZlBQQ2xGbl9TbWZKdjM0Yy1mTW9GR2ZGZWtUNzMwTmVYOWxJMS1GbWNSWjdVUEd1V3FKNjh2Vjdu?oc=5",
+            "source": "Investing.com India",
+            "published_at": "2026-10-08T20:24:59+00:00",
+            "id": "5b053688eb06613cfbe9",
+            "type": "regulatory",
+            "age_hours": 19.45,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 6
+      },
+      "score": {
+        "score": 3,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "Recent same-time relative volume is below 1.5x."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "Recent same-time relative volume is below 1.5x."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "CHYM",
+      "name": "Chime Financial",
+      "asset_type": "stock",
+      "price": 29.6200008392334,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 2.3825986,
+      "volume": 1614459,
+      "dollar_volume": 47520937.57574844,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.202,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CHYM_US_EQ",
+        "isin": "US16935C1099",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 4.041848012282861,
+      "history_samples": 340,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 29.770000457763672,
+      "support": 29.40999984741211,
+      "momentum_pct": -0.20215453276770656,
+      "reference_price": 29.64000009929279,
+      "extension_pct": -0.06747388661402232,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 1.0888900967384985,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "catalyst": {
+        "title": "Chime Financial Shares Rise After Deutsche Bank Upgrade - marketscreener.com",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLUJ5NWtVMDdGMG1MNTZhOUF3ZVBYNFJrcVgyN1JqbzhLaUhaaVV4YmVWYk1LazR2ZWlQeTFsSGlhc2d5bVdGeXZwbWlEQkt0WTB4aV9leEtzb1psb05HdjNjeXc2VUlqN01KMGZkZnhxYkZveHdkWXRYTTJUSXZEZjJFeF80bEg4eVFlYlQyNHotZUxuSFpLTkdVdk04Ujk1WjQ2djBDT2FUX1Ns?oc=5",
+        "source": "marketscreener.com",
+        "published_at": "2026-10-08T19:12:35+00:00",
+        "id": "f7cf572e799dfeb695ef",
+        "type": "crypto_event",
+        "age_hours": 20.66,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Chime Financial Shares Rise After Deutsche Bank Upgrade - marketscreener.com",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Chime Financial Shares Rise After Deutsche Bank Upgrade - marketscreener.com",
+            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLUJ5NWtVMDdGMG1MNTZhOUF3ZVBYNFJrcVgyN1JqbzhLaUhaaVV4YmVWYk1LazR2ZWlQeTFsSGlhc2d5bVdGeXZwbWlEQkt0WTB4aV9leEtzb1psb05HdjNjeXc2VUlqN01KMGZkZnhxYkZveHdkWXRYTTJUSXZEZjJFeF80bEg4eVFlYlQyNHotZUxuSFpLTkdVdk04Ujk1WjQ2djBDT2FUX1Ns?oc=5",
+            "source": "marketscreener.com",
+            "published_at": "2026-10-08T19:12:35+00:00",
+            "id": "f7cf572e799dfeb695ef",
+            "type": "crypto_event",
+            "age_hours": 20.66,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Chime Financial Shares Rise After Deutsche Bank Upgrade - Yahoo Finance",
+            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUXQ2dG55a2N5d3VDZXlZY3dadV9oM1A5Wmdyd0xDU18yMVg5SWtVY0QxTkVTanA2YkxEU3N4U0hJZzJIczdzUVlzVDFJUHBpT3QzX20xelBTSlZ6TmM0NXk4a2FhaUpnRVQ3ZWpxZ3VDc0JSMGJTeHd3RzlRalcyTXBOeERwZTd1a2djTDFOYTBTTDVTN3A5YmEtN3NTQTZ5R1RF?oc=5",
+            "source": "Yahoo Finance",
+            "published_at": "2026-10-08T19:11:37+00:00",
+            "id": "979a582fcd0148b726a3",
+            "type": "crypto_event",
+            "age_hours": 20.67,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -229,662 +1369,23 @@
         "headlines_checked": 8
       },
       "score": {
-        "score": 6,
+        "score": 3,
         "label": "Research rank only",
         "reasons": [
-          "positive recent momentum",
           "same-time relative volume",
-          "notional liquidity",
-          "not extended above recent VWAP"
+          "notional liquidity"
         ]
       },
       "qualification": {
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "VEEV",
-      "name": "Veeva Systems",
-      "asset_type": "stock",
-      "price": 290.69500732421875,
-      "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 2.1415553,
-      "volume": 232813,
-      "dollar_volume": 67044320.97567749,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.276,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "VEEV_US_EQ",
-        "isin": "US9224751084",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 2.1921407776972113,
-      "history_samples": 336,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 289.3800048828125,
-      "support": 286.19500732421875,
-      "momentum_pct": 0.6387402394729236,
-      "reference_price": 288.3555440994835,
-      "extension_pct": 0.8113120321793232,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 289.3800048828125,
-            "support": 288.4624938964844,
-            "resistance_1": 289.8699951171875,
-            "resistance_2": 292.57000732421875,
-            "momentum_pct": 0.6387402394729236,
-            "extension_pct": 0.8113120321793232,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 288.2850036621094,
-              "measured_height": 4.285003662109375,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                290.42750549316406,
-                292.57000732421875
-              ],
-              "overhead_levels": [
-                289.8699951171875
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T10:55:00-04:00",
-              "range_high": 288.2850036621094,
-              "range_low": 284.0,
-              "retest_low": 288.4624938964844,
-              "breakout_close": 288.8500061035156,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "OPENING_RANGE_RETEST",
-            "entry": 289.3800048828125,
-            "support": 288.4624938964844,
-            "resistance_1": 289.8699951171875,
-            "resistance_2": 291.84002685546875,
-            "momentum_pct": 0.6387402394729236,
-            "extension_pct": 0.8113120321793232,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 287.9200134277344,
-              "measured_height": 3.920013427734375,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                289.88002014160156,
-                291.84002685546875
-              ],
-              "overhead_levels": [
-                289.8699951171875
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T09:55:00-04:00",
-              "range_high": 287.9200134277344,
-              "range_low": 284.0,
-              "retest_low": 288.4624938964844,
-              "breakout_close": 288.8500061035156,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 289.3800048828125,
-            "support": 288.4624938964844,
-            "resistance_1": 289.7899932861328,
-            "resistance_2": 291.11749267578125,
-            "momentum_pct": 0.6387402394729236,
-            "extension_pct": 0.8113120321793232,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 288.4624938964844,
-              "measured_height": 2.654998779296875,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                289.7899932861328,
-                291.11749267578125
-              ],
-              "overhead_levels": [
-                289.8699951171875
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "impulse_high": 288.8500061035156,
-              "impulse_low": 286.19500732421875,
-              "pullback_low": 288.4624938964844,
-              "ema9": 288.5467710302603,
-              "ema21": 287.85193377107635,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.91765363022712,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 9
-      },
-      "score": {
-        "score": 6,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "same-time relative volume",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 289.3800048828125,
-          "support": 288.4624938964844,
-          "resistance_1": 289.8699951171875,
-          "resistance_2": 292.57000732421875,
-          "momentum_pct": 0.6387402394729236,
-          "extension_pct": 0.8113120321793232,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 288.2850036621094,
-            "measured_height": 4.285003662109375,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              290.42750549316406,
-              292.57000732421875
-            ],
-            "overhead_levels": [
-              289.8699951171875
-            ]
-          },
-          "observed_at": "2026-10-09T11:30:00-04:00",
-          "evidence": {
-            "range_start": "2026-10-09T09:30:00-04:00",
-            "range_end": "2026-10-09T10:55:00-04:00",
-            "range_high": 288.2850036621094,
-            "range_low": 284.0,
-            "retest_low": 288.4624938964844,
-            "breakout_close": 288.8500061035156,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 289.3800048828125,
-              "support": 288.4624938964844,
-              "resistance_1": 289.8699951171875,
-              "resistance_2": 292.57000732421875,
-              "momentum_pct": 0.6387402394729236,
-              "extension_pct": 0.8113120321793232,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 288.2850036621094,
-                "measured_height": 4.285003662109375,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  290.42750549316406,
-                  292.57000732421875
-                ],
-                "overhead_levels": [
-                  289.8699951171875
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T10:55:00-04:00",
-                "range_high": 288.2850036621094,
-                "range_low": 284.0,
-                "retest_low": 288.4624938964844,
-                "breakout_close": 288.8500061035156,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "OPENING_RANGE_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "OPENING_RANGE_RETEST",
-              "entry": 289.3800048828125,
-              "support": 288.4624938964844,
-              "resistance_1": 289.8699951171875,
-              "resistance_2": 291.84002685546875,
-              "momentum_pct": 0.6387402394729236,
-              "extension_pct": 0.8113120321793232,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 287.9200134277344,
-                "measured_height": 3.920013427734375,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  289.88002014160156,
-                  291.84002685546875
-                ],
-                "overhead_levels": [
-                  289.8699951171875
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T09:55:00-04:00",
-                "range_high": 287.9200134277344,
-                "range_low": 284.0,
-                "retest_low": 288.4624938964844,
-                "breakout_close": 288.8500061035156,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 289.3800048828125,
-              "support": 288.4624938964844,
-              "resistance_1": 289.7899932861328,
-              "resistance_2": 291.11749267578125,
-              "momentum_pct": 0.6387402394729236,
-              "extension_pct": 0.8113120321793232,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 288.4624938964844,
-                "measured_height": 2.654998779296875,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  289.7899932861328,
-                  291.11749267578125
-                ],
-                "overhead_levels": [
-                  289.8699951171875
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "impulse_high": 288.8500061035156,
-                "impulse_low": 286.19500732421875,
-                "pullback_low": 288.4624938964844,
-                "ema9": 288.5467710302603,
-                "ema21": 287.85193377107635,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "ticker": "AMWL",
-      "name": "American Well",
-      "asset_type": "stock",
-      "price": 12.53,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.870258,
-      "volume": 72509.0,
-      "dollar_volume": 908537.7699999999,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 1.353,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "American Well: 2027 Share Price Catalysts From Government Contract Wins (NYSE:AMWL) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQX1NmSWs2ZV9Vb2FxczlHaHI4c0hmZDBvR1Boc2lrM1htY3VjMmNrSXVoOXBMaTB6WWNQdDktb0RuMTVjNFVGUE9QaGJnMV9hd0NLSk93aldQTTJ3aktzWHFBckdwdUkzSnRneWNmZzhQQVlhNHo4enl3UXdKTXhwNmRYLVZzYmpRZlVYcm5leTYteWVlZzNBMDc0WXZTTk44NjVwcHV4enh1akYxNlZ1Qg?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-08T15:46:20+00:00",
-        "id": "438554b0446068ffca75",
-        "type": "partnership",
-        "age_hours": 5.55,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "American Well: 2027 Share Price Catalysts From Government Contract Wins (NYSE:AMWL) - Seeking Alpha",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "American Well: 2027 Share Price Catalysts From Government Contract Wins (NYSE:AMWL) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQX1NmSWs2ZV9Vb2FxczlHaHI4c0hmZDBvR1Boc2lrM1htY3VjMmNrSXVoOXBMaTB6WWNQdDktb0RuMTVjNFVGUE9QaGJnMV9hd0NLSk93aldQTTJ3aktzWHFBckdwdUkzSnRneWNmZzhQQVlhNHo4enl3UXdKTXhwNmRYLVZzYmpRZlVYcm5leTYteWVlZzNBMDc0WXZTTk44NjVwcHV4enh1akYxNlZ1Qg?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-08T15:46:20+00:00",
-            "id": "438554b0446068ffca75",
-            "type": "partnership",
-            "age_hours": 5.55,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T21:19:20.928828+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "AMWL_US_EQ",
-        "isin": "US03044L2043",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No historical resistance above the trigger/current history price in the lookback."
         ],
         "plan": null,
         "missing_fields": [
-          "entry",
-          "support",
           "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "GNW",
-      "name": "Genworth Financial",
-      "asset_type": "stock",
-      "price": 9.460000038146973,
-      "currency": "USD",
-      "eur_per_unit": 0.8931999802589417,
-      "change": -2.8776953,
-      "volume": 262751,
-      "dollar_volume": 2489893.82705307,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T09:55:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -3.216,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Genworth Financial Q2 2026 Earnings Call: Complete Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXVaU19LazRJODg2dDNFeGRyUi1vYlJMMk9jZmljY05LekVmd0lMcFBwQW5nT0FndlY4WUxGRGlqN1YyM2VCbWNRcG9qbV9aZGRocTFJdFhqNmdNWTN1Y0xMakNMUkZXSTFldUJvZG4yRkxiVXktS1NkZFZrbjhhVmxpLTZfM0FTSjVGNlBXZWROUUdLUWwwbmdIY05lakVtZHQ0ZWloMEs?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-09T13:49:02+00:00",
-        "id": "4c7d60e44183ef988c2b",
-        "type": "earnings",
-        "age_hours": 0.17,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Genworth Financial Q2 2026 Earnings Call: Complete Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Genworth Financial Q2 2026 Earnings Call: Complete Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXVaU19LazRJODg2dDNFeGRyUi1vYlJMMk9jZmljY05LekVmd0lMcFBwQW5nT0FndlY4WUxGRGlqN1YyM2VCbWNRcG9qbV9aZGRocTFJdFhqNmdNWTN1Y0xMakNMUkZXSTFldUJvZG4yRkxiVXktS1NkZFZrbjhhVmxpLTZfM0FTSjVGNlBXZWROUUdLUWwwbmdIY05lakVtZHQ0ZWloMEs?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-09T13:49:02+00:00",
-            "id": "4c7d60e44183ef988c2b",
-            "type": "earnings",
-            "age_hours": 0.17,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T13:58:56.888423+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "GNW_US_EQ",
-        "isin": "US37247D1063",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 1.0427785285389877,
-      "history_samples": 317,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No second distinct historical resistance target in the lookback."
-      ],
-      "entry": 9.739999771118164,
-      "support": 9.420000076293945,
-      "momentum_pct": -0.21096524319702548,
-      "reference_price": 9.648793984003376,
-      "extension_pct": -1.9566584815615573,
-      "resistance_1": 9.755000114440918,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "No second distinct historical resistance target in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
           "resistance_2"
         ],
         "route": "CATALYST_LED",
@@ -892,11 +1393,12 @@
           {
             "status": "REJECTED",
             "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "No second distinct historical resistance target in the lookback."
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No historical resistance above the trigger/current history price in the lookback."
             ],
             "plan": null,
             "missing_fields": [
+              "resistance_1",
               "resistance_2"
             ],
             "route": "CATALYST_LED"
@@ -1036,37 +1538,68 @@
       }
     },
     {
-      "ticker": "QSR",
-      "name": "Restaurant Brands International",
+      "ticker": "RBRK",
+      "name": "Rubrik",
       "asset_type": "stock",
-      "price": 70.66,
+      "price": 122.11000061035156,
       "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.77157,
-      "volume": 3480368.0,
-      "dollar_volume": 245922802.88,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
+      "eur_per_unit": 0.8931000232696533,
+      "change": 1.1539451,
+      "volume": 830240,
+      "dollar_volume": 100756056.81480408,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
       "selection_evidence": {
-        "fresh_publication": true,
+        "fresh_publication": false,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 14.93,
+        "snapshot_score": 9.151,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RBRK_US_EQ",
+        "isin": "US7811541090",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 1.1393544167967689,
+      "history_samples": 340,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 122.6698989868164,
+      "support": 121.68000030517578,
+      "momentum_pct": -0.22062154692430447,
+      "reference_price": 122.22441929704631,
+      "extension_pct": -0.09361360630945059,
+      "resistance_1": 122.80000305175781,
+      "resistance_2": 123.19999694824219,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.764924934729885,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
       "catalyst": {
-        "title": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
-        "link": "https://news.google.com/rss/articles/CBMilANBVV95cUxQWTZfNUxPOWpLNTQ0YmJqWHE3WDVlQVFkT1VzTUdTUklqak1zRGQ4Qzl3eFdNRTByT1l6aDBncGdMeGM4VVR1bVRXZ2Q3ODFYaXZqZmNUZnRIU3ZrYVg1YWVSLUx5ZXFkYkEydTZXdjBkRnVkZ0s5amFodU9EbjV2N0tuU0tyTUNEV05vTlFvbk9SOWxMLVZzWkEtaW44LUNmUU9NVUFZdmdGV2I4Qzk1RFRoNFkycWxPRG4zLWM4R3JrMTRKZ1VzcWRoOWJZTE1rTWVNQjcta1lveHhxMzI3OEw2cHFONVNCWVAyN3dZeUlYZXliZ1h1bHRkTUxWLVRDekF0OXpOWnZRV0xlcDZyTGNQbEUwT051d3FnS0o0c0lHaV9LYWRqNGZGVlM4MGN2TUtSU3lpWXYtdkFTRTlocEpfcW9PTDlGNjNTaURILU9jQXNzQ1BTLVJHeHdBOEU2cVNnR1RLZlNISVUza1RVWENRM3JRRnFEWGRtQjhXaW5ob2h3bUY2Um1iVUVhcUFxZU1IVg?oc=5",
-        "source": "Finansavisen",
-        "published_at": "2026-10-08T22:07:30+00:00",
-        "id": "bbfb0f551fdf2caf998d",
+        "title": "Rubrik Expands AI Security Partnership With Code Guardian Launch - marketscreener.com",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeVIya0Z6REJzS2JId25MSW9IdmszLUdEdkFMZ2NHaGlLUHlVLUNkZFRRT1NGSG9uT1E4ZE9oS3Z2Q2N2SGZ2Rzg5T1MxellET290MkhxcWFmYXM4YWFlczRiR3o2S1ZRb0FaN0JZeC1JZEppZHlmS09sNWlDVHFaemNIampOdE56djNYNUYxdkFubjBWd1ZlUmxzUzlWcWhVZ25jVnNpV2ltMFFGUnFGaUIyV0NPVVVU?oc=5",
+        "source": "marketscreener.com",
+        "published_at": "2026-10-09T07:59:54+00:00",
+        "id": "38d75ddb8eedd3ca17b4",
         "type": "partnership",
-        "age_hours": 1.09,
+        "age_hours": 7.87,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1075,17 +1608,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
+        "summary": "Rubrik Expands AI Security Partnership With Code Guardian Launch - marketscreener.com",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Restaurant Brands International Inc. Announces Receipt of Exchange Notice for Approximately 2.8 million Class B Exchangeable Limited Partnership Units and Intent to Satisfy with Cash on Hand - Finansavisen",
-            "link": "https://news.google.com/rss/articles/CBMilANBVV95cUxQWTZfNUxPOWpLNTQ0YmJqWHE3WDVlQVFkT1VzTUdTUklqak1zRGQ4Qzl3eFdNRTByT1l6aDBncGdMeGM4VVR1bVRXZ2Q3ODFYaXZqZmNUZnRIU3ZrYVg1YWVSLUx5ZXFkYkEydTZXdjBkRnVkZ0s5amFodU9EbjV2N0tuU0tyTUNEV05vTlFvbk9SOWxMLVZzWkEtaW44LUNmUU9NVUFZdmdGV2I4Qzk1RFRoNFkycWxPRG4zLWM4R3JrMTRKZ1VzcWRoOWJZTE1rTWVNQjcta1lveHhxMzI3OEw2cHFONVNCWVAyN3dZeUlYZXliZ1h1bHRkTUxWLVRDekF0OXpOWnZRV0xlcDZyTGNQbEUwT051d3FnS0o0c0lHaV9LYWRqNGZGVlM4MGN2TUtSU3lpWXYtdkFTRTlocEpfcW9PTDlGNjNTaURILU9jQXNzQ1BTLVJHeHdBOEU2cVNnR1RLZlNISVUza1RVWENRM3JRRnFEWGRtQjhXaW5ob2h3bUY2Um1iVUVhcUFxZU1IVg?oc=5",
-            "source": "Finansavisen",
-            "published_at": "2026-10-08T22:07:30+00:00",
-            "id": "bbfb0f551fdf2caf998d",
+            "title": "Rubrik Expands AI Security Partnership With Code Guardian Launch - marketscreener.com",
+            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeVIya0Z6REJzS2JId25MSW9IdmszLUdEdkFMZ2NHaGlLUHlVLUNkZFRRT1NGSG9uT1E4ZE9oS3Z2Q2N2SGZ2Rzg5T1MxellET290MkhxcWFmYXM4YWFlczRiR3o2S1ZRb0FaN0JZeC1JZEppZHlmS09sNWlDVHFaemNIampOdE56djNYNUYxdkFubjBWd1ZlUmxzUzlWcWhVZ25jVnNpV2ltMFFGUnFGaUIyV0NPVVVU?oc=5",
+            "source": "marketscreener.com",
+            "published_at": "2026-10-09T07:59:54+00:00",
+            "id": "38d75ddb8eedd3ca17b4",
             "type": "partnership",
-            "age_hours": 1.09,
+            "age_hours": 7.87,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1098,19 +1631,7 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T23:13:00.587175+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "QSR_US_EQ",
-        "isin": "CA76131D1033",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
+        "headlines_checked": 7
       },
       "score": {
         "score": 1,
@@ -1123,1334 +1644,153 @@
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No positive recent momentum; a daily gain alone is insufficient.",
+          "Recent same-time relative volume is below 1.5x."
         ],
         "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
         "route": "CATALYST_LED",
         "assessments": [
           {
-            "status": "NOT_EVALUATED",
+            "status": "REJECTED",
             "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No positive recent momentum; a daily gain alone is insufficient.",
+              "Recent same-time relative volume is below 1.5x."
             ],
             "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
             "route": "CATALYST_LED"
           }
         ],
-        "trade_assessment_status": "NOT_EVALUATED",
+        "trade_assessment_status": "REJECTED",
         "research_only": true
       }
     },
     {
-      "ticker": "PWR",
-      "name": "Quanta Services",
+      "ticker": "HP",
+      "name": "Helmerich & Payne",
       "asset_type": "stock",
-      "price": 697.139892578125,
+      "price": 40.150001525878906,
       "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 1.5364814,
-      "volume": 148145,
-      "dollar_volume": 102372711.36541748,
+      "eur_per_unit": 0.8931999802589417,
+      "change": 0.82459235,
+      "volume": 20331,
+      "dollar_volume": 817503.0104217529,
       "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
+      "observed_at": "2026-10-09T09:55:00-04:00",
       "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
+      "discovery_route": "catalyst_first",
       "selection_evidence": {
-        "fresh_publication": false,
+        "fresh_publication": true,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 9.092,
+        "snapshot_score": 1.982,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
       "history_status": "OK",
+      "catalyst": {
+        "title": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTFTM0JJdDdmdFRwR3lkdzc4QkV3dVFOam5ISS1ra2VDRV9zYXh0UnZteEVnbE5YdUNSb1dOb29LQkZLeEhLajZuVkhNQ2g3eWs0UW1VLWJ4Z3RGYTFfaHp1V0gxVjlDSVdzWWZ0dERJaWtYOTAzdHBTdEQ1YzB5ZWc2bGNGY2E3aEpUR1ZXcDQ4S3FlbjZPZw?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-09T13:45:21+00:00",
+        "id": "f7c49355272bc0c9e83a",
+        "type": "earnings",
+        "age_hours": 0.23,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTFTM0JJdDdmdFRwR3lkdzc4QkV3dVFOam5ISS1ra2VDRV9zYXh0UnZteEVnbE5YdUNSb1dOb29LQkZLeEhLajZuVkhNQ2g3eWs0UW1VLWJ4Z3RGYTFfaHp1V0gxVjlDSVdzWWZ0dERJaWtYOTAzdHBTdEQ1YzB5ZWc2bGNGY2E3aEpUR1ZXcDQ4S3FlbjZPZw?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-09T13:45:21+00:00",
+            "id": "f7c49355272bc0c9e83a",
+            "type": "earnings",
+            "age_hours": 0.23,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
+        "checked_at": "2026-10-09T13:58:56.888423+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "PWR_US_EQ",
-        "isin": "US74762E1029",
+        "broker_instrument_id": "HP_US_EQ",
+        "isin": "US4234521015",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "volume_spike": 0.35320456615562723,
-      "history_samples": 336,
+      "volume_spike": 0.3915597936366892,
+      "history_samples": 317,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 698.510009765625,
-      "support": 693.3099975585938,
-      "momentum_pct": 0.04662502035410743,
-      "reference_price": 696.5789095683588,
-      "extension_pct": 0.08053402163925583,
-      "resistance_1": 699.3800048828125,
-      "resistance_2": 701.7999877929688,
+      "entry": 40.47999954223633,
+      "support": 39.964599609375,
+      "momentum_pct": -0.44631861394357486,
+      "reference_price": 40.19413710862075,
+      "extension_pct": -0.10980602126765548,
+      "resistance_1": 40.525001525878906,
+      "resistance_2": 40.65999984741211,
       "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "OPENING_RANGE_RETEST",
-            "entry": 698.0900268554688,
-            "support": 696.0800170898438,
-            "resistance_1": 699.3800048828125,
-            "resistance_2": 701.7999877929688,
-            "momentum_pct": 0.04662502035410743,
-            "extension_pct": 0.08053402163925583,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 695.510009765625,
-              "measured_height": 15.08001708984375,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                703.0500183105469,
-                710.5900268554688
-              ],
-              "overhead_levels": [
-                699.3800048828125,
-                700.0250244140625,
-                700.0399780273438,
-                700.239990234375
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T09:55:00-04:00",
-              "range_high": 695.510009765625,
-              "range_low": 680.4299926757812,
-              "retest_low": 696.0800170898438,
-              "breakout_close": 696.9600219726562,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
+        "setups": [],
+        "issues": [
+          "Recent chart bars have gaps."
         ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.5646091878946222,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 9
+        "interval": "5m"
       },
       "score": {
-        "score": 4,
+        "score": 0,
         "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
+        "reasons": []
       },
       "qualification": {
-        "status": "TECHNICAL WATCH",
+        "status": "CATALYST WATCH",
         "reasons": [
-          "Recent same-time relative volume is below 1.5x.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "OPENING_RANGE_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "OPENING_RANGE_RETEST",
-          "entry": 698.0900268554688,
-          "support": 696.0800170898438,
-          "resistance_1": 699.3800048828125,
-          "resistance_2": 701.7999877929688,
-          "momentum_pct": 0.04662502035410743,
-          "extension_pct": 0.08053402163925583,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 695.510009765625,
-            "measured_height": 15.08001708984375,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              703.0500183105469,
-              710.5900268554688
-            ],
-            "overhead_levels": [
-              699.3800048828125,
-              700.0250244140625,
-              700.0399780273438,
-              700.239990234375
-            ]
-          },
-          "observed_at": "2026-10-09T11:30:00-04:00",
-          "evidence": {
-            "range_start": "2026-10-09T09:30:00-04:00",
-            "range_end": "2026-10-09T09:55:00-04:00",
-            "range_high": 695.510009765625,
-            "range_low": 680.4299926757812,
-            "retest_low": 696.0800170898438,
-            "breakout_close": 696.9600219726562,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent same-time relative volume is below 1.5x.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "OPENING_RANGE_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "OPENING_RANGE_RETEST",
-              "entry": 698.0900268554688,
-              "support": 696.0800170898438,
-              "resistance_1": 699.3800048828125,
-              "resistance_2": 701.7999877929688,
-              "momentum_pct": 0.04662502035410743,
-              "extension_pct": 0.08053402163925583,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 695.510009765625,
-                "measured_height": 15.08001708984375,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  703.0500183105469,
-                  710.5900268554688
-                ],
-                "overhead_levels": [
-                  699.3800048828125,
-                  700.0250244140625,
-                  700.0399780273438,
-                  700.239990234375
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T09:55:00-04:00",
-                "range_high": 695.510009765625,
-                "range_low": 680.4299926757812,
-                "retest_low": 696.0800170898438,
-                "breakout_close": 696.9600219726562,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "ticker": "UTHR",
-      "name": "United Therapeutics",
-      "asset_type": "stock",
-      "price": 543.635009765625,
-      "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 2.0374227,
-      "volume": 104829,
-      "dollar_volume": 56439658.4909668,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 8.927,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "UTHR_US_EQ",
-        "isin": "US91307C1027",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 1.2054296398834734,
-      "history_samples": 336,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 545.4550170898438,
-      "support": 537.7999877929688,
-      "momentum_pct": 0.008275153688241943,
-      "reference_price": 542.1573596597701,
-      "extension_pct": 0.27255004096635727,
-      "resistance_1": 546.1400146484375,
-      "resistance_2": 547.780029296875,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 545.4550170898438,
-            "support": 542.47998046875,
-            "resistance_1": 546.1400146484375,
-            "resistance_2": 547.780029296875,
-            "momentum_pct": 0.008275153688241943,
-            "extension_pct": 0.27255004096635727,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 541.27001953125,
-              "measured_height": 12.35003662109375,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                547.4450378417969,
-                553.6200561523438
-              ],
-              "overhead_levels": [
-                546.1400146484375,
-                546.1599731445312,
-                546.1699829101562,
-                546.260009765625
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T10:55:00-04:00",
-              "range_high": 541.27001953125,
-              "range_low": 528.9199829101562,
-              "retest_low": 542.47998046875,
-              "breakout_close": 543.5900268554688,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.0926333767809788,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 5
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent same-time relative volume is below 1.5x.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 545.4550170898438,
-          "support": 542.47998046875,
-          "resistance_1": 546.1400146484375,
-          "resistance_2": 547.780029296875,
-          "momentum_pct": 0.008275153688241943,
-          "extension_pct": 0.27255004096635727,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 541.27001953125,
-            "measured_height": 12.35003662109375,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              547.4450378417969,
-              553.6200561523438
-            ],
-            "overhead_levels": [
-              546.1400146484375,
-              546.1599731445312,
-              546.1699829101562,
-              546.260009765625
-            ]
-          },
-          "observed_at": "2026-10-09T11:30:00-04:00",
-          "evidence": {
-            "range_start": "2026-10-09T09:30:00-04:00",
-            "range_end": "2026-10-09T10:55:00-04:00",
-            "range_high": 541.27001953125,
-            "range_low": 528.9199829101562,
-            "retest_low": 542.47998046875,
-            "breakout_close": 543.5900268554688,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent same-time relative volume is below 1.5x.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 545.4550170898438,
-              "support": 542.47998046875,
-              "resistance_1": 546.1400146484375,
-              "resistance_2": 547.780029296875,
-              "momentum_pct": 0.008275153688241943,
-              "extension_pct": 0.27255004096635727,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 541.27001953125,
-                "measured_height": 12.35003662109375,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  547.4450378417969,
-                  553.6200561523438
-                ],
-                "overhead_levels": [
-                  546.1400146484375,
-                  546.1599731445312,
-                  546.1699829101562,
-                  546.260009765625
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T10:55:00-04:00",
-                "range_high": 541.27001953125,
-                "range_low": 528.9199829101562,
-                "retest_low": 542.47998046875,
-                "breakout_close": 543.5900268554688,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "ticker": "CNQ",
-      "name": "Canadian Natural Resources",
-      "asset_type": "stock",
-      "price": 49.92499923706055,
-      "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 1.7535164,
-      "volume": 1078068,
-      "dollar_volume": 53518899.65914154,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 8.518,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "CNQ_US_EQ",
-        "isin": "CA1363851017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.6525132929392853,
-      "history_samples": 336,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 49.93000030517578,
-      "support": 49.665000915527344,
-      "momentum_pct": 0.07015403455661318,
-      "reference_price": 49.77326076149014,
-      "extension_pct": 0.30485942300932933,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 49.93000030517578,
-            "support": 49.810001373291016,
-            "resistance_1": 50.24875068664551,
-            "resistance_2": 50.70750045776367,
-            "momentum_pct": 0.07015403455661318,
-            "extension_pct": 0.30485942300932933,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 49.790000915527344,
-              "measured_height": 0.9174995422363281,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                50.24875068664551,
-                50.70750045776367
-              ],
-              "overhead_levels": []
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T10:55:00-04:00",
-              "range_high": 49.790000915527344,
-              "range_low": 48.872501373291016,
-              "retest_low": 49.810001373291016,
-              "breakout_close": 49.88999938964844,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "OPENING_RANGE_RETEST",
-            "entry": 49.93000030517578,
-            "support": 49.810001373291016,
-            "resistance_1": 50.18874931335449,
-            "resistance_2": 50.627498626708984,
-            "momentum_pct": 0.07015403455661318,
-            "extension_pct": 0.30485942300932933,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 49.75,
-              "measured_height": 0.8774986267089844,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                50.18874931335449,
-                50.627498626708984
-              ],
-              "overhead_levels": []
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T09:55:00-04:00",
-              "range_high": 49.75,
-              "range_low": 48.872501373291016,
-              "retest_low": 49.810001373291016,
-              "breakout_close": 49.88999938964844,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.6315878453563556,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 12
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Transcript, presentation or recap; publication date is not the event date.",
+          "Insufficient traded notional liquidity.",
+          "No positive recent momentum; a daily gain alone is insufficient.",
           "Recent same-time relative volume is below 1.5x."
         ],
         "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 49.93000030517578,
-          "support": 49.810001373291016,
-          "resistance_1": 50.24875068664551,
-          "resistance_2": 50.70750045776367,
-          "momentum_pct": 0.07015403455661318,
-          "extension_pct": 0.30485942300932933,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 49.790000915527344,
-            "measured_height": 0.9174995422363281,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              50.24875068664551,
-              50.70750045776367
-            ],
-            "overhead_levels": []
-          },
-          "observed_at": "2026-10-09T11:30:00-04:00",
-          "evidence": {
-            "range_start": "2026-10-09T09:30:00-04:00",
-            "range_end": "2026-10-09T10:55:00-04:00",
-            "range_high": 49.790000915527344,
-            "range_low": 48.872501373291016,
-            "retest_low": 49.810001373291016,
-            "breakout_close": 49.88999938964844,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent same-time relative volume is below 1.5x."
-        ],
+        "route": "CATALYST_LED",
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 49.93000030517578,
-              "support": 49.810001373291016,
-              "resistance_1": 50.24875068664551,
-              "resistance_2": 50.70750045776367,
-              "momentum_pct": 0.07015403455661318,
-              "extension_pct": 0.30485942300932933,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 49.790000915527344,
-                "measured_height": 0.9174995422363281,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  50.24875068664551,
-                  50.70750045776367
-                ],
-                "overhead_levels": []
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T10:55:00-04:00",
-                "range_high": 49.790000915527344,
-                "range_low": 48.872501373291016,
-                "retest_low": 49.810001373291016,
-                "breakout_close": 49.88999938964844,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "OPENING_RANGE_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "OPENING_RANGE_RETEST",
-              "entry": 49.93000030517578,
-              "support": 49.810001373291016,
-              "resistance_1": 50.18874931335449,
-              "resistance_2": 50.627498626708984,
-              "momentum_pct": 0.07015403455661318,
-              "extension_pct": 0.30485942300932933,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 49.75,
-                "measured_height": 0.8774986267089844,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  50.18874931335449,
-                  50.627498626708984
-                ],
-                "overhead_levels": []
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T09:55:00-04:00",
-                "range_high": 49.75,
-                "range_low": 48.872501373291016,
-                "retest_low": 49.810001373291016,
-                "breakout_close": 49.88999938964844,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "ticker": "BTE",
-      "name": "Baytex Energy",
-      "asset_type": "stock",
-      "price": 4.879899978637695,
-      "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 2.9514813,
-      "volume": 3200515,
-      "dollar_volume": 15484816.461968899,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 8.245,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BTEGF_US_EQ",
-        "isin": "CA07317Q1054",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.3532626812541187,
-      "history_samples": 336,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 4.880000114440918,
-      "support": 4.840000152587891,
-      "momentum_pct": 0.04099827775951859,
-      "reference_price": 4.864795110833149,
-      "extension_pct": 0.3104934012721383,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 4.880000114440918,
-            "support": 4.860000133514404,
-            "resistance_1": 4.949850082397461,
-            "resistance_2": 5.03980016708374,
-            "momentum_pct": 0.04099827775951859,
-            "extension_pct": 0.3104934012721383,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 4.859899997711182,
-              "measured_height": 0.1799001693725586,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                4.949850082397461,
-                5.03980016708374
-              ],
-              "overhead_levels": []
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T10:55:00-04:00",
-              "range_high": 4.859899997711182,
-              "range_low": 4.679999828338623,
-              "retest_low": 4.860000133514404,
-              "breakout_close": 4.877900123596191,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.4888276702102985,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 5
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 4.880000114440918,
-          "support": 4.860000133514404,
-          "resistance_1": 4.949850082397461,
-          "resistance_2": 5.03980016708374,
-          "momentum_pct": 0.04099827775951859,
-          "extension_pct": 0.3104934012721383,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 4.859899997711182,
-            "measured_height": 0.1799001693725586,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              4.949850082397461,
-              5.03980016708374
-            ],
-            "overhead_levels": []
-          },
-          "observed_at": "2026-10-09T11:30:00-04:00",
-          "evidence": {
-            "range_start": "2026-10-09T09:30:00-04:00",
-            "range_end": "2026-10-09T10:55:00-04:00",
-            "range_high": 4.859899997711182,
-            "range_low": 4.679999828338623,
-            "retest_low": 4.860000133514404,
-            "breakout_close": 4.877900123596191,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 4.880000114440918,
-              "support": 4.860000133514404,
-              "resistance_1": 4.949850082397461,
-              "resistance_2": 5.03980016708374,
-              "momentum_pct": 0.04099827775951859,
-              "extension_pct": 0.3104934012721383,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 4.859899997711182,
-                "measured_height": 0.1799001693725586,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  4.949850082397461,
-                  5.03980016708374
-                ],
-                "overhead_levels": []
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T10:55:00-04:00",
-                "range_high": 4.859899997711182,
-                "range_low": 4.679999828338623,
-                "retest_low": 4.860000133514404,
-                "breakout_close": 4.877900123596191,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "ticker": "ARWR",
-      "name": "Arrowhead Pharmaceuticals",
-      "asset_type": "stock",
-      "price": 62.189998626708984,
-      "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 2.3872192,
-      "volume": 315949,
-      "dollar_volume": 19512600.964252472,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 7.944,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "ARWR_US_EQ",
-        "isin": "US04280A1007",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.3851852984578214,
-      "history_samples": 336,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 62.185001373291016,
-      "support": 61.54999923706055,
-      "momentum_pct": 0.46038260727245817,
-      "reference_price": 61.87917000206583,
-      "extension_pct": 0.5023154393195339,
-      "resistance_1": 62.255001068115234,
-      "resistance_2": 62.470001220703125,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "OPENING_RANGE_RETEST",
-            "entry": 62.185001373291016,
-            "support": 61.959999084472656,
-            "resistance_1": 62.255001068115234,
-            "resistance_2": 62.470001220703125,
-            "momentum_pct": 0.46038260727245817,
-            "extension_pct": 0.5023154393195339,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 61.97999954223633,
-              "measured_height": 1.4975013732910156,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                62.728750228881836,
-                63.477500915527344
-              ],
-              "overhead_levels": [
-                62.255001068115234,
-                62.27000045776367,
-                62.275001525878906,
-                62.279998779296875
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "range_start": "2026-10-09T09:30:00-04:00",
-              "range_end": "2026-10-09T09:55:00-04:00",
-              "range_high": 61.97999954223633,
-              "range_low": 60.48249816894531,
-              "retest_low": 61.959999084472656,
-              "breakout_close": 62.1150016784668,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 62.185001373291016,
-            "support": 61.959999084472656,
-            "resistance_1": 62.23500061035156,
-            "resistance_2": 62.43899917602539,
-            "momentum_pct": 0.46038260727245817,
-            "extension_pct": 0.5023154393195339,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 61.959999084472656,
-              "measured_height": 0.5500030517578125,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                62.23500061035156,
-                62.51000213623047
-              ],
-              "overhead_levels": [
-                62.255001068115234,
-                62.27000045776367,
-                62.275001525878906,
-                62.279998779296875
-              ]
-            },
-            "observed_at": "2026-10-09T11:30:00-04:00",
-            "evidence": {
-              "impulse_high": 62.060001373291016,
-              "impulse_low": 61.5099983215332,
-              "pullback_low": 61.959999084472656,
-              "ema9": 61.995582727432804,
-              "ema21": 61.769658852319864,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.5955458776493564,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 6
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent same-time relative volume is below 1.5x.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "OPENING_RANGE_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "OPENING_RANGE_RETEST",
-          "entry": 62.185001373291016,
-          "support": 61.959999084472656,
-          "resistance_1": 62.255001068115234,
-          "resistance_2": 62.470001220703125,
-          "momentum_pct": 0.46038260727245817,
-          "extension_pct": 0.5023154393195339,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 61.97999954223633,
-            "measured_height": 1.4975013732910156,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              62.728750228881836,
-              63.477500915527344
-            ],
-            "overhead_levels": [
-              62.255001068115234,
-              62.27000045776367,
-              62.275001525878906,
-              62.279998779296875
-            ]
-          },
-          "observed_at": "2026-10-09T11:30:00-04:00",
-          "evidence": {
-            "range_start": "2026-10-09T09:30:00-04:00",
-            "range_end": "2026-10-09T09:55:00-04:00",
-            "range_high": 61.97999954223633,
-            "range_low": 60.48249816894531,
-            "retest_low": 61.959999084472656,
-            "breakout_close": 62.1150016784668,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent same-time relative volume is below 1.5x.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "Transcript, presentation or recap; publication date is not the event date.",
+              "Insufficient traded notional liquidity.",
+              "No positive recent momentum; a daily gain alone is insufficient.",
               "Recent same-time relative volume is below 1.5x."
             ],
             "plan": null,
             "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "OPENING_RANGE_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "OPENING_RANGE_RETEST",
-              "entry": 62.185001373291016,
-              "support": 61.959999084472656,
-              "resistance_1": 62.255001068115234,
-              "resistance_2": 62.470001220703125,
-              "momentum_pct": 0.46038260727245817,
-              "extension_pct": 0.5023154393195339,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 61.97999954223633,
-                "measured_height": 1.4975013732910156,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  62.728750228881836,
-                  63.477500915527344
-                ],
-                "overhead_levels": [
-                  62.255001068115234,
-                  62.27000045776367,
-                  62.275001525878906,
-                  62.279998779296875
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "range_start": "2026-10-09T09:30:00-04:00",
-                "range_end": "2026-10-09T09:55:00-04:00",
-                "range_high": 61.97999954223633,
-                "range_low": 60.48249816894531,
-                "retest_low": 61.959999084472656,
-                "breakout_close": 62.1150016784668,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 62.185001373291016,
-              "support": 61.959999084472656,
-              "resistance_1": 62.23500061035156,
-              "resistance_2": 62.43899917602539,
-              "momentum_pct": 0.46038260727245817,
-              "extension_pct": 0.5023154393195339,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 61.959999084472656,
-                "measured_height": 0.5500030517578125,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  62.23500061035156,
-                  62.51000213623047
-                ],
-                "overhead_levels": [
-                  62.255001068115234,
-                  62.27000045776367,
-                  62.275001525878906,
-                  62.279998779296875
-                ]
-              },
-              "observed_at": "2026-10-09T11:30:00-04:00",
-              "evidence": {
-                "impulse_high": 62.060001373291016,
-                "impulse_low": 61.5099983215332,
-                "pullback_low": 61.959999084472656,
-                "ema9": 61.995582727432804,
-                "ema21": 61.769658852319864,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent same-time relative volume is below 1.5x.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
           }
-        ]
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
       }
     },
     {
@@ -2553,6 +1893,392 @@
         "reasons": [
           "not extended above recent VWAP"
         ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "Insufficient traded notional liquidity.",
+          "No positive recent momentum; a daily gain alone is insufficient.",
+          "Recent same-time relative volume is below 1.5x."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "Insufficient traded notional liquidity.",
+              "No positive recent momentum; a daily gain alone is insufficient.",
+              "Recent same-time relative volume is below 1.5x."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "GNW",
+      "name": "Genworth Financial",
+      "asset_type": "stock",
+      "price": 9.460000038146973,
+      "currency": "USD",
+      "eur_per_unit": 0.8931999802589417,
+      "change": -2.8776953,
+      "volume": 262751,
+      "dollar_volume": 2489893.82705307,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T09:55:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -3.216,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Genworth Financial Q2 2026 Earnings Call: Complete Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXVaU19LazRJODg2dDNFeGRyUi1vYlJMMk9jZmljY05LekVmd0lMcFBwQW5nT0FndlY4WUxGRGlqN1YyM2VCbWNRcG9qbV9aZGRocTFJdFhqNmdNWTN1Y0xMakNMUkZXSTFldUJvZG4yRkxiVXktS1NkZFZrbjhhVmxpLTZfM0FTSjVGNlBXZWROUUdLUWwwbmdIY05lakVtZHQ0ZWloMEs?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-09T13:49:02+00:00",
+        "id": "4c7d60e44183ef988c2b",
+        "type": "earnings",
+        "age_hours": 0.17,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Genworth Financial Q2 2026 Earnings Call: Complete Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Genworth Financial Q2 2026 Earnings Call: Complete Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXVaU19LazRJODg2dDNFeGRyUi1vYlJMMk9jZmljY05LekVmd0lMcFBwQW5nT0FndlY4WUxGRGlqN1YyM2VCbWNRcG9qbV9aZGRocTFJdFhqNmdNWTN1Y0xMakNMUkZXSTFldUJvZG4yRkxiVXktS1NkZFZrbjhhVmxpLTZfM0FTSjVGNlBXZWROUUdLUWwwbmdIY05lakVtZHQ0ZWloMEs?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-09T13:49:02+00:00",
+            "id": "4c7d60e44183ef988c2b",
+            "type": "earnings",
+            "age_hours": 0.17,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T13:58:56.888423+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "GNW_US_EQ",
+        "isin": "US37247D1063",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 1.0427785285389877,
+      "history_samples": 317,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No second distinct historical resistance target in the lookback."
+      ],
+      "entry": 9.739999771118164,
+      "support": 9.420000076293945,
+      "momentum_pct": -0.21096524319702548,
+      "reference_price": 9.648793984003376,
+      "extension_pct": -1.9566584815615573,
+      "resistance_1": 9.755000114440918,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "Recent chart bars have gaps."
+        ],
+        "interval": "5m"
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Transcript, presentation or recap; publication date is not the event date.",
+          "No second distinct historical resistance target in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Transcript, presentation or recap; publication date is not the event date.",
+              "No second distinct historical resistance target in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TRUG",
+      "name": "TruGolf Holdings",
+      "asset_type": "stock",
+      "price": 2.430000066757202,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": -5.07812,
+      "volume": 154324,
+      "dollar_volume": 390941.08411717415,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -9.818,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "catalyst": {
+        "title": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaWxWWGZJSEtaSlpxYlVoUGpFdXkyRVNRLTBCMUdtNUU0TG5wdEZqcU1CbHVsa1YxWjhzQ1hXSEZ2a002Q2FxYVRCWE9YcDJUSUpfdVBXTTZSXzdDZ0lmWVB2TWJ1SWllWi1ncEhtOE56RWNUekg1dkNtQ0ZRbEcwUUVfZEVpQW5sYVNlMTFaU1FnRmJSck01TXpnVUlwbXJsYjJMcFRrdzhMOVFkMFBVYWloeE1ORERfV3FGT3Y0bkZURmpReE5OSnl4YWRUNkxrZVY1QnZVUFFudw?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-09T15:10:58+00:00",
+        "id": "e01d33f24334b532ea72",
+        "type": "merger",
+        "age_hours": 0.67,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaWxWWGZJSEtaSlpxYlVoUGpFdXkyRVNRLTBCMUdtNUU0TG5wdEZqcU1CbHVsa1YxWjhzQ1hXSEZ2a002Q2FxYVRCWE9YcDJUSUpfdVBXTTZSXzdDZ0lmWVB2TWJ1SWllWi1ncEhtOE56RWNUekg1dkNtQ0ZRbEcwUUVfZEVpQW5sYVNlMTFaU1FnRmJSck01TXpnVUlwbXJsYjJMcFRrdzhMOVFkMFBVYWloeE1ORERfV3FGT3Y0bkZURmpReE5OSnl4YWRUNkxrZVY1QnZVUFFudw?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-09T15:10:58+00:00",
+            "id": "e01d33f24334b532ea72",
+            "type": "merger",
+            "age_hours": 0.67,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "DMAQ_US_EQ",
+        "isin": "US2437336074",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.9196868657581908,
+      "history_samples": 214,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 2.499799966812134,
+      "support": 2.430000066757202,
+      "momentum_pct": -1.6194316352106997,
+      "reference_price": 2.4704022848275975,
+      "extension_pct": -1.6354509675825857,
+      "resistance_1": 2.503000020980835,
+      "resistance_2": 2.5201001167297363,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "Recent chart bars have gaps."
+        ],
+        "interval": "5m"
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "Insufficient traded notional liquidity.",
+          "No positive recent momentum; a daily gain alone is insufficient.",
+          "Recent same-time relative volume is below 1.5x."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "Insufficient traded notional liquidity.",
+              "No positive recent momentum; a daily gain alone is insufficient.",
+              "Recent same-time relative volume is below 1.5x."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "BIAF",
+      "name": "bioAffinity Technologies",
+      "asset_type": "stock",
+      "price": 4.9232001304626465,
+      "currency": "USD",
+      "eur_per_unit": 0.8931000232696533,
+      "change": -11.702126,
+      "volume": 457891,
+      "dollar_volume": 2328912.4225120544,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:50:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -17.526,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "catalyst": {
+        "title": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQR2ZaTTR6aVUtaTlhMmtpNzZxRDZucHpIRk9HMXkybVJrVnl4X2ZsX1lTT1dWdE01Q1hLTWF3NGlzQ3JLUjhDMV8wT2U1X3ljbE9oNWxhUFFiMVA3TTFFUFZZbGJhWXlsR21Td0gtYUFXZmV4VjJXa0x0c2NrQm1SVnRqT3JVZVNDalo1cjgyR2lwOGpyUUR5UmJTNXZ2WWFMM2gya05jclgwQnFPOTZKa0NLemVLZFhYbDBFbUQtcXlLOUVGLXhnVUVfWnBDZ092QWZ6Q3VnMWNJc242bkZHUF9Bb0tFOFZWaUZBRFNacHF1anJYMHpXNEdJelVWd1lNaVVQRy1wQUV6TGlKenkwREQ0aUctdlBqcmRjR2Y1WlZ6RFJfRjhURzhyZXRfZXB0ejIxb3dDd05FMjRQcm1ULUtZNTBpTjF3UGVpTzdOa08tTFc3Mnh4Tw?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-09T15:37:00+00:00",
+        "id": "f5fef3af518f5dc8ce73",
+        "type": "financing",
+        "age_hours": 0.23,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQR2ZaTTR6aVUtaTlhMmtpNzZxRDZucHpIRk9HMXkybVJrVnl4X2ZsX1lTT1dWdE01Q1hLTWF3NGlzQ3JLUjhDMV8wT2U1X3ljbE9oNWxhUFFiMVA3TTFFUFZZbGJhWXlsR21Td0gtYUFXZmV4VjJXa0x0c2NrQm1SVnRqT3JVZVNDalo1cjgyR2lwOGpyUUR5UmJTNXZ2WWFMM2gya05jclgwQnFPOTZKa0NLemVLZFhYbDBFbUQtcXlLOUVGLXhnVUVfWnBDZ092QWZ6Q3VnMWNJc242bkZHUF9Bb0tFOFZWaUZBRFNacHF1anJYMHpXNEdJelVWd1lNaVVQRy1wQUV6TGlKenkwREQ0aUctdlBqcmRjR2Y1WlZ6RFJfRjhURzhyZXRfZXB0ejIxb3dDd05FMjRQcm1ULUtZNTBpTjF3UGVpTzdOa08tTFc3Mnh4Tw?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-09T15:37:00+00:00",
+            "id": "f5fef3af518f5dc8ce73",
+            "type": "financing",
+            "age_hours": 0.23,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "BIAF_US_EQ",
+        "isin": "US09076W4069",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.44585110468384465,
+      "history_samples": 278,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 5.0,
+      "support": 4.849999904632568,
+      "momentum_pct": -0.3400794850853761,
+      "reference_price": 4.952161358430429,
+      "extension_pct": -0.5848199578246671,
+      "resistance_1": 5.0665998458862305,
+      "resistance_2": 5.170000076293945,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 2.6574929837248957,
+        "observed_at": "2026-10-09T11:50:00-04:00"
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
       },
       "qualification": {
         "status": "CATALYST WATCH",
@@ -2710,544 +2436,31 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "ticker": "RELL",
-      "name": "Richardson Electronics",
-      "asset_type": "stock",
-      "price": 21.040000915527344,
-      "currency": "USD",
-      "eur_per_unit": 0.8930000066757202,
-      "change": 5.15774,
-      "volume": 259896,
-      "dollar_volume": 5416307.211101532,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:30:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.942,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "RELL_US_EQ",
-        "isin": "US7631651079",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 6.137462896062956,
-      "history_samples": 308,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 21.440000534057617,
-      "support": 20.809999465942383,
-      "momentum_pct": -0.8482488390745058,
-      "reference_price": 21.119393162962503,
-      "extension_pct": -0.3759210637471866,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 2.4058029054213725,
-        "observed_at": "2026-10-09T11:30:00-04:00"
-      },
-      "catalyst": {
-        "title": "Richardson Electronics (RELL) Q1 2027 Earnings Call Transcript - The Globe and Mail",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOEdJcHZzcnN6MjJKSmtGa09yUkFPNTdzOHV1S3Y5YTRFRHlfV1VKaWFZdGk0YWptSGVQOXNYaGVOdEQxR1k4cW92cncwalRUZ0daRkUyakVYdGduOF9GUFdJMDl6QTNtWWlqS1RBZUJYazg2bW1WMi1va29XMUR3aFplYVlNQm1WNEhyLTF6TC1FdzVQbmxrUTVaWVFUWEY0eFpZdWpOVXV3UmRWOGJ5ZEk1amNJUm1XcWI3VjZxdG5OTTF3Mng1R1QyMGVxWEItREtHUmNURHdwVHdfNTcxTA?oc=5",
-        "source": "The Globe and Mail",
-        "published_at": "2026-10-08T22:42:00+00:00",
-        "id": "f7b8a29a4caf18ec4ac8",
-        "type": "earnings",
-        "age_hours": 16.82,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Richardson Electronics (RELL) Q1 2027 Earnings Call Transcript - The Globe and Mail",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Richardson Electronics (RELL) Q1 2027 Earnings Call Transcript - The Globe and Mail",
-            "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOEdJcHZzcnN6MjJKSmtGa09yUkFPNTdzOHV1S3Y5YTRFRHlfV1VKaWFZdGk0YWptSGVQOXNYaGVOdEQxR1k4cW92cncwalRUZ0daRkUyakVYdGduOF9GUFdJMDl6QTNtWWlqS1RBZUJYazg2bW1WMi1va29XMUR3aFplYVlNQm1WNEhyLTF6TC1FdzVQbmxrUTVaWVFUWEY0eFpZdWpOVXV3UmRWOGJ5ZEk1amNJUm1XcWI3VjZxdG5OTTF3Mng1R1QyMGVxWEItREtHUmNURHdwVHdfNTcxTA?oc=5",
-            "source": "The Globe and Mail",
-            "published_at": "2026-10-08T22:42:00+00:00",
-            "id": "f7b8a29a4caf18ec4ac8",
-            "type": "earnings",
-            "age_hours": 16.82,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 6
-      },
-      "score": {
-        "score": 2,
-        "label": "Research rank only",
-        "reasons": [
-          "same-time relative volume"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "No historical resistance above the trigger/current history price in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "resistance_1",
-          "resistance_2"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "HP",
-      "name": "Helmerich & Payne",
-      "asset_type": "stock",
-      "price": 40.150001525878906,
-      "currency": "USD",
-      "eur_per_unit": 0.8931999802589417,
-      "change": 0.82459235,
-      "volume": 20331,
-      "dollar_volume": 817503.0104217529,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T09:55:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 1.982,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTFTM0JJdDdmdFRwR3lkdzc4QkV3dVFOam5ISS1ra2VDRV9zYXh0UnZteEVnbE5YdUNSb1dOb29LQkZLeEhLajZuVkhNQ2g3eWs0UW1VLWJ4Z3RGYTFfaHp1V0gxVjlDSVdzWWZ0dERJaWtYOTAzdHBTdEQ1YzB5ZWc2bGNGY2E3aEpUR1ZXcDQ4S3FlbjZPZw?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-09T13:45:21+00:00",
-        "id": "f7c49355272bc0c9e83a",
-        "type": "earnings",
-        "age_hours": 0.23,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Helmerich & Payne Q3 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTFTM0JJdDdmdFRwR3lkdzc4QkV3dVFOam5ISS1ra2VDRV9zYXh0UnZteEVnbE5YdUNSb1dOb29LQkZLeEhLajZuVkhNQ2g3eWs0UW1VLWJ4Z3RGYTFfaHp1V0gxVjlDSVdzWWZ0dERJaWtYOTAzdHBTdEQ1YzB5ZWc2bGNGY2E3aEpUR1ZXcDQ4S3FlbjZPZw?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-09T13:45:21+00:00",
-            "id": "f7c49355272bc0c9e83a",
-            "type": "earnings",
-            "age_hours": 0.23,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T13:58:56.888423+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "HP_US_EQ",
-        "isin": "US4234521015",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.3915597936366892,
-      "history_samples": 317,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 40.47999954223633,
-      "support": 39.964599609375,
-      "momentum_pct": -0.44631861394357486,
-      "reference_price": 40.19413710862075,
-      "extension_pct": -0.10980602126765548,
-      "resistance_1": 40.525001525878906,
-      "resistance_2": 40.65999984741211,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "Insufficient traded notional liquidity.",
-          "No positive recent momentum; a daily gain alone is insufficient.",
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "Insufficient traded notional liquidity.",
-              "No positive recent momentum; a daily gain alone is insufficient.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "BIAF",
-      "name": "bioAffinity Technologies",
-      "asset_type": "stock",
-      "price": 5.64,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -8.441559,
-      "volume": 35196533.0,
-      "dollar_volume": 198508446.11999997,
-      "session": "CLOSED",
-      "observed_at": "2026-10-08T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 2.913,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "WallachBeth Capital Announces bioAffinity Technologies Approximately $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - PR Newswire",
-        "link": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPMDdnSUVORlBlb0VEWWNJdnQ0WTEwMXBWTlEtdHlESFVYWHZLbGxpVUY1NVpyT3pIQ0VlaGhBRUxGUENFRTQ5R2pseGJuUG9PWFEzMzZXWEg0R19xbUxUc1dqemR3Mlp1bmN3NXF6aUlSaHF4UVVMbjY1eTBsUHltMk14S3d4UFhkaEplY29mQi1rTUFSZzdJTUVIZ0RHS3h6eGdHbnNuWGlnd2UxV3QtWWlPS0U5d2VjVVRGZUpWMzA0SU1yMFZFdVhJUzlMUDZzNndCSEdKU0FDektpMmVENU1BVUpiSzh4NU9QVUpHZDBPZExtRUNFNHRSaExfRjB6Q3NTbERQQk9sU2k2WWgzZ2s5UXNmYXI3YnBnQzFabnZEaC0yeDFLQmpxRjFCdzNrb1pZLWF1ejd0V2Z5T2hNNlVTZlFhS3lteXJLaW5rb1RIazYzeVdTOTFJeXZHdXYydEZESEJ5V0FmZzQ?oc=5",
-        "source": "PR Newswire",
-        "published_at": "2026-10-08T17:30:00+00:00",
-        "id": "3a15e82b1e882d8dddb9",
-        "type": "financing",
-        "age_hours": 3.82,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "WallachBeth Capital Announces bioAffinity Technologies Approximately $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - PR Newswire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "WallachBeth Capital Announces bioAffinity Technologies Approximately $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - PR Newswire",
-            "link": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPMDdnSUVORlBlb0VEWWNJdnQ0WTEwMXBWTlEtdHlESFVYWHZLbGxpVUY1NVpyT3pIQ0VlaGhBRUxGUENFRTQ5R2pseGJuUG9PWFEzMzZXWEg0R19xbUxUc1dqemR3Mlp1bmN3NXF6aUlSaHF4UVVMbjY1eTBsUHltMk14S3d4UFhkaEplY29mQi1rTUFSZzdJTUVIZ0RHS3h6eGdHbnNuWGlnd2UxV3QtWWlPS0U5d2VjVVRGZUpWMzA0SU1yMFZFdVhJUzlMUDZzNndCSEdKU0FDektpMmVENU1BVUpiSzh4NU9QVUpHZDBPZExtRUNFNHRSaExfRjB6Q3NTbERQQk9sU2k2WWgzZ2s5UXNmYXI3YnBnQzFabnZEaC0yeDFLQmpxRjFCdzNrb1pZLWF1ejd0V2Z5T2hNNlVTZlFhS3lteXJLaW5rb1RIazYzeVdTOTFJeXZHdXYydEZESEJ5V0FmZzQ?oc=5",
-            "source": "PR Newswire",
-            "published_at": "2026-10-08T17:30:00+00:00",
-            "id": "3a15e82b1e882d8dddb9",
-            "type": "financing",
-            "age_hours": 3.82,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-08T21:19:20.928828+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BIAF_US_EQ",
-        "isin": "US09076W4069",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "ALNT",
-      "name": "Allient",
-      "asset_type": "stock",
-      "price": 111.42500305175781,
-      "currency": "USD",
-      "eur_per_unit": 0.8928999900817871,
-      "change": 2.5729594,
-      "volume": 99290,
-      "dollar_volume": 10879326.011482239,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:10:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 8.246,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:10:42.917890+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "AMOT_US_EQ",
-        "isin": "US0193301092",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.2355284572594554,
-      "history_samples": 255,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 111.38999938964844,
-      "support": 109.7300033569336,
-      "momentum_pct": 0.4055008640001523,
-      "reference_price": 110.50972445148743,
-      "extension_pct": 0.8282335376486927,
-      "resistance_1": 111.55000305175781,
-      "resistance_2": 112.0,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "catalyst": {
-        "title": "Allient Reports Q2 2026 Results: Full Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPODN5eF9HOWktMzdfWTdtb2xxSmtMamMtbWJadl9RVU11UXprRnUtTm9NZGRfRVFVTVNIaTc3YU5xTW1TOGpCZ1dzMlZ2bERSbzlYelRaeVY5U09ReTZFS3ByQWUteS0zb2Q5ZjBFR3F2VUhQVDBMN1doNGtKb2dKUzdUREoxdGMxUXN4Uk9kYWxpZ2hFNzZ6eXphUzdVRGJyZnlOZndkMTQwdw?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-09T13:49:57+00:00",
-        "id": "0afa8b1262e8152e16de",
-        "type": "earnings",
-        "age_hours": 1.36,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Allient Reports Q2 2026 Results: Full Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Allient Reports Q2 2026 Results: Full Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPODN5eF9HOWktMzdfWTdtb2xxSmtMamMtbWJadl9RVU11UXprRnUtTm9NZGRfRVFVTVNIaTc3YU5xTW1TOGpCZ1dzMlZ2bERSbzlYelRaeVY5U09ReTZFS3ByQWUteS0zb2Q5ZjBFR3F2VUhQVDBMN1doNGtKb2dKUzdUREoxdGMxUXN4Uk9kYWxpZ2hFNzZ6eXphUzdVRGJyZnlOZndkMTQwdw?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-09T13:49:57+00:00",
-            "id": "0afa8b1262e8152e16de",
-            "type": "earnings",
-            "age_hours": 1.36,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 4
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
     }
   ],
   "changed_signals": [
+    "stock:DDOG",
+    "stock:BAM",
+    "stock:TNGX",
+    "stock:EAT",
+    "stock:QSR",
+    "stock:GH",
+    "stock:CHYM",
+    "stock:RBRK",
+    "stock:TRUG",
+    "stock:BIAF"
+  ],
+  "invalidated_signals": [
     "stock:NTES",
     "stock:VEEV",
+    "stock:AMWL",
     "stock:PWR",
     "stock:UTHR",
     "stock:CNQ",
     "stock:BTE",
     "stock:ARWR",
-    "stock:RELL"
-  ],
-  "invalidated_signals": [
-    "stock:DDOG",
-    "stock:STLD",
-    "stock:IEX",
-    "stock:RGEN",
-    "stock:SXTC",
-    "stock:EFXT"
+    "stock:RELL",
+    "stock:ALNT"
   ],
   "health": {
     "stocks": {
@@ -3257,8 +2470,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7834,
-        "snapshot_records": 7834,
+        "provider_total": 7831,
+        "snapshot_records": 7829,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -3268,8 +2481,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 170,
-        "matched_events": 14,
-        "matched_assets": 14,
+        "matched_events": 15,
+        "matched_assets": 15,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -3290,20 +2503,20 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5903,
-      "discovered_candidates": 830,
-      "broker_excluded_candidates": 99,
+      "listed_snapshot_records": 5904,
+      "discovered_candidates": 965,
+      "broker_excluded_candidates": 104,
       "shortlisted_candidates": 150,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
       "catalyst_selected": 8,
       "selected_candidates": 60,
-      "deferred_candidates": 671,
-      "outside_shortlist": 581,
+      "deferred_candidates": 801,
+      "outside_shortlist": 711,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 47,
+      "unquoted_listings": 46,
       "history_requested": 60,
       "history_received": 60,
       "history_not_requested": 0,
@@ -3354,14 +2567,14 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00",
+        "checked_at": "2026-10-09T15:51:04.403125+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-09T15:30:18.928973+00:00"
+        "checked_at": "2026-10-09T15:51:04.403125+00:00"
       }
     },
     "news": {
