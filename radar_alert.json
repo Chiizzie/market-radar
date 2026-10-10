@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T15:44:30.687147+00:00",
+  "generated_at": "2026-10-10T16:09:41.047102+00:00",
   "potential_signals": [
     {
       "ticker": "TEVA",
@@ -333,6 +333,134 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "ACN_US_EQ",
         "isin": "IE00B4BNMY34",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SBLK",
+      "name": "Star Bulk Carriers",
+      "asset_type": "stock",
+      "price": 29.7,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -2.52707,
+      "volume": 1237210.0,
+      "dollar_volume": 36745137.0,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 3.638,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Star Bulk Carriers Corp. Announces Renewal of Existing ATM Equity Offering Programs - The Manila Times",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOa09kOVRkVzZramRRTkFnbXlSSll5OVZpMTFuYVgxV2pFZk9QczljWVdhZVEtU24wTFA2bWlBZTIyVnNFaVQtZ3dhUXNqSDBVV0pTWHBnQ2pjOEtZMmdRZjFlMEowSGU4VXJLSXhnV2NkWUhrSHo3WXhHcDdESVhlb2NMeHpGV1JBejBlOW8wTFpQS2dvdHlMZVhFOXdhUzI4bktBQXV3eU5Vb3RHTTJkSExZcEI4OVJwZl9vMERxZUZVSThndFNiRlZIVEpPWWxaZlFLMFZLU0Uxc3VNVEVFWkc1ZnRUN2ljOHVWZ3Fpb2VoZ9IB8gFBVV95cUxOa09kOVRkVzZramRRTkFnbXlSSll5OVZpMTFuYVgxV2pFZk9QczljWVdhZVEtU24wTFA2bWlBZTIyVnNFaVQtZ3dhUXNqSDBVV0pTWHBnQ2pjOEtZMmdRZjFlMEowSGU4VXJLSXhnV2NkWUhrSHo3WXhHcDdESVhlb2NMeHpGV1JBejBlOW8wTFpQS2dvdHlMZVhFOXdhUzI4bktBQXV3eU5Vb3RHTTJkSExZcEI4OVJwZl9vMERxZUZVSThndFNiRlZIVEpPWWxaZlFLMFZLU0Uxc3VNVEVFWkc1ZnRUN2ljOHVWZ3Fpb2VoZw?oc=5",
+        "source": "The Manila Times",
+        "published_at": "2026-10-09T21:16:57+00:00",
+        "id": "e471f77fa36c50282211",
+        "type": "financing",
+        "age_hours": 18.86,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Star Bulk Carriers Corp. Announces Renewal of Existing ATM Equity Offering Programs - The Manila Times",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Star Bulk Carriers Corp. Announces Renewal of Existing ATM Equity Offering Programs - The Manila Times",
+            "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOa09kOVRkVzZramRRTkFnbXlSSll5OVZpMTFuYVgxV2pFZk9QczljWVdhZVEtU24wTFA2bWlBZTIyVnNFaVQtZ3dhUXNqSDBVV0pTWHBnQ2pjOEtZMmdRZjFlMEowSGU4VXJLSXhnV2NkWUhrSHo3WXhHcDdESVhlb2NMeHpGV1JBejBlOW8wTFpQS2dvdHlMZVhFOXdhUzI4bktBQXV3eU5Vb3RHTTJkSExZcEI4OVJwZl9vMERxZUZVSThndFNiRlZIVEpPWWxaZlFLMFZLU0Uxc3VNVEVFWkc1ZnRUN2ljOHVWZ3Fpb2VoZ9IB8gFBVV95cUxOa09kOVRkVzZramRRTkFnbXlSSll5OVZpMTFuYVgxV2pFZk9QczljWVdhZVEtU24wTFA2bWlBZTIyVnNFaVQtZ3dhUXNqSDBVV0pTWHBnQ2pjOEtZMmdRZjFlMEowSGU4VXJLSXhnV2NkWUhrSHo3WXhHcDdESVhlb2NMeHpGV1JBejBlOW8wTFpQS2dvdHlMZVhFOXdhUzI4bktBQXV3eU5Vb3RHTTJkSExZcEI4OVJwZl9vMERxZUZVSThndFNiRlZIVEpPWWxaZlFLMFZLU0Uxc3VNVEVFWkc1ZnRUN2ljOHVWZ3Fpb2VoZw?oc=5",
+            "source": "The Manila Times",
+            "published_at": "2026-10-09T21:16:57+00:00",
+            "id": "e471f77fa36c50282211",
+            "type": "financing",
+            "age_hours": 18.86,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-10T16:08:48.866472+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "SBLK_US_EQ",
+        "isin": "MHY8162K2046",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1151,458 +1279,6 @@
       }
     },
     {
-      "symbol": "SEI",
-      "name": "Sei",
-      "coin_id": "sei-network",
-      "asset_type": "crypto",
-      "price": 0.06196,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 5.91404,
-      "change_1h": 0.9808,
-      "acceleration": 0.7343816666666667,
-      "discovery_route": "recent_momentum",
-      "change_7d": -3.8556,
-      "volume": 44851966.0,
-      "dollar_volume": 44851966.0,
-      "market_cap": 416942607,
-      "session": "24/7",
-      "observed_at": "2026-10-10T15:40:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-10T15:43:39.023567+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.06178,
-      "support": 0.06138,
-      "momentum_pct": 0.43767223212838324,
-      "reference_price": 0.06164932813529463,
-      "extension_pct": 0.5039339017995026,
-      "resistance_1": 0.06203,
-      "resistance_2": 0.06222,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.06176,
-            "support": 0.06163,
-            "resistance_1": 0.06189,
-            "resistance_2": 0.06209,
-            "momentum_pct": 0.43767223212838324,
-            "extension_pct": 0.5039339017995026,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.06166,
-              "measured_height": 0.001009999999999997,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.062165,
-                0.06267
-              ],
-              "overhead_levels": [
-                0.06189,
-                0.06192,
-                0.06193,
-                0.06196
-              ]
-            },
-            "observed_at": "2026-10-10T15:40:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-10T13:40:00+00:00",
-              "range_end": "2026-10-10T15:05:00+00:00",
-              "range_high": 0.06166,
-              "range_low": 0.06065,
-              "retest_low": 0.06163,
-              "breakout_close": 0.06178,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 0.06176,
-            "support": 0.06163,
-            "resistance_1": 0.061884999999999996,
-            "resistance_2": 0.06209,
-            "momentum_pct": 0.43767223212838324,
-            "extension_pct": 0.5039339017995026,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.06163,
-              "measured_height": 0.0005100000000000035,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.061884999999999996,
-                0.06214
-              ],
-              "overhead_levels": [
-                0.06189,
-                0.06192,
-                0.06193,
-                0.06196
-              ]
-            },
-            "observed_at": "2026-10-10T15:40:00+00:00",
-            "evidence": {
-              "impulse_high": 0.06178,
-              "impulse_low": 0.06127,
-              "pullback_low": 0.06163,
-              "ema9": 0.061684114378234636,
-              "ema21": 0.061396022660372376,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.43947716740255055,
-        "observed_at": "2026-10-10T15:40:00+00:00"
-      },
-      "structure_observed_at": "2026-10-10T15:40:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "SEIEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 4
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.06176,
-          "support": 0.06163,
-          "resistance_1": 0.06189,
-          "resistance_2": 0.06209,
-          "momentum_pct": 0.43767223212838324,
-          "extension_pct": 0.5039339017995026,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.06166,
-            "measured_height": 0.001009999999999997,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.062165,
-              0.06267
-            ],
-            "overhead_levels": [
-              0.06189,
-              0.06192,
-              0.06193,
-              0.06196
-            ]
-          },
-          "observed_at": "2026-10-10T15:40:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-10T13:40:00+00:00",
-            "range_end": "2026-10-10T15:05:00+00:00",
-            "range_high": 0.06166,
-            "range_low": 0.06065,
-            "retest_low": 0.06163,
-            "breakout_close": 0.06178,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.06176,
-              "support": 0.06163,
-              "resistance_1": 0.06189,
-              "resistance_2": 0.06209,
-              "momentum_pct": 0.43767223212838324,
-              "extension_pct": 0.5039339017995026,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.06166,
-                "measured_height": 0.001009999999999997,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.062165,
-                  0.06267
-                ],
-                "overhead_levels": [
-                  0.06189,
-                  0.06192,
-                  0.06193,
-                  0.06196
-                ]
-              },
-              "observed_at": "2026-10-10T15:40:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-10T13:40:00+00:00",
-                "range_end": "2026-10-10T15:05:00+00:00",
-                "range_high": 0.06166,
-                "range_low": 0.06065,
-                "retest_low": 0.06163,
-                "breakout_close": 0.06178,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 0.06176,
-              "support": 0.06163,
-              "resistance_1": 0.061884999999999996,
-              "resistance_2": 0.06209,
-              "momentum_pct": 0.43767223212838324,
-              "extension_pct": 0.5039339017995026,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.06163,
-                "measured_height": 0.0005100000000000035,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.061884999999999996,
-                  0.06214
-                ],
-                "overhead_levels": [
-                  0.06189,
-                  0.06192,
-                  0.06193,
-                  0.06196
-                ]
-              },
-              "observed_at": "2026-10-10T15:40:00+00:00",
-              "evidence": {
-                "impulse_high": 0.06178,
-                "impulse_low": 0.06127,
-                "pullback_low": 0.06163,
-                "ema9": 0.061684114378234636,
-                "ema21": 0.061396022660372376,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "symbol": "ZRO",
-      "name": "LayerZero",
-      "coin_id": "layerzero",
-      "asset_type": "crypto",
-      "price": 1.818,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 0.35228,
-      "change_1h": 1.9395,
-      "acceleration": 1.9248216666666667,
-      "discovery_route": "recent_momentum",
-      "change_7d": -2.939,
-      "volume": 63706021.0,
-      "dollar_volume": 63706021.0,
-      "market_cap": 724552828,
-      "session": "24/7",
-      "observed_at": "2026-10-10T15:25:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-10T15:27:19.009841+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 1.827,
-      "support": 1.804,
-      "momentum_pct": 0.16528925619836432,
-      "reference_price": 1.816212367578596,
-      "extension_pct": 0.09842639843860024,
-      "resistance_1": 1.829,
-      "resistance_2": 1.835,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 1.2365944461534946,
-        "observed_at": "2026-10-10T15:25:00+00:00"
-      },
-      "structure_observed_at": "2026-10-10T15:25:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "ZROEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc05JNW5ydTQzRXpLUmNZY2dSaW8yU0xTa0dCcmlBdHFXMXNBMFR2WDA0MlFNbzFrclpaVlJ2TjFLUzk4ZGxUazRIMDBpUnpqUWluTU5TVzQxcnVSWUZ4eHdTQTB4ODd3YXFwZGpNNWIzWWxXY2tKN19VUTJ4TTI3dmFsMWllVmFGOTdKOHRKQ05fZWx0LVdUcHljSE5HYnVjYnhpMW13b3pLamg2Y3c?oc=5",
-        "source": "Crypto Economy",
-        "published_at": "2026-10-09T17:25:16+00:00",
-        "id": "514840be8f38f728ecc9",
-        "type": "product_launch",
-        "age_hours": 22.06,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
-            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc05JNW5ydTQzRXpLUmNZY2dSaW8yU0xTa0dCcmlBdHFXMXNBMFR2WDA0MlFNbzFrclpaVlJ2TjFLUzk4ZGxUazRIMDBpUnpqUWluTU5TVzQxcnVSWUZ4eHdTQTB4ODd3YXFwZGpNNWIzWWxXY2tKN19VUTJ4TTI3dmFsMWllVmFGOTdKOHRKQ05fZWx0LVdUcHljSE5HYnVjYnhpMW13b3pLamg2Y3c?oc=5",
-            "source": "Crypto Economy",
-            "published_at": "2026-10-09T17:25:16+00:00",
-            "id": "514840be8f38f728ecc9",
-            "type": "product_launch",
-            "age_hours": 22.06,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 9
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
       "symbol": "STRK",
       "name": "Starknet",
       "coin_id": "starknet",
@@ -1743,10 +1419,11 @@
     }
   ],
   "changed_signals": [
-    "crypto:sei-network"
+    "stock:SBLK"
   ],
   "invalidated_signals": [
-    "stock:SBLK"
+    "crypto:sei-network",
+    "crypto:layerzero"
   ],
   "health": {
     "stocks": {
@@ -1756,8 +1433,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7798,
-        "snapshot_records": 7798,
+        "provider_total": 7801,
+        "snapshot_records": 7801,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1766,9 +1443,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 159,
-        "matched_events": 10,
-        "matched_assets": 9,
+        "headlines_received": 162,
+        "matched_events": 12,
+        "matched_assets": 10,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1790,14 +1467,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5901,
-      "discovered_candidates": 9,
+      "discovered_candidates": 10,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 9,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
-      "selected_candidates": 9,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1805,7 +1482,7 @@
       "unquoted_listings": 49,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 9,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1816,12 +1493,12 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
       "history_requested": 12,
-      "history_received": 12,
-      "chart_failures": 0,
+      "history_received": 11,
+      "chart_failures": 1,
       "history_stale": 0,
       "history_not_requested": 0,
       "catalyst_discovery": {
@@ -1853,18 +1530,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T15:43:39.023567+00:00",
+        "checked_at": "2026-10-10T16:08:48.866472+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T15:43:39.023567+00:00"
+        "checked_at": "2026-10-10T16:08:48.866472+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 22,
       "failed": 0
     }
   },
