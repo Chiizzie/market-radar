@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T02:10:13.320915+00:00",
+  "generated_at": "2026-10-10T02:30:00.893001+00:00",
   "potential_signals": [
     {
       "ticker": "TEVA",
@@ -245,130 +245,6 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "IIPR",
-      "name": "Innovative Industrial Properties",
-      "asset_type": "stock",
-      "price": 51.81,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.21185824,
-      "volume": 152028.0,
-      "dollar_volume": 7876570.680000001,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T19:59:59+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": true,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 4.847,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Innovative Industrial Properties Prices Public Offering of 9.25% Series B Cumulative Redeemable Preferred Stock - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOcWxSTzlMVUtTNEg2OUJVcEpnTlF5Qm1VTHV4SnlacVZYaXZPaEVoS2NneUZ4Njd5WlpGeWN3anI1OUU5QVE0bHFDbDgwYXloTE92YVdvYlUtTWdPcWJCMnIxUXNuYjBCNlpKcG51am9RVUg0U0d6cEJZZHphQ2ZoZWM4UlZXQ2k5S19fVXZsb3NCUjJpd2gtVGZ6cFdfNUVrWXZMaHVRQjJVSjJleC01NnJiRHZ2T0I4TFFIVzdBY2U2Ry1OMjVqZWtObGdiQ1FOXzFkYS15UEJZVGpIR0VzbWJ3dGJwdmNqM2dGdW1oR1p1WHFCdkFscHRoTQ?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-09T02:21:00+00:00",
-        "id": "e0147388891631709d7e",
-        "type": "financing",
-        "age_hours": 17.79,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Innovative Industrial Properties Prices Public Offering of 9.25% Series B Cumulative Redeemable Preferred Stock - Business Wire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Innovative Industrial Properties Prices Public Offering of 9.25% Series B Cumulative Redeemable Preferred Stock - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOcWxSTzlMVUtTNEg2OUJVcEpnTlF5Qm1VTHV4SnlacVZYaXZPaEVoS2NneUZ4Njd5WlpGeWN3anI1OUU5QVE0bHFDbDgwYXloTE92YVdvYlUtTWdPcWJCMnIxUXNuYjBCNlpKcG51am9RVUg0U0d6cEJZZHphQ2ZoZWM4UlZXQ2k5S19fVXZsb3NCUjJpd2gtVGZ6cFdfNUVrWXZMaHVRQjJVSjJleC01NnJiRHZ2T0I4TFFIVzdBY2U2Ry1OMjVqZWtObGdiQ1FOXzFkYS15UEJZVGpIR0VzbWJ3dGJwdmNqM2dGdW1oR1p1WHFCdkFscHRoTQ?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-09T02:21:00+00:00",
-            "id": "e0147388891631709d7e",
-            "type": "financing",
-            "age_hours": 17.79,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T20:08:11.189929+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "IIPR_US_EQ",
-        "isin": "US45781V1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
             ],
             "plan": null,
             "missing_fields": [
@@ -899,6 +775,136 @@
       }
     },
     {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "coin_id": "cardano",
+      "asset_type": "crypto",
+      "price": 0.225849,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 8.38762,
+      "change_1h": 3.713,
+      "acceleration": 3.3635158333333335,
+      "discovery_route": "recent_momentum",
+      "change_7d": 2.8535,
+      "volume": 439433120.0,
+      "dollar_volume": 439433120.0,
+      "market_cap": 8470655644,
+      "session": "24/7",
+      "observed_at": "2026-10-10T02:05:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-10T02:09:22.253346+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 719,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 0.227952,
+      "support": 0.21941,
+      "momentum_pct": 0.036320631447472884,
+      "reference_price": 0.2237988144856631,
+      "extension_pct": 0.9160841709767942,
+      "resistance_1": 0.228193,
+      "resistance_2": 0.228899,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.37438313481133684,
+        "observed_at": "2026-10-10T02:05:00+00:00"
+      },
+      "structure_observed_at": "2026-10-10T02:05:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "ADAEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "title": "Active Cardano addresses rise 70% as new token standard launches, ADA price slips 13% - Bitget",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMNIBY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMA?oc=5",
+        "source": "Bitget",
+        "published_at": "2026-10-09T14:56:04+00:00",
+        "id": "13d7c29772adc9c4d65b",
+        "type": "product_launch",
+        "age_hours": 11.24,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Active Cardano addresses rise 70% as new token standard launches, ADA price slips 13% - Bitget",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Active Cardano addresses rise 70% as new token standard launches, ADA price slips 13% - Bitget",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMNIBY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMA?oc=5",
+            "source": "Bitget",
+            "published_at": "2026-10-09T14:56:04+00:00",
+            "id": "13d7c29772adc9c4d65b",
+            "type": "product_launch",
+            "age_hours": 11.24,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 12
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
       "symbol": "DOT",
       "name": "Polkadot",
       "coin_id": "polkadot",
@@ -1039,221 +1045,54 @@
       }
     },
     {
-      "symbol": "ADA",
-      "name": "Cardano",
-      "coin_id": "cardano",
+      "symbol": "JTO",
+      "name": "Jito",
+      "coin_id": "jito-governance-token",
       "asset_type": "crypto",
-      "price": 0.225849,
+      "price": 0.46826,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 8.38762,
-      "change_1h": 3.713,
-      "acceleration": 3.3635158333333335,
+      "change_24h": 2.43269,
+      "change_1h": 2.1487,
+      "acceleration": 2.0473379166666663,
       "discovery_route": "recent_momentum",
-      "change_7d": 2.8535,
-      "volume": 439433120.0,
-      "dollar_volume": 439433120.0,
-      "market_cap": 8470655644,
+      "change_7d": 1.2945,
+      "volume": 29049796.0,
+      "dollar_volume": 29049796.0,
+      "market_cap": 248642411,
       "session": "24/7",
-      "observed_at": "2026-10-10T02:05:00+00:00",
+      "observed_at": "2026-10-10T02:25:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-10T02:09:22.253346+00:00",
+        "checked_at": "2026-10-10T02:29:04.214233+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "history_samples": 719,
+      "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 0.227952,
-      "support": 0.21941,
-      "momentum_pct": 0.036320631447472884,
-      "reference_price": 0.2237988144856631,
-      "extension_pct": 0.9160841709767942,
-      "resistance_1": 0.228193,
-      "resistance_2": 0.228899,
+      "entry": 0.47321,
+      "support": 0.46826,
+      "momentum_pct": -0.8868663350619088,
+      "reference_price": 0.4713514333210188,
+      "extension_pct": -0.6558659001495659,
+      "resistance_1": 0.4737,
+      "resistance_2": 0.47592,
       "chart_analysis": {
         "setups": [],
         "issues": [
           "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
         "interval": "5m",
-        "recent_volume_ratio": 0.37438313481133684,
-        "observed_at": "2026-10-10T02:05:00+00:00"
+        "recent_volume_ratio": 2.8632725858814694,
+        "observed_at": "2026-10-10T02:25:00+00:00"
       },
-      "structure_observed_at": "2026-10-10T02:05:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "ADAEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Active Cardano addresses rise 70% as new token standard launches, ADA price slips 13% - Bitget",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMNIBY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMA?oc=5",
-        "source": "Bitget",
-        "published_at": "2026-10-09T14:56:04+00:00",
-        "id": "13d7c29772adc9c4d65b",
-        "type": "product_launch",
-        "age_hours": 11.24,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Active Cardano addresses rise 70% as new token standard launches, ADA price slips 13% - Bitget",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Active Cardano addresses rise 70% as new token standard launches, ADA price slips 13% - Bitget",
-            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMNIBY0FVX3lxTFBob2NKVDltNmNGaFpzb3lxQzhLaHdCZ200Umx6R1JpT2JNV1pFa25KaV9Kd1VHRVZSVjBXSnA0WVp1REJNUkJVbU1nR1ZLWDFlc2lyRXRFQlpjX3VkVUxIdENVMA?oc=5",
-            "source": "Bitget",
-            "published_at": "2026-10-09T14:56:04+00:00",
-            "id": "13d7c29772adc9c4d65b",
-            "type": "product_launch",
-            "age_hours": 11.24,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 12
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "JTO",
-      "name": "Jito",
-      "coin_id": "jito-governance-token",
-      "asset_type": "crypto",
-      "price": 0.47199,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 2.44939,
-      "change_1h": 2.1487,
-      "acceleration": 2.046642083333333,
-      "discovery_route": "recent_momentum",
-      "change_7d": 1.2945,
-      "volume": 30539063.0,
-      "dollar_volume": 30539063.0,
-      "market_cap": 250254510,
-      "session": "24/7",
-      "observed_at": "2026-10-10T02:05:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-10T02:09:22.253346+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 719,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.47386,
-      "support": 0.46839,
-      "momentum_pct": 0.27832072745814784,
-      "reference_price": 0.47147708787902465,
-      "extension_pct": 0.1087883450037408,
-      "resistance_1": 0.47451,
-      "resistance_2": 0.47729,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.47321,
-            "support": 0.47068,
-            "resistance_1": 0.4737,
-            "resistance_2": 0.47592,
-            "momentum_pct": 0.27832072745814784,
-            "extension_pct": 0.1087883450037408,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.47072,
-              "measured_height": 0.009950000000000014,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.47569500000000003,
-                0.48067000000000004
-              ],
-              "overhead_levels": [
-                0.4737,
-                0.47386,
-                0.474,
-                0.47451
-              ]
-            },
-            "observed_at": "2026-10-10T02:05:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-10T00:05:00+00:00",
-              "range_end": "2026-10-10T01:30:00+00:00",
-              "range_high": 0.47072,
-              "range_low": 0.46077,
-              "retest_low": 0.47068,
-              "breakout_close": 0.47229,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.5287826814986252,
-        "observed_at": "2026-10-10T02:05:00+00:00"
-      },
-      "structure_observed_at": "2026-10-10T02:05:00+00:00",
+      "structure_observed_at": "2026-10-10T02:25:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -1270,7 +1109,7 @@
         "published_at": "2026-10-09T18:22:28+00:00",
         "id": "ba20cf6b9a304f5aa279",
         "type": "crypto_event",
-        "age_hours": 7.8,
+        "age_hours": 8.13,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1289,7 +1128,7 @@
             "published_at": "2026-10-09T18:22:28+00:00",
             "id": "ba20cf6b9a304f5aa279",
             "type": "crypto_event",
-            "age_hours": 7.8,
+            "age_hours": 8.13,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1305,140 +1144,43 @@
         "headlines_checked": 3
       },
       "score": {
-        "score": 4,
+        "score": 1,
         "label": "Research rank only",
         "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
+          "notional liquidity"
         ]
       },
       "qualification": {
-        "status": "TECHNICAL WATCH",
+        "status": "CATALYST WATCH",
         "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No positive recent momentum; a daily gain alone is insufficient."
         ],
         "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.47321,
-          "support": 0.47068,
-          "resistance_1": 0.4737,
-          "resistance_2": 0.47592,
-          "momentum_pct": 0.27832072745814784,
-          "extension_pct": 0.1087883450037408,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.47072,
-            "measured_height": 0.009950000000000014,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.47569500000000003,
-              0.48067000000000004
-            ],
-            "overhead_levels": [
-              0.4737,
-              0.47386,
-              0.474,
-              0.47451
-            ]
-          },
-          "observed_at": "2026-10-10T02:05:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-10T00:05:00+00:00",
-            "range_end": "2026-10-10T01:30:00+00:00",
-            "range_high": 0.47072,
-            "range_low": 0.46077,
-            "retest_low": 0.47068,
-            "breakout_close": 0.47229,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
+        "route": "CATALYST_LED",
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No positive recent momentum; a daily gain alone is insufficient."
             ],
             "plan": null,
             "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.47321,
-              "support": 0.47068,
-              "resistance_1": 0.4737,
-              "resistance_2": 0.47592,
-              "momentum_pct": 0.27832072745814784,
-              "extension_pct": 0.1087883450037408,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.47072,
-                "measured_height": 0.009950000000000014,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.47569500000000003,
-                  0.48067000000000004
-                ],
-                "overhead_levels": [
-                  0.4737,
-                  0.47386,
-                  0.474,
-                  0.47451
-                ]
-              },
-              "observed_at": "2026-10-10T02:05:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-10T00:05:00+00:00",
-                "range_end": "2026-10-10T01:30:00+00:00",
-                "range_high": 0.47072,
-                "range_low": 0.46077,
-                "retest_low": 0.47068,
-                "breakout_close": 0.47229,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
           }
-        ]
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
       }
     }
   ],
   "changed_signals": [
-    "crypto:polkadot",
-    "crypto:cardano",
     "crypto:jito-governance-token"
   ],
-  "invalidated_signals": [],
+  "invalidated_signals": [
+    "stock:IIPR"
+  ],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1457,9 +1199,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 169,
-        "matched_events": 9,
-        "matched_assets": 9,
+        "headlines_received": 170,
+        "matched_events": 8,
+        "matched_assets": 8,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1481,14 +1223,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5905,
-      "discovered_candidates": 9,
+      "discovered_candidates": 8,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 7,
+      "shortlisted_candidates": 6,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 7,
-      "selected_candidates": 7,
+      "catalyst_selected": 6,
+      "selected_candidates": 6,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1496,7 +1238,7 @@
       "unquoted_listings": 45,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 6,
       "chart_failures": 0
     },
     "crypto": {
@@ -1544,18 +1286,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T02:09:22.253346+00:00",
+        "checked_at": "2026-10-10T02:29:04.214233+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T02:09:22.253346+00:00"
+        "checked_at": "2026-10-10T02:29:04.214233+00:00"
       }
     },
     "news": {
-      "checked": 19,
+      "checked": 18,
       "failed": 0
     }
   },
