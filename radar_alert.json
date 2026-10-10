@@ -1,8 +1,136 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T19:09:54.550911+00:00",
+  "generated_at": "2026-10-10T19:27:47.547539+00:00",
   "potential_signals": [
+    {
+      "ticker": "MSTR",
+      "name": "Strategy",
+      "asset_type": "stock",
+      "price": 154.34,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.89476,
+      "volume": 15940127.0,
+      "dollar_volume": 2460199201.18,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 13.827,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Teva: 'Hold' On FDA Approval Of Weltruza And Pivot To Growth Strategy (TEVA) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbE5laWU4RDNxUUtZTE53eVUwamIzN2xvdXcxMjlEZnA3UWlQZlZJT2R2S3ZrMW91RmZFY1hGNFpXT0pKaGdMQ25GTUNkUkNvM2NnanRNY21qZmk0bjhmN3hORmZYR2Z3cjRDbXZ2SzVibjFFWjJLSjdNLWJWTHMzT1BvT3Z2czd1U1RmeEttb0prYXpveDNjemlUSFBPd1RCM08yd3loVEY5RFhRTl9LWnNKQ0tLNXlsVW0ySU9aQQ?oc=5",
+        "source": "Seeking Alpha",
+        "published_at": "2026-10-09T20:55:56+00:00",
+        "id": "8014e391e88a37567c97",
+        "type": "regulatory",
+        "age_hours": 22.52,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Teva: 'Hold' On FDA Approval Of Weltruza And Pivot To Growth Strategy (TEVA) - Seeking Alpha",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Teva: 'Hold' On FDA Approval Of Weltruza And Pivot To Growth Strategy (TEVA) - Seeking Alpha",
+            "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbE5laWU4RDNxUUtZTE53eVUwamIzN2xvdXcxMjlEZnA3UWlQZlZJT2R2S3ZrMW91RmZFY1hGNFpXT0pKaGdMQ25GTUNkUkNvM2NnanRNY21qZmk0bjhmN3hORmZYR2Z3cjRDbXZ2SzVibjFFWjJLSjdNLWJWTHMzT1BvT3Z2czd1U1RmeEttb0prYXpveDNjemlUSFBPd1RCM08yd3loVEY5RFhRTl9LWnNKQ0tLNXlsVW0ySU9aQQ?oc=5",
+            "source": "Seeking Alpha",
+            "published_at": "2026-10-09T20:55:56+00:00",
+            "id": "8014e391e88a37567c97",
+            "type": "regulatory",
+            "age_hours": 22.52,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-10T19:26:54.667050+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "MSTR_US_EQ",
+        "isin": "US5949724083",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "ACN",
       "name": "Accenture",
@@ -898,14 +1026,9 @@
     }
   ],
   "changed_signals": [
-    "stock:SIG"
+    "stock:MSTR"
   ],
-  "invalidated_signals": [
-    "stock:TEVA",
-    "stock:MSTR",
-    "stock:SKYD",
-    "crypto:starknet"
-  ],
+  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -914,8 +1037,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7767,
-        "snapshot_records": 7767,
+        "provider_total": 7763,
+        "snapshot_records": 7763,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -925,8 +1048,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 163,
-        "matched_events": 9,
-        "matched_assets": 8,
+        "matched_events": 10,
+        "matched_assets": 9,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -947,23 +1070,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5893,
-      "discovered_candidates": 8,
+      "listed_snapshot_records": 5892,
+      "discovered_candidates": 9,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 7,
+      "shortlisted_candidates": 8,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 7,
-      "selected_candidates": 7,
+      "catalyst_selected": 8,
+      "selected_candidates": 8,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 57,
+      "unquoted_listings": 58,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 8,
       "chart_failures": 0
     },
     "crypto": {
@@ -1011,18 +1134,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T19:09:02.363952+00:00",
+        "checked_at": "2026-10-10T19:26:54.667050+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T19:09:02.363952+00:00"
+        "checked_at": "2026-10-10T19:26:54.667050+00:00"
       }
     },
     "news": {
-      "checked": 19,
+      "checked": 20,
       "failed": 0
     }
   },
