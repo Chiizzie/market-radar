@@ -1,8 +1,267 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T01:31:23.228455+00:00",
+  "generated_at": "2026-10-10T01:49:08.027292+00:00",
   "potential_signals": [
+    {
+      "ticker": "TEVA",
+      "name": "Teva Pharmaceutical Industries",
+      "asset_type": "stock",
+      "price": 41.505001068115234,
+      "currency": "USD",
+      "eur_per_unit": 0.8928999900817871,
+      "change": 5.7834406,
+      "volume": 6056746,
+      "dollar_volume": 250384559.5767479,
+      "session": "REGULAR",
+      "observed_at": "2026-10-09T11:10:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 14.518,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Teva Pharmaceutical Industries wins WELTRUZA approval - Mugglehead Investment Magazine",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOERjOXgwMWFnNlpRMWxCZ09LdFNiaVQxY09zUzN4WmtLS3EwN0I3b0RWaGVEN2k0ZTc2RkxXUFBPMVJrSl9QRm9jRXdwcDl4aGNIOXpkU2lJNTJ2S2hzRVZub1hTTXRhSllPQUQ1VXRiWGltT0pIQklYUEREa0FPWUpsa2drcnc?oc=5",
+        "source": "Mugglehead Investment Magazine",
+        "published_at": "2026-10-09T11:34:03+00:00",
+        "id": "2d13c5cd010431e26ba7",
+        "type": "regulatory",
+        "age_hours": 3.61,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Teva Pharmaceutical Industries wins WELTRUZA approval - Mugglehead Investment Magazine",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Teva Pharmaceutical Industries wins WELTRUZA approval - Mugglehead Investment Magazine",
+            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOERjOXgwMWFnNlpRMWxCZ09LdFNiaVQxY09zUzN4WmtLS3EwN0I3b0RWaGVEN2k0ZTc2RkxXUFBPMVJrSl9QRm9jRXdwcDl4aGNIOXpkU2lJNTJ2S2hzRVZub1hTTXRhSllPQUQ1VXRiWGltT0pIQklYUEREa0FPWUpsa2drcnc?oc=5",
+            "source": "Mugglehead Investment Magazine",
+            "published_at": "2026-10-09T11:34:03+00:00",
+            "id": "2d13c5cd010431e26ba7",
+            "type": "regulatory",
+            "age_hours": 3.61,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T15:10:42.917890+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "TEVA_US_EQ",
+        "isin": "IL0006290147",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.893778633845886,
+      "history_samples": 332,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 41.7400016784668,
+      "support": 41.119998931884766,
+      "momentum_pct": 0.6303846356254139,
+      "reference_price": 41.36661360219728,
+      "extension_pct": 0.33453902523603585,
+      "resistance_1": 41.8849983215332,
+      "resistance_2": 42.02000045776367,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.16827642515039223,
+        "observed_at": "2026-10-09T11:10:00-04:00"
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "Recent same-time relative volume is below 1.5x."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "Recent same-time relative volume is below 1.5x."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SXTC",
+      "name": "China SXT Pharmaceuticals",
+      "asset_type": "stock",
+      "price": 0.1487,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -56.71033,
+      "volume": 102573837.0,
+      "dollar_volume": 15252729.5619,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -3.547,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Univest Securities, LLC Announces Closing of $12 Million Registered Direct Offering for its Client China SXT Pharmaceuticals Inc. (NASDAQ: SXTC) - The Manila Times",
+        "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOMjRvUG9wSXJtTl9DSWVMajQzVC0xbmRjZ3hnQmNfdlEwMFQwaG5fdXJXekNDTmM0WnZKbDF5a3dpY19PWEp3ZnBoSXRLeFRZWEhsdDdwVHQ4ZFZ2YnlHR21TaXlrb0s1Z3JmZ090bWtUeEtJZXBZOG9kSUZPc1V2SzZwLVR1ZVJhQVlxX0Q5X3k0VmpsZjQxLXZlbEJiaEliMWJSbnlKMldTbEJZUEFpRm44NDlIeDVzaXlaWlhCX3hldUlpWXZER1JpTVpYdXJHYWRhaHBIdWNKVWZBVklGUXVNaFltQ2d1UFllemZpLVI5NTFCZDhNWGRDTlRpSEhFaDg4NHRKY04xN2xEakx1WHNFUXFwV19OZFVsbkRGRDV1bUhyY0tQWm9Fd3VzeWlmRi1hM0Nod9IBvAJBVV95cUxQV0oyXzk4U180dC0xT3pCUkgzYXltWUdvMTRWV0hoSGl2Y3hvQnJIVlN2RloyZzhtN2pyY0NyMHhXZGw3cjhhMl9CalZRdnNNNHh2S0F0VzNrME9DbnRGcmp4UDJXV2IxTWhQS3RyN1dBUEwtVDQ4UHpmcnhHbjd0UkRDc25JVk9lcEU5bXMxb3NSSWZsdVJwcVd1YjBMTlhWSHJFeG5nQVpPQnFkakNCMU03TndzQVJUOWZYTjMwMFpueVZ0WWszWFpsWHBzR284ZWJFM3Y3Yl9xMGJVYmxvdmJybjh4dTY4cjIxSWE1T0NESF9PanhJWnQzX0JjSzNxc21uOGxYQ3p2SUh4aTI1blZ0NlNVdkdaN0c0YmFqZmlsZzIxZ1ROTmd5YW1GYzBtbTZEd0lGLU9EQjMy?oc=5",
+        "source": "The Manila Times",
+        "published_at": "2026-10-09T21:37:20+00:00",
+        "id": "c7e9211a1512e702afee",
+        "type": "financing",
+        "age_hours": 0.15,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Univest Securities, LLC Announces Closing of $12 Million Registered Direct Offering for its Client China SXT Pharmaceuticals Inc. (NASDAQ: SXTC) - The Manila Times",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Univest Securities, LLC Announces Closing of $12 Million Registered Direct Offering for its Client China SXT Pharmaceuticals Inc. (NASDAQ: SXTC) - The Manila Times",
+            "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOMjRvUG9wSXJtTl9DSWVMajQzVC0xbmRjZ3hnQmNfdlEwMFQwaG5fdXJXekNDTmM0WnZKbDF5a3dpY19PWEp3ZnBoSXRLeFRZWEhsdDdwVHQ4ZFZ2YnlHR21TaXlrb0s1Z3JmZ090bWtUeEtJZXBZOG9kSUZPc1V2SzZwLVR1ZVJhQVlxX0Q5X3k0VmpsZjQxLXZlbEJiaEliMWJSbnlKMldTbEJZUEFpRm44NDlIeDVzaXlaWlhCX3hldUlpWXZER1JpTVpYdXJHYWRhaHBIdWNKVWZBVklGUXVNaFltQ2d1UFllemZpLVI5NTFCZDhNWGRDTlRpSEhFaDg4NHRKY04xN2xEakx1WHNFUXFwV19OZFVsbkRGRDV1bUhyY0tQWm9Fd3VzeWlmRi1hM0Nod9IBvAJBVV95cUxQV0oyXzk4U180dC0xT3pCUkgzYXltWUdvMTRWV0hoSGl2Y3hvQnJIVlN2RloyZzhtN2pyY0NyMHhXZGw3cjhhMl9CalZRdnNNNHh2S0F0VzNrME9DbnRGcmp4UDJXV2IxTWhQS3RyN1dBUEwtVDQ4UHpmcnhHbjd0UkRDc25JVk9lcEU5bXMxb3NSSWZsdVJwcVd1YjBMTlhWSHJFeG5nQVpPQnFkakNCMU03TndzQVJUOWZYTjMwMFpueVZ0WWszWFpsWHBzR284ZWJFM3Y3Yl9xMGJVYmxvdmJybjh4dTY4cjIxSWE1T0NESF9PanhJWnQzX0JjSzNxc21uOGxYQ3p2SUh4aTI1blZ0NlNVdkdaN0c0YmFqZmlsZzIxZ1ROTmd5YW1GYzBtbTZEd0lGLU9EQjMy?oc=5",
+            "source": "The Manila Times",
+            "published_at": "2026-10-09T21:37:20+00:00",
+            "id": "c7e9211a1512e702afee",
+            "type": "financing",
+            "age_hours": 0.15,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-09T21:46:35.560557+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "SXTC_US_EQ",
+        "isin": "VGG2161P1734",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "IIPR",
       "name": "Innovative Industrial Properties",
@@ -388,265 +647,6 @@
       }
     },
     {
-      "ticker": "SXTC",
-      "name": "China SXT Pharmaceuticals",
-      "asset_type": "stock",
-      "price": 0.1487,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -56.71033,
-      "volume": 102573837.0,
-      "dollar_volume": 15252729.5619,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -3.547,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Univest Securities, LLC Announces Closing of $12 Million Registered Direct Offering for its Client China SXT Pharmaceuticals Inc. (NASDAQ: SXTC) - The Manila Times",
-        "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOMjRvUG9wSXJtTl9DSWVMajQzVC0xbmRjZ3hnQmNfdlEwMFQwaG5fdXJXekNDTmM0WnZKbDF5a3dpY19PWEp3ZnBoSXRLeFRZWEhsdDdwVHQ4ZFZ2YnlHR21TaXlrb0s1Z3JmZ090bWtUeEtJZXBZOG9kSUZPc1V2SzZwLVR1ZVJhQVlxX0Q5X3k0VmpsZjQxLXZlbEJiaEliMWJSbnlKMldTbEJZUEFpRm44NDlIeDVzaXlaWlhCX3hldUlpWXZER1JpTVpYdXJHYWRhaHBIdWNKVWZBVklGUXVNaFltQ2d1UFllemZpLVI5NTFCZDhNWGRDTlRpSEhFaDg4NHRKY04xN2xEakx1WHNFUXFwV19OZFVsbkRGRDV1bUhyY0tQWm9Fd3VzeWlmRi1hM0Nod9IBvAJBVV95cUxQV0oyXzk4U180dC0xT3pCUkgzYXltWUdvMTRWV0hoSGl2Y3hvQnJIVlN2RloyZzhtN2pyY0NyMHhXZGw3cjhhMl9CalZRdnNNNHh2S0F0VzNrME9DbnRGcmp4UDJXV2IxTWhQS3RyN1dBUEwtVDQ4UHpmcnhHbjd0UkRDc25JVk9lcEU5bXMxb3NSSWZsdVJwcVd1YjBMTlhWSHJFeG5nQVpPQnFkakNCMU03TndzQVJUOWZYTjMwMFpueVZ0WWszWFpsWHBzR284ZWJFM3Y3Yl9xMGJVYmxvdmJybjh4dTY4cjIxSWE1T0NESF9PanhJWnQzX0JjSzNxc21uOGxYQ3p2SUh4aTI1blZ0NlNVdkdaN0c0YmFqZmlsZzIxZ1ROTmd5YW1GYzBtbTZEd0lGLU9EQjMy?oc=5",
-        "source": "The Manila Times",
-        "published_at": "2026-10-09T21:37:20+00:00",
-        "id": "c7e9211a1512e702afee",
-        "type": "financing",
-        "age_hours": 0.15,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Univest Securities, LLC Announces Closing of $12 Million Registered Direct Offering for its Client China SXT Pharmaceuticals Inc. (NASDAQ: SXTC) - The Manila Times",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Univest Securities, LLC Announces Closing of $12 Million Registered Direct Offering for its Client China SXT Pharmaceuticals Inc. (NASDAQ: SXTC) - The Manila Times",
-            "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOMjRvUG9wSXJtTl9DSWVMajQzVC0xbmRjZ3hnQmNfdlEwMFQwaG5fdXJXekNDTmM0WnZKbDF5a3dpY19PWEp3ZnBoSXRLeFRZWEhsdDdwVHQ4ZFZ2YnlHR21TaXlrb0s1Z3JmZ090bWtUeEtJZXBZOG9kSUZPc1V2SzZwLVR1ZVJhQVlxX0Q5X3k0VmpsZjQxLXZlbEJiaEliMWJSbnlKMldTbEJZUEFpRm44NDlIeDVzaXlaWlhCX3hldUlpWXZER1JpTVpYdXJHYWRhaHBIdWNKVWZBVklGUXVNaFltQ2d1UFllemZpLVI5NTFCZDhNWGRDTlRpSEhFaDg4NHRKY04xN2xEakx1WHNFUXFwV19OZFVsbkRGRDV1bUhyY0tQWm9Fd3VzeWlmRi1hM0Nod9IBvAJBVV95cUxQV0oyXzk4U180dC0xT3pCUkgzYXltWUdvMTRWV0hoSGl2Y3hvQnJIVlN2RloyZzhtN2pyY0NyMHhXZGw3cjhhMl9CalZRdnNNNHh2S0F0VzNrME9DbnRGcmp4UDJXV2IxTWhQS3RyN1dBUEwtVDQ4UHpmcnhHbjd0UkRDc25JVk9lcEU5bXMxb3NSSWZsdVJwcVd1YjBMTlhWSHJFeG5nQVpPQnFkakNCMU03TndzQVJUOWZYTjMwMFpueVZ0WWszWFpsWHBzR284ZWJFM3Y3Yl9xMGJVYmxvdmJybjh4dTY4cjIxSWE1T0NESF9PanhJWnQzX0JjSzNxc21uOGxYQ3p2SUh4aTI1blZ0NlNVdkdaN0c0YmFqZmlsZzIxZ1ROTmd5YW1GYzBtbTZEd0lGLU9EQjMy?oc=5",
-            "source": "The Manila Times",
-            "published_at": "2026-10-09T21:37:20+00:00",
-            "id": "c7e9211a1512e702afee",
-            "type": "financing",
-            "age_hours": 0.15,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T21:46:35.560557+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SXTC_US_EQ",
-        "isin": "VGG2161P1734",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TEVA",
-      "name": "Teva Pharmaceutical Industries",
-      "asset_type": "stock",
-      "price": 41.505001068115234,
-      "currency": "USD",
-      "eur_per_unit": 0.8928999900817871,
-      "change": 5.7834406,
-      "volume": 6056746,
-      "dollar_volume": 250384559.5767479,
-      "session": "REGULAR",
-      "observed_at": "2026-10-09T11:10:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 14.518,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Teva Pharmaceutical Industries wins WELTRUZA approval - Mugglehead Investment Magazine",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOERjOXgwMWFnNlpRMWxCZ09LdFNiaVQxY09zUzN4WmtLS3EwN0I3b0RWaGVEN2k0ZTc2RkxXUFBPMVJrSl9QRm9jRXdwcDl4aGNIOXpkU2lJNTJ2S2hzRVZub1hTTXRhSllPQUQ1VXRiWGltT0pIQklYUEREa0FPWUpsa2drcnc?oc=5",
-        "source": "Mugglehead Investment Magazine",
-        "published_at": "2026-10-09T11:34:03+00:00",
-        "id": "2d13c5cd010431e26ba7",
-        "type": "regulatory",
-        "age_hours": 3.61,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Teva Pharmaceutical Industries wins WELTRUZA approval - Mugglehead Investment Magazine",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Teva Pharmaceutical Industries wins WELTRUZA approval - Mugglehead Investment Magazine",
-            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOERjOXgwMWFnNlpRMWxCZ09LdFNiaVQxY09zUzN4WmtLS3EwN0I3b0RWaGVEN2k0ZTc2RkxXUFBPMVJrSl9QRm9jRXdwcDl4aGNIOXpkU2lJNTJ2S2hzRVZub1hTTXRhSllPQUQ1VXRiWGltT0pIQklYUEREa0FPWUpsa2drcnc?oc=5",
-            "source": "Mugglehead Investment Magazine",
-            "published_at": "2026-10-09T11:34:03+00:00",
-            "id": "2d13c5cd010431e26ba7",
-            "type": "regulatory",
-            "age_hours": 3.61,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T15:10:42.917890+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TEVA_US_EQ",
-        "isin": "IL0006290147",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.893778633845886,
-      "history_samples": 332,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 41.7400016784668,
-      "support": 41.119998931884766,
-      "momentum_pct": 0.6303846356254139,
-      "reference_price": 41.36661360219728,
-      "extension_pct": 0.33453902523603585,
-      "resistance_1": 41.8849983215332,
-      "resistance_2": 42.02000045776367,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.16827642515039223,
-        "observed_at": "2026-10-09T11:10:00-04:00"
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "BIAF",
       "name": "bioAffinity Technologies",
       "asset_type": "stock",
@@ -897,135 +897,11 @@
         "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
-    },
-    {
-      "ticker": "RTSN",
-      "name": "Retension Pharmaceuticals",
-      "asset_type": "stock",
-      "price": 10.53,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -12.250003,
-      "volume": 776413.0,
-      "dollar_volume": 8175628.89,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": true,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -16.359,
-        "relative_volume_available": false,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Retension Pharmaceuticals Announces Pricing of Initial Public Offering - The Manila Times",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZk5fS3NYeElMZ2hUeVdyazZ3TUwxYmI5alRPLUZuenBJNEJkZjdjU0NzMUlSLTQtUElEZDdOTHV5Vl95SGQ2R2JBdlNvUjRaNUIyQURxMG9ndTFXZzBhb1lwMU9ZbWVvZmxGb1V6dnJkeThiaVBTWnJVNXRRNkhPUjhMMl9JbHdDS3B3eTNLSEh3dHFZOVlrZkx3Q04zcXpEdU5yRVVRVTA0VlJtelh1dlZZNklYY0JJRFFsN1h3Rkh5YlFvcGh4OG9JYWtBUjltZ0ctRUpaZjV6ZDBk0gHiAUFVX3lxTE84MWFMWVBqTnpyS2lXYlpqZmYzanY2YUNFZjRBd3NuVEVSTnJIZ1R5X0VZZklMV29TSkpaZEVEVWUtR185OGhQQ0lobnJ2a3Q1eUVTWEl5VndSQXZRUG9RczhhQjc0UF9XZnByWjN3anNzOUt1RjZGQVotejBWcTlLYXBUc3Rsa1RZczREY3hieGhEWDVuN3lrY2tEbzVoeFVyR2N5bU9qMl95NkRIdEVlU05MWU1sU0gxUFE2SHI4cmJNMXgxekp0Rl90Q1FaQnZFNGFtWHhzOVRZbmx0Wll4WGc?oc=5",
-        "source": "The Manila Times",
-        "published_at": "2026-10-09T01:43:15+00:00",
-        "id": "733e03e049f23585f604",
-        "type": "financing",
-        "age_hours": 18.42,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Retension Pharmaceuticals Announces Pricing of Initial Public Offering - The Manila Times",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Retension Pharmaceuticals Announces Pricing of Initial Public Offering - The Manila Times",
-            "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZk5fS3NYeElMZ2hUeVdyazZ3TUwxYmI5alRPLUZuenBJNEJkZjdjU0NzMUlSLTQtUElEZDdOTHV5Vl95SGQ2R2JBdlNvUjRaNUIyQURxMG9ndTFXZzBhb1lwMU9ZbWVvZmxGb1V6dnJkeThiaVBTWnJVNXRRNkhPUjhMMl9JbHdDS3B3eTNLSEh3dHFZOVlrZkx3Q04zcXpEdU5yRVVRVTA0VlJtelh1dlZZNklYY0JJRFFsN1h3Rkh5YlFvcGh4OG9JYWtBUjltZ0ctRUpaZjV6ZDBk0gHiAUFVX3lxTE84MWFMWVBqTnpyS2lXYlpqZmYzanY2YUNFZjRBd3NuVEVSTnJIZ1R5X0VZZklMV29TSkpaZEVEVWUtR185OGhQQ0lobnJ2a3Q1eUVTWEl5VndSQXZRUG9RczhhQjc0UF9XZnByWjN3anNzOUt1RjZGQVotejBWcTlLYXBUc3Rsa1RZczREY3hieGhEWDVuN3lrY2tEbzVoeFVyR2N5bU9qMl95NkRIdEVlU05MWU1sU0gxUFE2SHI4cmJNMXgxekp0Rl90Q1FaQnZFNGFtWHhzOVRZbmx0Wll4WGc?oc=5",
-            "source": "The Manila Times",
-            "published_at": "2026-10-09T01:43:15+00:00",
-            "id": "733e03e049f23585f604",
-            "type": "financing",
-            "age_hours": 18.42,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T20:08:11.189929+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "RTSN_US_EQ",
-        "isin": "US76135H1005",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
     }
   ],
   "changed_signals": [],
   "invalidated_signals": [
-    "crypto:layerzero"
+    "stock:RTSN"
   ],
   "health": {
     "stocks": {
@@ -1036,19 +912,18 @@
       "directory_errors": [],
       "snapshots": {
         "provider_total": 7819,
-        "snapshot_records": 4500,
-        "pagination_complete": false,
+        "snapshot_records": 7819,
+        "pagination_complete": true,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout",
-          "Quote page failed at offset 4500: Timeout"
+          "Nasdaq screener failed: ReadTimeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 169,
-        "matched_events": 11,
-        "matched_assets": 10,
+        "matched_events": 9,
+        "matched_assets": 9,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1069,23 +944,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 3461,
-      "discovered_candidates": 10,
+      "listed_snapshot_records": 5905,
+      "discovered_candidates": 9,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 8,
+      "shortlisted_candidates": 7,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 8,
-      "selected_candidates": 8,
+      "catalyst_selected": 7,
+      "selected_candidates": 7,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 2489,
+      "unquoted_listings": 45,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 8,
+      "history_not_requested": 7,
       "chart_failures": 0
     },
     "crypto": {
@@ -1133,18 +1008,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T01:30:04.979797+00:00",
+        "checked_at": "2026-10-10T01:48:16.715308+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T01:30:04.979797+00:00"
+        "checked_at": "2026-10-10T01:48:16.715308+00:00"
       }
     },
     "news": {
-      "checked": 20,
+      "checked": 19,
       "failed": 0
     }
   },
