@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T14:08:58.371538+00:00",
+  "generated_at": "2026-10-10T14:28:06.023111+00:00",
   "potential_signals": [
     {
       "ticker": "MSTR",
@@ -895,58 +895,92 @@
       }
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat",
-      "asset_type": "stock",
-      "price": 7.7,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.388101,
-      "volume": 779828.0,
-      "dollar_volume": 6004675.600000001,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": true,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 4.722,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      "symbol": "ZRO",
+      "name": "LayerZero",
+      "coin_id": "layerzero",
+      "asset_type": "crypto",
+      "price": 1.771,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -2.72477,
+      "change_1h": 1.4312,
+      "acceleration": 1.5447320833333333,
+      "discovery_route": "recent_momentum",
+      "change_7d": -3.5635,
+      "volume": 69727034.0,
+      "dollar_volume": 69727034.0,
+      "market_cap": 706685784,
+      "session": "24/7",
+      "observed_at": "2026-10-10T14:05:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-10T14:08:09.542367+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 1.774,
+      "support": 1.758,
+      "momentum_pct": 0.22637238256932868,
+      "reference_price": 1.7664811782784362,
+      "extension_pct": 0.25580921988468397,
+      "resistance_1": 1.776,
+      "resistance_2": 1.782,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 1.5092109647005585,
+        "observed_at": "2026-10-10T14:05:00+00:00"
+      },
+      "structure_observed_at": "2026-10-10T14:05:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "ZROEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
       "catalyst": {
-        "title": "Beyond Meat: Between Bankruptcy And A Second Life (NASDAQ:BYND) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNX2pnRWF1NjRjOHhsSGFHbjJPT2x1bzN6WXQwTHhYcEpBeTR6TmxqSnBMNDZXU0E4bWEwVndxZFIwLTdTdS1ibXplbzFyX3ZtQ3dFTHVqMEtFRXI1X1ljdWZEWlpCaXhpNU1kQUdEYWJGWjJMR0ZEeUczQU5BcE5HTUgyUm4wTFZqaENRV2Ewd0dxYnM?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-09T14:19:44+00:00",
-        "id": "db9bc4fa70ab509357e3",
-        "type": "financing",
-        "age_hours": 5.81,
+        "title": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc05JNW5ydTQzRXpLUmNZY2dSaW8yU0xTa0dCcmlBdHFXMXNBMFR2WDA0MlFNbzFrclpaVlJ2TjFLUzk4ZGxUazRIMDBpUnpqUWluTU5TVzQxcnVSWUZ4eHdTQTB4ODd3YXFwZGpNNWIzWWxXY2tKN19VUTJ4TTI3dmFsMWllVmFGOTdKOHRKQ05fZWx0LVdUcHljSE5HYnVjYnhpMW13b3pLamg2Y3c?oc=5",
+        "source": "Crypto Economy",
+        "published_at": "2026-10-09T17:25:16+00:00",
+        "id": "514840be8f38f728ecc9",
+        "type": "product_launch",
+        "age_hours": 20.73,
         "confidence": "headline_evidence",
-        "adverse": true,
+        "adverse": false,
         "event_at": null,
         "event_date_source": null,
         "event_date_precision": null,
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Beyond Meat: Between Bankruptcy And A Second Life (NASDAQ:BYND) - Seeking Alpha",
+        "summary": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Beyond Meat: Between Bankruptcy And A Second Life (NASDAQ:BYND) - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNX2pnRWF1NjRjOHhsSGFHbjJPT2x1bzN6WXQwTHhYcEpBeTR6TmxqSnBMNDZXU0E4bWEwVndxZFIwLTdTdS1ibXplbzFyX3ZtQ3dFTHVqMEtFRXI1X1ljdWZEWlpCaXhpNU1kQUdEYWJGWjJMR0ZEeUczQU5BcE5HTUgyUm4wTFZqaENRV2Ewd0dxYnM?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-09T14:19:44+00:00",
-            "id": "db9bc4fa70ab509357e3",
-            "type": "financing",
-            "age_hours": 5.81,
+            "title": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
+            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc05JNW5ydTQzRXpLUmNZY2dSaW8yU0xTa0dCcmlBdHFXMXNBMFR2WDA0MlFNbzFrclpaVlJ2TjFLUzk4ZGxUazRIMDBpUnpqUWluTU5TVzQxcnVSWUZ4eHdTQTB4ODd3YXFwZGpNNWIzWWxXY2tKN19VUTJ4TTI3dmFsMWllVmFGOTdKOHRKQ05fZWx0LVdUcHljSE5HYnVjYnhpMW13b3pLamg2Y3c?oc=5",
+            "source": "Crypto Economy",
+            "published_at": "2026-10-09T17:25:16+00:00",
+            "id": "514840be8f38f728ecc9",
+            "type": "product_launch",
+            "age_hours": 20.73,
             "confidence": "headline_evidence",
-            "adverse": true,
+            "adverse": false,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -957,65 +991,262 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-09T20:08:11.189929+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BYND1_US_EQ",
-        "isin": "US08862E3071",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
+        "headlines_checked": 9
       },
       "score": {
-        "score": 0,
+        "score": 4,
         "label": "Research rank only",
-        "reasons": []
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
       },
       "qualification": {
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
         "route": "CATALYST_LED",
         "assessments": [
           {
-            "status": "NOT_EVALUATED",
+            "status": "REJECTED",
             "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
             "route": "CATALYST_LED"
           }
         ],
-        "trade_assessment_status": "NOT_EVALUATED",
+        "trade_assessment_status": "REJECTED",
         "research_only": true
+      }
+    },
+    {
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "coin_id": "chainlink",
+      "asset_type": "crypto",
+      "price": 11.7249,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 2.38647,
+      "change_1h": 0.8689,
+      "acceleration": 0.76946375,
+      "discovery_route": "recent_momentum",
+      "change_7d": -5.6504,
+      "volume": 187516938.0,
+      "dollar_volume": 187516938.0,
+      "market_cap": 8982813548,
+      "session": "24/7",
+      "observed_at": "2026-10-10T14:25:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-10T14:27:15.227319+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 11.70545,
+      "support": 11.64016,
+      "momentum_pct": 0.5812746522732004,
+      "reference_price": 11.694544952873551,
+      "extension_pct": 0.2595658680929702,
+      "resistance_1": 11.74034,
+      "resistance_2": 11.77557,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 11.70342,
+            "support": 11.67457,
+            "resistance_1": 11.71651,
+            "resistance_2": 11.75201,
+            "momentum_pct": 0.5812746522732004,
+            "extension_pct": 0.2595658680929702,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 11.67457,
+              "measured_height": 0.08700000000000152,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                11.71807,
+                11.76157
+              ],
+              "overhead_levels": [
+                11.71651,
+                11.71668,
+                11.71684,
+                11.72137
+              ]
+            },
+            "observed_at": "2026-10-10T14:25:00+00:00",
+            "evidence": {
+              "impulse_high": 11.70545,
+              "impulse_low": 11.61845,
+              "pullback_low": 11.67457,
+              "ema9": 11.678548339850087,
+              "ema21": 11.644981814892958,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 4.720757319563333,
+        "observed_at": "2026-10-10T14:25:00+00:00"
+      },
+      "structure_observed_at": "2026-10-10T14:25:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "LINKEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 12
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "TREND_PULLBACK_RECLAIM",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "TREND_PULLBACK_RECLAIM",
+          "entry": 11.70342,
+          "support": 11.67457,
+          "resistance_1": 11.71651,
+          "resistance_2": 11.75201,
+          "momentum_pct": 0.5812746522732004,
+          "extension_pct": 0.2595658680929702,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 11.67457,
+            "measured_height": 0.08700000000000152,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              11.71807,
+              11.76157
+            ],
+            "overhead_levels": [
+              11.71651,
+              11.71668,
+              11.71684,
+              11.72137
+            ]
+          },
+          "observed_at": "2026-10-10T14:25:00+00:00",
+          "evidence": {
+            "impulse_high": 11.70545,
+            "impulse_low": 11.61845,
+            "pullback_low": 11.67457,
+            "ema9": 11.678548339850087,
+            "ema21": 11.644981814892958,
+            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 11.70342,
+              "support": 11.67457,
+              "resistance_1": 11.71651,
+              "resistance_2": 11.75201,
+              "momentum_pct": 0.5812746522732004,
+              "extension_pct": 0.2595658680929702,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 11.67457,
+                "measured_height": 0.08700000000000152,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  11.71807,
+                  11.76157
+                ],
+                "overhead_levels": [
+                  11.71651,
+                  11.71668,
+                  11.71684,
+                  11.72137
+                ]
+              },
+              "observed_at": "2026-10-10T14:25:00+00:00",
+              "evidence": {
+                "impulse_high": 11.70545,
+                "impulse_low": 11.61845,
+                "pullback_low": 11.67457,
+                "ema9": 11.678548339850087,
+                "ema21": 11.644981814892958,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
       }
     },
     {
@@ -1139,136 +1370,6 @@
             "status": "REJECTED",
             "reasons": [
               "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "ZRO",
-      "name": "LayerZero",
-      "coin_id": "layerzero",
-      "asset_type": "crypto",
-      "price": 1.771,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -2.72477,
-      "change_1h": 1.4312,
-      "acceleration": 1.5447320833333333,
-      "discovery_route": "recent_momentum",
-      "change_7d": -3.5635,
-      "volume": 69727034.0,
-      "dollar_volume": 69727034.0,
-      "market_cap": 706685784,
-      "session": "24/7",
-      "observed_at": "2026-10-10T14:05:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-10T14:08:09.542367+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 1.774,
-      "support": 1.758,
-      "momentum_pct": 0.22637238256932868,
-      "reference_price": 1.7664811782784362,
-      "extension_pct": 0.25580921988468397,
-      "resistance_1": 1.776,
-      "resistance_2": 1.782,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 1.5092109647005585,
-        "observed_at": "2026-10-10T14:05:00+00:00"
-      },
-      "structure_observed_at": "2026-10-10T14:05:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "ZROEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc05JNW5ydTQzRXpLUmNZY2dSaW8yU0xTa0dCcmlBdHFXMXNBMFR2WDA0MlFNbzFrclpaVlJ2TjFLUzk4ZGxUazRIMDBpUnpqUWluTU5TVzQxcnVSWUZ4eHdTQTB4ODd3YXFwZGpNNWIzWWxXY2tKN19VUTJ4TTI3dmFsMWllVmFGOTdKOHRKQ05fZWx0LVdUcHljSE5HYnVjYnhpMW13b3pLamg2Y3c?oc=5",
-        "source": "Crypto Economy",
-        "published_at": "2026-10-09T17:25:16+00:00",
-        "id": "514840be8f38f728ecc9",
-        "type": "product_launch",
-        "age_hours": 20.73,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Blockaid Unveils Bridge Sentinel DVN for Real-Time Threat Monitoring on LayerZero - Crypto Economy",
-            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc05JNW5ydTQzRXpLUmNZY2dSaW8yU0xTa0dCcmlBdHFXMXNBMFR2WDA0MlFNbzFrclpaVlJ2TjFLUzk4ZGxUazRIMDBpUnpqUWluTU5TVzQxcnVSWUZ4eHdTQTB4ODd3YXFwZGpNNWIzWWxXY2tKN19VUTJ4TTI3dmFsMWllVmFGOTdKOHRKQ05fZWx0LVdUcHljSE5HYnVjYnhpMW13b3pLamg2Y3c?oc=5",
-            "source": "Crypto Economy",
-            "published_at": "2026-10-09T17:25:16+00:00",
-            "id": "514840be8f38f728ecc9",
-            "type": "product_launch",
-            "age_hours": 20.73,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 9
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "route": "CATALYST_LED"
@@ -1410,12 +1511,10 @@
     }
   ],
   "changed_signals": [
-    "crypto:starknet",
-    "crypto:layerzero",
-    "crypto:polkadot"
+    "crypto:chainlink"
   ],
   "invalidated_signals": [
-    "crypto:jito-governance-token"
+    "stock:BYND"
   ],
   "health": {
     "stocks": {
@@ -1425,8 +1524,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7817,
-        "snapshot_records": 7817,
+        "provider_total": 7807,
+        "snapshot_records": 7807,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1436,8 +1535,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 155,
-        "matched_events": 11,
-        "matched_assets": 8,
+        "matched_events": 10,
+        "matched_assets": 7,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1458,23 +1557,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5903,
-      "discovered_candidates": 8,
+      "listed_snapshot_records": 5902,
+      "discovered_candidates": 7,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 8,
+      "shortlisted_candidates": 7,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 8,
-      "selected_candidates": 8,
+      "catalyst_selected": 7,
+      "selected_candidates": 7,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 47,
+      "unquoted_listings": 48,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 8,
+      "history_not_requested": 7,
       "chart_failures": 0
     },
     "crypto": {
@@ -1522,18 +1621,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T14:08:09.542367+00:00",
+        "checked_at": "2026-10-10T14:27:15.227319+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T14:08:09.542367+00:00"
+        "checked_at": "2026-10-10T14:27:15.227319+00:00"
       }
     },
     "news": {
-      "checked": 20,
+      "checked": 19,
       "failed": 0
     }
   },
