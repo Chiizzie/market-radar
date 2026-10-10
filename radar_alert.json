@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T20:08:47.076586+00:00",
+  "generated_at": "2026-10-10T20:28:06.329073+00:00",
   "potential_signals": [
     {
       "ticker": "MSTR",
@@ -895,244 +895,12 @@
         "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "ARB",
-      "name": "Arbitrum",
-      "coin_id": "arbitrum",
-      "asset_type": "crypto",
-      "price": 0.1672,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 4.32999,
-      "change_1h": 0.3807,
-      "acceleration": 0.20028375,
-      "discovery_route": "recent_momentum",
-      "change_7d": -6.4395,
-      "volume": 96601248.0,
-      "dollar_volume": 96601248.0,
-      "market_cap": 1131886666,
-      "session": "24/7",
-      "observed_at": "2026-10-10T20:05:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-10T20:07:55.741831+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.1668,
-      "support": 0.1663,
-      "momentum_pct": 0.48076923076922906,
-      "reference_price": 0.1664822132062002,
-      "extension_pct": 0.4311492380935311,
-      "resistance_1": 0.1675,
-      "resistance_2": 0.1682,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.1668,
-            "support": 0.1664,
-            "resistance_1": 0.167,
-            "resistance_2": 0.1679,
-            "momentum_pct": 0.48076923076922906,
-            "extension_pct": 0.4311492380935311,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.1664,
-              "measured_height": 0.0015000000000000013,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.16715,
-                0.1679
-              ],
-              "overhead_levels": [
-                0.167,
-                0.1671,
-                0.1672,
-                0.1675
-              ]
-            },
-            "observed_at": "2026-10-10T20:05:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-10T18:05:00+00:00",
-              "range_end": "2026-10-10T19:30:00+00:00",
-              "range_high": 0.1664,
-              "range_low": 0.1649,
-              "retest_low": 0.1664,
-              "breakout_close": 0.1667,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.10529168717606499,
-        "observed_at": "2026-10-10T20:05:00+00:00"
-      },
-      "structure_observed_at": "2026-10-10T20:05:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "ARBEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 8
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.1668,
-          "support": 0.1664,
-          "resistance_1": 0.167,
-          "resistance_2": 0.1679,
-          "momentum_pct": 0.48076923076922906,
-          "extension_pct": 0.4311492380935311,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.1664,
-            "measured_height": 0.0015000000000000013,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.16715,
-              0.1679
-            ],
-            "overhead_levels": [
-              0.167,
-              0.1671,
-              0.1672,
-              0.1675
-            ]
-          },
-          "observed_at": "2026-10-10T20:05:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-10T18:05:00+00:00",
-            "range_end": "2026-10-10T19:30:00+00:00",
-            "range_high": 0.1664,
-            "range_low": 0.1649,
-            "retest_low": 0.1664,
-            "breakout_close": 0.1667,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.1668,
-              "support": 0.1664,
-              "resistance_1": 0.167,
-              "resistance_2": 0.1679,
-              "momentum_pct": 0.48076923076922906,
-              "extension_pct": 0.4311492380935311,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.1664,
-                "measured_height": 0.0015000000000000013,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.16715,
-                  0.1679
-                ],
-                "overhead_levels": [
-                  0.167,
-                  0.1671,
-                  0.1672,
-                  0.1675
-                ]
-              },
-              "observed_at": "2026-10-10T20:05:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-10T18:05:00+00:00",
-                "range_end": "2026-10-10T19:30:00+00:00",
-                "range_high": 0.1664,
-                "range_low": 0.1649,
-                "retest_low": 0.1664,
-                "breakout_close": 0.1667,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
     }
   ],
-  "changed_signals": [
+  "changed_signals": [],
+  "invalidated_signals": [
     "crypto:arbitrum"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1151,7 +919,7 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 161,
+        "headlines_received": 156,
         "matched_events": 7,
         "matched_assets": 7,
         "failed_queries": 0,
@@ -1238,14 +1006,14 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T20:07:55.741831+00:00",
+        "checked_at": "2026-10-10T20:27:15.577581+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T20:07:55.741831+00:00"
+        "checked_at": "2026-10-10T20:27:15.577581+00:00"
       }
     },
     "news": {
