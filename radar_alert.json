@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T07:10:03.235082+00:00",
+  "generated_at": "2026-10-10T08:48:30.656542+00:00",
   "potential_signals": [
     {
       "ticker": "TEVA",
@@ -368,136 +368,6 @@
             "status": "NOT_EVALUATED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "SMP",
-      "name": "Standard Motor Products",
-      "asset_type": "stock",
-      "price": 36.67,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -1.13239,
-      "volume": 87107.0,
-      "dollar_volume": 3194213.69,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 2.378,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Standard Motor Products, Inc. Announces Chief Financial Officer Transition and Third Quarter 2026 Earnings Conference Call",
-        "link": "https://www.prnewswire.com/news-releases/standard-motor-products-inc-announces-chief-financial-officer-transition-and-third-quarter-2026-earnings-conference-call-302903845.html",
-        "published_at": "2026-10-09T20:30:00+00:00",
-        "source": "PR Newswire issuer releases",
-        "source_kind": "direct_announcement_feed",
-        "feed_url": "https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss",
-        "id": "f8d01fb5885359b38eca",
-        "type": "earnings",
-        "age_hours": 8.31,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Standard Motor Products, Inc. Announces Chief Financial Officer Transition and Third Quarter 2026 Earnings Conference Call",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Standard Motor Products, Inc. Announces Chief Financial Officer Transition and Third Quarter 2026 Earnings Conference Call",
-            "link": "https://www.prnewswire.com/news-releases/standard-motor-products-inc-announces-chief-financial-officer-transition-and-third-quarter-2026-earnings-conference-call-302903845.html",
-            "published_at": "2026-10-09T20:30:00+00:00",
-            "source": "PR Newswire issuer releases",
-            "source_kind": "direct_announcement_feed",
-            "feed_url": "https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss",
-            "id": "f8d01fb5885359b38eca",
-            "type": "earnings",
-            "age_hours": 8.31,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-10T04:48:46.193265+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SMP_US_EQ",
-        "isin": "US8536661056",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
@@ -1024,11 +894,238 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
+    },
+    {
+      "symbol": "QNT",
+      "name": "Quant",
+      "coin_id": "quant-network",
+      "asset_type": "crypto",
+      "price": 224.58,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 3.6553,
+      "change_1h": 0.5411,
+      "acceleration": 0.38879583333333334,
+      "discovery_route": "recent_momentum",
+      "change_7d": -3.6329,
+      "volume": 106883100.0,
+      "dollar_volume": 106883100.0,
+      "market_cap": 3269491622,
+      "session": "24/7",
+      "observed_at": "2026-10-10T08:45:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-10T08:47:42.052848+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 223.52,
+      "support": 221.0,
+      "momentum_pct": 0.8713618397413025,
+      "reference_price": 223.5514094059244,
+      "extension_pct": 0.4601136699647901,
+      "resistance_1": 224.82,
+      "resistance_2": 225.5,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 223.52,
+            "support": 222.48,
+            "resistance_1": 223.89,
+            "resistance_2": 224.58,
+            "momentum_pct": 0.8713618397413025,
+            "extension_pct": 0.4601136699647901,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 222.48,
+              "measured_height": 3.3700000000000045,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                224.165,
+                225.85
+              ],
+              "overhead_levels": [
+                223.89,
+                223.98,
+                224.0,
+                224.02
+              ]
+            },
+            "observed_at": "2026-10-10T08:45:00+00:00",
+            "evidence": {
+              "impulse_high": 223.0,
+              "impulse_low": 219.63,
+              "pullback_low": 222.48,
+              "ema9": 222.6897422474259,
+              "ema21": 221.43871633189653,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 5.644888546874824,
+        "observed_at": "2026-10-10T08:45:00+00:00"
+      },
+      "structure_observed_at": "2026-10-10T08:45:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "QNTEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 6
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "TREND_PULLBACK_RECLAIM",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "TREND_PULLBACK_RECLAIM",
+          "entry": 223.52,
+          "support": 222.48,
+          "resistance_1": 223.89,
+          "resistance_2": 224.58,
+          "momentum_pct": 0.8713618397413025,
+          "extension_pct": 0.4601136699647901,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 222.48,
+            "measured_height": 3.3700000000000045,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              224.165,
+              225.85
+            ],
+            "overhead_levels": [
+              223.89,
+              223.98,
+              224.0,
+              224.02
+            ]
+          },
+          "observed_at": "2026-10-10T08:45:00+00:00",
+          "evidence": {
+            "impulse_high": 223.0,
+            "impulse_low": 219.63,
+            "pullback_low": 222.48,
+            "ema9": 222.6897422474259,
+            "ema21": 221.43871633189653,
+            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 223.52,
+              "support": 222.48,
+              "resistance_1": 223.89,
+              "resistance_2": 224.58,
+              "momentum_pct": 0.8713618397413025,
+              "extension_pct": 0.4601136699647901,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 222.48,
+                "measured_height": 3.3700000000000045,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  224.165,
+                  225.85
+                ],
+                "overhead_levels": [
+                  223.89,
+                  223.98,
+                  224.0,
+                  224.02
+                ]
+              },
+              "observed_at": "2026-10-10T08:45:00+00:00",
+              "evidence": {
+                "impulse_high": 223.0,
+                "impulse_low": 219.63,
+                "pullback_low": 222.48,
+                "ema9": 222.6897422474259,
+                "ema21": 221.43871633189653,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
+      }
     }
   ],
-  "changed_signals": [],
+  "changed_signals": [
+    "crypto:quant-network"
+  ],
   "invalidated_signals": [
-    "crypto:layerzero"
+    "stock:SMP"
   ],
   "health": {
     "stocks": {
@@ -1049,8 +1146,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 170,
-        "matched_events": 8,
-        "matched_assets": 8,
+        "matched_events": 7,
+        "matched_assets": 7,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1072,14 +1169,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5904,
-      "discovered_candidates": 8,
+      "discovered_candidates": 7,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 7,
+      "shortlisted_candidates": 6,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 7,
-      "selected_candidates": 7,
+      "catalyst_selected": 6,
+      "selected_candidates": 6,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1087,7 +1184,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 6,
       "chart_failures": 0
     },
     "crypto": {
@@ -1098,14 +1195,14 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
-      "history_requested": 12,
-      "history_received": 12,
+      "history_requested": 9,
+      "history_received": 9,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 0,
+      "history_not_requested": 3,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -1135,18 +1232,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T07:09:13.152484+00:00",
+        "checked_at": "2026-10-10T08:47:42.052848+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T07:09:13.152484+00:00"
+        "checked_at": "2026-10-10T08:47:42.052848+00:00"
       }
     },
     "news": {
-      "checked": 19,
+      "checked": 18,
       "failed": 0
     }
   },
