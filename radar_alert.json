@@ -1,8 +1,136 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T23:27:30.246106+00:00",
+  "generated_at": "2026-10-10T23:41:34.838036+00:00",
   "potential_signals": [
+    {
+      "ticker": "NEOG",
+      "name": "Neogen",
+      "asset_type": "stock",
+      "price": 11.85,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.19556,
+      "volume": 3641042.0,
+      "dollar_volume": 43146347.699999996,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.6,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
+        "source": "Seeking Alpha",
+        "published_at": "2026-10-10T23:05:58+00:00",
+        "id": "079691d3b4c01556761e",
+        "type": "earnings",
+        "age_hours": 0.58,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
+            "source": "Seeking Alpha",
+            "published_at": "2026-10-10T23:05:58+00:00",
+            "id": "079691d3b4c01556761e",
+            "type": "earnings",
+            "age_hours": 0.58,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-10T23:40:43.963328+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "NEOG_US_EQ",
+        "isin": "US6404911066",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "IIPR",
       "name": "Innovative Industrial Properties",
@@ -386,10 +514,10 @@
       }
     }
   ],
-  "changed_signals": [],
-  "invalidated_signals": [
-    "crypto:sentient"
+  "changed_signals": [
+    "stock:NEOG"
   ],
+  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -399,19 +527,18 @@
       "directory_errors": [],
       "snapshots": {
         "provider_total": 7734,
-        "snapshot_records": 4500,
-        "pagination_complete": false,
+        "snapshot_records": 7734,
+        "pagination_complete": true,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout",
-          "Quote page failed at offset 4500: Timeout"
+          "Nasdaq screener failed: ReadTimeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 154,
-        "matched_events": 4,
-        "matched_assets": 4,
+        "headlines_received": 155,
+        "matched_events": 5,
+        "matched_assets": 5,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -432,23 +559,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 3486,
-      "discovered_candidates": 4,
+      "listed_snapshot_records": 5891,
+      "discovered_candidates": 5,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 3,
+      "shortlisted_candidates": 4,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 3,
-      "selected_candidates": 3,
+      "catalyst_selected": 4,
+      "selected_candidates": 4,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 2464,
+      "unquoted_listings": 59,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 3,
+      "history_not_requested": 4,
       "chart_failures": 0
     },
     "crypto": {
@@ -496,18 +623,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T23:26:16.054183+00:00",
+        "checked_at": "2026-10-10T23:40:43.963328+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T23:26:16.054183+00:00"
+        "checked_at": "2026-10-10T23:40:43.963328+00:00"
       }
     },
     "news": {
-      "checked": 15,
+      "checked": 16,
       "failed": 0
     }
   },
