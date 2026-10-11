@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-11T19:29:17.225037+00:00",
+  "generated_at": "2026-10-11T19:44:58.685195+00:00",
   "potential_signals": [
     {
       "ticker": "DOCS",
@@ -86,516 +86,6 @@
         "reasons": [
           "notional liquidity"
         ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "BBIO",
-      "name": "BridgeBio Pharma",
-      "asset_type": "stock",
-      "price": 65.35,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.47662604,
-      "volume": 1846508.0,
-      "dollar_volume": 120669297.79999998,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 10.685,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "BridgeBio Pharma (BBIO) Reports Positive Phase 3 Trial Results f - GuruFocus",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS0xjdDJybnEzaHM5X1daT1IwcGRINnJLbDkyaDNrZnZJZWpCblRaaUZnSFJSVUdsRzRseXNWaEtxY3BFRGp0TG8wSzV3ZWJjTzRGMHU5WkhtZ25zTnBwUnliSkkyWTJoVDc4VXRWTDBVemRXUmhtZFQzMlZIcTZZeFU0dk5XSWRaX2JDVi0zXzJRdE9vMHJnSE5hUmg1d3U5UTJINjBOVnlzbWFvODBiSkJ3dw?oc=5",
-        "source": "GuruFocus",
-        "published_at": "2026-10-11T17:25:17+00:00",
-        "id": "1d7b26b7e20857f67767",
-        "type": "regulatory",
-        "age_hours": 0.04,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "BridgeBio Pharma (BBIO) Reports Positive Phase 3 Trial Results f - GuruFocus",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "BridgeBio Pharma (BBIO) Reports Positive Phase 3 Trial Results f - GuruFocus",
-            "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS0xjdDJybnEzaHM5X1daT1IwcGRINnJLbDkyaDNrZnZJZWpCblRaaUZnSFJSVUdsRzRseXNWaEtxY3BFRGp0TG8wSzV3ZWJjTzRGMHU5WkhtZ25zTnBwUnliSkkyWTJoVDc4VXRWTDBVemRXUmhtZFQzMlZIcTZZeFU0dk5XSWRaX2JDVi0zXzJRdE9vMHJnSE5hUmg1d3U5UTJINjBOVnlzbWFvODBiSkJ3dw?oc=5",
-            "source": "GuruFocus",
-            "published_at": "2026-10-11T17:25:17+00:00",
-            "id": "1d7b26b7e20857f67767",
-            "type": "regulatory",
-            "age_hours": 0.04,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-11T17:27:38.976004+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BBIO_US_EQ",
-        "isin": "US10806X1028",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "ALOY",
-      "name": "REalloys",
-      "asset_type": "stock",
-      "price": 7.32,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -3.43008,
-      "volume": 1972040.0,
-      "dollar_volume": 14435332.8,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 0.78,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "REalloys (NASDAQ: ALOY) Announces Landmark Partnership Agreement with The United States Army & Army\u2019s Strategic Capital Initiatives to Operate Processing Facilities on The Tooele Army Base in Utah - Stocktwits",
-        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQbnRueW9FVXZHMGF4YjRZX096V3VReVJSM2NyTDZxc2dBT0NFZHpjc01MOTdzSkJxVFZ0dUlpVGxQVFh4YTNwRzFZZVFZY1VXblFYYVRRWGR4aW9mNko3bFMwM3VwQ3p2bS1FQ3JlWk1wbnNqXzRZaWU1VXFpYWIxUld4Sy1mZ21TT0ZwMXJiV216N2RkTU9sSTZvNUFMNFRxZzNmbTRoczVjalcwMFlOSkFVWjI1UWkyaDZENG9XUG9TUFExTFY0ZVFwVW1FSDg4bUt4LTk5Z1VSRmpjZzlKYXNabGlKNC1tNlh3Y2M5RHZKQ0RmSTNnTERsY1VwenFjbHAySmV5cENzQ3N5S1Z2Uzh2ZWRfUWZnU0xMV2FIdGZhVjFsWmRucF9MOWpwV0NmQXlsWWVsT2NzR2ZKUlhGbjRrME1pZjV0TTNxdnpsQXgyQ25SRVoxLWFJcjJYbHdsaG45Nmsya1llQ0owNVZwYTQ5SVoyMW1x?oc=5",
-        "source": "Stocktwits",
-        "published_at": "2026-10-11T08:01:27+00:00",
-        "id": "1abfde8e04a12333c95c",
-        "type": "partnership",
-        "age_hours": 7.9,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "REalloys (NASDAQ: ALOY) Announces Landmark Partnership Agreement with The United States Army & Army\u2019s Strategic Capital Initiatives to Operate Processing Facilities on The Tooele Army Base in Utah - Stocktwits",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "REalloys (NASDAQ: ALOY) Announces Landmark Partnership Agreement with The United States Army & Army\u2019s Strategic Capital Initiatives to Operate Processing Facilities on The Tooele Army Base in Utah - Stocktwits",
-            "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQbnRueW9FVXZHMGF4YjRZX096V3VReVJSM2NyTDZxc2dBT0NFZHpjc01MOTdzSkJxVFZ0dUlpVGxQVFh4YTNwRzFZZVFZY1VXblFYYVRRWGR4aW9mNko3bFMwM3VwQ3p2bS1FQ3JlWk1wbnNqXzRZaWU1VXFpYWIxUld4Sy1mZ21TT0ZwMXJiV216N2RkTU9sSTZvNUFMNFRxZzNmbTRoczVjalcwMFlOSkFVWjI1UWkyaDZENG9XUG9TUFExTFY0ZVFwVW1FSDg4bUt4LTk5Z1VSRmpjZzlKYXNabGlKNC1tNlh3Y2M5RHZKQ0RmSTNnTERsY1VwenFjbHAySmV5cENzQ3N5S1Z2Uzh2ZWRfUWZnU0xMV2FIdGZhVjFsWmRucF9MOWpwV0NmQXlsWWVsT2NzR2ZKUlhGbjRrME1pZjV0TTNxdnpsQXgyQ25SRVoxLWFJcjJYbHdsaG45Nmsya1llQ0owNVZwYTQ5SVoyMW1x?oc=5",
-            "source": "Stocktwits",
-            "published_at": "2026-10-11T08:01:27+00:00",
-            "id": "1abfde8e04a12333c95c",
-            "type": "partnership",
-            "age_hours": 7.9,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-11T15:55:23.084450+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BLBX_US_EQ",
-        "isin": "US75606V1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "IIPR",
-      "name": "Innovative Industrial Properties",
-      "asset_type": "stock",
-      "price": 51.83,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.173337,
-      "volume": 207391.0,
-      "dollar_volume": 10749075.53,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:02:52+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": true,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 5.954,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Innovative Industrial Properties Prices $50 Million Preferred Stock Offering - Pulse 2.0",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc01rWndOb0N1djJmcjRuU3djTkRtdmctLU9STFhiUjhmWFZDLUstdFVvQWVlRDIzVXd4YnZZd3ZiRjRMLUozczE3VWl4VUhsODVKSmlmTHVfaUxxNm9PTXFQNV9aMm9FclBwUjAzTmUyN1ZzbndPcEN2VWEtZkU3U0Y2ckg4dkRLU2xqblAzUTFnVHUtc0ZxRXFmMNIBoAFBVV95cUxQeENUR0Q2UllGd3B2cEI2VG5pUHd1dnpIRDBzRjh3aUcwcnpLdXg0U2FVSjdPb05PdV85ZEhpbnhmeWxOR0VEV05FS0JzRjE3c0hzRVZ4N2d1UE5rYzZ6dDRBNzFuYXpZZFZPYkdtQUtMbGZ3RWU4Vm5Bei04ZWVSSnJ3Z0UwNS1sLW1nNmFzUENRYVdpVGF6MzRqWDZLVFZv?oc=5",
-        "source": "Pulse 2.0",
-        "published_at": "2026-10-10T19:42:17+00:00",
-        "id": "f203da89245cab545d4a",
-        "type": "financing",
-        "age_hours": 22.02,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Innovative Industrial Properties Prices $50 Million Preferred Stock Offering - Pulse 2.0",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Innovative Industrial Properties Prices $50 Million Preferred Stock Offering - Pulse 2.0",
-            "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc01rWndOb0N1djJmcjRuU3djTkRtdmctLU9STFhiUjhmWFZDLUstdFVvQWVlRDIzVXd4YnZZd3ZiRjRMLUozczE3VWl4VUhsODVKSmlmTHVfaUxxNm9PTXFQNV9aMm9FclBwUjAzTmUyN1ZzbndPcEN2VWEtZkU3U0Y2ckg4dkRLU2xqblAzUTFnVHUtc0ZxRXFmMNIBoAFBVV95cUxQeENUR0Q2UllGd3B2cEI2VG5pUHd1dnpIRDBzRjh3aUcwcnpLdXg0U2FVSjdPb05PdV85ZEhpbnhmeWxOR0VEV05FS0JzRjE3c0hzRVZ4N2d1UE5rYzZ6dDRBNzFuYXpZZFZPYkdtQUtMbGZ3RWU4Vm5Bei04ZWVSSnJ3Z0UwNS1sLW1nNmFzUENRYVdpVGF6MzRqWDZLVFZv?oc=5",
-            "source": "Pulse 2.0",
-            "published_at": "2026-10-10T19:42:17+00:00",
-            "id": "f203da89245cab545d4a",
-            "type": "financing",
-            "age_hours": 22.02,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-11T17:43:18.654952+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "IIPR_US_EQ",
-        "isin": "US45781V1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "IDAI",
-      "name": "T Stamp",
-      "asset_type": "stock",
-      "price": 3.38,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.29498497,
-      "volume": 32723.0,
-      "dollar_volume": 110603.73999999999,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 2.874,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
-        "source": "The Globe and Mail",
-        "published_at": "2026-10-10T21:15:23+00:00",
-        "id": "f8772c13dc55c916f84d",
-        "type": "product_launch",
-        "age_hours": 20.47,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
-            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
-            "source": "The Globe and Mail",
-            "published_at": "2026-10-10T21:15:23+00:00",
-            "id": "f8772c13dc55c916f84d",
-            "type": "product_launch",
-            "age_hours": 20.47,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-11T17:43:18.654952+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "IDAI_US_EQ",
-        "isin": "US8730485088",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
       },
       "qualification": {
         "status": "CATALYST WATCH",
@@ -770,37 +260,37 @@
       }
     },
     {
-      "ticker": "RGP",
-      "name": "Resources Connection",
+      "ticker": "BBIO",
+      "name": "BridgeBio Pharma",
       "asset_type": "stock",
-      "price": 2.83,
+      "price": 65.35,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": -5.35117,
-      "volume": 882276.0,
-      "dollar_volume": 2496841.08,
+      "change": 0.47662604,
+      "volume": 1846508.0,
+      "dollar_volume": 120669297.79999998,
       "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
+      "observed_at": "2026-10-09T20:00:01+00:00",
       "source": "Yahoo broad exchange snapshot",
       "discovery_route": "catalyst_first",
       "selection_evidence": {
         "fresh_publication": true,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": -0.662,
+        "snapshot_score": 10.685,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Resources Connection, Inc. (NASDAQ:RGP) Just Reported Earnings, And Analysts Cut Their Target Price - Simply Wall Street",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTVlmRmxsUUZPS3B6bDcwWUVqQ1Atcl9sNHo4V044Ri1aVHd6ajUyMVhJaU9rV1ktQU5XUVZ0QU9VZ0tkVDNvZ0JaMk1pWEIwVG8zdXRJYWtIclpYWXR6eGM4amxMZ1NPckFXZlVFNmFBaEFRY052dzRLZGhRck5GX1RiZTRYanhDT2x1TnVuaThQTjZleDhJZHA1cVdqbkt1RThQeDVISk1PY21SWFNaVERBUnFPNk9WWmp6WnNBNV9OT3I1SG9wV1BCWVllaHQtdnNmZ2pvd3pvR3dWNkhJLWFHMNIB6AFBVV95cUxNUk9BSmJOTkJpYjlMaW9wamJNMVEwUjdBUmxfd3VBX3lkcWZBQnpLS2tRSlFjamttTXhNTUdOUUVQcDlTb3ZpV0ZDbldfMFhrQ0M5LVd6RDd2MTQ2dnlYbTZqUTZDUGRHTnBkXzVCd1RTQzVfaU5wcGxjUUQ0OHh5MlNkdUtfVmxTcWZUM09MV2pXWlF1VTZfdmpKYUJ0SVptcXhOWFM4SnNhTU5iQUo4eUoxU2txZzQ0QmJCMHV5YmVXbm16ajFBdWFhcDZuX1R3YnRMLVhQRWc3TjlGdWtvbGVMTi1YeDRy?oc=5",
-        "source": "Simply Wall Street",
-        "published_at": "2026-10-11T12:33:25+00:00",
-        "id": "bd998d246c61b3c8ea76",
-        "type": "earnings",
-        "age_hours": 0.12,
+        "title": "BridgeBio Pharma (BBIO) Unveils Promising Phase 3 Data for Acora - GuruFocus",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQREFfODlvRUFJbVRUWTlld3dRRnpjbjI0LWJRaGVVMlNhWnFRY052RmtscXVmbU5xSjZBajZZcGJ5SWkyVnN2cGVSV3Rld0dwT1dISVZfdzA5ek53OC1YeC1USXFGN0ZDTEFhNUl5SUZHLUdGVWhfNHBnNTVKWnVLOW5aMlc5U0lfZDFfT18zQk1uWDBaWjY3S3hEYi1BZXdOd3NyYngwNUlhNnl2R0VNLV9fRnZPZ1k?oc=5",
+        "source": "GuruFocus",
+        "published_at": "2026-10-11T19:37:35+00:00",
+        "id": "3ad435cab07f973a1795",
+        "type": "product_launch",
+        "age_hours": 0.11,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -809,17 +299,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Resources Connection, Inc. (NASDAQ:RGP) Just Reported Earnings, And Analysts Cut Their Target Price - Simply Wall Street",
+        "summary": "BridgeBio Pharma (BBIO) Unveils Promising Phase 3 Data for Acora - GuruFocus",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Resources Connection, Inc. (NASDAQ:RGP) Just Reported Earnings, And Analysts Cut Their Target Price - Simply Wall Street",
-            "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTVlmRmxsUUZPS3B6bDcwWUVqQ1Atcl9sNHo4V044Ri1aVHd6ajUyMVhJaU9rV1ktQU5XUVZ0QU9VZ0tkVDNvZ0JaMk1pWEIwVG8zdXRJYWtIclpYWXR6eGM4amxMZ1NPckFXZlVFNmFBaEFRY052dzRLZGhRck5GX1RiZTRYanhDT2x1TnVuaThQTjZleDhJZHA1cVdqbkt1RThQeDVISk1PY21SWFNaVERBUnFPNk9WWmp6WnNBNV9OT3I1SG9wV1BCWVllaHQtdnNmZ2pvd3pvR3dWNkhJLWFHMNIB6AFBVV95cUxNUk9BSmJOTkJpYjlMaW9wamJNMVEwUjdBUmxfd3VBX3lkcWZBQnpLS2tRSlFjamttTXhNTUdOUUVQcDlTb3ZpV0ZDbldfMFhrQ0M5LVd6RDd2MTQ2dnlYbTZqUTZDUGRHTnBkXzVCd1RTQzVfaU5wcGxjUUQ0OHh5MlNkdUtfVmxTcWZUM09MV2pXWlF1VTZfdmpKYUJ0SVptcXhOWFM4SnNhTU5iQUo4eUoxU2txZzQ0QmJCMHV5YmVXbm16ajFBdWFhcDZuX1R3YnRMLVhQRWc3TjlGdWtvbGVMTi1YeDRy?oc=5",
-            "source": "Simply Wall Street",
-            "published_at": "2026-10-11T12:33:25+00:00",
-            "id": "bd998d246c61b3c8ea76",
-            "type": "earnings",
-            "age_hours": 0.12,
+            "title": "BridgeBio Pharma (BBIO) Unveils Promising Phase 3 Data for Acora - GuruFocus",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQREFfODlvRUFJbVRUWTlld3dRRnpjbjI0LWJRaGVVMlNhWnFRY052RmtscXVmbU5xSjZBajZZcGJ5SWkyVnN2cGVSV3Rld0dwT1dISVZfdzA5ek53OC1YeC1USXFGN0ZDTEFhNUl5SUZHLUdGVWhfNHBnNTVKWnVLOW5aMlc5U0lfZDFfT18zQk1uWDBaWjY3S3hEYi1BZXdOd3NyYngwNUlhNnl2R0VNLV9fRnZPZ1k?oc=5",
+            "source": "GuruFocus",
+            "published_at": "2026-10-11T19:37:35+00:00",
+            "id": "3ad435cab07f973a1795",
+            "type": "product_launch",
+            "age_hours": 0.11,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -837,19 +327,21 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-11T12:40:20.333622+00:00",
+        "checked_at": "2026-10-11T19:44:12.942179+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "RGP_US_EQ",
-        "isin": "US76122Q1058",
+        "broker_instrument_id": "BBIO_US_EQ",
+        "isin": "US10806X1028",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
-        "score": 0,
+        "score": 1,
         "label": "Research rank only",
-        "reasons": []
+        "reasons": [
+          "notional liquidity"
+        ]
       },
       "qualification": {
         "status": "CATALYST WATCH",
@@ -1152,232 +644,383 @@
       }
     },
     {
-      "symbol": "STRK",
-      "name": "Starknet",
-      "coin_id": "starknet",
-      "asset_type": "crypto",
-      "price": 0.10529,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 15.19246,
-      "change_1h": 2.8994,
-      "acceleration": 2.2663808333333333,
-      "discovery_route": "recent_momentum",
-      "change_7d": 112.4608,
-      "volume": 679322443.0,
-      "dollar_volume": 679322443.0,
-      "market_cap": 776727195,
-      "session": "24/7",
-      "observed_at": "2026-10-11T19:25:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-11T19:28:04.582275+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
+      "ticker": "ALOY",
+      "name": "REalloys",
+      "asset_type": "stock",
+      "price": 7.32,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -3.43008,
+      "volume": 1972040.0,
+      "dollar_volume": 14435332.8,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 0.78,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.10514,
-      "support": 0.10313,
-      "momentum_pct": 1.9856644711352178,
-      "reference_price": 0.1043457966496477,
-      "extension_pct": 0.904879142877757,
-      "resistance_1": 0.10555,
-      "resistance_2": 0.10589,
-      "chart_analysis": {
-        "setups": [
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "REalloys (NASDAQ: ALOY) Announces Landmark Partnership Agreement with The United States Army & Army\u2019s Strategic Capital Initiatives to Operate Processing Facilities on The Tooele Army Base in Utah - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQbnRueW9FVXZHMGF4YjRZX096V3VReVJSM2NyTDZxc2dBT0NFZHpjc01MOTdzSkJxVFZ0dUlpVGxQVFh4YTNwRzFZZVFZY1VXblFYYVRRWGR4aW9mNko3bFMwM3VwQ3p2bS1FQ3JlWk1wbnNqXzRZaWU1VXFpYWIxUld4Sy1mZ21TT0ZwMXJiV216N2RkTU9sSTZvNUFMNFRxZzNmbTRoczVjalcwMFlOSkFVWjI1UWkyaDZENG9XUG9TUFExTFY0ZVFwVW1FSDg4bUt4LTk5Z1VSRmpjZzlKYXNabGlKNC1tNlh3Y2M5RHZKQ0RmSTNnTERsY1VwenFjbHAySmV5cENzQ3N5S1Z2Uzh2ZWRfUWZnU0xMV2FIdGZhVjFsWmRucF9MOWpwV0NmQXlsWWVsT2NzR2ZKUlhGbjRrME1pZjV0TTNxdnpsQXgyQ25SRVoxLWFJcjJYbHdsaG45Nmsya1llQ0owNVZwYTQ5SVoyMW1x?oc=5",
+        "source": "Stocktwits",
+        "published_at": "2026-10-11T08:01:27+00:00",
+        "id": "1abfde8e04a12333c95c",
+        "type": "partnership",
+        "age_hours": 7.9,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "REalloys (NASDAQ: ALOY) Announces Landmark Partnership Agreement with The United States Army & Army\u2019s Strategic Capital Initiatives to Operate Processing Facilities on The Tooele Army Base in Utah - Stocktwits",
+        "eligible_for_points": false,
+        "headlines": [
           {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 0.10514,
-            "support": 0.10395,
-            "resistance_1": 0.10534,
-            "resistance_2": 0.10589,
-            "momentum_pct": 1.9856644711352178,
-            "extension_pct": 0.904879142877757,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.10395,
-              "measured_height": 0.0035700000000000037,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.105735,
-                0.10752
-              ],
-              "overhead_levels": [
-                0.10534,
-                0.10555,
-                0.10589,
-                0.10595
-              ]
-            },
-            "observed_at": "2026-10-11T19:25:00+00:00",
-            "evidence": {
-              "impulse_high": 0.10513,
-              "impulse_low": 0.10156,
-              "pullback_low": 0.10395,
-              "ema9": 0.10436713548578913,
-              "ema21": 0.10423563320781118,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
+            "title": "REalloys (NASDAQ: ALOY) Announces Landmark Partnership Agreement with The United States Army & Army\u2019s Strategic Capital Initiatives to Operate Processing Facilities on The Tooele Army Base in Utah - Stocktwits",
+            "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQbnRueW9FVXZHMGF4YjRZX096V3VReVJSM2NyTDZxc2dBT0NFZHpjc01MOTdzSkJxVFZ0dUlpVGxQVFh4YTNwRzFZZVFZY1VXblFYYVRRWGR4aW9mNko3bFMwM3VwQ3p2bS1FQ3JlWk1wbnNqXzRZaWU1VXFpYWIxUld4Sy1mZ21TT0ZwMXJiV216N2RkTU9sSTZvNUFMNFRxZzNmbTRoczVjalcwMFlOSkFVWjI1UWkyaDZENG9XUG9TUFExTFY0ZVFwVW1FSDg4bUt4LTk5Z1VSRmpjZzlKYXNabGlKNC1tNlh3Y2M5RHZKQ0RmSTNnTERsY1VwenFjbHAySmV5cENzQ3N5S1Z2Uzh2ZWRfUWZnU0xMV2FIdGZhVjFsWmRucF9MOWpwV0NmQXlsWWVsT2NzR2ZKUlhGbjRrME1pZjV0TTNxdnpsQXgyQ25SRVoxLWFJcjJYbHdsaG45Nmsya1llQ0owNVZwYTQ5SVoyMW1x?oc=5",
+            "source": "Stocktwits",
+            "published_at": "2026-10-11T08:01:27+00:00",
+            "id": "1abfde8e04a12333c95c",
+            "type": "partnership",
+            "age_hours": 7.9,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
           }
         ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.2884163409611141,
-        "observed_at": "2026-10-11T19:25:00+00:00"
-      },
-      "structure_observed_at": "2026-10-11T19:25:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "STRKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
+        "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "headlines_checked": 10
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T15:55:23.084450+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "BLBX_US_EQ",
+        "isin": "US75606V1017",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
-        "score": 4,
+        "score": 1,
         "label": "Research rank only",
         "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
+          "notional liquidity"
         ]
       },
       "qualification": {
-        "status": "TECHNICAL WATCH",
+        "status": "CATALYST WATCH",
         "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
-        "route": "CHART_LED",
-        "pattern": "TREND_PULLBACK_RECLAIM",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "TREND_PULLBACK_RECLAIM",
-          "entry": 0.10514,
-          "support": 0.10395,
-          "resistance_1": 0.10534,
-          "resistance_2": 0.10589,
-          "momentum_pct": 1.9856644711352178,
-          "extension_pct": 0.904879142877757,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.10395,
-            "measured_height": 0.0035700000000000037,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.105735,
-              0.10752
-            ],
-            "overhead_levels": [
-              0.10534,
-              0.10555,
-              0.10589,
-              0.10595
-            ]
-          },
-          "observed_at": "2026-10-11T19:25:00+00:00",
-          "evidence": {
-            "impulse_high": 0.10513,
-            "impulse_low": 0.10156,
-            "pullback_low": 0.10395,
-            "ema9": 0.10436713548578913,
-            "ema21": 0.10423563320781118,
-            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
         ],
+        "route": "CATALYST_LED",
         "assessments": [
           {
-            "status": "REJECTED",
+            "status": "NOT_EVALUATED",
             "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
             "route": "CATALYST_LED"
-          },
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "IDAI",
+      "name": "T Stamp",
+      "asset_type": "stock",
+      "price": 3.38,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.29498497,
+      "volume": 32723.0,
+      "dollar_volume": 110603.73999999999,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 2.874,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
+        "source": "The Globe and Mail",
+        "published_at": "2026-10-10T21:15:23+00:00",
+        "id": "f8772c13dc55c916f84d",
+        "type": "product_launch",
+        "age_hours": 20.47,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
+        "eligible_for_points": false,
+        "headlines": [
           {
-            "status": "TECHNICAL WATCH",
+            "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
+            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
+            "source": "The Globe and Mail",
+            "published_at": "2026-10-10T21:15:23+00:00",
+            "id": "f8772c13dc55c916f84d",
+            "type": "product_launch",
+            "age_hours": 20.47,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T17:43:18.654952+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "IDAI_US_EQ",
+        "isin": "US8730485088",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
             "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 0.10514,
-              "support": 0.10395,
-              "resistance_1": 0.10534,
-              "resistance_2": 0.10589,
-              "momentum_pct": 1.9856644711352178,
-              "extension_pct": 0.904879142877757,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.10395,
-                "measured_height": 0.0035700000000000037,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.105735,
-                  0.10752
-                ],
-                "overhead_levels": [
-                  0.10534,
-                  0.10555,
-                  0.10589,
-                  0.10595
-                ]
-              },
-              "observed_at": "2026-10-11T19:25:00+00:00",
-              "evidence": {
-                "impulse_high": 0.10513,
-                "impulse_low": 0.10156,
-                "pullback_low": 0.10395,
-                "ema9": 0.10436713548578913,
-                "ema21": 0.10423563320781118,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
           }
-        ]
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "RGP",
+      "name": "Resources Connection",
+      "asset_type": "stock",
+      "price": 2.83,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -5.35117,
+      "volume": 882276.0,
+      "dollar_volume": 2496841.08,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -0.662,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Resources Connection, Inc. (NASDAQ:RGP) Just Reported Earnings, And Analysts Cut Their Target Price - Simply Wall Street",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTVlmRmxsUUZPS3B6bDcwWUVqQ1Atcl9sNHo4V044Ri1aVHd6ajUyMVhJaU9rV1ktQU5XUVZ0QU9VZ0tkVDNvZ0JaMk1pWEIwVG8zdXRJYWtIclpYWXR6eGM4amxMZ1NPckFXZlVFNmFBaEFRY052dzRLZGhRck5GX1RiZTRYanhDT2x1TnVuaThQTjZleDhJZHA1cVdqbkt1RThQeDVISk1PY21SWFNaVERBUnFPNk9WWmp6WnNBNV9OT3I1SG9wV1BCWVllaHQtdnNmZ2pvd3pvR3dWNkhJLWFHMNIB6AFBVV95cUxNUk9BSmJOTkJpYjlMaW9wamJNMVEwUjdBUmxfd3VBX3lkcWZBQnpLS2tRSlFjamttTXhNTUdOUUVQcDlTb3ZpV0ZDbldfMFhrQ0M5LVd6RDd2MTQ2dnlYbTZqUTZDUGRHTnBkXzVCd1RTQzVfaU5wcGxjUUQ0OHh5MlNkdUtfVmxTcWZUM09MV2pXWlF1VTZfdmpKYUJ0SVptcXhOWFM4SnNhTU5iQUo4eUoxU2txZzQ0QmJCMHV5YmVXbm16ajFBdWFhcDZuX1R3YnRMLVhQRWc3TjlGdWtvbGVMTi1YeDRy?oc=5",
+        "source": "Simply Wall Street",
+        "published_at": "2026-10-11T12:33:25+00:00",
+        "id": "bd998d246c61b3c8ea76",
+        "type": "earnings",
+        "age_hours": 0.12,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Resources Connection, Inc. (NASDAQ:RGP) Just Reported Earnings, And Analysts Cut Their Target Price - Simply Wall Street",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Resources Connection, Inc. (NASDAQ:RGP) Just Reported Earnings, And Analysts Cut Their Target Price - Simply Wall Street",
+            "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTVlmRmxsUUZPS3B6bDcwWUVqQ1Atcl9sNHo4V044Ri1aVHd6ajUyMVhJaU9rV1ktQU5XUVZ0QU9VZ0tkVDNvZ0JaMk1pWEIwVG8zdXRJYWtIclpYWXR6eGM4amxMZ1NPckFXZlVFNmFBaEFRY052dzRLZGhRck5GX1RiZTRYanhDT2x1TnVuaThQTjZleDhJZHA1cVdqbkt1RThQeDVISk1PY21SWFNaVERBUnFPNk9WWmp6WnNBNV9OT3I1SG9wV1BCWVllaHQtdnNmZ2pvd3pvR3dWNkhJLWFHMNIB6AFBVV95cUxNUk9BSmJOTkJpYjlMaW9wamJNMVEwUjdBUmxfd3VBX3lkcWZBQnpLS2tRSlFjamttTXhNTUdOUUVQcDlTb3ZpV0ZDbldfMFhrQ0M5LVd6RDd2MTQ2dnlYbTZqUTZDUGRHTnBkXzVCd1RTQzVfaU5wcGxjUUQ0OHh5MlNkdUtfVmxTcWZUM09MV2pXWlF1VTZfdmpKYUJ0SVptcXhOWFM4SnNhTU5iQUo4eUoxU2txZzQ0QmJCMHV5YmVXbm16ajFBdWFhcDZuX1R3YnRMLVhQRWc3TjlGdWtvbGVMTi1YeDRy?oc=5",
+            "source": "Simply Wall Street",
+            "published_at": "2026-10-11T12:33:25+00:00",
+            "id": "bd998d246c61b3c8ea76",
+            "type": "earnings",
+            "age_hours": 0.12,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T12:40:20.333622+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RGP_US_EQ",
+        "isin": "US76122Q1058",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
       }
     },
     {
@@ -1511,9 +1154,12 @@
     }
   ],
   "changed_signals": [
+    "stock:BBIO"
+  ],
+  "invalidated_signals": [
+    "stock:IIPR",
     "crypto:starknet"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1523,19 +1169,18 @@
       "directory_errors": [],
       "snapshots": {
         "provider_total": 7735,
-        "snapshot_records": 3750,
-        "pagination_complete": false,
+        "snapshot_records": 7735,
+        "pagination_complete": true,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout",
-          "Quote page failed at offset 3750: Timeout"
+          "Nasdaq screener failed: ReadTimeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 166,
-        "matched_events": 10,
-        "matched_assets": 9,
+        "matched_events": 11,
+        "matched_assets": 8,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1556,23 +1201,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 2895,
-      "discovered_candidates": 9,
+      "listed_snapshot_records": 5892,
+      "discovered_candidates": 8,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 9,
+      "shortlisted_candidates": 8,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
-      "selected_candidates": 9,
+      "catalyst_selected": 8,
+      "selected_candidates": 8,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 3055,
+      "unquoted_listings": 58,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 9,
+      "history_not_requested": 8,
       "chart_failures": 0
     },
     "crypto": {
@@ -1620,18 +1265,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-11T19:28:04.582275+00:00",
+        "checked_at": "2026-10-11T19:44:12.942179+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-11T19:28:04.582275+00:00"
+        "checked_at": "2026-10-11T19:44:12.942179+00:00"
       }
     },
     "news": {
-      "checked": 20,
+      "checked": 19,
       "failed": 0
     }
   },
