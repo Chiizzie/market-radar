@@ -1,136 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-10T23:41:34.838036+00:00",
+  "generated_at": "2026-10-11T00:42:02.576613+00:00",
   "potential_signals": [
-    {
-      "ticker": "NEOG",
-      "name": "Neogen",
-      "asset_type": "stock",
-      "price": 11.85,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.19556,
-      "volume": 3641042.0,
-      "dollar_volume": 43146347.699999996,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.6,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
-        "source": "Seeking Alpha",
-        "published_at": "2026-10-10T23:05:58+00:00",
-        "id": "079691d3b4c01556761e",
-        "type": "earnings",
-        "age_hours": 0.58,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
-            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
-            "source": "Seeking Alpha",
-            "published_at": "2026-10-10T23:05:58+00:00",
-            "id": "079691d3b4c01556761e",
-            "type": "earnings",
-            "age_hours": 0.58,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-10T23:40:43.963328+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "NEOG_US_EQ",
-        "isin": "US6404911066",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "IIPR",
       "name": "Innovative Industrial Properties",
@@ -388,6 +260,134 @@
       }
     },
     {
+      "ticker": "NEOG",
+      "name": "Neogen",
+      "asset_type": "stock",
+      "price": 11.85,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.19556,
+      "volume": 3641042.0,
+      "dollar_volume": 43146347.699999996,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.6,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
+        "source": "Seeking Alpha",
+        "published_at": "2026-10-10T23:05:58+00:00",
+        "id": "079691d3b4c01556761e",
+        "type": "earnings",
+        "age_hours": 0.58,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
+            "source": "Seeking Alpha",
+            "published_at": "2026-10-10T23:05:58+00:00",
+            "id": "079691d3b4c01556761e",
+            "type": "earnings",
+            "age_hours": 0.58,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-10T23:40:43.963328+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "NEOG_US_EQ",
+        "isin": "US6404911066",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "TRUG",
       "name": "TruGolf Holdings",
       "asset_type": "stock",
@@ -512,10 +512,441 @@
         "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
+    },
+    {
+      "ticker": "TVTX",
+      "name": "Travere Therapeutics",
+      "asset_type": "stock",
+      "price": null,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0,
+      "volume": 0,
+      "dollar_volume": 0,
+      "session": "CLOSED",
+      "observed_at": null,
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 0.0,
+        "relative_volume_available": false,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+        "source": "Stocktwits",
+        "published_at": "2026-10-10T10:54:58+00:00",
+        "id": "67d93bb4132f96a100b2",
+        "type": "regulatory",
+        "age_hours": 13.76,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+            "source": "Stocktwits",
+            "published_at": "2026-10-10T10:54:58+00:00",
+            "id": "67d93bb4132f96a100b2",
+            "type": "regulatory",
+            "age_hours": 13.76,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T00:40:46.224383+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RTRX_US_EQ",
+        "isin": "US89422G1076",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price timestamp missing.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "price",
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price timestamp missing.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "price",
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "symbol": "INJ",
+      "name": "Injective",
+      "coin_id": "injective-protocol",
+      "asset_type": "crypto",
+      "price": 7.015,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 12.67723,
+      "change_1h": 0.7132,
+      "acceleration": 0.18498208333333332,
+      "discovery_route": "recent_momentum",
+      "change_7d": 0.0839,
+      "volume": 114719862.0,
+      "dollar_volume": 114719862.0,
+      "market_cap": 701587155,
+      "session": "24/7",
+      "observed_at": "2026-10-11T00:40:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-11T00:40:46.224383+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 6.996,
+      "support": 6.835,
+      "momentum_pct": 0.9497769463232109,
+      "reference_price": 6.924676041448976,
+      "extension_pct": 1.3043781111256703,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "RANGE_BREAKOUT_RETEST",
+            "entry": 6.996,
+            "support": 6.939,
+            "resistance_1": 7.0395,
+            "resistance_2": 7.1290000000000004,
+            "momentum_pct": 0.9497769463232109,
+            "extension_pct": 1.3043781111256703,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 6.95,
+              "measured_height": 0.17900000000000027,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                7.0395,
+                7.1290000000000004
+              ],
+              "overhead_levels": []
+            },
+            "observed_at": "2026-10-11T00:40:00+00:00",
+            "evidence": {
+              "range_start": "2026-10-10T22:40:00+00:00",
+              "range_end": "2026-10-11T00:05:00+00:00",
+              "range_high": 6.95,
+              "range_low": 6.771,
+              "retest_low": 6.939,
+              "breakout_close": 6.971,
+              "confirmation": "Break above range, hold/retest, bullish latest bar"
+            }
+          },
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 6.996,
+            "support": 6.939,
+            "resistance_1": 7.027,
+            "resistance_2": 7.115,
+            "momentum_pct": 0.9497769463232109,
+            "extension_pct": 1.3043781111256703,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 6.939,
+              "measured_height": 0.17600000000000016,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                7.027,
+                7.115
+              ],
+              "overhead_levels": []
+            },
+            "observed_at": "2026-10-11T00:40:00+00:00",
+            "evidence": {
+              "impulse_high": 6.981,
+              "impulse_low": 6.805,
+              "pullback_low": 6.939,
+              "ema9": 6.946966649906603,
+              "ema21": 6.891915132309257,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 0.42797082543507103,
+        "observed_at": "2026-10-11T00:40:00+00:00"
+      },
+      "structure_observed_at": "2026-10-11T00:40:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "INJEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 4
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "RANGE_BREAKOUT_RETEST",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "RANGE_BREAKOUT_RETEST",
+          "entry": 6.996,
+          "support": 6.939,
+          "resistance_1": 7.0395,
+          "resistance_2": 7.1290000000000004,
+          "momentum_pct": 0.9497769463232109,
+          "extension_pct": 1.3043781111256703,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 6.95,
+            "measured_height": 0.17900000000000027,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              7.0395,
+              7.1290000000000004
+            ],
+            "overhead_levels": []
+          },
+          "observed_at": "2026-10-11T00:40:00+00:00",
+          "evidence": {
+            "range_start": "2026-10-10T22:40:00+00:00",
+            "range_end": "2026-10-11T00:05:00+00:00",
+            "range_high": 6.95,
+            "range_low": 6.771,
+            "retest_low": 6.939,
+            "breakout_close": 6.971,
+            "confirmation": "Break above range, hold/retest, bullish latest bar"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "RANGE_BREAKOUT_RETEST",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "RANGE_BREAKOUT_RETEST",
+              "entry": 6.996,
+              "support": 6.939,
+              "resistance_1": 7.0395,
+              "resistance_2": 7.1290000000000004,
+              "momentum_pct": 0.9497769463232109,
+              "extension_pct": 1.3043781111256703,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 6.95,
+                "measured_height": 0.17900000000000027,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  7.0395,
+                  7.1290000000000004
+                ],
+                "overhead_levels": []
+              },
+              "observed_at": "2026-10-11T00:40:00+00:00",
+              "evidence": {
+                "range_start": "2026-10-10T22:40:00+00:00",
+                "range_end": "2026-10-11T00:05:00+00:00",
+                "range_high": 6.95,
+                "range_low": 6.771,
+                "retest_low": 6.939,
+                "breakout_close": 6.971,
+                "confirmation": "Break above range, hold/retest, bullish latest bar"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 6.996,
+              "support": 6.939,
+              "resistance_1": 7.027,
+              "resistance_2": 7.115,
+              "momentum_pct": 0.9497769463232109,
+              "extension_pct": 1.3043781111256703,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 6.939,
+                "measured_height": 0.17600000000000016,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  7.027,
+                  7.115
+                ],
+                "overhead_levels": []
+              },
+              "observed_at": "2026-10-11T00:40:00+00:00",
+              "evidence": {
+                "impulse_high": 6.981,
+                "impulse_low": 6.805,
+                "pullback_low": 6.939,
+                "ema9": 6.946966649906603,
+                "ema21": 6.891915132309257,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
+      }
     }
   ],
   "changed_signals": [
-    "stock:NEOG"
+    "stock:TVTX",
+    "crypto:injective-protocol"
   ],
   "invalidated_signals": [],
   "health": {
@@ -527,18 +958,19 @@
       "directory_errors": [],
       "snapshots": {
         "provider_total": 7734,
-        "snapshot_records": 7734,
-        "pagination_complete": true,
+        "snapshot_records": 4250,
+        "pagination_complete": false,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout"
+          "Nasdaq screener failed: ReadTimeout",
+          "Quote page failed at offset 4250: Timeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 155,
-        "matched_events": 5,
-        "matched_assets": 5,
+        "headlines_received": 161,
+        "matched_events": 6,
+        "matched_assets": 6,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -559,23 +991,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5891,
-      "discovered_candidates": 5,
+      "listed_snapshot_records": 3302,
+      "discovered_candidates": 6,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 4,
+      "shortlisted_candidates": 5,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 4,
-      "selected_candidates": 4,
+      "catalyst_selected": 5,
+      "selected_candidates": 5,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 59,
+      "unquoted_listings": 2648,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 4,
+      "history_not_requested": 5,
       "chart_failures": 0
     },
     "crypto": {
@@ -589,11 +1021,11 @@
       "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
-      "history_requested": 9,
-      "history_received": 9,
+      "history_requested": 10,
+      "history_received": 10,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 3,
+      "history_not_requested": 2,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -623,18 +1055,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-10T23:40:43.963328+00:00",
+        "checked_at": "2026-10-11T00:40:46.224383+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-10T23:40:43.963328+00:00"
+        "checked_at": "2026-10-11T00:40:46.224383+00:00"
       }
     },
     "news": {
-      "checked": 16,
+      "checked": 17,
       "failed": 0
     }
   },
