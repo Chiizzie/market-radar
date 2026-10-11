@@ -1,8 +1,136 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-11T08:48:42.604315+00:00",
+  "generated_at": "2026-10-11T09:10:15.820856+00:00",
   "potential_signals": [
+    {
+      "ticker": "IDAI",
+      "name": "T Stamp",
+      "asset_type": "stock",
+      "price": 3.38,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.294985,
+      "volume": 30722.0,
+      "dollar_volume": 103840.36,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 2.662,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
+        "source": "The Globe and Mail",
+        "published_at": "2026-10-10T21:15:23+00:00",
+        "id": "f8772c13dc55c916f84d",
+        "type": "product_launch",
+        "age_hours": 0.46,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
+            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
+            "source": "The Globe and Mail",
+            "published_at": "2026-10-10T21:15:23+00:00",
+            "id": "f8772c13dc55c916f84d",
+            "type": "product_launch",
+            "age_hours": 0.46,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-10T21:42:55.136336+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "IDAI_US_EQ",
+        "isin": "US8730485088",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "NEOG",
       "name": "Neogen",
@@ -114,6 +242,132 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TRUG",
+      "name": "TruGolf Holdings",
+      "asset_type": "stock",
+      "price": 1.89,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -26.1719,
+      "volume": 468769.0,
+      "dollar_volume": 885973.4099999999,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -18.238,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional Asset Tokenization - The Globe and Mail",
+        "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQMVl2QmRCUGNEQ3dIazI4aTl0aTJ2c09yYTJjSDByTzBhY3FuQVhYVGhNOHptcWs2NnZFcndza0p6dThhclBLOGxCb3V2cFVxaU5KOFloSVAxRzU4Z1hGNTJDVVZWcjlsTUJ2N0xZWVhnc0w1aXVjNkFlQ1ZXVEYzbC1VOVBWN2RKa3NpN2JXMENPcjFWYzJZcEduNDk3MG5qZkhuR3lzUkJNQzl1eGFxVHdpSXV6bVdkbTc3MEp4Q0hRaVViZTVqUEplaWdacmltX1EzZlRwWC04N2gyVUVXVlFTc2FIeEx2QWVVSTJUal9HS0pJdjJiTU8wQnp5LWdLVGVHZkVyNU5Qb2ktOWlsRFBnTU9PVTFUZDBWTG9ldnBRejUxRldn?oc=5",
+        "source": "The Globe and Mail",
+        "published_at": "2026-10-10T15:39:13+00:00",
+        "id": "a2896b182e79688bd4cc",
+        "type": "merger",
+        "age_hours": 2.86,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional Asset Tokenization - The Globe and Mail",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional Asset Tokenization - The Globe and Mail",
+            "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQMVl2QmRCUGNEQ3dIazI4aTl0aTJ2c09yYTJjSDByTzBhY3FuQVhYVGhNOHptcWs2NnZFcndza0p6dThhclBLOGxCb3V2cFVxaU5KOFloSVAxRzU4Z1hGNTJDVVZWcjlsTUJ2N0xZWVhnc0w1aXVjNkFlQ1ZXVEYzbC1VOVBWN2RKa3NpN2JXMENPcjFWYzJZcEduNDk3MG5qZkhuR3lzUkJNQzl1eGFxVHdpSXV6bVdkbTc3MEp4Q0hRaVViZTVqUEplaWdacmltX1EzZlRwWC04N2gyVUVXVlFTc2FIeEx2QWVVSTJUal9HS0pJdjJiTU8wQnp5LWdLVGVHZkVyNU5Qb2ktOWlsRFBnTU9PVTFUZDBWTG9ldnBRejUxRldn?oc=5",
+            "source": "The Globe and Mail",
+            "published_at": "2026-10-10T15:39:13+00:00",
+            "id": "a2896b182e79688bd4cc",
+            "type": "merger",
+            "age_hours": 2.86,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-10T18:30:46.215716+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "DMAQ_US_EQ",
+        "isin": "US2437336074",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "missing_fields": [
@@ -388,394 +642,244 @@
       }
     },
     {
-      "ticker": "IDAI",
-      "name": "T Stamp",
-      "asset_type": "stock",
-      "price": 3.38,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.294985,
-      "volume": 30722.0,
-      "dollar_volume": 103840.36,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 2.662,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
-        "source": "The Globe and Mail",
-        "published_at": "2026-10-10T21:15:23+00:00",
-        "id": "f8772c13dc55c916f84d",
-        "type": "product_launch",
-        "age_hours": 0.46,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "T Stamp Launches At-the-Market Equity Offering Program - The Globe and Mail",
-            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOHMyUEJDRmdhVm91QngtTWJPbTZUMmhoWHpWdXB5ODlRUGF4MktlcDFiRjE2SzBOenlfMDNMSGkyRFJ1T3JvVE9WemhmUUFwbjhpckNJRFAtUVY2eWtDOGdlbjV5UjZYUk4tNVF6TEwxeDRwUjdmdUd4M3lSRlp0cmpNZVA4VlRLUjJ6LWRObGExZnY2SldicldxbGJRSEE1Z1N4MTd6VFZJWjFHSlYzM0ttTngzY2Z5U29VaWtReXZRQjNTYjJZN3NKRnJTTjRL?oc=5",
-            "source": "The Globe and Mail",
-            "published_at": "2026-10-10T21:15:23+00:00",
-            "id": "f8772c13dc55c916f84d",
-            "type": "product_launch",
-            "age_hours": 0.46,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-10T21:42:55.136336+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "IDAI_US_EQ",
-        "isin": "US8730485088",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TRUG",
-      "name": "TruGolf Holdings",
-      "asset_type": "stock",
-      "price": 1.89,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -26.1719,
-      "volume": 468769.0,
-      "dollar_volume": 885973.4099999999,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -18.238,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional Asset Tokenization - The Globe and Mail",
-        "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQMVl2QmRCUGNEQ3dIazI4aTl0aTJ2c09yYTJjSDByTzBhY3FuQVhYVGhNOHptcWs2NnZFcndza0p6dThhclBLOGxCb3V2cFVxaU5KOFloSVAxRzU4Z1hGNTJDVVZWcjlsTUJ2N0xZWVhnc0w1aXVjNkFlQ1ZXVEYzbC1VOVBWN2RKa3NpN2JXMENPcjFWYzJZcEduNDk3MG5qZkhuR3lzUkJNQzl1eGFxVHdpSXV6bVdkbTc3MEp4Q0hRaVViZTVqUEplaWdacmltX1EzZlRwWC04N2gyVUVXVlFTc2FIeEx2QWVVSTJUal9HS0pJdjJiTU8wQnp5LWdLVGVHZkVyNU5Qb2ktOWlsRFBnTU9PVTFUZDBWTG9ldnBRejUxRldn?oc=5",
-        "source": "The Globe and Mail",
-        "published_at": "2026-10-10T15:39:13+00:00",
-        "id": "a2896b182e79688bd4cc",
-        "type": "merger",
-        "age_hours": 2.86,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional Asset Tokenization - The Globe and Mail",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "TruGolf Holdings (NASDAQ: TRUG) Completes Acquisition of Polymath Research, Expanding into Institutional Asset Tokenization - The Globe and Mail",
-            "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQMVl2QmRCUGNEQ3dIazI4aTl0aTJ2c09yYTJjSDByTzBhY3FuQVhYVGhNOHptcWs2NnZFcndza0p6dThhclBLOGxCb3V2cFVxaU5KOFloSVAxRzU4Z1hGNTJDVVZWcjlsTUJ2N0xZWVhnc0w1aXVjNkFlQ1ZXVEYzbC1VOVBWN2RKa3NpN2JXMENPcjFWYzJZcEduNDk3MG5qZkhuR3lzUkJNQzl1eGFxVHdpSXV6bVdkbTc3MEp4Q0hRaVViZTVqUEplaWdacmltX1EzZlRwWC04N2gyVUVXVlFTc2FIeEx2QWVVSTJUal9HS0pJdjJiTU8wQnp5LWdLVGVHZkVyNU5Qb2ktOWlsRFBnTU9PVTFUZDBWTG9ldnBRejUxRldn?oc=5",
-            "source": "The Globe and Mail",
-            "published_at": "2026-10-10T15:39:13+00:00",
-            "id": "a2896b182e79688bd4cc",
-            "type": "merger",
-            "age_hours": 2.86,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-10T18:30:46.215716+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "DMAQ_US_EQ",
-        "isin": "US2437336074",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "NEAR",
-      "name": "NEAR Protocol",
-      "coin_id": "near",
+      "symbol": "FET",
+      "name": "Artificial Superintelligence Alliance",
+      "coin_id": "fetch-ai",
       "asset_type": "crypto",
-      "price": 4.6477,
+      "price": 0.1988,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": -0.26568,
-      "change_1h": -0.8161,
-      "acceleration": -0.80503,
-      "discovery_route": "catalyst_first",
-      "change_7d": 8.2505,
-      "volume": 599815877.0,
-      "dollar_volume": 599815877.0,
-      "market_cap": 6085922234,
+      "change_24h": -2.02933,
+      "change_1h": 0.4702,
+      "acceleration": 0.5547554166666666,
+      "discovery_route": "recent_momentum",
+      "change_7d": -1.0404,
+      "volume": 98136801.0,
+      "dollar_volume": 98136801.0,
+      "market_cap": 459352550,
       "session": "24/7",
-      "observed_at": "2026-10-11T08:05:00+00:00",
+      "observed_at": "2026-10-11T09:05:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
-      "catalyst": {
-        "title": "NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKMEZjYlJOT2YxdjZLd2l3V2hBVTcycXFEM3l5aGdRdnNKb1hQckJJc05UQ0FFNkZoUVZzUkYwTkJYYmhnVURpWWVfZEtnWEJFLW4zTmo2dU1qY2tJSlhyNGZqV0dhdGxVUXZIbnllWG4?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-10-11T01:04:00+00:00",
-        "id": "b628a0d386730519baf9",
-        "type": "crypto_event",
-        "age_hours": 7.09,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKMEZjYlJOT2YxdjZLd2l3V2hBVTcycXFEM3l5aGdRdnNKb1hQckJJc05UQ0FFNkZoUVZzUkYwTkJYYmhnVURpWWVfZEtnWEJFLW4zTmo2dU1qY2tJSlhyNGZqV0dhdGxVUXZIbnllWG4?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-10-11T01:04:00+00:00",
-            "id": "b628a0d386730519baf9",
-            "type": "crypto_event",
-            "age_hours": 7.09,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-11T08:09:36.066878+00:00",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-11T09:08:57.433179+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Crypto symbol matches but name differs; identity needs verification."
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "history_samples": 719,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 4.6717,
-      "support": 4.6389,
-      "momentum_pct": -0.1203447016095982,
-      "reference_price": 4.652971113990654,
-      "extension_pct": -0.11328490681586922,
-      "resistance_1": 4.6769,
-      "resistance_2": 4.6925,
+      "entry": 0.1991,
+      "support": 0.1976,
+      "momentum_pct": -0.15067805123053502,
+      "reference_price": 0.19868622908895972,
+      "extension_pct": 0.0572615986331515,
+      "resistance_1": 0.1993,
+      "resistance_2": 0.2,
       "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        "setups": [
+          {
+            "pattern": "RANGE_BREAKOUT_RETEST",
+            "entry": 0.1988,
+            "support": 0.1984,
+            "resistance_1": 0.199,
+            "resistance_2": 0.1996,
+            "momentum_pct": -0.15067805123053502,
+            "extension_pct": 0.0572615986331515,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 0.1985,
+              "measured_height": 0.001700000000000007,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                0.19935000000000003,
+                0.20020000000000002
+              ],
+              "overhead_levels": [
+                0.199,
+                0.1991,
+                0.1992,
+                0.1993
+              ]
+            },
+            "observed_at": "2026-10-11T09:05:00+00:00",
+            "evidence": {
+              "range_start": "2026-10-11T07:05:00+00:00",
+              "range_end": "2026-10-11T08:30:00+00:00",
+              "range_high": 0.1985,
+              "range_low": 0.1968,
+              "retest_low": 0.1984,
+              "breakout_close": 0.1991,
+              "confirmation": "Break above range, hold/retest, bullish latest bar"
+            }
+          }
         ],
+        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 1.5736881802428393,
-        "observed_at": "2026-10-11T08:05:00+00:00"
+        "recent_volume_ratio": 2.600130343649516,
+        "observed_at": "2026-10-11T09:05:00+00:00"
       },
-      "structure_observed_at": "2026-10-11T08:05:00+00:00",
+      "structure_observed_at": "2026-10-11T09:05:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "NEAREUR",
+        "pair": "FETEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
         "fallback_used": false
       },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 5
+      },
       "score": {
-        "score": 1,
+        "score": 2,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity"
+          "notional liquidity",
+          "not extended above recent VWAP"
         ]
       },
       "qualification": {
-        "status": "CATALYST WATCH",
+        "status": "TECHNICAL WATCH",
         "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "No positive recent momentum; a daily gain alone is insufficient.",
+          "Stop width or achievable reward/risk fails the entry filter."
         ],
         "plan": null,
-        "route": "CATALYST_LED",
+        "route": "CHART_LED",
+        "pattern": "RANGE_BREAKOUT_RETEST",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "RANGE_BREAKOUT_RETEST",
+          "entry": 0.1988,
+          "support": 0.1984,
+          "resistance_1": 0.199,
+          "resistance_2": 0.1996,
+          "momentum_pct": -0.15067805123053502,
+          "extension_pct": 0.0572615986331515,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 0.1985,
+            "measured_height": 0.001700000000000007,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              0.19935000000000003,
+              0.20020000000000002
+            ],
+            "overhead_levels": [
+              0.199,
+              0.1991,
+              0.1992,
+              0.1993
+            ]
+          },
+          "observed_at": "2026-10-11T09:05:00+00:00",
+          "evidence": {
+            "range_start": "2026-10-11T07:05:00+00:00",
+            "range_end": "2026-10-11T08:30:00+00:00",
+            "range_high": 0.1985,
+            "range_low": 0.1968,
+            "retest_low": 0.1984,
+            "breakout_close": 0.1991,
+            "confirmation": "Break above range, hold/retest, bullish latest bar"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "No positive recent momentum; a daily gain alone is insufficient.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
               "No positive recent momentum; a daily gain alone is insufficient."
             ],
             "plan": null,
             "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "No positive recent momentum; a daily gain alone is insufficient.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "RANGE_BREAKOUT_RETEST",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "RANGE_BREAKOUT_RETEST",
+              "entry": 0.1988,
+              "support": 0.1984,
+              "resistance_1": 0.199,
+              "resistance_2": 0.1996,
+              "momentum_pct": -0.15067805123053502,
+              "extension_pct": 0.0572615986331515,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 0.1985,
+                "measured_height": 0.001700000000000007,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  0.19935000000000003,
+                  0.20020000000000002
+                ],
+                "overhead_levels": [
+                  0.199,
+                  0.1991,
+                  0.1992,
+                  0.1993
+                ]
+              },
+              "observed_at": "2026-10-11T09:05:00+00:00",
+              "evidence": {
+                "range_start": "2026-10-11T07:05:00+00:00",
+                "range_end": "2026-10-11T08:30:00+00:00",
+                "range_high": 0.1985,
+                "range_low": 0.1968,
+                "retest_low": 0.1984,
+                "breakout_close": 0.1991,
+                "confirmation": "Break above range, hold/retest, bullish latest bar"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "No positive recent momentum; a daily gain alone is insufficient.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
           }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
+        ]
       }
     }
   ],
   "changed_signals": [
-    "stock:TVTX"
+    "crypto:fetch-ai"
   ],
-  "invalidated_signals": [],
+  "invalidated_signals": [
+    "crypto:near"
+  ],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -784,17 +888,18 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7742,
-        "snapshot_records": 7742,
-        "pagination_complete": true,
+        "provider_total": 7734,
+        "snapshot_records": 1250,
+        "pagination_complete": false,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout"
+          "Nasdaq screener failed: ReadTimeout",
+          "Quote page failed at offset 1250: Timeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 157,
+        "headlines_received": 158,
         "matched_events": 6,
         "matched_assets": 6,
         "failed_queries": 0,
@@ -817,7 +922,7 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5891,
+      "listed_snapshot_records": 929,
       "discovered_candidates": 6,
       "broker_excluded_candidates": 1,
       "shortlisted_candidates": 5,
@@ -830,7 +935,7 @@
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 59,
+      "unquoted_listings": 5021,
       "history_requested": 0,
       "history_received": 0,
       "history_not_requested": 5,
@@ -844,17 +949,17 @@
         },
         "errors": []
       },
-      "status": "PARTIAL",
+      "status": "OK",
       "screened_assets": 250,
-      "price_records": 9,
-      "history_requested": 4,
-      "history_received": 4,
+      "price_records": 12,
+      "history_requested": 12,
+      "history_received": 12,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 5,
+      "history_not_requested": 0,
       "catalyst_discovery": {
         "queries": 2,
-        "headlines_received": 170,
+        "headlines_received": 169,
         "matched_events": 1,
         "matched_assets": 1,
         "failed_queries": 0,
@@ -881,18 +986,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-11T08:48:02.974687+00:00",
+        "checked_at": "2026-10-11T09:08:57.433179+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-11T08:48:02.974687+00:00"
+        "checked_at": "2026-10-11T09:08:57.433179+00:00"
       }
     },
     "news": {
-      "checked": 14,
+      "checked": 17,
       "failed": 0
     }
   },
