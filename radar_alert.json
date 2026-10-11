@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-11T03:50:36.476129+00:00",
+  "generated_at": "2026-10-11T05:10:13.510633+00:00",
   "potential_signals": [
     {
       "ticker": "NEOG",
@@ -642,140 +642,241 @@
       }
     },
     {
-      "symbol": "NEAR",
-      "name": "NEAR Protocol",
-      "coin_id": "near",
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "coin_id": "arbitrum",
       "asset_type": "crypto",
-      "price": 4.678,
+      "price": 0.1748,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 5.40599,
-      "change_1h": -0.0402,
-      "acceleration": -0.26544958333333335,
-      "discovery_route": "catalyst_first",
-      "change_7d": 9.1773,
-      "volume": 688241145.0,
-      "dollar_volume": 688241145.0,
-      "market_cap": 6145490300,
+      "change_24h": 6.36477,
+      "change_1h": 2.3515,
+      "acceleration": 2.08630125,
+      "discovery_route": "recent_momentum",
+      "change_7d": -3.2282,
+      "volume": 121019459.0,
+      "dollar_volume": 121019459.0,
+      "market_cap": 1187745864,
       "session": "24/7",
-      "observed_at": "2026-10-11T03:10:00+00:00",
+      "observed_at": "2026-10-11T05:05:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
-      "catalyst": {
-        "title": "NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKMEZjYlJOT2YxdjZLd2l3V2hBVTcycXFEM3l5aGdRdnNKb1hQckJJc05UQ0FFNkZoUVZzUkYwTkJYYmhnVURpWWVfZEtnWEJFLW4zTmo2dU1qY2tJSlhyNGZqV0dhdGxVUXZIbnllWG4?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-10-11T01:04:00+00:00",
-        "id": "b628a0d386730519baf9",
-        "type": "crypto_event",
-        "age_hours": 2.1,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKMEZjYlJOT2YxdjZLd2l3V2hBVTcycXFEM3l5aGdRdnNKb1hQckJJc05UQ0FFNkZoUVZzUkYwTkJYYmhnVURpWWVfZEtnWEJFLW4zTmo2dU1qY2tJSlhyNGZqV0dhdGxVUXZIbnllWG4?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-10-11T01:04:00+00:00",
-            "id": "b628a0d386730519baf9",
-            "type": "crypto_event",
-            "age_hours": 2.1,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-11T03:10:01.422118+00:00",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-11T05:09:22.763278+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Crypto symbol matches but name differs; identity needs verification."
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "history_samples": 720,
+      "history_samples": 719,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 4.747,
-      "support": 4.678,
-      "momentum_pct": -1.2621892017392056,
-      "reference_price": 4.716256899026439,
-      "extension_pct": -0.8111708044219568,
-      "resistance_1": 4.752,
-      "resistance_2": 4.7671,
+      "entry": 0.1745,
+      "support": 0.1719,
+      "momentum_pct": 0.9237875288683695,
+      "reference_price": 0.17310388505755517,
+      "extension_pct": 0.9798248848550628,
+      "resistance_1": 0.175,
+      "resistance_2": 0.1762,
       "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        "setups": [
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 0.1745,
+            "support": 0.1732,
+            "resistance_1": 0.1748,
+            "resistance_2": 0.1754,
+            "momentum_pct": 0.9237875288683695,
+            "extension_pct": 0.9798248848550628,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 0.1732,
+              "measured_height": 0.0033999999999999864,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                0.1749,
+                0.17659999999999998
+              ],
+              "overhead_levels": [
+                0.1748,
+                0.175,
+                0.1754,
+                0.1762
+              ]
+            },
+            "observed_at": "2026-10-11T05:05:00+00:00",
+            "evidence": {
+              "impulse_high": 0.1737,
+              "impulse_low": 0.1703,
+              "pullback_low": 0.1732,
+              "ema9": 0.17324844137696432,
+              "ema21": 0.1723732910710395,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
         ],
+        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 2.0390729913156713,
-        "observed_at": "2026-10-11T03:10:00+00:00"
+        "recent_volume_ratio": 0.204101219314837,
+        "observed_at": "2026-10-11T05:05:00+00:00"
       },
-      "structure_observed_at": "2026-10-11T03:10:00+00:00",
+      "structure_observed_at": "2026-10-11T05:05:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "NEAREUR",
+        "pair": "ARBEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
         "fallback_used": false
       },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 9
+      },
       "score": {
-        "score": 1,
+        "score": 4,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity"
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
         ]
       },
       "qualification": {
-        "status": "CATALYST WATCH",
+        "status": "TECHNICAL WATCH",
         "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
+          "Stop width or achievable reward/risk fails the entry filter."
         ],
         "plan": null,
-        "route": "CATALYST_LED",
+        "route": "CHART_LED",
+        "pattern": "TREND_PULLBACK_RECLAIM",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "TREND_PULLBACK_RECLAIM",
+          "entry": 0.1745,
+          "support": 0.1732,
+          "resistance_1": 0.1748,
+          "resistance_2": 0.1754,
+          "momentum_pct": 0.9237875288683695,
+          "extension_pct": 0.9798248848550628,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 0.1732,
+            "measured_height": 0.0033999999999999864,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              0.1749,
+              0.17659999999999998
+            ],
+            "overhead_levels": [
+              0.1748,
+              0.175,
+              0.1754,
+              0.1762
+            ]
+          },
+          "observed_at": "2026-10-11T05:05:00+00:00",
+          "evidence": {
+            "impulse_high": 0.1737,
+            "impulse_low": 0.1703,
+            "pullback_low": 0.1732,
+            "ema9": 0.17324844137696432,
+            "ema21": 0.1723732910710395,
+            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
             ],
             "plan": null,
             "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 0.1745,
+              "support": 0.1732,
+              "resistance_1": 0.1748,
+              "resistance_2": 0.1754,
+              "momentum_pct": 0.9237875288683695,
+              "extension_pct": 0.9798248848550628,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 0.1732,
+                "measured_height": 0.0033999999999999864,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  0.1749,
+                  0.17659999999999998
+                ],
+                "overhead_levels": [
+                  0.1748,
+                  0.175,
+                  0.1754,
+                  0.1762
+                ]
+              },
+              "observed_at": "2026-10-11T05:05:00+00:00",
+              "evidence": {
+                "impulse_high": 0.1737,
+                "impulse_low": 0.1703,
+                "pullback_low": 0.1732,
+                "ema9": 0.17324844137696432,
+                "ema21": 0.1723732910710395,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
           }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
+        ]
       }
     }
   ],
   "changed_signals": [
-    "stock:TVTX"
+    "crypto:arbitrum"
   ],
-  "invalidated_signals": [],
+  "invalidated_signals": [
+    "crypto:near"
+  ],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -794,7 +895,7 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 154,
+        "headlines_received": 159,
         "matched_events": 6,
         "matched_assets": 6,
         "failed_queries": 0,
@@ -844,14 +945,14 @@
         },
         "errors": []
       },
-      "status": "PARTIAL",
+      "status": "OK",
       "screened_assets": 250,
       "price_records": 12,
-      "history_requested": 11,
-      "history_received": 11,
+      "history_requested": 12,
+      "history_received": 12,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 1,
+      "history_not_requested": 0,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -881,14 +982,14 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-11T03:49:44.394257+00:00",
+        "checked_at": "2026-10-11T05:09:22.763278+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-11T03:49:44.394257+00:00"
+        "checked_at": "2026-10-11T05:09:22.763278+00:00"
       }
     },
     "news": {
