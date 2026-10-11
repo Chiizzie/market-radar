@@ -1,8 +1,136 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-11T14:59:44.711730+00:00",
+  "generated_at": "2026-10-11T15:14:47.153279+00:00",
   "potential_signals": [
+    {
+      "ticker": "NEOG",
+      "name": "Neogen",
+      "asset_type": "stock",
+      "price": 11.85,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.19556,
+      "volume": 3641042.0,
+      "dollar_volume": 43146347.699999996,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.6,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
+        "source": "Seeking Alpha",
+        "published_at": "2026-10-10T23:05:58+00:00",
+        "id": "079691d3b4c01556761e",
+        "type": "earnings",
+        "age_hours": 16.13,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Neogen Corporation 2027 Q1 - Results - Earnings Call Presentation (NASDAQ:NEOG) 2026-10-10 - Seeking Alpha",
+            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlQ5VENheFhNV05tbGF2YTRIaGExb2NwV1pBc0tQS3ZHeXZmMGVNdExySkFOWjdZUFdkeWxyeURZcW5ManBGZEFGTmIycWZNc1lVMllqbGJEZGt2amNidDhxNnE1a0pScFhVdWNnaDd5aFpLSnVuV2NqY2g1Z0ZVR1J4YlhmQ0YwT3h4aC1VbUxaMlJ5UVhyRk53UkVXSTAwUkl3bw?oc=5",
+            "source": "Seeking Alpha",
+            "published_at": "2026-10-10T23:05:58+00:00",
+            "id": "079691d3b4c01556761e",
+            "type": "earnings",
+            "age_hours": 16.13,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T15:13:55.020145+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "NEOG_US_EQ",
+        "isin": "US6404911066",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "KSS",
       "name": "Kohl's",
@@ -386,29 +514,29 @@
       }
     },
     {
-      "symbol": "AVAX",
-      "name": "Avalanche",
-      "coin_id": "avalanche-2",
+      "symbol": "APE",
+      "name": "ApeCoin",
+      "coin_id": "apecoin",
       "asset_type": "crypto",
-      "price": 9.474,
+      "price": 0.1411,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.45266,
-      "change_1h": 0.369,
-      "acceleration": 0.35013916666666667,
+      "change_24h": 4.61141,
+      "change_1h": 1.5809,
+      "acceleration": 1.3887579166666666,
       "discovery_route": "recent_momentum",
-      "change_7d": -4.1238,
-      "volume": 179513665.0,
-      "dollar_volume": 179513665.0,
-      "market_cap": 4191827009,
+      "change_7d": -5.8764,
+      "volume": 14950314.0,
+      "dollar_volume": 14950314.0,
+      "market_cap": 141319904,
       "session": "24/7",
-      "observed_at": "2026-10-11T14:55:00+00:00",
+      "observed_at": "2026-10-11T15:10:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-11T14:58:49.019703+00:00",
+        "checked_at": "2026-10-11T15:13:55.020145+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
@@ -417,63 +545,63 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 9.449,
-      "support": 9.367,
-      "momentum_pct": 0.6266595857673973,
-      "reference_price": 9.425299996393642,
-      "extension_pct": 0.5166944672847729,
-      "resistance_1": 9.493,
-      "resistance_2": 9.523,
+      "entry": 0.141,
+      "support": 0.1387,
+      "momentum_pct": 0.21306818181818787,
+      "reference_price": 0.1408224655680219,
+      "extension_pct": 0.19708107712690381,
+      "resistance_1": 0.1414,
+      "resistance_2": 0.1419,
       "chart_analysis": {
         "setups": [
           {
             "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 9.446,
-            "support": 9.403,
-            "resistance_1": 9.4495,
-            "resistance_2": 9.493,
-            "momentum_pct": 0.6266595857673973,
-            "extension_pct": 0.5166944672847729,
+            "entry": 0.1408,
+            "support": 0.14,
+            "resistance_1": 0.141,
+            "resistance_2": 0.1415,
+            "momentum_pct": 0.21306818181818787,
+            "extension_pct": 0.19708107712690381,
             "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
             "target_basis": {
-              "origin": 9.403,
-              "measured_height": 0.09299999999999997,
+              "origin": 0.14,
+              "measured_height": 0.002999999999999975,
               "fractions": [
                 0.5,
                 1.0
               ],
               "uncapped_targets": [
-                9.4495,
-                9.496
+                0.14150000000000001,
+                0.143
               ],
               "overhead_levels": [
-                9.456,
-                9.457,
-                9.458,
-                9.464
+                0.141,
+                0.1411,
+                0.1412,
+                0.1414
               ]
             },
-            "observed_at": "2026-10-11T14:55:00+00:00",
+            "observed_at": "2026-10-11T15:10:00+00:00",
             "evidence": {
-              "impulse_high": 9.449,
-              "impulse_low": 9.356,
-              "pullback_low": 9.403,
-              "ema9": 9.427064134617659,
-              "ema21": 9.404358271244245,
+              "impulse_high": 0.141,
+              "impulse_low": 0.138,
+              "pullback_low": 0.14,
+              "ema9": 0.14018140238544438,
+              "ema21": 0.13952751597031005,
               "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
             }
           }
         ],
         "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 0.5156411729500097,
-        "observed_at": "2026-10-11T14:55:00+00:00"
+        "recent_volume_ratio": 15.479610352603633,
+        "observed_at": "2026-10-11T15:10:00+00:00"
       },
-      "structure_observed_at": "2026-10-11T14:55:00+00:00",
+      "structure_observed_at": "2026-10-11T15:10:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "AVAXEUR",
+        "pair": "APEEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
@@ -486,7 +614,7 @@
         "headlines": [],
         "freshness": "STALE/UNVERIFIED",
         "retrieval_status": "OK",
-        "headlines_checked": 10
+        "headlines_checked": 0
       },
       "score": {
         "score": 4,
@@ -500,7 +628,6 @@
       "qualification": {
         "status": "TECHNICAL WATCH",
         "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
           "Stop width or achievable reward/risk fails the entry filter."
         ],
         "plan": null,
@@ -509,44 +636,43 @@
         "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
         "pattern_evidence": {
           "pattern": "TREND_PULLBACK_RECLAIM",
-          "entry": 9.446,
-          "support": 9.403,
-          "resistance_1": 9.4495,
-          "resistance_2": 9.493,
-          "momentum_pct": 0.6266595857673973,
-          "extension_pct": 0.5166944672847729,
+          "entry": 0.1408,
+          "support": 0.14,
+          "resistance_1": 0.141,
+          "resistance_2": 0.1415,
+          "momentum_pct": 0.21306818181818787,
+          "extension_pct": 0.19708107712690381,
           "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
           "target_basis": {
-            "origin": 9.403,
-            "measured_height": 0.09299999999999997,
+            "origin": 0.14,
+            "measured_height": 0.002999999999999975,
             "fractions": [
               0.5,
               1.0
             ],
             "uncapped_targets": [
-              9.4495,
-              9.496
+              0.14150000000000001,
+              0.143
             ],
             "overhead_levels": [
-              9.456,
-              9.457,
-              9.458,
-              9.464
+              0.141,
+              0.1411,
+              0.1412,
+              0.1414
             ]
           },
-          "observed_at": "2026-10-11T14:55:00+00:00",
+          "observed_at": "2026-10-11T15:10:00+00:00",
           "evidence": {
-            "impulse_high": 9.449,
-            "impulse_low": 9.356,
-            "pullback_low": 9.403,
-            "ema9": 9.427064134617659,
-            "ema21": 9.404358271244245,
+            "impulse_high": 0.141,
+            "impulse_low": 0.138,
+            "pullback_low": 0.14,
+            "ema9": 0.14018140238544438,
+            "ema21": 0.13952751597031005,
             "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
           }
         },
         "research_only": true,
         "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
           "Stop width or achievable reward/risk fails the entry filter."
         ],
         "assessments": [
@@ -561,7 +687,6 @@
           {
             "status": "TECHNICAL WATCH",
             "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
               "Stop width or achievable reward/risk fails the entry filter."
             ],
             "plan": null,
@@ -570,44 +695,43 @@
             "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
             "pattern_evidence": {
               "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 9.446,
-              "support": 9.403,
-              "resistance_1": 9.4495,
-              "resistance_2": 9.493,
-              "momentum_pct": 0.6266595857673973,
-              "extension_pct": 0.5166944672847729,
+              "entry": 0.1408,
+              "support": 0.14,
+              "resistance_1": 0.141,
+              "resistance_2": 0.1415,
+              "momentum_pct": 0.21306818181818787,
+              "extension_pct": 0.19708107712690381,
               "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
               "target_basis": {
-                "origin": 9.403,
-                "measured_height": 0.09299999999999997,
+                "origin": 0.14,
+                "measured_height": 0.002999999999999975,
                 "fractions": [
                   0.5,
                   1.0
                 ],
                 "uncapped_targets": [
-                  9.4495,
-                  9.496
+                  0.14150000000000001,
+                  0.143
                 ],
                 "overhead_levels": [
-                  9.456,
-                  9.457,
-                  9.458,
-                  9.464
+                  0.141,
+                  0.1411,
+                  0.1412,
+                  0.1414
                 ]
               },
-              "observed_at": "2026-10-11T14:55:00+00:00",
+              "observed_at": "2026-10-11T15:10:00+00:00",
               "evidence": {
-                "impulse_high": 9.449,
-                "impulse_low": 9.356,
-                "pullback_low": 9.403,
-                "ema9": 9.427064134617659,
-                "ema21": 9.404358271244245,
+                "impulse_high": 0.141,
+                "impulse_low": 0.138,
+                "pullback_low": 0.14,
+                "ema9": 0.14018140238544438,
+                "ema21": 0.13952751597031005,
                 "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
               }
             },
             "research_only": true,
             "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
               "Stop width or achievable reward/risk fails the entry filter."
             ]
           }
@@ -616,12 +740,11 @@
     }
   ],
   "changed_signals": [
-    "crypto:avalanche-2"
+    "stock:NEOG",
+    "crypto:apecoin"
   ],
   "invalidated_signals": [
-    "stock:NEOG",
-    "stock:IIPR",
-    "stock:IDAI"
+    "crypto:avalanche-2"
   ],
   "health": {
     "stocks": {
@@ -641,9 +764,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 166,
-        "matched_events": 3,
-        "matched_assets": 3,
+        "headlines_received": 164,
+        "matched_events": 4,
+        "matched_assets": 4,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -665,14 +788,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5891,
-      "discovered_candidates": 3,
+      "discovered_candidates": 4,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 3,
+      "shortlisted_candidates": 4,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 3,
-      "selected_candidates": 3,
+      "catalyst_selected": 4,
+      "selected_candidates": 4,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -680,7 +803,7 @@
       "unquoted_listings": 59,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 3,
+      "history_not_requested": 4,
       "chart_failures": 0
     },
     "crypto": {
@@ -728,18 +851,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-11T14:58:49.019703+00:00",
+        "checked_at": "2026-10-11T15:13:55.020145+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-11T14:58:49.019703+00:00"
+        "checked_at": "2026-10-11T15:13:55.020145+00:00"
       }
     },
     "news": {
-      "checked": 15,
+      "checked": 16,
       "failed": 0
     }
   },
