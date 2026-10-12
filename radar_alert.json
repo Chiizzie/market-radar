@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-12T21:17:02.373070+00:00",
+  "generated_at": "2026-10-12T21:59:36.779665+00:00",
   "potential_signals": [
     {
       "ticker": "LNT",
@@ -1037,136 +1037,6 @@
       }
     },
     {
-      "ticker": "VATE",
-      "name": "INNOVATE",
-      "asset_type": "stock",
-      "price": 7.050000190734863,
-      "currency": "USD",
-      "eur_per_unit": 0.8960999846458435,
-      "change": -2.3545651,
-      "volume": 11697,
-      "dollar_volume": 82042.38242673874,
-      "session": "REGULAR",
-      "observed_at": "2026-10-12T14:35:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -4.569,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Innovate Q2 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcFNhbThnajl5SnZ4ZFZJNTNLdlNBNjQzbmVxWllBa0ZMcjQtaDMzQm52a3lPblY0eDdLQ3RyaUFRalB2Q0F1dzJWS0NzYUhzUkJWYmo3bWFET0JJbkw2Q2dCZThnRVFCREZva3JlYnNCaTg3M1R1cV9jRGxHQ2gwbEx0Z0l6N0EtVWVDRG13OA?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-12T12:16:13+00:00",
-        "id": "d22a4091373ec5cb997d",
-        "type": "earnings",
-        "age_hours": 6.56,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Innovate Q2 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Innovate Q2 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcFNhbThnajl5SnZ4ZFZJNTNLdlNBNjQzbmVxWllBa0ZMcjQtaDMzQm52a3lPblY0eDdLQ3RyaUFRalB2Q0F1dzJWS0NzYUhzUkJWYmo3bWFET0JJbkw2Q2dCZThnRVFCREZva3JlYnNCaTg3M1R1cV9jRGxHQ2gwbEx0Z0l6N0EtVWVDRG13OA?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-12T12:16:13+00:00",
-            "id": "d22a4091373ec5cb997d",
-            "type": "earnings",
-            "age_hours": 6.56,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-12T18:49:35.951353+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "HCHC_US_EQ",
-        "isin": "US45784J3032",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.8041237113402062,
-      "history_samples": 119,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 7.034999847412109,
-      "support": 6.920000076293945,
-      "momentum_pct": 0.8583751299193754,
-      "reference_price": 6.979253746481877,
-      "extension_pct": 1.013667747624858,
-      "resistance_1": 7.059999942779541,
-      "resistance_2": 7.085000038146973,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "score": {
-        "score": 3,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Price data is stale or future-dated.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "Insufficient traded notional liquidity.",
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Price data is stale or future-dated.",
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "Insufficient traded notional liquidity.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "BIAF",
       "name": "bioAffinity Technologies",
       "asset_type": "stock",
@@ -1812,11 +1682,10 @@
       }
     }
   ],
-  "changed_signals": [
-    "stock:LNT",
-    "crypto:ethereum"
+  "changed_signals": [],
+  "invalidated_signals": [
+    "stock:VATE"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1836,8 +1705,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 170,
-        "matched_events": 11,
-        "matched_assets": 11,
+        "matched_events": 10,
+        "matched_assets": 10,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1859,14 +1728,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5905,
-      "discovered_candidates": 11,
+      "discovered_candidates": 10,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 11,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 11,
-      "selected_candidates": 11,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1874,7 +1743,7 @@
       "unquoted_listings": 45,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 11,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1922,18 +1791,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-12T21:16:11.225514+00:00",
+        "checked_at": "2026-10-12T21:58:40.074309+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-12T21:16:11.225514+00:00"
+        "checked_at": "2026-10-12T21:58:40.074309+00:00"
       }
     },
     "news": {
-      "checked": 23,
+      "checked": 22,
       "failed": 0
     }
   },
