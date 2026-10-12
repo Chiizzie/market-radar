@@ -1,136 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-12T08:02:39.854804+00:00",
+  "generated_at": "2026-10-12T08:36:53.129154+00:00",
   "potential_signals": [
-    {
-      "ticker": "SECZ",
-      "name": "Securitize",
-      "asset_type": "stock",
-      "price": 13.82,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 9.16272,
-      "volume": 5671442.0,
-      "dollar_volume": 78379328.44,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.103,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Florida-based Securitize launches blockchain-based stocks with security entitlements - https://internationalfinance.com/",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVVJYlcwV3ZYcDNSYVNJTHVCWXpmcEJWZElVWlZLdmp5Tm1SNEdsTVRzclFaWUlzQndfZnprSlJlY0d2MjlUN2daYUR0ajhxV2tvSzdCQjd3VFI5aGNnbWwzR2wtZkUwN0tLVVQxRFBjYVYtWWIxNXJOQnQ3RlA3dFB5MEpTaFpwTHJqTE9oS1pBdS1ELVprQk1iNDNhVzFMMGxmN2RuamJQRUNXOWkyYVZLMzhzZkpOTDgyeDd1bWZHS1NublE?oc=5",
-        "source": "https://internationalfinance.com/",
-        "published_at": "2026-10-12T04:00:51+00:00",
-        "id": "f294f8c370880ee4b469",
-        "type": "product_launch",
-        "age_hours": 1.74,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Florida-based Securitize launches blockchain-based stocks with security entitlements - https://internationalfinance.com/",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Florida-based Securitize launches blockchain-based stocks with security entitlements - https://internationalfinance.com/",
-            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVVJYlcwV3ZYcDNSYVNJTHVCWXpmcEJWZElVWlZLdmp5Tm1SNEdsTVRzclFaWUlzQndfZnprSlJlY0d2MjlUN2daYUR0ajhxV2tvSzdCQjd3VFI5aGNnbWwzR2wtZkUwN0tLVVQxRFBjYVYtWWIxNXJOQnQ3RlA3dFB5MEpTaFpwTHJqTE9oS1pBdS1ELVprQk1iNDNhVzFMMGxmN2RuamJQRUNXOWkyYVZLMzhzZkpOTDgyeDd1bWZHS1NublE?oc=5",
-            "source": "https://internationalfinance.com/",
-            "published_at": "2026-10-12T04:00:51+00:00",
-            "id": "f294f8c370880ee4b469",
-            "type": "product_launch",
-            "age_hours": 1.74,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-12T05:45:30.380489+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "CEPT_US_EQ",
-        "isin": "US81517B1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "BBIO",
       "name": "BridgeBio Pharma",
@@ -156,13 +28,13 @@
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "BridgeBio Pharma (BBIO) Reports Positive Phase 3 Trial Results f - GuruFocus",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS0xjdDJybnEzaHM5X1daT1IwcGRINnJLbDkyaDNrZnZJZWpCblRaaUZnSFJSVUdsRzRseXNWaEtxY3BFRGp0TG8wSzV3ZWJjTzRGMHU5WkhtZ25zTnBwUnliSkkyWTJoVDc4VXRWTDBVemRXUmhtZFQzMlZIcTZZeFU0dk5XSWRaX2JDVi0zXzJRdE9vMHJnSE5hUmg1d3U5UTJINjBOVnlzbWFvODBiSkJ3dw?oc=5",
-        "source": "GuruFocus",
-        "published_at": "2026-10-11T17:25:17+00:00",
-        "id": "1d7b26b7e20857f67767",
+        "title": "BridgeBio Pharma reports symptom gains in Phase 3 encaleret trial - Mugglehead Investment Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOGpBQlg1NUFhVHJtbzRKT091X3RlUDR2ei1NN0o3SENlNDNoT0ZXLVU0eGQ4TnVocHFBcEUzREpfOUIwMjVBblBQTzBwUXpuaEp0dWJqREJMQzdsVTZTUE1XcWtHbGVEZkVKWmNLUjJVejNDcGFlZldwaXN5dGRSOEhB?oc=5",
+        "source": "Mugglehead Investment Magazine",
+        "published_at": "2026-10-11T16:34:24+00:00",
+        "id": "8b8d8705144073ef1e20",
         "type": "regulatory",
-        "age_hours": 13.26,
+        "age_hours": 16.02,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -171,17 +43,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "BridgeBio Pharma (BBIO) Reports Positive Phase 3 Trial Results f - GuruFocus",
+        "summary": "BridgeBio Pharma reports symptom gains in Phase 3 encaleret trial - Mugglehead Investment Magazine",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "BridgeBio Pharma (BBIO) Reports Positive Phase 3 Trial Results f - GuruFocus",
-            "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS0xjdDJybnEzaHM5X1daT1IwcGRINnJLbDkyaDNrZnZJZWpCblRaaUZnSFJSVUdsRzRseXNWaEtxY3BFRGp0TG8wSzV3ZWJjTzRGMHU5WkhtZ25zTnBwUnliSkkyWTJoVDc4VXRWTDBVemRXUmhtZFQzMlZIcTZZeFU0dk5XSWRaX2JDVi0zXzJRdE9vMHJnSE5hUmg1d3U5UTJINjBOVnlzbWFvODBiSkJ3dw?oc=5",
-            "source": "GuruFocus",
-            "published_at": "2026-10-11T17:25:17+00:00",
-            "id": "1d7b26b7e20857f67767",
+            "title": "BridgeBio Pharma reports symptom gains in Phase 3 encaleret trial - Mugglehead Investment Magazine",
+            "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOGpBQlg1NUFhVHJtbzRKT091X3RlUDR2ei1NN0o3SENlNDNoT0ZXLVU0eGQ4TnVocHFBcEUzREpfOUIwMjVBblBQTzBwUXpuaEp0dWJqREJMQzdsVTZTUE1XcWtHbGVEZkVKWmNLUjJVejNDcGFlZldwaXN5dGRSOEhB?oc=5",
+            "source": "Mugglehead Investment Magazine",
+            "published_at": "2026-10-11T16:34:24+00:00",
+            "id": "8b8d8705144073ef1e20",
             "type": "regulatory",
-            "age_hours": 13.26,
+            "age_hours": 16.02,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -199,268 +71,12 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-12T06:40:50.836668+00:00",
+        "checked_at": "2026-10-12T08:35:35.207558+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "BBIO_US_EQ",
         "isin": "US10806X1028",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "SUPN",
-      "name": "Supernus Pharmaceuticals",
-      "asset_type": "stock",
-      "price": 42.67,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.25771,
-      "volume": 579132.0,
-      "dollar_volume": 24711562.44,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.431,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZDgyVDBvdTVWZXgyZ1g3R29RN3BvVXJLNXQ1bm44aTJ6dVlTSXpucTBnY3JxMWR1bGFDRkhaUl9BQnNLOVJjMlk3czBIdC01U0xrbExEaDVVSm8wRVdjaEpHLWs1YmJOZm8wUDNMWmhFX0cyVFdjQUlZSFBTVlNYM1ctZUVWZ0RTcHM3YS1pNzROdERFdUlZbEhVQkNTTzk5SWRqcmRPTEJiQ1lUQWNaQ01uUzREUmc0ZE1WZjdQVEstcC12N2czOXRvU2pNRTl0cThDY2p3RDdTT0RzeWZ2SVJqUnFuaE5qbVp5RHRGUdIB9AFBVV95cUxOMGoxSDhyQmNJSUpYTGlwNFVBSjk0TEZFQmNfWldxM0xlS1FkeFhkcnpOZEYtYS1xckhjVUx2VHEtVzdKX0t1Y2lKWjdYZFB0S3p3aWFRcmVqbG1qdnF0ZzBKZ0tWMlotN2VOaXFyS1A1eldDNmR3QUdXQnZPM3BDVTExZkdaa1dqLW9IRU01RnMwU1ZiOFpIbFJCX2ROQnJ2UzZ3UVViaVhteTBlcUZXNUpWRElHYVBUbThjUnM5bXBpTE1XTjc5NUZCaG5yWV93LW9WbXFYRG1EamxBVWppRGpnUzRBTktPX0RBTXg3Y2d0Z1RP?oc=5",
-        "source": "Simply Wall Street",
-        "published_at": "2026-10-11T10:39:06+00:00",
-        "id": "c7462877202afa93b5a8",
-        "type": "regulatory",
-        "age_hours": 0.09,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
-            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZDgyVDBvdTVWZXgyZ1g3R29RN3BvVXJLNXQ1bm44aTJ6dVlTSXpucTBnY3JxMWR1bGFDRkhaUl9BQnNLOVJjMlk3czBIdC01U0xrbExEaDVVSm8wRVdjaEpHLWs1YmJOZm8wUDNMWmhFX0cyVFdjQUlZSFBTVlNYM1ctZUVWZ0RTcHM3YS1pNzROdERFdUlZbEhVQkNTTzk5SWRqcmRPTEJiQ1lUQWNaQ01uUzREUmc0ZE1WZjdQVEstcC12N2czOXRvU2pNRTl0cThDY2p3RDdTT0RzeWZ2SVJqUnFuaE5qbVp5RHRGUdIB9AFBVV95cUxOMGoxSDhyQmNJSUpYTGlwNFVBSjk0TEZFQmNfWldxM0xlS1FkeFhkcnpOZEYtYS1xckhjVUx2VHEtVzdKX0t1Y2lKWjdYZFB0S3p3aWFRcmVqbG1qdnF0ZzBKZ0tWMlotN2VOaXFyS1A1eldDNmR3QUdXQnZPM3BDVTExZkdaa1dqLW9IRU01RnMwU1ZiOFpIbFJCX2ROQnJ2UzZ3UVViaVhteTBlcUZXNUpWRElHYVBUbThjUnM5bXBpTE1XTjc5NUZCaG5yWV93LW9WbXFYRG1EamxBVWppRGpnUzRBTktPX0RBTXg3Y2d0Z1RP?oc=5",
-            "source": "Simply Wall Street",
-            "published_at": "2026-10-11T10:39:06+00:00",
-            "id": "c7462877202afa93b5a8",
-            "type": "regulatory",
-            "age_hours": 0.09,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-11T10:44:28.341572+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SUPN_US_EQ",
-        "isin": "US8684591089",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TVTX",
-      "name": "Travere Therapeutics",
-      "asset_type": "stock",
-      "price": 52.125,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.163334,
-      "volume": 1169383.0,
-      "dollar_volume": 60954088.875,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.37,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
-        "source": "Stocktwits",
-        "published_at": "2026-10-11T09:46:42+00:00",
-        "id": "67d93bb4132f96a100b2",
-        "type": "regulatory",
-        "age_hours": 7.36,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
-            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
-            "source": "Stocktwits",
-            "published_at": "2026-10-11T09:46:42+00:00",
-            "id": "67d93bb4132f96a100b2",
-            "type": "regulatory",
-            "age_hours": 7.36,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-11T17:08:23.436579+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "RTRX_US_EQ",
-        "isin": "US89422G1076",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1154,95 +770,604 @@
       }
     },
     {
-      "symbol": "PYTH",
-      "name": "Pyth Network",
-      "coin_id": "pyth-network",
+      "ticker": "SECZ",
+      "name": "Securitize",
+      "asset_type": "stock",
+      "price": 13.82,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 9.16272,
+      "volume": 5671442.0,
+      "dollar_volume": 78379328.44,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.103,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Florida-based Securitize launches blockchain-based stocks with security entitlements - https://internationalfinance.com/",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVVJYlcwV3ZYcDNSYVNJTHVCWXpmcEJWZElVWlZLdmp5Tm1SNEdsTVRzclFaWUlzQndfZnprSlJlY0d2MjlUN2daYUR0ajhxV2tvSzdCQjd3VFI5aGNnbWwzR2wtZkUwN0tLVVQxRFBjYVYtWWIxNXJOQnQ3RlA3dFB5MEpTaFpwTHJqTE9oS1pBdS1ELVprQk1iNDNhVzFMMGxmN2RuamJQRUNXOWkyYVZLMzhzZkpOTDgyeDd1bWZHS1NublE?oc=5",
+        "source": "https://internationalfinance.com/",
+        "published_at": "2026-10-12T04:00:51+00:00",
+        "id": "f294f8c370880ee4b469",
+        "type": "product_launch",
+        "age_hours": 1.74,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Florida-based Securitize launches blockchain-based stocks with security entitlements - https://internationalfinance.com/",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Florida-based Securitize launches blockchain-based stocks with security entitlements - https://internationalfinance.com/",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVVJYlcwV3ZYcDNSYVNJTHVCWXpmcEJWZElVWlZLdmp5Tm1SNEdsTVRzclFaWUlzQndfZnprSlJlY0d2MjlUN2daYUR0ajhxV2tvSzdCQjd3VFI5aGNnbWwzR2wtZkUwN0tLVVQxRFBjYVYtWWIxNXJOQnQ3RlA3dFB5MEpTaFpwTHJqTE9oS1pBdS1ELVprQk1iNDNhVzFMMGxmN2RuamJQRUNXOWkyYVZLMzhzZkpOTDgyeDd1bWZHS1NublE?oc=5",
+            "source": "https://internationalfinance.com/",
+            "published_at": "2026-10-12T04:00:51+00:00",
+            "id": "f294f8c370880ee4b469",
+            "type": "product_launch",
+            "age_hours": 1.74,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-12T05:45:30.380489+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CEPT_US_EQ",
+        "isin": "US81517B1017",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SUPN",
+      "name": "Supernus Pharmaceuticals",
+      "asset_type": "stock",
+      "price": 42.67,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.25771,
+      "volume": 579132.0,
+      "dollar_volume": 24711562.44,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.431,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZDgyVDBvdTVWZXgyZ1g3R29RN3BvVXJLNXQ1bm44aTJ6dVlTSXpucTBnY3JxMWR1bGFDRkhaUl9BQnNLOVJjMlk3czBIdC01U0xrbExEaDVVSm8wRVdjaEpHLWs1YmJOZm8wUDNMWmhFX0cyVFdjQUlZSFBTVlNYM1ctZUVWZ0RTcHM3YS1pNzROdERFdUlZbEhVQkNTTzk5SWRqcmRPTEJiQ1lUQWNaQ01uUzREUmc0ZE1WZjdQVEstcC12N2czOXRvU2pNRTl0cThDY2p3RDdTT0RzeWZ2SVJqUnFuaE5qbVp5RHRGUdIB9AFBVV95cUxOMGoxSDhyQmNJSUpYTGlwNFVBSjk0TEZFQmNfWldxM0xlS1FkeFhkcnpOZEYtYS1xckhjVUx2VHEtVzdKX0t1Y2lKWjdYZFB0S3p3aWFRcmVqbG1qdnF0ZzBKZ0tWMlotN2VOaXFyS1A1eldDNmR3QUdXQnZPM3BDVTExZkdaa1dqLW9IRU01RnMwU1ZiOFpIbFJCX2ROQnJ2UzZ3UVViaVhteTBlcUZXNUpWRElHYVBUbThjUnM5bXBpTE1XTjc5NUZCaG5yWV93LW9WbXFYRG1EamxBVWppRGpnUzRBTktPX0RBTXg3Y2d0Z1RP?oc=5",
+        "source": "Simply Wall Street",
+        "published_at": "2026-10-11T10:39:06+00:00",
+        "id": "c7462877202afa93b5a8",
+        "type": "regulatory",
+        "age_hours": 0.09,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
+            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZDgyVDBvdTVWZXgyZ1g3R29RN3BvVXJLNXQ1bm44aTJ6dVlTSXpucTBnY3JxMWR1bGFDRkhaUl9BQnNLOVJjMlk3czBIdC01U0xrbExEaDVVSm8wRVdjaEpHLWs1YmJOZm8wUDNMWmhFX0cyVFdjQUlZSFBTVlNYM1ctZUVWZ0RTcHM3YS1pNzROdERFdUlZbEhVQkNTTzk5SWRqcmRPTEJiQ1lUQWNaQ01uUzREUmc0ZE1WZjdQVEstcC12N2czOXRvU2pNRTl0cThDY2p3RDdTT0RzeWZ2SVJqUnFuaE5qbVp5RHRGUdIB9AFBVV95cUxOMGoxSDhyQmNJSUpYTGlwNFVBSjk0TEZFQmNfWldxM0xlS1FkeFhkcnpOZEYtYS1xckhjVUx2VHEtVzdKX0t1Y2lKWjdYZFB0S3p3aWFRcmVqbG1qdnF0ZzBKZ0tWMlotN2VOaXFyS1A1eldDNmR3QUdXQnZPM3BDVTExZkdaa1dqLW9IRU01RnMwU1ZiOFpIbFJCX2ROQnJ2UzZ3UVViaVhteTBlcUZXNUpWRElHYVBUbThjUnM5bXBpTE1XTjc5NUZCaG5yWV93LW9WbXFYRG1EamxBVWppRGpnUzRBTktPX0RBTXg3Y2d0Z1RP?oc=5",
+            "source": "Simply Wall Street",
+            "published_at": "2026-10-11T10:39:06+00:00",
+            "id": "c7462877202afa93b5a8",
+            "type": "regulatory",
+            "age_hours": 0.09,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T10:44:28.341572+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "SUPN_US_EQ",
+        "isin": "US8684591089",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TVTX",
+      "name": "Travere Therapeutics",
+      "asset_type": "stock",
+      "price": 52.125,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0.163334,
+      "volume": 1169383.0,
+      "dollar_volume": 60954088.875,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.37,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+        "source": "Stocktwits",
+        "published_at": "2026-10-11T09:46:42+00:00",
+        "id": "67d93bb4132f96a100b2",
+        "type": "regulatory",
+        "age_hours": 7.36,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+            "source": "Stocktwits",
+            "published_at": "2026-10-11T09:46:42+00:00",
+            "id": "67d93bb4132f96a100b2",
+            "type": "regulatory",
+            "age_hours": 7.36,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-11T17:08:23.436579+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RTRX_US_EQ",
+        "isin": "US89422G1076",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "BIAF",
+      "name": "bioAffinity Technologies",
+      "asset_type": "stock",
+      "price": 4.725,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -16.223404,
+      "volume": 657427.0,
+      "dollar_volume": 3106342.5749999997,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -16.906,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - BioSpace",
+        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNS0NWMFVsbHpqWVNFUXhUU3JWUWFiZFAzSkctY0ItQW1CeXh0SHBkUUxCdllvQVhhSklZM2ZPTDFxdXVCc3VtOFpMdjNrSGJCSi1EZW5hd0ZFMWgyS2ttY1Fjb05OVUJ1bGtUWm52cWp0WFRISmlVTlowc2ZoYnVkRTcwd3hNcjZPSTVJaWRpd0pwMGJBeXlSRXhhNjRlNGVtblZWYWpZdW9nM3pxdDUtY0JwQ0VUVGRBRmJOeENOaEt4cDRDN3ZsLVF6aTVYTXlyaTdQRW0zQllNZ3VDZDZ5aVJ2ZS0wZEhsaWs0bjNIXzlMSkQ5VkdwM19BM2xmZkFPZXdVTmNRNWljZmxfcWhxNjNKeThQSHhoT3hXZE1wWTNSQWhaSUJlTkQ5UzByR3h4SnVYa0NpbnNTRy1U?oc=5",
+        "source": "BioSpace",
+        "published_at": "2026-10-12T07:44:44+00:00",
+        "id": "84711484f29c031c156b",
+        "type": "financing",
+        "age_hours": 0.85,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - BioSpace",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - BioSpace",
+            "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNS0NWMFVsbHpqWVNFUXhUU3JWUWFiZFAzSkctY0ItQW1CeXh0SHBkUUxCdllvQVhhSklZM2ZPTDFxdXVCc3VtOFpMdjNrSGJCSi1EZW5hd0ZFMWgyS2ttY1Fjb05OVUJ1bGtUWm52cWp0WFRISmlVTlowc2ZoYnVkRTcwd3hNcjZPSTVJaWRpd0pwMGJBeXlSRXhhNjRlNGVtblZWYWpZdW9nM3pxdDUtY0JwQ0VUVGRBRmJOeENOaEt4cDRDN3ZsLVF6aTVYTXlyaTdQRW0zQllNZ3VDZDZ5aVJ2ZS0wZEhsaWs0bjNIXzlMSkQ5VkdwM19BM2xmZkFPZXdVTmNRNWljZmxfcWhxNjNKeThQSHhoT3hXZE1wWTNSQWhaSUJlTkQ5UzByR3h4SnVYa0NpbnNTRy1U?oc=5",
+            "source": "BioSpace",
+            "published_at": "2026-10-12T07:44:44+00:00",
+            "id": "84711484f29c031c156b",
+            "type": "financing",
+            "age_hours": 0.85,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-12T08:35:35.207558+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "BIAF_US_EQ",
+        "isin": "US09076W4069",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "symbol": "SENT",
+      "name": "Sentient",
+      "coin_id": "sentient",
       "asset_type": "crypto",
-      "price": 0.07358,
+      "price": 0.019219,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 6.01675,
-      "change_1h": 2.5406,
-      "acceleration": 2.2899020833333332,
+      "change_24h": 0.0207,
+      "change_1h": 1.1405,
+      "acceleration": 1.1396375,
       "discovery_route": "recent_momentum",
-      "change_7d": 4.824,
-      "volume": 32669323.0,
-      "dollar_volume": 32669323.0,
-      "market_cap": 579414339,
+      "change_7d": -7.0555,
+      "volume": 41415995.0,
+      "dollar_volume": 41415995.0,
+      "market_cap": 138818254,
       "session": "24/7",
-      "observed_at": "2026-10-12T08:00:00+00:00",
+      "observed_at": "2026-10-12T08:35:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-12T08:01:37.217719+00:00",
+        "checked_at": "2026-10-12T08:35:35.207558+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "history_samples": 720,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No second distinct historical resistance target in the lookback."
-      ],
-      "entry": 0.07352,
-      "support": 0.07186,
-      "momentum_pct": 0.08161044613710366,
-      "reference_price": 0.07317757077781556,
-      "extension_pct": 0.549935202695262,
-      "resistance_1": 0.07388,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 0.019232,
+      "support": 0.019124,
+      "momentum_pct": 0.2817636316201355,
+      "reference_price": 0.019185510598079554,
+      "extension_pct": 0.17455569790150172,
+      "resistance_1": 0.019259,
+      "resistance_2": 0.019323,
       "chart_analysis": {
         "setups": [
           {
             "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 0.0733,
-            "support": 0.07292,
-            "resistance_1": 0.07343,
-            "resistance_2": 0.07388,
-            "momentum_pct": 0.08161044613710366,
-            "extension_pct": 0.549935202695262,
+            "entry": 0.019191,
+            "support": 0.019128,
+            "resistance_1": 0.019213,
+            "resistance_2": 0.019278,
+            "momentum_pct": 0.2817636316201355,
+            "extension_pct": 0.17455569790150172,
             "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
             "target_basis": {
-              "origin": 0.07292,
-              "measured_height": 0.0021599999999999953,
+              "origin": 0.019128,
+              "measured_height": 0.0003130000000000008,
               "fractions": [
                 0.5,
                 1.0
               ],
               "uncapped_targets": [
-                0.074,
-                0.07508
+                0.0192845,
+                0.019441
               ],
               "overhead_levels": [
-                0.07343,
-                0.07352,
-                0.07357,
-                0.07362
+                0.019213,
+                0.019215,
+                0.019216,
+                0.019217
               ]
             },
-            "observed_at": "2026-10-12T08:00:00+00:00",
+            "observed_at": "2026-10-12T08:35:00+00:00",
             "evidence": {
-              "impulse_high": 0.07352,
-              "impulse_low": 0.07136,
-              "pullback_low": 0.07292,
-              "ema9": 0.07288067178068112,
-              "ema21": 0.0723190302389611,
+              "impulse_high": 0.019232,
+              "impulse_low": 0.018919,
+              "pullback_low": 0.019128,
+              "ema9": 0.019155391076463635,
+              "ema21": 0.01910791470933599,
               "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
             }
           }
         ],
         "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 5.221507670059517,
-        "observed_at": "2026-10-12T08:00:00+00:00"
+        "recent_volume_ratio": 0.7847917506309287,
+        "observed_at": "2026-10-12T08:35:00+00:00"
       },
-      "structure_observed_at": "2026-10-12T08:00:00+00:00",
+      "structure_observed_at": "2026-10-12T08:35:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "PYTHEUR",
+        "pair": "SENTEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
@@ -1255,7 +1380,7 @@
         "headlines": [],
         "freshness": "STALE/UNVERIFIED",
         "retrieval_status": "OK",
-        "headlines_checked": 7
+        "headlines_checked": 0
       },
       "score": {
         "score": 4,
@@ -1269,6 +1394,7 @@
       "qualification": {
         "status": "TECHNICAL WATCH",
         "reasons": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
           "Stop width or achievable reward/risk fails the entry filter."
         ],
         "plan": null,
@@ -1277,61 +1403,59 @@
         "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
         "pattern_evidence": {
           "pattern": "TREND_PULLBACK_RECLAIM",
-          "entry": 0.0733,
-          "support": 0.07292,
-          "resistance_1": 0.07343,
-          "resistance_2": 0.07388,
-          "momentum_pct": 0.08161044613710366,
-          "extension_pct": 0.549935202695262,
+          "entry": 0.019191,
+          "support": 0.019128,
+          "resistance_1": 0.019213,
+          "resistance_2": 0.019278,
+          "momentum_pct": 0.2817636316201355,
+          "extension_pct": 0.17455569790150172,
           "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
           "target_basis": {
-            "origin": 0.07292,
-            "measured_height": 0.0021599999999999953,
+            "origin": 0.019128,
+            "measured_height": 0.0003130000000000008,
             "fractions": [
               0.5,
               1.0
             ],
             "uncapped_targets": [
-              0.074,
-              0.07508
+              0.0192845,
+              0.019441
             ],
             "overhead_levels": [
-              0.07343,
-              0.07352,
-              0.07357,
-              0.07362
+              0.019213,
+              0.019215,
+              0.019216,
+              0.019217
             ]
           },
-          "observed_at": "2026-10-12T08:00:00+00:00",
+          "observed_at": "2026-10-12T08:35:00+00:00",
           "evidence": {
-            "impulse_high": 0.07352,
-            "impulse_low": 0.07136,
-            "pullback_low": 0.07292,
-            "ema9": 0.07288067178068112,
-            "ema21": 0.0723190302389611,
+            "impulse_high": 0.019232,
+            "impulse_low": 0.018919,
+            "pullback_low": 0.019128,
+            "ema9": 0.019155391076463635,
+            "ema21": 0.01910791470933599,
             "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
           }
         },
         "research_only": true,
         "blockers": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
           "Stop width or achievable reward/risk fails the entry filter."
         ],
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "No second distinct historical resistance target in the lookback."
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
             ],
             "plan": null,
-            "missing_fields": [
-              "resistance_2"
-            ],
             "route": "CATALYST_LED"
           },
           {
             "status": "TECHNICAL WATCH",
             "reasons": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
               "Stop width or achievable reward/risk fails the entry filter."
             ],
             "plan": null,
@@ -1340,43 +1464,44 @@
             "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
             "pattern_evidence": {
               "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 0.0733,
-              "support": 0.07292,
-              "resistance_1": 0.07343,
-              "resistance_2": 0.07388,
-              "momentum_pct": 0.08161044613710366,
-              "extension_pct": 0.549935202695262,
+              "entry": 0.019191,
+              "support": 0.019128,
+              "resistance_1": 0.019213,
+              "resistance_2": 0.019278,
+              "momentum_pct": 0.2817636316201355,
+              "extension_pct": 0.17455569790150172,
               "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
               "target_basis": {
-                "origin": 0.07292,
-                "measured_height": 0.0021599999999999953,
+                "origin": 0.019128,
+                "measured_height": 0.0003130000000000008,
                 "fractions": [
                   0.5,
                   1.0
                 ],
                 "uncapped_targets": [
-                  0.074,
-                  0.07508
+                  0.0192845,
+                  0.019441
                 ],
                 "overhead_levels": [
-                  0.07343,
-                  0.07352,
-                  0.07357,
-                  0.07362
+                  0.019213,
+                  0.019215,
+                  0.019216,
+                  0.019217
                 ]
               },
-              "observed_at": "2026-10-12T08:00:00+00:00",
+              "observed_at": "2026-10-12T08:35:00+00:00",
               "evidence": {
-                "impulse_high": 0.07352,
-                "impulse_low": 0.07136,
-                "pullback_low": 0.07292,
-                "ema9": 0.07288067178068112,
-                "ema21": 0.0723190302389611,
+                "impulse_high": 0.019232,
+                "impulse_low": 0.018919,
+                "pullback_low": 0.019128,
+                "ema9": 0.019155391076463635,
+                "ema21": 0.01910791470933599,
                 "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
               }
             },
             "research_only": true,
             "blockers": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
               "Stop width or achievable reward/risk fails the entry filter."
             ]
           }
@@ -1385,11 +1510,12 @@
     }
   ],
   "changed_signals": [
-    "crypto:pyth-network"
+    "stock:BBIO",
+    "stock:BIAF",
+    "crypto:sentient"
   ],
   "invalidated_signals": [
-    "stock:ALOY",
-    "crypto:sky"
+    "crypto:pyth-network"
   ],
   "health": {
     "stocks": {
@@ -1399,11 +1525,12 @@
       "listed_assets": 5949,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7744,
-        "snapshot_records": 7744,
-        "pagination_complete": true,
+        "provider_total": 7736,
+        "snapshot_records": 5500,
+        "pagination_complete": false,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout"
+          "Nasdaq screener failed: ReadTimeout",
+          "Quote page failed at offset 5500: Timeout"
         ],
         "source": "Yahoo paginated fallback"
       },
@@ -1411,7 +1538,7 @@
         "queries": 5,
         "headlines_received": 170,
         "matched_events": 10,
-        "matched_assets": 9,
+        "matched_assets": 10,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1432,23 +1559,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5891,
-      "discovered_candidates": 9,
+      "listed_snapshot_records": 4246,
+      "discovered_candidates": 10,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 9,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
-      "selected_candidates": 9,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 58,
+      "unquoted_listings": 1703,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 9,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1469,7 +1596,7 @@
       "history_not_requested": 0,
       "catalyst_discovery": {
         "queries": 2,
-        "headlines_received": 140,
+        "headlines_received": 170,
         "matched_events": 0,
         "matched_assets": 0,
         "failed_queries": 0,
@@ -1496,18 +1623,18 @@
         "status": "OK",
         "records": 17049,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-12T08:01:37.217719+00:00",
+        "checked_at": "2026-10-12T08:35:35.207558+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-12T08:01:37.217719+00:00"
+        "checked_at": "2026-10-12T08:35:35.207558+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 22,
       "failed": 0
     }
   },
