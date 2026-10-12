@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-12T11:13:02.631873+00:00",
+  "generated_at": "2026-10-12T11:35:25.905960+00:00",
   "potential_signals": [
     {
       "ticker": "AKAM",
@@ -77,134 +77,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "AKAM_US_EQ",
         "isin": "US00971T1016",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "CDE",
-      "name": "Coeur Mining",
-      "asset_type": "stock",
-      "price": 17.13,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.54119,
-      "volume": 26320248.0,
-      "dollar_volume": 450865848.23999995,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:53+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 13.383,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Coeur Mining Q2 2026 Earnings Call: Complete Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSXgxUnNLSDZYNmZmYU5tVGdZUUd2RHl2SExTbmNPaGI1c0hmSHRWdldSR2poVGJic3A4N0Y5am94UU82Mm9wUFhPSDU2M2NvamdoNTVVQncyUGxnbjVtVjNPdHVmUmFYRm51NHNqRzBwS2I0Y3d4ZzE1NHgxTEpXU3FaWWw1MnhXN2xnbzQzdDlfTHRSLS03S0tfZjVMT2Vs?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-12T08:48:41+00:00",
-        "id": "db461216ab7c51aa6c1e",
-        "type": "earnings",
-        "age_hours": 2.39,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Coeur Mining Q2 2026 Earnings Call: Complete Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Coeur Mining Q2 2026 Earnings Call: Complete Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSXgxUnNLSDZYNmZmYU5tVGdZUUd2RHl2SExTbmNPaGI1c0hmSHRWdldSR2poVGJic3A4N0Y5am94UU82Mm9wUFhPSDU2M2NvamdoNTVVQncyUGxnbjVtVjNPdHVmUmFYRm51NHNqRzBwS2I0Y3d4ZzE1NHgxTEpXU3FaWWw1MnhXN2xnbzQzdDlfTHRSLS03S0tfZjVMT2Vs?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-12T08:48:41+00:00",
-            "id": "db461216ab7c51aa6c1e",
-            "type": "earnings",
-            "age_hours": 2.39,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-12T11:12:12.489390+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "CDE_US_EQ",
-        "isin": "US1921085049",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -900,134 +772,6 @@
       }
     },
     {
-      "ticker": "SUPN",
-      "name": "Supernus Pharmaceuticals",
-      "asset_type": "stock",
-      "price": 42.67,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.2577095,
-      "volume": 643833.0,
-      "dollar_volume": 27472354.11,
-      "session": "CLOSED",
-      "observed_at": "2026-10-09T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.914,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZDgyVDBvdTVWZXgyZ1g3R29RN3BvVXJLNXQ1bm44aTJ6dVlTSXpucTBnY3JxMWR1bGFDRkhaUl9BQnNLOVJjMlk3czBIdC01U0xrbExEaDVVSm8wRVdjaEpHLWs1YmJOZm8wUDNMWmhFX0cyVFdjQUlZSFBTVlNYM1ctZUVWZ0RTcHM3YS1pNzROdERFdUlZbEhVQkNTTzk5SWRqcmRPTEJiQ1lUQWNaQ01uUzREUmc0ZE1WZjdQVEstcC12N2czOXRvU2pNRTl0cThDY2p3RDdTT0RzeWZ2SVJqUnFuaE5qbVp5RHRGUdIB9AFBVV95cUxOMGoxSDhyQmNJSUpYTGlwNFVBSjk0TEZFQmNfWldxM0xlS1FkeFhkcnpOZEYtYS1xckhjVUx2VHEtVzdKX0t1Y2lKWjdYZFB0S3p3aWFRcmVqbG1qdnF0ZzBKZ0tWMlotN2VOaXFyS1A1eldDNmR3QUdXQnZPM3BDVTExZkdaa1dqLW9IRU01RnMwU1ZiOFpIbFJCX2ROQnJ2UzZ3UVViaVhteTBlcUZXNUpWRElHYVBUbThjUnM5bXBpTE1XTjc5NUZCaG5yWV93LW9WbXFYRG1EamxBVWppRGpnUzRBTktPX0RBTXg3Y2d0Z1RP?oc=5",
-        "source": "Simply Wall Street",
-        "published_at": "2026-10-11T11:26:15+00:00",
-        "id": "c7462877202afa93b5a8",
-        "type": "regulatory",
-        "age_hours": 23.77,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "How Investors May Respond To Supernus Pharmaceuticals (SUPN) FDA Approval For ONAPGO - Simply Wall Street",
-            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZDgyVDBvdTVWZXgyZ1g3R29RN3BvVXJLNXQ1bm44aTJ6dVlTSXpucTBnY3JxMWR1bGFDRkhaUl9BQnNLOVJjMlk3czBIdC01U0xrbExEaDVVSm8wRVdjaEpHLWs1YmJOZm8wUDNMWmhFX0cyVFdjQUlZSFBTVlNYM1ctZUVWZ0RTcHM3YS1pNzROdERFdUlZbEhVQkNTTzk5SWRqcmRPTEJiQ1lUQWNaQ01uUzREUmc0ZE1WZjdQVEstcC12N2czOXRvU2pNRTl0cThDY2p3RDdTT0RzeWZ2SVJqUnFuaE5qbVp5RHRGUdIB9AFBVV95cUxOMGoxSDhyQmNJSUpYTGlwNFVBSjk0TEZFQmNfWldxM0xlS1FkeFhkcnpOZEYtYS1xckhjVUx2VHEtVzdKX0t1Y2lKWjdYZFB0S3p3aWFRcmVqbG1qdnF0ZzBKZ0tWMlotN2VOaXFyS1A1eldDNmR3QUdXQnZPM3BDVTExZkdaa1dqLW9IRU01RnMwU1ZiOFpIbFJCX2ROQnJ2UzZ3UVViaVhteTBlcUZXNUpWRElHYVBUbThjUnM5bXBpTE1XTjc5NUZCaG5yWV93LW9WbXFYRG1EamxBVWppRGpnUzRBTktPX0RBTXg3Y2d0Z1RP?oc=5",
-            "source": "Simply Wall Street",
-            "published_at": "2026-10-11T11:26:15+00:00",
-            "id": "c7462877202afa93b5a8",
-            "type": "regulatory",
-            "age_hours": 23.77,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-12T11:12:12.489390+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SUPN_US_EQ",
-        "isin": "US8684591089",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "WEAV",
       "name": "Weave Communications",
       "asset_type": "stock",
@@ -1156,6 +900,134 @@
       }
     },
     {
+      "ticker": "ZBIO",
+      "name": "Zenas BioPharma",
+      "asset_type": "stock",
+      "price": 27.26,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 3.887197,
+      "volume": 429819.0,
+      "dollar_volume": 11716865.940000001,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.481,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Zenas BioPharma Announces Sustained Clinical Activity and Reduced Glucocorticoid Toxicity for Obexelimab in Phase 3 INDIGO IgG4-RD Extension Study - Quiver Quantitative",
+        "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNbTJvZVJhbTd4VS0xdmpndUwwdUFtSTBQR29PWFM4LVpKbVVvcW9uRUJJUkxLUWp0MmZuZVMwVWVVZXlya0JYNFh4Tlh3WlFVRnlVZEt2MERjZEZFdmN6bHpYQUcxY2piVjBUSVN3NzlYXy1WYmtLUDd2LU1LblZINE5VdnF3V2xVUzlzZUUtaUtRdzZLdVRZbmdmWmliRmdoQ1VzZExRWjR4YkNiV3NmY3loT2psQWkwVTFNdDc0ekY0SkhIZ3NTbTdqNG12enVJUlpOYkxOenpFV3pwcGhhZmxSa1NlZjhnM3JvS0c2Yjc3YmN3N0hseWhna0lvbnRqcUlmcFNITE5MbTg?oc=5",
+        "source": "Quiver Quantitative",
+        "published_at": "2026-10-12T11:11:00+00:00",
+        "id": "082e74aa21434dbc69e5",
+        "type": "regulatory",
+        "age_hours": 0.39,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Zenas BioPharma Announces Sustained Clinical Activity and Reduced Glucocorticoid Toxicity for Obexelimab in Phase 3 INDIGO IgG4-RD Extension Study - Quiver Quantitative",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Zenas BioPharma Announces Sustained Clinical Activity and Reduced Glucocorticoid Toxicity for Obexelimab in Phase 3 INDIGO IgG4-RD Extension Study - Quiver Quantitative",
+            "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNbTJvZVJhbTd4VS0xdmpndUwwdUFtSTBQR29PWFM4LVpKbVVvcW9uRUJJUkxLUWp0MmZuZVMwVWVVZXlya0JYNFh4Tlh3WlFVRnlVZEt2MERjZEZFdmN6bHpYQUcxY2piVjBUSVN3NzlYXy1WYmtLUDd2LU1LblZINE5VdnF3V2xVUzlzZUUtaUtRdzZLdVRZbmdmWmliRmdoQ1VzZExRWjR4YkNiV3NmY3loT2psQWkwVTFNdDc0ekY0SkhIZ3NTbTdqNG12enVJUlpOYkxOenpFV3pwcGhhZmxSa1NlZjhnM3JvS0c2Yjc3YmN3N0hseWhna0lvbnRqcUlmcFNITE5MbTg?oc=5",
+            "source": "Quiver Quantitative",
+            "published_at": "2026-10-12T11:11:00+00:00",
+            "id": "082e74aa21434dbc69e5",
+            "type": "regulatory",
+            "age_hours": 0.39,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-12T11:34:30.052998+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ZBIO_US_EQ",
+        "isin": "US98937L1052",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "TRGP",
       "name": "Targa Resources",
       "asset_type": "stock",
@@ -1229,6 +1101,134 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "TRGP_US_EQ",
         "isin": "US87612G1013",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "ARW",
+      "name": "Arrow Electronics",
+      "asset_type": "stock",
+      "price": 227.9,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0.507164,
+      "volume": 314315.0,
+      "dollar_volume": 71632388.5,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:03+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.245,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Arrow Electronics Q2 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNampGRVZRQjROU3RBRGVvSWkyOU9sbUpRMmM3N2s5X1hKM0xhcDViMmQxakxrN1dtVERBczM0cnc4YnhleEVwcFo5a2J5YU8tOTB4VTV4NXFnN2lLLVZBZlFjQnJ5VFJrYjd1bWk0cWNYOUxmMDJqLVJfSF90OHhtOUlNODROeHNTWTFoX2kyZ3Y1U0xMa0ZXNURaUQ?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-12T11:16:23+00:00",
+        "id": "33cc3f61fc9d581b5b9e",
+        "type": "earnings",
+        "age_hours": 0.3,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Arrow Electronics Q2 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Arrow Electronics Q2 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNampGRVZRQjROU3RBRGVvSWkyOU9sbUpRMmM3N2s5X1hKM0xhcDViMmQxakxrN1dtVERBczM0cnc4YnhleEVwcFo5a2J5YU8tOTB4VTV4NXFnN2lLLVZBZlFjQnJ5VFJrYjd1bWk0cWNYOUxmMDJqLVJfSF90OHhtOUlNODROeHNTWTFoX2kyZ3Y1U0xMa0ZXNURaUQ?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-12T11:16:23+00:00",
+            "id": "33cc3f61fc9d581b5b9e",
+            "type": "earnings",
+            "age_hours": 0.3,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-12T11:34:30.052998+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ARW_US_EQ",
+        "isin": "US0427351004",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1922,6 +1922,132 @@
       }
     },
     {
+      "ticker": "RLMD",
+      "name": "Relmada Therapeutics",
+      "asset_type": "stock",
+      "price": 3.39,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 6.940064,
+      "volume": 1730502.0,
+      "dollar_volume": 5866401.78,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 8.453,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Full Transcript: Relmada Therapeutics Q2 2026 Earnings Call - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONFJ1bFlTbXhtbzlZb1FhWk1DdklOUTMtUGw1ZWxkSFpwOGJRX1FxNXF6azJBZ3ZuUmRxWHpPb19xcmdnWWw1WnlScUh0RFlzazA4OXgwLUdsSlZGYmZydnp2SWU4OE1DOEtvTno3Tk1QTHM4SHhXMjJVTmlMcWRrUWJSWHZucVEtcldSMHJlLWUtbFBaUjh5eEFnMngyR2dVUW1IUVV3?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-12T11:21:59+00:00",
+        "id": "bd539da5149182cf2e71",
+        "type": "earnings",
+        "age_hours": 0.21,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Full Transcript: Relmada Therapeutics Q2 2026 Earnings Call - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Full Transcript: Relmada Therapeutics Q2 2026 Earnings Call - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONFJ1bFlTbXhtbzlZb1FhWk1DdklOUTMtUGw1ZWxkSFpwOGJRX1FxNXF6azJBZ3ZuUmRxWHpPb19xcmdnWWw1WnlScUh0RFlzazA4OXgwLUdsSlZGYmZydnp2SWU4OE1DOEtvTno3Tk1QTHM4SHhXMjJVTmlMcWRrUWJSWHZucVEtcldSMHJlLWUtbFBaUjh5eEFnMngyR2dVUW1IUVV3?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-12T11:21:59+00:00",
+            "id": "bd539da5149182cf2e71",
+            "type": "earnings",
+            "age_hours": 0.21,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-12T11:34:30.052998+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RLMD_US_EQ",
+        "isin": "US75955J4022",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "RCEL",
       "name": "Avita Medical",
       "asset_type": "stock",
@@ -2300,6 +2426,129 @@
       }
     },
     {
+      "ticker": "SENS",
+      "name": "Senseonics Holdings",
+      "asset_type": "stock",
+      "price": 8.98,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.44346914,
+      "volume": 499323.0,
+      "dollar_volume": 4483920.54,
+      "session": "CLOSED",
+      "observed_at": "2026-10-09T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "UNVERIFIED",
+        "snapshot_score": 4.893,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Senseonics Holdings Q2 2026 Earnings Call: Complete Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmNFdUs4QkhiQ2hHQWJtRzNGOE14TjdmRmhwQ3FIOTRtTndIR3hwSlp6akw2MmJPQ20tZlZGbWJ3czhzT3g4VmxLWVhEUDJORmVCMjFJX1FYMzZTZlMxcnJuQUV6OVNxRFRmTi1NVUJaS3VqbmpMdDBNOTVGRFQ2a05yVUtDZmJNQnpjRUgwVzNidUZhRjZVOUtvbEZZdkluOUptTkxIbTZ2QQ?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-12T11:18:55+00:00",
+        "id": "86b594cc109eeedb11c0",
+        "type": "earnings",
+        "age_hours": 0.26,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Senseonics Holdings Q2 2026 Earnings Call: Complete Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Senseonics Holdings Q2 2026 Earnings Call: Complete Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmNFdUs4QkhiQ2hHQWJtRzNGOE14TjdmRmhwQ3FIOTRtTndIR3hwSlp6akw2MmJPQ20tZlZGbWJ3czhzT3g4VmxLWVhEUDJORmVCMjFJX1FYMzZTZlMxcnJuQUV6OVNxRFRmTi1NVUJaS3VqbmpMdDBNOTVGRFQ2a05yVUtDZmJNQnpjRUgwVzNidUZhRjZVOUtvbEZZdkluOUptTkxIbTZ2QQ?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-12T11:18:55+00:00",
+            "id": "86b594cc109eeedb11c0",
+            "type": "earnings",
+            "age_hours": 0.26,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-10-12T11:34:30.052998+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "reason": "Ticker/company identity is ambiguous; manual verification required."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
@@ -2431,24 +2680,14 @@
     }
   ],
   "changed_signals": [
-    "stock:AKAM",
-    "stock:CDE",
-    "stock:KRMN",
-    "stock:GMED",
-    "stock:BBIO",
-    "stock:TNDM",
-    "stock:LNG",
-    "stock:SUPN",
-    "stock:WEAV",
-    "stock:TRGP",
-    "stock:CLSK",
-    "stock:HYPR",
-    "stock:RCEL",
-    "stock:OM",
-    "crypto:ethereum"
+    "stock:ZBIO",
+    "stock:ARW",
+    "stock:RLMD",
+    "stock:SENS"
   ],
   "invalidated_signals": [
-    "stock:SMR"
+    "stock:CDE",
+    "stock:SUPN"
   ],
   "health": {
     "stocks": {
@@ -2458,8 +2697,8 @@
       "listed_assets": 5949,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7736,
-        "snapshot_records": 7736,
+        "provider_total": 7744,
+        "snapshot_records": 7744,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -2469,8 +2708,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 170,
-        "matched_events": 18,
-        "matched_assets": 18,
+        "matched_events": 20,
+        "matched_assets": 20,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2492,14 +2731,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5891,
-      "discovered_candidates": 18,
+      "discovered_candidates": 20,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 18,
+      "shortlisted_candidates": 20,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 18,
-      "selected_candidates": 18,
+      "catalyst_selected": 20,
+      "selected_candidates": 20,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -2507,7 +2746,7 @@
       "unquoted_listings": 58,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 18,
+      "history_not_requested": 20,
       "chart_failures": 0
     },
     "crypto": {
@@ -2555,18 +2794,18 @@
         "status": "OK",
         "records": 17050,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-12T11:12:12.489390+00:00",
+        "checked_at": "2026-10-12T11:34:30.052998+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-12T11:12:12.489390+00:00"
+        "checked_at": "2026-10-12T11:34:30.052998+00:00"
       }
     },
     "news": {
-      "checked": 30,
+      "checked": 32,
       "failed": 0
     }
   },
