@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-13T11:46:28.613516+00:00",
+  "generated_at": "2026-10-13T12:04:13.651920+00:00",
   "potential_signals": [
     {
       "ticker": "LNT",
@@ -1413,6 +1413,132 @@
       }
     },
     {
+      "ticker": "CNTY",
+      "name": "Century Casinos",
+      "asset_type": "stock",
+      "price": 0.8397,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -2.16707,
+      "volume": 237924.0,
+      "dollar_volume": 199784.7828,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 7.666,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Full Transcript: Century Casinos Q2 2026 Earnings Call - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQl9lMm9UNjh4MDBUNlZkalVJajZBSUprdEFSTEpoZkFGSGxlZjUtRFNGc1FlZEp1MjF3MGtaSk4xRXhPREU1ZmZaQnVvZklKWG54YWxHWjJTa00tVndoZ3g2WnRZeFBYeDlhUTRReWFEWktNenp5QjEybkFzZzZnVXJuWTE2MG5pSWZ1eHJEZ2NjeFNRY2Y5RWNYY3JVa0E?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-13T11:38:16+00:00",
+        "id": "5f33d561058a0d89eec2",
+        "type": "earnings",
+        "age_hours": 0.42,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Full Transcript: Century Casinos Q2 2026 Earnings Call - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Full Transcript: Century Casinos Q2 2026 Earnings Call - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQl9lMm9UNjh4MDBUNlZkalVJajZBSUprdEFSTEpoZkFGSGxlZjUtRFNGc1FlZEp1MjF3MGtaSk4xRXhPREU1ZmZaQnVvZklKWG54YWxHWjJTa00tVndoZ3g2WnRZeFBYeDlhUTRReWFEWktNenp5QjEybkFzZzZnVXJuWTE2MG5pSWZ1eHJEZ2NjeFNRY2Y5RWNYY3JVa0E?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-13T11:38:16+00:00",
+            "id": "5f33d561058a0d89eec2",
+            "type": "earnings",
+            "age_hours": 0.42,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T12:03:32.844904+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "CNTY_US_EQ",
+        "isin": "US1564921005",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "IRLA",
       "name": "IRulya Therapeutics",
       "asset_type": "stock",
@@ -1800,7 +1926,7 @@
     }
   ],
   "changed_signals": [
-    "stock:FBK"
+    "stock:CNTY"
   ],
   "invalidated_signals": [],
   "health": {
@@ -1822,8 +1948,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 169,
-        "matched_events": 13,
-        "matched_assets": 12,
+        "matched_events": 14,
+        "matched_assets": 13,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1845,14 +1971,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5904,
-      "discovered_candidates": 12,
+      "discovered_candidates": 13,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 12,
+      "shortlisted_candidates": 13,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 12,
-      "selected_candidates": 12,
+      "catalyst_selected": 13,
+      "selected_candidates": 13,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1860,7 +1986,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 12,
+      "history_not_requested": 13,
       "chart_failures": 0
     },
     "crypto": {
@@ -1873,12 +1999,12 @@
       },
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 12,
-      "history_requested": 6,
-      "history_received": 6,
+      "price_records": 6,
+      "history_requested": 5,
+      "history_received": 5,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 6,
+      "history_not_requested": 1,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -1908,18 +2034,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-13T11:45:42.868635+00:00",
+        "checked_at": "2026-10-13T12:03:32.844904+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-13T11:45:42.868635+00:00"
+        "checked_at": "2026-10-13T12:03:32.844904+00:00"
       }
     },
     "news": {
-      "checked": 24,
+      "checked": 19,
       "failed": 0
     }
   },
