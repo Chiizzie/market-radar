@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-13T07:18:40.772768+00:00",
+  "generated_at": "2026-10-13T07:49:07.142632+00:00",
   "potential_signals": [
     {
       "ticker": "FRO",
@@ -650,6 +650,138 @@
       }
     },
     {
+      "ticker": "MSTR",
+      "name": "Strategy",
+      "asset_type": "stock",
+      "price": 152.68,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -1.07555,
+      "volume": 12882016.0,
+      "dollar_volume": 1966826202.88,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.218,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "HSG Laser Celebrates 20 Years with Global Partners and Unveils New Strategy",
+        "link": "https://www.prnewswire.com/news-releases/hsg-laser-celebrates-20-years-with-global-partners-and-unveils-new-strategy-302906750.html",
+        "published_at": "2026-10-13T07:38:00+00:00",
+        "source": "PR Newswire issuer releases",
+        "source_kind": "direct_announcement_feed",
+        "feed_url": "https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss",
+        "id": "4ebe2926521788d8ad2b",
+        "type": "product_launch",
+        "age_hours": 0.17,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "HSG Laser Celebrates 20 Years with Global Partners and Unveils New Strategy",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "HSG Laser Celebrates 20 Years with Global Partners and Unveils New Strategy",
+            "link": "https://www.prnewswire.com/news-releases/hsg-laser-celebrates-20-years-with-global-partners-and-unveils-new-strategy-302906750.html",
+            "published_at": "2026-10-13T07:38:00+00:00",
+            "source": "PR Newswire issuer releases",
+            "source_kind": "direct_announcement_feed",
+            "feed_url": "https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss",
+            "id": "4ebe2926521788d8ad2b",
+            "type": "product_launch",
+            "age_hours": 0.17,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T07:48:17.863858+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "MSTR_US_EQ",
+        "isin": "US5949724083",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "SDRL",
       "name": "Seadrill",
       "asset_type": "stock",
@@ -904,133 +1036,6 @@
           }
         ],
         "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "BIAF",
-      "name": "bioAffinity Technologies",
-      "asset_type": "stock",
-      "price": 4.539299964904785,
-      "currency": "USD",
-      "eur_per_unit": 0.8945000171661377,
-      "change": -3.9153428,
-      "volume": 47172,
-      "dollar_volume": 216544.3111386299,
-      "session": "REGULAR",
-      "observed_at": "2026-10-12T09:55:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": -7.778,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "catalyst": {
-        "title": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - BioSpace",
-        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNS0NWMFVsbHpqWVNFUXhUU3JWUWFiZFAzSkctY0ItQW1CeXh0SHBkUUxCdllvQVhhSklZM2ZPTDFxdXVCc3VtOFpMdjNrSGJCSi1EZW5hd0ZFMWgyS2ttY1Fjb05OVUJ1bGtUWm52cWp0WFRISmlVTlowc2ZoYnVkRTcwd3hNcjZPSTVJaWRpd0pwMGJBeXlSRXhhNjRlNGVtblZWYWpZdW9nM3pxdDUtY0JwQ0VUVGRBRmJOeENOaEt4cDRDN3ZsLVF6aTVYTXlyaTdQRW0zQllNZ3VDZDZ5aVJ2ZS0wZEhsaWs0bjNIXzlMSkQ5VkdwM19BM2xmZkFPZXdVTmNRNWljZmxfcWhxNjNKeThQSHhoT3hXZE1wWTNSQWhaSUJlTkQ5UzByR3h4SnVYa0NpbnNTRy1U?oc=5",
-        "source": "BioSpace",
-        "published_at": "2026-10-12T07:44:44+00:00",
-        "id": "84711484f29c031c156b",
-        "type": "financing",
-        "age_hours": 6.22,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - BioSpace",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "bioAffinity Technologies, Inc. Announces Closing of $4 Million Registered Direct Financing of Common Stock and Concurrent Private Placement Priced At-The-Market Under Nasdaq Rules - BioSpace",
-            "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNS0NWMFVsbHpqWVNFUXhUU3JWUWFiZFAzSkctY0ItQW1CeXh0SHBkUUxCdllvQVhhSklZM2ZPTDFxdXVCc3VtOFpMdjNrSGJCSi1EZW5hd0ZFMWgyS2ttY1Fjb05OVUJ1bGtUWm52cWp0WFRISmlVTlowc2ZoYnVkRTcwd3hNcjZPSTVJaWRpd0pwMGJBeXlSRXhhNjRlNGVtblZWYWpZdW9nM3pxdDUtY0JwQ0VUVGRBRmJOeENOaEt4cDRDN3ZsLVF6aTVYTXlyaTdQRW0zQllNZ3VDZDZ5aVJ2ZS0wZEhsaWs0bjNIXzlMSkQ5VkdwM19BM2xmZkFPZXdVTmNRNWljZmxfcWhxNjNKeThQSHhoT3hXZE1wWTNSQWhaSUJlTkQ5UzByR3h4SnVYa0NpbnNTRy1U?oc=5",
-            "source": "BioSpace",
-            "published_at": "2026-10-12T07:44:44+00:00",
-            "id": "84711484f29c031c156b",
-            "type": "financing",
-            "age_hours": 6.22,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-12T13:57:38.363517+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "BIAF_US_EQ",
-        "isin": "US09076W4069",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.014322869055973957,
-      "history_samples": 278,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 4.789999961853027,
-      "support": 4.5,
-      "momentum_pct": -0.6717769278645536,
-      "reference_price": 4.654104856661234,
-      "extension_pct": -2.466744847661373,
-      "resistance_1": 4.796599864959717,
-      "resistance_2": 4.815000057220459,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "Insufficient traded notional liquidity.",
-          "No positive recent momentum; a daily gain alone is insufficient.",
-          "Recent same-time relative volume is below 1.5x."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "Insufficient traded notional liquidity.",
-              "No positive recent momentum; a daily gain alone is insufficient.",
-              "Recent same-time relative volume is below 1.5x."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
         "research_only": true
       }
     },
@@ -1552,11 +1557,10 @@
     }
   ],
   "changed_signals": [
-    "stock:FRO",
-    "stock:TVTX"
+    "stock:MSTR"
   ],
   "invalidated_signals": [
-    "crypto:injective-protocol"
+    "stock:BIAF"
   ],
   "health": {
     "stocks": {
@@ -1566,8 +1570,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7795,
-        "snapshot_records": 7795,
+        "provider_total": 7796,
+        "snapshot_records": 7796,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1577,7 +1581,7 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 169,
-        "matched_events": 10,
+        "matched_events": 11,
         "matched_assets": 10,
         "failed_queries": 0,
         "errors": [],
@@ -1599,7 +1603,7 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5903,
+      "listed_snapshot_records": 5904,
       "discovered_candidates": 10,
       "broker_excluded_candidates": 1,
       "shortlisted_candidates": 9,
@@ -1612,7 +1616,7 @@
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 47,
+      "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
       "history_not_requested": 9,
@@ -1663,14 +1667,14 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-13T07:17:42.577064+00:00",
+        "checked_at": "2026-10-13T07:48:17.863858+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-13T07:17:42.577064+00:00"
+        "checked_at": "2026-10-13T07:48:17.863858+00:00"
       }
     },
     "news": {
