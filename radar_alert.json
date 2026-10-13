@@ -1,40 +1,207 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-13T13:39:32.814171+00:00",
+  "generated_at": "2026-10-13T14:06:04.935287+00:00",
   "potential_signals": [
     {
-      "ticker": "LNT",
-      "name": "Alliant Energy",
+      "ticker": "CVSA",
+      "name": "Covista",
       "asset_type": "stock",
-      "price": 66.46,
+      "price": 131.79989624023438,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": 0.92634875,
-      "volume": 2842809.0,
-      "dollar_volume": 188933086.14,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
+      "change": 1.73819,
+      "volume": 16935,
+      "dollar_volume": 2223533.6883850098,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T10:00:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
       "selection_evidence": {
-        "fresh_publication": true,
+        "fresh_publication": false,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 13.097,
+        "snapshot_score": 4.613,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ATGE_US_EQ",
+        "isin": "US00737L1035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 3.348050882232253,
+      "history_samples": 254,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No second distinct historical resistance target in the lookback."
+      ],
+      "entry": 131.5312042236328,
+      "support": 128.8699951171875,
+      "momentum_pct": 1.209360770132628,
+      "reference_price": 129.86184158188286,
+      "extension_pct": 1.4923973314589833,
+      "resistance_1": 131.97000122070312,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.7736801580889744,
+        "observed_at": "2026-10-13T10:00:00-04:00"
+      },
       "catalyst": {
-        "title": "Alliant Energy Corporation Announces Third Quarter Earnings Release and Conference Call - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQ3F4VC1rVGtUcGFNYjg5QVhHWHRfaVI1Y0I3emJXbGY3NnotX3lIdVloZUhScFZFM2lKYU9CUVk3NGF6c1c4YkNzblBaaUlZZkhJaHFKYk5ETEFRT091d2gwQ2RzUTdwSVliZ1Z1dVc5bVZKNXdrcGh4dlJWLU1vMS1ubXRON21OcmhSREVROTlvVzlMNVFreEd3NjBCbmd4VDU1SW1GbU1aWDZSbGZ6NkVJZC14c1NqbUlIUkRDdzNjZ3hHNkFhWVdqQjh4bWN2RFJxa2MzazJIZjla?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-12T21:00:00+00:00",
-        "id": "0f274eea770691085fc3",
+        "title": "Full Transcript: Covista Q4 2026 Earnings Call - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMnRBUHhFLTRPQl82SW05WWhaRGFFS09Zd05fWm8zb2VuQ1lHTlZFd3JMaTExSDRBaHBtN1ppdl9VVTRfM01wZFp3VV9vcS1OaVNoY3I1dzB2T1BNb1R1LUtLWmp5TmE2dzdBZkNYX2N4SlJrYmVkYXlMQk1oaVlSQnBxV3BxSkF0bFkxZ0hCSWctZ0g3aE1VV3BYanpKWTZZc3BHVDJDd3ZsMkpRSlhaVkZWeHJRdw?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-13T08:54:20+00:00",
+        "id": "d9be57bfa5b34a6b15de",
         "type": "earnings",
-        "age_hours": 0.27,
+        "age_hours": 5.19,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Full Transcript: Covista Q4 2026 Earnings Call - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Full Transcript: Covista Q4 2026 Earnings Call - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMnRBUHhFLTRPQl82SW05WWhaRGFFS09Zd05fWm8zb2VuQ1lHTlZFd3JMaTExSDRBaHBtN1ppdl9VVTRfM01wZFp3VV9vcS1OaVNoY3I1dzB2T1BNb1R1LUtLWmp5TmE2dzdBZkNYX2N4SlJrYmVkYXlMQk1oaVlSQnBxV3BxSkF0bFkxZ0hCSWctZ0g3aE1VV3BYanpKWTZZc3BHVDJDd3ZsMkpRSlhaVkZWeHJRdw?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-13T08:54:20+00:00",
+            "id": "d9be57bfa5b34a6b15de",
+            "type": "earnings",
+            "age_hours": 5.19,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 3
+      },
+      "score": {
+        "score": 5,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "same-time relative volume",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Transcript, presentation or recap; publication date is not the event date.",
+          "No second distinct historical resistance target in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Transcript, presentation or recap; publication date is not the event date.",
+              "No second distinct historical resistance target in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "BWAY",
+      "name": "BrainsWay",
+      "asset_type": "stock",
+      "price": 12.100000381469727,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 5.897036,
+      "volume": 50120,
+      "dollar_volume": 602972.3488273621,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T10:00:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 3.548,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "BWAY_US_EQ",
+        "isin": "US10501L1061",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 5.70755687664342,
+      "history_samples": 253,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 12.127099990844727,
+      "support": 11.4399995803833,
+      "momentum_pct": 0.8333365122477288,
+      "reference_price": 11.923454146160317,
+      "extension_pct": 1.4806635153309378,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 2.409796737960429,
+        "observed_at": "2026-10-13T10:00:00-04:00"
+      },
+      "catalyst": {
+        "title": "With three FDA-cleared indications, BrainsWay (BWAY) reports expanding U.S. treatment coverage. - Stock Titan",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTUJjRUtJeXBLelFHQ0llQWd1MmxmWDNTQUxLSFBWWVNja1pTejVCTGF1RlBOT25nNGFqTG50ZWhURU5SMnMyemJOZThZOUhvckIxVExOYy1tTlV2a1hJVm9wZHNnaEZ6UlhyLXhIRXpmcmNTVXplLXViemk3SUluLWRvMGV4Q2xTVkVPMWNOUWhsdEIzeUdhOFRSQWdrNTc3Z3gzTzBIVGVMemZUSHc?oc=5",
+        "source": "Stock Titan",
+        "published_at": "2026-10-13T11:30:27+00:00",
+        "id": "4d892f0a5b010694ed17",
+        "type": "regulatory",
+        "age_hours": 2.59,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -43,17 +210,123 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Alliant Energy Corporation Announces Third Quarter Earnings Release and Conference Call - Business Wire",
+        "summary": "With three FDA-cleared indications, BrainsWay (BWAY) reports expanding U.S. treatment coverage. - Stock Titan",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Alliant Energy Corporation Announces Third Quarter Earnings Release and Conference Call - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQ3F4VC1rVGtUcGFNYjg5QVhHWHRfaVI1Y0I3emJXbGY3NnotX3lIdVloZUhScFZFM2lKYU9CUVk3NGF6c1c4YkNzblBaaUlZZkhJaHFKYk5ETEFRT091d2gwQ2RzUTdwSVliZ1Z1dVc5bVZKNXdrcGh4dlJWLU1vMS1ubXRON21OcmhSREVROTlvVzlMNVFreEd3NjBCbmd4VDU1SW1GbU1aWDZSbGZ6NkVJZC14c1NqbUlIUkRDdzNjZ3hHNkFhWVdqQjh4bWN2RFJxa2MzazJIZjla?oc=5",
+            "title": "With three FDA-cleared indications, BrainsWay (BWAY) reports expanding U.S. treatment coverage. - Stock Titan",
+            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTUJjRUtJeXBLelFHQ0llQWd1MmxmWDNTQUxLSFBWWVNja1pTejVCTGF1RlBOT25nNGFqTG50ZWhURU5SMnMyemJOZThZOUhvckIxVExOYy1tTlV2a1hJVm9wZHNnaEZ6UlhyLXhIRXpmcmNTVXplLXViemk3SUluLWRvMGV4Q2xTVkVPMWNOUWhsdEIzeUdhOFRSQWdrNTc3Z3gzTzBIVGVMemZUSHc?oc=5",
+            "source": "Stock Titan",
+            "published_at": "2026-10-13T11:30:27+00:00",
+            "id": "4d892f0a5b010694ed17",
+            "type": "regulatory",
+            "age_hours": 2.59,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 4
+      },
+      "score": {
+        "score": 5,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "same-time relative volume",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No historical resistance above the trigger/current history price in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_1",
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SDRL",
+      "name": "Seadrill",
+      "asset_type": "stock",
+      "price": 46.99,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.82015,
+      "volume": 350744.0,
+      "dollar_volume": 16481460.56,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 8.606,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Seadrill Announces Contract Awards and Extensions in Indonesia, Malaysia, Angola, and the U.S. Gulf - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTE0wRWVGYlJ6ZUg4X1lmVEVwR2tRWVdORzFueVRaMC1pVlhqMUYwVWlsQUR5a3RpUUZCSVZBU0QtczFtRWFadVgtbnpGSkJQamdKRTBYSzBlRk5yX3VHSEpwZHV4enpzLUtVYndmMklNQ2xLVm9JZF82cHVnUWsxbFRvLVg4VmZkeFB5SHlxLUxOMjg5ZE9EbFV3LXNQNHZUT0lJU2JDMTRDcUhQZjh4VGlrQVZGV053QzRxdE10azZKNXJuQlM0T19PY1RjODlmM3dyNWxwOVJrcW5pRU9kbnVBVmthc0lD?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-12T20:15:00+00:00",
+        "id": "cebeb55be33d806b552e",
+        "type": "partnership",
+        "age_hours": 0.28,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Seadrill Announces Contract Awards and Extensions in Indonesia, Malaysia, Angola, and the U.S. Gulf - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Seadrill Announces Contract Awards and Extensions in Indonesia, Malaysia, Angola, and the U.S. Gulf - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTE0wRWVGYlJ6ZUg4X1lmVEVwR2tRWVdORzFueVRaMC1pVlhqMUYwVWlsQUR5a3RpUUZCSVZBU0QtczFtRWFadVgtbnpGSkJQamdKRTBYSzBlRk5yX3VHSEpwZHV4enpzLUtVYndmMklNQ2xLVm9JZF82cHVnUWsxbFRvLVg4VmZkeFB5SHlxLUxOMjg5ZE9EbFV3LXNQNHZUT0lJU2JDMTRDcUhQZjh4VGlrQVZGV053QzRxdE10azZKNXJuQlM0T19PY1RjODlmM3dyNWxwOVJrcW5pRU9kbnVBVmthc0lD?oc=5",
             "source": "Business Wire",
-            "published_at": "2026-10-12T21:00:00+00:00",
-            "id": "0f274eea770691085fc3",
-            "type": "earnings",
-            "age_hours": 0.27,
+            "published_at": "2026-10-12T20:15:00+00:00",
+            "id": "cebeb55be33d806b552e",
+            "type": "partnership",
+            "age_hours": 0.28,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -71,12 +344,12 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-12T21:16:11.225514+00:00",
+        "checked_at": "2026-10-12T20:31:58.904013+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "LNT_US_EQ",
-        "isin": "US0188021085",
+        "broker_instrument_id": "SEDRF_US_EQ",
+        "isin": "BMG7997W1029",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -134,24 +407,24 @@
       }
     },
     {
-      "ticker": "MDA",
-      "name": "MDA Space",
+      "ticker": "FET",
+      "name": "Forum Energy Technologies",
       "asset_type": "stock",
-      "price": 28.139799118041992,
+      "price": 87.0999984741211,
       "currency": "USD",
-      "eur_per_unit": 0.8924999833106995,
-      "change": 3.169395,
-      "volume": 105228,
-      "dollar_volume": 2961094.7815933228,
+      "eur_per_unit": null,
+      "change": 1.0965964,
+      "volume": 37334,
+      "dollar_volume": 3263364.015602112,
       "session": "REGULAR",
-      "observed_at": "2026-10-13T09:35:00-04:00",
+      "observed_at": "2026-10-13T10:00:00-04:00",
       "source": "yfinance completed 5-minute bars",
       "discovery_route": "market_snapshot",
       "selection_evidence": {
         "fresh_publication": false,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 5.737,
+        "snapshot_score": 4.45,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
@@ -159,41 +432,44 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "MDA_US_EQ",
-        "isin": "CA55293N1096",
+        "broker_instrument_id": "FET_US_EQ",
+        "isin": "US34984V2097",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "volume_spike": 4.1326251092281865,
-      "history_samples": 312,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 27.5,
-      "support": 27.360000610351562,
-      "momentum_pct": 2.5465512688654046,
-      "reference_price": 27.758776195230233,
-      "extension_pct": 1.3726214734107511,
-      "resistance_1": 28.170000076293945,
-      "resistance_2": 28.264999389648438,
+      "volume_spike": 4.725317949390324,
+      "history_samples": 254,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No second distinct historical resistance target in the lookback."
+      ],
+      "entry": 88.48999786376953,
+      "support": 85.62999725341797,
+      "momentum_pct": -0.7972717008040031,
+      "reference_price": 86.80493561723323,
+      "extension_pct": 0.33991483870103867,
+      "resistance_1": 88.63999938964844,
       "chart_analysis": {
         "setups": [],
         "issues": [
-          "Recent chart bars have gaps."
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
-        "interval": "5m"
+        "interval": "5m",
+        "recent_volume_ratio": 1.845961574906396,
+        "observed_at": "2026-10-13T10:00:00-04:00"
       },
       "catalyst": {
-        "title": "CSG acquires 9.5% stake in MDA Space, entering the space sector as its largest shareholder. - Pluang",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcE5OUW1TSVJPNndlTEFHeUxUTmdjRmxEeW5tTFltUHY0QTdJWE1JV29Ga0Z6OHRNUGhfMGhnckFtMExWcXA5WGhTYloxcFc0RWhfbFdFX2pWNFpPNm1oVHctaTN1bmNkMkY5M0VzRzdvR2I1UzJLLVFIU1JRcmpreEdwRDV2UXN2V0QyVXFhQVg?oc=5",
-        "source": "Pluang",
-        "published_at": "2026-10-13T05:42:09+00:00",
-        "id": "1fb0e562fb357ab91c17",
-        "type": "merger",
-        "age_hours": 7.95,
+        "title": "Forum Energy Technologies Announces Timing of Third Quarter 2026 Earnings Conference Call - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaGxQbFZaTW5vZmtCenJaMHFaY3ZyY2xjb1J6aUxNS2pyU1ZlWG04SWtuelNXakRfcmczaDFtdHJjWGZPZFNYam1WRkhrelY2R1NlZFRmdWVxMk1mRXlISzhFWG9wY0tHNnc0N2YxeXN5XzI0LWRVVzFzeTJzMU44elpneUN1d0l0TFlTbXRGNl9Bem1OVUE0aER4eVRva3daUmdQMFVKLXhfZ000ZWJSSzA4VFU5SWNuVzdxM1Y1MWxmUGpRWVRzZDE0MWpOOXVWMEhqWkw5UE55SFZydzk0?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-12T20:30:00+00:00",
+        "id": "a2e9e870f768fe71b808",
+        "type": "earnings",
+        "age_hours": 17.6,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -202,17 +478,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "CSG acquires 9.5% stake in MDA Space, entering the space sector as its largest shareholder. - Pluang",
+        "summary": "Forum Energy Technologies Announces Timing of Third Quarter 2026 Earnings Conference Call - Business Wire",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "CSG acquires 9.5% stake in MDA Space, entering the space sector as its largest shareholder. - Pluang",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcE5OUW1TSVJPNndlTEFHeUxUTmdjRmxEeW5tTFltUHY0QTdJWE1JV29Ga0Z6OHRNUGhfMGhnckFtMExWcXA5WGhTYloxcFc0RWhfbFdFX2pWNFpPNm1oVHctaTN1bmNkMkY5M0VzRzdvR2I1UzJLLVFIU1JRcmpreEdwRDV2UXN2V0QyVXFhQVg?oc=5",
-            "source": "Pluang",
-            "published_at": "2026-10-13T05:42:09+00:00",
-            "id": "1fb0e562fb357ab91c17",
-            "type": "merger",
-            "age_hours": 7.95,
+            "title": "Forum Energy Technologies Announces Timing of Third Quarter 2026 Earnings Conference Call - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaGxQbFZaTW5vZmtCenJaMHFaY3ZyY2xjb1J6aUxNS2pyU1ZlWG04SWtuelNXakRfcmczaDFtdHJjWGZPZFNYam1WRkhrelY2R1NlZFRmdWVxMk1mRXlISzhFWG9wY0tHNnc0N2YxeXN5XzI0LWRVVzFzeTJzMU44elpneUN1d0l0TFlTbXRGNl9Bem1OVUE0aER4eVRva3daUmdQMFVKLXhfZ000ZWJSSzA4VFU5SWNuVzdxM1Y1MWxmUGpRWVRzZDE0MWpOOXVWMEhqWkw5UE55SFZydzk0?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-12T20:30:00+00:00",
+            "id": "a2e9e870f768fe71b808",
+            "type": "earnings",
+            "age_hours": 17.6,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -225,13 +501,12 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "headlines_checked": 12
+        "headlines_checked": 5
       },
       "score": {
-        "score": 5,
+        "score": 3,
         "label": "Research rank only",
         "reasons": [
-          "positive recent momentum",
           "same-time relative volume",
           "not extended above recent VWAP"
         ]
@@ -241,18 +516,24 @@
         "reasons": [
           "News lead for research; event timing and entry require verification.",
           "Recent article publication does not establish when the underlying event occurred.",
-          "Insufficient traded notional liquidity."
+          "No second distinct historical resistance target in the lookback."
         ],
         "plan": null,
+        "missing_fields": [
+          "resistance_2"
+        ],
         "route": "CATALYST_LED",
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
               "Recent article publication does not establish when the underlying event occurred.",
-              "Insufficient traded notional liquidity."
+              "No second distinct historical resistance target in the lookback."
             ],
             "plan": null,
+            "missing_fields": [
+              "resistance_2"
+            ],
             "route": "CATALYST_LED"
           }
         ],
@@ -261,66 +542,37 @@
       }
     },
     {
-      "ticker": "HUM",
-      "name": "Humana",
+      "ticker": "FBK",
+      "name": "FB Financial",
       "asset_type": "stock",
-      "price": 437.80999755859375,
+      "price": 52.95,
       "currency": "USD",
-      "eur_per_unit": 0.8924999833106995,
-      "change": 1.0497146,
-      "volume": 52127,
-      "dollar_volume": 22821721.742736816,
-      "session": "REGULAR",
-      "observed_at": "2026-10-13T09:35:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
+      "eur_per_unit": null,
+      "change": 0.569799,
+      "volume": 612905.0,
+      "dollar_volume": 32453319.75,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:02:23+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
       "selection_evidence": {
-        "fresh_publication": false,
+        "fresh_publication": true,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 6.888,
+        "snapshot_score": 11.353,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "HUM_US_EQ",
-        "isin": "US4448591028",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.3034048429412698,
-      "history_samples": 313,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 438.3900146484375,
-      "support": 431.8299865722656,
-      "momentum_pct": 0.7490432598115548,
-      "reference_price": 435.03122858042167,
-      "extension_pct": 0.6387516103705249,
-      "resistance_1": 439.30999755859375,
-      "resistance_2": 442.0,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "UnitedHealth Rises 4% on Earnings Beat and Raised Full-Year Outlook; Humana Advances 2% - 24/7 Wall St.",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMDFqaGY3eG10Yl9ZZDdqWDhQb3BGVEJ5VmhoVF9zdzctTWpxNVB3YUNZUDNhVDNhZW9TVHVpbEk4QzZjc0pDXy1ORzEwUlV5TE94MkIyTURveEVXMlA2Ul9kWVZ0TkJ5enZKeGZtbWFobGRLV1JjQVA5RHVrTGZ3VjRYWXRQMWN3Wnp1dzFMN1NxY1lxclYxZndBWU9uYTBhQmM2UVZVc2lYa1RWZ0RQRk1xR3loZXh5ZnFESm1yR2xsOVh5bEpn?oc=5",
-        "source": "24/7 Wall St.",
-        "published_at": "2026-10-13T13:25:00+00:00",
-        "id": "8dc162ba0b2ba1594ce1",
+        "title": "FB Financial (NYSE:FBK) Posts Earnings Results - MarketBeat",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbGtGOUdCNkh1by0zaEVub2tLYm1oZHhYejZNNFNzT0d3andWbW5PNGpkSTAzM0F3aWFUMDQtYXJQVmMzZWtoT3FnSmtnWC14MVhFRVk3bnFIa2xiejVLLVB3M3hLOFFPaG1Oai1tbnMwZXNxNHIzTkl0ZWNZTjV5TkNZWUNnNVgycTVDMmxCbXRlNGtVa1NZSGdTbG9zaEN1c0gxSU1obGxXQjg?oc=5",
+        "source": "MarketBeat",
+        "published_at": "2026-10-13T11:34:02+00:00",
+        "id": "f16c1edd4d68d26ae5cd",
         "type": "earnings",
-        "age_hours": 0.23,
+        "age_hours": 0.19,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -329,17 +581,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "UnitedHealth Rises 4% on Earnings Beat and Raised Full-Year Outlook; Humana Advances 2% - 24/7 Wall St.",
+        "summary": "FB Financial (NYSE:FBK) Posts Earnings Results - MarketBeat",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "UnitedHealth Rises 4% on Earnings Beat and Raised Full-Year Outlook; Humana Advances 2% - 24/7 Wall St.",
-            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMDFqaGY3eG10Yl9ZZDdqWDhQb3BGVEJ5VmhoVF9zdzctTWpxNVB3YUNZUDNhVDNhZW9TVHVpbEk4QzZjc0pDXy1ORzEwUlV5TE94MkIyTURveEVXMlA2Ul9kWVZ0TkJ5enZKeGZtbWFobGRLV1JjQVA5RHVrTGZ3VjRYWXRQMWN3Wnp1dzFMN1NxY1lxclYxZndBWU9uYTBhQmM2UVZVc2lYa1RWZ0RQRk1xR3loZXh5ZnFESm1yR2xsOVh5bEpn?oc=5",
-            "source": "24/7 Wall St.",
-            "published_at": "2026-10-13T13:25:00+00:00",
-            "id": "8dc162ba0b2ba1594ce1",
+            "title": "FB Financial (NYSE:FBK) Posts Earnings Results - MarketBeat",
+            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbGtGOUdCNkh1by0zaEVub2tLYm1oZHhYejZNNFNzT0d3andWbW5PNGpkSTAzM0F3aWFUMDQtYXJQVmMzZWtoT3FnSmtnWC14MVhFRVk3bnFIa2xiejVLLVB3M3hLOFFPaG1Oai1tbnMwZXNxNHIzTkl0ZWNZTjV5TkNZWUNnNVgycTVDMmxCbXRlNGtVa1NZSGdTbG9zaEN1c0gxSU1obGxXQjg?oc=5",
+            "source": "MarketBeat",
+            "published_at": "2026-10-13T11:34:02+00:00",
+            "id": "f16c1edd4d68d26ae5cd",
             "type": "earnings",
-            "age_hours": 0.23,
+            "age_hours": 0.19,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -352,13 +604,205 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "headlines_checked": 12
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T11:45:42.868635+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "FBK_US_EQ",
+        "isin": "US30257X1046",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
-        "score": 4,
+        "score": 1,
         "label": "Research rank only",
         "reasons": [
-          "positive recent momentum",
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TYL",
+      "name": "Tyler Technologies",
+      "asset_type": "stock",
+      "price": 344.5799865722656,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 1.2193296,
+      "volume": 50994,
+      "dollar_volume": 17607511.388702393,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T10:00:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 6.312,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "TYL_US_EQ",
+        "isin": "US9022521051",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 1.1363802008067454,
+      "history_samples": 318,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 347.67999267578125,
+      "support": 338.79998779296875,
+      "momentum_pct": -0.6773718482482982,
+      "reference_price": 341.55479728599363,
+      "extension_pct": 0.8857112563811942,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.6998709102222387,
+        "observed_at": "2026-10-13T10:00:00-04:00"
+      },
+      "catalyst": {
+        "title": "Why Tyler Technologies\u2019 Stock Is Dropping Despite Upgrade - TipRanks",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTjN3eTZzQWNZaC1IS21XWl9fTHZlZC0tZUl0T0paVDNpbEhJTDBJa0g5aldCQ2VlVmZSOEVISEp2djBrNlNjOVVXQWZoSEV4REJNSExaNWpKd1lPMXJYQ3ZfeTN4SXlkdFItbjF3OFVuMERSQlc3X0FfUzlEQ2gtUUlUSHc4ak5pVlBKZHpXTkNDRjJydE4zak92VQ?oc=5",
+        "source": "TipRanks",
+        "published_at": "2026-10-13T13:44:06+00:00",
+        "id": "38d6d300b5c047bf9a63",
+        "type": "crypto_event",
+        "age_hours": 0.36,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Why Tyler Technologies\u2019 Stock Is Dropping Despite Upgrade - TipRanks",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Why Tyler Technologies\u2019 Stock Is Dropping Despite Upgrade - TipRanks",
+            "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTjN3eTZzQWNZaC1IS21XWl9fTHZlZC0tZUl0T0paVDNpbEhJTDBJa0g5aldCQ2VlVmZSOEVISEp2djBrNlNjOVVXQWZoSEV4REJNSExaNWpKd1lPMXJYQ3ZfeTN4SXlkdFItbjF3OFVuMERSQlc3X0FfUzlEQ2gtUUlUSHc4ak5pVlBKZHpXTkNDRjJydE4zak92VQ?oc=5",
+            "source": "TipRanks",
+            "published_at": "2026-10-13T13:44:06+00:00",
+            "id": "38d6d300b5c047bf9a63",
+            "type": "crypto_event",
+            "age_hours": 0.36,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Tyler Technologies rises as analyst upgrade spotlights valuation and AI resilience - Quiver Quantitative",
+            "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeEZVNG5xd1dsTEo1RTJVa2g5WndmOExvX1Z6SzF5OUdDNnRSeFYyVHFBbVZROE1zQ2JaXzkxbmtRcEdOcW41WGJQMjRzRm1GMHNGeEwxeFRpY1kxdk1Ka2FFZWcybUFzSXZIQU5zdFR3Y1F0a05tVklnOVdzbDdsNzBnTEItdHFJbExsel9nbkZIU0RyVGdXYk5aa25TODZGRjljekluOUFHa3NCOVc5MGdUUC1rZw?oc=5",
+            "source": "Quiver Quantitative",
+            "published_at": "2026-10-12T21:21:00+00:00",
+            "id": "d1e5565766d7266ac8b1",
+            "type": "crypto_event",
+            "age_hours": 16.74,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Tyler Technologies Shares Rise After Wells Fargo Upgrade - marketscreener.com",
+            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOWNWVGFBTFJjZFp6RExsRkhJeUpiQWw0bk51bF9FOE1qbEdxWnFISW5fWWRGSmZBeUlkMk5PQ1NSUVdDNmpldkFDMVJZTjhERkQ1akhUc0FrZUtxYno2cmFYREtxQVpTNEdOY2M5MnluOEo3UnlWNzZJX1ZMWUV3UTVybk9OLWktUXlfUFhGOWZaSHU0TWhSNzVhZ1pjVGI0d2F4bnB5SjJZZ3JFWGc?oc=5",
+            "source": "marketscreener.com",
+            "published_at": "2026-10-12T19:08:17+00:00",
+            "id": "020923adc3369988f1d3",
+            "type": "crypto_event",
+            "age_hours": 18.96,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 7
+      },
+      "score": {
+        "score": 2,
+        "label": "Research rank only",
+        "reasons": [
           "notional liquidity",
           "not extended above recent VWAP"
         ]
@@ -368,22 +812,158 @@
         "reasons": [
           "News lead for research; event timing and entry require verification.",
           "Recent article publication does not establish when the underlying event occurred.",
-          "Recent same-time relative volume is below 1.5x."
+          "No historical resistance above the trigger/current history price in the lookback."
         ],
         "plan": null,
+        "missing_fields": [
+          "resistance_1",
+          "resistance_2"
+        ],
         "route": "CATALYST_LED",
         "assessments": [
           {
             "status": "REJECTED",
             "reasons": [
               "Recent article publication does not establish when the underlying event occurred.",
-              "Recent same-time relative volume is below 1.5x."
+              "No historical resistance above the trigger/current history price in the lookback."
             ],
             "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
             "route": "CATALYST_LED"
           }
         ],
         "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor",
+      "asset_type": "stock",
+      "price": 216.5,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -5.33864,
+      "volume": 2321781.0,
+      "dollar_volume": 502665586.5,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 3.211,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-13T10:00:00+00:00",
+        "id": "72dd94f49e85f5e3dba4",
+        "type": "partnership",
+        "age_hours": 0.2,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-13T10:00:00+00:00",
+            "id": "72dd94f49e85f5e3dba4",
+            "type": "partnership",
+            "age_hours": 0.2,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T10:12:07.414269+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "TSEM_US_EQ",
+        "isin": "IL0010823792",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
     },
@@ -516,37 +1096,68 @@
       }
     },
     {
-      "ticker": "TSEM",
-      "name": "Tower Semiconductor",
+      "ticker": "GD",
+      "name": "General Dynamics",
       "asset_type": "stock",
-      "price": 216.5,
+      "price": 331.80999755859375,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": -5.33864,
-      "volume": 2321781.0,
-      "dollar_volume": 502665586.5,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
+      "change": -1.2341216,
+      "volume": 100091,
+      "dollar_volume": 33326729.432525635,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T10:00:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
       "selection_evidence": {
-        "fresh_publication": true,
+        "fresh_publication": false,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 3.211,
+        "snapshot_score": 3.806,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "GD_US_EQ",
+        "isin": "US3695501086",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.9520446151355965,
+      "history_samples": 318,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 336.3702087402344,
+      "support": 331.2349853515625,
+      "momentum_pct": -0.26900378707653827,
+      "reference_price": 334.5552996028064,
+      "extension_pct": -0.8205824410708606,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.38638999470878616,
+        "observed_at": "2026-10-13T10:00:00-04:00"
+      },
       "catalyst": {
-        "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-13T10:00:00+00:00",
-        "id": "72dd94f49e85f5e3dba4",
+        "title": "Marotta Controls Wins Multi-Million-Dollar Contract from General Dynamics Electric Boat - markets.businessinsider.com",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaWZaaTZqc3JnMXdKUURqbWQzUUtPeG5RdC1VQnZvQk5xczR4SGJOVkh2Q2JOSk9sSE1TWWI3OTRnN2s1SjhvQk9veUxSXzVfQm5Kek5nWW11UVVuNHNyb3dENGR5NDllQkFyS2o0NW5MRUVqd0pHUG9wX0hqVjBXUGlzVFMtRFJ2elBINHlOc1ZqSHRwSEpNY1BwN0MtLUduYmNnbXludWxmOERVdmZmRUhoQlhUMm9kUm5nU2pjUlZ0N2xZVGFyWnk4WmswUkQwNUtjSnZwWVRUdkNJeHJR?oc=5",
+        "source": "markets.businessinsider.com",
+        "published_at": "2026-10-13T13:01:20+00:00",
+        "id": "2da3533f06b83c7329cd",
         "type": "partnership",
-        "age_hours": 0.2,
+        "age_hours": 1.07,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -555,17 +1166,256 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "summary": "Marotta Controls Wins Multi-Million-Dollar Contract from General Dynamics Electric Boat - markets.businessinsider.com",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-13T10:00:00+00:00",
-            "id": "72dd94f49e85f5e3dba4",
+            "title": "Marotta Controls Wins Multi-Million-Dollar Contract from General Dynamics Electric Boat - markets.businessinsider.com",
+            "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaWZaaTZqc3JnMXdKUURqbWQzUUtPeG5RdC1VQnZvQk5xczR4SGJOVkh2Q2JOSk9sSE1TWWI3OTRnN2s1SjhvQk9veUxSXzVfQm5Kek5nWW11UVVuNHNyb3dENGR5NDllQkFyS2o0NW5MRUVqd0pHUG9wX0hqVjBXUGlzVFMtRFJ2elBINHlOc1ZqSHRwSEpNY1BwN0MtLUduYmNnbXludWxmOERVdmZmRUhoQlhUMm9kUm5nU2pjUlZ0N2xZVGFyWnk4WmswUkQwNUtjSnZwWVRUdkNJeHJR?oc=5",
+            "source": "markets.businessinsider.com",
+            "published_at": "2026-10-13T13:01:20+00:00",
+            "id": "2da3533f06b83c7329cd",
             "type": "partnership",
-            "age_hours": 0.2,
+            "age_hours": 1.07,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 12
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No historical resistance above the trigger/current history price in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_1",
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "PAR",
+      "name": "PAR Technology",
+      "asset_type": "stock",
+      "price": 16.049999237060547,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.305747,
+      "volume": 19010,
+      "dollar_volume": 306035.48122406006,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T10:00:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
+      "selection_evidence": {
+        "fresh_publication": false,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 3.13,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "PAR_US_EQ",
+        "isin": "US6988841036",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.8337273443656422,
+      "history_samples": 308,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No historical resistance above the trigger/current history price in the lookback."
+      ],
+      "entry": 16.170000076293945,
+      "support": 15.475000381469727,
+      "momentum_pct": -0.7421202143921168,
+      "reference_price": 15.86960649814309,
+      "extension_pct": 1.1367184116289453,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.42442159607217295,
+        "observed_at": "2026-10-13T10:00:00-04:00"
+      },
+      "catalyst": {
+        "title": "Par Pacific Announces Third Quarter 2026 Earnings Release and Conference Call Schedule - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUkUxejlCekRzUzdqbnl5aHRJTXd2eWJLV0pHclRBWk5BNlZubHBKOUp6NE83NVlWVkJzOUNPZGxyaG84cGJadVBra0hiWTNOR0NPRlRrQjBzWlItS0d5Ukk0R1RKbW5vT00zM25yTnRpd0tkaXpuZkVxR3p3YUlnUU9LZ08wU3htakw4ZkppdlZYYS1hT1dZ?oc=5",
+        "source": "Yahoo Finance",
+        "published_at": "2026-10-12T20:15:00+00:00",
+        "id": "8b4aec8f064f31d8c599",
+        "type": "earnings",
+        "age_hours": 17.85,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Par Pacific Announces Third Quarter 2026 Earnings Release and Conference Call Schedule - Yahoo Finance",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Par Pacific Announces Third Quarter 2026 Earnings Release and Conference Call Schedule - Yahoo Finance",
+            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUkUxejlCekRzUzdqbnl5aHRJTXd2eWJLV0pHclRBWk5BNlZubHBKOUp6NE83NVlWVkJzOUNPZGxyaG84cGJadVBra0hiWTNOR0NPRlRrQjBzWlItS0d5Ukk0R1RKbW5vT00zM25yTnRpd0tkaXpuZkVxR3p3YUlnUU9LZ08wU3htakw4ZkppdlZYYS1hT1dZ?oc=5",
+            "source": "Yahoo Finance",
+            "published_at": "2026-10-12T20:15:00+00:00",
+            "id": "8b4aec8f064f31d8c599",
+            "type": "earnings",
+            "age_hours": 17.85,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "headlines_checked": 3
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No historical resistance above the trigger/current history price in the lookback."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "resistance_1",
+          "resistance_2"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No historical resistance above the trigger/current history price in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_1",
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TVTX",
+      "name": "Travere Therapeutics",
+      "asset_type": "stock",
+      "price": 52.02,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.201438,
+      "volume": 1424335.0,
+      "dollar_volume": 74093906.7,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.688,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+        "source": "Stocktwits",
+        "published_at": "2026-10-12T22:44:03+00:00",
+        "id": "67d93bb4132f96a100b2",
+        "type": "regulatory",
+        "age_hours": 8.56,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+            "source": "Stocktwits",
+            "published_at": "2026-10-12T22:44:03+00:00",
+            "id": "67d93bb4132f96a100b2",
+            "type": "regulatory",
+            "age_hours": 8.56,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -583,12 +1433,12 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-13T10:12:07.414269+00:00",
+        "checked_at": "2026-10-13T07:17:42.577064+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TSEM_US_EQ",
-        "isin": "IL0010823792",
+        "broker_instrument_id": "RTRX_US_EQ",
+        "isin": "US89422G1076",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -770,6 +1620,260 @@
       }
     },
     {
+      "ticker": "LNT",
+      "name": "Alliant Energy",
+      "asset_type": "stock",
+      "price": 66.46,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0.92634875,
+      "volume": 2842809.0,
+      "dollar_volume": 188933086.14,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 13.097,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Alliant Energy Corporation Announces Third Quarter Earnings Release and Conference Call - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQ3F4VC1rVGtUcGFNYjg5QVhHWHRfaVI1Y0I3emJXbGY3NnotX3lIdVloZUhScFZFM2lKYU9CUVk3NGF6c1c4YkNzblBaaUlZZkhJaHFKYk5ETEFRT091d2gwQ2RzUTdwSVliZ1Z1dVc5bVZKNXdrcGh4dlJWLU1vMS1ubXRON21OcmhSREVROTlvVzlMNVFreEd3NjBCbmd4VDU1SW1GbU1aWDZSbGZ6NkVJZC14c1NqbUlIUkRDdzNjZ3hHNkFhWVdqQjh4bWN2RFJxa2MzazJIZjla?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-12T21:00:00+00:00",
+        "id": "0f274eea770691085fc3",
+        "type": "earnings",
+        "age_hours": 0.27,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Alliant Energy Corporation Announces Third Quarter Earnings Release and Conference Call - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Alliant Energy Corporation Announces Third Quarter Earnings Release and Conference Call - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQ3F4VC1rVGtUcGFNYjg5QVhHWHRfaVI1Y0I3emJXbGY3NnotX3lIdVloZUhScFZFM2lKYU9CUVk3NGF6c1c4YkNzblBaaUlZZkhJaHFKYk5ETEFRT091d2gwQ2RzUTdwSVliZ1Z1dVc5bVZKNXdrcGh4dlJWLU1vMS1ubXRON21OcmhSREVROTlvVzlMNVFreEd3NjBCbmd4VDU1SW1GbU1aWDZSbGZ6NkVJZC14c1NqbUlIUkRDdzNjZ3hHNkFhWVdqQjh4bWN2RFJxa2MzazJIZjla?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-12T21:00:00+00:00",
+            "id": "0f274eea770691085fc3",
+            "type": "earnings",
+            "age_hours": 0.27,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-12T21:16:11.225514+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "LNT_US_EQ",
+        "isin": "US0188021085",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "SPCB",
+      "name": "SuperCom",
+      "asset_type": "stock",
+      "price": 9.4499,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.73635274,
+      "volume": 6564.0,
+      "dollar_volume": 62029.143599999996,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T13:41:06+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -1.141,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "STALE",
+      "data_issue": "No fresh completed regular-session bar.",
+      "catalyst": {
+        "title": "SuperCom Wins 7th New York Electronic Monitoring Contract, Fully Displacing the Incumbent - PR Newswire",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMFd6bDh4NTVUS3htcHhaMnJqWndROUxDRzBETXVpQklmQmtMRUNYRnhSRU5ZNUpad2Zzb2xSVHh6VEVyMkdkZ2g0eE9aYmxzRlhvUWtoMkpVbFExOEhuVlRGQV9mNkZEX3dsbkd1TnlTR2pYbmVKSkxhNkdIM2wtZXZSMHNpNGJ2eTlDRUZzWGI5VldZTllnQ3RKRkxMclIyaUx4QmpZSTRGYnRmVGc2VmNaazhEU3ZqejJYbkxGNk11cThweFlNUk9yd1UzSWxhWmVXREV6WkpjTF9LeVB1OQ?oc=5",
+        "source": "PR Newswire",
+        "published_at": "2026-10-13T13:15:00+00:00",
+        "id": "090ef46bea2a70bf3e00",
+        "type": "partnership",
+        "age_hours": 0.83,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "SuperCom Wins 7th New York Electronic Monitoring Contract, Fully Displacing the Incumbent - PR Newswire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "SuperCom Wins 7th New York Electronic Monitoring Contract, Fully Displacing the Incumbent - PR Newswire",
+            "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMFd6bDh4NTVUS3htcHhaMnJqWndROUxDRzBETXVpQklmQmtMRUNYRnhSRU5ZNUpad2Zzb2xSVHh6VEVyMkdkZ2g0eE9aYmxzRlhvUWtoMkpVbFExOEhuVlRGQV9mNkZEX3dsbkd1TnlTR2pYbmVKSkxhNkdIM2wtZXZSMHNpNGJ2eTlDRUZzWGI5VldZTllnQ3RKRkxMclIyaUx4QmpZSTRGYnRmVGc2VmNaazhEU3ZqejJYbkxGNk11cThweFlNUk9yd1UzSWxhWmVXREV6WkpjTF9LeVB1OQ?oc=5",
+            "source": "PR Newswire",
+            "published_at": "2026-10-13T13:15:00+00:00",
+            "id": "090ef46bea2a70bf3e00",
+            "type": "partnership",
+            "age_hours": 0.83,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "SPCB_US_EQ",
+        "isin": "IL0010830961",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Price data is stale or future-dated.",
+          "No fresh completed regular-session bar.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "DATA_UNAVAILABLE",
+            "reasons": [
+              "Price data is stale or future-dated.",
+              "No fresh completed regular-session bar.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "DATA_UNAVAILABLE",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "FHI",
       "name": "Federated Hermes",
       "asset_type": "stock",
@@ -876,555 +1980,6 @@
           {
             "status": "NOT_EVALUATED",
             "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TM",
-      "name": "Toyota Motor",
-      "asset_type": "stock",
-      "price": 189.3699951171875,
-      "currency": "USD",
-      "eur_per_unit": 0.8924999833106995,
-      "change": 2.6166108,
-      "volume": 7106,
-      "dollar_volume": 1345663.1853027344,
-      "session": "REGULAR",
-      "observed_at": "2026-10-13T09:35:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 5.601,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TM_US_EQ",
-        "isin": "US8923313071",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.9634601043997018,
-      "history_samples": 305,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 184.8072967529297,
-      "support": 184.5850067138672,
-      "momentum_pct": 2.5339718522479293,
-      "reference_price": 185.2843016065388,
-      "extension_pct": 2.2050942660673423,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "catalyst": {
-        "title": "Toyota Motor's Lexus Launches First BEV Sedan Variant in Korea - Moomoo",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM3RJbkw1Z1hKYXFpR1N5X0pLN3hOVnZOdEwxZlNIY1RvZGVGRGhhRmxfb0dHTXdCX095NjFlcHpaR1FSZW82cHR6dEpNYVYyemllQW1FZGhIQ01FSnBQd0NTMzFpb196aDBHT2tRb1BFay1hNFl3R1pKMURpZndOYl8yTjZ0MW02dlF1UkFBb3pfMHNmcGMySzN1bmZrSXEwV2c?oc=5",
-        "source": "Moomoo",
-        "published_at": "2026-10-13T04:44:59+00:00",
-        "id": "16b1f99e410a0cc3346e",
-        "type": "product_launch",
-        "age_hours": 8.9,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Toyota Motor's Lexus Launches First BEV Sedan Variant in Korea - Moomoo",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Toyota Motor's Lexus Launches First BEV Sedan Variant in Korea - Moomoo",
-            "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM3RJbkw1Z1hKYXFpR1N5X0pLN3hOVnZOdEwxZlNIY1RvZGVGRGhhRmxfb0dHTXdCX095NjFlcHpaR1FSZW82cHR6dEpNYVYyemllQW1FZGhIQ01FSnBQd0NTMzFpb196aDBHT2tRb1BFay1hNFl3R1pKMURpZndOYl8yTjZ0MW02dlF1UkFBb3pfMHNmcGMySzN1bmZrSXEwV2c?oc=5",
-            "source": "Moomoo",
-            "published_at": "2026-10-13T04:44:59+00:00",
-            "id": "16b1f99e410a0cc3346e",
-            "type": "product_launch",
-            "age_hours": 8.9,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 12
-      },
-      "score": {
-        "score": 3,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No historical resistance above the trigger/current history price in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "resistance_1",
-          "resistance_2"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "HAS",
-      "name": "Hasbro",
-      "asset_type": "stock",
-      "price": 95.86000061035156,
-      "currency": "USD",
-      "eur_per_unit": 0.8924999833106995,
-      "change": 1.1084086,
-      "volume": 7000,
-      "dollar_volume": 671020.0042724609,
-      "session": "REGULAR",
-      "observed_at": "2026-10-13T09:35:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 3.708,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "HAS_US_EQ",
-        "isin": "US4180561072",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 1.0934083099031553,
-      "history_samples": 313,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 94.81999969482422,
-      "support": 94.37999725341797,
-      "momentum_pct": 1.3640699161363568,
-      "reference_price": 94.67789411108728,
-      "extension_pct": 1.2485559700739612,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "catalyst": {
-        "title": "Hasbro (HAS) Projected to Announce Earnings on Tuesday - MarketBeat",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdnEwa0duOVRPc1A0YjRMMFdtc3ZtZkxDYzQ4bV81eUFlOUwtTWhGQ2YwRmJ0VnhXX2F3dWJLQUprQVlES2VxNXNUVzdINURiZ1FRZDJxemg1RHhVeFM5cllucFowWU5HNm41OUs5VjZPM01WczFxY2MxSmN3WV9KX0xmT0ozNzFZTVphdzViZTNGUjlnSktYOG5HV2ZPZnFGUllhSUQzWVBCSGk3V0tCVTR6UEdaZw?oc=5",
-        "source": "MarketBeat",
-        "published_at": "2026-10-13T06:38:39+00:00",
-        "id": "48220795fb0ad4fc6355",
-        "type": "earnings",
-        "age_hours": 7.01,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Hasbro (HAS) Projected to Announce Earnings on Tuesday - MarketBeat",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Hasbro (HAS) Projected to Announce Earnings on Tuesday - MarketBeat",
-            "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdnEwa0duOVRPc1A0YjRMMFdtc3ZtZkxDYzQ4bV81eUFlOUwtTWhGQ2YwRmJ0VnhXX2F3dWJLQUprQVlES2VxNXNUVzdINURiZ1FRZDJxemg1RHhVeFM5cllucFowWU5HNm41OUs5VjZPM01WczFxY2MxSmN3WV9KX0xmT0ozNzFZTVphdzViZTNGUjlnSktYOG5HV2ZPZnFGUllhSUQzWVBCSGk3V0tCVTR6UEdaZw?oc=5",
-            "source": "MarketBeat",
-            "published_at": "2026-10-13T06:38:39+00:00",
-            "id": "48220795fb0ad4fc6355",
-            "type": "earnings",
-            "age_hours": 7.01,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          },
-          {
-            "title": "Hasbro launches 4th Women Innovators of Play Ch... - Pluang",
-            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN01aOTZiY1R0UWR0aldFbkVRZVFhbjBTWndzVzN6UDY5ZjVpY3ptVG1QQ2E0dGF1di13S0V6Umo5Q3d5OXVNdFJudzF4aWtXa1Q0dDJLU1lGV05NeGxzcDFETG90cDRrVFNkQzkyQ1RKUG5Ca29WLTRObG9EN3lZd1lUNXFzZjR5bERDRnhORGdoTlEtNkY5TzFhSGVROGhCWHMw?oc=5",
-            "source": "Pluang",
-            "published_at": "2026-10-12T15:15:35+00:00",
-            "id": "38bf2f45dcf094a89719",
-            "type": "product_launch",
-            "age_hours": 22.39,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 7
-      },
-      "score": {
-        "score": 3,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No historical resistance above the trigger/current history price in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "resistance_1",
-          "resistance_2"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "G",
-      "name": "Genpact",
-      "asset_type": "stock",
-      "price": 35.11650085449219,
-      "currency": "USD",
-      "eur_per_unit": 0.8924999833106995,
-      "change": 2.1394284,
-      "volume": 3342,
-      "dollar_volume": 117359.34585571289,
-      "session": "REGULAR",
-      "observed_at": "2026-10-13T09:35:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 2.819,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "G_US_EQ",
-        "isin": "BMG3922B1072",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.20444430850168993,
-      "history_samples": 313,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No historical resistance above the trigger/current history price in the lookback."
-      ],
-      "entry": 34.43000030517578,
-      "support": 34.31999969482422,
-      "momentum_pct": 2.201688680740932,
-      "reference_price": 34.37503693337752,
-      "extension_pct": 2.1569836348152904,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "catalyst": {
-        "title": "Genpact Q2 2026 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa3VYek5Lek5uYkE3NmlDTjBMUWtBeEpHWmRreFFhWXFlb0V2OWxMRktFb1dXNDdQczFpTzlCQzFwSzFYcDhYVHRHZ2h1enJldXJDVmhrb1MtV3BodFBJRlVuUWRqMnpvajJsWHVFTVQ4NUpWZ0J4cG95aXpubWZHTTNIYzJoWDZnR3F5dHdR?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T08:24:08+00:00",
-        "id": "ea6a941e1460607ac492",
-        "type": "earnings",
-        "age_hours": 5.25,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Genpact Q2 2026 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Genpact Q2 2026 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa3VYek5Lek5uYkE3NmlDTjBMUWtBeEpHWmRreFFhWXFlb0V2OWxMRktFb1dXNDdQczFpTzlCQzFwSzFYcDhYVHRHZ2h1enJldXJDVmhrb1MtV3BodFBJRlVuUWRqMnpvajJsWHVFTVQ4NUpWZ0J4cG95aXpubWZHTTNIYzJoWDZnR3F5dHdR?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T08:24:08+00:00",
-            "id": "ea6a941e1460607ac492",
-            "type": "earnings",
-            "age_hours": 5.25,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 4
-      },
-      "score": {
-        "score": 3,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "No historical resistance above the trigger/current history price in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "resistance_1",
-          "resistance_2"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "No historical resistance above the trigger/current history price in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_1",
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "SDRL",
-      "name": "Seadrill",
-      "asset_type": "stock",
-      "price": 46.99,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 1.82015,
-      "volume": 350744.0,
-      "dollar_volume": 16481460.56,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 8.606,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Seadrill Announces Contract Awards and Extensions in Indonesia, Malaysia, Angola, and the U.S. Gulf - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTE0wRWVGYlJ6ZUg4X1lmVEVwR2tRWVdORzFueVRaMC1pVlhqMUYwVWlsQUR5a3RpUUZCSVZBU0QtczFtRWFadVgtbnpGSkJQamdKRTBYSzBlRk5yX3VHSEpwZHV4enpzLUtVYndmMklNQ2xLVm9JZF82cHVnUWsxbFRvLVg4VmZkeFB5SHlxLUxOMjg5ZE9EbFV3LXNQNHZUT0lJU2JDMTRDcUhQZjh4VGlrQVZGV053QzRxdE10azZKNXJuQlM0T19PY1RjODlmM3dyNWxwOVJrcW5pRU9kbnVBVmthc0lD?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-12T20:15:00+00:00",
-        "id": "cebeb55be33d806b552e",
-        "type": "partnership",
-        "age_hours": 0.28,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Seadrill Announces Contract Awards and Extensions in Indonesia, Malaysia, Angola, and the U.S. Gulf - Business Wire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Seadrill Announces Contract Awards and Extensions in Indonesia, Malaysia, Angola, and the U.S. Gulf - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTE0wRWVGYlJ6ZUg4X1lmVEVwR2tRWVdORzFueVRaMC1pVlhqMUYwVWlsQUR5a3RpUUZCSVZBU0QtczFtRWFadVgtbnpGSkJQamdKRTBYSzBlRk5yX3VHSEpwZHV4enpzLUtVYndmMklNQ2xLVm9JZF82cHVnUWsxbFRvLVg4VmZkeFB5SHlxLUxOMjg5ZE9EbFV3LXNQNHZUT0lJU2JDMTRDcUhQZjh4VGlrQVZGV053QzRxdE10azZKNXJuQlM0T19PY1RjODlmM3dyNWxwOVJrcW5pRU9kbnVBVmthc0lD?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-12T20:15:00+00:00",
-            "id": "cebeb55be33d806b552e",
-            "type": "partnership",
-            "age_hours": 0.28,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-12T20:31:58.904013+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "SEDRF_US_EQ",
-        "isin": "BMG7997W1029",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
@@ -1575,37 +2130,68 @@
       }
     },
     {
-      "ticker": "FBK",
-      "name": "FB Financial",
+      "ticker": "RELL",
+      "name": "Richardson Electronics",
       "asset_type": "stock",
-      "price": 52.95,
+      "price": 20.8799991607666,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": 0.569799,
-      "volume": 612905.0,
-      "dollar_volume": 32453319.75,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:02:23+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
+      "change": 0.7714554,
+      "volume": 245435,
+      "dollar_volume": 5177271.019989014,
+      "session": "REGULAR",
+      "observed_at": "2026-10-13T10:00:00-04:00",
+      "source": "yfinance completed 5-minute bars",
+      "discovery_route": "market_snapshot",
       "selection_evidence": {
-        "fresh_publication": true,
+        "fresh_publication": false,
         "adverse": false,
         "broker_status": "LISTED_API",
-        "snapshot_score": 11.353,
+        "snapshot_score": 7.521,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RELL_US_EQ",
+        "isin": "US7631651079",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "volume_spike": 0.837489233419466,
+      "history_samples": 303,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 21.290000915527344,
+      "support": 20.614999771118164,
+      "momentum_pct": -1.27659793207332,
+      "reference_price": 21.00777944002447,
+      "extension_pct": -0.6082521935394047,
+      "resistance_1": 21.377199172973633,
+      "resistance_2": 21.45840072631836,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 0.8492375683852084,
+        "observed_at": "2026-10-13T10:00:00-04:00"
+      },
       "catalyst": {
-        "title": "FB Financial (NYSE:FBK) Posts Earnings Results - MarketBeat",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbGtGOUdCNkh1by0zaEVub2tLYm1oZHhYejZNNFNzT0d3andWbW5PNGpkSTAzM0F3aWFUMDQtYXJQVmMzZWtoT3FnSmtnWC14MVhFRVk3bnFIa2xiejVLLVB3M3hLOFFPaG1Oai1tbnMwZXNxNHIzTkl0ZWNZTjV5TkNZWUNnNVgycTVDMmxCbXRlNGtVa1NZSGdTbG9zaEN1c0gxSU1obGxXQjg?oc=5",
+        "title": "Sidoti Raises Earnings Estimates for Richardson Electronics - MarketBeat",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWXlXQ240UmpaaWZqRy12OFVaSkN2VmhhX0NYb05INUJleDZvdHNoR1l2X2d3UTREME1lNUYyTWxlSlVGb0lBZ0lzMlhyWDhkUUdOaWVjXzUyUFhRcEVZSTJjdWhKalR1cjdvcEtiRjlULV9iM2U3dHpiOXNhbkZmcEFCZ3NiSVkySTh6ZzlGLVJpeWdQckoydGRxMndNQkN1ZGhnRlJ0SXJzUGtHLUwxUTVBekFMd3RiTzVCeFFhLXg?oc=5",
         "source": "MarketBeat",
-        "published_at": "2026-10-13T11:34:02+00:00",
-        "id": "f16c1edd4d68d26ae5cd",
+        "published_at": "2026-10-13T12:31:22+00:00",
+        "id": "675883a08c1a4260557b",
         "type": "earnings",
-        "age_hours": 0.19,
+        "age_hours": 1.57,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1614,17 +2200,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "FB Financial (NYSE:FBK) Posts Earnings Results - MarketBeat",
+        "summary": "Sidoti Raises Earnings Estimates for Richardson Electronics - MarketBeat",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "FB Financial (NYSE:FBK) Posts Earnings Results - MarketBeat",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbGtGOUdCNkh1by0zaEVub2tLYm1oZHhYejZNNFNzT0d3andWbW5PNGpkSTAzM0F3aWFUMDQtYXJQVmMzZWtoT3FnSmtnWC14MVhFRVk3bnFIa2xiejVLLVB3M3hLOFFPaG1Oai1tbnMwZXNxNHIzTkl0ZWNZTjV5TkNZWUNnNVgycTVDMmxCbXRlNGtVa1NZSGdTbG9zaEN1c0gxSU1obGxXQjg?oc=5",
+            "title": "Sidoti Raises Earnings Estimates for Richardson Electronics - MarketBeat",
+            "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWXlXQ240UmpaaWZqRy12OFVaSkN2VmhhX0NYb05INUJleDZvdHNoR1l2X2d3UTREME1lNUYyTWxlSlVGb0lBZ0lzMlhyWDhkUUdOaWVjXzUyUFhRcEVZSTJjdWhKalR1cjdvcEtiRjlULV9iM2U3dHpiOXNhbkZmcEFCZ3NiSVkySTh6ZzlGLVJpeWdQckoydGRxMndNQkN1ZGhnRlJ0SXJzUGtHLUwxUTVBekFMd3RiTzVCeFFhLXg?oc=5",
             "source": "MarketBeat",
-            "published_at": "2026-10-13T11:34:02+00:00",
-            "id": "f16c1edd4d68d26ae5cd",
+            "published_at": "2026-10-13T12:31:22+00:00",
+            "id": "675883a08c1a4260557b",
             "type": "earnings",
-            "age_hours": 0.19,
+            "age_hours": 1.57,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1637,178 +2223,19 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T11:45:42.868635+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "FBK_US_EQ",
-        "isin": "US30257X1046",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
+        "headlines_checked": 6
       },
       "score": {
-        "score": 1,
+        "score": 0,
         "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
+        "reasons": []
       },
       "qualification": {
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "CABO",
-      "name": "Cable One",
-      "asset_type": "stock",
-      "price": 11.994999885559082,
-      "currency": "USD",
-      "eur_per_unit": 0.8924999833106995,
-      "change": 3.8327575,
-      "volume": 46686,
-      "dollar_volume": 559998.5646572113,
-      "session": "REGULAR",
-      "observed_at": "2026-10-13T09:35:00-04:00",
-      "source": "yfinance completed 5-minute bars",
-      "discovery_route": "market_snapshot",
-      "selection_evidence": {
-        "fresh_publication": false,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 3.759,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "CABO_US_EQ",
-        "isin": "US12685J1051",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "volume_spike": 0.9501915708812261,
-      "history_samples": 307,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 11.569999694824219,
-      "support": 11.255000114440918,
-      "momentum_pct": 5.8226717705420095,
-      "reference_price": 11.566119254478032,
-      "extension_pct": 3.708077200699811,
-      "resistance_1": 12.010000228881836,
-      "resistance_2": 12.0600004196167,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "Recent chart bars have gaps."
-        ],
-        "interval": "5m"
-      },
-      "catalyst": {
-        "title": "Full Transcript: Cable One Q2 2026 Earnings Call - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbVhhMDlYa1dfd3cwTC02dzM2eXVGelIxbjgyNGxQUjhTRnFmaklIY1RRaVdqbVFxUk5mdXNqN1hDdnRaNHFaM1NHLWpvNEpGRTN0aU5iTnFJaW15clBaamFHbkNNQ0RBYVNxUzNyXy1mV0RZb29nYk9Vb3Bwalg4UXRTR0EySUlsbldkYmpnSE5vSFF5MUUw?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T07:52:44+00:00",
-        "id": "b6484850673baf3cdff6",
-        "type": "earnings",
-        "age_hours": 5.77,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Full Transcript: Cable One Q2 2026 Earnings Call - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Full Transcript: Cable One Q2 2026 Earnings Call - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbVhhMDlYa1dfd3cwTC02dzM2eXVGelIxbjgyNGxQUjhTRnFmaklIY1RRaVdqbVFxUk5mdXNqN1hDdnRaNHFaM1NHLWpvNEpGRTN0aU5iTnFJaW15clBaamFHbkNNQ0RBYVNxUzNyXy1mV0RZb29nYk9Vb3Bwalg4UXRTR0EySUlsbldkYmpnSE5vSFF5MUUw?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T07:52:44+00:00",
-            "id": "b6484850673baf3cdff6",
-            "type": "earnings",
-            "age_hours": 5.77,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 8
-      },
-      "score": {
-        "score": 2,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Transcript, presentation or recap; publication date is not the event date.",
-          "Insufficient traded notional liquidity.",
+          "Recent article publication does not establish when the underlying event occurred.",
+          "No positive recent momentum; a daily gain alone is insufficient.",
           "Recent same-time relative volume is below 1.5x."
         ],
         "plan": null,
@@ -1817,8 +2244,8 @@
           {
             "status": "REJECTED",
             "reasons": [
-              "Transcript, presentation or recap; publication date is not the event date.",
-              "Insufficient traded notional liquidity.",
+              "Recent article publication does not establish when the underlying event occurred.",
+              "No positive recent momentum; a daily gain alone is insufficient.",
               "Recent same-time relative volume is below 1.5x."
             ],
             "plan": null,
@@ -1826,134 +2253,6 @@
           }
         ],
         "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TVTX",
-      "name": "Travere Therapeutics",
-      "asset_type": "stock",
-      "price": 52.02,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.201438,
-      "volume": 1424335.0,
-      "dollar_volume": 74093906.7,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.688,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
-        "source": "Stocktwits",
-        "published_at": "2026-10-12T22:44:03+00:00",
-        "id": "67d93bb4132f96a100b2",
-        "type": "regulatory",
-        "age_hours": 8.56,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
-            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
-            "source": "Stocktwits",
-            "published_at": "2026-10-12T22:44:03+00:00",
-            "id": "67d93bb4132f96a100b2",
-            "type": "regulatory",
-            "age_hours": 8.56,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T07:17:42.577064+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "RTRX_US_EQ",
-        "isin": "US89422G1076",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
     },
@@ -2086,152 +2385,26 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "STRK",
-      "name": "Starknet",
-      "coin_id": "starknet",
-      "asset_type": "crypto",
-      "price": 0.084,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -19.14461,
-      "change_1h": -0.2761,
-      "acceleration": 0.5215920833333333,
-      "discovery_route": "catalyst_first",
-      "change_7d": 80.6047,
-      "volume": 368107579.0,
-      "dollar_volume": 368107579.0,
-      "market_cap": 623195277,
-      "session": "24/7",
-      "observed_at": "2026-10-12T20:55:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lWDFkb1NpLVBJeElSNC1jRnNORFBfb3d3X3BQckFQYVc2Mlp2bkcxUWNLc2ZDWlZDUEpsZDVVbWJoUXJkbE8yMXF0OXNCSEZ0ZEhVVXZNNkFQc0dRT3RtRFhROFRHYzNuVE1DMVdmNUw?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-10-12T14:05:00+00:00",
-        "id": "355b541cbdcd28cc11c7",
-        "type": "crypto_event",
-        "age_hours": 6.91,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lWDFkb1NpLVBJeElSNC1jRnNORFBfb3d3X3BQckFQYVc2Mlp2bkcxUWNLc2ZDWlZDUEpsZDVVbWJoUXJkbE8yMXF0OXNCSEZ0ZEhVVXZNNkFQc0dRT3RtRFhROFRHYzNuVE1DMVdmNUw?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-10-12T14:05:00+00:00",
-            "id": "355b541cbdcd28cc11c7",
-            "type": "crypto_event",
-            "age_hours": 6.91,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-12T20:59:28.878635+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 719,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.08527,
-      "support": 0.08331,
-      "momentum_pct": -0.414937759336087,
-      "reference_price": 0.08412529393574997,
-      "extension_pct": -0.1489372932778732,
-      "resistance_1": 0.08536,
-      "resistance_2": 0.08565,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 2.9041414321018726,
-        "observed_at": "2026-10-12T20:55:00+00:00"
-      },
-      "structure_observed_at": "2026-10-12T20:55:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "STRKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Matched headline contains an adverse event; no bullish catalyst credit.",
-          "No positive recent momentum; a daily gain alone is insufficient."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Matched headline contains an adverse event; no bullish catalyst credit.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
     }
   ],
   "changed_signals": [
+    "stock:CVSA",
+    "stock:BWAY",
+    "stock:FET",
+    "stock:TYL",
+    "stock:GD",
+    "stock:PAR",
+    "stock:SPCB",
+    "stock:RELL"
+  ],
+  "invalidated_signals": [
     "stock:MDA",
     "stock:HUM",
     "stock:TM",
     "stock:HAS",
     "stock:G",
-    "stock:CABO"
-  ],
-  "invalidated_signals": [
-    "stock:DHI",
-    "stock:JPM",
-    "stock:IRLA"
+    "stock:CABO",
+    "crypto:starknet"
   ],
   "health": {
     "stocks": {
@@ -2241,8 +2414,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7803,
-        "snapshot_records": 7803,
+        "provider_total": 7804,
+        "snapshot_records": 7804,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -2251,7 +2424,7 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 170,
+        "headlines_received": 169,
         "matched_events": 12,
         "matched_assets": 11,
         "failed_queries": 0,
@@ -2274,24 +2447,24 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5901,
-      "discovered_candidates": 221,
-      "broker_excluded_candidates": 5,
+      "listed_snapshot_records": 5902,
+      "discovered_candidates": 350,
+      "broker_excluded_candidates": 26,
       "shortlisted_candidates": 150,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
+      "catalyst_selected": 10,
       "selected_candidates": 60,
-      "deferred_candidates": 156,
-      "outside_shortlist": 66,
+      "deferred_candidates": 264,
+      "outside_shortlist": 174,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 49,
+      "unquoted_listings": 48,
       "history_requested": 60,
-      "history_received": 59,
+      "history_received": 58,
       "history_not_requested": 0,
-      "chart_failures": 1
+      "chart_failures": 2
     },
     "crypto": {
       "candle_providers": {
@@ -2301,19 +2474,19 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
-      "history_requested": 12,
-      "history_received": 12,
-      "chart_failures": 0,
+      "history_requested": 11,
+      "history_received": 10,
+      "chart_failures": 1,
       "history_stale": 0,
-      "history_not_requested": 0,
+      "history_not_requested": 1,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 169,
-        "matched_events": 2,
-        "matched_assets": 2,
+        "matched_events": 1,
+        "matched_assets": 1,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2338,14 +2511,14 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00",
+        "checked_at": "2026-10-13T14:04:59.723497+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-13T13:38:23.048779+00:00"
+        "checked_at": "2026-10-13T14:04:59.723497+00:00"
       }
     },
     "news": {
