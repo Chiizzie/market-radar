@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-13T02:12:16.614111+00:00",
+  "generated_at": "2026-10-13T02:32:59.508493+00:00",
   "potential_signals": [
     {
       "ticker": "LNT",
@@ -259,6 +259,134 @@
           }
         ],
         "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TVTX",
+      "name": "Travere Therapeutics",
+      "asset_type": "stock",
+      "price": 52.02,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.201438,
+      "volume": 1424335.0,
+      "dollar_volume": 74093906.7,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 9.688,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+        "source": "Stocktwits",
+        "published_at": "2026-10-12T08:41:07+00:00",
+        "id": "67d93bb4132f96a100b2",
+        "type": "regulatory",
+        "age_hours": 17.85,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Travere Therapeutics Wins Much-Awaited Approval For Drug In Rare Kidney Disease - Stocktwits",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdi1SU1RSa3FHVHRMcktPbE1FaGhpRGdvRjZfSEt4UmNEUmZjeTVUSzd2ZWZxS3Yyd1VNU0pEOVFwVGZVbE12NFE5UXJ2NGxPeHRPZE9NRl9QLVE0VVd2aWpoQ2wxSzVQdVdaMjFkc0tMeTlMYU5zWE1EWnBDMEQycTYtb2J4U3NZVnZNR05fNmRrNEFuQ3lqZU9ObGxKOTYtY1JDZTZPd1Y4dmJ0dkxuaGdYRG9rMk4yOFFZSU1vNDdFM0JBWTQyX1VfOHlWSWdDbmFmbWZVMnhHTFE?oc=5",
+            "source": "Stocktwits",
+            "published_at": "2026-10-12T08:41:07+00:00",
+            "id": "67d93bb4132f96a100b2",
+            "type": "regulatory",
+            "age_hours": 17.85,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T02:32:08.543433+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "RTRX_US_EQ",
+        "isin": "US89422G1076",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
         "research_only": true
       }
     },
@@ -898,138 +1026,6 @@
       }
     },
     {
-      "symbol": "STRK",
-      "name": "Starknet",
-      "coin_id": "starknet",
-      "asset_type": "crypto",
-      "price": 0.084,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -19.14461,
-      "change_1h": -0.2761,
-      "acceleration": 0.5215920833333333,
-      "discovery_route": "catalyst_first",
-      "change_7d": 80.6047,
-      "volume": 368107579.0,
-      "dollar_volume": 368107579.0,
-      "market_cap": 623195277,
-      "session": "24/7",
-      "observed_at": "2026-10-12T20:55:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lWDFkb1NpLVBJeElSNC1jRnNORFBfb3d3X3BQckFQYVc2Mlp2bkcxUWNLc2ZDWlZDUEpsZDVVbWJoUXJkbE8yMXF0OXNCSEZ0ZEhVVXZNNkFQc0dRT3RtRFhROFRHYzNuVE1DMVdmNUw?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-10-12T14:05:00+00:00",
-        "id": "355b541cbdcd28cc11c7",
-        "type": "crypto_event",
-        "age_hours": 6.91,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lWDFkb1NpLVBJeElSNC1jRnNORFBfb3d3X3BQckFQYVc2Mlp2bkcxUWNLc2ZDWlZDUEpsZDVVbWJoUXJkbE8yMXF0OXNCSEZ0ZEhVVXZNNkFQc0dRT3RtRFhROFRHYzNuVE1DMVdmNUw?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-10-12T14:05:00+00:00",
-            "id": "355b541cbdcd28cc11c7",
-            "type": "crypto_event",
-            "age_hours": 6.91,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-12T20:59:28.878635+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 719,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.08527,
-      "support": 0.08331,
-      "momentum_pct": -0.414937759336087,
-      "reference_price": 0.08412529393574997,
-      "extension_pct": -0.1489372932778732,
-      "resistance_1": 0.08536,
-      "resistance_2": 0.08565,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 2.9041414321018726,
-        "observed_at": "2026-10-12T20:55:00+00:00"
-      },
-      "structure_observed_at": "2026-10-12T20:55:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "STRKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Matched headline contains an adverse event; no bullish catalyst credit.",
-          "No positive recent momentum; a daily gain alone is insufficient."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Matched headline contains an adverse event; no bullish catalyst credit.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
       "symbol": "ARB",
       "name": "Arbitrum",
       "coin_id": "arbitrum",
@@ -1164,19 +1160,19 @@
       "name": "Ethereum",
       "coin_id": "ethereum",
       "asset_type": "crypto",
-      "price": 2199.55,
+      "price": 2218.77,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": -2.74245,
-      "change_1h": -1.0593,
-      "acceleration": -0.9450312499999999,
+      "change_24h": -2.48325,
+      "change_1h": 1.7332,
+      "acceleration": 1.83666875,
       "discovery_route": "catalyst_first",
-      "change_7d": -10.7465,
-      "volume": 13738913445.0,
-      "dollar_volume": 13738913445.0,
-      "market_cap": 268740125003,
+      "change_7d": -9.4558,
+      "volume": 13865674870.0,
+      "dollar_volume": 13865674870.0,
+      "market_cap": 271085473768,
       "session": "24/7",
-      "observed_at": "2026-10-13T01:45:00+00:00",
+      "observed_at": "2026-10-13T02:30:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "catalyst": {
@@ -1186,7 +1182,7 @@
         "published_at": "2026-10-12T08:58:24+00:00",
         "id": "3dbb5341e9a395b5e46d",
         "type": "crypto_event",
-        "age_hours": 16.8,
+        "age_hours": 17.56,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1205,7 +1201,7 @@
             "published_at": "2026-10-12T08:58:24+00:00",
             "id": "3dbb5341e9a395b5e46d",
             "type": "crypto_event",
-            "age_hours": 16.8,
+            "age_hours": 17.56,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1223,7 +1219,7 @@
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-13T01:46:19.542014+00:00",
+        "checked_at": "2026-10-13T02:32:08.543433+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
@@ -1232,60 +1228,23 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 2200.23,
-      "support": 2173.81,
-      "momentum_pct": 0.19815962099127837,
-      "reference_price": 2187.5819587886886,
-      "extension_pct": 0.5470899576232924,
-      "resistance_1": 2203.86,
-      "resistance_2": 2212.81,
+      "entry": 2222.33,
+      "support": 2201.52,
+      "momentum_pct": 0.13900861582620827,
+      "reference_price": 2212.062587288102,
+      "extension_pct": 0.3032198433463362,
+      "resistance_1": 2225.74,
+      "resistance_2": 2232.44,
       "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 2200.23,
-            "support": 2193.98,
-            "resistance_1": 2203.86,
-            "resistance_2": 2212.81,
-            "momentum_pct": 0.19815962099127837,
-            "extension_pct": 0.5470899576232924,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 2193.99,
-              "measured_height": 37.26999999999998,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                2212.625,
-                2231.2599999999998
-              ],
-              "overhead_levels": [
-                2203.86,
-                2205.93,
-                2207.94,
-                2208.45
-              ]
-            },
-            "observed_at": "2026-10-13T01:45:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-12T23:45:00+00:00",
-              "range_end": "2026-10-13T01:10:00+00:00",
-              "range_high": 2193.99,
-              "range_low": 2156.72,
-              "retest_low": 2193.98,
-              "breakout_close": 2196.7,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
-        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 0.07738947447962233,
-        "observed_at": "2026-10-13T01:45:00+00:00"
+        "recent_volume_ratio": 0.5537749615956653,
+        "observed_at": "2026-10-13T02:30:00+00:00"
       },
-      "structure_observed_at": "2026-10-13T01:45:00+00:00",
+      "structure_observed_at": "2026-10-13T02:30:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -1305,58 +1264,13 @@
         ]
       },
       "qualification": {
-        "status": "TECHNICAL WATCH",
+        "status": "CATALYST WATCH",
         "reasons": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
+          "News lead for research; event timing and entry require verification.",
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 2200.23,
-          "support": 2193.98,
-          "resistance_1": 2203.86,
-          "resistance_2": 2212.81,
-          "momentum_pct": 0.19815962099127837,
-          "extension_pct": 0.5470899576232924,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 2193.99,
-            "measured_height": 37.26999999999998,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              2212.625,
-              2231.2599999999998
-            ],
-            "overhead_levels": [
-              2203.86,
-              2205.93,
-              2207.94,
-              2208.45
-            ]
-          },
-          "observed_at": "2026-10-13T01:45:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-12T23:45:00+00:00",
-            "range_end": "2026-10-13T01:10:00+00:00",
-            "range_high": 2193.99,
-            "range_low": 2156.72,
-            "retest_low": 2193.98,
-            "breakout_close": 2196.7,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Recent crypto bar volume is below 1.5x its preceding baseline.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
+        "route": "CATALYST_LED",
         "assessments": [
           {
             "status": "REJECTED",
@@ -1365,70 +1279,150 @@
             ],
             "plan": null,
             "route": "CATALYST_LED"
-          },
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "symbol": "STRK",
+      "name": "Starknet",
+      "coin_id": "starknet",
+      "asset_type": "crypto",
+      "price": 0.084,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -19.14461,
+      "change_1h": -0.2761,
+      "acceleration": 0.5215920833333333,
+      "discovery_route": "catalyst_first",
+      "change_7d": 80.6047,
+      "volume": 368107579.0,
+      "dollar_volume": 368107579.0,
+      "market_cap": 623195277,
+      "session": "24/7",
+      "observed_at": "2026-10-12T20:55:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "catalyst": {
+        "title": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lWDFkb1NpLVBJeElSNC1jRnNORFBfb3d3X3BQckFQYVc2Mlp2bkcxUWNLc2ZDWlZDUEpsZDVVbWJoUXJkbE8yMXF0OXNCSEZ0ZEhVVXZNNkFQc0dRT3RtRFhROFRHYzNuVE1DMVdmNUw?oc=5",
+        "source": "CoinMarketCap",
+        "published_at": "2026-10-12T14:05:00+00:00",
+        "id": "355b541cbdcd28cc11c7",
+        "type": "crypto_event",
+        "age_hours": 6.91,
+        "confidence": "headline_evidence",
+        "adverse": true,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
+        "eligible_for_points": false,
+        "headlines": [
           {
-            "status": "TECHNICAL WATCH",
+            "title": "Starknet (STRK) Drops 13% Amid Token Unlock and Profit Taking - CoinMarketCap",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lWDFkb1NpLVBJeElSNC1jRnNORFBfb3d3X3BQckFQYVc2Mlp2bkcxUWNLc2ZDWlZDUEpsZDVVbWJoUXJkbE8yMXF0OXNCSEZ0ZEhVVXZNNkFQc0dRT3RtRFhROFRHYzNuVE1DMVdmNUw?oc=5",
+            "source": "CoinMarketCap",
+            "published_at": "2026-10-12T14:05:00+00:00",
+            "id": "355b541cbdcd28cc11c7",
+            "type": "crypto_event",
+            "age_hours": 6.91,
+            "confidence": "headline_evidence",
+            "adverse": true,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-12T20:59:28.878635+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 719,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 0.08527,
+      "support": 0.08331,
+      "momentum_pct": -0.414937759336087,
+      "reference_price": 0.08412529393574997,
+      "extension_pct": -0.1489372932778732,
+      "resistance_1": 0.08536,
+      "resistance_2": 0.08565,
+      "chart_analysis": {
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
+        ],
+        "interval": "5m",
+        "recent_volume_ratio": 2.9041414321018726,
+        "observed_at": "2026-10-12T20:55:00+00:00"
+      },
+      "structure_observed_at": "2026-10-12T20:55:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "STRKEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "Matched headline contains an adverse event; no bullish catalyst credit.",
+          "No positive recent momentum; a daily gain alone is insufficient."
+        ],
+        "plan": null,
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "REJECTED",
             "reasons": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "Matched headline contains an adverse event; no bullish catalyst credit.",
+              "No positive recent momentum; a daily gain alone is insufficient."
             ],
             "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 2200.23,
-              "support": 2193.98,
-              "resistance_1": 2203.86,
-              "resistance_2": 2212.81,
-              "momentum_pct": 0.19815962099127837,
-              "extension_pct": 0.5470899576232924,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 2193.99,
-                "measured_height": 37.26999999999998,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  2212.625,
-                  2231.2599999999998
-                ],
-                "overhead_levels": [
-                  2203.86,
-                  2205.93,
-                  2207.94,
-                  2208.45
-                ]
-              },
-              "observed_at": "2026-10-13T01:45:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-12T23:45:00+00:00",
-                "range_end": "2026-10-13T01:10:00+00:00",
-                "range_high": 2193.99,
-                "range_low": 2156.72,
-                "retest_low": 2193.98,
-                "breakout_close": 2196.7,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
+            "route": "CATALYST_LED"
           }
-        ]
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
       }
     }
   ],
-  "changed_signals": [],
-  "invalidated_signals": [
+  "changed_signals": [
     "stock:TVTX",
-    "crypto:wormhole"
+    "crypto:ethereum"
   ],
+  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1437,8 +1431,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7805,
-        "snapshot_records": 7805,
+        "provider_total": 7795,
+        "snapshot_records": 7795,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1448,8 +1442,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 169,
-        "matched_events": 8,
-        "matched_assets": 8,
+        "matched_events": 9,
+        "matched_assets": 9,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1471,14 +1465,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5905,
-      "discovered_candidates": 8,
+      "discovered_candidates": 9,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 7,
+      "shortlisted_candidates": 8,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 7,
-      "selected_candidates": 7,
+      "catalyst_selected": 8,
+      "selected_candidates": 8,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1486,7 +1480,7 @@
       "unquoted_listings": 45,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 8,
       "chart_failures": 0
     },
     "crypto": {
@@ -1497,12 +1491,12 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
       "history_requested": 12,
-      "history_received": 12,
-      "chart_failures": 0,
+      "history_received": 11,
+      "chart_failures": 1,
       "history_stale": 0,
       "history_not_requested": 0,
       "catalyst_discovery": {
@@ -1534,18 +1528,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-13T02:11:26.674000+00:00",
+        "checked_at": "2026-10-13T02:32:08.543433+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-13T02:11:26.674000+00:00"
+        "checked_at": "2026-10-13T02:32:08.543433+00:00"
       }
     },
     "news": {
-      "checked": 19,
+      "checked": 20,
       "failed": 0
     }
   },
