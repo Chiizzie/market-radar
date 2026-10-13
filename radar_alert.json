@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-13T08:38:36.493387+00:00",
+  "generated_at": "2026-10-13T09:00:25.455988+00:00",
   "potential_signals": [
     {
       "ticker": "LNT",
@@ -390,134 +390,6 @@
       }
     },
     {
-      "ticker": "KRT",
-      "name": "Karat Packaging",
-      "asset_type": "stock",
-      "price": 54.49,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.164896,
-      "volume": 238082.0,
-      "dollar_volume": 12973088.18,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.796,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Full Transcript: Karat Packaging Q2 2026 Earnings Call - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeGFLZTFlc1RmSXZtdXU4Umk4bjhCOTVZcUlBZ2Ytb0UySGFiSGdHM0ttY2JaUGo0M1BPUllDZkZMWlZzNUtsS2FhczVYeXMxaWo3cjJFNHVmTzVMTjNWQXVYNkIycWVMTUV5ajRVdExSX2JHUWNpTUt3R2xWWk5ldTFaSmZUR01rSEJhcVFLeER3cGlUZTVvVXcwZ2xDdms?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T08:18:02+00:00",
-        "id": "82400dffa722b86cfb11",
-        "type": "earnings",
-        "age_hours": 0.33,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Full Transcript: Karat Packaging Q2 2026 Earnings Call - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Full Transcript: Karat Packaging Q2 2026 Earnings Call - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeGFLZTFlc1RmSXZtdXU4Umk4bjhCOTVZcUlBZ2Ytb0UySGFiSGdHM0ttY2JaUGo0M1BPUllDZkZMWlZzNUtsS2FhczVYeXMxaWo3cjJFNHVmTzVMTjNWQXVYNkIycWVMTUV5ajRVdExSX2JHUWNpTUt3R2xWWk5ldTFaSmZUR01rSEJhcVFLeER3cGlUZTVvVXcwZ2xDdms?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T08:18:02+00:00",
-            "id": "82400dffa722b86cfb11",
-            "type": "earnings",
-            "age_hours": 0.33,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T08:37:47.651773+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "KRT_US_EQ",
-        "isin": "US48563L1017",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "TVTX",
       "name": "Travere Therapeutics",
       "asset_type": "stock",
@@ -849,134 +721,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "ARLO_US_EQ",
         "isin": "US04206A1016",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "QNST",
-      "name": "QuinStreet",
-      "asset_type": "stock",
-      "price": 15.33,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -2.54291,
-      "volume": 727422.0,
-      "dollar_volume": 11151379.26,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 1.895,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "QuinStreet Q4 2026 Earnings Call: Complete Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTXpQajdqc1lVWTFTbjE0VWsxM250SU50bHNWVjFENWNPNTI1c3EwdlhXSXFZbHlWbEptS0hmUGp4MTZDSnpoa0dKNzBlNWIyanczdmV5UHI0TDNuWUg2TmVoR19zbFBxVHhsVTd5bnJFekVzYWptbnBmbHNuQ3VQZUUyeTN3My1ydTBaM0tIazl5YW5BVkJHRnZxSWdzc19scF9zSFlUNjdTZ3JYVnBHUVFyb1JadFNWWGlFQnl6MA?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T08:18:26+00:00",
-        "id": "f30a9b373888ca80cfa3",
-        "type": "earnings",
-        "age_hours": 0.32,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "QuinStreet Q4 2026 Earnings Call: Complete Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "QuinStreet Q4 2026 Earnings Call: Complete Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTXpQajdqc1lVWTFTbjE0VWsxM250SU50bHNWVjFENWNPNTI1c3EwdlhXSXFZbHlWbEptS0hmUGp4MTZDSnpoa0dKNzBlNWIyanczdmV5UHI0TDNuWUg2TmVoR19zbFBxVHhsVTd5bnJFekVzYWptbnBmbHNuQ3VQZUUyeTN3My1ydTBaM0tIazl5YW5BVkJHRnZxSWdzc19scF9zSFlUNjdTZ3JYVnBHUVFyb1JadFNWWGlFQnl6MA?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T08:18:26+00:00",
-            "id": "f30a9b373888ca80cfa3",
-            "type": "earnings",
-            "age_hours": 0.32,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T08:37:47.651773+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "QNST_US_EQ",
-        "isin": "US74874Q1004",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1541,6 +1285,129 @@
       }
     },
     {
+      "ticker": "ALTG",
+      "name": "Alta Equipment Group",
+      "asset_type": "stock",
+      "price": 6.28,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.946371,
+      "volume": 161150.0,
+      "dollar_volume": 1012022.0,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "UNVERIFIED",
+        "snapshot_score": 2.533,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Alta Equipment Group Q2 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRkVpMWJRX2FVR3l5dUZvZFhnc1EyM2pJYnFCQkRUZVdUUEYzdmgwZTdralFSb2Vyb2VYZld0Qm9XOWZiZmc4T3MwcnZzcGVCb0x4Um5oOG52TTQtWE1tem43QUtGd0ZUSEFneHROY2VjTEZGRVIwUUxjeVZlRG9sVnBoVnBjVUdBZW9WR0NmVDhidTNTcGhtZDJBOFNZRVk?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-13T08:36:02+00:00",
+        "id": "ffa75cddd64ad23435b9",
+        "type": "earnings",
+        "age_hours": 0.39,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Alta Equipment Group Q2 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Alta Equipment Group Q2 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRkVpMWJRX2FVR3l5dUZvZFhnc1EyM2pJYnFCQkRUZVdUUEYzdmgwZTdralFSb2Vyb2VYZld0Qm9XOWZiZmc4T3MwcnZzcGVCb0x4Um5oOG52TTQtWE1tem43QUtGd0ZUSEFneHROY2VjTEZGRVIwUUxjeVZlRG9sVnBoVnBjVUdBZW9WR0NmVDhidTNTcGhtZDJBOFNZRVk?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-13T08:36:02+00:00",
+            "id": "ffa75cddd64ad23435b9",
+            "type": "earnings",
+            "age_hours": 0.39,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-10-13T08:59:33.087845+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "reason": "Ticker/company identity is ambiguous; manual verification required."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "IRLA",
       "name": "IRulya Therapeutics",
       "asset_type": "stock",
@@ -1661,136 +1528,6 @@
           }
         ],
         "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "ETH",
-      "name": "Ethereum",
-      "coin_id": "ethereum",
-      "asset_type": "crypto",
-      "price": 2248.98,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -1.559,
-      "change_1h": 0.6365,
-      "acceleration": 0.7014583333333333,
-      "discovery_route": "catalyst_first",
-      "change_7d": -7.2752,
-      "volume": 14836158611.0,
-      "dollar_volume": 14836158611.0,
-      "market_cap": 274852650131,
-      "session": "24/7",
-      "observed_at": "2026-10-13T04:45:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead - CoinDesk",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSERJb0szU1ZONFVIakRWUXRaTHlsb2lPVHloLVoxTDFDZkJtQm94aHk0WjhvQlF2RGxQUlZaZW9SenM0TnBIdGdaTVFGWFJ2TERPT3pJS3hJVGpUejhxOGt0Q1Q4OGpyOWNJMURvc2ZvWHhGNjVNczlhN0xiMU4telhtXy1ZSHZSLUxtaXdESmg5ZWZwRW5nZHFKaWVST2M?oc=5",
-        "source": "CoinDesk",
-        "published_at": "2026-10-12T08:58:24+00:00",
-        "id": "3dbb5341e9a395b5e46d",
-        "type": "crypto_event",
-        "age_hours": 19.83,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead - CoinDesk",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead - CoinDesk",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSERJb0szU1ZONFVIakRWUXRaTHlsb2lPVHloLVoxTDFDZkJtQm94aHk0WjhvQlF2RGxQUlZaZW9SenM0TnBIdGdaTVFGWFJ2TERPT3pJS3hJVGpUejhxOGt0Q1Q4OGpyOWNJMURvc2ZvWHhGNjVNczlhN0xiMU4telhtXy1ZSHZSLUxtaXdESmg5ZWZwRW5nZHFKaWVST2M?oc=5",
-            "source": "CoinDesk",
-            "published_at": "2026-10-12T08:58:24+00:00",
-            "id": "3dbb5341e9a395b5e46d",
-            "type": "crypto_event",
-            "age_hours": 19.83,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-13T04:48:01.810535+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 2252.2,
-      "support": 2241.78,
-      "momentum_pct": 0.14070584463581337,
-      "reference_price": 2248.639780398689,
-      "extension_pct": 0.015130017901343606,
-      "resistance_1": 2254.48,
-      "resistance_2": 2261.27,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.3481530284555073,
-        "observed_at": "2026-10-13T04:45:00+00:00"
-      },
-      "structure_observed_at": "2026-10-13T04:45:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "XETHZEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
         "research_only": true
       }
     },
@@ -2058,14 +1795,12 @@
     }
   ],
   "changed_signals": [
-    "stock:KRT",
-    "stock:ARLO",
-    "stock:QNST",
-    "stock:SERV",
-    "stock:STEP"
+    "stock:ALTG"
   ],
   "invalidated_signals": [
-    "crypto:layerzero"
+    "stock:KRT",
+    "stock:QNST",
+    "crypto:ethereum"
   ],
   "health": {
     "stocks": {
@@ -2086,8 +1821,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 170,
-        "matched_events": 14,
-        "matched_assets": 14,
+        "matched_events": 13,
+        "matched_assets": 13,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2109,14 +1844,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5904,
-      "discovered_candidates": 14,
+      "discovered_candidates": 13,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 13,
+      "shortlisted_candidates": 12,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 13,
-      "selected_candidates": 13,
+      "catalyst_selected": 12,
+      "selected_candidates": 12,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -2124,7 +1859,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 13,
+      "history_not_requested": 12,
       "chart_failures": 0
     },
     "crypto": {
@@ -2146,8 +1881,8 @@
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
-        "matched_events": 3,
-        "matched_assets": 3,
+        "matched_events": 2,
+        "matched_assets": 2,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -2172,18 +1907,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-13T08:37:47.651773+00:00",
+        "checked_at": "2026-10-13T08:59:33.087845+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-13T08:37:47.651773+00:00"
+        "checked_at": "2026-10-13T08:59:33.087845+00:00"
       }
     },
     "news": {
-      "checked": 25,
+      "checked": 24,
       "failed": 0
     }
   },
