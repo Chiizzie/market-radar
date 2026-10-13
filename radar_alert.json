@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-13T10:35:13.387524+00:00",
+  "generated_at": "2026-10-13T11:01:10.277297+00:00",
   "potential_signals": [
     {
       "ticker": "LNT",
@@ -116,134 +116,6 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TEAM",
-      "name": "Atlassian",
-      "asset_type": "stock",
-      "price": 207.75,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.464242,
-      "volume": 1978110.0,
-      "dollar_volume": 410952352.5,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.16,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Atlassian Q4 2026 Earnings Call: Complete Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOekRDUjVpdVhFbm9CdzZHcXVha3N1X09nTUVqLXZGMjFWM0V3QjBOSXdwdzVGLV9udmlpRU40X3AwZXM2T1g0UmtURFltczFKdktnNVh5ZGV6U0toYWVfM2Q5REFwQS1oY1AxNm0zbTQxTWhKYVRWQThhTGVyZVBobUxJMG9hNXJlbUQ2WmdtWThxTjZUd3k4Zk5lb2c?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T08:49:18+00:00",
-        "id": "2f595264c94b8b111df0",
-        "type": "earnings",
-        "age_hours": 0.51,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Atlassian Q4 2026 Earnings Call: Complete Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Atlassian Q4 2026 Earnings Call: Complete Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOekRDUjVpdVhFbm9CdzZHcXVha3N1X09nTUVqLXZGMjFWM0V3QjBOSXdwdzVGLV9udmlpRU40X3AwZXM2T1g0UmtURFltczFKdktnNVh5ZGV6U0toYWVfM2Q5REFwQS1oY1AxNm0zbTQxTWhKYVRWQThhTGVyZVBobUxJMG9hNXJlbUQ2WmdtWThxTjZUd3k4Zk5lb2c?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T08:49:18+00:00",
-            "id": "2f595264c94b8b111df0",
-            "type": "earnings",
-            "age_hours": 0.51,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T09:20:04.190480+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TEAM_US_EQ",
-        "isin": "US0494681010",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
             ],
             "plan": null,
             "missing_fields": [
@@ -414,40 +286,40 @@
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Doximity Reports Q1 2027 Results: Full Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYktSZE40aDY5NFJwdFNPemZhbXFPbWtnRVg2S2syYWoyQWVVRDVTSlp6OUpOeUdhWGllWl82UmhDSTd3REpjbGF3WkkwUUFvQnRsWkVnWVNxbzJnR1Y0NktCazk3QUdZQkhVa19oSzdXdmw5T3M0c3FBS0RqSnR1dFVGUXVTdHJIQzVaMkVyb2pLUXZqTENKN2cwbk1YcEFocUdkdjVzaHQwd0E?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T08:49:19+00:00",
-        "id": "2dc923446c5ad5c71b44",
-        "type": "earnings",
-        "age_hours": 0.51,
+        "title": "Doximity and U.S. News & World Report Extend Partnership to Connect Patients with Hospitals and Doctors - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV0VJVE13ZnF4SDc1MTl3M2VqNlBaOXp2Y3Npb0lQZkhQMlZrZGhZaXpLY1ExdktlYlduWTlqa2V0WmZ4UWMwVmdLWGk1V2pjTzRHLTlIXzE1Mk51bHp3ekhmQmhWWklzOElhdGllUjFid3BGX1lQTkowWkhWM05Xd0MxMDlOLWpnbkxiaUt1R3RpUDVuQk5KckY4T1dfM3FnamxFdTZESFlUM01YRjUzbEFxZDV0Y2Y4amJSRmtGWThxYU1xV21WckExdzVYWmhxTGp0XzNBWlpXZG53UkZtNTJqaWlzQVo4YkVkajRFTQ?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-13T04:01:00+00:00",
+        "id": "97028009baf394f183dc",
+        "type": "partnership",
+        "age_hours": 6.99,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
         "event_date_source": null,
         "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Doximity Reports Q1 2027 Results: Full Earnings Call Transcript - Benzinga",
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Doximity and U.S. News & World Report Extend Partnership to Connect Patients with Hospitals and Doctors - Business Wire",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Doximity Reports Q1 2027 Results: Full Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYktSZE40aDY5NFJwdFNPemZhbXFPbWtnRVg2S2syYWoyQWVVRDVTSlp6OUpOeUdhWGllWl82UmhDSTd3REpjbGF3WkkwUUFvQnRsWkVnWVNxbzJnR1Y0NktCazk3QUdZQkhVa19oSzdXdmw5T3M0c3FBS0RqSnR1dFVGUXVTdHJIQzVaMkVyb2pLUXZqTENKN2cwbk1YcEFocUdkdjVzaHQwd0E?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T08:49:19+00:00",
-            "id": "2dc923446c5ad5c71b44",
-            "type": "earnings",
-            "age_hours": 0.51,
+            "title": "Doximity and U.S. News & World Report Extend Partnership to Connect Patients with Hospitals and Doctors - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV0VJVE13ZnF4SDc1MTl3M2VqNlBaOXp2Y3Npb0lQZkhQMlZrZGhZaXpLY1ExdktlYlduWTlqa2V0WmZ4UWMwVmdLWGk1V2pjTzRHLTlIXzE1Mk51bHp3ekhmQmhWWklzOElhdGllUjFid3BGX1lQTkowWkhWM05Xd0MxMDlOLWpnbkxiaUt1R3RpUDVuQk5KckY4T1dfM3FnamxFdTZESFlUM01YRjUzbEFxZDV0Y2Y4amJSRmtGWThxYU1xV21WckExdzVYWmhxTGp0XzNBWlpXZG53UkZtNTJqaWlzQVo4YkVkajRFTQ?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-13T04:01:00+00:00",
+            "id": "97028009baf394f183dc",
+            "type": "partnership",
+            "age_hours": 6.99,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
           }
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
@@ -457,7 +329,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-13T09:20:04.190480+00:00",
+        "checked_at": "2026-10-13T11:00:31.069517+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
@@ -480,7 +352,7 @@
           "US regular market session is closed.",
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "missing_fields": [
@@ -499,7 +371,7 @@
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "missing_fields": [
@@ -1032,6 +904,134 @@
       }
     },
     {
+      "ticker": "PCT",
+      "name": "PureCycle Technologies",
+      "asset_type": "stock",
+      "price": 3.6,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -8.16327,
+      "volume": 5381266.0,
+      "dollar_volume": 19372557.6,
+      "session": "CLOSED",
+      "observed_at": "2026-10-12T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -6.845,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "PureCycle Technologies Q2 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPR1J4LVRRUTNLT01BME9xaE9XT1RVQXhKVHNYY19pWWZmc0RyRF96TWxzLW9TdG9TazJLU2JkaHJ4d1M4eEE1aklFZU4yOEFKb0Q1S09OU1plWThaQzJOQ3dXRFZ6d2FEYWM0VHJwMmt3WHdlY3o0aW5DYllrRFF3bUFWdHl5VmdxNUlIYUF1c000V01XSldrQ0NBUjRZaktmMWc?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-13T10:48:03+00:00",
+        "id": "508d37b28202dff231e2",
+        "type": "earnings",
+        "age_hours": 0.21,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "PureCycle Technologies Q2 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "PureCycle Technologies Q2 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPR1J4LVRRUTNLT01BME9xaE9XT1RVQXhKVHNYY19pWWZmc0RyRF96TWxzLW9TdG9TazJLU2JkaHJ4d1M4eEE1aklFZU4yOEFKb0Q1S09OU1plWThaQzJOQ3dXRFZ6d2FEYWM0VHJwMmt3WHdlY3o0aW5DYllrRFF3bUFWdHl5VmdxNUlIYUF1c000V01XSldrQ0NBUjRZaktmMWc?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-13T10:48:03+00:00",
+            "id": "508d37b28202dff231e2",
+            "type": "earnings",
+            "age_hours": 0.21,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T11:00:31.069517+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "ROCH_US_EQ",
+        "isin": "US74623V1035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "SERV",
       "name": "Serve Robotics",
       "asset_type": "stock",
@@ -1107,131 +1107,6 @@
         "isin": "US81758H1068",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "STEP",
-      "name": "StepStone Group",
-      "asset_type": "stock",
-      "price": 43.84,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.589565,
-      "volume": 454247.0,
-      "dollar_volume": 19914188.48,
-      "session": "CLOSED",
-      "observed_at": "2026-10-12T20:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "UNVERIFIED",
-        "snapshot_score": 5.16,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "StepStone Group Q1 2027 Earnings Call Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVUhWMEtPSl9XZGh1VjNna3o3eUhOZW1qT2Zuc3BoRGFoZUZSSHh4WncxMFdSZ0cwMXBlRHRxdXhwSkhrX2QwZVA0OWltU21BcVg2MDduOUU4TDZ0NW83M3lucWs2dU1TWVFOZUhQZGN3MFR1UFlrUEVoUnZQZEp1RjhhSDl6SVVqZFg0MlRNbk5nVVl3SDl5SA?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T08:18:33+00:00",
-        "id": "3da579562806aefd0bf6",
-        "type": "earnings",
-        "age_hours": 0.32,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "StepStone Group Q1 2027 Earnings Call Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "StepStone Group Q1 2027 Earnings Call Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVUhWMEtPSl9XZGh1VjNna3o3eUhOZW1qT2Zuc3BoRGFoZUZSSHh4WncxMFdSZ0cwMXBlRHRxdXhwSkhrX2QwZVA0OWltU21BcVg2MDduOUU4TDZ0NW83M3lucWs2dU1TWVFOZUhQZGN3MFR1UFlrUEVoUnZQZEp1RjhhSDl6SVVqZFg0MlRNbk5nVVl3SDl5SA?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T08:18:33+00:00",
-            "id": "3da579562806aefd0bf6",
-            "type": "earnings",
-            "age_hours": 0.32,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-13T08:37:47.651773+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "reason": "Ticker/company identity is ambiguous; manual verification required."
       },
       "score": {
         "score": 1,
@@ -1794,10 +1669,13 @@
       }
     }
   ],
-  "changed_signals": [],
+  "changed_signals": [
+    "stock:DOCS",
+    "stock:PCT"
+  ],
   "invalidated_signals": [
-    "stock:QDEL",
-    "stock:TTGT"
+    "stock:TEAM",
+    "stock:STEP"
   ],
   "health": {
     "stocks": {
@@ -1818,8 +1696,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 170,
-        "matched_events": 14,
-        "matched_assets": 13,
+        "matched_events": 11,
+        "matched_assets": 11,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1841,14 +1719,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5904,
-      "discovered_candidates": 13,
-      "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 12,
+      "discovered_candidates": 11,
+      "broker_excluded_candidates": 0,
+      "shortlisted_candidates": 11,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 12,
-      "selected_candidates": 12,
+      "catalyst_selected": 11,
+      "selected_candidates": 11,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1856,7 +1734,7 @@
       "unquoted_listings": 46,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 12,
+      "history_not_requested": 11,
       "chart_failures": 0
     },
     "crypto": {
@@ -1904,18 +1782,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-13T10:34:31.598556+00:00",
+        "checked_at": "2026-10-13T11:00:31.069517+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-13T10:34:31.598556+00:00"
+        "checked_at": "2026-10-13T11:00:31.069517+00:00"
       }
     },
     "news": {
-      "checked": 20,
+      "checked": 19,
       "failed": 0
     }
   },
