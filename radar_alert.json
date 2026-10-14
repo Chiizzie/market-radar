@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-14T10:00:41.534488+00:00",
+  "generated_at": "2026-10-14T10:32:23.756763+00:00",
   "potential_signals": [
     {
       "ticker": "KMB",
@@ -77,136 +77,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "KMB_US_EQ",
         "isin": "US4943681035",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "EXPD",
-      "name": "Expeditors International of Washington",
-      "asset_type": "stock",
-      "price": 195.13,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.889303,
-      "volume": 1191674.0,
-      "dollar_volume": 232531347.62,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 13.34,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Earnings Beat Might Change The Case For Investing In Expeditors International of Washington (EXPD) - Simply Wall Street",
-        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSVk0OUxzTGdmLTRHLUZ3MmNlN3UyYWdPZjFlcVUxVEpJenpFWllqTWN0Q1l3QURydks4UlhOQ24ta0FYdW1TVFNvelluSkdsVVFlSDV1RTd2OVFEWjFzOGlGM0dLNDNsUXFFakRwQkZWQVk4cEdUaGstUjFybVdtUjNhVDVXWXNqYV84WVEtXzNnczR5bFhLbkl3c0kwcnF5OEwxMWpIZHRGMzFpUXg5SThpV1ZSMjhuWklJMk5Pb3RQTURmNlJtaXRlSl8yUklyZHk5VEdZMzFzclFQVnlvbzVUeFFNNmxYbW1qMnplbXF2dzTSAfgBQVVfeXFMT2FZMFo1aENSTHFzUm9wMnhxYXJSRVNka0hlM2c1NFRwNGZhSGY5MjBMeFlMd3E4dE1ZX2xoQ3NSRjJPVm1PcXJjVzJXWURZbEh1dzBUaEFfOG9zLVlQeUR2ME5ONkY4SVJTNFZRcWtWSUVDc3hONExyNl9uMXZOXzJIVHVGN2EzNE5RU3JMSGpEUHlWY25rY2d2MktfYy1kejl3MkpwYU11c0JDenJTb1lDVnVieXZ5Z0JCQU0tbm1PVEF4R2l4amVaLThnUzhqQS1TaUxQSlZjZ0JCRVBlODF5dm05Rno4Um5FbFYwOTNMN3Q4SkFYYnU?oc=5",
-        "source": "Simply Wall Street",
-        "published_at": "2026-10-13T22:00:57+00:00",
-        "id": "63f3070c6f2b22a254aa",
-        "type": "earnings",
-        "age_hours": 0.29,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Earnings Beat Might Change The Case For Investing In Expeditors International of Washington (EXPD) - Simply Wall Street",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Earnings Beat Might Change The Case For Investing In Expeditors International of Washington (EXPD) - Simply Wall Street",
-            "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSVk0OUxzTGdmLTRHLUZ3MmNlN3UyYWdPZjFlcVUxVEpJenpFWllqTWN0Q1l3QURydks4UlhOQ24ta0FYdW1TVFNvelluSkdsVVFlSDV1RTd2OVFEWjFzOGlGM0dLNDNsUXFFakRwQkZWQVk4cEdUaGstUjFybVdtUjNhVDVXWXNqYV84WVEtXzNnczR5bFhLbkl3c0kwcnF5OEwxMWpIZHRGMzFpUXg5SThpV1ZSMjhuWklJMk5Pb3RQTURmNlJtaXRlSl8yUklyZHk5VEdZMzFzclFQVnlvbzVUeFFNNmxYbW1qMnplbXF2dzTSAfgBQVVfeXFMT2FZMFo1aENSTHFzUm9wMnhxYXJSRVNka0hlM2c1NFRwNGZhSGY5MjBMeFlMd3E4dE1ZX2xoQ3NSRjJPVm1PcXJjVzJXWURZbEh1dzBUaEFfOG9zLVlQeUR2ME5ONkY4SVJTNFZRcWtWSUVDc3hONExyNl9uMXZOXzJIVHVGN2EzNE5RU3JMSGpEUHlWY25rY2d2MktfYy1kejl3MkpwYU11c0JDenJTb1lDVnVieXZ5Z0JCQU0tbm1PVEF4R2l4amVaLThnUzhqQS1TaUxQSlZjZ0JCRVBlODF5dm05Rno4Um5FbFYwOTNMN3Q4SkFYYnU?oc=5",
-            "source": "Simply Wall Street",
-            "published_at": "2026-10-13T22:00:57+00:00",
-            "id": "63f3070c6f2b22a254aa",
-            "type": "earnings",
-            "age_hours": 0.29,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T22:18:30.034314+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "EXPD_US_EQ",
-        "isin": "US3021301094",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -910,58 +780,58 @@
       }
     },
     {
-      "ticker": "GS",
-      "name": "Goldman Sachs Group,  (The)",
+      "ticker": "VSTM",
+      "name": "Verastem",
       "asset_type": "stock",
-      "price": 891.91,
+      "price": 7.45,
       "currency": "USD",
       "eur_per_unit": null,
-      "change": -0.228205,
-      "volume": 4934073.0,
-      "dollar_volume": 4400749049.43,
+      "change": -9.69697,
+      "volume": 3394496.0,
+      "dollar_volume": 25288995.2,
       "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:03+00:00",
+      "observed_at": "2026-10-13T20:00:00+00:00",
       "source": "Yahoo broad exchange snapshot",
       "discovery_route": "catalyst_first",
       "selection_evidence": {
         "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "UNVERIFIED",
-        "snapshot_score": 18.252,
+        "adverse": true,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -8.272,
         "relative_volume_available": true,
         "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
       },
       "history_status": "NOT_REQUESTED",
       "data_issue": "Regular-session chart checks wait for the market to open.",
       "catalyst": {
-        "title": "Goldman Sachs (NYSE: GS) stock price forecast: Q3 earnings beat as equities jump 72% - Beinsure",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY0UxMmNSXzhSaDIybXAtU3V5V0p6b3pEbzFGX2s0THJzOVlzR2pXZkRkRHp5X1lVWE1WUXJLUFlWalA2MEEyeTJ5S2w1US1sUjl5YV91V2Ywam02QlNsRzZscW91QnV4anMtVjRUNkl3S1JSUk43NU1PZ1dIUWhGSWZZcXBtZ3U3SWxPSmUxZGxCNjR3eGlQd3pHV09TZk0zYmhwR0tQTjhlZw?oc=5",
-        "source": "Beinsure",
-        "published_at": "2026-10-13T15:22:07+00:00",
-        "id": "e352d00cd62e99d89a91",
-        "type": "earnings",
-        "age_hours": 6.08,
+        "title": "Verastem Oncology Announces Pricing of $250 Million Offering of Common Stock and Pre-Funded Warrants - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZ1pnamxnbTZzQ0QxTTVlU1RRU01LUHlwd1BNcnB5NkRKdFU4a05BbnpuaUpJQ1BpekZSUkM5WW5yRXpZQnRKbHk3U3RmTUpZa3Zmei1qNHhjMk83RDM2QVhUaklodnZWb3Z0b3hxMlhBaWhXYzhmcllKdnAtc0VNSi1NS0JJalR2ckZTZWpOQmc1MGRjSHZoU0NRODgtOG5QVVgwdHozZUlNN0JwQ3JRc0ktaWpoejE1RHJLZzk3aHVoVFVtZ0JPUU9SdUpmY09weHQ5bVkwTm1fLVUxVC12WGVuaS1XUEpqcEVRYmZtNks?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-14T10:04:00+00:00",
+        "id": "007c316ca1835cf5cc10",
+        "type": "financing",
+        "age_hours": 0.46,
         "confidence": "headline_evidence",
-        "adverse": false,
+        "adverse": true,
         "event_at": null,
         "event_date_source": null,
         "event_date_precision": null,
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Goldman Sachs (NYSE: GS) stock price forecast: Q3 earnings beat as equities jump 72% - Beinsure",
+        "summary": "Verastem Oncology Announces Pricing of $250 Million Offering of Common Stock and Pre-Funded Warrants - Business Wire",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Goldman Sachs (NYSE: GS) stock price forecast: Q3 earnings beat as equities jump 72% - Beinsure",
-            "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY0UxMmNSXzhSaDIybXAtU3V5V0p6b3pEbzFGX2s0THJzOVlzR2pXZkRkRHp5X1lVWE1WUXJLUFlWalA2MEEyeTJ5S2w1US1sUjl5YV91V2Ywam02QlNsRzZscW91QnV4anMtVjRUNkl3S1JSUk43NU1PZ1dIUWhGSWZZcXBtZ3U3SWxPSmUxZGxCNjR3eGlQd3pHV09TZk0zYmhwR0tQTjhlZw?oc=5",
-            "source": "Beinsure",
-            "published_at": "2026-10-13T15:22:07+00:00",
-            "id": "e352d00cd62e99d89a91",
-            "type": "earnings",
-            "age_hours": 6.08,
+            "title": "Verastem Oncology Announces Pricing of $250 Million Offering of Common Stock and Pre-Funded Warrants - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZ1pnamxnbTZzQ0QxTTVlU1RRU01LUHlwd1BNcnB5NkRKdFU4a05BbnpuaUpJQ1BpekZSUkM5WW5yRXpZQnRKbHk3U3RmTUpZa3Zmei1qNHhjMk83RDM2QVhUaklodnZWb3Z0b3hxMlhBaWhXYzhmcllKdnAtc0VNSi1NS0JJalR2ckZTZWpOQmc1MGRjSHZoU0NRODgtOG5QVVgwdHozZUlNN0JwQ3JRc0ktaWpoejE1RHJLZzk3aHVoVFVtZ0JPUU9SdUpmY09weHQ5bVkwTm1fLVUxVC12WGVuaS1XUEpqcEVRYmZtNks?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-14T10:04:00+00:00",
+            "id": "007c316ca1835cf5cc10",
+            "type": "financing",
+            "age_hours": 0.46,
             "confidence": "headline_evidence",
-            "adverse": false,
+            "adverse": true,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -976,12 +846,15 @@
       },
       "broker_availability": {
         "broker": "Trading 212 Invest",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-13T21:26:37.543125+00:00",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-14T10:31:45.286146+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "reason": "Ticker/company identity is ambiguous; manual verification required."
+        "broker_instrument_id": "VSTM_US_EQ",
+        "isin": "US92337C2035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
       },
       "score": {
         "score": 1,
@@ -994,11 +867,10 @@
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
           "US regular market session is closed.",
           "Price data is stale or future-dated.",
           "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
+          "Matched headline contains an adverse event; no bullish catalyst credit."
         ],
         "plan": null,
         "missing_fields": [
@@ -1014,11 +886,10 @@
           {
             "status": "NOT_EVALUATED",
             "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
+              "Matched headline contains an adverse event; no bullish catalyst credit."
             ],
             "plan": null,
             "missing_fields": [
@@ -1295,29 +1166,29 @@
       "name": "Ethereum",
       "coin_id": "ethereum",
       "asset_type": "crypto",
-      "price": 2238.42,
+      "price": 2231.46,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": -0.21769,
-      "change_1h": 0.1495,
-      "acceleration": 0.15857041666666666,
+      "change_24h": -0.23033,
+      "change_1h": -0.3345,
+      "acceleration": -0.3249029166666667,
       "discovery_route": "catalyst_first",
-      "change_7d": -3.6548,
-      "volume": 890237780061.0,
-      "dollar_volume": 890237780061.0,
-      "market_cap": 273520164953,
+      "change_7d": -4.3598,
+      "volume": 8379979312.0,
+      "dollar_volume": 8379979312.0,
+      "market_cap": 272586656622,
       "session": "24/7",
-      "observed_at": "2026-10-14T04:10:00+00:00",
+      "observed_at": "2026-10-14T10:30:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "catalyst": {
-        "title": "Wall Street Giant Interactive Brokers Launches Ethereum Staking, Expanding Crypto Offering - Cryptonews.net",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE55aUp6TW1QNDhPX25GVzh6X21HdWpObGUtUmdFbUJMcDdFYzVYR0hSTWVXb2VNSXFSRjl3YVpMdERGTUhLNUhQM1M2SUgyLTR4dFo4VEdMYw?oc=5",
-        "source": "Cryptonews.net",
-        "published_at": "2026-10-14T00:21:00+00:00",
-        "id": "6622beaf566a25561fd6",
+        "title": "Standard Chartered Launches Direct Bitcoin and Ethereum Crypto Trading via Bank Accounts - CoinGape",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRG5sWmZTT3JfT2dmTmwtekMwNS03RHU3OFpmdFJlSVR4Nmw2LXEtM2kwQ1Fqckx0dEIxX0pHQnBjd3MxMTFIbUkwaGxpY0hvU1lDc21tblAwcUN1ZzBacUNIWHhOc2pUOFNpQTNXbFpVSVdhTnNtMFlOWXJNR29UX3FhMENVQWtPQXBQYk1FczZiMHlUWnNWNnJnTWlZOXYxNU5WY1JWMVNITDdCN18w?oc=5",
+        "source": "CoinGape",
+        "published_at": "2026-10-14T10:28:20+00:00",
+        "id": "bb4ba188f2a615f5b662",
         "type": "product_launch",
-        "age_hours": 3.85,
+        "age_hours": 0.06,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1326,17 +1197,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Wall Street Giant Interactive Brokers Launches Ethereum Staking, Expanding Crypto Offering - Cryptonews.net",
+        "summary": "Standard Chartered Launches Direct Bitcoin and Ethereum Crypto Trading via Bank Accounts - CoinGape",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Wall Street Giant Interactive Brokers Launches Ethereum Staking, Expanding Crypto Offering - Cryptonews.net",
-            "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE55aUp6TW1QNDhPX25GVzh6X21HdWpObGUtUmdFbUJMcDdFYzVYR0hSTWVXb2VNSXFSRjl3YVpMdERGTUhLNUhQM1M2SUgyLTR4dFo4VEdMYw?oc=5",
-            "source": "Cryptonews.net",
-            "published_at": "2026-10-14T00:21:00+00:00",
-            "id": "6622beaf566a25561fd6",
+            "title": "Standard Chartered Launches Direct Bitcoin and Ethereum Crypto Trading via Bank Accounts - CoinGape",
+            "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRG5sWmZTT3JfT2dmTmwtekMwNS03RHU3OFpmdFJlSVR4Nmw2LXEtM2kwQ1Fqckx0dEIxX0pHQnBjd3MxMTFIbUkwaGxpY0hvU1lDc21tblAwcUN1ZzBacUNIWHhOc2pUOFNpQTNXbFpVSVdhTnNtMFlOWXJNR29UX3FhMENVQWtPQXBQYk1FczZiMHlUWnNWNnJnTWlZOXYxNU5WY1JWMVNITDdCN18w?oc=5",
+            "source": "CoinGape",
+            "published_at": "2026-10-14T10:28:20+00:00",
+            "id": "bb4ba188f2a615f5b662",
             "type": "product_launch",
-            "age_hours": 3.85,
+            "age_hours": 0.06,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1354,7 +1225,7 @@
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-14T04:12:05.618389+00:00",
+        "checked_at": "2026-10-14T10:31:45.286146+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
@@ -1363,23 +1234,23 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 2248.04,
-      "support": 2236.36,
-      "momentum_pct": -0.22153972336507177,
-      "reference_price": 2244.414232932205,
-      "extension_pct": -0.26707337906931583,
-      "resistance_1": 2250.41,
-      "resistance_2": 2257.3,
+      "entry": 2234.38,
+      "support": 2215.68,
+      "momentum_pct": 0.13911576226461886,
+      "reference_price": 2223.176622670128,
+      "extension_pct": 0.3725919589746107,
+      "resistance_1": 2236.71,
+      "resistance_2": 2243.47,
       "chart_analysis": {
         "setups": [],
         "issues": [
           "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
         "interval": "5m",
-        "recent_volume_ratio": 0.3446559997223644,
-        "observed_at": "2026-10-14T04:10:00+00:00"
+        "recent_volume_ratio": 0.2831652406874294,
+        "observed_at": "2026-10-14T10:30:00+00:00"
       },
-      "structure_observed_at": "2026-10-14T04:10:00+00:00",
+      "structure_observed_at": "2026-10-14T10:30:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -1390,18 +1261,19 @@
         "fallback_used": false
       },
       "score": {
-        "score": 1,
+        "score": 4,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity"
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
         ]
       },
       "qualification": {
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "route": "CATALYST_LED",
@@ -1409,8 +1281,7 @@
           {
             "status": "REJECTED",
             "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "route": "CATALYST_LED"
@@ -1422,11 +1293,12 @@
     }
   ],
   "changed_signals": [
-    "stock:VRCA"
+    "stock:VSTM",
+    "crypto:ethereum"
   ],
   "invalidated_signals": [
-    "stock:TSEM",
-    "stock:FBK"
+    "stock:EXPD",
+    "stock:GS"
   ],
   "health": {
     "stocks": {
@@ -1436,8 +1308,8 @@
       "listed_assets": 5944,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7761,
-        "snapshot_records": 7761,
+        "provider_total": 7748,
+        "snapshot_records": 7748,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1447,8 +1319,8 @@
       "catalyst_discovery": {
         "queries": 5,
         "headlines_received": 166,
-        "matched_events": 11,
-        "matched_assets": 11,
+        "matched_events": 10,
+        "matched_assets": 10,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1470,14 +1342,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5891,
-      "discovered_candidates": 11,
+      "discovered_candidates": 10,
       "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 10,
+      "shortlisted_candidates": 9,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 10,
-      "selected_candidates": 10,
+      "catalyst_selected": 9,
+      "selected_candidates": 9,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1485,7 +1357,7 @@
       "unquoted_listings": 53,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 10,
+      "history_not_requested": 9,
       "chart_failures": 0
     },
     "crypto": {
@@ -1498,16 +1370,16 @@
       },
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 10,
-      "history_requested": 3,
-      "history_received": 3,
+      "price_records": 8,
+      "history_requested": 2,
+      "history_received": 2,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 7,
+      "history_not_requested": 6,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
-        "matched_events": 2,
+        "matched_events": 3,
         "matched_assets": 1,
         "failed_queries": 0,
         "errors": [],
@@ -1533,18 +1405,18 @@
         "status": "OK",
         "records": 17046,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-14T10:00:02.646889+00:00",
+        "checked_at": "2026-10-14T10:31:45.286146+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-14T10:00:02.646889+00:00"
+        "checked_at": "2026-10-14T10:31:45.286146+00:00"
       }
     },
     "news": {
-      "checked": 20,
+      "checked": 17,
       "failed": 0
     }
   },
