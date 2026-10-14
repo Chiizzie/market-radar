@@ -1,8 +1,8 @@
 # Review and rollout gate
 
-This overhaul is stacked on `fix/calibration-rotation-replay` (PR #10). Review both diffs. No production merge, live task edit or test notification was performed by this implementation.
+This overhaul includes the existing `fix/calibration-rotation-replay` (PR #10) commits and targets main as a combined review. PR #10 is preserved unchanged. No production merge, live task edit or test notification was performed by this implementation.
 
-1. Require passing regression CI for both PRs. Approve merging #10 first; retarget this PR to main and review the remaining diff before merging. Do not merge this stacked PR into #10 unless intentionally consolidating the reviews.
+1. Require passing regression CI for this combined PR. Review the inherited #10 changes plus the overhaul and pandas compatibility fix together. Approve merging this PR directly to main; do not deploy #10 separately because its timestamp-resolution bug is fixed here.
 2. Approve applying the task policy amendment below to the existing **Market Radar Alerts** task. Preserve its existing GitHub PR #1 commit-update trigger, its destination conversation, original-source/broker checks and actionable-only notification policy. Do not create a duplicate scheduled task.
 3. After merge, inspect several regular-session runs: elapsed runtime, selected/received/deferred counts, rate limits, rotation persistence, bridge status, outcome summary and actual cadence. If runtime or throttling rises, lower RADAR_STOCK_CHART_LIMIT to 60; the persistent rotation still works. Revert this PR to restore prior behavior if needed.
 4. Perform one explicitly labelled bridge healthcheck on the existing feed and verify the acknowledgement in the task conversation. A GitHub commit or task execution timestamp alone is not proof of device notification delivery.

@@ -38,7 +38,7 @@ Baseline: main `2ae3072`; existing unmerged PR #10 `3da3d3b`. Status below descr
 
 ## Deployment gates
 
-- Review #10 plus the stacked overhaul PR; merge only with user approval.
+- Review the combined overhaul PR, including preserved #10 changes; merge only with user approval.
 - Validate hosted tests before approval. After merge, inspect several regular-session runs for runtime, provider throttling, coverage and delivery.
 - GitHub publication is not a delivery receipt. Task execution timestamp supports event reception, not proof of a push notification on the user's device.
 - Free provider coverage, live broker spreads/account permissions, exact scheduler timing and real fills remain external limitations.
@@ -54,7 +54,7 @@ Baseline: main `2ae3072`; existing unmerged PR #10 `3da3d3b`. Status below descr
 | Bearish tradability | PARTIAL / unavailable on configured products | `broker_availability.py`, `trade_filters.py`: explicit capability flags and fail-closed short requests. No unverified derivative adapter added. |
 | Risk, EUR, entry freshness, cutoff | COMPLETE | `risk_policy.py`, `trade_filters.py`, `run_radar.py`: €15 default, scoped approval above €15, absolute €20 ceiling, cost-aware R:R and size, explicit expiry, final stale-plan removal. Existing cutoff/no-execution rules preserved. Live task policy amendment remains pending approval. |
 | Historical outcomes and latency | COMPLETE (sampled research) | `outcome_tracker.py`, `performance.py`: rejected/deferred cohorts, first actionable plan, latency, sampled barriers and missed-move proxies. Realised trade performance / true false-positive rate remains MISSING without fill and ground-truth data. |
-| Regression and observability | COMPLETE locally; hosted CI pending | 111 passing tests, including 25 added tests; `tests/test_overhaul.py`, existing tests updated only for requested risk/lifecycle behavior. `git diff --check` clean. |
+| Regression and observability | COMPLETE locally and in hosted CI | 111 passing tests, including 25 added tests; `tests/test_overhaul.py`, existing tests updated only for requested risk/lifecycle behavior. `git diff --check` clean; 111 tests also pass on pandas 3.0.6 and GitHub run 38611506964. |
 | Deployment | PENDING USER APPROVAL | `DEPLOYMENT.md`: merge sequence, exact task amendment, smoke-test and rollback steps. |
 
 Validation does not include live order placement, a production scan from the review branch, live test messages, or assertions of profitable historical performance.
