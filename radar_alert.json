@@ -1,136 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-14T09:25:05.128840+00:00",
+  "generated_at": "2026-10-14T10:00:41.534488+00:00",
   "potential_signals": [
-    {
-      "ticker": "TSEM",
-      "name": "Tower Semiconductor",
-      "asset_type": "stock",
-      "price": null,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0,
-      "volume": 0,
-      "dollar_volume": 0,
-      "session": "CLOSED",
-      "observed_at": null,
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 0.0,
-        "relative_volume_available": false,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-13T10:00:00+00:00",
-        "id": "72dd94f49e85f5e3dba4",
-        "type": "partnership",
-        "age_hours": 17.69,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-13T10:00:00+00:00",
-            "id": "72dd94f49e85f5e3dba4",
-            "type": "partnership",
-            "age_hours": 17.69,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-14T03:41:41.302305+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TSEM_US_EQ",
-        "isin": "IL0010823792",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price timestamp missing.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "price",
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price timestamp missing.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "price",
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "KMB",
       "name": "Kimberly-Clark",
@@ -500,134 +372,6 @@
             "status": "NOT_EVALUATED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "FBK",
-      "name": "FB Financial",
-      "asset_type": "stock",
-      "price": 50.72,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -4.21152,
-      "volume": 1450509.0,
-      "dollar_volume": 73569816.48,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 10.08,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "FB Financial (NYSE:FBK) Reports Sales Below Analyst Estimates In Q3 2026 Earnings - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOVhXUzg5YU5kc21lS25EY3hfLUpVODF2a3dVNjJ0WXdIQjBkNnJ6bGM2ZkowMlpUTTVIaTdRYThWaVNzeUplVkRZc0E0cGdWZmJoNGV2X3A3Q2VRcmdCbDRxMlZqNU1CS1NSczk4bUNwWjdONGotWmtIT3RlWUw3Y0phcHU4eGF5bzdNVGdFUC1fdC1KV3ZCdjZ3?oc=5",
-        "source": "Yahoo Finance",
-        "published_at": "2026-10-13T10:29:04+00:00",
-        "id": "aa07b7c198770a72c915",
-        "type": "earnings",
-        "age_hours": 20.39,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "FB Financial (NYSE:FBK) Reports Sales Below Analyst Estimates In Q3 2026 Earnings - Yahoo Finance",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "FB Financial (NYSE:FBK) Reports Sales Below Analyst Estimates In Q3 2026 Earnings - Yahoo Finance",
-            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOVhXUzg5YU5kc21lS25EY3hfLUpVODF2a3dVNjJ0WXdIQjBkNnJ6bGM2ZkowMlpUTTVIaTdRYThWaVNzeUplVkRZc0E0cGdWZmJoNGV2X3A3Q2VRcmdCbDRxMlZqNU1CS1NSczk4bUNwWjdONGotWmtIT3RlWUw3Y0phcHU4eGF5bzdNVGdFUC1fdC1KV3ZCdjZ3?oc=5",
-            "source": "Yahoo Finance",
-            "published_at": "2026-10-13T10:29:04+00:00",
-            "id": "aa07b7c198770a72c915",
-            "type": "earnings",
-            "age_hours": 20.39,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-14T06:52:35.874780+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "FBK_US_EQ",
-        "isin": "US30257X1046",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
@@ -1421,6 +1165,132 @@
       }
     },
     {
+      "ticker": "VRCA",
+      "name": "Verrica Pharmaceuticals",
+      "asset_type": "stock",
+      "price": 3.58,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -10.7232,
+      "volume": 82791.0,
+      "dollar_volume": 296391.78,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -14.861,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Verrica Pharmaceuticals Q2 2026 Earnings Call Transcript - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZkFzMF9TQlBUdTdfT1pQaXJ2ZVhWSVVsczcwZTY5enBFLU5wVFJoZHgzZEJXR3JzTkxLLTFmWTNOcmxqeDZsTHdDeGlIc0hqaFpvTmhNWnJ1NEpJRzd0T3A0S3RYeXVFUnJsWVB5OWx0Sy12aFV6QlhXblozdHJQWDItUmVoZmdPYjRVMHl5MlhqSnFDYkxwb21ZeEVOV3g1cTNr?oc=5",
+        "source": "Benzinga",
+        "published_at": "2026-10-14T09:37:15+00:00",
+        "id": "e3dcd90285603e7faa6f",
+        "type": "earnings",
+        "age_hours": 0.38,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "RECAP_UNVERIFIED",
+        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
+        "summary": "Verrica Pharmaceuticals Q2 2026 Earnings Call Transcript - Benzinga",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Verrica Pharmaceuticals Q2 2026 Earnings Call Transcript - Benzinga",
+            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZkFzMF9TQlBUdTdfT1pQaXJ2ZVhWSVVsczcwZTY5enBFLU5wVFJoZHgzZEJXR3JzTkxLLTFmWTNOcmxqeDZsTHdDeGlIc0hqaFpvTmhNWnJ1NEpJRzd0T3A0S3RYeXVFUnJsWVB5OWx0Sy12aFV6QlhXblozdHJQWDItUmVoZmdPYjRVMHl5MlhqSnFDYkxwb21ZeEVOV3g1cTNr?oc=5",
+            "source": "Benzinga",
+            "published_at": "2026-10-14T09:37:15+00:00",
+            "id": "e3dcd90285603e7faa6f",
+            "type": "earnings",
+            "age_hours": 0.38,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "RECAP_UNVERIFIED",
+            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
+            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-14T10:00:02.646889+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "VRCA_US_EQ",
+        "isin": "US92511W2070",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Transcript, presentation or recap; publication date is not the event date."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Transcript, presentation or recap; publication date is not the event date."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
@@ -1552,13 +1422,11 @@
     }
   ],
   "changed_signals": [
-    "stock:PAGS",
-    "stock:IMVT"
+    "stock:VRCA"
   ],
   "invalidated_signals": [
-    "stock:RSG",
-    "crypto:raydium",
-    "crypto:starknet"
+    "stock:TSEM",
+    "stock:FBK"
   ],
   "health": {
     "stocks": {
@@ -1578,9 +1446,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 163,
-        "matched_events": 13,
-        "matched_assets": 13,
+        "headlines_received": 166,
+        "matched_events": 11,
+        "matched_assets": 11,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1602,14 +1470,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5891,
-      "discovered_candidates": 13,
-      "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 11,
+      "discovered_candidates": 11,
+      "broker_excluded_candidates": 1,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 11,
-      "selected_candidates": 11,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1617,7 +1485,7 @@
       "unquoted_listings": 53,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 11,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1630,12 +1498,12 @@
       },
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 12,
-      "history_requested": 6,
-      "history_received": 6,
+      "price_records": 10,
+      "history_requested": 3,
+      "history_received": 3,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 6,
+      "history_not_requested": 7,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -1663,20 +1531,20 @@
     "brokers": {
       "stock": {
         "status": "OK",
-        "records": 17044,
+        "records": 17046,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-14T09:24:18.656095+00:00",
+        "checked_at": "2026-10-14T10:00:02.646889+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-14T09:24:18.656095+00:00"
+        "checked_at": "2026-10-14T10:00:02.646889+00:00"
       }
     },
     "news": {
-      "checked": 23,
+      "checked": 20,
       "failed": 0
     }
   },
