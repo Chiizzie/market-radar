@@ -46,9 +46,14 @@ def update_outcomes(previous, payload):
             if k not in quotes or stamp(item['observed_at']) > stamp(quotes[k]['observed_at']):
                 quotes[k] = item
     current = {key(x):x for x in payload.get('stocks', [])+payload.get('crypto', [])}
-    for item in payload.get('potential_signals', []):
+    cohort = {key(x): x for x in payload.get('stocks', [])+payload.get('crypto', [])+payload.get('potential_signals', [])}
+    for candidate in payload.get('health', {}).get('stocks', {}).get('candidate_manifest', []):
+        if candidate['state'] == 'DEFERRED':
+            symbol = candidate['symbol']
+            cohort.setdefault('stock:'+symbol, {'asset_type':'stock','ticker':symbol,'qualification':{'status':'DEFERRED'}})
+    for item in cohort.values():
         asset_key = key(item)
-        event = item.get('catalyst', {}).get('id', 'no-event')
+        event = item.get('catalyst', {}).get('id') or 'no-event'
         record_key = hashlib.sha256((asset_key + ':' + event + ':' + now.date().isoformat()).encode()).hexdigest()[:24]
         if record_key not in records:
             records[record_key] = {'asset': asset_key, 'symbol': item.get('ticker', item.get('symbol')),
@@ -64,6 +69,12 @@ def update_outcomes(previous, payload):
         if record['asset'] in current:
             item = current[record['asset']]
             status = item['qualification']['status']
+            if status == 'ACTIONABLE NOW' and item['qualification'].get('plan') and not record.get('first_actionable_at'):
+                record['first_actionable_at'] = payload['generated_at']
+                record['actionable_plan'] = copy.deepcopy(item['qualification']['plan'])
+                record['watch_to_actionable_seconds'] = max(0, (now-stamp(record['first_seen'])).total_seconds())
+                evidence = stamp(item.get('observed_at'))
+                record['evidence_latency_seconds'] = max(0, (now-evidence).total_seconds()) if evidence else None
             record['last_seen'] = payload['generated_at']
             if status != record['last_status']:
                 record['status_changes'].append({'at':payload['generated_at'], 'from':record['last_status'], 'to':status})
@@ -86,6 +97,8 @@ def update_outcomes(previous, payload):
                       max_observed_return_pct=max(record['max_observed_return_pct'],change),
                       min_observed_return_pct=min(record['min_observed_return_pct'],change), tracking_status='OBSERVING')
         record['observations'] += 1
+        from performance import observe_plan
+        observe_plan(record, quote, now)
         elapsed = (stamp(quote['observed_at'])-stamp(record['baseline_at'])).total_seconds()/3600
         for hours in [1,4,24]:
             if hours <= elapsed <= hours+1 and str(hours) not in record['horizon_returns']:
@@ -117,7 +130,8 @@ def main():
         git(['config','user.email','41898282+github-actions[bot]@users.noreply.github.com'])
         commit = git(['commit-tree',tree]+(['-p',parent] if parent else [])+['-m','Record sampled radar research outcomes']).stdout.strip()
         git(['push','origin',commit+':refs/heads/'+BRANCH])
-    summary = {'records':len(result['records']), 'with_fresh_baseline':sum('baseline_price' in r for r in result['records'].values()),
+    from performance import summarize
+    summary = {**summarize(result), 'records':len(result['records']), 'with_fresh_baseline':sum('baseline_price' in r for r in result['records'].values()),
                'with_1h_followup':sum('1' in r['horizon_returns'] for r in result['records'].values()),
                'status':'PERSISTED', 'notice':result['notice']}
     Path('outcome_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
@@ -129,3 +143,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

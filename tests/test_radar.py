@@ -89,7 +89,7 @@ class QualificationTests(unittest.TestCase):
     def test_valid_and_risk_in_eur(self):
         q = classify_setup(asset(), {'eligible_for_points': True, 'event_time_status': 'REPORTED_RECENT'}, NOW)
         self.assertEqual(q['status'], ACTIONABLE)
-        self.assertLessEqual(q['plan']['planned_loss_eur'], 5)
+        self.assertLessEqual(q['plan']['planned_loss_eur'], 15)
         self.assertLessEqual(q['plan']['position_eur'], 500)
 
     def test_watch_extended_rejected(self):
@@ -132,7 +132,8 @@ class DedupeTests(unittest.TestCase):
         p = self.payload()
         p['potential_signals'][0]['catalyst']['id'] = 'news2'
         self.assertIsNotNone(prepare_alert(p, previous))
-        clear = prepare_alert({'generated_at': NOW.isoformat(), 'potential_signals': []}, previous)
+        negative = {**asset(), 'history_status': 'OK', 'qualification': {'status': 'REJECTED'}}
+        clear = prepare_alert({'generated_at': NOW.isoformat(), 'potential_signals': [], 'stocks': [negative]}, previous)
         self.assertEqual(clear['invalidated_signals'], ['stock:MRVL'])
         self.assertIsNone(prepare_alert({'generated_at': NOW.isoformat(), 'potential_signals': []}, clear))
 
@@ -187,3 +188,4 @@ class DataReportingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

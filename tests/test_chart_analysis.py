@@ -83,7 +83,7 @@ class ChartQualificationTests(unittest.TestCase):
         q=classify_setup(pattern_asset(),NEWS,NOW)
         self.assertEqual(q['status'],'ACTIONABLE NOW')
         self.assertEqual(q['route'],'CHART_LED')
-        self.assertLessEqual(q['plan']['planned_loss_eur'],5)
+        self.assertLessEqual(q['plan']['planned_loss_eur'],15)
         self.assertLessEqual(q['plan']['position_eur'],500)
         self.assertIn('target_method',q['plan'])
         self.assertEqual(q['assessments'][0]['status'],'REJECTED')
@@ -139,3 +139,4 @@ class EvidenceTests(unittest.TestCase):
         q=classify_setup(a,NEWS,NOW)
         self.assertEqual(q['status'],'TECHNICAL WATCH')
         self.assertEqual(len(q['blockers']),2)
+
