@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-14T10:32:23.756763+00:00",
+  "generated_at": "2026-10-14T11:12:03.863200+00:00",
   "potential_signals": [
     {
       "ticker": "KMB",
@@ -394,6 +394,134 @@
       }
     },
     {
+      "ticker": "S",
+      "name": "SentinelOne",
+      "asset_type": "stock",
+      "price": 24.01,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -6.43024,
+      "volume": 27558313.0,
+      "dollar_volume": 661675095.13,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:02+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 8.14,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "SentinelOne Announces Pricing of Offering of $1.25 Billion of 0.00% Convertible Senior Notes Due 2031 - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOeTV5MUdYZkFLaGVTT2V2eXRmS1VmR0VqWnhwV1N4Y25XMEhTa1JVNFgwUEsza1hyc3o4SXRMbXotZ2RxcTBjaHVMbUg4ZFpNT1FhdjRaWEViX0Vtd0UzS2pZdmp3YXpsNFJwcXFWZ19SUTZLSW1McXlWdU41NlVxTEU3S3h1Sl9qTE1IaW5tNUd5NDB2X3MySkxrMm50Vk96d2x1YzRPRFBEN1RTbmtOSlo5UF9HclF2Z1FNV0lqOEhQd0phX0FFMExpM0tCSUdJNm5WS0hFdFg5TWFvU0pUR0laTm5EU1d2UG1iak1kYTI?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-14T04:08:00+00:00",
+        "id": "044e00f7f04522ae95b3",
+        "type": "financing",
+        "age_hours": 7.05,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "SentinelOne Announces Pricing of Offering of $1.25 Billion of 0.00% Convertible Senior Notes Due 2031 - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "SentinelOne Announces Pricing of Offering of $1.25 Billion of 0.00% Convertible Senior Notes Due 2031 - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOeTV5MUdYZkFLaGVTT2V2eXRmS1VmR0VqWnhwV1N4Y25XMEhTa1JVNFgwUEsza1hyc3o4SXRMbXotZ2RxcTBjaHVMbUg4ZFpNT1FhdjRaWEViX0Vtd0UzS2pZdmp3YXpsNFJwcXFWZ19SUTZLSW1McXlWdU41NlVxTEU3S3h1Sl9qTE1IaW5tNUd5NDB2X3MySkxrMm50Vk96d2x1YzRPRFBEN1RTbmtOSlo5UF9HclF2Z1FNV0lqOEhQd0phX0FFMExpM0tCSUdJNm5WS0hFdFg5TWFvU0pUR0laTm5EU1d2UG1iak1kYTI?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-14T04:08:00+00:00",
+            "id": "044e00f7f04522ae95b3",
+            "type": "financing",
+            "age_hours": 7.05,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-14T11:11:11.117855+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "S_US_EQ",
+        "isin": "US81730H1095",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "C",
       "name": "Citigroup",
       "asset_type": "stock",
@@ -652,134 +780,6 @@
       }
     },
     {
-      "ticker": "IMVT",
-      "name": "Immunovant",
-      "asset_type": "stock",
-      "price": 28.71,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -2.61194,
-      "volume": 1242632.0,
-      "dollar_volume": 35675964.72,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 4.24,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Immunovant Q1 2027 Earnings Call: Complete Transcript - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWUNzem1TUmxUYVVpZkRsZmxLQUxYQVNXb1lVQk14a1h2RW5OTW1jSnlEaUN3MlNWY2lnRFEyQTZ1MmRLY2x0Ny1LUE1UaDlhOHhPMXV0U3loeHZPV0Q5R3duMXZtVkZ1NGxNWV9BS3lxaERhY2JiWU1jOVFLVGYyTlNiYl81SjlFY3JIQ3hDYlo3cVhlbG5QcHEyWHBydw?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-14T08:59:29+00:00",
-        "id": "d8a4fc95aeea7b8e319f",
-        "type": "earnings",
-        "age_hours": 0.41,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "RECAP_UNVERIFIED",
-        "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-        "timing_reason": "Transcript, presentation or recap; publication date is not the event date.",
-        "summary": "Immunovant Q1 2027 Earnings Call: Complete Transcript - Benzinga",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Immunovant Q1 2027 Earnings Call: Complete Transcript - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWUNzem1TUmxUYVVpZkRsZmxLQUxYQVNXb1lVQk14a1h2RW5OTW1jSnlEaUN3MlNWY2lnRFEyQTZ1MmRLY2x0Ny1LUE1UaDlhOHhPMXV0U3loeHZPV0Q5R3duMXZtVkZ1NGxNWV9BS3lxaERhY2JiWU1jOVFLVGYyTlNiYl81SjlFY3JIQ3hDYlo3cVhlbG5QcHEyWHBydw?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-14T08:59:29+00:00",
-            "id": "d8a4fc95aeea7b8e319f",
-            "type": "earnings",
-            "age_hours": 0.41,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "RECAP_UNVERIFIED",
-            "freshness": "RECAP \u2014 EVENT DATE UNVERIFIED",
-            "timing_reason": "Transcript, presentation or recap; publication date is not the event date."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-14T09:24:18.656095+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "IMVT_US_EQ",
-        "isin": "US45258J1025",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Transcript, presentation or recap; publication date is not the event date."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Transcript, presentation or recap; publication date is not the event date."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "VSTM",
       "name": "Verastem",
       "asset_type": "stock",
@@ -890,6 +890,132 @@
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
               "Matched headline contains an adverse event; no bullish catalyst credit."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "PULM",
+      "name": "Pulmatrix",
+      "asset_type": "stock",
+      "price": 1.38,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -3.4965,
+      "volume": 32749.0,
+      "dollar_volume": 45193.619999999995,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:00+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": -1.373,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Pulmatrix Files Eos PTC-2105 Preclinical Data Ahead of October 26 Merger Vote - Kalkine Media",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVTZ0TVNSMk80RDF6Qjd5S0dNN2ZiTmdyV2RwcnptV1lfVm8xTS16OEt5TV9XZklCczA5T2JqYk9TeEFJSHAyQ29MSUNDWXkzclk5QWlYTDZ6TVl5M2Fjai1FbWdUZXV4NDhjN1VmUGFVaHJhc0NFVWMxU0tfaG9xbElHVDgzN3RkOGxuRXRqOFlOaXViODJ0ZzFfUXh5MEE0MTdBc09hUE1mdEtIN3oxdy1wSTBOT3p5YTJwNmRLU0hpQQ?oc=5",
+        "source": "Kalkine Media",
+        "published_at": "2026-10-13T13:39:08+00:00",
+        "id": "538f27182c2e683a0cd5",
+        "type": "merger",
+        "age_hours": 21.53,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Pulmatrix Files Eos PTC-2105 Preclinical Data Ahead of October 26 Merger Vote - Kalkine Media",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Pulmatrix Files Eos PTC-2105 Preclinical Data Ahead of October 26 Merger Vote - Kalkine Media",
+            "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVTZ0TVNSMk80RDF6Qjd5S0dNN2ZiTmdyV2RwcnptV1lfVm8xTS16OEt5TV9XZklCczA5T2JqYk9TeEFJSHAyQ29MSUNDWXkzclk5QWlYTDZ6TVl5M2Fjai1FbWdUZXV4NDhjN1VmUGFVaHJhc0NFVWMxU0tfaG9xbElHVDgzN3RkOGxuRXRqOFlOaXViODJ0ZzFfUXh5MEE0MTdBc09hUE1mdEtIN3oxdy1wSTBOT3p5YTJwNmRLU0hpQQ?oc=5",
+            "source": "Kalkine Media",
+            "published_at": "2026-10-13T13:39:08+00:00",
+            "id": "538f27182c2e683a0cd5",
+            "type": "merger",
+            "age_hours": 21.53,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-14T11:11:11.117855+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "PULM_US_EQ",
+        "isin": "US74584P3010",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "missing_fields": [
@@ -1162,6 +1288,235 @@
       }
     },
     {
+      "symbol": "VVV",
+      "name": "Venice Token",
+      "coin_id": "venice-token",
+      "asset_type": "crypto",
+      "price": 20.663,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 4.3263,
+      "change_1h": 1.5296,
+      "acceleration": 1.3493375,
+      "discovery_route": "recent_momentum",
+      "change_7d": -12.4552,
+      "volume": 24156645.0,
+      "dollar_volume": 24156645.0,
+      "market_cap": 1001292131,
+      "session": "24/7",
+      "observed_at": "2026-10-14T11:10:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "LISTED_PUBLIC",
+        "checked_at": "2026-10-14T11:11:11.117855+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "history_samples": 720,
+      "structure_status": "COMPLETE",
+      "structure_issues": [],
+      "entry": 20.66,
+      "support": 20.419,
+      "momentum_pct": 0.5303104018682614,
+      "reference_price": 20.56117641310865,
+      "extension_pct": 0.4952225730937787,
+      "resistance_1": 20.684,
+      "resistance_2": 20.749,
+      "chart_analysis": {
+        "setups": [
+          {
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "entry": 20.66,
+            "support": 20.568,
+            "resistance_1": 20.684,
+            "resistance_2": 20.749,
+            "momentum_pct": 0.5303104018682614,
+            "extension_pct": 0.4952225730937787,
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "target_basis": {
+              "origin": 20.568,
+              "measured_height": 0.4700000000000024,
+              "fractions": [
+                0.5,
+                1.0
+              ],
+              "uncapped_targets": [
+                20.803000000000004,
+                21.038000000000004
+              ],
+              "overhead_levels": [
+                20.684,
+                20.685,
+                20.687,
+                20.688
+              ]
+            },
+            "observed_at": "2026-10-14T11:10:00+00:00",
+            "evidence": {
+              "impulse_high": 20.632,
+              "impulse_low": 20.162,
+              "pullback_low": 20.568,
+              "ema9": 20.54987446254478,
+              "ema21": 20.516788249409153,
+              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 0.8018350956935639,
+        "observed_at": "2026-10-14T11:10:00+00:00"
+      },
+      "structure_observed_at": "2026-10-14T11:10:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "VVVEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 6
+      },
+      "score": {
+        "score": 4,
+        "label": "Research rank only",
+        "reasons": [
+          "positive recent momentum",
+          "notional liquidity",
+          "not extended above recent VWAP"
+        ]
+      },
+      "qualification": {
+        "status": "TECHNICAL WATCH",
+        "reasons": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "pattern": "TREND_PULLBACK_RECLAIM",
+        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+        "pattern_evidence": {
+          "pattern": "TREND_PULLBACK_RECLAIM",
+          "entry": 20.66,
+          "support": 20.568,
+          "resistance_1": 20.684,
+          "resistance_2": 20.749,
+          "momentum_pct": 0.5303104018682614,
+          "extension_pct": 0.4952225730937787,
+          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+          "target_basis": {
+            "origin": 20.568,
+            "measured_height": 0.4700000000000024,
+            "fractions": [
+              0.5,
+              1.0
+            ],
+            "uncapped_targets": [
+              20.803000000000004,
+              21.038000000000004
+            ],
+            "overhead_levels": [
+              20.684,
+              20.685,
+              20.687,
+              20.688
+            ]
+          },
+          "observed_at": "2026-10-14T11:10:00+00:00",
+          "evidence": {
+            "impulse_high": 20.632,
+            "impulse_low": 20.162,
+            "pullback_low": 20.568,
+            "ema9": 20.54987446254478,
+            "ema21": 20.516788249409153,
+            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Recent crypto bar volume is below 1.5x its preceding baseline.",
+          "Stop width or achievable reward/risk fails the entry filter."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
+            ],
+            "plan": null,
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "TECHNICAL WATCH",
+            "reasons": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "pattern": "TREND_PULLBACK_RECLAIM",
+            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+            "pattern_evidence": {
+              "pattern": "TREND_PULLBACK_RECLAIM",
+              "entry": 20.66,
+              "support": 20.568,
+              "resistance_1": 20.684,
+              "resistance_2": 20.749,
+              "momentum_pct": 0.5303104018682614,
+              "extension_pct": 0.4952225730937787,
+              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
+              "target_basis": {
+                "origin": 20.568,
+                "measured_height": 0.4700000000000024,
+                "fractions": [
+                  0.5,
+                  1.0
+                ],
+                "uncapped_targets": [
+                  20.803000000000004,
+                  21.038000000000004
+                ],
+                "overhead_levels": [
+                  20.684,
+                  20.685,
+                  20.687,
+                  20.688
+                ]
+              },
+              "observed_at": "2026-10-14T11:10:00+00:00",
+              "evidence": {
+                "impulse_high": 20.632,
+                "impulse_low": 20.162,
+                "pullback_low": 20.568,
+                "ema9": 20.54987446254478,
+                "ema21": 20.516788249409153,
+                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "Stop width or achievable reward/risk fails the entry filter."
+            ]
+          }
+        ]
+      }
+    },
+    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
@@ -1293,12 +1648,12 @@
     }
   ],
   "changed_signals": [
-    "stock:VSTM",
-    "crypto:ethereum"
+    "stock:S",
+    "stock:PULM",
+    "crypto:venice-token"
   ],
   "invalidated_signals": [
-    "stock:EXPD",
-    "stock:GS"
+    "stock:IMVT"
   ],
   "health": {
     "stocks": {
@@ -1308,8 +1663,8 @@
       "listed_assets": 5944,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7748,
-        "snapshot_records": 7748,
+        "provider_total": 7761,
+        "snapshot_records": 7761,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1318,9 +1673,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 166,
-        "matched_events": 10,
-        "matched_assets": 10,
+        "headlines_received": 167,
+        "matched_events": 13,
+        "matched_assets": 13,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1342,14 +1697,14 @@
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
       "listed_snapshot_records": 5891,
-      "discovered_candidates": 10,
-      "broker_excluded_candidates": 1,
-      "shortlisted_candidates": 9,
+      "discovered_candidates": 13,
+      "broker_excluded_candidates": 3,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
-      "selected_candidates": 9,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
@@ -1357,7 +1712,7 @@
       "unquoted_listings": 53,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 9,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1368,14 +1723,14 @@
         },
         "errors": []
       },
-      "status": "PARTIAL",
+      "status": "OK",
       "screened_assets": 250,
-      "price_records": 8,
-      "history_requested": 2,
-      "history_received": 2,
+      "price_records": 12,
+      "history_requested": 12,
+      "history_received": 12,
       "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 6,
+      "history_not_requested": 0,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
@@ -1405,18 +1760,18 @@
         "status": "OK",
         "records": 17046,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-14T10:31:45.286146+00:00",
+        "checked_at": "2026-10-14T11:11:11.117855+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-14T10:31:45.286146+00:00"
+        "checked_at": "2026-10-14T11:11:11.117855+00:00"
       }
     },
     "news": {
-      "checked": 17,
+      "checked": 22,
       "failed": 0
     }
   },
