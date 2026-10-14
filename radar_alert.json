@@ -1,8 +1,266 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-14T03:42:58.733935+00:00",
+  "generated_at": "2026-10-14T04:12:55.312361+00:00",
   "potential_signals": [
+    {
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor",
+      "asset_type": "stock",
+      "price": null,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0,
+      "volume": 0,
+      "dollar_volume": 0,
+      "session": "CLOSED",
+      "observed_at": null,
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 0.0,
+        "relative_volume_available": false,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-13T10:00:00+00:00",
+        "id": "72dd94f49e85f5e3dba4",
+        "type": "partnership",
+        "age_hours": 17.69,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-13T10:00:00+00:00",
+            "id": "72dd94f49e85f5e3dba4",
+            "type": "partnership",
+            "age_hours": 17.69,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-14T03:41:41.302305+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "TSEM_US_EQ",
+        "isin": "IL0010823792",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price timestamp missing.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "price",
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price timestamp missing.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "price",
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "KMB",
+      "name": "Kimberly-Clark",
+      "asset_type": "stock",
+      "price": 98.29,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.4859732,
+      "volume": 6331515.0,
+      "dollar_volume": 622324609.35,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 14.533,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
+        "source": "Reuters",
+        "published_at": "2026-10-13T15:29:18+00:00",
+        "id": "7939e84e7de6b050a939",
+        "type": "merger",
+        "age_hours": 5.96,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
+            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
+            "source": "Reuters",
+            "published_at": "2026-10-13T15:29:18+00:00",
+            "id": "7939e84e7de6b050a939",
+            "type": "merger",
+            "age_hours": 5.96,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T21:26:37.543125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "KMB_US_EQ",
+        "isin": "US4943681035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
     {
       "ticker": "EXPD",
       "name": "Expeditors International of Washington",
@@ -77,6 +335,136 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "EXPD_US_EQ",
         "isin": "US3021301094",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "UNFI",
+      "name": "United Natural Foods",
+      "asset_type": "stock",
+      "price": 45.79,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.25548,
+      "volume": 571664.0,
+      "dollar_volume": 26176494.56,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:03+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.344,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
+        "source": "Kalkine Media",
+        "published_at": "2026-10-13T21:46:37+00:00",
+        "id": "d3199a70c6caf42a73bb",
+        "type": "merger",
+        "age_hours": 0.53,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
+            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
+            "source": "Kalkine Media",
+            "published_at": "2026-10-13T21:46:37+00:00",
+            "id": "d3199a70c6caf42a73bb",
+            "type": "merger",
+            "age_hours": 0.53,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T22:18:30.034314+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "UNFI_US_EQ",
+        "isin": "US9111631035",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -394,136 +782,6 @@
       }
     },
     {
-      "ticker": "DOCS",
-      "name": "Doximity",
-      "asset_type": "stock",
-      "price": 30.55,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.0981056,
-      "volume": 2961566.0,
-      "dollar_volume": 90475841.3,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:02+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 9.201,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Doximity and U.S. News & World Report Extend Partnership to Connect Patients with Hospitals and Doctors - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV0VJVE13ZnF4SDc1MTl3M2VqNlBaOXp2Y3Npb0lQZkhQMlZrZGhZaXpLY1ExdktlYlduWTlqa2V0WmZ4UWMwVmdLWGk1V2pjTzRHLTlIXzE1Mk51bHp3ekhmQmhWWklzOElhdGllUjFid3BGX1lQTkowWkhWM05Xd0MxMDlOLWpnbkxiaUt1R3RpUDVuQk5KckY4T1dfM3FnamxFdTZESFlUM01YRjUzbEFxZDV0Y2Y4amJSRmtGWThxYU1xV21WckExdzVYWmhxTGp0XzNBWlpXZG53UkZtNTJqaWlzQVo4YkVkajRFTQ?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-13T04:01:00+00:00",
-        "id": "97028009baf394f183dc",
-        "type": "partnership",
-        "age_hours": 17.43,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Doximity and U.S. News & World Report Extend Partnership to Connect Patients with Hospitals and Doctors - Business Wire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Doximity and U.S. News & World Report Extend Partnership to Connect Patients with Hospitals and Doctors - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV0VJVE13ZnF4SDc1MTl3M2VqNlBaOXp2Y3Npb0lQZkhQMlZrZGhZaXpLY1ExdktlYlduWTlqa2V0WmZ4UWMwVmdLWGk1V2pjTzRHLTlIXzE1Mk51bHp3ekhmQmhWWklzOElhdGllUjFid3BGX1lQTkowWkhWM05Xd0MxMDlOLWpnbkxiaUt1R3RpUDVuQk5KckY4T1dfM3FnamxFdTZESFlUM01YRjUzbEFxZDV0Y2Y4amJSRmtGWThxYU1xV21WckExdzVYWmhxTGp0XzNBWlpXZG53UkZtNTJqaWlzQVo4YkVkajRFTQ?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-13T04:01:00+00:00",
-            "id": "97028009baf394f183dc",
-            "type": "partnership",
-            "age_hours": 17.43,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T21:26:37.543125+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "DOCS_US_EQ",
-        "isin": "US26622P1075",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "C",
       "name": "Citigroup",
       "asset_type": "stock",
@@ -781,136 +1039,6 @@
       }
     },
     {
-      "ticker": "KMB",
-      "name": "Kimberly-Clark",
-      "asset_type": "stock",
-      "price": 98.29,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.4859732,
-      "volume": 6331515.0,
-      "dollar_volume": 622324609.35,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 14.533,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
-        "source": "Reuters",
-        "published_at": "2026-10-13T15:29:18+00:00",
-        "id": "7939e84e7de6b050a939",
-        "type": "merger",
-        "age_hours": 5.96,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
-            "source": "Reuters",
-            "published_at": "2026-10-13T15:29:18+00:00",
-            "id": "7939e84e7de6b050a939",
-            "type": "merger",
-            "age_hours": 5.96,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T21:26:37.543125+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "KMB_US_EQ",
-        "isin": "US4943681035",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "ticker": "SPCB",
       "name": "SuperCom",
       "asset_type": "stock",
@@ -1039,291 +1167,33 @@
       }
     },
     {
-      "ticker": "TSEM",
-      "name": "Tower Semiconductor",
-      "asset_type": "stock",
-      "price": null,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0,
-      "volume": 0,
-      "dollar_volume": 0,
-      "session": "CLOSED",
-      "observed_at": null,
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 0.0,
-        "relative_volume_available": false,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
-        "source": "Business Wire",
-        "published_at": "2026-10-13T10:00:00+00:00",
-        "id": "72dd94f49e85f5e3dba4",
-        "type": "partnership",
-        "age_hours": 17.69,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
-            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
-            "source": "Business Wire",
-            "published_at": "2026-10-13T10:00:00+00:00",
-            "id": "72dd94f49e85f5e3dba4",
-            "type": "partnership",
-            "age_hours": 17.69,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-14T03:41:41.302305+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TSEM_US_EQ",
-        "isin": "IL0010823792",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 0,
-        "label": "Research rank only",
-        "reasons": []
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Price timestamp missing.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "price",
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Price timestamp missing.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "price",
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "UNFI",
-      "name": "United Natural Foods",
-      "asset_type": "stock",
-      "price": 45.79,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 2.25548,
-      "volume": 571664.0,
-      "dollar_volume": 26176494.56,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.344,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
-        "source": "Kalkine Media",
-        "published_at": "2026-10-13T21:46:37+00:00",
-        "id": "d3199a70c6caf42a73bb",
-        "type": "merger",
-        "age_hours": 0.53,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
-            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
-            "source": "Kalkine Media",
-            "published_at": "2026-10-13T21:46:37+00:00",
-            "id": "d3199a70c6caf42a73bb",
-            "type": "merger",
-            "age_hours": 0.53,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T22:18:30.034314+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "UNFI_US_EQ",
-        "isin": "US9111631035",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
       "asset_type": "crypto",
-      "price": 2237.0,
+      "price": 2238.42,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": -0.65923,
-      "change_1h": 0.1137,
-      "acceleration": 0.14116791666666667,
+      "change_24h": -0.21769,
+      "change_1h": 0.1495,
+      "acceleration": 0.15857041666666666,
       "discovery_route": "catalyst_first",
-      "change_7d": -6.7733,
-      "volume": 12804065743.0,
-      "dollar_volume": 12804065743.0,
-      "market_cap": 273263310811,
+      "change_7d": -3.6548,
+      "volume": 890237780061.0,
+      "dollar_volume": 890237780061.0,
+      "market_cap": 273520164953,
       "session": "24/7",
-      "observed_at": "2026-10-13T21:25:00+00:00",
+      "observed_at": "2026-10-14T04:10:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "catalyst": {
-        "title": "Interactive Brokers Launches Ethereum Staking for Crypto Investors - Benzinga",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYU9jc2JqREFQbGFDdUhPVGVGRnB3aWxyenFMcFdpQVo4OHVyZnp6ZERqdzd6NlRHaUNaWUZuWVNyVGdPdjVycEIzS3hLSU41SlMxaVlKQVlCZE5JSk82bmp5Q3RpcmROV08wdzhORlJmbEg1Tm1UZ190OXh1aEhwQlU0MEQwOUtuM1pMbVBqUmRwQXpaanFITnZQZ21Rd3JKSmZGWHB4SDZTVHhXdGRpUFZRV0tFUTNtandsVFFKQU52ZzNVTGNR?oc=5",
-        "source": "Benzinga",
-        "published_at": "2026-10-13T17:14:22+00:00",
-        "id": "1fbf8594c83066c6a20e",
+        "title": "Wall Street Giant Interactive Brokers Launches Ethereum Staking, Expanding Crypto Offering - Cryptonews.net",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE55aUp6TW1QNDhPX25GVzh6X21HdWpObGUtUmdFbUJMcDdFYzVYR0hSTWVXb2VNSXFSRjl3YVpMdERGTUhLNUhQM1M2SUgyLTR4dFo4VEdMYw?oc=5",
+        "source": "Cryptonews.net",
+        "published_at": "2026-10-14T00:21:00+00:00",
+        "id": "6622beaf566a25561fd6",
         "type": "product_launch",
-        "age_hours": 4.2,
+        "age_hours": 3.85,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1332,17 +1202,17 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Interactive Brokers Launches Ethereum Staking for Crypto Investors - Benzinga",
+        "summary": "Wall Street Giant Interactive Brokers Launches Ethereum Staking, Expanding Crypto Offering - Cryptonews.net",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "Interactive Brokers Launches Ethereum Staking for Crypto Investors - Benzinga",
-            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYU9jc2JqREFQbGFDdUhPVGVGRnB3aWxyenFMcFdpQVo4OHVyZnp6ZERqdzd6NlRHaUNaWUZuWVNyVGdPdjVycEIzS3hLSU41SlMxaVlKQVlCZE5JSk82bmp5Q3RpcmROV08wdzhORlJmbEg1Tm1UZ190OXh1aEhwQlU0MEQwOUtuM1pMbVBqUmRwQXpaanFITnZQZ21Rd3JKSmZGWHB4SDZTVHhXdGRpUFZRV0tFUTNtandsVFFKQU52ZzNVTGNR?oc=5",
-            "source": "Benzinga",
-            "published_at": "2026-10-13T17:14:22+00:00",
-            "id": "1fbf8594c83066c6a20e",
+            "title": "Wall Street Giant Interactive Brokers Launches Ethereum Staking, Expanding Crypto Offering - Cryptonews.net",
+            "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE55aUp6TW1QNDhPX25GVzh6X21HdWpObGUtUmdFbUJMcDdFYzVYR0hSTWVXb2VNSXFSRjl3YVpMdERGTUhLNUhQM1M2SUgyLTR4dFo4VEdMYw?oc=5",
+            "source": "Cryptonews.net",
+            "published_at": "2026-10-14T00:21:00+00:00",
+            "id": "6622beaf566a25561fd6",
             "type": "product_launch",
-            "age_hours": 4.2,
+            "age_hours": 3.85,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1360,7 +1230,7 @@
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-13T21:26:37.543125+00:00",
+        "checked_at": "2026-10-14T04:12:05.618389+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
@@ -1369,23 +1239,23 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 2241.45,
-      "support": 2237.0,
-      "momentum_pct": -0.08129282389831571,
-      "reference_price": 2240.089184332127,
-      "extension_pct": -0.13790452423652066,
-      "resistance_1": 2243.9,
-      "resistance_2": 2250.79,
+      "entry": 2248.04,
+      "support": 2236.36,
+      "momentum_pct": -0.22153972336507177,
+      "reference_price": 2244.414232932205,
+      "extension_pct": -0.26707337906931583,
+      "resistance_1": 2250.41,
+      "resistance_2": 2257.3,
       "chart_analysis": {
         "setups": [],
         "issues": [
           "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
         "interval": "5m",
-        "recent_volume_ratio": 0.5447451150637408,
-        "observed_at": "2026-10-13T21:25:00+00:00"
+        "recent_volume_ratio": 0.3446559997223644,
+        "observed_at": "2026-10-14T04:10:00+00:00"
       },
-      "structure_observed_at": "2026-10-13T21:25:00+00:00",
+      "structure_observed_at": "2026-10-14T04:10:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -1406,7 +1276,6 @@
         "status": "CATALYST WATCH",
         "reasons": [
           "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
           "Recent article publication does not establish when the underlying event occurred.",
           "No positive recent momentum; a daily gain alone is insufficient."
         ],
@@ -1416,7 +1285,6 @@
           {
             "status": "REJECTED",
             "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
               "Recent article publication does not establish when the underlying event occurred.",
               "No positive recent momentum; a daily gain alone is insufficient."
             ],
@@ -1430,11 +1298,10 @@
     }
   ],
   "changed_signals": [
-    "stock:TSEM"
+    "crypto:ethereum"
   ],
   "invalidated_signals": [
-    "crypto:injective-protocol",
-    "crypto:celestia"
+    "stock:DOCS"
   ],
   "health": {
     "stocks": {
@@ -1444,20 +1311,19 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7748,
-        "snapshot_records": 3750,
-        "pagination_complete": false,
+        "provider_total": 7749,
+        "snapshot_records": 7749,
+        "pagination_complete": true,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout",
-          "Quote page failed at offset 3750: Timeout"
+          "Nasdaq screener failed: ReadTimeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 168,
-        "matched_events": 12,
-        "matched_assets": 12,
+        "headlines_received": 169,
+        "matched_events": 11,
+        "matched_assets": 11,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1478,23 +1344,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 2895,
-      "discovered_candidates": 12,
+      "listed_snapshot_records": 5897,
+      "discovered_candidates": 11,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 10,
+      "shortlisted_candidates": 9,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 10,
-      "selected_candidates": 10,
+      "catalyst_selected": 9,
+      "selected_candidates": 9,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 3055,
+      "unquoted_listings": 53,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 10,
+      "history_not_requested": 9,
       "chart_failures": 0
     },
     "crypto": {
@@ -1505,19 +1371,19 @@
         },
         "errors": []
       },
-      "status": "OK",
+      "status": "PARTIAL",
       "screened_assets": 250,
       "price_records": 12,
-      "history_requested": 12,
-      "history_received": 12,
-      "chart_failures": 0,
+      "history_requested": 10,
+      "history_received": 9,
+      "chart_failures": 1,
       "history_stale": 0,
-      "history_not_requested": 0,
+      "history_not_requested": 2,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
-        "matched_events": 3,
-        "matched_assets": 2,
+        "matched_events": 2,
+        "matched_assets": 1,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1542,18 +1408,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-14T03:41:41.302305+00:00",
+        "checked_at": "2026-10-14T04:12:05.618389+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-14T03:41:41.302305+00:00"
+        "checked_at": "2026-10-14T04:12:05.618389+00:00"
       }
     },
     "news": {
-      "checked": 22,
+      "checked": 21,
       "failed": 0
     }
   },
