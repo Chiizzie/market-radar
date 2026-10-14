@@ -7,14 +7,13 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
     paths:
       - '**.py'
       - requirements.txt
       - .github/workflows/market-radar.yml
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: ${{ github.event_name == 'pull_request' && github.ref || 'market-radar-live' }}
@@ -33,7 +32,9 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
   scan:
-    if: ${{ always() && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped') }}
+    permissions:
+      contents: write
+    if: ${{ always() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped') }}
     needs: test
     runs-on: ubuntu-24.04
     timeout-minutes: 12
@@ -56,11 +57,11 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run_radar.py
-      - name: Persist research outcomes
-        continue-on-error: true
-        run: python outcome_tracker.py
-      - name: Publish qualifying scan to ChatGPT event bridge
+      - name: Publish material scan changes to rolling feed PR
         run: python publish_alert.py
+      - name: Persist research outcomes
+        if: always()
+        run: python outcome_tracker.py
       - name: Save scan and bridge diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -98,3 +99,4 @@ jobs:
           name: radar-replay-${{ github.run_id }}
           path: replay_report.json
           retention-days: 7
+

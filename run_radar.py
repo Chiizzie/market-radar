@@ -14,6 +14,18 @@ def build_potential_signals(stocks, crypto):
             and item.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}]
 
 
+def expire_plans(items, now):
+    from outcome_tracker import stamp
+    for item in items:
+        q = item.get('qualification', {})
+        plan = q.get('plan')
+        if plan:
+            expiry = stamp(plan.get('expires_at'))
+            if not expiry or expiry <= now:
+                item['qualification'] = {**q, 'status':'EXPIRED', 'plan':None,
+                    'reasons':['Plan expired during scan; refresh price and rebuild before entry.']}
+
+
 def main():
     logging.basicConfig(level=logging.INFO)
     state, state_health, parent = load_state()
@@ -23,8 +35,8 @@ def main():
     scanner.brokers = BrokerAvailability().load()
     scanner.health['brokers'] = scanner.brokers.health
     stocks, crypto = collect_stock_candidates(scanner), collect_crypto_candidates(scanner)
+    expire_plans(stocks+crypto, datetime.now(timezone.utc))
     finish_state(state, stocks+crypto, scanner.now)
-    scanner.health['rotation_state'] = persist_state(state, state_health, parent)
     Path('chart_samples.json').write_text(json.dumps({'captured_at':scanner.now.isoformat(),'charts':scanner.chart_samples},allow_nan=False)+'\n')
     scanner.health['news'] = {'checked': len(stocks + crypto),
                               'failed': sum(x['catalyst'].get('retrieval_status') == 'FAILED' for x in stocks + crypto)}
@@ -38,9 +50,12 @@ def main():
                'display_timezone': 'Europe/Dublin', 'generated_at_display': irish_time(datetime.now(timezone.utc)),
                'classifications': dict(Counter(x['qualification']['status'] for x in stocks + crypto)),
                'notice': 'Scores rank research only. ACTIONABLE NOW is provisional and requires live price, broker availability, spread, fees and source verification.'}
-    payload['telegram_delivery'] = telegram(build_market_snapshot(stocks, crypto, scanner.health))
+    from delivery import deliver_snapshot
     Path('latest_scan.json').write_text(json.dumps(payload, indent=2, allow_nan=False) + '\n')
-    print('Scan health:', json.dumps(scanner.health))
+    payload['telegram_delivery'] = deliver_snapshot(payload, state, build_market_snapshot(stocks, crypto, scanner.health))
+    scanner.health['rotation_state'] = persist_state(state, state_health, parent)
+    Path('latest_scan.json').write_text(json.dumps(payload, indent=2, allow_nan=False) + '\n')
+    print('Scan health:', json.dumps({k: ({a:b for a,b in v.items() if a != 'candidate_manifest'} if isinstance(v, dict) else v) for k,v in scanner.health.items()}))
     print('Classifications:', json.dumps(payload['classifications']))
     summary = __import__('os').environ.get('GITHUB_STEP_SUMMARY')
     if summary:
@@ -50,3 +65,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

@@ -30,7 +30,8 @@ def telegram(message):
 
 
 def enrich(items, brokers=None):
-    for item in items:
+    from concurrent.futures import ThreadPoolExecutor
+    def assess(item):
         catalyst = item.get('catalyst') or find_catalyst_for_asset(item.get('ticker', item.get('symbol')), item['asset_type'], item['name'])
         item['broker_availability'] = brokers.check(item) if brokers else {'status': 'UNVERIFIED', 'reason': 'Broker catalogue not loaded.'}
         item['catalyst'] = catalyst
@@ -41,7 +42,10 @@ def enrich(items, brokers=None):
             item['qualification'] = {**q, 'status': 'CATALYST WATCH', 'trade_assessment_status': q['status'],
                                      'research_only': True, 'plan': None,
                                      'reasons': ['News lead for research; event timing and entry require verification.'] + q['reasons']}
-    return sorted(items, key=lambda x: x['score']['score'], reverse=True)
+        return item
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        results = list(pool.map(assess, items))
+    return sorted(results, key=lambda x: x['score']['score'], reverse=True)
 
 
 def collect_stock_candidates(scanner):
@@ -77,6 +81,7 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
         p = item['qualification'].get('plan')
         if p:
             lines.append(f"{item.get('ticker', item.get('symbol'))}: EUR entry {p['entry']:.4f} | SL {p['stop_loss']:.4f} | TP1 {p['tp1']:.4f} | TP2 {p['tp2']:.4f}")
+            lines.append(f"R:R {p['rr1']}/{p['rr2']} | size €{p['position_eur']:.2f} ({p['units']:.5g} units) | planned loss €{p['planned_loss_eur']:.2f} | expires {irish_time(p.get('expires_at'))}")
     if any(x['qualification'].get('route') == 'CHART_LED' for x in actions + watches):
         lines.append('Chart-led targets are measured-move projections capped at observed highs; not guaranteed resistance.')
     if actions:
@@ -150,3 +155,4 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     if os.environ.get('GITHUB_RUN_ID'):
         lines.append('https://github.com/' + os.environ.get('GITHUB_REPOSITORY', 'Chiizzie/market-radar') + '/actions/runs/' + os.environ['GITHUB_RUN_ID'])
     return '\n'.join(lines)
+

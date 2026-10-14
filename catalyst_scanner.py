@@ -8,6 +8,7 @@ from urllib.parse import quote_plus
 
 import feedparser
 import requests
+from reliability import http_get
 from event_timing import event_timing
 
 logger = logging.getLogger(__name__)
@@ -45,7 +46,7 @@ def utcnow():
 
 def fetch_news(query, limit=12):
     try:
-        response = requests.get(GOOGLE_NEWS_URL.format(query=quote_plus(query)), timeout=12)
+        response = http_get(GOOGLE_NEWS_URL.format(query=quote_plus(query)), timeout=12)
         response.raise_for_status()
         feed = feedparser.parse(response.content)
         if feed.bozo and not feed.entries:
@@ -129,3 +130,4 @@ def find_catalyst_for_asset(query, asset_type='stock', name='', now=None):
         return {'type': 'unverified', 'summary': 'News provider unavailable: ' + items[0]['retrieval_error'],
                 'eligible_for_points': False, 'headlines': [], 'freshness': 'UNAVAILABLE', 'retrieval_status': 'FAILED'}
     return {**classify_catalyst(items, query, name, asset_type, now), 'retrieval_status': 'OK', 'headlines_checked': len(items)}
+
