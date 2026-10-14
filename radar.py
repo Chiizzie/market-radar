@@ -34,11 +34,12 @@ def enrich(items, brokers=None):
     def assess(item):
         catalyst = item.get('catalyst') or find_catalyst_for_asset(item.get('ticker', item.get('symbol')), item['asset_type'], item['name'])
         item['broker_availability'] = brokers.check(item) if brokers else {'status': 'UNVERIFIED', 'reason': 'Broker catalogue not loaded.'}
+        item['short_broker_availability'] = brokers.check_short(item) if brokers and hasattr(brokers, 'check_short') else {'status':'UNVERIFIED'}
         item['catalyst'] = catalyst
         item['score'] = score_setup(item, catalyst)
         item['qualification'] = classify_setup(item, catalyst)
         q = item['qualification']
-        if catalyst.get('headlines') and q['status'] not in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'EXTENDED—DO NOT CHASE', 'TECHNICAL WATCH'}:
+        if catalyst.get('headlines') and q['status'] not in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'EXTENDED—DO NOT CHASE', 'TECHNICAL WATCH', 'BEARISH WATCH'}:
             item['qualification'] = {**q, 'status': 'CATALYST WATCH', 'trade_assessment_status': q['status'],
                                      'research_only': True, 'plan': None,
                                      'reasons': ['News lead for research; event timing and entry require verification.'] + q['reasons']}
@@ -80,10 +81,10 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     for item in actions + watches:
         p = item['qualification'].get('plan')
         if p:
-            lines.append(f"{item.get('ticker', item.get('symbol'))}: EUR entry {p['entry']:.4f} | SL {p['stop_loss']:.4f} | TP1 {p['tp1']:.4f} | TP2 {p['tp2']:.4f}")
+            lines.append(f"{item.get('ticker', item.get('symbol'))} {p.get('direction', 'LONG')}: EUR entry {p['entry']:.4f} | SL {p['stop_loss']:.4f} | TP1 {p['tp1']:.4f} | TP2 {p['tp2']:.4f}")
             lines.append(f"R:R {p['rr1']}/{p['rr2']} | size €{p['position_eur']:.2f} ({p['units']:.5g} units) | planned loss €{p['planned_loss_eur']:.2f} | expires {irish_time(p.get('expires_at'))}")
     if any(x['qualification'].get('route') == 'CHART_LED' for x in actions + watches):
-        lines.append('Chart-led targets are measured-move projections capped at observed highs; not guaranteed resistance.')
+        lines.append('Chart-led targets are measured-move projections capped at observed swing zones; not guaranteed support/resistance.')
     if actions:
         lines.append('Check live broker price, spread and source before acting.')
     if health:
@@ -114,6 +115,9 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     for x in near[:3]:
         q = x['qualification']
         lines.append('Nearly qualified — ' + x.get('ticker', x.get('symbol')) + ' | ' + q.get('pattern', '') + ': ' + '; '.join(q.get('blockers', [])) + ' No entry yet.')
+    bears = [x for x in stocks+crypto if x['qualification']['status']=='BEARISH WATCH']
+    if bears:
+        lines.append('BEARISH WATCH — ' + symbols(bears) + ' | short permission unverified; no executable plan.')
     blocks = []
     ordered = sorted(stocks + crypto, key=lambda x: ({'ACTIONABLE NOW': 3, 'WATCH FOR ENTRY': 2, 'TECHNICAL WATCH': 2, 'CATALYST WATCH': 1}.get(x['qualification']['status'], 0), x['qualification']['status'] == 'CATALYST WATCH', x.get('catalyst', {}).get('published_at', ''), x.get('score', {}).get('score', 0)), reverse=True)
     watch_symbols = [x.get('ticker', x.get('symbol')) for x in ordered if x['qualification']['status'] == 'CATALYST WATCH']
@@ -124,11 +128,11 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
         symbol = item.get('ticker', item.get('symbol'))
         change = item.get('change', item.get('change_24h', 0))
         quote_text = f"{item.get('currency', '')} {item['price']:.6g}" if item.get('price') is not None else 'Quote unavailable'
-        block = [f"{symbol} ({item.get('name', symbol)}): {q['status']}",
+        block = [f"{symbol} ({item.get('name', symbol)}): {q['status']} | {q.get('direction', 'LONG')}",
                  f"{quote_text} | move {change:+.2f}% | observed {irish_time(item.get('observed_at'))}"]
         if q.get('route') == 'CHART_LED':
             block.append('Chart-led: ' + q.get('pattern', '') + ' | ' + q.get('target_method', ''))
-        broker = item.get('broker_availability', {})
+        broker = item.get('short_broker_availability' if q.get('direction') == 'SHORT' else 'broker_availability', {})
         block.append('Broker: ' + broker.get('broker', 'unverified') + ' | ' + broker.get('status', 'UNVERIFIED'))
         if c.get('title'):
             block.extend([c['summary'], f"{c['source']} | Published {irish_time(c['published_at'])} | Event: {irish_time(c.get('event_at'))}" + (' | ADVERSE EVENT' if c.get('adverse') else '')])
@@ -155,4 +159,5 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     if os.environ.get('GITHUB_RUN_ID'):
         lines.append('https://github.com/' + os.environ.get('GITHUB_REPOSITORY', 'Chiizzie/market-radar') + '/actions/runs/' + os.environ['GITHUB_RUN_ID'])
     return '\n'.join(lines)
+
 

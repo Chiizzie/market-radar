@@ -21,12 +21,13 @@ def observe_plan(record, quote, now):
         return
     price = quote['price']*fx
     events = record.setdefault('sampled_plan_events', {})
-    for name, hit in [('stop', price <= plan['stop_loss']), ('tp1', price >= plan['tp1']), ('tp2', price >= plan['tp2'])]:
+    sign = -1 if plan.get('direction') == 'SHORT' else 1
+    for name, hit in [('stop', sign*(price-plan['stop_loss']) <= 0), ('tp1', sign*(price-plan['tp1']) >= 0), ('tp2', sign*(price-plan['tp2']) >= 0)]:
         if hit:
             events.setdefault(name, {'observed_at': quote['observed_at'], 'price_eur': price})
-    risk = plan['entry']-plan['stop_loss']
+    risk = abs(plan['entry']-plan['stop_loss'])
     if risk > 0:
-        record['sampled_r_multiple'] = round((price-plan['entry'])/risk, 4)
+        record['sampled_r_multiple'] = round(sign*(price-plan['entry'])/risk, 4)
     record['plan_tracking_status'] = 'SAMPLED_ONLY_NO_FILL_ASSUMED'
 
 
@@ -44,3 +45,4 @@ def summarize(result):
             'missed_move_proxy_symbols': [r['symbol'] for r in missed[:30]],
             'median_evidence_latency_seconds': latencies[len(latencies)//2] if latencies else None,
             'measurement_limitations': 'Missed-move proxy: rejected/deferred cohort later observed +3%, not proof of a valid missed entry. Stop observations are false-positive proxies, not losses. Sparse quotes cannot resolve barrier order, fills, slippage or realised P&L; unquoted candidates are unmeasured.'}
+

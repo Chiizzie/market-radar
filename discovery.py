@@ -192,9 +192,9 @@ def stock_candidate_priority(quote):
     eligible = notional >= 500_000 and (abs(change) >= 1 or (relative is not None and relative >= .5))
     liquidity = min(math.log10(max(notional / 500_000, 1)) * 3, 9)
     volume_score = min(relative * 4, 12) if relative is not None else 0
-    early_move = min(max(change, 0), 3)
-    extension_penalty = min(max(change - 5, 0) * 1.5, 30)
-    downside_penalty = min(max(-change, 0) * 2, 20)
+    early_move = min(abs(change), 3)
+    extension_penalty = min(max(abs(change) - 5, 0) * 1.5, 30)
+    downside_penalty = 0  # Symmetric long/short discovery.
     return eligible, liquidity + volume_score + early_move - extension_penalty - downside_penalty
 
 
@@ -224,9 +224,9 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
         acceleration = None
         if prior and stamp and 0 < stamp-prior.get('timestamp', stamp) <= 1800 and prior.get('price', 0) > 0:
             acceleration = (finite(q.get('regularMarketPrice')) / prior['price'] - 1) * 100
-            if acceleration > 0:
+            if abs(acceleration) > 0:
                 eligible = eligible or finite(q.get('regularMarketPrice')) * finite(q.get('regularMarketVolume')) >= 5_000_000
-                score += min(acceleration * 3, 9)
+                score += min(abs(acceleration) * 3, 9)
         if not fresh_news and not (regular and quote_usable and eligible):
             continue
         broker = broker_check({'ticker': symbol, 'name': universe[symbol], 'asset_type': 'stock'}) if broker_check else {'status': 'UNVERIFIED'}
@@ -243,11 +243,11 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
             excluded.append(symbol)
             continue
         # Adverse events remain research candidates, but rank behind long-side leads.
-        priority = (not adverse, fresh_news, broker['status'] in {'LISTED_PUBLIC', 'LISTED_API'}, score)
+        priority = (fresh_news, broker['status'] in {'LISTED_PUBLIC', 'LISTED_API'}, score)
         ranked.append((priority, candidate))
     ranked.sort(key=lambda row: row[0], reverse=True)
     shortlist = [row[1] for row in ranked[:max(limit, shortlist_limit)]]
-    reserved = [x for x in shortlist if x['selection_evidence']['fresh_publication'] and not x['selection_evidence']['adverse']][:min(limit, catalyst_slots)]
+    reserved = [x for x in shortlist if x['selection_evidence']['fresh_publication']][:min(limit, catalyst_slots)]
     reserved_symbols = {x['ticker'] for x in reserved}
     order = reserved + [row[1] for row in ranked if row[1]['ticker'] not in reserved_symbols]
     from scan_state import rotate_candidates
@@ -269,7 +269,8 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
                       'catalyst_selected': sum(x['selection_evidence']['fresh_publication'] for x in selected),
                       'selected_candidates': len(selected), 'deferred_candidates': max(0, len(ranked)-len(selected)),
                       'outside_shortlist': max(0, len(ranked)-len(shortlist)),
-                      'selection_policy': 'fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties',
+                      'selection_policy': 'fresh catalyst in either direction, broker listing, volume/liquidity, absolute early move; extension penalty',
                       'acceleration_status': 'Timestamped snapshot changes used when available; completed charts validate momentum.',
                       'unquoted_listings': len(set(universe)-set(records))}
+
 

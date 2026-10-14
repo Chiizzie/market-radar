@@ -149,10 +149,13 @@ def analyse_chart(frame, asset_type, now, resistance_mode="swing_zones"):
     if len(higher) >= 4:
         result['higher_timeframe'] = {'interval':'15m', 'observed_at':(higher.index[-1]+pd.Timedelta(minutes=15)).isoformat(),
             'momentum_pct':float((higher.Close.iloc[-1]/higher.Close.iloc[-4]-1)*100),
-            'trend':'RISING' if higher.Close.iloc[-1] > higher.Close.iloc[-4] else 'NOT_RISING'}
+            'trend':'RISING' if higher.Close.iloc[-1] > higher.Close.iloc[-4] else 'FALLING' if higher.Close.iloc[-1] < higher.Close.iloc[-4] else 'FLAT'}
     else:
         result['higher_timeframe'] = {'interval':'15m','trend':'UNAVAILABLE'}
+    from bearish_analysis import analyse_bearish
+    result['setups'].extend(analyse_bearish(f, asset_type, now)['setups'])
     if not result['setups']:
         result['issues'] = ['No confirmed range retest, opening-range retest or trend pullback/reclaim pattern.']
     return result
+
 

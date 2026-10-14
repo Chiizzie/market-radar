@@ -29,7 +29,8 @@ class BrokerTests(unittest.TestCase):
              patch('broker_availability.requests.get', return_value=response) as get:
             b = BrokerAvailability(NOW).load()
         calls = [c for c in get.call_args_list if 'trading212' in c.args[0]]
-        self.assertEqual(len(calls), 1)
+        self.assertEqual(len(calls), 2)  # Invest metadata plus separate public CFD catalogue.
+        self.assertEqual(sum('auth' in call.kwargs for call in calls), 1)
         self.assertEqual(calls[0].args[0], 'https://live.trading212.com/api/v0/equity/metadata/instruments')
         result = b.check(self.stock)
         self.assertEqual(result['status'], 'LISTED_API')
@@ -113,3 +114,4 @@ class EventTimingTests(unittest.TestCase):
         self.assertTrue(material_change(old, {**old, 'broker_availability': {'status': 'LISTED_PUBLIC'}}))
         self.assertTrue(material_change(old, {**old, 'catalyst': {'id': 'same', 'event_time_status': 'REPORTED_RECENT'}}))
         self.assertFalse(material_change(old, old))
+
