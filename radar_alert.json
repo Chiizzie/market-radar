@@ -1,138 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-14T03:09:38.310144+00:00",
+  "generated_at": "2026-10-14T03:42:58.733935+00:00",
   "potential_signals": [
-    {
-      "ticker": "KMB",
-      "name": "Kimberly-Clark",
-      "asset_type": "stock",
-      "price": 98.29,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.4859732,
-      "volume": 6331515.0,
-      "dollar_volume": 622324609.35,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 14.533,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
-        "source": "Reuters",
-        "published_at": "2026-10-13T15:29:18+00:00",
-        "id": "7939e84e7de6b050a939",
-        "type": "merger",
-        "age_hours": 5.96,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
-            "source": "Reuters",
-            "published_at": "2026-10-13T15:29:18+00:00",
-            "id": "7939e84e7de6b050a939",
-            "type": "merger",
-            "age_hours": 5.96,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T21:26:37.543125+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "KMB_US_EQ",
-        "isin": "US4943681035",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "EXPD",
       "name": "Expeditors International of Washington",
@@ -207,136 +77,6 @@
         "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
         "broker_instrument_id": "EXPD_US_EQ",
         "isin": "US3021301094",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "UNFI",
-      "name": "United Natural Foods",
-      "asset_type": "stock",
-      "price": 45.79,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 2.25548,
-      "volume": 571664.0,
-      "dollar_volume": 26176494.56,
-      "session": "CLOSED",
-      "observed_at": "2026-10-13T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 11.344,
-        "relative_volume_available": true,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
-        "source": "Kalkine Media",
-        "published_at": "2026-10-13T21:46:37+00:00",
-        "id": "d3199a70c6caf42a73bb",
-        "type": "merger",
-        "age_hours": 0.53,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
-            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
-            "source": "Kalkine Media",
-            "published_at": "2026-10-13T21:46:37+00:00",
-            "id": "d3199a70c6caf42a73bb",
-            "type": "merger",
-            "age_hours": 0.53,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-13T22:18:30.034314+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "UNFI_US_EQ",
-        "isin": "US9111631035",
         "dealer_exclusions": [],
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
@@ -1041,6 +781,136 @@
       }
     },
     {
+      "ticker": "KMB",
+      "name": "Kimberly-Clark",
+      "asset_type": "stock",
+      "price": 98.29,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": -0.4859732,
+      "volume": 6331515.0,
+      "dollar_volume": 622324609.35,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:01+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 14.533,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
+        "source": "Reuters",
+        "published_at": "2026-10-13T15:29:18+00:00",
+        "id": "7939e84e7de6b050a939",
+        "type": "merger",
+        "age_hours": 5.96,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "EU approves Kimberly-Clark's $40 billion Kenvue acquisition - Reuters",
+            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUM5QjZ4UzMyOFAzcTZoUGdEckZHR2h6SW5NVF9hdjI1dV85OUtvRV8zRkl5TE9QemNLLUwxR05QYlJqaDB1cC1NSno0QjRIYktoNzZzVU5POTR1VVVJUFdnZnk3V3Y4SEVMTi1FWHJnMnl3TDFudW5yQ2o2MlVvUjBhR19OU1diUVVWcGZzck9OWTNXNzgtdnpzWEpWSWw3UFVLLVBDdld6ZHM?oc=5",
+            "source": "Reuters",
+            "published_at": "2026-10-13T15:29:18+00:00",
+            "id": "7939e84e7de6b050a939",
+            "type": "merger",
+            "age_hours": 5.96,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T21:26:37.543125+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "KMB_US_EQ",
+        "isin": "US4943681035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
       "ticker": "SPCB",
       "name": "SuperCom",
       "asset_type": "stock",
@@ -1121,6 +991,264 @@
         "score": 0,
         "label": "Research rank only",
         "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+          "US regular market session is closed.",
+          "Price data is stale or future-dated.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "US regular market session is closed.",
+              "Price data is stale or future-dated.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor",
+      "asset_type": "stock",
+      "price": null,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 0,
+      "volume": 0,
+      "dollar_volume": 0,
+      "session": "CLOSED",
+      "observed_at": null,
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 0.0,
+        "relative_volume_available": false,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
+        "source": "Business Wire",
+        "published_at": "2026-10-13T10:00:00+00:00",
+        "id": "72dd94f49e85f5e3dba4",
+        "type": "partnership",
+        "age_hours": 17.69,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "Tower Semiconductor and Semtech Expand SiGe Partnership to Scale Power-Efficient Analog Connectivity for Data Centers - Business Wire",
+            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPb0tmYURGclBRcmZzUnZPZXM0ODUyVWEtSzNnM0E0eEtVbXo3cUkyWGd3TURKNEJFNWkydUtuY2NoRUJXb0NsV0lUQnpYT0l4TW9nT1ZFV253UnVVRjBQeTFzMWRmYmdDOXAzdklYWFRPeEt1QzA3R01BR3ZucXJQQUhVc054dTNtZVRMWTVzdzNIOTJQMF9qRjhDMFo0S3c4NkFVd1IzRW5OSndIWGtQcFNHMC1rWFNaczNnRE4yQ3l5cll2SlE0RWRQeU05bGJLOXo5cnpSd1BVdEQ4U2YtQ2RsM3dvRmNEQ2d0QUZpTEJoeXFtclhKbkcxbUt3XzJlQlhpaA?oc=5",
+            "source": "Business Wire",
+            "published_at": "2026-10-13T10:00:00+00:00",
+            "id": "72dd94f49e85f5e3dba4",
+            "type": "partnership",
+            "age_hours": 17.69,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-14T03:41:41.302305+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "TSEM_US_EQ",
+        "isin": "IL0010823792",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 0,
+        "label": "Research rank only",
+        "reasons": []
+      },
+      "qualification": {
+        "status": "CATALYST WATCH",
+        "reasons": [
+          "News lead for research; event timing and entry require verification.",
+          "US regular market session is closed.",
+          "Price timestamp missing.",
+          "Regular-session chart checks wait for the market to open.",
+          "Recent article publication does not establish when the underlying event occurred."
+        ],
+        "plan": null,
+        "missing_fields": [
+          "price",
+          "entry",
+          "support",
+          "resistance_1",
+          "resistance_2",
+          "momentum_pct",
+          "extension_pct"
+        ],
+        "route": "CATALYST_LED",
+        "assessments": [
+          {
+            "status": "NOT_EVALUATED",
+            "reasons": [
+              "US regular market session is closed.",
+              "Price timestamp missing.",
+              "Regular-session chart checks wait for the market to open.",
+              "Recent article publication does not establish when the underlying event occurred."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "price",
+              "entry",
+              "support",
+              "resistance_1",
+              "resistance_2",
+              "momentum_pct",
+              "extension_pct"
+            ],
+            "route": "CATALYST_LED"
+          }
+        ],
+        "trade_assessment_status": "NOT_EVALUATED",
+        "research_only": true
+      }
+    },
+    {
+      "ticker": "UNFI",
+      "name": "United Natural Foods",
+      "asset_type": "stock",
+      "price": 45.79,
+      "currency": "USD",
+      "eur_per_unit": null,
+      "change": 2.25548,
+      "volume": 571664.0,
+      "dollar_volume": 26176494.56,
+      "session": "CLOSED",
+      "observed_at": "2026-10-13T20:00:03+00:00",
+      "source": "Yahoo broad exchange snapshot",
+      "discovery_route": "catalyst_first",
+      "selection_evidence": {
+        "fresh_publication": true,
+        "adverse": false,
+        "broker_status": "LISTED_API",
+        "snapshot_score": 11.344,
+        "relative_volume_available": true,
+        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
+      },
+      "history_status": "NOT_REQUESTED",
+      "data_issue": "Regular-session chart checks wait for the market to open.",
+      "catalyst": {
+        "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
+        "source": "Kalkine Media",
+        "published_at": "2026-10-13T21:46:37+00:00",
+        "id": "d3199a70c6caf42a73bb",
+        "type": "merger",
+        "age_hours": 0.53,
+        "confidence": "headline_evidence",
+        "adverse": false,
+        "event_at": null,
+        "event_date_source": null,
+        "event_date_precision": null,
+        "event_time_status": "UNVERIFIED",
+        "freshness": "EVENT DATE UNVERIFIED",
+        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
+        "summary": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
+        "eligible_for_points": false,
+        "headlines": [
+          {
+            "title": "James C. Pappas Acquires 4,197 RSUs in United Natural Foods, Inc. (NYSE:UNFI) - Kalkine Media",
+            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVG0weWx2Zm52ZDZxb2RqdUIyYUx1dTdaVHM1emQyN0hTRi1aUmFJNG1nSUhVMlFCc0FjRHdyaTlkbEg5QXdPT2FNYmx1b1h3RG02cDZ4VWdIY3I3Z2FtSkY5TUp4a2JSUjYxWFlwUUEzZVY1V3NXaVFLLWotSjVXMWxQRE8yOEJPV1ExazF0bUVDQ09hdzREN2tNUlU3SUdzMUlDbkYxY0QxSnBfUm1zRm5sOFhBOElt?oc=5",
+            "source": "Kalkine Media",
+            "published_at": "2026-10-13T21:46:37+00:00",
+            "id": "d3199a70c6caf42a73bb",
+            "type": "merger",
+            "age_hours": 0.53,
+            "confidence": "headline_evidence",
+            "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          }
+        ],
+        "verification": "Headline and asset identity matched; read source before trading.",
+        "retrieval_status": "OK",
+        "discovery_route": "broad_event_news"
+      },
+      "broker_availability": {
+        "broker": "Trading 212 Invest",
+        "status": "LISTED_API",
+        "checked_at": "2026-10-13T22:18:30.034314+00:00",
+        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
+        "account_verified": false,
+        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
+        "broker_instrument_id": "UNFI_US_EQ",
+        "isin": "US9111631035",
+        "dealer_exclusions": [],
+        "reason": "Asset identity matched the official broker instrument catalogue."
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
       },
       "qualification": {
         "status": "CATALYST WATCH",
@@ -1299,376 +1427,14 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "INJ",
-      "name": "Injective",
-      "coin_id": "injective-protocol",
-      "asset_type": "crypto",
-      "price": 7.338,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 10.11811,
-      "change_1h": 1.4844,
-      "acceleration": 1.0628120833333332,
-      "discovery_route": "recent_momentum",
-      "change_7d": 9.0305,
-      "volume": 169943881.0,
-      "dollar_volume": 169943881.0,
-      "market_cap": 733253882,
-      "session": "24/7",
-      "observed_at": "2026-10-14T03:05:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-14T03:08:45.361913+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 7.369,
-      "support": 7.242,
-      "momentum_pct": 0.3281378178835004,
-      "reference_price": 7.307218274672348,
-      "extension_pct": 0.4212509353161753,
-      "resistance_1": 7.378,
-      "resistance_2": 7.405,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 1.60276201315065,
-        "observed_at": "2026-10-14T03:05:00+00:00"
-      },
-      "structure_observed_at": "2026-10-14T03:05:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "INJEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Raydium launches INJ token staking on Solana platform - Crypto Briefing",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObE5hVXIwNVJfYS1zaUpRRGJyT05jOUNkRWI1UVVrZEMzREptYjA4U0VWQmdtdmJRRGE0TGUtWkctYkZTU1ZRSE1qSTJHQXh1cWlnYkNhYWQyWjZLVG5fRS1CYkRsTzRTM2NaRFNuNDRpenpBWHJXR0xObF9tTElURGY3VnBJaTBF?oc=5",
-        "source": "Crypto Briefing",
-        "published_at": "2026-10-13T14:18:04+00:00",
-        "id": "31d80c5fcd62e5156acc",
-        "type": "product_launch",
-        "age_hours": 12.86,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Raydium launches INJ token staking on Solana platform - Crypto Briefing",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Raydium launches INJ token staking on Solana platform - Crypto Briefing",
-            "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObE5hVXIwNVJfYS1zaUpRRGJyT05jOUNkRWI1UVVrZEMzREptYjA4U0VWQmdtdmJRRGE0TGUtWkctYkZTU1ZRSE1qSTJHQXh1cWlnYkNhYWQyWjZLVG5fRS1CYkRsTzRTM2NaRFNuNDRpenpBWHJXR0xObF9tTElURGY3VnBJaTBF?oc=5",
-            "source": "Crypto Briefing",
-            "published_at": "2026-10-13T14:18:04+00:00",
-            "id": "31d80c5fcd62e5156acc",
-            "type": "product_launch",
-            "age_hours": 12.86,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 8
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "TIA",
-      "name": "Celestia",
-      "coin_id": "celestia",
-      "asset_type": "crypto",
-      "price": 0.5146,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -0.16845,
-      "change_1h": 1.0259,
-      "acceleration": 1.03291875,
-      "discovery_route": "recent_momentum",
-      "change_7d": 22.6361,
-      "volume": 116127890.0,
-      "dollar_volume": 116127890.0,
-      "market_cap": 506273106,
-      "session": "24/7",
-      "observed_at": "2026-10-14T03:05:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-14T03:08:45.361913+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.5162,
-      "support": 0.5099,
-      "momentum_pct": -0.30995738086013747,
-      "reference_price": 0.5143140409454502,
-      "extension_pct": 0.055600087064333614,
-      "resistance_1": 0.5168,
-      "resistance_2": 0.5184,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 0.5161,
-            "support": 0.5131,
-            "resistance_1": 0.5162,
-            "resistance_2": 0.5178,
-            "momentum_pct": -0.30995738086013747,
-            "extension_pct": 0.055600087064333614,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.513,
-              "measured_height": 0.006399999999999961,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.5162,
-                0.5194
-              ],
-              "overhead_levels": [
-                0.5167,
-                0.5168,
-                0.5171,
-                0.5172
-              ]
-            },
-            "observed_at": "2026-10-14T03:05:00+00:00",
-            "evidence": {
-              "range_start": "2026-10-14T01:05:00+00:00",
-              "range_end": "2026-10-14T02:30:00+00:00",
-              "range_high": 0.513,
-              "range_low": 0.5066,
-              "retest_low": 0.5131,
-              "breakout_close": 0.5162,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.751516194589344,
-        "observed_at": "2026-10-14T03:05:00+00:00"
-      },
-      "structure_observed_at": "2026-10-14T03:05:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "TIAEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 4
-      },
-      "score": {
-        "score": 2,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "No positive recent momentum; a daily gain alone is insufficient.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "RANGE_BREAKOUT_RETEST",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "RANGE_BREAKOUT_RETEST",
-          "entry": 0.5161,
-          "support": 0.5131,
-          "resistance_1": 0.5162,
-          "resistance_2": 0.5178,
-          "momentum_pct": -0.30995738086013747,
-          "extension_pct": 0.055600087064333614,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.513,
-            "measured_height": 0.006399999999999961,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.5162,
-              0.5194
-            ],
-            "overhead_levels": [
-              0.5167,
-              0.5168,
-              0.5171,
-              0.5172
-            ]
-          },
-          "observed_at": "2026-10-14T03:05:00+00:00",
-          "evidence": {
-            "range_start": "2026-10-14T01:05:00+00:00",
-            "range_end": "2026-10-14T02:30:00+00:00",
-            "range_high": 0.513,
-            "range_low": 0.5066,
-            "retest_low": 0.5131,
-            "breakout_close": 0.5162,
-            "confirmation": "Break above range, hold/retest, bullish latest bar"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "No positive recent momentum; a daily gain alone is insufficient.",
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "No positive recent momentum; a daily gain alone is insufficient.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 0.5161,
-              "support": 0.5131,
-              "resistance_1": 0.5162,
-              "resistance_2": 0.5178,
-              "momentum_pct": -0.30995738086013747,
-              "extension_pct": 0.055600087064333614,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.513,
-                "measured_height": 0.006399999999999961,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.5162,
-                  0.5194
-                ],
-                "overhead_levels": [
-                  0.5167,
-                  0.5168,
-                  0.5171,
-                  0.5172
-                ]
-              },
-              "observed_at": "2026-10-14T03:05:00+00:00",
-              "evidence": {
-                "range_start": "2026-10-14T01:05:00+00:00",
-                "range_end": "2026-10-14T02:30:00+00:00",
-                "range_high": 0.513,
-                "range_low": 0.5066,
-                "retest_low": 0.5131,
-                "breakout_close": 0.5162,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "No positive recent momentum; a daily gain alone is insufficient.",
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
     }
   ],
   "changed_signals": [
-    "crypto:injective-protocol",
-    "crypto:celestia"
+    "stock:TSEM"
   ],
   "invalidated_signals": [
-    "stock:TSEM"
+    "crypto:injective-protocol",
+    "crypto:celestia"
   ],
   "health": {
     "stocks": {
@@ -1678,19 +1444,20 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7761,
-        "snapshot_records": 7761,
-        "pagination_complete": true,
+        "provider_total": 7748,
+        "snapshot_records": 3750,
+        "pagination_complete": false,
         "errors": [
-          "Nasdaq screener failed: ReadTimeout"
+          "Nasdaq screener failed: ReadTimeout",
+          "Quote page failed at offset 3750: Timeout"
         ],
         "source": "Yahoo paginated fallback"
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 162,
-        "matched_events": 11,
-        "matched_assets": 11,
+        "headlines_received": 168,
+        "matched_events": 12,
+        "matched_assets": 12,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -1711,23 +1478,23 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5896,
-      "discovered_candidates": 11,
+      "listed_snapshot_records": 2895,
+      "discovered_candidates": 12,
       "broker_excluded_candidates": 2,
-      "shortlisted_candidates": 9,
+      "shortlisted_candidates": 10,
       "shortlist_limit": 150,
       "deep_check_limit": 60,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 9,
-      "selected_candidates": 9,
+      "catalyst_selected": 10,
+      "selected_candidates": 10,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 54,
+      "unquoted_listings": 3055,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 9,
+      "history_not_requested": 10,
       "chart_failures": 0
     },
     "crypto": {
@@ -1775,18 +1542,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-14T03:08:45.361913+00:00",
+        "checked_at": "2026-10-14T03:41:41.302305+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-14T03:08:45.361913+00:00"
+        "checked_at": "2026-10-14T03:41:41.302305+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 22,
       "failed": 0
     }
   },
