@@ -10,8 +10,8 @@ from radar import MarketScanner, collect_stock_candidates, collect_crypto_candid
 
 
 def build_potential_signals(stocks, crypto):
-    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH', 'TECHNICAL WATCH'}
-            and item.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}]
+    return [item for item in stocks + crypto if item.get('qualification', {}).get('status') in {'ACTIONABLE NOW', 'WATCH FOR ENTRY', 'CATALYST WATCH', 'TECHNICAL WATCH', 'BEARISH WATCH'}
+            and item.get('short_broker_availability' if item.get('qualification', {}).get('direction') == 'SHORT' and item.get('asset_type') == 'stock' else 'broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'}]
 
 
 def expire_plans(items, now):
@@ -65,4 +65,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

@@ -54,10 +54,13 @@ def update_outcomes(previous, payload):
     for item in cohort.values():
         asset_key = key(item)
         event = item.get('catalyst', {}).get('id') or 'no-event'
+        direction = item.get('qualification', {}).get('direction', (item.get('qualification', {}).get('plan') or {}).get('direction', 'LONG'))
+        if direction == 'SHORT':
+            event += ':SHORT'
         record_key = hashlib.sha256((asset_key + ':' + event + ':' + now.date().isoformat()).encode()).hexdigest()[:24]
         if record_key not in records:
             records[record_key] = {'asset': asset_key, 'symbol': item.get('ticker', item.get('symbol')),
-                                  'event_id': event, 'first_seen': payload['generated_at'], 'last_seen': payload['generated_at'],
+                                  'event_id': event, 'direction': direction, 'first_seen': payload['generated_at'], 'last_seen': payload['generated_at'],
                                   'initial_status': item['qualification']['status'], 'last_status': item['qualification']['status'],
                                   'initial_plan': item['qualification'].get('plan'), 'observations': 0, 'missing_scans': 0,
                                   'status_changes': [], 'horizon_returns': {}, 'executed_trade': False}
@@ -66,7 +69,7 @@ def update_outcomes(previous, payload):
         if age > 26*3600:
             record['tracking_status'] = 'OBSERVATION_WINDOW_ENDED'
             continue
-        if record['asset'] in current:
+        if (record['asset'] in current and record.get('direction', 'LONG') == current[record['asset']].get('qualification', {}).get('direction', (current[record['asset']].get('qualification', {}).get('plan') or {}).get('direction', 'LONG'))):
             item = current[record['asset']]
             status = item['qualification']['status']
             if status == 'ACTIONABLE NOW' and item['qualification'].get('plan') and not record.get('first_actionable_at'):
@@ -143,4 +146,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

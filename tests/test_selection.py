@@ -47,13 +47,13 @@ class SelectionTests(unittest.TestCase):
         self.assertGreater(early, stock_candidate_priority(quote('FALL', -40))[1])
         self.assertGreater(stock_candidate_priority(quote('VOL', 2, averageDailyVolume3Month=250000))[1], early)
 
-    def test_adverse_news_and_unknown_broker_rank_below_supported_lead(self):
+    def test_adverse_catalyst_not_penalized_and_known_broker_preferred(self):
         rows = [quote(s) for s in ['ADVERSE', 'UNKNOWN', 'SUPPORTED']]
         news = {s: {'published_at': NOW.isoformat(), 'adverse': s == 'ADVERSE'} for s in ['ADVERSE', 'UNKNOWN', 'SUPPORTED']}
         def check(asset):
             return {'status': 'UNVERIFIED' if asset['ticker'] == 'UNKNOWN' else 'LISTED_API'}
         selected, _ = select_stock_candidates(rows, {q['symbol']: q['symbol'] for q in rows}, news, True, NOW, broker_check=check)
-        self.assertEqual([x['ticker'] for x in selected], ['SUPPORTED', 'UNKNOWN', 'ADVERSE'])
+        self.assertEqual([x['ticker'] for x in selected], ['ADVERSE', 'SUPPORTED', 'UNKNOWN'])
 
     def test_stale_news_and_stale_quotes_cannot_fill_shortlist(self):
         stale = quote('STALE'); stale['regularMarketTime'] = (NOW-timedelta(hours=1)).timestamp()
@@ -85,3 +85,4 @@ class SelectionTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

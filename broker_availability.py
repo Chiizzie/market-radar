@@ -108,13 +108,23 @@ class BrokerAvailability:
                                    'checked_at': self.now.isoformat(), 'error': type(exc).__name__,
                                    'api_credentials_configured': bool(os.environ.get('TRADING212_API_KEY') and os.environ.get('TRADING212_API_SECRET')),
                                    'http_status': getattr(getattr(exc, 'response', None), 'status_code', None)}
-        with ThreadPoolExecutor(max_workers=2) as pool:
+        with ThreadPoolExecutor(max_workers=3) as pool:
             futures = [pool.submit(fetch, 'stock', T212_URL, parse_t212),
-                       pool.submit(fetch, 'crypto', RH_URL, parse_robinhood)]
+                       pool.submit(fetch, 'crypto', RH_URL, parse_robinhood),
+                       pool.submit(fetch, 'cfd', T212_CFD_URL, parse_t212_cfd)]
             for future in futures:
                 key, rows, health = future.result()
                 self.catalogues[key], self.health[key] = rows, health
         return self
+
+    def check_discovery(self, asset):
+        invest = self.check(asset)
+        if asset['asset_type'] != 'stock' or invest['status'] not in {'NOT_LISTED', 'RESTRICTED'}:
+            return invest
+        cfd = self.check_short(asset)
+        if cfd['status'] not in {'NOT_LISTED', 'RESTRICTED'}:
+            return {**cfd, 'reason': 'Retained for bearish research; Invest availability checked separately.'}
+        return invest
 
     def check(self, asset):
         kind = asset['asset_type']
@@ -154,4 +164,51 @@ class BrokerAvailability:
                 return {**result, 'reason': 'Crypto symbol matches but name differs; identity needs verification.'}
         return {**result, 'status': 'LISTED_API' if result['source'] == T212_API_URL else 'LISTED_PUBLIC',
                 'reason': 'Asset identity matched the official broker instrument catalogue.'}
+
+
+
+    def check_short(self, asset):
+        import math
+        result = {'broker':'Trading 212 CFD' if asset['asset_type']=='stock' else 'Robinhood Europe crypto',
+                  'status':'UNVERIFIED', 'source':T212_CFD_URL, 'checked_at':self.now.isoformat(),
+                  'account_verified':False, 'capabilities':{'product':'CFD' if asset['asset_type']=='stock' else 'SPOT','short':False},
+                  'reason':'CFD short-opening permission is unverified; listing alone is insufficient.'}
+        if asset['asset_type'] != 'stock':
+            return {**result,'status':'UNSUPPORTED','source':RH_URL,'reason':'Configured Robinhood Europe spot account does not establish short capability.'}
+        rows=self.catalogues.get('cfd')
+        if rows is None:
+            return result
+        symbol=asset.get('ticker','').upper().replace('.','-')
+        matches=[r for r in rows if (r.get('shortName') or '').upper().replace('.','-')==symbol
+                 and r.get('type')=='STOCK' and r.get('currency')=='USD']
+        if not matches:
+            return {**result,'status':'NOT_LISTED','reason':'No matching USD stock CFD in the official catalogue.'}
+        matches=[r for r in matches if identity(asset.get('name','')) in {identity(r.get('fullName','')),identity(r.get('description',''))}]
+        if len(matches)!=1:
+            return {**result,'reason':'CFD symbol/company identity is ambiguous.'}
+        row=matches[0]
+        result.update(listing_status='LISTED_PUBLIC',broker_instrument_id=row.get('ticker'),isin=row.get('isin'),
+                      leverage=row.get('leverage'),overnight_interest_short=row.get('overnightInterestShort'),
+                      note='Underlying stock candles are research evidence; verify executable CFD quote, sell permission, size limits, margin and costs.')
+        if row.get('dealerExclusions') or row.get('isInActiveIpoState'):
+            return {**result,'reason':'Entity restrictions or active IPO require account-level review.'}
+        limit=row.get('maxOpenShort')
+        if isinstance(limit,bool) or not isinstance(limit,(int,float)) or not math.isfinite(limit):
+            return result
+        if limit<=0:
+            return {**result,'status':'RESTRICTED','reason':'Catalogue explicitly blocks new short positions.'}
+        return {**result,'status':'LISTED_PUBLIC','max_open_short':limit,
+                'capabilities':{'product':'CFD','short':True},'reason':'Official CFD identity and positive short-opening limit verified; live account review still required.'}
+
+
+T212_CFD_URL = 'https://www.trading212.com/trading-instruments/cfd'
+
+
+def parse_t212_cfd(html):
+    parser = CatalogueHTML(); parser.feed(html)
+    props = json.loads(parser.next_data)['props']['pageProps']
+    rows = props['instruments']
+    if props.get('tradingType') != 'cfd' or not isinstance(rows, list) or len(rows) < 1000:
+        raise ValueError('Incomplete or wrong account-type CFD catalogue')
+    return rows
 

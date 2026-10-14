@@ -27,10 +27,14 @@ def material_change(previous, current):
     for field in ['status']:
         if previous.get('broker_availability', {}).get(field) != current.get('broker_availability', {}).get(field):
             return True
+    if previous.get('short_broker_availability', {}) != current.get('short_broker_availability', {}):
+        fields = ['status','capabilities','broker_instrument_id','listing_status']
+        if any(previous.get('short_broker_availability', {}).get(f) != current.get('short_broker_availability', {}).get(f) for f in fields):
+            return True
     for field in ['event_time_status', 'event_at']:
         if previous.get('catalyst', {}).get(field) != current.get('catalyst', {}).get(field):
             return True
-    for field in ['route', 'pattern', 'blockers']:
+    for field in ['route', 'direction', 'pattern', 'blockers']:
         if previous.get('qualification', {}).get(field) != current['qualification'].get(field):
             return True
     old, new = previous.get('qualification', {}).get('plan') or {}, current['qualification'].get('plan') or {}
@@ -127,4 +131,5 @@ if __name__ == '__main__':
         Path('bridge_status.json').write_text(json.dumps(diagnostic) + '\n')
         print(json.dumps(diagnostic))
         raise SystemExit(1)
+
 

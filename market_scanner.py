@@ -89,7 +89,7 @@ class MarketScanner:
         brokers = getattr(self, 'brokers', None)
         selected, selection_health = select_stock_candidates(
             quotes, universe, catalysts, session == 'REGULAR', self.now,
-            broker_check=brokers.check if brokers else None, rotation_state=self.selection_state,
+            broker_check=getattr(brokers, 'check_discovery', brokers.check) if brokers else None, rotation_state=self.selection_state,
             limit=max(60, min(180, int(os.environ.get('RADAR_STOCK_CHART_LIMIT', '120')))))
         complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings'] and not news_health.get('primary_sources', {}).get('failures')
         self.health['stocks'] = {'session': session, 'status': 'OK' if complete else 'PARTIAL',
@@ -262,4 +262,5 @@ class MarketScanner:
                                      history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
                                      catalyst_discovery=news_health, universe='Top 250 by market cap; up to 30 broker-eligible candidates; every broker-eligible selected candidate gets an EUR candle attempt')
         return returned
+
 
