@@ -212,3 +212,15 @@ class TimestampSafetyTests(unittest.TestCase):
             with self.subTest(observed=observed):
                 a=pattern_asset();a['observed_at']=observed
                 self.assertIsNone(classify_setup(a,NEWS,NOW)['plan'])
+
+
+class TimestampResolutionTests(unittest.TestCase):
+    def test_swing_zones_are_independent_of_datetime_storage_unit(self):
+        from swing_zones import resistance_zones
+        f=pd.DataFrame({'Open':[99,100,104,101,100], 'High':[100,101,105,102,101],
+                        'Low':[99,100,104,101,100], 'Close':[99.5,100.5,104.5,101.5,100.5]},
+                       index=pd.date_range(end=NOW,periods=5,freq='5min'))
+        for unit in ['ns','us','ms','s']:
+            with self.subTest(unit=unit):
+                f.index=f.index.as_unit(unit)
+                self.assertEqual(len(resistance_zones(f,99)),1)

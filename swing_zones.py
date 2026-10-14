@@ -1,6 +1,5 @@
 """Causal resistance zones from confirmed, prominent swing highs."""
 import pandas as pd
-import numpy as np
 
 
 def resistance_zones(frame, entry, wing=2):
@@ -13,7 +12,7 @@ def resistance_zones(frame, entry, wing=2):
     highs=f.High.to_numpy(dtype=float);lows=f.Low.to_numpy(dtype=float)
     atrs=atr.to_numpy(dtype=float)
     times=f.index
-    gaps=np.diff(times.asi8) != 300_000_000_000 if isinstance(times,pd.DatetimeIndex) else None
+    gaps=(times[1:]-times[:-1]) != pd.Timedelta(minutes=5) if isinstance(times,pd.DatetimeIndex) else None
     pivots=[]
     for i in range(wing,len(f)-wing):
         left=highs[i-wing:i];right=highs[i+1:i+wing+1];high=float(highs[i])
@@ -36,3 +35,4 @@ def resistance_zones(frame, entry, wing=2):
              'confirmed_at':max(p['confirmed_at'] for p in z['pivots']),
              'pivot_times':[p['at'] for p in z['pivots']]}
             for z in zones if z['upper'] > entry*1.001]
+

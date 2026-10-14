@@ -54,7 +54,9 @@ Baseline: main `2ae3072`; existing unmerged PR #10 `3da3d3b`. Status below descr
 | Bearish tradability | PARTIAL / unavailable on configured products | `broker_availability.py`, `trade_filters.py`: explicit capability flags and fail-closed short requests. No unverified derivative adapter added. |
 | Risk, EUR, entry freshness, cutoff | COMPLETE | `risk_policy.py`, `trade_filters.py`, `run_radar.py`: €15 default, scoped approval above €15, absolute €20 ceiling, cost-aware R:R and size, explicit expiry, final stale-plan removal. Existing cutoff/no-execution rules preserved. Live task policy amendment remains pending approval. |
 | Historical outcomes and latency | COMPLETE (sampled research) | `outcome_tracker.py`, `performance.py`: rejected/deferred cohorts, first actionable plan, latency, sampled barriers and missed-move proxies. Realised trade performance / true false-positive rate remains MISSING without fill and ground-truth data. |
-| Regression and observability | COMPLETE locally; hosted CI pending | 110 passing tests, including 24 added tests; `tests/test_overhaul.py`, existing tests updated only for requested risk/lifecycle behavior. `git diff --check` clean. |
+| Regression and observability | COMPLETE locally; hosted CI pending | 111 passing tests, including 25 added tests; `tests/test_overhaul.py`, existing tests updated only for requested risk/lifecycle behavior. `git diff --check` clean. |
 | Deployment | PENDING USER APPROVAL | `DEPLOYMENT.md`: merge sequence, exact task amendment, smoke-test and rollback steps. |
 
 Validation does not include live order placement, a production scan from the review branch, live test messages, or assertions of profitable historical performance.
+
+Hosted CI initially exposed a pandas datetime-resolution incompatibility inherited from #10. `swing_zones.py` now compares timedeltas rather than assuming `.asi8` nanoseconds; a regression covers ns/us/ms/s storage.
