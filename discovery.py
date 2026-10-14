@@ -220,6 +220,13 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
         stamp = finite(q.get('regularMarketTime'))
         quote_usable = q.get('snapshot_time_unverified') or 0 <= now.timestamp() - stamp <= 900
         eligible, score = stock_candidate_priority(q)
+        prior = (rotation_state or {}).get('entries', {}).get('stock:' + symbol, {}).get('snapshot')
+        acceleration = None
+        if prior and stamp and 0 < stamp-prior.get('timestamp', stamp) <= 1800 and prior.get('price', 0) > 0:
+            acceleration = (finite(q.get('regularMarketPrice')) / prior['price'] - 1) * 100
+            if acceleration > 0:
+                eligible = eligible or finite(q.get('regularMarketPrice')) * finite(q.get('regularMarketVolume')) >= 5_000_000
+                score += min(acceleration * 3, 9)
         if not fresh_news and not (regular and quote_usable and eligible):
             continue
         broker = broker_check({'ticker': symbol, 'name': universe[symbol], 'asset_type': 'stock'}) if broker_check else {'status': 'UNVERIFIED'}
@@ -230,7 +237,8 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
                      'selection_evidence': {'fresh_publication': fresh_news, 'adverse': adverse,
                          'broker_status': broker['status'], 'snapshot_score': round(score, 3),
                          'relative_volume_available': finite(q.get('averageDailyVolume3Month') or q.get('averageDailyVolume10Day')) > 0,
-                         'acceleration_status': 'UNAVAILABLE_FROM_SINGLE_SNAPSHOT'}}
+                         'snapshot_change_pct': acceleration,
+                         'acceleration_status': 'OBSERVED_BETWEEN_SNAPSHOTS' if acceleration is not None else 'UNAVAILABLE_FROM_SINGLE_SNAPSHOT'}}
         if broker['status'] in {'NOT_LISTED', 'RESTRICTED'}:
             excluded.append(symbol)
             continue
@@ -243,11 +251,17 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
     reserved_symbols = {x['ticker'] for x in reserved}
     order = reserved + [row[1] for row in ranked if row[1]['ticker'] not in reserved_symbols]
     from scan_state import rotate_candidates
-    selected, rotation = rotate_candidates(order, rotation_state if rotation_state is not None else {'entries':{}}, now, 'stock', limit, min(20, limit//3) if regular else 0)
+    selected, rotation = rotate_candidates(order, rotation_state if rotation_state is not None else {'entries':{}}, now, 'stock', limit, min(60, limit//3) if regular else 0)
     # Rotating candidates outside the top-ranked shortlist replace its tail.
     selected_symbols = {x['ticker'] for x in selected}
     shortlist = (selected + [x for x in shortlist if x['ticker'] not in selected_symbols])[:max(limit,shortlist_limit)]
-    return selected, {'listed_snapshot_records': len(records), 'rotation': rotation,
+    if rotation_state is not None:
+        for _, candidate in ranked:
+            q = candidate['quote']; stamp = finite(q.get('regularMarketTime'))
+            if stamp and 0 <= now.timestamp()-stamp <= 900:
+                rotation_state['entries'].setdefault('stock:'+candidate['ticker'], {})['snapshot'] = {'timestamp': stamp, 'price': finite(q.get('regularMarketPrice'))}
+    return selected, {'candidate_manifest': [{'symbol': x['ticker'], 'state': 'SELECTED' if x['ticker'] in selected_symbols else 'DEFERRED', 'discovery_route': x['discovery_route'], 'rank': i+1, 'snapshot_price': finite(x['quote'].get('regularMarketPrice'), None), 'snapshot_at': finite(x['quote'].get('regularMarketTime'), None)} for i, (_, x) in enumerate(ranked)],
+                      'listed_snapshot_records': len(records), 'rotation': rotation,
                       'discovered_candidates': len(ranked) + len(excluded),
                       'broker_excluded_candidates': len(excluded),
                       'shortlisted_candidates': len(shortlist), 'shortlist_limit': max(limit, shortlist_limit),
@@ -256,5 +270,6 @@ def select_stock_candidates(quotes, universe, catalysts, regular, now, limit=60,
                       'selected_candidates': len(selected), 'deferred_candidates': max(0, len(ranked)-len(selected)),
                       'outside_shortlist': max(0, len(ranked)-len(shortlist)),
                       'selection_policy': 'fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties',
-                      'acceleration_status': 'Single snapshots cannot measure acceleration; completed charts validate momentum.',
+                      'acceleration_status': 'Timestamped snapshot changes used when available; completed charts validate momentum.',
                       'unquoted_listings': len(set(universe)-set(records))}
+

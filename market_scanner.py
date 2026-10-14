@@ -1,5 +1,8 @@
 """Fresh intraday stock data and EUR crypto snapshots with history-based levels."""
 import logging
+import os
+import time
+from reliability import retry_read
 from datetime import datetime, timezone, timedelta
 
 import pandas as pd
@@ -10,7 +13,7 @@ from chart_analysis import analyse_chart
 from swing_zones import resistance_zones
 
 logger = logging.getLogger(__name__)
-MAX_CANDIDATES = 12
+MAX_CANDIDATES = 30
 
 
 def stock_session(now=None):
@@ -62,6 +65,7 @@ class MarketScanner:
         self.tracking_prices = []
         self.chart_samples = []
         self.selection_state = {'entries': {}}
+        self.deep_deadline = time.monotonic() + 360
 
     def record_chart(self, item, frame):
         self.chart_samples.append({'symbol':item.get('ticker',item.get('symbol')), 'asset_type':item['asset_type'],
@@ -85,7 +89,8 @@ class MarketScanner:
         brokers = getattr(self, 'brokers', None)
         selected, selection_health = select_stock_candidates(
             quotes, universe, catalysts, session == 'REGULAR', self.now,
-            broker_check=brokers.check if brokers else None, rotation_state=self.selection_state)
+            broker_check=brokers.check if brokers else None, rotation_state=self.selection_state,
+            limit=max(60, min(180, int(os.environ.get('RADAR_STOCK_CHART_LIMIT', '120')))))
         complete = not directory_errors and quote_health['pagination_complete'] and not quote_health['errors'] and not news_health['failed_queries'] and not selection_health['unquoted_listings'] and not news_health.get('primary_sources', {}).get('failures')
         self.health['stocks'] = {'session': session, 'status': 'OK' if complete else 'PARTIAL',
                                  'universe': 'US exchange-listed common/ordinary shares and ADRs; excludes ETFs, OTC and non-US listings',
@@ -122,8 +127,12 @@ class MarketScanner:
                     return item
             if session != 'REGULAR':
                 return item
+            if time.monotonic() >= self.deep_deadline:
+                item['data_issue'] = 'Deep-check time budget exhausted; deferred, not rejected.'
+                return item
             try:
-                history = yf.Ticker(symbol).history(period='5d', interval='5m', prepost=False, auto_adjust=True)
+                history, attempts = retry_read(lambda: yf.Ticker(symbol).history(period='5d', interval='5m', prepost=False, auto_adjust=True, timeout=12), valid=lambda f: not f.empty)
+                item['history_attempts'] = attempts
                 if history.empty:
                     raise ValueError('empty history')
                 history = history.loc[history.index + pd.Timedelta(minutes=5) <= self.now].dropna()
@@ -150,13 +159,20 @@ class MarketScanner:
             except Exception as exc:
                 item.update(history_status='FAILED', data_issue='Stock chart failed: ' + type(exc).__name__)
             return item
-        with ThreadPoolExecutor(max_workers=3) as pool:
+        with ThreadPoolExecutor(max_workers=4) as pool:
             candidates = list(pool.map(analyse, selected))
         self.health['stocks']['history_requested'] = sum(x['history_status'] != 'NOT_REQUESTED' for x in candidates)
         self.health['stocks']['history_received'] = sum(x['history_status'] == 'OK' for x in candidates)
         self.health['stocks']['history_not_requested'] = sum(x['history_status'] == 'NOT_REQUESTED' for x in candidates)
         self.health['stocks']['chart_failures'] = sum(x['history_status'] in {'FAILED', 'STALE'} for x in candidates)
-        if self.health['stocks']['chart_failures'] or selection_health['deferred_candidates']:
+        self.health['stocks']['budget_deferred'] = sum(x.get('data_issue', '').startswith('Deep-check time') for x in candidates)
+        skipped = {x['ticker'] for x in candidates if x.get('history_status') == 'NOT_REQUESTED'}
+        for row in self.health['stocks']['candidate_manifest']:
+            if row['symbol'] in skipped:
+                row['state'] = 'DEFERRED'
+        self.health['stocks']['coverage_pct'] = round(100*self.health['stocks']['history_received']/max(1, selection_health['discovered_candidates']-selection_health['broker_excluded_candidates']), 2)
+        self.health['stocks']['deferred_candidates'] += self.health['stocks']['budget_deferred']
+        if self.health['stocks']['chart_failures'] or self.health['stocks']['deferred_candidates']:
             self.health['stocks']['status'] = 'PARTIAL'
         return candidates
 
@@ -191,7 +207,7 @@ class MarketScanner:
                 hour_change = finite(coin.get('price_change_percentage_1h_in_currency'))
                 catalyst = news_hits.get(coin['symbol'].upper())
                 acceleration = hour_change - change / 24
-                if not catalyst and not (hour_change >= .3 and acceleration >= .15):
+                if not catalyst and not (abs(hour_change) >= .2 and abs(acceleration) >= .1):
                     continue
                 price = float(coin['current_price'])
                 item = {'symbol': coin['symbol'].upper(), 'name': coin['name'], 'coin_id': coin['id'],
@@ -211,7 +227,7 @@ class MarketScanner:
         movers.sort(key=lambda x: (x.get('broker_availability', {}).get('status') in {'LISTED_PUBLIC', 'LISTED_API'}, bool(x.get('catalyst')), x['acceleration'], x['volume']), reverse=True)
         from scan_state import rotate_candidates
         eligible = [x for x in movers if x.get('broker_availability', {}).get('status') not in {'NOT_LISTED', 'RESTRICTED'} and x['symbol'] not in duplicates]
-        returned, rotation = rotate_candidates(eligible, self.selection_state, self.now, 'crypto', MAX_CANDIDATES, 4)
+        returned, rotation = rotate_candidates(eligible, self.selection_state, self.now, 'crypto', MAX_CANDIDATES, 10)
         chart_candidates = returned
         self.health['crypto'].update(rotation=rotation, discovered_candidates=len(movers),
             broker_or_identity_excluded=len(movers)-len(eligible), deferred_candidates=max(0,len(eligible)-len(returned)))
@@ -237,12 +253,13 @@ class MarketScanner:
                 history_successes += 1
             except Exception as exc:
                 chart_failures += 1
-                item.update(history_status='FAILED', data_issue='Candle retrieval failed: ' + str(exc))
+                item.update(history_status='FAILED', data_issue='Candle retrieval failed: ' + (str(exc) if isinstance(exc, ValueError) else type(exc).__name__))
         self.health['crypto']['candle_providers'] = {'pairs': {k: len(v) for k,v in provider.pairs.items()}, 'errors': provider.errors} if provider else {}
         not_requested = sum(x['history_status'] == 'NOT_REQUESTED' for x in returned)
         stale = sum(x['history_status'] == 'STALE' for x in returned)
         self.health['crypto'].update(status=('DATA_UNAVAILABLE' if not data else 'PARTIAL' if chart_failures or not_requested or stale else 'OK'),
                                      screened_assets=len(data), price_records=len(returned), history_requested=len(chart_candidates),
                                      history_received=history_successes, chart_failures=chart_failures, history_stale=stale, history_not_requested=not_requested,
-                                     catalyst_discovery=news_health, universe='Top 250 by market cap; up to 12 candidates; every broker-eligible selected candidate gets an EUR candle attempt')
+                                     catalyst_discovery=news_health, universe='Top 250 by market cap; up to 30 broker-eligible candidates; every broker-eligible selected candidate gets an EUR candle attempt')
         return returned
+

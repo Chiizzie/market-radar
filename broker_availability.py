@@ -122,7 +122,7 @@ class BrokerAvailability:
         result = {'broker': 'Trading 212 Invest' if kind == 'stock' else 'Robinhood Europe crypto',
                   'status': 'UNVERIFIED', 'checked_at': self.now.isoformat(),
                   'source': T212_URL if kind == 'stock' else RH_URL,
-                  'account_verified': False,
+                  'account_verified': False, 'capabilities': {'long': True, 'short': False, 'product': 'INVEST' if kind == 'stock' else 'SPOT'},
                   'note': 'Public listing only; verify Irish account access, buy restrictions and live spread before entry.'}
         if rows is None:
             result['reason'] = 'Broker catalogue unavailable; availability is unknown.'
@@ -154,3 +154,4 @@ class BrokerAvailability:
                 return {**result, 'reason': 'Crypto symbol matches but name differs; identity needs verification.'}
         return {**result, 'status': 'LISTED_API' if result['source'] == T212_API_URL else 'LISTED_PUBLIC',
                 'reason': 'Asset identity matched the official broker instrument catalogue.'}
+
