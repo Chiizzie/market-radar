@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-14T05:45:32.969034+00:00",
+  "generated_at": "2026-10-14T06:11:46.429914+00:00",
   "potential_signals": [
     {
       "ticker": "TSEM",
@@ -1167,231 +1167,6 @@
       }
     },
     {
-      "symbol": "ALGO",
-      "name": "Algorand",
-      "coin_id": "algorand",
-      "asset_type": "crypto",
-      "price": 0.10958,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 0.46424,
-      "change_1h": 0.7831,
-      "acceleration": 0.7637566666666666,
-      "discovery_route": "recent_momentum",
-      "change_7d": 1.2097,
-      "volume": 51171563.0,
-      "dollar_volume": 51171563.0,
-      "market_cap": 989615841,
-      "session": "24/7",
-      "observed_at": "2026-10-14T05:40:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-14T05:44:42.728337+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 719,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.1092,
-      "support": 0.10785,
-      "momentum_pct": 0.9860842318680341,
-      "reference_price": 0.10867484648824952,
-      "extension_pct": 0.8329006582478593,
-      "resistance_1": 0.10976,
-      "resistance_2": 0.11011,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "entry": 0.1092,
-            "support": 0.10871,
-            "resistance_1": 0.10924,
-            "resistance_2": 0.10959,
-            "momentum_pct": 0.9860842318680341,
-            "extension_pct": 0.8329006582478593,
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "target_basis": {
-              "origin": 0.10871,
-              "measured_height": 0.0010599999999999915,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.10924,
-                0.10976999999999999
-              ],
-              "overhead_levels": [
-                0.10936,
-                0.10942,
-                0.10947,
-                0.10952
-              ]
-            },
-            "observed_at": "2026-10-14T05:40:00+00:00",
-            "evidence": {
-              "impulse_high": 0.10872,
-              "impulse_low": 0.10766,
-              "pullback_low": 0.10871,
-              "ema9": 0.1086421525676829,
-              "ema21": 0.1080975292170147,
-              "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 4.175021127022369,
-        "observed_at": "2026-10-14T05:40:00+00:00"
-      },
-      "structure_observed_at": "2026-10-14T05:40:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "ALGOEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 6
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "TECHNICAL WATCH",
-        "reasons": [
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "pattern": "TREND_PULLBACK_RECLAIM",
-        "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-        "pattern_evidence": {
-          "pattern": "TREND_PULLBACK_RECLAIM",
-          "entry": 0.1092,
-          "support": 0.10871,
-          "resistance_1": 0.10924,
-          "resistance_2": 0.10959,
-          "momentum_pct": 0.9860842318680341,
-          "extension_pct": 0.8329006582478593,
-          "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-          "target_basis": {
-            "origin": 0.10871,
-            "measured_height": 0.0010599999999999915,
-            "fractions": [
-              0.5,
-              1.0
-            ],
-            "uncapped_targets": [
-              0.10924,
-              0.10976999999999999
-            ],
-            "overhead_levels": [
-              0.10936,
-              0.10942,
-              0.10947,
-              0.10952
-            ]
-          },
-          "observed_at": "2026-10-14T05:40:00+00:00",
-          "evidence": {
-            "impulse_high": 0.10872,
-            "impulse_low": 0.10766,
-            "pullback_low": 0.10871,
-            "ema9": 0.1086421525676829,
-            "ema21": 0.1080975292170147,
-            "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Stop width or achievable reward/risk fails the entry filter."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "TECHNICAL WATCH",
-            "reasons": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "pattern": "TREND_PULLBACK_RECLAIM",
-            "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "TREND_PULLBACK_RECLAIM",
-              "entry": 0.1092,
-              "support": 0.10871,
-              "resistance_1": 0.10924,
-              "resistance_2": 0.10959,
-              "momentum_pct": 0.9860842318680341,
-              "extension_pct": 0.8329006582478593,
-              "target_method": "Measured range projections capped at observed overhead highs; not confirmed resistance",
-              "target_basis": {
-                "origin": 0.10871,
-                "measured_height": 0.0010599999999999915,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.10924,
-                  0.10976999999999999
-                ],
-                "overhead_levels": [
-                  0.10936,
-                  0.10942,
-                  0.10947,
-                  0.10952
-                ]
-              },
-              "observed_at": "2026-10-14T05:40:00+00:00",
-              "evidence": {
-                "impulse_high": 0.10872,
-                "impulse_low": 0.10766,
-                "pullback_low": 0.10871,
-                "ema9": 0.1086421525676829,
-                "ema21": 0.1080975292170147,
-                "confirmation": "Rising EMA trend, shallow pullback, close above pullback trigger"
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Stop width or achievable reward/risk fails the entry filter."
-            ]
-          }
-        ]
-      }
-    },
-    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
@@ -1520,279 +1295,14 @@
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "STRK",
-      "name": "Starknet",
-      "coin_id": "starknet",
-      "asset_type": "crypto",
-      "price": 0.075,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -6.02648,
-      "change_1h": 2.1972,
-      "acceleration": 2.4483033333333335,
-      "discovery_route": "recent_momentum",
-      "change_7d": 66.3568,
-      "volume": 151421175.0,
-      "dollar_volume": 151421175.0,
-      "market_cap": 550696320,
-      "session": "24/7",
-      "observed_at": "2026-10-14T05:10:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-14T05:13:52.430725+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.07629,
-      "support": 0.07434,
-      "momentum_pct": -1.1987880384666139,
-      "reference_price": 0.07557178979787897,
-      "extension_pct": -0.7566180441250125,
-      "resistance_1": 0.07637,
-      "resistance_2": 0.0766,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 1.3930106007334102,
-        "observed_at": "2026-10-14T05:10:00+00:00"
-      },
-      "structure_observed_at": "2026-10-14T05:10:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "STRKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "STRK Falls Double Digits Ahead of 127M Token Unlock on October 15 - Altcoin Buzz",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR3pRRHNrUGtxMWdkaW1FYzhyN2pvUXotLXd3eEV1eFpMLS15VkZKLXNZNXg5RnBjbGpZRmhZSm9kWGtxcGhnb1AtT2ZvMjFBWkZKR3Q0VFdpcDFKZHVjZ1ZUU3ozY19vRS1nXzVyU25JbDh4bWREMS1kd29ucnZfZklXZ3FadTBCQzNyLTNyR2VQWUk?oc=5",
-        "source": "Altcoin Buzz",
-        "published_at": "2026-10-13T12:22:38+00:00",
-        "id": "6105e05724d18dc57e95",
-        "type": "crypto_event",
-        "age_hours": 16.87,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "STRK Falls Double Digits Ahead of 127M Token Unlock on October 15 - Altcoin Buzz",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "STRK Falls Double Digits Ahead of 127M Token Unlock on October 15 - Altcoin Buzz",
-            "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR3pRRHNrUGtxMWdkaW1FYzhyN2pvUXotLXd3eEV1eFpMLS15VkZKLXNZNXg5RnBjbGpZRmhZSm9kWGtxcGhnb1AtT2ZvMjFBWkZKR3Q0VFdpcDFKZHVjZ1ZUU3ozY19vRS1nXzVyU25JbDh4bWREMS1kd29ucnZfZklXZ3FadTBCQzNyLTNyR2VQWUk?oc=5",
-            "source": "Altcoin Buzz",
-            "published_at": "2026-10-13T12:22:38+00:00",
-            "id": "6105e05724d18dc57e95",
-            "type": "crypto_event",
-            "age_hours": 16.87,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 10
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Matched headline contains an adverse event; no bullish catalyst credit.",
-          "No positive recent momentum; a daily gain alone is insufficient."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Matched headline contains an adverse event; no bullish catalyst credit.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "INJ",
-      "name": "Injective",
-      "coin_id": "injective-protocol",
-      "asset_type": "crypto",
-      "price": 7.356,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 4.80104,
-      "change_1h": 0.9545,
-      "acceleration": 0.7544566666666667,
-      "discovery_route": "recent_momentum",
-      "change_7d": 10.3243,
-      "volume": 162908353.0,
-      "dollar_volume": 162908353.0,
-      "market_cap": 735342716,
-      "session": "24/7",
-      "observed_at": "2026-10-14T05:10:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-14T05:13:52.430725+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "history_samples": 720,
-      "structure_status": "INCOMPLETE",
-      "structure_issues": [
-        "No second distinct historical resistance target in the lookback."
-      ],
-      "entry": 7.477,
-      "support": 7.333,
-      "momentum_pct": -0.3926878808395373,
-      "reference_price": 7.4249949276962885,
-      "extension_pct": -0.9292252502278164,
-      "resistance_1": 7.54,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.4392559040030478,
-        "observed_at": "2026-10-14T05:10:00+00:00"
-      },
-      "structure_observed_at": "2026-10-14T05:10:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "INJEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "catalyst": {
-        "title": "Raydium launches INJ token staking on Solana platform - Crypto Briefing",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObE5hVXIwNVJfYS1zaUpRRGJyT05jOUNkRWI1UVVrZEMzREptYjA4U0VWQmdtdmJRRGE0TGUtWkctYkZTU1ZRSE1qSTJHQXh1cWlnYkNhYWQyWjZLVG5fRS1CYkRsTzRTM2NaRFNuNDRpenpBWHJXR0xObF9tTElURGY3VnBJaTBF?oc=5",
-        "source": "Crypto Briefing",
-        "published_at": "2026-10-13T14:18:04+00:00",
-        "id": "31d80c5fcd62e5156acc",
-        "type": "product_launch",
-        "age_hours": 14.94,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Raydium launches INJ token staking on Solana platform - Crypto Briefing",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Raydium launches INJ token staking on Solana platform - Crypto Briefing",
-            "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObE5hVXIwNVJfYS1zaUpRRGJyT05jOUNkRWI1UVVrZEMzREptYjA4U0VWQmdtdmJRRGE0TGUtWkctYkZTU1ZRSE1qSTJHQXh1cWlnYkNhYWQyWjZLVG5fRS1CYkRsTzRTM2NaRFNuNDRpenpBWHJXR0xObF9tTElURGY3VnBJaTBF?oc=5",
-            "source": "Crypto Briefing",
-            "published_at": "2026-10-13T14:18:04+00:00",
-            "id": "31d80c5fcd62e5156acc",
-            "type": "product_launch",
-            "age_hours": 14.94,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 8
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No second distinct historical resistance target in the lookback."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "resistance_2"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No second distinct historical resistance target in the lookback."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "resistance_2"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
     }
   ],
-  "changed_signals": [
-    "crypto:algorand"
+  "changed_signals": [],
+  "invalidated_signals": [
+    "crypto:algorand",
+    "crypto:starknet",
+    "crypto:injective-protocol"
   ],
-  "invalidated_signals": [],
   "health": {
     "stocks": {
       "session": "CLOSED",
@@ -1801,8 +1311,8 @@
       "listed_assets": 5950,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7749,
-        "snapshot_records": 7749,
+        "provider_total": 7748,
+        "snapshot_records": 7748,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -1834,7 +1344,7 @@
         },
         "scope": "Broad news search plus direct announcement feeds; not an exhaustive newswire"
       },
-      "listed_snapshot_records": 5897,
+      "listed_snapshot_records": 5896,
       "discovered_candidates": 11,
       "broker_excluded_candidates": 2,
       "shortlisted_candidates": 9,
@@ -1847,7 +1357,7 @@
       "outside_shortlist": 0,
       "selection_policy": "fresh non-adverse catalyst, broker listing, volume/liquidity, early move; extension/adverse penalties",
       "acceleration_status": "Single snapshots cannot measure acceleration; completed charts validate momentum.",
-      "unquoted_listings": 53,
+      "unquoted_listings": 54,
       "history_requested": 0,
       "history_received": 0,
       "history_not_requested": 9,
@@ -1863,15 +1373,15 @@
       },
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 12,
-      "history_requested": 12,
-      "history_received": 10,
-      "chart_failures": 2,
+      "price_records": 8,
+      "history_requested": 3,
+      "history_received": 3,
+      "chart_failures": 0,
       "history_stale": 0,
-      "history_not_requested": 0,
+      "history_not_requested": 5,
       "catalyst_discovery": {
         "queries": 2,
-        "headlines_received": 170,
+        "headlines_received": 166,
         "matched_events": 2,
         "matched_assets": 1,
         "failed_queries": 0,
@@ -1898,18 +1408,18 @@
         "status": "OK",
         "records": 17044,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-14T05:44:42.728337+00:00",
+        "checked_at": "2026-10-14T06:11:07.095735+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 100,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-14T05:44:42.728337+00:00"
+        "checked_at": "2026-10-14T06:11:07.095735+00:00"
       }
     },
     "news": {
-      "checked": 21,
+      "checked": 17,
       "failed": 0
     }
   },
