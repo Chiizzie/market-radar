@@ -96,6 +96,16 @@ class ShortPlans(unittest.TestCase):
         self.assertEqual(q['status'],'BEARISH WATCH');self.assertIsNone(q['plan'])
         a['qualification']=q;self.assertEqual(build_potential_signals([a],[]),[a])
 
+    def test_broker_excluded_bearish_research_still_reaches_feed(self):
+        for status in ['NOT_LISTED', 'RESTRICTED', 'UNVERIFIED']:
+            a=short_asset(False);a['short_broker_availability']['status']=status
+            a['qualification']=classify_setup(a,NEWS,NOW)
+            self.assertEqual(a['qualification']['status'],'BEARISH WATCH')
+            self.assertIsNone(a['qualification']['plan'])
+            self.assertEqual(build_potential_signals([a],[]),[a])
+        b=BrokerAvailability(NOW);b.catalogues={'stock':[],'cfd':[]}
+        self.assertEqual(b.check_discovery(short_asset())['status'],'UNVERIFIED')
+
     def test_invest_or_crypto_cannot_authorize_short(self):
         for changes in [{'asset_type':'crypto'}, {'short_broker_availability':{'status':'LISTED_API','capabilities':{'short':True,'product':'INVEST'}}}]:
             a=short_asset();a.update(changes);self.assertIsNone(classify_setup(a,NEWS,NOW)['plan'])
