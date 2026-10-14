@@ -124,7 +124,8 @@ class BrokerAvailability:
         cfd = self.check_short(asset)
         if cfd['status'] not in {'NOT_LISTED', 'RESTRICTED'}:
             return {**cfd, 'reason': 'Retained for bearish research; Invest availability checked separately.'}
-        return invest
+        return {**cfd, 'status': 'UNVERIFIED', 'execution_status': cfd['status'],
+                'reason': 'Retained for directional bearish research despite broker exclusion; no execution permission implied.'}
 
     def check(self, asset):
         kind = asset['asset_type']
