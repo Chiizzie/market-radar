@@ -30,7 +30,8 @@ def telegram(message):
 
 
 def enrich(items, brokers=None):
-    for item in items:
+    from concurrent.futures import ThreadPoolExecutor
+    def assess(item):
         catalyst = item.get('catalyst') or find_catalyst_for_asset(item.get('ticker', item.get('symbol')), item['asset_type'], item['name'])
         item['broker_availability'] = brokers.check(item) if brokers else {'status': 'UNVERIFIED', 'reason': 'Broker catalogue not loaded.'}
         item['catalyst'] = catalyst
@@ -41,7 +42,10 @@ def enrich(items, brokers=None):
             item['qualification'] = {**q, 'status': 'CATALYST WATCH', 'trade_assessment_status': q['status'],
                                      'research_only': True, 'plan': None,
                                      'reasons': ['News lead for research; event timing and entry require verification.'] + q['reasons']}
-    return sorted(items, key=lambda x: x['score']['score'], reverse=True)
+        return item
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        results = list(pool.map(assess, items))
+    return sorted(results, key=lambda x: x['score']['score'], reverse=True)
 
 
 def collect_stock_candidates(scanner):
@@ -77,11 +81,18 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
         p = item['qualification'].get('plan')
         if p:
             lines.append(f"{item.get('ticker', item.get('symbol'))}: EUR entry {p['entry']:.4f} | SL {p['stop_loss']:.4f} | TP1 {p['tp1']:.4f} | TP2 {p['tp2']:.4f}")
+            lines.append(f"R:R {p['rr1']}/{p['rr2']} | size €{p['position_eur']:.2f} ({p['units']:.5g} units) | planned loss €{p['planned_loss_eur']:.2f} | expires {irish_time(p.get('expires_at'))}")
     if any(x['qualification'].get('route') == 'CHART_LED' for x in actions + watches):
         lines.append('Chart-led targets are measured-move projections capped at observed highs; not guaranteed resistance.')
     if actions:
         lines.append('Check live broker price, spread and source before acting.')
     if health:
+        cadence = health.get('cadence', {})
+        if cadence.get('actual_gap_minutes') is not None:
+            lines.append(f"Scan gap: {cadence['actual_gap_minutes']} min | {cadence['status']} (target 15 min).")
+        state = health.get('rotation_state', {})
+        if state.get('status') == 'UNAVAILABLE' or state.get('persistence') == 'FAILED':
+            lines.append('Rotation persistence unavailable; repeat coverage may be degraded.')
         h = health['crypto']
         stock = health['stocks']
         lines.append('Stocks: ' + stock.get('status', 'UNKNOWN') + ' | session ' + stock.get('session', 'UNKNOWN') + ' | Crypto data: ' + h.get('status', 'UNKNOWN'))
@@ -89,6 +100,9 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
             lines.append(f"US listed universe: {stock['listed_assets']}; quote coverage: {stock.get('listed_snapshot_records', 0)}; news leads: {stock.get('catalyst_discovery', {}).get('matched_assets', 0)}; shortlisted: {stock.get('shortlisted_candidates', stock.get('selected_candidates', 0))}; selected: {stock.get('selected_candidates', 0)}; deferred: {stock.get('deferred_candidates', 0)}; broker-excluded: {stock.get('broker_excluded_candidates', 0)}.")
         if 'listed_assets' in stock:
             lines.append(f"Stock charts: {stock.get('history_received', 0)}/{stock.get('history_requested', 0)} received; {stock.get('history_not_requested', 0)} not requested. Deferred candidates have not had a deep check.")
+        if stock.get('rotation'):
+            r = stock['rotation']
+            lines.append(f"Stock rotation: {r['rotation_slots_used']} slots; oldest deferred {r['oldest_deferred_minutes']} min.")
         lines.append(f"Crypto: {h.get('price_records', len(crypto))} price records; charts {h.get('history_received', 0)}/{h.get('history_requested', 0)} received, "
                      f"{h.get('chart_failures', 0)} failed, {h.get('history_not_requested', 0)} not requested.")
     counts = Counter(x['qualification']['status'] for x in stocks + crypto)
@@ -141,3 +155,4 @@ def build_market_snapshot(stocks, crypto, health=None, now=None):
     if os.environ.get('GITHUB_RUN_ID'):
         lines.append('https://github.com/' + os.environ.get('GITHUB_REPOSITORY', 'Chiizzie/market-radar') + '/actions/runs/' + os.environ['GITHUB_RUN_ID'])
     return '\n'.join(lines)
+

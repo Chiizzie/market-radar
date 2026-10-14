@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import feedparser
 import requests
+from reliability import http_get
 
 STOCK_FEEDS = [
     ('PR Newswire issuer releases', 'https://www.prnewswire.com/rss/general-business-latest-news/general-business-latest-news-list.rss'),
@@ -41,7 +42,7 @@ def fetch_primary(asset_type):
     def fetch(pair):
         source, url = pair
         try:
-            r = requests.get(url, headers={'User-Agent': 'MarketRadar research contact https://github.com/Chiizzie/market-radar'}, timeout=(5, 12))
+            r = http_get(url, headers={'User-Agent': 'MarketRadar research contact https://github.com/Chiizzie/market-radar'}, timeout=(5, 12))
             r.raise_for_status()
             return parse_feed(r.content, source, url), None
         except Exception as exc:
@@ -54,3 +55,4 @@ def fetch_primary(asset_type):
     return articles, {'feeds_requested': len(feeds), 'feeds_received': len(feeds)-len(failures),
                       'headlines_received': len(articles), 'failures': failures,
                       'scope': 'Bounded issuer-distribution, regulatory and selected project feeds; not every issuer/project.'}
+

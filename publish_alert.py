@@ -46,26 +46,36 @@ def material_change(previous, current):
         return False
     if bool(old) != bool(new):
         return True
+    stop_risk = abs(old.get('entry', old.get('entry_trigger', 0)) - old.get('stop_loss', 0))
     for field in ['entry_trigger', 'stop_loss', 'tp1', 'tp2']:
         if old.get(field) is None or new.get(field) is None:
             return True
-        if old[field] <= 0 or abs(new[field] / old[field] - 1) >= .01:
+        if old[field] <= 0 or abs(new[field] / old[field] - 1) >= .01 or (stop_risk > 0 and abs(new[field]-old[field]) >= stop_risk*.25):
             return True
-    return abs(current['price'] / previous['price'] - 1) >= .01
+    for field in ['risk_budget_eur', 'planned_loss_eur', 'units']:
+        a, b = old.get(field), new.get(field)
+        if a is not None and b is not None and abs(b-a) > max(abs(a)*.1, .01):
+            return True
+    a, b = previous.get('price'), current.get('price')
+    return bool(a and b and abs(b/a-1) >= .01)
 
 
 def prepare_alert(payload, previous):
     signals = payload.get('potential_signals', [])
-    old = {signal_key(x): x for x in previous.get('potential_signals', [])}
+    old = {signal_key(x): x for x in previous.get('comparison_signals', previous.get('potential_signals', []))}
     current = {signal_key(x): x for x in signals}
     changes = [x for key, x in current.items() if material_change(old.get(key), x)]
-    removed = [key for key in old if key not in current]
-    if not changes and not removed:
+    absent = [key for key in old if key not in current]
+    assessed = {signal_key(x): x for x in payload.get('stocks', []) + payload.get('crypto', [])}
+    removed = [k for k in absent if k in assessed and assessed[k].get('history_status') == 'OK'
+               and assessed[k].get('qualification', {}).get('status') in {'REJECTED', 'EXTENDED—DO NOT CHASE', 'BROKER_UNAVAILABLE'}]
+    unavailable = [k for k in absent if k not in removed]
+    if not changes and not removed and not unavailable:
         return None
     # Keep unchanged items at their last published levels for comparison against cumulative changes.
     published = [item if material_change(old.get(key), item) else old[key] for key, item in current.items()]
     return {'schema_version': 2, 'kind': 'scan_update', 'generated_at': payload['generated_at'],
-            'potential_signals': published, 'changed_signals': [signal_key(x) for x in changes],
+            'potential_signals': signals, 'comparison_signals': published, 'unavailable_signals': unavailable, 'changed_signals': [signal_key(x) for x in changes],
             'invalidated_signals': removed, 'health': payload.get('health'),
             'notice': payload.get('notice'), 'delivery_status': 'GitHub publication only; not a ChatGPT delivery receipt.'}
 
@@ -85,11 +95,22 @@ def main():
     if alert:
         run(['git', 'config', 'user.name', 'github-actions[bot]'])
         run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'])
-        run(['git', 'checkout', '--force', '-B', ALERT_BRANCH, f'origin/{ALERT_BRANCH}'])
-        Path('radar_alert.json').write_text(json.dumps(alert, indent=2, allow_nan=False) + '\n')
-        run(['git', 'add', 'radar_alert.json'])
-        run(['git', 'commit', '-m', 'Publish material radar setup change'])
-        run(['git', 'push', 'origin', ALERT_BRANCH])
+        from outcome_tracker import git
+        parent = git(['rev-parse', f'origin/{ALERT_BRANCH}']).stdout.strip()
+        content = json.dumps(alert, indent=2, allow_nan=False) + '\n'
+        blob = git(['hash-object', '-w', '--stdin'], input=content).stdout.strip()
+        index = str(Path('.radar-alert-index').resolve())
+        environment = {**os.environ, 'GIT_INDEX_FILE': index}
+        def indexed(args):
+            return subprocess.run(['git']+args, env=environment, check=True, text=True, capture_output=True)
+        try:
+            indexed(['read-tree', parent])
+            indexed(['update-index', '--add', '--cacheinfo', '100644', blob, 'radar_alert.json'])
+            tree = indexed(['write-tree']).stdout.strip()
+            commit = git(['commit-tree', tree, '-p', parent, '-m', 'Publish material radar setup change'], input='').stdout.strip()
+            git(['push', 'origin', commit+':refs/heads/'+ALERT_BRANCH])
+        finally:
+            Path(index).unlink(missing_ok=True)
         diagnostic['status'] = 'GITHUB_PUBLISHED'
     Path('bridge_status.json').write_text(json.dumps(diagnostic, indent=2) + '\n')
     print(json.dumps(diagnostic))
@@ -99,4 +120,11 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as exc:
+        diagnostic = {'status': 'FAILED', 'error_type': type(exc).__name__, 'chatgpt_delivery': 'NOT_CONFIRMED'}
+        Path('bridge_status.json').write_text(json.dumps(diagnostic) + '\n')
+        print(json.dumps(diagnostic))
+        raise SystemExit(1)
+
