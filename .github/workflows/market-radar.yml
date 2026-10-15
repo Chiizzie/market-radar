@@ -1,9 +1,6 @@
 name: Market Radar
 
 on:
-  schedule:
-    # UTC envelope covers both Irish winter and summer time; window enforces local hours.
-    - cron: '7,22,37,52 7-22 * * *'
   workflow_dispatch:
   push:
     branches: [main]
