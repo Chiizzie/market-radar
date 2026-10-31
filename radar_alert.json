@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-10-31T21:33:59.328903+00:00",
+  "generated_at": "2026-10-31T21:48:17.474799+00:00",
   "potential_signals": [
     {
       "ticker": "PNFP",
@@ -36,7 +36,7 @@
         "published_at": "2026-10-31T18:35:18+00:00",
         "id": "3ea70e1055a96cf80ab5",
         "type": "earnings",
-        "age_hours": 2.96,
+        "age_hours": 3.2,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -55,7 +55,7 @@
             "published_at": "2026-10-31T18:35:18+00:00",
             "id": "3ea70e1055a96cf80ab5",
             "type": "earnings",
-            "age_hours": 2.96,
+            "age_hours": 3.2,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -73,7 +73,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -91,7 +91,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -185,7 +185,7 @@
         "published_at": "2026-10-31T14:29:01+00:00",
         "id": "47bb637c403446c6d540",
         "type": "earnings",
-        "age_hours": 7.06,
+        "age_hours": 7.3,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -204,7 +204,7 @@
             "published_at": "2026-10-31T14:29:01+00:00",
             "id": "47bb637c403446c6d540",
             "type": "earnings",
-            "age_hours": 7.06,
+            "age_hours": 7.3,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -222,7 +222,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -240,156 +240,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "EGP",
-      "name": "EastGroup Properties",
-      "asset_type": "stock",
-      "price": 198.85,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.460529,
-      "volume": 587704.0,
-      "dollar_volume": 116864940.39999999,
-      "session": "CLOSED",
-      "observed_at": "2026-10-30T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 12.315,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Earnings Beat Could Be A Game Changer For EastGroup Properties Stock (EGP) - Simply Wall St",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU01JWk5CWlVqZi1HNXdQOEVyMTV5SjRxcDlTSkhBcG5WRkpQRy0yRDFUdWw4c0xYaTBoM1FLWlMwNG5pdjZUR255clQxc0xDLU5TN2w2bHFyMFhsZzB6d2ZzZkpGd0dXTWcxcDRiN0dHUHVYbjZOQnRZaFBVZzFOQ2ZkS05aUkpIeC1NMF95T1hFb3JRb2lKMU9BNlpnWXZLaFFtWDVFOUFzZGJES3ZaRUZVcFZVY0lYZklreHkyWWNUa1RwbVdqSDg2em1sVEVmd2pubnRPM0tnUTTSAdsBQVVfeXFMTlNNSVpOQlpVamYtRzV3UDhFcjE1eUo0cXA5U0pIQXBuVkZKUEctMkQxVHVsOHNMWGkwaDNRS1pTMDRuaXY2VEdueXJUMXNMQy1OUzdsNmxxcjBYbGcwendmc2ZKRndHV01nMXA0YjdHR1B1WG42TkJ0WWhQVWcxTkNmZEtOWlJKSHgtTTBfeU9YRW9yUW9pSjFPQTZaZ1l2S2hRbVg1RTlBc2RiREt2WkVGVXBWVWNJWGZJa3h5MlljVGtUcG1Xakg4NnptbFRFZndqbm50TzNLZ1E0?oc=5",
-        "source": "Simply Wall St",
-        "published_at": "2026-10-31T15:56:34+00:00",
-        "id": "b0a77ce1d122a8bc6231",
-        "type": "earnings",
-        "age_hours": 5.61,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Earnings Beat Could Be A Game Changer For EastGroup Properties Stock (EGP) - Simply Wall St",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Earnings Beat Could Be A Game Changer For EastGroup Properties Stock (EGP) - Simply Wall St",
-            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU01JWk5CWlVqZi1HNXdQOEVyMTV5SjRxcDlTSkhBcG5WRkpQRy0yRDFUdWw4c0xYaTBoM1FLWlMwNG5pdjZUR255clQxc0xDLU5TN2w2bHFyMFhsZzB6d2ZzZkpGd0dXTWcxcDRiN0dHUHVYbjZOQnRZaFBVZzFOQ2ZkS05aUkpIeC1NMF95T1hFb3JRb2lKMU9BNlpnWXZLaFFtWDVFOUFzZGJES3ZaRUZVcFZVY0lYZklreHkyWWNUa1RwbVdqSDg2em1sVEVmd2pubnRPM0tnUTTSAdsBQVVfeXFMTlNNSVpOQlpVamYtRzV3UDhFcjE1eUo0cXA5U0pIQXBuVkZKUEctMkQxVHVsOHNMWGkwaDNRS1pTMDRuaXY2VEdueXJUMXNMQy1OUzdsNmxxcjBYbGcwendmc2ZKRndHV01nMXA0YjdHR1B1WG42TkJ0WWhQVWcxTkNmZEtOWlJKSHgtTTBfeU9YRW9yUW9pSjFPQTZaZ1l2S2hRbVg1RTlBc2RiREt2WkVGVXBWVWNJWGZJa3h5MlljVGtUcG1Xakg4NnptbFRFZndqbm50TzNLZ1E0?oc=5",
-            "source": "Simply Wall St",
-            "published_at": "2026-10-31T15:56:34+00:00",
-            "id": "b0a77ce1d122a8bc6231",
-            "type": "earnings",
-            "age_hours": 5.61,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "EGP_US_EQ",
-        "isin": "US2772761019",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -483,7 +334,7 @@
         "published_at": "2026-10-31T19:43:38+00:00",
         "id": "b0c896f27cd747d5e377",
         "type": "partnership",
-        "age_hours": 1.82,
+        "age_hours": 2.06,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -502,7 +353,7 @@
             "published_at": "2026-10-31T19:43:38+00:00",
             "id": "b0c896f27cd747d5e377",
             "type": "partnership",
-            "age_hours": 1.82,
+            "age_hours": 2.06,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -520,7 +371,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -538,7 +389,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -632,7 +483,7 @@
         "published_at": "2026-10-31T00:36:08+00:00",
         "id": "e255386122a8cc8bb4ad",
         "type": "regulatory",
-        "age_hours": 20.95,
+        "age_hours": 21.18,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -651,7 +502,7 @@
             "published_at": "2026-10-31T00:36:08+00:00",
             "id": "e255386122a8cc8bb4ad",
             "type": "regulatory",
-            "age_hours": 20.95,
+            "age_hours": 21.18,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -669,7 +520,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -687,7 +538,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -781,7 +632,7 @@
         "published_at": "2026-10-31T12:33:14+00:00",
         "id": "b57714896c9cbcc388c2",
         "type": "earnings",
-        "age_hours": 8.99,
+        "age_hours": 9.23,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -800,7 +651,7 @@
             "published_at": "2026-10-31T12:33:14+00:00",
             "id": "b57714896c9cbcc388c2",
             "type": "earnings",
-            "age_hours": 8.99,
+            "age_hours": 9.23,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -818,7 +669,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "UNVERIFIED",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -833,7 +684,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -927,7 +778,7 @@
         "published_at": "2026-10-31T17:45:53+00:00",
         "id": "7e192a111be33c8bd95e",
         "type": "earnings",
-        "age_hours": 3.78,
+        "age_hours": 4.02,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -946,7 +797,7 @@
             "published_at": "2026-10-31T17:45:53+00:00",
             "id": "7e192a111be33c8bd95e",
             "type": "earnings",
-            "age_hours": 3.78,
+            "age_hours": 4.02,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -964,7 +815,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "UNVERIFIED",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -979,7 +830,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1073,7 +924,7 @@
         "published_at": "2026-10-31T17:45:53+00:00",
         "id": "212426d61d7d5f455a7d",
         "type": "earnings",
-        "age_hours": 3.78,
+        "age_hours": 4.02,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1092,7 +943,7 @@
             "published_at": "2026-10-31T17:45:53+00:00",
             "id": "212426d61d7d5f455a7d",
             "type": "earnings",
-            "age_hours": 3.78,
+            "age_hours": 4.02,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1110,7 +961,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "UNVERIFIED",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -1125,7 +976,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1219,7 +1070,7 @@
         "published_at": "2026-10-31T04:32:41+00:00",
         "id": "f3f4df56210315be0f53",
         "type": "earnings",
-        "age_hours": 17.0,
+        "age_hours": 17.24,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1238,7 +1089,7 @@
             "published_at": "2026-10-31T04:32:41+00:00",
             "id": "f3f4df56210315be0f53",
             "type": "earnings",
-            "age_hours": 17.0,
+            "age_hours": 17.24,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1256,7 +1107,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -1274,7 +1125,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1366,7 +1217,7 @@
         "published_at": "2026-10-31T12:53:29+00:00",
         "id": "7c59fe4be1b5dc2b73a5",
         "type": "earnings",
-        "age_hours": 8.66,
+        "age_hours": 8.9,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1385,7 +1236,7 @@
             "published_at": "2026-10-31T12:53:29+00:00",
             "id": "7c59fe4be1b5dc2b73a5",
             "type": "earnings",
-            "age_hours": 8.66,
+            "age_hours": 8.9,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1403,7 +1254,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -1421,7 +1272,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1513,7 +1364,7 @@
         "published_at": "2026-10-31T09:18:48+00:00",
         "id": "2b3469593bff7f153bea",
         "type": "merger",
-        "age_hours": 12.24,
+        "age_hours": 12.47,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1532,7 +1383,7 @@
             "published_at": "2026-10-31T09:18:48+00:00",
             "id": "2b3469593bff7f153bea",
             "type": "merger",
-            "age_hours": 12.24,
+            "age_hours": 12.47,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1550,7 +1401,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -1568,7 +1419,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1628,1409 +1479,23 @@
       }
     },
     {
-      "symbol": "OP",
-      "name": "Optimism",
-      "coin_id": "optimism",
-      "asset_type": "crypto",
-      "price": 0.1008,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -4.1716,
-      "change_1h": -0.7739,
-      "acceleration": -0.6000833333333334,
-      "discovery_route": "catalyst_first",
-      "change_7d": 0.9917,
-      "volume": 67292093.0,
-      "dollar_volume": 67292093.0,
-      "market_cap": 230048443,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Optimism Foundation Proposes Ether Rebates for OP Mainnet Partners - TOKENPOST",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tSHdfWEFYTmh6OU9HSk9MU2x3UkRSM3U4SU1MbWhUQVFzcE1ORzRWYmhMcjJ5bExSRFZ0bFhHUGtPakp1eDV5UnRqU1pjb3R0dWNyQXRsQkNnV3M?oc=5",
-        "source": "TOKENPOST",
-        "published_at": "2026-10-31T01:48:00+00:00",
-        "id": "90f469e83723328cdafa",
-        "type": "crypto_event",
-        "age_hours": 19.75,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Optimism Foundation Proposes Ether Rebates for OP Mainnet Partners - TOKENPOST",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Optimism Foundation Proposes Ether Rebates for OP Mainnet Partners - TOKENPOST",
-            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tSHdfWEFYTmh6OU9HSk9MU2x3UkRSM3U4SU1MbWhUQVFzcE1ORzRWYmhMcjJ5bExSRFZ0bFhHUGtPakp1eDV5UnRqU1pjb3R0dWNyQXRsQkNnV3M?oc=5",
-            "source": "TOKENPOST",
-            "published_at": "2026-10-31T01:48:00+00:00",
-            "id": "90f469e83723328cdafa",
-            "type": "crypto_event",
-            "age_hours": 19.75,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "selection_lane": "PRIORITY",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.1011,
-      "support": 0.1001,
-      "momentum_pct": 0.3984063745019917,
-      "reference_price": 0.10057645866281956,
-      "extension_pct": 0.22226009958241644,
-      "resistance_zones": [
-        {
-          "lower": 0.1015,
-          "upper": 0.1016,
-          "touches": 5,
-          "confirmed_at": "2026-10-31 13:05:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:40:00+00:00",
-            "2026-10-31 12:35:00+00:00",
-            "2026-10-31 12:40:00+00:00",
-            "2026-10-31 12:50:00+00:00",
-            "2026-10-31 12:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1017,
-          "upper": 0.1017,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 17:00:00+00:00",
-          "pivot_times": [
-            "2026-10-31 16:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1022,
-          "upper": 0.1022,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 13:40:00+00:00",
-          "pivot_times": [
-            "2026-10-31 13:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1024,
-          "upper": 0.1025,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 08:05:00+00:00",
-          "pivot_times": [
-            "2026-10-31 07:55:00+00:00",
-            "2026-10-31 07:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1027,
-          "upper": 0.1027,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1032,
-          "upper": 0.1032,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 05:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 05:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1037,
-          "upper": 0.1037,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 06:10:00+00:00",
-          "pivot_times": [
-            "2026-10-31 06:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1047,
-          "upper": 0.1047,
-          "touches": 1,
-          "confirmed_at": "2026-10-30 21:10:00+00:00",
-          "pivot_times": [
-            "2026-10-30 21:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1049,
-          "upper": 0.1049,
-          "touches": 1,
-          "confirmed_at": "2026-10-30 20:10:00+00:00",
-          "pivot_times": [
-            "2026-10-30 20:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1053,
-          "upper": 0.1054,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 04:25:00+00:00",
-          "pivot_times": [
-            "2026-10-31 03:55:00+00:00",
-            "2026-10-31 04:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1058,
-          "upper": 0.1058,
-          "touches": 2,
-          "confirmed_at": "2026-10-30 22:45:00+00:00",
-          "pivot_times": [
-            "2026-10-30 21:35:00+00:00",
-            "2026-10-30 22:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1063,
-          "upper": 0.1063,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 02:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 02:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1068,
-          "upper": 0.1069,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 03:20:00+00:00",
-          "pivot_times": [
-            "2026-10-31 03:10:00+00:00",
-            "2026-10-31 02:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1083,
-          "upper": 0.1085,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 00:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 00:40:00+00:00",
-            "2026-10-31 00:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1088,
-          "upper": 0.109,
-          "touches": 5,
-          "confirmed_at": "2026-10-31 02:05:00+00:00",
-          "pivot_times": [
-            "2026-10-30 23:50:00+00:00",
-            "2026-10-31 01:00:00+00:00",
-            "2026-10-31 01:25:00+00:00",
-            "2026-10-31 01:55:00+00:00",
-            "2026-10-31 00:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 0.1015,
-      "resistance_2": 0.1022,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "entry": 0.10190179999999999,
-            "support": 0.1004,
-            "resistance_1": 0.1022,
-            "resistance_2": 0.1027,
-            "momentum_pct": 0.3984063745019917,
-            "extension_pct": 0.22226009958241644,
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "target_basis": {
-              "origin": 0.1018,
-              "measured_height": 0.001700000000000007,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.10265,
-                0.10350000000000001
-              ],
-              "overhead_levels": [
-                0.1022,
-                0.1024,
-                0.1027,
-                0.1032
-              ],
-              "resistance_zones": [
-                {
-                  "lower": 0.1022,
-                  "upper": 0.1022,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 13:40:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 13:30:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1024,
-                  "upper": 0.1025,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 08:05:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 07:55:00+00:00",
-                    "2026-10-31 07:40:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1027,
-                  "upper": 0.1027,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-29 16:15:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 16:05:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1032,
-                  "upper": 0.1032,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 05:50:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 05:40:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1037,
-                  "upper": 0.1037,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 06:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 06:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1047,
-                  "upper": 0.1047,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-30 21:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-30 21:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1049,
-                  "upper": 0.1049,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-30 20:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-30 20:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1053,
-                  "upper": 0.1054,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 04:25:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 03:55:00+00:00",
-                    "2026-10-31 04:15:00+00:00"
-                  ]
-                }
-              ],
-              "resistance_mode": "swing_zones"
-            },
-            "observed_at": "2026-10-31T21:30:00+00:00",
-            "evidence": {
-              "range_high": 0.1018,
-              "range_low": 0.1001,
-              "confirmation": "Completed close above range required"
-            },
-            "stage": "DEVELOPING"
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.3878438262432262,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": 0.19880715705766772,
-          "trend": "RISING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "OPEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "TP1 reward/risk is below 1.5R.",
-              "TP2 reward/risk is below 2R.",
-              "Price is more than 1% below the trigger; wait for structure to improve."
-            ],
-            "plan": null,
-            "metrics": {
-              "stop_width_pct": 1.5723,
-              "rr1": 0.1861,
-              "rr2": 0.4982,
-              "minimum_rr1": 1.5,
-              "minimum_rr2": 2.0
-            },
-            "route": "CHART_LED",
-            "direction": "LONG",
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "EARLY_RANGE_BREAKOUT",
-              "entry": 0.10190179999999999,
-              "support": 0.1004,
-              "resistance_1": 0.1022,
-              "resistance_2": 0.1027,
-              "momentum_pct": 0.3984063745019917,
-              "extension_pct": 0.22226009958241644,
-              "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-              "target_basis": {
-                "origin": 0.1018,
-                "measured_height": 0.001700000000000007,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.10265,
-                  0.10350000000000001
-                ],
-                "overhead_levels": [
-                  0.1022,
-                  0.1024,
-                  0.1027,
-                  0.1032
-                ],
-                "resistance_zones": [
-                  {
-                    "lower": 0.1022,
-                    "upper": 0.1022,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 13:40:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 13:30:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1024,
-                    "upper": 0.1025,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 08:05:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 07:55:00+00:00",
-                      "2026-10-31 07:40:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1027,
-                    "upper": 0.1027,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-29 16:15:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 16:05:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1032,
-                    "upper": 0.1032,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 05:50:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 05:40:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1037,
-                    "upper": 0.1037,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 06:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 06:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1047,
-                    "upper": 0.1047,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-30 21:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-30 21:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1049,
-                    "upper": 0.1049,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-30 20:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-30 20:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1053,
-                    "upper": 0.1054,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 04:25:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 03:55:00+00:00",
-                      "2026-10-31 04:15:00+00:00"
-                    ]
-                  }
-                ],
-                "resistance_mode": "swing_zones"
-              },
-              "observed_at": "2026-10-31T21:30:00+00:00",
-              "evidence": {
-                "range_high": 0.1018,
-                "range_low": 0.1001,
-                "confirmation": "Completed close above range required"
-              },
-              "stage": "DEVELOPING"
-            }
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "NEAR",
-      "name": "NEAR Protocol",
-      "coin_id": "near",
-      "asset_type": "crypto",
-      "price": 3.9795,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 2.45228,
-      "change_1h": -0.3273,
-      "acceleration": -0.4294783333333333,
-      "discovery_route": "catalyst_first",
-      "change_7d": -0.9518,
-      "volume": 459307507.0,
-      "dollar_volume": 459307507.0,
-      "market_cap": 5190573012,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "NEAR Protocol Partners with Ondo to Tokenize US Stocks - Cryptonews.net",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rZ3NaUVZYaWRSZlFfeVBXZzJOSVU5WWZaRENFNkV6RHl5LUN2TUl1SnppblRGRzZ5QWZSY3hOVkVyeExkNDAybG92TEdFSE4zaXlPcnVmckhuY0Ff?oc=5",
-        "source": "Cryptonews.net",
-        "published_at": "2026-10-30T22:52:50+00:00",
-        "id": "b107abc19358bfbfa7b5",
-        "type": "partnership",
-        "age_hours": 22.67,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "NEAR Protocol Partners with Ondo to Tokenize US Stocks - Cryptonews.net",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "NEAR Protocol Partners with Ondo to Tokenize US Stocks - Cryptonews.net",
-            "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rZ3NaUVZYaWRSZlFfeVBXZzJOSVU5WWZaRENFNkV6RHl5LUN2TUl1SnppblRGRzZ5QWZSY3hOVkVyeExkNDAybG92TEdFSE4zaXlPcnVmckhuY0Ff?oc=5",
-            "source": "Cryptonews.net",
-            "published_at": "2026-10-30T22:52:50+00:00",
-            "id": "b107abc19358bfbfa7b5",
-            "type": "partnership",
-            "age_hours": 22.67,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Crypto symbol matches but name differs; identity needs verification."
-      },
-      "selection_lane": "ROTATION",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 3.9795,
-      "support": 3.9448,
-      "momentum_pct": 0.7391843657443609,
-      "reference_price": 3.954104574481911,
-      "extension_pct": 0.6422547770228437,
-      "resistance_zones": [
-        {
-          "lower": 3.9832,
-          "upper": 3.9881,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 20:20:00+00:00",
-          "pivot_times": [
-            "2026-10-31 12:55:00+00:00",
-            "2026-10-31 20:10:00+00:00"
-          ]
-        },
-        {
-          "lower": 3.9903,
-          "upper": 3.994,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-31 14:35:00+00:00",
-            "2026-10-31 12:40:00+00:00",
-            "2026-10-29 14:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.007,
-          "upper": 4.009,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 15:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:55:00+00:00",
-            "2026-10-31 15:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0148,
-          "upper": 4.0148,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 16:05:00+00:00",
-          "pivot_times": [
-            "2026-10-31 15:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0217,
-          "upper": 4.0217,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 18:30:00+00:00",
-          "pivot_times": [
-            "2026-10-29 18:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0311,
-          "upper": 4.0321,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 18:10:00+00:00",
-          "pivot_times": [
-            "2026-10-29 18:00:00+00:00",
-            "2026-10-29 13:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0492,
-          "upper": 4.0546,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 18:00:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:15:00+00:00",
-            "2026-10-31 17:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0691,
-          "upper": 4.0709,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 17:15:00+00:00",
-          "pivot_times": [
-            "2026-10-31 16:50:00+00:00",
-            "2026-10-31 17:05:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0832,
-          "upper": 4.0832,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 18:25:00+00:00",
-          "pivot_times": [
-            "2026-10-31 18:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0895,
-          "upper": 4.0895,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0981,
-          "upper": 4.0981,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 17:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 17:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.1192,
-          "upper": 4.1192,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 15:25:00+00:00",
-          "pivot_times": [
-            "2026-10-29 15:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.1447,
-          "upper": 4.1447,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:35:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:25:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.16,
-          "upper": 4.16,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 15:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 15:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.1935,
-          "upper": 4.1935,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 3.9903,
-      "resistance_2": 4.007,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "entry": 3.9938898999999997,
-            "support": 3.9509,
-            "resistance_1": 4.007,
-            "resistance_2": 4.0217,
-            "momentum_pct": 0.7391843657443609,
-            "extension_pct": 0.6422547770228437,
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "target_basis": {
-              "origin": 3.9899,
-              "measured_height": 0.04510000000000014,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                4.01245,
-                4.035
-              ],
-              "overhead_levels": [
-                4.007,
-                4.0148,
-                4.0217,
-                4.0311
-              ],
-              "resistance_zones": [
-                {
-                  "lower": 4.007,
-                  "upper": 4.009,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 15:45:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 13:55:00+00:00",
-                    "2026-10-31 15:35:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0148,
-                  "upper": 4.0148,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 16:05:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 15:55:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0217,
-                  "upper": 4.0217,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-29 18:30:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 18:20:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0311,
-                  "upper": 4.0321,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-29 18:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 18:00:00+00:00",
-                    "2026-10-29 13:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0492,
-                  "upper": 4.0546,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 18:00:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 13:15:00+00:00",
-                    "2026-10-31 17:50:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0691,
-                  "upper": 4.0709,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 17:15:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 16:50:00+00:00",
-                    "2026-10-31 17:05:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0832,
-                  "upper": 4.0832,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 18:25:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 18:15:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0895,
-                  "upper": 4.0895,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-29 14:45:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 14:35:00+00:00"
-                  ]
-                }
-              ],
-              "resistance_mode": "swing_zones"
-            },
-            "observed_at": "2026-10-31T21:30:00+00:00",
-            "evidence": {
-              "range_high": 3.9899,
-              "range_low": 3.9448,
-              "confirmation": "Completed close above range required"
-            },
-            "stage": "DEVELOPING"
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.746197370110083,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": 0.3732943223951235,
-          "trend": "RISING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "NEAREUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "BROKER_UNVERIFIED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Crypto symbol matches but name differs; identity needs verification."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "direction": "LONG",
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "EARLY_RANGE_BREAKOUT",
-              "entry": 3.9938898999999997,
-              "support": 3.9509,
-              "resistance_1": 4.007,
-              "resistance_2": 4.0217,
-              "momentum_pct": 0.7391843657443609,
-              "extension_pct": 0.6422547770228437,
-              "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-              "target_basis": {
-                "origin": 3.9899,
-                "measured_height": 0.04510000000000014,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  4.01245,
-                  4.035
-                ],
-                "overhead_levels": [
-                  4.007,
-                  4.0148,
-                  4.0217,
-                  4.0311
-                ],
-                "resistance_zones": [
-                  {
-                    "lower": 4.007,
-                    "upper": 4.009,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 15:45:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 13:55:00+00:00",
-                      "2026-10-31 15:35:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0148,
-                    "upper": 4.0148,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 16:05:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 15:55:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0217,
-                    "upper": 4.0217,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-29 18:30:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 18:20:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0311,
-                    "upper": 4.0321,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-29 18:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 18:00:00+00:00",
-                      "2026-10-29 13:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0492,
-                    "upper": 4.0546,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 18:00:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 13:15:00+00:00",
-                      "2026-10-31 17:50:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0691,
-                    "upper": 4.0709,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 17:15:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 16:50:00+00:00",
-                      "2026-10-31 17:05:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0832,
-                    "upper": 4.0832,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 18:25:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 18:15:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0895,
-                    "upper": 4.0895,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-29 14:45:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 14:35:00+00:00"
-                    ]
-                  }
-                ],
-                "resistance_mode": "swing_zones"
-              },
-              "observed_at": "2026-10-31T21:30:00+00:00",
-              "evidence": {
-                "range_high": 3.9899,
-                "range_low": 3.9448,
-                "confirmation": "Completed close above range required"
-              },
-              "stage": "DEVELOPING"
-            }
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "LINK",
-      "name": "Chainlink",
-      "coin_id": "chainlink",
-      "asset_type": "crypto",
-      "price": 10.55466,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 4.56997,
-      "change_1h": -0.6759,
-      "acceleration": -0.8663154166666666,
-      "discovery_route": "recent_momentum",
-      "change_7d": 2.2366,
-      "volume": 315714056.0,
-      "dollar_volume": 315714056.0,
-      "market_cap": 8075705559,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "selection_lane": "ROTATION",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 10.58166,
-      "support": 10.54107,
-      "momentum_pct": 0.045024080774136443,
-      "reference_price": 10.560430584367102,
-      "extension_pct": -0.054643457205660884,
-      "resistance_zones": [
-        {
-          "lower": 10.60976,
-          "upper": 10.60976,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 10.656,
-          "upper": 10.656,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 19:40:00+00:00",
-          "pivot_times": [
-            "2026-10-31 19:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 10.673,
-          "upper": 10.68798,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 20:25:00+00:00",
-          "pivot_times": [
-            "2026-10-29 15:15:00+00:00",
-            "2026-10-31 20:00:00+00:00",
-            "2026-10-31 20:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 10.74644,
-          "upper": 10.74644,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 10.60976,
-      "resistance_2": 10.656,
-      "chart_analysis": {
-        "setups": [
-          {
-            "direction": "SHORT",
-            "pattern": "TREND_RALLY_REJECTION",
-            "entry": 10.56671,
-            "support": 10.57662,
-            "resistance_1": 10.54102,
-            "resistance_2": 10.499929999999999,
-            "stop_reference": 10.57662,
-            "target_1": 10.54102,
-            "target_2": 10.499929999999999,
-            "momentum_pct": 0.045024080774136443,
-            "extension_pct": 0.05464345720566235,
-            "observed_at": "2026-10-31T21:30:00+00:00",
-            "stage": "CONFIRMED",
-            "evidence": {
-              "ema9": 10.571760844333769,
-              "ema21": 10.583390931538052
-            },
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "target_basis": {
-              "origin": 10.57662,
-              "measured_height": 0.07669000000000104,
-              "uncapped_targets": [
-                10.538274999999999,
-                10.499929999999999
-              ],
-              "support_levels": [
-                10.54102,
-                10.51788,
-                10.49023,
-                10.46002,
-                10.45182,
-                10.42741,
-                10.41109,
-                10.38525
-              ]
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.11897436803639784,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": -0.39277935275398024,
-          "trend": "FALLING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "LINKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 10
-      },
-      "score": {
-        "score": 3,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "BEARISH WATCH",
-        "reasons": [
-          "Bearish chart detected; no approved executable short plan.",
-          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "direction": "SHORT",
-        "pattern": "TREND_RALLY_REJECTION",
-        "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-        "pattern_evidence": {
-          "direction": "SHORT",
-          "pattern": "TREND_RALLY_REJECTION",
-          "entry": 10.56671,
-          "support": 10.57662,
-          "resistance_1": 10.54102,
-          "resistance_2": 10.499929999999999,
-          "stop_reference": 10.57662,
-          "target_1": 10.54102,
-          "target_2": 10.499929999999999,
-          "momentum_pct": 0.045024080774136443,
-          "extension_pct": 0.05464345720566235,
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "stage": "CONFIRMED",
-          "evidence": {
-            "ema9": 10.571760844333769,
-            "ema21": 10.583390931538052
-          },
-          "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-          "target_basis": {
-            "origin": 10.57662,
-            "measured_height": 0.07669000000000104,
-            "uncapped_targets": [
-              10.538274999999999,
-              10.499929999999999
-            ],
-            "support_levels": [
-              10.54102,
-              10.51788,
-              10.49023,
-              10.46002,
-              10.45182,
-              10.42741,
-              10.41109,
-              10.38525
-            ]
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "BEARISH WATCH",
-            "reasons": [
-              "Bearish chart detected; no approved executable short plan.",
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "direction": "SHORT",
-            "pattern": "TREND_RALLY_REJECTION",
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "pattern_evidence": {
-              "direction": "SHORT",
-              "pattern": "TREND_RALLY_REJECTION",
-              "entry": 10.56671,
-              "support": 10.57662,
-              "resistance_1": 10.54102,
-              "resistance_2": 10.499929999999999,
-              "stop_reference": 10.57662,
-              "target_1": 10.54102,
-              "target_2": 10.499929999999999,
-              "momentum_pct": 0.045024080774136443,
-              "extension_pct": 0.05464345720566235,
-              "observed_at": "2026-10-31T21:30:00+00:00",
-              "stage": "CONFIRMED",
-              "evidence": {
-                "ema9": 10.571760844333769,
-                "ema21": 10.583390931538052
-              },
-              "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-              "target_basis": {
-                "origin": 10.57662,
-                "measured_height": 0.07669000000000104,
-                "uncapped_targets": [
-                  10.538274999999999,
-                  10.499929999999999
-                ],
-                "support_levels": [
-                  10.54102,
-                  10.51788,
-                  10.49023,
-                  10.46002,
-                  10.45182,
-                  10.42741,
-                  10.41109,
-                  10.38525
-                ]
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-            ]
-          }
-        ]
-      }
-    },
-    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
       "asset_type": "crypto",
-      "price": 2016.76,
+      "price": 2017.87,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.29476,
+      "change_24h": 0.47515,
       "change_1h": 0.0388,
-      "acceleration": 0.02651833333333333,
+      "acceleration": 0.019002083333333333,
       "discovery_route": "catalyst_first",
       "change_7d": -3.6807,
-      "volume": 4058613401.0,
-      "dollar_volume": 4058613401.0,
-      "market_cap": 245690456293,
+      "volume": 4035725023.0,
+      "dollar_volume": 4035725023.0,
+      "market_cap": 245694737230,
       "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
+      "observed_at": "2026-10-31T21:45:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "catalyst": {
@@ -3040,7 +1505,7 @@
         "published_at": "2026-10-31T02:39:22+00:00",
         "id": "8d0e111ab5f1ec4617d3",
         "type": "crypto_event",
-        "age_hours": 18.89,
+        "age_hours": 19.13,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -3059,7 +1524,7 @@
             "published_at": "2026-10-31T02:39:22+00:00",
             "id": "8d0e111ab5f1ec4617d3",
             "type": "crypto_event",
-            "age_hours": 18.89,
+            "age_hours": 19.13,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -3077,7 +1542,7 @@
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -3092,11 +1557,11 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 2018.36,
+      "entry": 2018.34,
       "support": 2015.4,
-      "momentum_pct": -0.010907396206205622,
-      "reference_price": 2016.673471049313,
-      "extension_pct": 0.004290677292528855,
+      "momentum_pct": 0.0550387750649417,
+      "reference_price": 2016.6577377950612,
+      "extension_pct": 0.06011244160173401,
       "resistance_zones": [
         {
           "lower": 2021.94,
@@ -3237,16 +1702,16 @@
           "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
         "interval": "5m",
-        "recent_volume_ratio": 0.47253459148582,
-        "observed_at": "2026-10-31T21:30:00+00:00",
+        "recent_volume_ratio": 0.1316286644044616,
+        "observed_at": "2026-10-31T21:45:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": -0.02875073116083149,
+          "observed_at": "2026-10-31T21:45:00+00:00",
+          "momentum_pct": -0.0084240153812698,
           "trend": "FALLING"
         }
       },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
+      "structure_observed_at": "2026-10-31T21:45:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -3260,7 +1725,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -3269,9 +1734,10 @@
         "reason": "Configured Robinhood Europe spot account does not establish short capability."
       },
       "score": {
-        "score": 2,
+        "score": 4,
         "label": "Research rank only",
         "reasons": [
+          "positive recent momentum",
           "notional liquidity",
           "not extended above recent VWAP"
         ]
@@ -3281,8 +1747,7 @@
         "reasons": [
           "News lead for research; event timing and entry require verification.",
           "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "route": "CATALYST_LED",
@@ -3291,8 +1756,7 @@
             "status": "REJECTED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "route": "CATALYST_LED"
@@ -3303,29 +1767,29 @@
       }
     },
     {
-      "symbol": "HBAR",
-      "name": "Hedera",
-      "coin_id": "hedera-hashgraph",
+      "symbol": "QNT",
+      "name": "Quant",
+      "coin_id": "quant-network",
       "asset_type": "crypto",
-      "price": 0.06477,
+      "price": 179.15,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.25279,
-      "change_1h": -0.4439,
-      "acceleration": -0.4544329166666667,
+      "change_24h": 5.44683,
+      "change_1h": -1.1105,
+      "acceleration": -1.33745125,
       "discovery_route": "recent_momentum",
-      "change_7d": -7.1405,
-      "volume": 43449072.0,
-      "dollar_volume": 43449072.0,
-      "market_cap": 2866163887,
+      "change_7d": 12.523,
+      "volume": 60166226.0,
+      "dollar_volume": 60166226.0,
+      "market_cap": 2601206055,
       "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
+      "observed_at": "2026-10-31T21:45:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -3336,494 +1800,158 @@
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "selection_lane": "PRIORITY",
+      "selection_lane": "ROTATION",
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 0.0648,
-      "support": 0.06451,
-      "momentum_pct": 0.0,
-      "reference_price": 0.06469864438548592,
-      "extension_pct": 0.11028919568842888,
+      "entry": 179.35,
+      "support": 177.85,
+      "momentum_pct": -0.08923094082873284,
+      "reference_price": 178.96333000982528,
+      "extension_pct": 0.104306278925681,
       "resistance_zones": [
         {
-          "lower": 0.06497,
-          "upper": 0.06506,
-          "touches": 6,
-          "confirmed_at": "2026-10-31 20:20:00+00:00",
+          "lower": 179.41,
+          "upper": 179.57,
+          "touches": 5,
+          "confirmed_at": "2026-10-31 15:30:00+00:00",
           "pivot_times": [
-            "2026-10-31 16:50:00+00:00",
-            "2026-10-31 10:40:00+00:00",
-            "2026-10-30 15:15:00+00:00",
-            "2026-10-31 20:10:00+00:00",
-            "2026-10-31 09:35:00+00:00",
-            "2026-10-31 09:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06518,
-          "upper": 0.0652,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 13:00:00+00:00",
-          "pivot_times": [
-            "2026-10-31 01:50:00+00:00",
+            "2026-10-29 16:05:00+00:00",
             "2026-10-31 12:35:00+00:00",
-            "2026-10-31 12:50:00+00:00"
+            "2026-10-31 14:10:00+00:00",
+            "2026-10-31 15:15:00+00:00",
+            "2026-10-31 15:20:00+00:00"
           ]
         },
         {
-          "lower": 0.06543,
-          "upper": 0.06543,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 00:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 00:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06553,
-          "upper": 0.06554,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 01:15:00+00:00",
-          "pivot_times": [
-            "2026-10-31 01:00:00+00:00",
-            "2026-10-31 01:05:00+00:00",
-            "2026-10-29 18:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06571,
-          "upper": 0.06571,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 19:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 19:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06598,
-          "upper": 0.06598,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 18:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 18:05:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06639,
-          "upper": 0.06643,
-          "touches": 3,
-          "confirmed_at": "2026-10-29 11:00:00+00:00",
-          "pivot_times": [
-            "2026-10-29 10:05:00+00:00",
-            "2026-10-29 10:35:00+00:00",
-            "2026-10-29 10:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06677,
-          "upper": 0.06677,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 13:10:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.0669,
-          "upper": 0.06695,
-          "touches": 4,
-          "confirmed_at": "2026-10-29 16:50:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:15:00+00:00",
-            "2026-10-29 13:30:00+00:00",
-            "2026-10-29 13:55:00+00:00",
-            "2026-10-29 16:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.0671,
-          "upper": 0.06717,
+          "lower": 180.09,
+          "upper": 180.33,
           "touches": 2,
-          "confirmed_at": "2026-10-29 17:10:00+00:00",
+          "confirmed_at": "2026-10-31 20:35:00+00:00",
           "pivot_times": [
-            "2026-10-29 17:00:00+00:00",
-            "2026-10-29 15:10:00+00:00"
+            "2026-10-31 13:15:00+00:00",
+            "2026-10-31 20:25:00+00:00"
           ]
         },
         {
-          "lower": 0.06737,
-          "upper": 0.06737,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06782,
-          "upper": 0.06782,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 0.06497,
-      "resistance_2": 0.06518,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.16466139519566436,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": 0.06179514908080108,
-          "trend": "RISING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "HBAREUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "catalyst": {
-        "title": "Hedera Coin Price Today: HBAR Launches Network Upgrade as Analysts Eye 300x for Pepeto - TechBullion",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOXV4LUlfWTVHTVdTaG1XOHgxT1dKNHAwcXFpYTJub0J5TXZkUnhoTHNWc3lIYTNGNVFja1p1cTdJdmFEN3VSaVJIOGo5d1NOMXIyZ0F6QjNINFBZWGExSWZ6ZklZUFJNcEh3TV9ZdWZyaGpWTWlSWTlpRE5wcVBlS1FGR0FVVFM0QldMeUxPdTZDWWRMWmo3YkpHMVRJYWFoLWpJc3hleENxbzdSMVB3?oc=5",
-        "source": "TechBullion",
-        "published_at": "2026-10-30T21:40:03+00:00",
-        "id": "9edf4133c599c935f57b",
-        "type": "product_launch",
-        "age_hours": 23.9,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Hedera Coin Price Today: HBAR Launches Network Upgrade as Analysts Eye 300x for Pepeto - TechBullion",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Hedera Coin Price Today: HBAR Launches Network Upgrade as Analysts Eye 300x for Pepeto - TechBullion",
-            "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOXV4LUlfWTVHTVdTaG1XOHgxT1dKNHAwcXFpYTJub0J5TXZkUnhoTHNWc3lIYTNGNVFja1p1cTdJdmFEN3VSaVJIOGo5d1NOMXIyZ0F6QjNINFBZWGExSWZ6ZklZUFJNcEh3TV9ZdWZyaGpWTWlSWTlpRE5wcVBlS1FGR0FVVFM0QldMeUxPdTZDWWRMWmo3YkpHMVRJYWFoLWpJc3hleENxbzdSMVB3?oc=5",
-            "source": "TechBullion",
-            "published_at": "2026-10-30T21:40:03+00:00",
-            "id": "9edf4133c599c935f57b",
-            "type": "product_launch",
-            "age_hours": 23.9,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 7
-      },
-      "score": {
-        "score": 2,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "BNB",
-      "name": "BNB",
-      "coin_id": "binancecoin",
-      "asset_type": "crypto",
-      "price": 628.88,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 0.10972,
-      "change_1h": -0.2591,
-      "acceleration": -0.26367166666666664,
-      "discovery_route": "recent_momentum",
-      "change_7d": -3.5293,
-      "volume": 653301076.0,
-      "dollar_volume": 653301076.0,
-      "market_cap": 82431151888,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "selection_lane": "PRIORITY",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 630.94,
-      "support": 628.66,
-      "momentum_pct": -0.038148524923709015,
-      "reference_price": 629.2659250892792,
-      "extension_pct": -0.06132941160360561,
-      "resistance_zones": [
-        {
-          "lower": 631.04,
-          "upper": 631.84,
+          "lower": 180.51,
+          "upper": 180.65,
           "touches": 3,
-          "confirmed_at": "2026-10-30 15:25:00+00:00",
+          "confirmed_at": "2026-10-31 20:50:00+00:00",
           "pivot_times": [
-            "2026-10-29 23:00:00+00:00",
-            "2026-10-30 15:15:00+00:00",
-            "2026-10-30 08:20:00+00:00"
+            "2026-10-31 20:40:00+00:00",
+            "2026-10-31 17:15:00+00:00",
+            "2026-10-31 16:10:00+00:00"
           ]
         },
         {
-          "lower": 632.24,
-          "upper": 633.07,
-          "touches": 2,
+          "lower": 180.81,
+          "upper": 180.81,
+          "touches": 1,
           "confirmed_at": "2026-10-31 16:35:00+00:00",
           "pivot_times": [
-            "2026-10-31 03:20:00+00:00",
             "2026-10-31 16:25:00+00:00"
           ]
         },
         {
-          "lower": 634.04,
-          "upper": 634.6,
+          "lower": 181.5,
+          "upper": 181.73,
           "touches": 3,
-          "confirmed_at": "2026-10-31 18:55:00+00:00",
+          "confirmed_at": "2026-10-31 17:55:00+00:00",
           "pivot_times": [
-            "2026-10-29 21:55:00+00:00",
-            "2026-10-31 18:45:00+00:00",
-            "2026-10-31 14:50:00+00:00"
+            "2026-10-31 15:40:00+00:00",
+            "2026-10-31 16:50:00+00:00",
+            "2026-10-31 17:45:00+00:00"
           ]
         },
         {
-          "lower": 636.26,
-          "upper": 636.26,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 00:35:00+00:00",
-          "pivot_times": [
-            "2026-10-31 00:25:00+00:00"
-          ]
-        },
-        {
-          "lower": 640.68,
-          "upper": 641.52,
+          "lower": 182.25,
+          "upper": 182.28,
           "touches": 2,
-          "confirmed_at": "2026-10-30 06:15:00+00:00",
+          "confirmed_at": "2026-10-31 20:10:00+00:00",
           "pivot_times": [
-            "2026-10-30 06:05:00+00:00",
-            "2026-10-30 04:15:00+00:00"
+            "2026-10-31 20:00:00+00:00",
+            "2026-10-31 13:35:00+00:00"
           ]
         },
         {
-          "lower": 642.0,
-          "upper": 642.09,
-          "touches": 2,
-          "confirmed_at": "2026-10-30 06:00:00+00:00",
-          "pivot_times": [
-            "2026-10-30 05:50:00+00:00",
-            "2026-10-30 03:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 643.73,
-          "upper": 643.73,
+          "lower": 184.7,
+          "upper": 184.7,
           "touches": 1,
-          "confirmed_at": "2026-10-30 05:20:00+00:00",
+          "confirmed_at": "2026-10-31 19:10:00+00:00",
           "pivot_times": [
-            "2026-10-30 05:10:00+00:00"
+            "2026-10-31 19:00:00+00:00"
           ]
         },
         {
-          "lower": 648.83,
-          "upper": 648.83,
+          "lower": 186.3,
+          "upper": 186.3,
           "touches": 1,
-          "confirmed_at": "2026-10-29 21:25:00+00:00",
+          "confirmed_at": "2026-10-31 18:40:00+00:00",
           "pivot_times": [
-            "2026-10-29 21:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 661.73,
-          "upper": 661.73,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 20:30:00+00:00",
-          "pivot_times": [
-            "2026-10-29 20:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 664.21,
-          "upper": 664.21,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 12:05:00+00:00",
-          "pivot_times": [
-            "2026-10-29 11:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 665.54,
-          "upper": 665.76,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 12:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 12:30:00+00:00",
-            "2026-10-29 10:45:00+00:00"
-          ]
-        },
-        {
-          "lower": 671.64,
-          "upper": 671.86,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 17:05:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:55:00+00:00",
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 673.35,
-          "upper": 674.1,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 15:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 09:50:00+00:00",
-            "2026-10-29 15:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 674.76,
-          "upper": 674.76,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:20:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:10:00+00:00"
+            "2026-10-31 18:30:00+00:00"
           ]
         }
       ],
-      "resistance_1": 632.24,
-      "resistance_2": 636.26,
+      "resistance_1": 180.09,
+      "resistance_2": 180.81,
       "chart_analysis": {
         "setups": [
           {
             "direction": "SHORT",
             "pattern": "EARLY_RANGE_BREAKDOWN",
-            "entry": 628.1811899999999,
-            "support": 629.04,
-            "resistance_1": 627.88,
-            "resistance_2": 625.71,
-            "stop_reference": 629.04,
-            "target_1": 627.88,
-            "target_2": 625.71,
-            "momentum_pct": -0.038148524923709015,
-            "extension_pct": 0.0613294116036033,
-            "observed_at": "2026-10-31T21:30:00+00:00",
+            "entry": 177.67215,
+            "support": 179.35,
+            "resistance_1": 177.13,
+            "resistance_2": 176.49,
+            "stop_reference": 179.35,
+            "target_1": 177.13,
+            "target_2": 176.49,
+            "momentum_pct": -0.08923094082873284,
+            "extension_pct": -0.10430627892567303,
+            "observed_at": "2026-10-31T21:45:00+00:00",
             "stage": "DEVELOPING",
             "evidence": {
-              "range_high": 632.84,
-              "range_low": 628.81
+              "range_high": 182.25,
+              "range_low": 177.85
             },
             "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
             "target_basis": {
-              "origin": 628.81,
-              "measured_height": 4.030000000000086,
+              "origin": 177.85,
+              "measured_height": 4.400000000000006,
               "uncapped_targets": [
-                626.7949999999998,
-                624.7799999999999
+                175.64999999999998,
+                173.45
               ],
               "support_levels": [
-                627.88,
-                626.42,
-                625.71,
-                623.47,
-                623.14,
-                621.7,
-                618.76,
-                616.96
+                177.13,
+                176.83,
+                176.49,
+                176.22,
+                176.03,
+                175.7,
+                174.95,
+                174.24
               ]
             }
           }
         ],
         "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 1.797642890238409,
-        "observed_at": "2026-10-31T21:30:00+00:00",
+        "recent_volume_ratio": 1.305524205265721,
+        "observed_at": "2026-10-31T21:45:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": -0.34387132556849,
+          "observed_at": "2026-10-31T21:45:00+00:00",
+          "momentum_pct": -0.3282519194391931,
           "trend": "FALLING"
         }
       },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
+      "structure_observed_at": "2026-10-31T21:45:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "BNBEUR",
+        "pair": "QNTEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
@@ -3833,7 +1961,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -3848,13 +1976,14 @@
         "headlines": [],
         "freshness": "STALE/UNVERIFIED",
         "retrieval_status": "OK",
-        "headlines_checked": 12
+        "headlines_checked": 7
       },
       "score": {
-        "score": 1,
+        "score": 2,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity"
+          "notional liquidity",
+          "not extended above recent VWAP"
         ]
       },
       "qualification": {
@@ -3871,38 +2000,38 @@
         "pattern_evidence": {
           "direction": "SHORT",
           "pattern": "EARLY_RANGE_BREAKDOWN",
-          "entry": 628.1811899999999,
-          "support": 629.04,
-          "resistance_1": 627.88,
-          "resistance_2": 625.71,
-          "stop_reference": 629.04,
-          "target_1": 627.88,
-          "target_2": 625.71,
-          "momentum_pct": -0.038148524923709015,
-          "extension_pct": 0.0613294116036033,
-          "observed_at": "2026-10-31T21:30:00+00:00",
+          "entry": 177.67215,
+          "support": 179.35,
+          "resistance_1": 177.13,
+          "resistance_2": 176.49,
+          "stop_reference": 179.35,
+          "target_1": 177.13,
+          "target_2": 176.49,
+          "momentum_pct": -0.08923094082873284,
+          "extension_pct": -0.10430627892567303,
+          "observed_at": "2026-10-31T21:45:00+00:00",
           "stage": "DEVELOPING",
           "evidence": {
-            "range_high": 632.84,
-            "range_low": 628.81
+            "range_high": 182.25,
+            "range_low": 177.85
           },
           "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
           "target_basis": {
-            "origin": 628.81,
-            "measured_height": 4.030000000000086,
+            "origin": 177.85,
+            "measured_height": 4.400000000000006,
             "uncapped_targets": [
-              626.7949999999998,
-              624.7799999999999
+              175.64999999999998,
+              173.45
             ],
             "support_levels": [
-              627.88,
-              626.42,
-              625.71,
-              623.47,
-              623.14,
-              621.7,
-              618.76,
-              616.96
+              177.13,
+              176.83,
+              176.49,
+              176.22,
+              176.03,
+              175.7,
+              174.95,
+              174.24
             ]
           }
         },
@@ -3935,38 +2064,38 @@
             "pattern_evidence": {
               "direction": "SHORT",
               "pattern": "EARLY_RANGE_BREAKDOWN",
-              "entry": 628.1811899999999,
-              "support": 629.04,
-              "resistance_1": 627.88,
-              "resistance_2": 625.71,
-              "stop_reference": 629.04,
-              "target_1": 627.88,
-              "target_2": 625.71,
-              "momentum_pct": -0.038148524923709015,
-              "extension_pct": 0.0613294116036033,
-              "observed_at": "2026-10-31T21:30:00+00:00",
+              "entry": 177.67215,
+              "support": 179.35,
+              "resistance_1": 177.13,
+              "resistance_2": 176.49,
+              "stop_reference": 179.35,
+              "target_1": 177.13,
+              "target_2": 176.49,
+              "momentum_pct": -0.08923094082873284,
+              "extension_pct": -0.10430627892567303,
+              "observed_at": "2026-10-31T21:45:00+00:00",
               "stage": "DEVELOPING",
               "evidence": {
-                "range_high": 632.84,
-                "range_low": 628.81
+                "range_high": 182.25,
+                "range_low": 177.85
               },
               "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
               "target_basis": {
-                "origin": 628.81,
-                "measured_height": 4.030000000000086,
+                "origin": 177.85,
+                "measured_height": 4.400000000000006,
                 "uncapped_targets": [
-                  626.7949999999998,
-                  624.7799999999999
+                  175.64999999999998,
+                  173.45
                 ],
                 "support_levels": [
-                  627.88,
-                  626.42,
-                  625.71,
-                  623.47,
-                  623.14,
-                  621.7,
-                  618.76,
-                  616.96
+                  177.13,
+                  176.83,
+                  176.49,
+                  176.22,
+                  176.03,
+                  175.7,
+                  174.95,
+                  174.24
                 ]
               }
             },
@@ -4255,155 +2384,6 @@
           {
             "status": "NOT_EVALUATED",
             "reasons": [
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "EGP",
-      "name": "EastGroup Properties",
-      "asset_type": "stock",
-      "price": 198.85,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.460529,
-      "volume": 587704.0,
-      "dollar_volume": 116864940.39999999,
-      "session": "CLOSED",
-      "observed_at": "2026-10-30T20:00:03+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 12.315,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "Earnings Beat Could Be A Game Changer For EastGroup Properties Stock (EGP) - Simply Wall St",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU01JWk5CWlVqZi1HNXdQOEVyMTV5SjRxcDlTSkhBcG5WRkpQRy0yRDFUdWw4c0xYaTBoM1FLWlMwNG5pdjZUR255clQxc0xDLU5TN2w2bHFyMFhsZzB6d2ZzZkpGd0dXTWcxcDRiN0dHUHVYbjZOQnRZaFBVZzFOQ2ZkS05aUkpIeC1NMF95T1hFb3JRb2lKMU9BNlpnWXZLaFFtWDVFOUFzZGJES3ZaRUZVcFZVY0lYZklreHkyWWNUa1RwbVdqSDg2em1sVEVmd2pubnRPM0tnUTTSAdsBQVVfeXFMTlNNSVpOQlpVamYtRzV3UDhFcjE1eUo0cXA5U0pIQXBuVkZKUEctMkQxVHVsOHNMWGkwaDNRS1pTMDRuaXY2VEdueXJUMXNMQy1OUzdsNmxxcjBYbGcwendmc2ZKRndHV01nMXA0YjdHR1B1WG42TkJ0WWhQVWcxTkNmZEtOWlJKSHgtTTBfeU9YRW9yUW9pSjFPQTZaZ1l2S2hRbVg1RTlBc2RiREt2WkVGVXBWVWNJWGZJa3h5MlljVGtUcG1Xakg4NnptbFRFZndqbm50TzNLZ1E0?oc=5",
-        "source": "Simply Wall St",
-        "published_at": "2026-10-31T15:56:34+00:00",
-        "id": "b0a77ce1d122a8bc6231",
-        "type": "earnings",
-        "age_hours": 5.61,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Earnings Beat Could Be A Game Changer For EastGroup Properties Stock (EGP) - Simply Wall St",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Earnings Beat Could Be A Game Changer For EastGroup Properties Stock (EGP) - Simply Wall St",
-            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU01JWk5CWlVqZi1HNXdQOEVyMTV5SjRxcDlTSkhBcG5WRkpQRy0yRDFUdWw4c0xYaTBoM1FLWlMwNG5pdjZUR255clQxc0xDLU5TN2w2bHFyMFhsZzB6d2ZzZkpGd0dXTWcxcDRiN0dHUHVYbjZOQnRZaFBVZzFOQ2ZkS05aUkpIeC1NMF95T1hFb3JRb2lKMU9BNlpnWXZLaFFtWDVFOUFzZGJES3ZaRUZVcFZVY0lYZklreHkyWWNUa1RwbVdqSDg2em1sVEVmd2pubnRPM0tnUTTSAdsBQVVfeXFMTlNNSVpOQlpVamYtRzV3UDhFcjE1eUo0cXA5U0pIQXBuVkZKUEctMkQxVHVsOHNMWGkwaDNRS1pTMDRuaXY2VEdueXJUMXNMQy1OUzdsNmxxcjBYbGcwendmc2ZKRndHV01nMXA0YjdHR1B1WG42TkJ0WWhQVWcxTkNmZEtOWlJKSHgtTTBfeU9YRW9yUW9pSjFPQTZaZ1l2S2hRbVg1RTlBc2RiREt2WkVGVXBWVWNJWGZJa3h5MlljVGtUcG1Xakg4NnptbFRFZndqbm50TzNLZ1E0?oc=5",
-            "source": "Simply Wall St",
-            "published_at": "2026-10-31T15:56:34+00:00",
-            "id": "b0a77ce1d122a8bc6231",
-            "type": "earnings",
-            "age_hours": 5.61,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "EGP_US_EQ",
-        "isin": "US2772761019",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
               "US regular market session is closed.",
               "Price data is stale or future-dated.",
               "Regular-session chart checks wait for the market to open.",
@@ -5595,1392 +3575,6 @@
       }
     },
     {
-      "symbol": "OP",
-      "name": "Optimism",
-      "coin_id": "optimism",
-      "asset_type": "crypto",
-      "price": 0.1008,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": -4.1716,
-      "change_1h": -0.7739,
-      "acceleration": -0.6000833333333334,
-      "discovery_route": "catalyst_first",
-      "change_7d": 0.9917,
-      "volume": 67292093.0,
-      "dollar_volume": 67292093.0,
-      "market_cap": 230048443,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "Optimism Foundation Proposes Ether Rebates for OP Mainnet Partners - TOKENPOST",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tSHdfWEFYTmh6OU9HSk9MU2x3UkRSM3U4SU1MbWhUQVFzcE1ORzRWYmhMcjJ5bExSRFZ0bFhHUGtPakp1eDV5UnRqU1pjb3R0dWNyQXRsQkNnV3M?oc=5",
-        "source": "TOKENPOST",
-        "published_at": "2026-10-31T01:48:00+00:00",
-        "id": "90f469e83723328cdafa",
-        "type": "crypto_event",
-        "age_hours": 19.75,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Optimism Foundation Proposes Ether Rebates for OP Mainnet Partners - TOKENPOST",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Optimism Foundation Proposes Ether Rebates for OP Mainnet Partners - TOKENPOST",
-            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tSHdfWEFYTmh6OU9HSk9MU2x3UkRSM3U4SU1MbWhUQVFzcE1ORzRWYmhMcjJ5bExSRFZ0bFhHUGtPakp1eDV5UnRqU1pjb3R0dWNyQXRsQkNnV3M?oc=5",
-            "source": "TOKENPOST",
-            "published_at": "2026-10-31T01:48:00+00:00",
-            "id": "90f469e83723328cdafa",
-            "type": "crypto_event",
-            "age_hours": 19.75,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "selection_lane": "PRIORITY",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 0.1011,
-      "support": 0.1001,
-      "momentum_pct": 0.3984063745019917,
-      "reference_price": 0.10057645866281956,
-      "extension_pct": 0.22226009958241644,
-      "resistance_zones": [
-        {
-          "lower": 0.1015,
-          "upper": 0.1016,
-          "touches": 5,
-          "confirmed_at": "2026-10-31 13:05:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:40:00+00:00",
-            "2026-10-31 12:35:00+00:00",
-            "2026-10-31 12:40:00+00:00",
-            "2026-10-31 12:50:00+00:00",
-            "2026-10-31 12:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1017,
-          "upper": 0.1017,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 17:00:00+00:00",
-          "pivot_times": [
-            "2026-10-31 16:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1022,
-          "upper": 0.1022,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 13:40:00+00:00",
-          "pivot_times": [
-            "2026-10-31 13:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1024,
-          "upper": 0.1025,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 08:05:00+00:00",
-          "pivot_times": [
-            "2026-10-31 07:55:00+00:00",
-            "2026-10-31 07:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1027,
-          "upper": 0.1027,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1032,
-          "upper": 0.1032,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 05:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 05:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1037,
-          "upper": 0.1037,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 06:10:00+00:00",
-          "pivot_times": [
-            "2026-10-31 06:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1047,
-          "upper": 0.1047,
-          "touches": 1,
-          "confirmed_at": "2026-10-30 21:10:00+00:00",
-          "pivot_times": [
-            "2026-10-30 21:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1049,
-          "upper": 0.1049,
-          "touches": 1,
-          "confirmed_at": "2026-10-30 20:10:00+00:00",
-          "pivot_times": [
-            "2026-10-30 20:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1053,
-          "upper": 0.1054,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 04:25:00+00:00",
-          "pivot_times": [
-            "2026-10-31 03:55:00+00:00",
-            "2026-10-31 04:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1058,
-          "upper": 0.1058,
-          "touches": 2,
-          "confirmed_at": "2026-10-30 22:45:00+00:00",
-          "pivot_times": [
-            "2026-10-30 21:35:00+00:00",
-            "2026-10-30 22:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1063,
-          "upper": 0.1063,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 02:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 02:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1068,
-          "upper": 0.1069,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 03:20:00+00:00",
-          "pivot_times": [
-            "2026-10-31 03:10:00+00:00",
-            "2026-10-31 02:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1083,
-          "upper": 0.1085,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 00:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 00:40:00+00:00",
-            "2026-10-31 00:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.1088,
-          "upper": 0.109,
-          "touches": 5,
-          "confirmed_at": "2026-10-31 02:05:00+00:00",
-          "pivot_times": [
-            "2026-10-30 23:50:00+00:00",
-            "2026-10-31 01:00:00+00:00",
-            "2026-10-31 01:25:00+00:00",
-            "2026-10-31 01:55:00+00:00",
-            "2026-10-31 00:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 0.1015,
-      "resistance_2": 0.1022,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "entry": 0.10190179999999999,
-            "support": 0.1004,
-            "resistance_1": 0.1022,
-            "resistance_2": 0.1027,
-            "momentum_pct": 0.3984063745019917,
-            "extension_pct": 0.22226009958241644,
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "target_basis": {
-              "origin": 0.1018,
-              "measured_height": 0.001700000000000007,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                0.10265,
-                0.10350000000000001
-              ],
-              "overhead_levels": [
-                0.1022,
-                0.1024,
-                0.1027,
-                0.1032
-              ],
-              "resistance_zones": [
-                {
-                  "lower": 0.1022,
-                  "upper": 0.1022,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 13:40:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 13:30:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1024,
-                  "upper": 0.1025,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 08:05:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 07:55:00+00:00",
-                    "2026-10-31 07:40:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1027,
-                  "upper": 0.1027,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-29 16:15:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 16:05:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1032,
-                  "upper": 0.1032,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 05:50:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 05:40:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1037,
-                  "upper": 0.1037,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 06:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 06:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1047,
-                  "upper": 0.1047,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-30 21:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-30 21:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1049,
-                  "upper": 0.1049,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-30 20:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-30 20:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 0.1053,
-                  "upper": 0.1054,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 04:25:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 03:55:00+00:00",
-                    "2026-10-31 04:15:00+00:00"
-                  ]
-                }
-              ],
-              "resistance_mode": "swing_zones"
-            },
-            "observed_at": "2026-10-31T21:30:00+00:00",
-            "evidence": {
-              "range_high": 0.1018,
-              "range_low": 0.1001,
-              "confirmation": "Completed close above range required"
-            },
-            "stage": "DEVELOPING"
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.3878438262432262,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": 0.19880715705766772,
-          "trend": "RISING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "OPEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent crypto bar volume is below 1.5x its preceding baseline.",
-              "TP1 reward/risk is below 1.5R.",
-              "TP2 reward/risk is below 2R.",
-              "Price is more than 1% below the trigger; wait for structure to improve."
-            ],
-            "plan": null,
-            "metrics": {
-              "stop_width_pct": 1.5723,
-              "rr1": 0.1861,
-              "rr2": 0.4982,
-              "minimum_rr1": 1.5,
-              "minimum_rr2": 2.0
-            },
-            "route": "CHART_LED",
-            "direction": "LONG",
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "EARLY_RANGE_BREAKOUT",
-              "entry": 0.10190179999999999,
-              "support": 0.1004,
-              "resistance_1": 0.1022,
-              "resistance_2": 0.1027,
-              "momentum_pct": 0.3984063745019917,
-              "extension_pct": 0.22226009958241644,
-              "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-              "target_basis": {
-                "origin": 0.1018,
-                "measured_height": 0.001700000000000007,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  0.10265,
-                  0.10350000000000001
-                ],
-                "overhead_levels": [
-                  0.1022,
-                  0.1024,
-                  0.1027,
-                  0.1032
-                ],
-                "resistance_zones": [
-                  {
-                    "lower": 0.1022,
-                    "upper": 0.1022,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 13:40:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 13:30:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1024,
-                    "upper": 0.1025,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 08:05:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 07:55:00+00:00",
-                      "2026-10-31 07:40:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1027,
-                    "upper": 0.1027,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-29 16:15:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 16:05:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1032,
-                    "upper": 0.1032,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 05:50:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 05:40:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1037,
-                    "upper": 0.1037,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 06:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 06:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1047,
-                    "upper": 0.1047,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-30 21:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-30 21:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1049,
-                    "upper": 0.1049,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-30 20:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-30 20:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 0.1053,
-                    "upper": 0.1054,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 04:25:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 03:55:00+00:00",
-                      "2026-10-31 04:15:00+00:00"
-                    ]
-                  }
-                ],
-                "resistance_mode": "swing_zones"
-              },
-              "observed_at": "2026-10-31T21:30:00+00:00",
-              "evidence": {
-                "range_high": 0.1018,
-                "range_low": 0.1001,
-                "confirmation": "Completed close above range required"
-              },
-              "stage": "DEVELOPING"
-            }
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "NEAR",
-      "name": "NEAR Protocol",
-      "coin_id": "near",
-      "asset_type": "crypto",
-      "price": 3.9795,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 2.45228,
-      "change_1h": -0.3273,
-      "acceleration": -0.4294783333333333,
-      "discovery_route": "catalyst_first",
-      "change_7d": -0.9518,
-      "volume": 459307507.0,
-      "dollar_volume": 459307507.0,
-      "market_cap": 5190573012,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "catalyst": {
-        "title": "NEAR Protocol Partners with Ondo to Tokenize US Stocks - Cryptonews.net",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rZ3NaUVZYaWRSZlFfeVBXZzJOSVU5WWZaRENFNkV6RHl5LUN2TUl1SnppblRGRzZ5QWZSY3hOVkVyeExkNDAybG92TEdFSE4zaXlPcnVmckhuY0Ff?oc=5",
-        "source": "Cryptonews.net",
-        "published_at": "2026-10-30T22:52:50+00:00",
-        "id": "b107abc19358bfbfa7b5",
-        "type": "partnership",
-        "age_hours": 22.67,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "NEAR Protocol Partners with Ondo to Tokenize US Stocks - Cryptonews.net",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "NEAR Protocol Partners with Ondo to Tokenize US Stocks - Cryptonews.net",
-            "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rZ3NaUVZYaWRSZlFfeVBXZzJOSVU5WWZaRENFNkV6RHl5LUN2TUl1SnppblRGRzZ5QWZSY3hOVkVyeExkNDAybG92TEdFSE4zaXlPcnVmckhuY0Ff?oc=5",
-            "source": "Cryptonews.net",
-            "published_at": "2026-10-30T22:52:50+00:00",
-            "id": "b107abc19358bfbfa7b5",
-            "type": "partnership",
-            "age_hours": 22.67,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Crypto symbol matches but name differs; identity needs verification."
-      },
-      "selection_lane": "ROTATION",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 3.9795,
-      "support": 3.9448,
-      "momentum_pct": 0.7391843657443609,
-      "reference_price": 3.954104574481911,
-      "extension_pct": 0.6422547770228437,
-      "resistance_zones": [
-        {
-          "lower": 3.9832,
-          "upper": 3.9881,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 20:20:00+00:00",
-          "pivot_times": [
-            "2026-10-31 12:55:00+00:00",
-            "2026-10-31 20:10:00+00:00"
-          ]
-        },
-        {
-          "lower": 3.9903,
-          "upper": 3.994,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-31 14:35:00+00:00",
-            "2026-10-31 12:40:00+00:00",
-            "2026-10-29 14:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.007,
-          "upper": 4.009,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 15:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:55:00+00:00",
-            "2026-10-31 15:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0148,
-          "upper": 4.0148,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 16:05:00+00:00",
-          "pivot_times": [
-            "2026-10-31 15:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0217,
-          "upper": 4.0217,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 18:30:00+00:00",
-          "pivot_times": [
-            "2026-10-29 18:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0311,
-          "upper": 4.0321,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 18:10:00+00:00",
-          "pivot_times": [
-            "2026-10-29 18:00:00+00:00",
-            "2026-10-29 13:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0492,
-          "upper": 4.0546,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 18:00:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:15:00+00:00",
-            "2026-10-31 17:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0691,
-          "upper": 4.0709,
-          "touches": 2,
-          "confirmed_at": "2026-10-31 17:15:00+00:00",
-          "pivot_times": [
-            "2026-10-31 16:50:00+00:00",
-            "2026-10-31 17:05:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0832,
-          "upper": 4.0832,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 18:25:00+00:00",
-          "pivot_times": [
-            "2026-10-31 18:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0895,
-          "upper": 4.0895,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.0981,
-          "upper": 4.0981,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 17:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 17:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.1192,
-          "upper": 4.1192,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 15:25:00+00:00",
-          "pivot_times": [
-            "2026-10-29 15:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.1447,
-          "upper": 4.1447,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:35:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:25:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.16,
-          "upper": 4.16,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 15:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 15:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 4.1935,
-          "upper": 4.1935,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 3.9903,
-      "resistance_2": 4.007,
-      "chart_analysis": {
-        "setups": [
-          {
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "entry": 3.9938898999999997,
-            "support": 3.9509,
-            "resistance_1": 4.007,
-            "resistance_2": 4.0217,
-            "momentum_pct": 0.7391843657443609,
-            "extension_pct": 0.6422547770228437,
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "target_basis": {
-              "origin": 3.9899,
-              "measured_height": 0.04510000000000014,
-              "fractions": [
-                0.5,
-                1.0
-              ],
-              "uncapped_targets": [
-                4.01245,
-                4.035
-              ],
-              "overhead_levels": [
-                4.007,
-                4.0148,
-                4.0217,
-                4.0311
-              ],
-              "resistance_zones": [
-                {
-                  "lower": 4.007,
-                  "upper": 4.009,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 15:45:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 13:55:00+00:00",
-                    "2026-10-31 15:35:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0148,
-                  "upper": 4.0148,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 16:05:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 15:55:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0217,
-                  "upper": 4.0217,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-29 18:30:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 18:20:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0311,
-                  "upper": 4.0321,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-29 18:10:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 18:00:00+00:00",
-                    "2026-10-29 13:00:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0492,
-                  "upper": 4.0546,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 18:00:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 13:15:00+00:00",
-                    "2026-10-31 17:50:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0691,
-                  "upper": 4.0709,
-                  "touches": 2,
-                  "confirmed_at": "2026-10-31 17:15:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 16:50:00+00:00",
-                    "2026-10-31 17:05:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0832,
-                  "upper": 4.0832,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-31 18:25:00+00:00",
-                  "pivot_times": [
-                    "2026-10-31 18:15:00+00:00"
-                  ]
-                },
-                {
-                  "lower": 4.0895,
-                  "upper": 4.0895,
-                  "touches": 1,
-                  "confirmed_at": "2026-10-29 14:45:00+00:00",
-                  "pivot_times": [
-                    "2026-10-29 14:35:00+00:00"
-                  ]
-                }
-              ],
-              "resistance_mode": "swing_zones"
-            },
-            "observed_at": "2026-10-31T21:30:00+00:00",
-            "evidence": {
-              "range_high": 3.9899,
-              "range_low": 3.9448,
-              "confirmation": "Completed close above range required"
-            },
-            "stage": "DEVELOPING"
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 1.746197370110083,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": 0.3732943223951235,
-          "trend": "RISING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "NEAREUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "score": {
-        "score": 4,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "BROKER_UNVERIFIED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Crypto symbol matches but name differs; identity needs verification."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "direction": "LONG",
-            "pattern": "EARLY_RANGE_BREAKOUT",
-            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-            "pattern_evidence": {
-              "pattern": "EARLY_RANGE_BREAKOUT",
-              "entry": 3.9938898999999997,
-              "support": 3.9509,
-              "resistance_1": 4.007,
-              "resistance_2": 4.0217,
-              "momentum_pct": 0.7391843657443609,
-              "extension_pct": 0.6422547770228437,
-              "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
-              "target_basis": {
-                "origin": 3.9899,
-                "measured_height": 0.04510000000000014,
-                "fractions": [
-                  0.5,
-                  1.0
-                ],
-                "uncapped_targets": [
-                  4.01245,
-                  4.035
-                ],
-                "overhead_levels": [
-                  4.007,
-                  4.0148,
-                  4.0217,
-                  4.0311
-                ],
-                "resistance_zones": [
-                  {
-                    "lower": 4.007,
-                    "upper": 4.009,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 15:45:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 13:55:00+00:00",
-                      "2026-10-31 15:35:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0148,
-                    "upper": 4.0148,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 16:05:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 15:55:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0217,
-                    "upper": 4.0217,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-29 18:30:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 18:20:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0311,
-                    "upper": 4.0321,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-29 18:10:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 18:00:00+00:00",
-                      "2026-10-29 13:00:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0492,
-                    "upper": 4.0546,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 18:00:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 13:15:00+00:00",
-                      "2026-10-31 17:50:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0691,
-                    "upper": 4.0709,
-                    "touches": 2,
-                    "confirmed_at": "2026-10-31 17:15:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 16:50:00+00:00",
-                      "2026-10-31 17:05:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0832,
-                    "upper": 4.0832,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-31 18:25:00+00:00",
-                    "pivot_times": [
-                      "2026-10-31 18:15:00+00:00"
-                    ]
-                  },
-                  {
-                    "lower": 4.0895,
-                    "upper": 4.0895,
-                    "touches": 1,
-                    "confirmed_at": "2026-10-29 14:45:00+00:00",
-                    "pivot_times": [
-                      "2026-10-29 14:35:00+00:00"
-                    ]
-                  }
-                ],
-                "resistance_mode": "swing_zones"
-              },
-              "observed_at": "2026-10-31T21:30:00+00:00",
-              "evidence": {
-                "range_high": 3.9899,
-                "range_low": 3.9448,
-                "confirmation": "Completed close above range required"
-              },
-              "stage": "DEVELOPING"
-            }
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "LINK",
-      "name": "Chainlink",
-      "coin_id": "chainlink",
-      "asset_type": "crypto",
-      "price": 10.55466,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 4.56997,
-      "change_1h": -0.6759,
-      "acceleration": -0.8663154166666666,
-      "discovery_route": "recent_momentum",
-      "change_7d": 2.2366,
-      "volume": 315714056.0,
-      "dollar_volume": 315714056.0,
-      "market_cap": 8075705559,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "selection_lane": "ROTATION",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 10.58166,
-      "support": 10.54107,
-      "momentum_pct": 0.045024080774136443,
-      "reference_price": 10.560430584367102,
-      "extension_pct": -0.054643457205660884,
-      "resistance_zones": [
-        {
-          "lower": 10.60976,
-          "upper": 10.60976,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 10.656,
-          "upper": 10.656,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 19:40:00+00:00",
-          "pivot_times": [
-            "2026-10-31 19:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 10.673,
-          "upper": 10.68798,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 20:25:00+00:00",
-          "pivot_times": [
-            "2026-10-29 15:15:00+00:00",
-            "2026-10-31 20:00:00+00:00",
-            "2026-10-31 20:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 10.74644,
-          "upper": 10.74644,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 10.60976,
-      "resistance_2": 10.656,
-      "chart_analysis": {
-        "setups": [
-          {
-            "direction": "SHORT",
-            "pattern": "TREND_RALLY_REJECTION",
-            "entry": 10.56671,
-            "support": 10.57662,
-            "resistance_1": 10.54102,
-            "resistance_2": 10.499929999999999,
-            "stop_reference": 10.57662,
-            "target_1": 10.54102,
-            "target_2": 10.499929999999999,
-            "momentum_pct": 0.045024080774136443,
-            "extension_pct": 0.05464345720566235,
-            "observed_at": "2026-10-31T21:30:00+00:00",
-            "stage": "CONFIRMED",
-            "evidence": {
-              "ema9": 10.571760844333769,
-              "ema21": 10.583390931538052
-            },
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "target_basis": {
-              "origin": 10.57662,
-              "measured_height": 0.07669000000000104,
-              "uncapped_targets": [
-                10.538274999999999,
-                10.499929999999999
-              ],
-              "support_levels": [
-                10.54102,
-                10.51788,
-                10.49023,
-                10.46002,
-                10.45182,
-                10.42741,
-                10.41109,
-                10.38525
-              ]
-            }
-          }
-        ],
-        "issues": [],
-        "interval": "5m",
-        "recent_volume_ratio": 0.11897436803639784,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": -0.39277935275398024,
-          "trend": "FALLING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "LINKEUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "catalyst": {
-        "type": "unverified",
-        "summary": "No fresh, entity-matched event found.",
-        "eligible_for_points": false,
-        "headlines": [],
-        "freshness": "STALE/UNVERIFIED",
-        "retrieval_status": "OK",
-        "headlines_checked": 10
-      },
-      "score": {
-        "score": 3,
-        "label": "Research rank only",
-        "reasons": [
-          "positive recent momentum",
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "BEARISH WATCH",
-        "reasons": [
-          "Bearish chart detected; no approved executable short plan.",
-          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-        ],
-        "plan": null,
-        "route": "CHART_LED",
-        "direction": "SHORT",
-        "pattern": "TREND_RALLY_REJECTION",
-        "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-        "pattern_evidence": {
-          "direction": "SHORT",
-          "pattern": "TREND_RALLY_REJECTION",
-          "entry": 10.56671,
-          "support": 10.57662,
-          "resistance_1": 10.54102,
-          "resistance_2": 10.499929999999999,
-          "stop_reference": 10.57662,
-          "target_1": 10.54102,
-          "target_2": 10.499929999999999,
-          "momentum_pct": 0.045024080774136443,
-          "extension_pct": 0.05464345720566235,
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "stage": "CONFIRMED",
-          "evidence": {
-            "ema9": 10.571760844333769,
-            "ema21": 10.583390931538052
-          },
-          "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-          "target_basis": {
-            "origin": 10.57662,
-            "measured_height": 0.07669000000000104,
-            "uncapped_targets": [
-              10.538274999999999,
-              10.499929999999999
-            ],
-            "support_levels": [
-              10.54102,
-              10.51788,
-              10.49023,
-              10.46002,
-              10.45182,
-              10.42741,
-              10.41109,
-              10.38525
-            ]
-          }
-        },
-        "research_only": true,
-        "blockers": [
-          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-        ],
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "No qualifying fresh catalyst found; this does not mean the asset identity is missing."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          },
-          {
-            "status": "BEARISH WATCH",
-            "reasons": [
-              "Bearish chart detected; no approved executable short plan.",
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "direction": "SHORT",
-            "pattern": "TREND_RALLY_REJECTION",
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "pattern_evidence": {
-              "direction": "SHORT",
-              "pattern": "TREND_RALLY_REJECTION",
-              "entry": 10.56671,
-              "support": 10.57662,
-              "resistance_1": 10.54102,
-              "resistance_2": 10.499929999999999,
-              "stop_reference": 10.57662,
-              "target_1": 10.54102,
-              "target_2": 10.499929999999999,
-              "momentum_pct": 0.045024080774136443,
-              "extension_pct": 0.05464345720566235,
-              "observed_at": "2026-10-31T21:30:00+00:00",
-              "stage": "CONFIRMED",
-              "evidence": {
-                "ema9": 10.571760844333769,
-                "ema21": 10.583390931538052
-              },
-              "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-              "target_basis": {
-                "origin": 10.57662,
-                "measured_height": 0.07669000000000104,
-                "uncapped_targets": [
-                  10.538274999999999,
-                  10.499929999999999
-                ],
-                "support_levels": [
-                  10.54102,
-                  10.51788,
-                  10.49023,
-                  10.46002,
-                  10.45182,
-                  10.42741,
-                  10.41109,
-                  10.38525
-                ]
-              }
-            },
-            "research_only": true,
-            "blockers": [
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-            ]
-          }
-        ]
-      }
-    },
-    {
       "symbol": "ETH",
       "name": "Ethereum",
       "coin_id": "ethereum",
@@ -7270,29 +3864,29 @@
       }
     },
     {
-      "symbol": "HBAR",
-      "name": "Hedera",
-      "coin_id": "hedera-hashgraph",
+      "symbol": "QNT",
+      "name": "Quant",
+      "coin_id": "quant-network",
       "asset_type": "crypto",
-      "price": 0.06477,
+      "price": 179.15,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.25279,
-      "change_1h": -0.4439,
-      "acceleration": -0.4544329166666667,
+      "change_24h": 5.44683,
+      "change_1h": -1.1105,
+      "acceleration": -1.33745125,
       "discovery_route": "recent_momentum",
-      "change_7d": -7.1405,
-      "volume": 43449072.0,
-      "dollar_volume": 43449072.0,
-      "market_cap": 2866163887,
+      "change_7d": 12.523,
+      "volume": 60166226.0,
+      "dollar_volume": 60166226.0,
+      "market_cap": 2601206055,
       "session": "24/7",
-      "observed_at": "2026-10-31T21:30:00+00:00",
+      "observed_at": "2026-10-31T21:45:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -7303,492 +3897,158 @@
         "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
         "reason": "Asset identity matched the official broker instrument catalogue."
       },
-      "selection_lane": "PRIORITY",
+      "selection_lane": "ROTATION",
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 0.0648,
-      "support": 0.06451,
-      "momentum_pct": 0.0,
-      "reference_price": 0.06469864438548592,
-      "extension_pct": 0.11028919568842888,
+      "entry": 179.35,
+      "support": 177.85,
+      "momentum_pct": -0.08923094082873284,
+      "reference_price": 178.96333000982528,
+      "extension_pct": 0.104306278925681,
       "resistance_zones": [
         {
-          "lower": 0.06497,
-          "upper": 0.06506,
-          "touches": 6,
-          "confirmed_at": "2026-10-31 20:20:00+00:00",
+          "lower": 179.41,
+          "upper": 179.57,
+          "touches": 5,
+          "confirmed_at": "2026-10-31 15:30:00+00:00",
           "pivot_times": [
-            "2026-10-31 16:50:00+00:00",
-            "2026-10-31 10:40:00+00:00",
-            "2026-10-30 15:15:00+00:00",
-            "2026-10-31 20:10:00+00:00",
-            "2026-10-31 09:35:00+00:00",
-            "2026-10-31 09:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06518,
-          "upper": 0.0652,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 13:00:00+00:00",
-          "pivot_times": [
-            "2026-10-31 01:50:00+00:00",
+            "2026-10-29 16:05:00+00:00",
             "2026-10-31 12:35:00+00:00",
-            "2026-10-31 12:50:00+00:00"
+            "2026-10-31 14:10:00+00:00",
+            "2026-10-31 15:15:00+00:00",
+            "2026-10-31 15:20:00+00:00"
           ]
         },
         {
-          "lower": 0.06543,
-          "upper": 0.06543,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 00:50:00+00:00",
-          "pivot_times": [
-            "2026-10-31 00:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06553,
-          "upper": 0.06554,
-          "touches": 3,
-          "confirmed_at": "2026-10-31 01:15:00+00:00",
-          "pivot_times": [
-            "2026-10-31 01:00:00+00:00",
-            "2026-10-31 01:05:00+00:00",
-            "2026-10-29 18:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06571,
-          "upper": 0.06571,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 19:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 19:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06598,
-          "upper": 0.06598,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 18:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 18:05:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06639,
-          "upper": 0.06643,
-          "touches": 3,
-          "confirmed_at": "2026-10-29 11:00:00+00:00",
-          "pivot_times": [
-            "2026-10-29 10:05:00+00:00",
-            "2026-10-29 10:35:00+00:00",
-            "2026-10-29 10:50:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06677,
-          "upper": 0.06677,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 13:10:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:00:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.0669,
-          "upper": 0.06695,
-          "touches": 4,
-          "confirmed_at": "2026-10-29 16:50:00+00:00",
-          "pivot_times": [
-            "2026-10-29 13:15:00+00:00",
-            "2026-10-29 13:30:00+00:00",
-            "2026-10-29 13:55:00+00:00",
-            "2026-10-29 16:40:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.0671,
-          "upper": 0.06717,
+          "lower": 180.09,
+          "upper": 180.33,
           "touches": 2,
-          "confirmed_at": "2026-10-29 17:10:00+00:00",
+          "confirmed_at": "2026-10-31 20:35:00+00:00",
           "pivot_times": [
-            "2026-10-29 17:00:00+00:00",
-            "2026-10-29 15:10:00+00:00"
+            "2026-10-31 13:15:00+00:00",
+            "2026-10-31 20:25:00+00:00"
           ]
         },
         {
-          "lower": 0.06737,
-          "upper": 0.06737,
+          "lower": 180.51,
+          "upper": 180.65,
+          "touches": 3,
+          "confirmed_at": "2026-10-31 20:50:00+00:00",
+          "pivot_times": [
+            "2026-10-31 20:40:00+00:00",
+            "2026-10-31 17:15:00+00:00",
+            "2026-10-31 16:10:00+00:00"
+          ]
+        },
+        {
+          "lower": 180.81,
+          "upper": 180.81,
           "touches": 1,
-          "confirmed_at": "2026-10-29 14:45:00+00:00",
-          "pivot_times": [
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 0.06782,
-          "upper": 0.06782,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:15:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:05:00+00:00"
-          ]
-        }
-      ],
-      "resistance_1": 0.06497,
-      "resistance_2": 0.06518,
-      "chart_analysis": {
-        "setups": [],
-        "issues": [
-          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
-        ],
-        "interval": "5m",
-        "recent_volume_ratio": 0.16466139519566436,
-        "observed_at": "2026-10-31T21:30:00+00:00",
-        "higher_timeframe": {
-          "interval": "15m",
-          "observed_at": "2026-10-31T21:30:00+00:00",
-          "momentum_pct": 0.06179514908080108,
-          "trend": "RISING"
-        }
-      },
-      "structure_observed_at": "2026-10-31T21:30:00+00:00",
-      "structure_source": "Kraken completed 5-minute EUR OHLCV",
-      "candle_evidence": {
-        "provider": "Kraken",
-        "pair": "HBAREUR",
-        "currency": "EUR",
-        "interval_minutes": 5,
-        "failed_attempts": [],
-        "fallback_used": false
-      },
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "catalyst": {
-        "title": "Hedera Coin Price Today: HBAR Launches Network Upgrade as Analysts Eye 300x for Pepeto - TechBullion",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOXV4LUlfWTVHTVdTaG1XOHgxT1dKNHAwcXFpYTJub0J5TXZkUnhoTHNWc3lIYTNGNVFja1p1cTdJdmFEN3VSaVJIOGo5d1NOMXIyZ0F6QjNINFBZWGExSWZ6ZklZUFJNcEh3TV9ZdWZyaGpWTWlSWTlpRE5wcVBlS1FGR0FVVFM0QldMeUxPdTZDWWRMWmo3YkpHMVRJYWFoLWpJc3hleENxbzdSMVB3?oc=5",
-        "source": "TechBullion",
-        "published_at": "2026-10-30T21:40:03+00:00",
-        "id": "9edf4133c599c935f57b",
-        "type": "product_launch",
-        "age_hours": 23.9,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Hedera Coin Price Today: HBAR Launches Network Upgrade as Analysts Eye 300x for Pepeto - TechBullion",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Hedera Coin Price Today: HBAR Launches Network Upgrade as Analysts Eye 300x for Pepeto - TechBullion",
-            "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOXV4LUlfWTVHTVdTaG1XOHgxT1dKNHAwcXFpYTJub0J5TXZkUnhoTHNWc3lIYTNGNVFja1p1cTdJdmFEN3VSaVJIOGo5d1NOMXIyZ0F6QjNINFBZWGExSWZ6ZklZUFJNcEh3TV9ZdWZyaGpWTWlSWTlpRE5wcVBlS1FGR0FVVFM0QldMeUxPdTZDWWRMWmo3YkpHMVRJYWFoLWpJc3hleENxbzdSMVB3?oc=5",
-            "source": "TechBullion",
-            "published_at": "2026-10-30T21:40:03+00:00",
-            "id": "9edf4133c599c935f57b",
-            "type": "product_launch",
-            "age_hours": 23.9,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 7
-      },
-      "score": {
-        "score": 2,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
-        ],
-        "plan": null,
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "REJECTED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
-            ],
-            "plan": null,
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
-      }
-    },
-    {
-      "symbol": "BNB",
-      "name": "BNB",
-      "coin_id": "binancecoin",
-      "asset_type": "crypto",
-      "price": 630.59,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 0.28101,
-      "change_1h": -0.2591,
-      "acceleration": -0.27080875,
-      "discovery_route": "recent_momentum",
-      "change_7d": -3.5293,
-      "volume": 652923676.0,
-      "dollar_volume": 652923676.0,
-      "market_cap": 82648597389,
-      "session": "24/7",
-      "observed_at": "2026-10-31T21:00:00+00:00",
-      "source": "Kraken EUR candles",
-      "history_status": "OK",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "LISTED_PUBLIC",
-        "checked_at": "2026-10-31T21:02:26.406179+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "selection_lane": "PRIORITY",
-      "history_samples": 720,
-      "structure_status": "COMPLETE",
-      "structure_issues": [],
-      "entry": 632.27,
-      "support": 630.59,
-      "momentum_pct": -0.07289438237856327,
-      "reference_price": 631.517661649941,
-      "extension_pct": -0.1468940152073217,
-      "resistance_zones": [
-        {
-          "lower": 632.24,
-          "upper": 633.07,
-          "touches": 2,
           "confirmed_at": "2026-10-31 16:35:00+00:00",
           "pivot_times": [
-            "2026-10-31 03:20:00+00:00",
             "2026-10-31 16:25:00+00:00"
           ]
         },
         {
-          "lower": 634.04,
-          "upper": 634.6,
+          "lower": 181.5,
+          "upper": 181.73,
           "touches": 3,
-          "confirmed_at": "2026-10-31 18:55:00+00:00",
+          "confirmed_at": "2026-10-31 17:55:00+00:00",
           "pivot_times": [
-            "2026-10-29 21:55:00+00:00",
-            "2026-10-31 18:45:00+00:00",
-            "2026-10-31 14:50:00+00:00"
+            "2026-10-31 15:40:00+00:00",
+            "2026-10-31 16:50:00+00:00",
+            "2026-10-31 17:45:00+00:00"
           ]
         },
         {
-          "lower": 636.26,
-          "upper": 636.26,
-          "touches": 1,
-          "confirmed_at": "2026-10-31 00:35:00+00:00",
-          "pivot_times": [
-            "2026-10-31 00:25:00+00:00"
-          ]
-        },
-        {
-          "lower": 640.68,
-          "upper": 641.52,
+          "lower": 182.25,
+          "upper": 182.28,
           "touches": 2,
-          "confirmed_at": "2026-10-30 06:15:00+00:00",
+          "confirmed_at": "2026-10-31 20:10:00+00:00",
           "pivot_times": [
-            "2026-10-30 06:05:00+00:00",
-            "2026-10-30 04:15:00+00:00"
+            "2026-10-31 20:00:00+00:00",
+            "2026-10-31 13:35:00+00:00"
           ]
         },
         {
-          "lower": 642.0,
-          "upper": 642.09,
-          "touches": 2,
-          "confirmed_at": "2026-10-30 06:00:00+00:00",
-          "pivot_times": [
-            "2026-10-30 05:50:00+00:00",
-            "2026-10-30 03:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 643.73,
-          "upper": 643.73,
+          "lower": 184.7,
+          "upper": 184.7,
           "touches": 1,
-          "confirmed_at": "2026-10-30 05:20:00+00:00",
+          "confirmed_at": "2026-10-31 19:10:00+00:00",
           "pivot_times": [
-            "2026-10-30 05:10:00+00:00"
+            "2026-10-31 19:00:00+00:00"
           ]
         },
         {
-          "lower": 648.83,
-          "upper": 648.83,
+          "lower": 186.3,
+          "upper": 186.3,
           "touches": 1,
-          "confirmed_at": "2026-10-29 21:25:00+00:00",
+          "confirmed_at": "2026-10-31 18:40:00+00:00",
           "pivot_times": [
-            "2026-10-29 21:15:00+00:00"
-          ]
-        },
-        {
-          "lower": 661.73,
-          "upper": 661.73,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 20:30:00+00:00",
-          "pivot_times": [
-            "2026-10-29 20:20:00+00:00"
-          ]
-        },
-        {
-          "lower": 664.21,
-          "upper": 664.21,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 12:05:00+00:00",
-          "pivot_times": [
-            "2026-10-29 11:55:00+00:00"
-          ]
-        },
-        {
-          "lower": 665.54,
-          "upper": 665.76,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 12:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 12:30:00+00:00",
-            "2026-10-29 10:45:00+00:00"
-          ]
-        },
-        {
-          "lower": 671.64,
-          "upper": 671.86,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 17:05:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:55:00+00:00",
-            "2026-10-29 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 673.35,
-          "upper": 674.1,
-          "touches": 2,
-          "confirmed_at": "2026-10-29 15:40:00+00:00",
-          "pivot_times": [
-            "2026-10-29 09:50:00+00:00",
-            "2026-10-29 15:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 674.76,
-          "upper": 674.76,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 16:20:00+00:00",
-          "pivot_times": [
-            "2026-10-29 16:10:00+00:00"
-          ]
-        },
-        {
-          "lower": 675.98,
-          "upper": 675.98,
-          "touches": 1,
-          "confirmed_at": "2026-10-29 09:20:00+00:00",
-          "pivot_times": [
-            "2026-10-29 09:10:00+00:00"
+            "2026-10-31 18:30:00+00:00"
           ]
         }
       ],
-      "resistance_1": 634.04,
-      "resistance_2": 636.26,
+      "resistance_1": 180.09,
+      "resistance_2": 180.81,
       "chart_analysis": {
         "setups": [
           {
             "direction": "SHORT",
             "pattern": "EARLY_RANGE_BREAKDOWN",
-            "entry": 629.9694000000001,
-            "support": 631.13,
-            "resistance_1": 629.1800000000001,
-            "resistance_2": 627.76,
-            "stop_reference": 631.13,
-            "target_1": 629.1800000000001,
-            "target_2": 627.76,
-            "momentum_pct": -0.07289438237856327,
-            "extension_pct": 0.14689401520732395,
-            "observed_at": "2026-10-31T21:00:00+00:00",
+            "entry": 177.67215,
+            "support": 179.35,
+            "resistance_1": 177.13,
+            "resistance_2": 176.49,
+            "stop_reference": 179.35,
+            "target_1": 177.13,
+            "target_2": 176.49,
+            "momentum_pct": -0.08923094082873284,
+            "extension_pct": -0.10430627892567303,
+            "observed_at": "2026-10-31T21:45:00+00:00",
             "stage": "DEVELOPING",
             "evidence": {
-              "range_high": 633.44,
-              "range_low": 630.6
+              "range_high": 182.25,
+              "range_low": 177.85
             },
             "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
             "target_basis": {
-              "origin": 630.6,
-              "measured_height": 2.840000000000032,
+              "origin": 177.85,
+              "measured_height": 4.400000000000006,
               "uncapped_targets": [
-                629.1800000000001,
-                627.76
+                175.64999999999998,
+                173.45
               ],
               "support_levels": [
-                628.57,
-                627.88,
-                626.42,
-                625.71,
-                623.47,
-                623.14,
-                621.7,
-                618.76
+                177.13,
+                176.83,
+                176.49,
+                176.22,
+                176.03,
+                175.7,
+                174.95,
+                174.24
               ]
             }
           }
         ],
         "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 1.2242740508798207,
-        "observed_at": "2026-10-31T21:00:00+00:00",
+        "recent_volume_ratio": 1.305524205265721,
+        "observed_at": "2026-10-31T21:45:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-10-31T21:00:00+00:00",
-          "momentum_pct": -0.23888625217528547,
+          "observed_at": "2026-10-31T21:45:00+00:00",
+          "momentum_pct": -0.3282519194391931,
           "trend": "FALLING"
         }
       },
-      "structure_observed_at": "2026-10-31T21:00:00+00:00",
+      "structure_observed_at": "2026-10-31T21:45:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "BNBEUR",
+        "pair": "QNTEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
@@ -7798,7 +4058,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:02:26.406179+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -7813,13 +4073,14 @@
         "headlines": [],
         "freshness": "STALE/UNVERIFIED",
         "retrieval_status": "OK",
-        "headlines_checked": 12
+        "headlines_checked": 7
       },
       "score": {
-        "score": 1,
+        "score": 2,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity"
+          "notional liquidity",
+          "not extended above recent VWAP"
         ]
       },
       "qualification": {
@@ -7836,38 +4097,38 @@
         "pattern_evidence": {
           "direction": "SHORT",
           "pattern": "EARLY_RANGE_BREAKDOWN",
-          "entry": 629.9694000000001,
-          "support": 631.13,
-          "resistance_1": 629.1800000000001,
-          "resistance_2": 627.76,
-          "stop_reference": 631.13,
-          "target_1": 629.1800000000001,
-          "target_2": 627.76,
-          "momentum_pct": -0.07289438237856327,
-          "extension_pct": 0.14689401520732395,
-          "observed_at": "2026-10-31T21:00:00+00:00",
+          "entry": 177.67215,
+          "support": 179.35,
+          "resistance_1": 177.13,
+          "resistance_2": 176.49,
+          "stop_reference": 179.35,
+          "target_1": 177.13,
+          "target_2": 176.49,
+          "momentum_pct": -0.08923094082873284,
+          "extension_pct": -0.10430627892567303,
+          "observed_at": "2026-10-31T21:45:00+00:00",
           "stage": "DEVELOPING",
           "evidence": {
-            "range_high": 633.44,
-            "range_low": 630.6
+            "range_high": 182.25,
+            "range_low": 177.85
           },
           "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
           "target_basis": {
-            "origin": 630.6,
-            "measured_height": 2.840000000000032,
+            "origin": 177.85,
+            "measured_height": 4.400000000000006,
             "uncapped_targets": [
-              629.1800000000001,
-              627.76
+              175.64999999999998,
+              173.45
             ],
             "support_levels": [
-              628.57,
-              627.88,
-              626.42,
-              625.71,
-              623.47,
-              623.14,
-              621.7,
-              618.76
+              177.13,
+              176.83,
+              176.49,
+              176.22,
+              176.03,
+              175.7,
+              174.95,
+              174.24
             ]
           }
         },
@@ -7879,6 +4140,7 @@
           {
             "status": "REJECTED",
             "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
               "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
               "No positive recent momentum; a daily gain alone is insufficient."
             ],
@@ -7899,38 +4161,38 @@
             "pattern_evidence": {
               "direction": "SHORT",
               "pattern": "EARLY_RANGE_BREAKDOWN",
-              "entry": 629.9694000000001,
-              "support": 631.13,
-              "resistance_1": 629.1800000000001,
-              "resistance_2": 627.76,
-              "stop_reference": 631.13,
-              "target_1": 629.1800000000001,
-              "target_2": 627.76,
-              "momentum_pct": -0.07289438237856327,
-              "extension_pct": 0.14689401520732395,
-              "observed_at": "2026-10-31T21:00:00+00:00",
+              "entry": 177.67215,
+              "support": 179.35,
+              "resistance_1": 177.13,
+              "resistance_2": 176.49,
+              "stop_reference": 179.35,
+              "target_1": 177.13,
+              "target_2": 176.49,
+              "momentum_pct": -0.08923094082873284,
+              "extension_pct": -0.10430627892567303,
+              "observed_at": "2026-10-31T21:45:00+00:00",
               "stage": "DEVELOPING",
               "evidence": {
-                "range_high": 633.44,
-                "range_low": 630.6
+                "range_high": 182.25,
+                "range_low": 177.85
               },
               "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
               "target_basis": {
-                "origin": 630.6,
-                "measured_height": 2.840000000000032,
+                "origin": 177.85,
+                "measured_height": 4.400000000000006,
                 "uncapped_targets": [
-                  629.1800000000001,
-                  627.76
+                  175.64999999999998,
+                  173.45
                 ],
                 "support_levels": [
-                  628.57,
-                  627.88,
-                  626.42,
-                  625.71,
-                  623.47,
-                  623.14,
-                  621.7,
-                  618.76
+                  177.13,
+                  176.83,
+                  176.49,
+                  176.22,
+                  176.03,
+                  175.7,
+                  174.95,
+                  174.24
                 ]
               }
             },
@@ -7944,29 +4206,17 @@
     }
   ],
   "unavailable_signals": [
-    "stock:R"
+    "stock:EGP"
   ],
   "changed_signals": [
-    "stock:PNFP",
-    "stock:EGP",
-    "stock:BOOT",
-    "stock:BCH",
-    "stock:CPRI",
-    "stock:NNBR",
+    "crypto:quant-network"
+  ],
+  "invalidated_signals": [
     "crypto:optimism",
     "crypto:near",
     "crypto:chainlink",
-    "crypto:hedera-hashgraph"
-  ],
-  "invalidated_signals": [
-    "crypto:algorand",
-    "crypto:ondo-finance",
-    "crypto:sentient",
-    "crypto:pepe",
-    "crypto:curve-dao-token",
-    "crypto:aster-2",
-    "crypto:quant-network",
-    "crypto:polygon-ecosystem-token"
+    "crypto:hedera-hashgraph",
+    "crypto:binancecoin"
   ],
   "health": {
     "stocks": {
@@ -7986,9 +4236,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 158,
-        "matched_events": 16,
-        "matched_assets": 15,
+        "headlines_received": 129,
+        "matched_events": 15,
+        "matched_assets": 14,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -8027,18 +4277,10 @@
           "snapshot_at": 1793390402.0
         },
         {
-          "symbol": "EGP",
-          "state": "DEFERRED",
-          "discovery_route": "catalyst_first",
-          "rank": 3,
-          "snapshot_price": 198.85,
-          "snapshot_at": 1793390403.0
-        },
-        {
           "symbol": "CCEC",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 4,
+          "rank": 3,
           "snapshot_price": 21.7,
           "snapshot_at": 1793390400.0
         },
@@ -8046,7 +4288,7 @@
           "symbol": "CACI",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 5,
+          "rank": 4,
           "snapshot_price": 675.62,
           "snapshot_at": 1793390402.0
         },
@@ -8054,7 +4296,7 @@
           "symbol": "NNBR",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 6,
+          "rank": 5,
           "snapshot_price": 3.93,
           "snapshot_at": 1793390400.0
         },
@@ -8062,7 +4304,7 @@
           "symbol": "LUD",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 7,
+          "rank": 6,
           "snapshot_price": 3.625,
           "snapshot_at": 1793386254.0
         },
@@ -8070,7 +4312,7 @@
           "symbol": "INO",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 8,
+          "rank": 7,
           "snapshot_price": 0.6024,
           "snapshot_at": 1793390401.0
         },
@@ -8078,7 +4320,7 @@
           "symbol": "BOOT",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 9,
+          "rank": 8,
           "snapshot_price": 132.24,
           "snapshot_at": 1793390403.0
         },
@@ -8086,7 +4328,7 @@
           "symbol": "BSAC",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 10,
+          "rank": 9,
           "snapshot_price": 30.53,
           "snapshot_at": 1793390402.0
         },
@@ -8094,7 +4336,7 @@
           "symbol": "BCH",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 11,
+          "rank": 10,
           "snapshot_price": 36.55,
           "snapshot_at": 1793390403.0
         },
@@ -8102,7 +4344,7 @@
           "symbol": "CPRI",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 12,
+          "rank": 11,
           "snapshot_price": 18.68,
           "snapshot_at": 1793390403.0
         },
@@ -8110,7 +4352,7 @@
           "symbol": "OTAI",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 13,
+          "rank": 12,
           "snapshot_price": 10.11,
           "snapshot_at": 1793390403.0
         },
@@ -8118,7 +4360,7 @@
           "symbol": "BHAV",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 14,
+          "rank": 13,
           "snapshot_price": 10.13,
           "snapshot_at": 1793390400.0
         },
@@ -8126,26 +4368,26 @@
           "symbol": "NORD",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 15,
+          "rank": 14,
           "snapshot_price": null,
           "snapshot_at": null
         }
       ],
       "listed_snapshot_records": 5884,
       "rotation": {
-        "priority_slots_used": 15,
+        "priority_slots_used": 14,
         "rotation_slots_used": 0,
-        "rotation_pool": 15,
+        "rotation_pool": 14,
         "oldest_deferred_minutes": 0
       },
-      "discovered_candidates": 15,
+      "discovered_candidates": 14,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 15,
+      "shortlisted_candidates": 14,
       "shortlist_limit": 150,
       "deep_check_limit": 120,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 15,
-      "selected_candidates": 15,
+      "catalyst_selected": 14,
+      "selected_candidates": 14,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh catalyst in either direction, broker listing, volume/liquidity, absolute early move; extension penalty",
@@ -8153,19 +4395,19 @@
       "unquoted_listings": 63,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 15,
+      "history_not_requested": 14,
       "chart_failures": 0,
       "budget_deferred": 0,
       "coverage_pct": 0.0
     },
     "crypto": {
       "rotation": {
-        "priority_slots_used": 18,
+        "priority_slots_used": 17,
         "rotation_slots_used": 10,
-        "rotation_pool": 28,
+        "rotation_pool": 27,
         "oldest_deferred_minutes": 0
       },
-      "discovered_candidates": 51,
+      "discovered_candidates": 50,
       "broker_or_identity_excluded": 23,
       "deferred_candidates": 0,
       "candle_providers": {
@@ -8177,17 +4419,17 @@
       },
       "status": "PARTIAL",
       "screened_assets": 250,
-      "price_records": 28,
-      "history_requested": 28,
-      "history_received": 27,
-      "chart_failures": 1,
+      "price_records": 27,
+      "history_requested": 27,
+      "history_received": 25,
+      "chart_failures": 2,
       "history_stale": 0,
       "history_not_requested": 0,
       "catalyst_discovery": {
         "queries": 2,
         "headlines_received": 170,
-        "matched_events": 3,
-        "matched_assets": 3,
+        "matched_events": 1,
+        "matched_assets": 1,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -8209,8 +4451,8 @@
     "errors": [],
     "cadence": {
       "target_minutes": 15,
-      "previous_scan_at": "2026-10-31T21:16:59.760958+00:00",
-      "actual_gap_minutes": 15.9,
+      "previous_scan_at": "2026-10-31T21:32:54.641578+00:00",
+      "actual_gap_minutes": 14.3,
       "status": "ON_CADENCE",
       "notice": "GitHub scheduling is best-effort; gaps are measured, not guaranteed."
     },
@@ -8219,26 +4461,26 @@
         "status": "OK",
         "records": 17144,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 97,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00"
+        "checked_at": "2026-10-31T21:47:11.807736+00:00"
       },
       "cfd": {
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-10-31T21:32:54.641621+00:00",
+        "checked_at": "2026-10-31T21:47:11.807736+00:00",
         "error": "HTTPError",
         "api_credentials_configured": true,
         "http_status": 403
       }
     },
     "news": {
-      "checked": 43,
+      "checked": 41,
       "failed": 0
     },
     "rotation_state": {
