@@ -136,6 +136,36 @@ class DetectionTests(unittest.TestCase):
         self.assertLessEqual(pd.Timestamp(r['higher_timeframe']['observed_at']),NOW-timedelta(minutes=15))
 
 
+    def test_sharp_selloff_rebound_is_detected_with_traceable_evidence(self):
+        rows = [[100,100.2,99.8,100,100] for _ in range(28)]
+        rows += [[99.8,100,98.8,99,150], [99,99.2,97.8,98,180],
+                 [98,98.2,96.8,97,220], [97,97.2,95.8,96,260],
+                 [96,96.2,95,95.2,300], [95.2,95.8,95.1,95.6,350],
+                 [95.6,96.2,95.5,96,350], [96,96.5,95.9,96.3,400],
+                 [96.3,96.8,96.2,96.6,450], [96.6,97.1,96.5,96.9,500],
+                 [96.9,97.4,96.8,97.2,550], [97.2,97.7,97.1,97.5,700]]
+        result = analyse_chart(self.frame(rows), 'crypto', NOW)
+        pattern = next(x for x in result['setups'] if x['pattern'] == 'SHARP_SELLOFF_REBOUND')
+        self.assertGreaterEqual(pattern['evidence']['selloff_pct'], 2.5)
+        self.assertGreaterEqual(pattern['evidence']['rebound_pct'], 1.0)
+        self.assertEqual(pattern['stage'], 'CONFIRMED')
+        self.assertEqual(pattern['target_basis']['fractions'], [.75, 1.0])
+        self.assertLess(pattern['support'], pattern['entry'])
+        self.assertLess(pattern['entry'], pattern['resistance_1'])
+        self.assertLess(pattern['resistance_1'], pattern['resistance_2'])
+
+    def test_sharp_selloff_rebound_rejects_weak_recovery(self):
+        rows = [[100,100.2,99.8,100,100] for _ in range(28)]
+        rows += [[99.8,100,98.8,99,150], [99,99.2,97.8,98,180],
+                 [98,98.2,96.8,97,220], [97,97.2,95.8,96,260],
+                 [96,96.2,95,95.2,300], [95.2,95.8,95.1,95.3,350],
+                 [95.3,95.6,95.2,95.4,350], [95.4,95.7,95.3,95.5,400],
+                 [95.5,95.8,95.4,95.6,450], [95.6,95.9,95.5,95.7,500],
+                 [95.7,96,95.6,95.8,550], [95.8,96.1,95.7,95.9,700]]
+        patterns = [x['pattern'] for x in analyse_chart(self.frame(rows), 'crypto', NOW)['setups']]
+        self.assertNotIn('SHARP_SELLOFF_REBOUND', patterns)
+
+
 class PerformanceTests(unittest.TestCase):
     def test_watch_promotion_captures_plan_and_sampled_barriers(self):
         a=pattern_asset();a['qualification']={'status':'TECHNICAL WATCH','plan':None}
