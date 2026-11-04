@@ -190,7 +190,7 @@ def classify_setup(asset, catalyst, now=None):
         if not evidence_fresh:
             candidate['history_status'] = 'STALE'
             candidate['data_issue'] = 'Pattern evidence timestamp is missing or stale.'
-        new_pattern = pattern['pattern'] in {'EARLY_RANGE_BREAKOUT', 'SUPPORT_BOUNCE', 'MOMENTUM_CONTINUATION', 'SESSION_VWAP_RECLAIM'}
+        new_pattern = pattern['pattern'] in {'EARLY_RANGE_BREAKOUT', 'SUPPORT_BOUNCE', 'MOMENTUM_CONTINUATION', 'SESSION_VWAP_RECLAIM', 'SHARP_SELLOFF_REBOUND'}
         context = asset.get('chart_analysis', {}).get('higher_timeframe', {})
         from outcome_tracker import stamp as parse_stamp
         higher_at = parse_stamp(context.get('observed_at'))

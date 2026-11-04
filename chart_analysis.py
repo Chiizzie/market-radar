@@ -41,11 +41,11 @@ def analyse_chart(frame, asset_type, now, resistance_mode="swing_zones"):
     result['recent_volume_ratio'] = float(f.Volume.iloc[-3:].mean()/baseline) if baseline > 0 else None
     result['observed_at'] = end.isoformat()
 
-    def add(pattern, entry, support, projection_origin, height, evidence, resistance_frame):
+    def add(pattern, entry, support, projection_origin, height, evidence, resistance_frame, fractions=(.5, 1.0)):
         if not 0 < support < entry or not .004 <= height / projection_origin <= .08:
             return
         # Cap projections at observed overhead levels, never ignore nearer resistance.
-        projected = [projection_origin + height*.5, projection_origin + height]
+        projected = [projection_origin + height*fraction for fraction in fractions]
         zones = resistance_zones(resistance_frame, entry) if resistance_mode == 'swing_zones' else []
         overhead = ([max(entry, z['lower']) for z in zones] if resistance_mode == 'swing_zones' else sorted(set(float(x) for x in resistance_frame.High if x > entry*1.001)))
         t1 = min(projected[0], overhead[0]) if overhead else projected[0]
@@ -58,7 +58,7 @@ def analyse_chart(frame, asset_type, now, resistance_mode="swing_zones"):
             'momentum_pct': (price/float(f.Close.iloc[-4])-1)*100,
             'extension_pct': (price/reference-1)*100,
             'target_method': 'Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance',
-            'target_basis': {'origin': projection_origin, 'measured_height': height, 'fractions': [.5, 1.0],
+            'target_basis': {'origin': projection_origin, 'measured_height': height, 'fractions': list(fractions),
                              'uncapped_targets': projected, 'overhead_levels': overhead[:4], 'resistance_zones': zones[:8], 'resistance_mode': resistance_mode},
             'observed_at': end.isoformat(), 'evidence': evidence})
 
@@ -141,6 +141,37 @@ def analyse_chart(frame, asset_type, now, resistance_mode="swing_zones"):
             add('SESSION_VWAP_RECLAIM', entry, support, entry,
                 float(vwap_session.High.max()-vwap_session.Low.min()),
                 {'session_vwap': float(vwap.iloc[-1]), 'confirmation': 'Completed close reclaims session VWAP'}, f.iloc[:-1])
+    # Dedicated sharp-selloff rebound: a fast decline followed by an observed,
+    # volume-backed recovery. This is separate from ordinary trend pullbacks.
+    # The first stage is research-only; promotion still requires rising 15m context.
+    if len(session) >= 32 and len(vwap_session) >= 12:
+        base, recovery = session.iloc[-24:-8], session.iloc[-8:]
+        peak, trough = float(base.High.max()), float(recovery.Low.min())
+        trough_at = recovery.Low.idxmin()
+        bars_after_trough = recovery.loc[trough_at:]
+        drop_pct = (peak-trough)/peak*100 if peak > 0 else 0
+        rebound_pct = (price/trough-1)*100 if trough > 0 else 0
+        ema9 = session.Close.ewm(span=9, adjust=False).mean()
+        session_vwap = float(vwap.iloc[-1]) if len(vwap) else 0
+        trigger = float(session.High.iloc[-3:-1].max())
+        volume_ratio = result.get('recent_volume_ratio') or 0
+        if (2.5 <= drop_pct <= 7.5 and rebound_pct >= max(1.0, drop_pct*.25)
+                and len(bars_after_trough) >= 3 and price > float(session.Close.iloc[-2])
+                and price > float(session.Open.iloc[-1]) and price > float(ema9.iloc[-1])*.985
+                and volume_ratio >= 1.2 and trigger > trough):
+            before = len(result['setups'])
+            add('SHARP_SELLOFF_REBOUND', trigger, trough, trough, peak-trough,
+                {'selloff_peak': peak, 'selloff_trough': trough,
+                 'selloff_pct': round(drop_pct, 3), 'rebound_pct': round(rebound_pct, 3),
+                 'bars_since_trough': len(bars_after_trough), 'ema9': float(ema9.iloc[-1]),
+                 'session_vwap': session_vwap, 'recovery_trigger': trigger,
+                 'recent_volume_ratio': round(volume_ratio, 3),
+                 'confirmation': 'Sharp decline followed by a bullish recovery; reclaim of trigger and session VWAP confirms the setup'},
+                f.iloc[:-3], fractions=(.75, 1.0))
+            if len(result['setups']) > before:
+                result['setups'][-1]['stage'] = ('CONFIRMED' if price > trigger and price > session_vwap
+                                                  else 'DEVELOPING')
+
     # Only complete 15-minute groups; never resample an unfinished higher-timeframe bar.
     higher = f.resample('15min', label='left', closed='left').agg(
         {'Open':'first','High':'max','Low':'min','Close':'last','Volume':'sum'})
