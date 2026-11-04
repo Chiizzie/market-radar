@@ -5,6 +5,7 @@ import json
 import math
 import os
 import subprocess
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -111,7 +112,24 @@ def update_outcomes(previous, payload):
 
 
 def git(args, input=None, check=True):
-    return subprocess.run(['git']+args, input=input, text=True, capture_output=True, check=check)
+    # Retrying the identical commit/ref push is idempotent, including when the
+    # server accepted it but the response was lost. Never force or rebuild it.
+    attempts = 3 if args and args[0] == 'push' and check else 1
+    for attempt in range(attempts):
+        try:
+            return subprocess.run(['git']+args, input=input, text=True,
+                                  capture_output=True, check=check)
+        except subprocess.CalledProcessError as exc:
+            message = (exc.stderr or '').lower()
+            permanent = any(s in message for s in (
+                'non-fast-forward', 'fetch first', 'permission denied',
+                'authentication failed', 'protected branch', 'repository rule',
+                'hook declined', '403', '401'))
+            if permanent or attempt == attempts-1:
+                raise
+            print(json.dumps({'operation':'git_push', 'attempt':attempt+1,
+                              'status':'retry_same_commit', 'exit_code':exc.returncode}))
+            time.sleep(2 * (attempt+1))
 
 
 def main():
