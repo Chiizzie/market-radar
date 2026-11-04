@@ -87,7 +87,7 @@ def prepare_alert(payload, previous):
 def main():
     payload = json.loads(Path('latest_scan.json').read_text())
     # Verify the monitored PR exists without relying on pull-request read permission.
-    run(['git', 'fetch', 'origin', ALERT_BRANCH], capture=True)
+    run(['git', 'fetch', 'origin', '+refs/heads/'+ALERT_BRANCH+':refs/remotes/origin/'+ALERT_BRANCH], capture=True)
     prior = run(['git', 'show', f'origin/{ALERT_BRANCH}:radar_alert.json'], capture=True, check=False)
     if prior.returncode and 'does not exist' not in prior.stderr and 'exists on disk' not in prior.stderr:
         raise RuntimeError('Cannot read the previous alert payload; refusing to reset deduplication state.')
@@ -128,6 +128,20 @@ if __name__ == '__main__':
         main()
     except Exception as exc:
         diagnostic = {'status': 'FAILED', 'error_type': type(exc).__name__, 'chatgpt_delivery': 'NOT_CONFIRMED'}
+        if isinstance(exc, subprocess.CalledProcessError):
+            # Report only allowlisted facts: never credentials, URLs or raw stderr.
+            diagnostic['git_operation'] = exc.cmd[1] if isinstance(exc.cmd, list) and exc.cmd[0] == 'git' else 'unknown'
+            diagnostic['exit_code'] = exc.returncode
+            message = (exc.stderr or '').lower()
+            diagnostic['reason'] = next((label for needle, label in (
+                ('non-fast-forward', 'concurrent_update'), ('fetch first', 'concurrent_update'),
+                ('permission denied', 'permission_denied'), ('403', 'permission_denied'),
+                ('protected branch', 'protected_branch'), ('could not resolve', 'network_resolution'),
+                ('unable to access', 'network_access'), ('couldn\'t find remote ref', 'missing_remote_branch'),
+                ('not a valid object', 'missing_object'), ('unknown revision', 'missing_revision'),
+                ('index file smaller', 'invalid_index'), ('unable to create', 'file_creation'),
+                ('shallow update', 'shallow_history'), ('unpacker error', 'remote_unpack_error'),
+            ) if needle in message), 'unclassified_git_failure')
         Path('bridge_status.json').write_text(json.dumps(diagnostic) + '\n')
         print(json.dumps(diagnostic))
         raise SystemExit(1)
