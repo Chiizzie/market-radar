@@ -1,455 +1,8 @@
 {
   "schema_version": 2,
   "kind": "scan_update",
-  "generated_at": "2026-11-16T22:04:49.003990+00:00",
+  "generated_at": "2026-11-16T22:18:58.231137+00:00",
   "potential_signals": [
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "asset_type": "stock",
-      "price": 156.14,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -4.12036,
-      "volume": 329959344.0,
-      "dollar_volume": 51519851972.159996,
-      "session": "CLOSED",
-      "observed_at": "2026-11-16T21:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 21.032,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-        "source": "Foreign Policy Journal",
-        "published_at": "2026-11-16T18:09:00+00:00",
-        "id": "ced8441f91e2f892a193",
-        "type": "earnings",
-        "age_hours": 3.91,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-            "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-            "source": "Foreign Policy Journal",
-            "published_at": "2026-11-16T18:09:00+00:00",
-            "id": "ced8441f91e2f892a193",
-            "type": "earnings",
-            "age_hours": 3.91,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "NVDA_US_EQ",
-        "isin": "US67066G1040",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "asset_type": "stock",
-      "price": 160.32,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.699901,
-      "volume": 4964609.0,
-      "dollar_volume": 795926114.88,
-      "session": "CLOSED",
-      "observed_at": "2026-11-16T21:04:06+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 14.605,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-        "source": "Foreign Policy Journal",
-        "published_at": "2026-11-16T18:09:00+00:00",
-        "id": "ced8441f91e2f892a193",
-        "type": "earnings",
-        "age_hours": 3.91,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-            "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-            "source": "Foreign Policy Journal",
-            "published_at": "2026-11-16T18:09:00+00:00",
-            "id": "ced8441f91e2f892a193",
-            "type": "earnings",
-            "age_hours": 3.91,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TGT_US_EQ",
-        "isin": "US87612E1064",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart",
-      "asset_type": "stock",
-      "price": 128.41,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.24983007,
-      "volume": 17393214.0,
-      "dollar_volume": 2233462609.74,
-      "session": "CLOSED",
-      "observed_at": "2026-11-16T21:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 12.151,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-        "source": "Foreign Policy Journal",
-        "published_at": "2026-11-16T18:09:00+00:00",
-        "id": "ced8441f91e2f892a193",
-        "type": "earnings",
-        "age_hours": 3.91,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-            "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-            "source": "Foreign Policy Journal",
-            "published_at": "2026-11-16T18:09:00+00:00",
-            "id": "ced8441f91e2f892a193",
-            "type": "earnings",
-            "age_hours": 3.91,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "WMT_US_EQ",
-        "isin": "US9311421039",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "US regular market session is closed.",
-          "Price data is stale or future-dated.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "US regular market session is closed.",
-              "Price data is stale or future-dated.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "CGON",
       "name": "CG Oncology",
@@ -483,7 +36,7 @@
         "published_at": "2026-11-16T16:02:41+00:00",
         "id": "77d9e7b3ecafef714e7e",
         "type": "regulatory",
-        "age_hours": 6.02,
+        "age_hours": 6.25,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -502,7 +55,7 @@
             "published_at": "2026-11-16T16:02:41+00:00",
             "id": "77d9e7b3ecafef714e7e",
             "type": "regulatory",
-            "age_hours": 6.02,
+            "age_hours": 6.25,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -520,7 +73,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -538,7 +91,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -632,7 +185,7 @@
         "published_at": "2026-11-16T12:05:03+00:00",
         "id": "48ed1512fdbaaf15cb47",
         "type": "merger",
-        "age_hours": 9.98,
+        "age_hours": 10.21,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -651,7 +204,7 @@
             "published_at": "2026-11-16T12:05:03+00:00",
             "id": "48ed1512fdbaaf15cb47",
             "type": "merger",
-            "age_hours": 9.98,
+            "age_hours": 10.21,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -669,7 +222,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -687,7 +240,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -781,7 +334,7 @@
         "published_at": "2026-11-16T21:15:00+00:00",
         "id": "1653ec57c439acf4bf63",
         "type": "financing",
-        "age_hours": 0.81,
+        "age_hours": 1.05,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -800,7 +353,7 @@
             "published_at": "2026-11-16T21:15:00+00:00",
             "id": "1653ec57c439acf4bf63",
             "type": "financing",
-            "age_hours": 0.81,
+            "age_hours": 1.05,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -818,7 +371,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -836,7 +389,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -930,7 +483,7 @@
         "published_at": "2026-11-16T15:29:06+00:00",
         "id": "27cfa4bfb80dbc6eff32",
         "type": "financing",
-        "age_hours": 6.58,
+        "age_hours": 6.81,
         "confidence": "headline_evidence",
         "adverse": true,
         "event_at": null,
@@ -949,7 +502,7 @@
             "published_at": "2026-11-16T15:29:06+00:00",
             "id": "27cfa4bfb80dbc6eff32",
             "type": "financing",
-            "age_hours": 6.58,
+            "age_hours": 6.81,
             "confidence": "headline_evidence",
             "adverse": true,
             "event_at": null,
@@ -967,7 +520,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "UNVERIFIED",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -982,7 +535,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1076,7 +629,7 @@
         "published_at": "2026-11-16T12:00:00+00:00",
         "id": "26b06869430b8af9240b",
         "type": "regulatory",
-        "age_hours": 10.06,
+        "age_hours": 10.3,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1095,7 +648,7 @@
             "published_at": "2026-11-16T12:00:00+00:00",
             "id": "26b06869430b8af9240b",
             "type": "regulatory",
-            "age_hours": 10.06,
+            "age_hours": 10.3,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1113,7 +666,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -1131,7 +684,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1223,7 +776,7 @@
         "published_at": "2026-11-16T15:32:01+00:00",
         "id": "5ac1086c112223d8c33f",
         "type": "earnings",
-        "age_hours": 6.53,
+        "age_hours": 6.76,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1242,7 +795,7 @@
             "published_at": "2026-11-16T15:32:01+00:00",
             "id": "5ac1086c112223d8c33f",
             "type": "earnings",
-            "age_hours": 6.53,
+            "age_hours": 6.76,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1260,7 +813,7 @@
       "broker_availability": {
         "broker": "Trading 212 Invest",
         "status": "LISTED_API",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
         "account_verified": false,
         "capabilities": {
@@ -1278,7 +831,7 @@
         "broker": "Trading 212 CFD",
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "CFD",
@@ -1342,19 +895,19 @@
       "name": "LayerZero",
       "coin_id": "layerzero",
       "asset_type": "crypto",
-      "price": 1.326,
+      "price": 1.327,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 5.96671,
+      "change_24h": 4.80836,
       "change_1h": 2.3002,
-      "acceleration": 2.051587083333333,
+      "acceleration": 2.0998516666666664,
       "discovery_route": "catalyst_first",
       "change_7d": -3.0848,
-      "volume": 58288729.0,
-      "dollar_volume": 58288729.0,
-      "market_cap": 531341581,
+      "volume": 58151843.0,
+      "dollar_volume": 58151843.0,
+      "market_cap": 528410585,
       "session": "24/7",
-      "observed_at": "2026-11-16T22:00:00+00:00",
+      "observed_at": "2026-11-16T22:15:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "catalyst": {
@@ -1364,7 +917,7 @@
         "published_at": "2026-11-16T21:18:17+00:00",
         "id": "f96c6e2e6d2975cc028d",
         "type": "crypto_event",
-        "age_hours": 0.76,
+        "age_hours": 0.99,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -1383,7 +936,7 @@
             "published_at": "2026-11-16T21:18:17+00:00",
             "id": "f96c6e2e6d2975cc028d",
             "type": "crypto_event",
-            "age_hours": 0.76,
+            "age_hours": 0.99,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -1401,7 +954,7 @@
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -1416,11 +969,11 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 1.332,
-      "support": 1.301,
-      "momentum_pct": 0.0,
-      "reference_price": 1.3249133580367918,
-      "extension_pct": 0.08201607724889204,
+      "entry": 1.334,
+      "support": 1.308,
+      "momentum_pct": 0.07541478129713397,
+      "reference_price": 1.3265539211779267,
+      "extension_pct": 0.03362688956338733,
       "resistance_zones": [
         {
           "lower": 1.336,
@@ -1601,50 +1154,139 @@
       "chart_analysis": {
         "setups": [
           {
-            "direction": "SHORT",
-            "pattern": "RESISTANCE_REJECTION",
-            "entry": 1.329,
-            "support": 1.332,
-            "resistance_1": 1.3115,
-            "resistance_2": 1.301,
-            "stop_reference": 1.332,
-            "target_1": 1.3115,
-            "target_2": 1.301,
-            "momentum_pct": 0.0,
-            "extension_pct": -0.08201607724888793,
-            "observed_at": "2026-11-16T22:00:00+00:00",
-            "stage": "CONFIRMED",
-            "evidence": {
-              "resistance_touches": 2
-            },
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+            "pattern": "EARLY_RANGE_BREAKOUT",
+            "entry": 1.335334,
+            "support": 1.325,
+            "resistance_1": 1.336,
+            "resistance_2": 1.347,
+            "momentum_pct": 0.07541478129713397,
+            "extension_pct": 0.03362688956338733,
+            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
             "target_basis": {
-              "origin": 1.332,
-              "measured_height": 0.04100000000000015,
-              "uncapped_targets": [
-                1.3115,
-                1.291
+              "origin": 1.334,
+              "measured_height": 0.04300000000000015,
+              "fractions": [
+                0.5,
+                1.0
               ],
-              "support_levels": [
-                1.301,
-                1.294,
-                1.291
-              ]
-            }
+              "uncapped_targets": [
+                1.3555000000000001,
+                1.3770000000000002
+              ],
+              "overhead_levels": [
+                1.336,
+                1.34,
+                1.347,
+                1.35
+              ],
+              "resistance_zones": [
+                {
+                  "lower": 1.336,
+                  "upper": 1.338,
+                  "touches": 5,
+                  "confirmed_at": "2026-11-16 16:50:00+00:00",
+                  "pivot_times": [
+                    "2026-11-16 14:35:00+00:00",
+                    "2026-11-16 16:20:00+00:00",
+                    "2026-11-16 16:25:00+00:00",
+                    "2026-11-16 16:40:00+00:00",
+                    "2026-11-15 08:30:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.34,
+                  "upper": 1.34,
+                  "touches": 1,
+                  "confirmed_at": "2026-11-15 07:20:00+00:00",
+                  "pivot_times": [
+                    "2026-11-15 07:10:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.347,
+                  "upper": 1.347,
+                  "touches": 2,
+                  "confirmed_at": "2026-11-16 17:25:00+00:00",
+                  "pivot_times": [
+                    "2026-11-15 06:45:00+00:00",
+                    "2026-11-16 17:15:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.35,
+                  "upper": 1.35,
+                  "touches": 3,
+                  "confirmed_at": "2026-11-15 02:50:00+00:00",
+                  "pivot_times": [
+                    "2026-11-15 02:20:00+00:00",
+                    "2026-11-15 02:35:00+00:00",
+                    "2026-11-15 02:40:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.354,
+                  "upper": 1.354,
+                  "touches": 2,
+                  "confirmed_at": "2026-11-15 13:05:00+00:00",
+                  "pivot_times": [
+                    "2026-11-15 03:00:00+00:00",
+                    "2026-11-15 12:55:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.36,
+                  "upper": 1.36,
+                  "touches": 2,
+                  "confirmed_at": "2026-11-15 11:10:00+00:00",
+                  "pivot_times": [
+                    "2026-11-15 10:55:00+00:00",
+                    "2026-11-15 11:00:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.365,
+                  "upper": 1.365,
+                  "touches": 1,
+                  "confirmed_at": "2026-11-15 10:50:00+00:00",
+                  "pivot_times": [
+                    "2026-11-15 10:40:00+00:00"
+                  ]
+                },
+                {
+                  "lower": 1.368,
+                  "upper": 1.369,
+                  "touches": 3,
+                  "confirmed_at": "2026-11-15 09:35:00+00:00",
+                  "pivot_times": [
+                    "2026-11-14 17:00:00+00:00",
+                    "2026-11-14 14:15:00+00:00",
+                    "2026-11-15 09:25:00+00:00"
+                  ]
+                }
+              ],
+              "resistance_mode": "swing_zones"
+            },
+            "observed_at": "2026-11-16T22:15:00+00:00",
+            "evidence": {
+              "range_high": 1.334,
+              "range_low": 1.291,
+              "confirmation": "Completed close above range required"
+            },
+            "stage": "DEVELOPING"
           }
         ],
         "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 3.0410354415979755,
-        "observed_at": "2026-11-16T22:00:00+00:00",
+        "recent_volume_ratio": 1.3764263869301279,
+        "observed_at": "2026-11-16T22:15:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-11-16T22:00:00+00:00",
-          "momentum_pct": 1.6091954022988686,
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "momentum_pct": 1.9984627209838512,
           "trend": "RISING"
         }
       },
-      "structure_observed_at": "2026-11-16T22:00:00+00:00",
+      "structure_observed_at": "2026-11-16T22:15:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -1658,7 +1300,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -1667,9 +1309,10 @@
         "reason": "Configured Robinhood Europe spot account does not establish short capability."
       },
       "score": {
-        "score": 2,
+        "score": 4,
         "label": "Research rank only",
         "reasons": [
+          "positive recent momentum",
           "notional liquidity",
           "not extended above recent VWAP"
         ]
@@ -1679,8 +1322,7 @@
         "reasons": [
           "News lead for research; event timing and entry require verification.",
           "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "route": "CATALYST_LED",
@@ -1689,53 +1331,151 @@
             "status": "REJECTED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "route": "CATALYST_LED"
           },
           {
-            "status": "BROKER_UNAVAILABLE",
+            "status": "REJECTED",
             "reasons": [
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "Recent crypto bar volume is below 1.5x its preceding baseline.",
+              "TP1 reward/risk is below 1.5R.",
+              "TP2 reward/risk is below 2R."
             ],
             "plan": null,
+            "metrics": {
+              "stop_width_pct": 0.8731,
+              "rr1": 0.0571,
+              "rr2": 1.0006,
+              "minimum_rr1": 1.5,
+              "minimum_rr2": 2.0
+            },
             "route": "CHART_LED",
-            "direction": "SHORT",
-            "pattern": "RESISTANCE_REJECTION",
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+            "direction": "LONG",
+            "pattern": "EARLY_RANGE_BREAKOUT",
+            "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
             "pattern_evidence": {
-              "direction": "SHORT",
-              "pattern": "RESISTANCE_REJECTION",
-              "entry": 1.329,
-              "support": 1.332,
-              "resistance_1": 1.3115,
-              "resistance_2": 1.301,
-              "stop_reference": 1.332,
-              "target_1": 1.3115,
-              "target_2": 1.301,
-              "momentum_pct": 0.0,
-              "extension_pct": -0.08201607724888793,
-              "observed_at": "2026-11-16T22:00:00+00:00",
-              "stage": "CONFIRMED",
-              "evidence": {
-                "resistance_touches": 2
-              },
-              "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+              "pattern": "EARLY_RANGE_BREAKOUT",
+              "entry": 1.335334,
+              "support": 1.325,
+              "resistance_1": 1.336,
+              "resistance_2": 1.347,
+              "momentum_pct": 0.07541478129713397,
+              "extension_pct": 0.03362688956338733,
+              "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
               "target_basis": {
-                "origin": 1.332,
-                "measured_height": 0.04100000000000015,
-                "uncapped_targets": [
-                  1.3115,
-                  1.291
+                "origin": 1.334,
+                "measured_height": 0.04300000000000015,
+                "fractions": [
+                  0.5,
+                  1.0
                 ],
-                "support_levels": [
-                  1.301,
-                  1.294,
-                  1.291
-                ]
-              }
+                "uncapped_targets": [
+                  1.3555000000000001,
+                  1.3770000000000002
+                ],
+                "overhead_levels": [
+                  1.336,
+                  1.34,
+                  1.347,
+                  1.35
+                ],
+                "resistance_zones": [
+                  {
+                    "lower": 1.336,
+                    "upper": 1.338,
+                    "touches": 5,
+                    "confirmed_at": "2026-11-16 16:50:00+00:00",
+                    "pivot_times": [
+                      "2026-11-16 14:35:00+00:00",
+                      "2026-11-16 16:20:00+00:00",
+                      "2026-11-16 16:25:00+00:00",
+                      "2026-11-16 16:40:00+00:00",
+                      "2026-11-15 08:30:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.34,
+                    "upper": 1.34,
+                    "touches": 1,
+                    "confirmed_at": "2026-11-15 07:20:00+00:00",
+                    "pivot_times": [
+                      "2026-11-15 07:10:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.347,
+                    "upper": 1.347,
+                    "touches": 2,
+                    "confirmed_at": "2026-11-16 17:25:00+00:00",
+                    "pivot_times": [
+                      "2026-11-15 06:45:00+00:00",
+                      "2026-11-16 17:15:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.35,
+                    "upper": 1.35,
+                    "touches": 3,
+                    "confirmed_at": "2026-11-15 02:50:00+00:00",
+                    "pivot_times": [
+                      "2026-11-15 02:20:00+00:00",
+                      "2026-11-15 02:35:00+00:00",
+                      "2026-11-15 02:40:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.354,
+                    "upper": 1.354,
+                    "touches": 2,
+                    "confirmed_at": "2026-11-15 13:05:00+00:00",
+                    "pivot_times": [
+                      "2026-11-15 03:00:00+00:00",
+                      "2026-11-15 12:55:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.36,
+                    "upper": 1.36,
+                    "touches": 2,
+                    "confirmed_at": "2026-11-15 11:10:00+00:00",
+                    "pivot_times": [
+                      "2026-11-15 10:55:00+00:00",
+                      "2026-11-15 11:00:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.365,
+                    "upper": 1.365,
+                    "touches": 1,
+                    "confirmed_at": "2026-11-15 10:50:00+00:00",
+                    "pivot_times": [
+                      "2026-11-15 10:40:00+00:00"
+                    ]
+                  },
+                  {
+                    "lower": 1.368,
+                    "upper": 1.369,
+                    "touches": 3,
+                    "confirmed_at": "2026-11-15 09:35:00+00:00",
+                    "pivot_times": [
+                      "2026-11-14 17:00:00+00:00",
+                      "2026-11-14 14:15:00+00:00",
+                      "2026-11-15 09:25:00+00:00"
+                    ]
+                  }
+                ],
+                "resistance_mode": "swing_zones"
+              },
+              "observed_at": "2026-11-16T22:15:00+00:00",
+              "evidence": {
+                "range_high": 1.334,
+                "range_low": 1.291,
+                "confirmation": "Completed close above range required"
+              },
+              "stage": "DEVELOPING"
             }
           }
         ],
@@ -1748,25 +1488,25 @@
       "name": "Solana",
       "coin_id": "solana",
       "asset_type": "crypto",
-      "price": 65.37,
+      "price": 65.51,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.24396,
+      "change_24h": -0.10414,
       "change_1h": 0.8285,
-      "acceleration": 0.818335,
+      "acceleration": 0.8328391666666667,
       "discovery_route": "recent_momentum",
       "change_7d": -16.917,
-      "volume": 2405043074.0,
-      "dollar_volume": 2405043074.0,
-      "market_cap": 38703311954,
+      "volume": 2417792225.0,
+      "dollar_volume": 2417792225.0,
+      "market_cap": 38747754476,
       "session": "24/7",
-      "observed_at": "2026-11-16T22:00:00+00:00",
+      "observed_at": "2026-11-16T22:15:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -1781,11 +1521,11 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 65.5,
-      "support": 65.0,
-      "momentum_pct": -0.015295197308029529,
-      "reference_price": 65.36850747187079,
-      "extension_pct": 0.002283252573676009,
+      "entry": 65.51,
+      "support": 65.26,
+      "momentum_pct": 0.21416551935138362,
+      "reference_price": 65.42051592500225,
+      "extension_pct": 0.13678289407001998,
       "resistance_zones": [
         {
           "lower": 65.58,
@@ -1952,44 +1692,32 @@
       "chart_analysis": {
         "setups": [
           {
-            "pattern": "RANGE_BREAKOUT_RETEST",
-            "entry": 65.5,
-            "support": 65.3,
-            "resistance_1": 65.53999999999999,
-            "resistance_2": 65.8,
-            "momentum_pct": -0.015295197308029529,
-            "extension_pct": 0.002283252573676009,
+            "pattern": "EARLY_RANGE_BREAKOUT",
+            "entry": 65.57551,
+            "support": 65.38,
+            "resistance_1": 65.68,
+            "resistance_2": 66.04,
+            "momentum_pct": 0.21416551935138362,
+            "extension_pct": 0.13678289407001998,
             "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
             "target_basis": {
-              "origin": 65.27,
-              "measured_height": 0.539999999999992,
+              "origin": 65.51,
+              "measured_height": 0.7800000000000011,
               "fractions": [
                 0.5,
                 1.0
               ],
               "uncapped_targets": [
-                65.53999999999999,
-                65.80999999999999
+                65.9,
+                66.29
               ],
               "overhead_levels": [
-                65.58,
                 65.68,
                 65.8,
-                66.04
+                66.04,
+                66.16
               ],
               "resistance_zones": [
-                {
-                  "lower": 65.58,
-                  "upper": 65.62,
-                  "touches": 4,
-                  "confirmed_at": "2026-11-16 04:10:00+00:00",
-                  "pivot_times": [
-                    "2026-11-16 04:00:00+00:00",
-                    "2026-11-15 10:40:00+00:00",
-                    "2026-11-15 21:50:00+00:00",
-                    "2026-11-16 03:00:00+00:00"
-                  ]
-                },
                 {
                   "lower": 65.68,
                   "upper": 65.77,
@@ -2068,72 +1796,40 @@
                   "pivot_times": [
                     "2026-11-14 17:35:00+00:00"
                   ]
+                },
+                {
+                  "lower": 67.31,
+                  "upper": 67.31,
+                  "touches": 1,
+                  "confirmed_at": "2026-11-14 15:55:00+00:00",
+                  "pivot_times": [
+                    "2026-11-14 15:45:00+00:00"
+                  ]
                 }
               ],
               "resistance_mode": "swing_zones"
             },
-            "observed_at": "2026-11-16T22:00:00+00:00",
+            "observed_at": "2026-11-16T22:15:00+00:00",
             "evidence": {
-              "range_start": "2026-11-16T20:00:00+00:00",
-              "range_end": "2026-11-16T21:25:00+00:00",
-              "range_high": 65.27,
+              "range_high": 65.51,
               "range_low": 64.73,
-              "retest_low": 65.3,
-              "breakout_close": 65.44,
-              "confirmation": "Break above range, hold/retest, bullish latest bar"
-            }
-          },
-          {
-            "direction": "SHORT",
-            "pattern": "EARLY_RANGE_BREAKDOWN",
-            "entry": 64.66527,
-            "support": 65.5,
-            "resistance_1": 64.6,
-            "resistance_2": 64.36,
-            "stop_reference": 65.5,
-            "target_1": 64.6,
-            "target_2": 64.36,
-            "momentum_pct": -0.015295197308029529,
-            "extension_pct": -0.002283252573667153,
-            "observed_at": "2026-11-16T22:00:00+00:00",
-            "stage": "DEVELOPING",
-            "evidence": {
-              "range_high": 65.5,
-              "range_low": 64.73
+              "confirmation": "Completed close above range required"
             },
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "target_basis": {
-              "origin": 64.73,
-              "measured_height": 0.769999999999996,
-              "uncapped_targets": [
-                64.345,
-                63.96000000000001
-              ],
-              "support_levels": [
-                64.6,
-                64.5,
-                64.36,
-                64.18,
-                64.1,
-                63.98,
-                63.86,
-                63.74
-              ]
-            }
+            "stage": "DEVELOPING"
           }
         ],
         "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 3.0636239988276883,
-        "observed_at": "2026-11-16T22:00:00+00:00",
+        "recent_volume_ratio": 2.044827431010817,
+        "observed_at": "2026-11-16T22:15:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-11-16T22:00:00+00:00",
-          "momentum_pct": 0.5537609598523341,
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "momentum_pct": 0.4292503449333074,
           "trend": "RISING"
         }
       },
-      "structure_observed_at": "2026-11-16T22:00:00+00:00",
+      "structure_observed_at": "2026-11-16T22:15:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
@@ -2147,7 +1843,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -2162,7 +1858,7 @@
         "published_at": "2026-11-16T16:40:15+00:00",
         "id": "3e495fd37eae09b2823b",
         "type": "product_launch",
-        "age_hours": 5.41,
+        "age_hours": 5.64,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -2181,7 +1877,7 @@
             "published_at": "2026-11-16T16:40:15+00:00",
             "id": "3e495fd37eae09b2823b",
             "type": "product_launch",
-            "age_hours": 5.41,
+            "age_hours": 5.64,
             "confidence": "headline_evidence",
             "adverse": false,
             "event_at": null,
@@ -2197,9 +1893,10 @@
         "headlines_checked": 12
       },
       "score": {
-        "score": 2,
+        "score": 4,
         "label": "Research rank only",
         "reasons": [
+          "positive recent momentum",
           "notional liquidity",
           "not extended above recent VWAP"
         ]
@@ -2209,8 +1906,7 @@
         "reasons": [
           "News lead for research; event timing and entry require verification.",
           "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Recent article publication does not establish when the underlying event occurred.",
-          "No positive recent momentum; a daily gain alone is insufficient."
+          "Recent article publication does not establish when the underlying event occurred."
         ],
         "plan": null,
         "route": "CATALYST_LED",
@@ -2219,8 +1915,7 @@
             "status": "REJECTED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Recent article publication does not establish when the underlying event occurred.",
-              "No positive recent momentum; a daily gain alone is insufficient."
+              "Recent article publication does not establish when the underlying event occurred."
             ],
             "plan": null,
             "route": "CATALYST_LED"
@@ -2229,61 +1924,48 @@
             "status": "REJECTED",
             "reasons": [
               "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "No positive recent momentum; a daily gain alone is insufficient.",
               "TP1 reward/risk is below 1.5R.",
               "TP2 reward/risk is below 2R."
             ],
             "plan": null,
             "metrics": {
-              "stop_width_pct": 0.405,
-              "rr1": 0.1508,
-              "rr2": 1.1308,
+              "stop_width_pct": 0.3978,
+              "rr1": 0.4005,
+              "rr2": 1.7804,
               "minimum_rr1": 1.5,
               "minimum_rr2": 2.0
             },
             "route": "CHART_LED",
             "direction": "LONG",
-            "pattern": "RANGE_BREAKOUT_RETEST",
+            "pattern": "EARLY_RANGE_BREAKOUT",
             "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
             "pattern_evidence": {
-              "pattern": "RANGE_BREAKOUT_RETEST",
-              "entry": 65.5,
-              "support": 65.3,
-              "resistance_1": 65.53999999999999,
-              "resistance_2": 65.8,
-              "momentum_pct": -0.015295197308029529,
-              "extension_pct": 0.002283252573676009,
+              "pattern": "EARLY_RANGE_BREAKOUT",
+              "entry": 65.57551,
+              "support": 65.38,
+              "resistance_1": 65.68,
+              "resistance_2": 66.04,
+              "momentum_pct": 0.21416551935138362,
+              "extension_pct": 0.13678289407001998,
               "target_method": "Measured range projections capped at confirmed swing zones; projected targets are not confirmed resistance",
               "target_basis": {
-                "origin": 65.27,
-                "measured_height": 0.539999999999992,
+                "origin": 65.51,
+                "measured_height": 0.7800000000000011,
                 "fractions": [
                   0.5,
                   1.0
                 ],
                 "uncapped_targets": [
-                  65.53999999999999,
-                  65.80999999999999
+                  65.9,
+                  66.29
                 ],
                 "overhead_levels": [
-                  65.58,
                   65.68,
                   65.8,
-                  66.04
+                  66.04,
+                  66.16
                 ],
                 "resistance_zones": [
-                  {
-                    "lower": 65.58,
-                    "upper": 65.62,
-                    "touches": 4,
-                    "confirmed_at": "2026-11-16 04:10:00+00:00",
-                    "pivot_times": [
-                      "2026-11-16 04:00:00+00:00",
-                      "2026-11-15 10:40:00+00:00",
-                      "2026-11-15 21:50:00+00:00",
-                      "2026-11-16 03:00:00+00:00"
-                    ]
-                  },
                   {
                     "lower": 65.68,
                     "upper": 65.77,
@@ -2362,25 +2044,251 @@
                     "pivot_times": [
                       "2026-11-14 17:35:00+00:00"
                     ]
+                  },
+                  {
+                    "lower": 67.31,
+                    "upper": 67.31,
+                    "touches": 1,
+                    "confirmed_at": "2026-11-14 15:55:00+00:00",
+                    "pivot_times": [
+                      "2026-11-14 15:45:00+00:00"
+                    ]
                   }
                 ],
                 "resistance_mode": "swing_zones"
               },
-              "observed_at": "2026-11-16T22:00:00+00:00",
+              "observed_at": "2026-11-16T22:15:00+00:00",
               "evidence": {
-                "range_start": "2026-11-16T20:00:00+00:00",
-                "range_end": "2026-11-16T21:25:00+00:00",
-                "range_high": 65.27,
+                "range_high": 65.51,
                 "range_low": 64.73,
-                "retest_low": 65.3,
-                "breakout_close": 65.44,
-                "confirmation": "Break above range, hold/retest, bullish latest bar"
-              }
+                "confirmation": "Completed close above range required"
+              },
+              "stage": "DEVELOPING"
             }
+          }
+        ],
+        "trade_assessment_status": "REJECTED",
+        "research_only": true
+      }
+    },
+    {
+      "symbol": "ATOM",
+      "name": "Cosmos Hub",
+      "coin_id": "cosmos",
+      "asset_type": "crypto",
+      "price": 1.2159,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": 2.26044,
+      "change_1h": -0.5117,
+      "acceleration": -0.605885,
+      "discovery_route": "recent_momentum",
+      "change_7d": -2.3991,
+      "volume": 25779743.0,
+      "dollar_volume": 25779743.0,
+      "market_cap": 659755561,
+      "session": "24/7",
+      "observed_at": "2026-11-16T22:15:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "capabilities": {
+          "long": true,
+          "short": false,
+          "product": "SPOT"
+        },
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Crypto symbol matches but name differs; identity needs verification."
+      },
+      "selection_lane": "ROTATION",
+      "history_samples": 720,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No second distinct historical resistance target in the lookback."
+      ],
+      "entry": 1.2249,
+      "support": 1.215,
+      "momentum_pct": -0.13141683778234992,
+      "reference_price": 1.2201348668784935,
+      "extension_pct": -0.3470818672142162,
+      "resistance_zones": [
+        {
+          "lower": 1.2318,
+          "upper": 1.2318,
+          "touches": 1,
+          "confirmed_at": "2026-11-16 21:00:00+00:00",
+          "pivot_times": [
+            "2026-11-16 20:50:00+00:00"
+          ]
+        }
+      ],
+      "resistance_1": 1.2318,
+      "chart_analysis": {
+        "setups": [
+          {
+            "direction": "SHORT",
+            "pattern": "EARLY_RANGE_BREAKDOWN",
+            "entry": 1.2137850000000001,
+            "support": 1.2208,
+            "resistance_1": 1.209,
+            "resistance_2": 1.2001,
+            "stop_reference": 1.2208,
+            "target_1": 1.209,
+            "target_2": 1.2001,
+            "momentum_pct": -0.13141683778234992,
+            "extension_pct": 0.3470818672142111,
+            "observed_at": "2026-11-16T22:15:00+00:00",
+            "stage": "DEVELOPING",
+            "evidence": {
+              "range_high": 1.2318,
+              "range_low": 1.215
+            },
+            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+            "target_basis": {
+              "origin": 1.215,
+              "measured_height": 0.016799999999999926,
+              "uncapped_targets": [
+                1.2066000000000001,
+                1.1982000000000002
+              ],
+              "support_levels": [
+                1.209,
+                1.2066,
+                1.2001,
+                1.1981,
+                1.1956,
+                1.1923,
+                1.1897,
+                1.1867
+              ]
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 2.1951854705771496,
+        "observed_at": "2026-11-16T22:15:00+00:00",
+        "higher_timeframe": {
+          "interval": "15m",
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "momentum_pct": -0.5805396565821797,
+          "trend": "FALLING"
+        }
+      },
+      "structure_observed_at": "2026-11-16T22:15:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "ATOMEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "short_broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "UNSUPPORTED",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
+        "account_verified": false,
+        "capabilities": {
+          "product": "SPOT",
+          "short": false
+        },
+        "reason": "Configured Robinhood Europe spot account does not establish short capability."
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 2
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "BEARISH WATCH",
+        "reasons": [
+          "Bearish chart detected; no approved executable short plan.",
+          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "direction": "SHORT",
+        "pattern": "EARLY_RANGE_BREAKDOWN",
+        "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+        "pattern_evidence": {
+          "direction": "SHORT",
+          "pattern": "EARLY_RANGE_BREAKDOWN",
+          "entry": 1.2137850000000001,
+          "support": 1.2208,
+          "resistance_1": 1.209,
+          "resistance_2": 1.2001,
+          "stop_reference": 1.2208,
+          "target_1": 1.209,
+          "target_2": 1.2001,
+          "momentum_pct": -0.13141683778234992,
+          "extension_pct": 0.3470818672142111,
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "stage": "DEVELOPING",
+          "evidence": {
+            "range_high": 1.2318,
+            "range_low": 1.215
+          },
+          "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+          "target_basis": {
+            "origin": 1.215,
+            "measured_height": 0.016799999999999926,
+            "uncapped_targets": [
+              1.2066000000000001,
+              1.1982000000000002
+            ],
+            "support_levels": [
+              1.209,
+              1.2066,
+              1.2001,
+              1.1981,
+              1.1956,
+              1.1923,
+              1.1897,
+              1.1867
+            ]
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "No second distinct historical resistance target in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
           },
           {
-            "status": "BROKER_UNAVAILABLE",
+            "status": "BEARISH WATCH",
             "reasons": [
+              "Bearish chart detected; no approved executable short plan.",
               "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
             ],
             "plan": null,
@@ -2391,71 +2299,73 @@
             "pattern_evidence": {
               "direction": "SHORT",
               "pattern": "EARLY_RANGE_BREAKDOWN",
-              "entry": 64.66527,
-              "support": 65.5,
-              "resistance_1": 64.6,
-              "resistance_2": 64.36,
-              "stop_reference": 65.5,
-              "target_1": 64.6,
-              "target_2": 64.36,
-              "momentum_pct": -0.015295197308029529,
-              "extension_pct": -0.002283252573667153,
-              "observed_at": "2026-11-16T22:00:00+00:00",
+              "entry": 1.2137850000000001,
+              "support": 1.2208,
+              "resistance_1": 1.209,
+              "resistance_2": 1.2001,
+              "stop_reference": 1.2208,
+              "target_1": 1.209,
+              "target_2": 1.2001,
+              "momentum_pct": -0.13141683778234992,
+              "extension_pct": 0.3470818672142111,
+              "observed_at": "2026-11-16T22:15:00+00:00",
               "stage": "DEVELOPING",
               "evidence": {
-                "range_high": 65.5,
-                "range_low": 64.73
+                "range_high": 1.2318,
+                "range_low": 1.215
               },
               "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
               "target_basis": {
-                "origin": 64.73,
-                "measured_height": 0.769999999999996,
+                "origin": 1.215,
+                "measured_height": 0.016799999999999926,
                 "uncapped_targets": [
-                  64.345,
-                  63.96000000000001
+                  1.2066000000000001,
+                  1.1982000000000002
                 ],
                 "support_levels": [
-                  64.6,
-                  64.5,
-                  64.36,
-                  64.18,
-                  64.1,
-                  63.98,
-                  63.86,
-                  63.74
+                  1.209,
+                  1.2066,
+                  1.2001,
+                  1.1981,
+                  1.1956,
+                  1.1923,
+                  1.1897,
+                  1.1867
                 ]
               }
-            }
+            },
+            "research_only": true,
+            "blockers": [
+              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+            ]
           }
-        ],
-        "trade_assessment_status": "REJECTED",
-        "research_only": true
+        ]
       }
     },
     {
-      "symbol": "BNB",
-      "name": "BNB",
-      "coin_id": "binancecoin",
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "coin_id": "arbitrum",
       "asset_type": "crypto",
-      "price": 539.93,
+      "price": 0.1199,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.38559,
-      "change_1h": 0.4079,
-      "acceleration": 0.39183375,
+      "change_24h": -1.96117,
+      "change_1h": 0.4003,
+      "acceleration": 0.48201541666666664,
       "discovery_route": "recent_momentum",
-      "change_7d": -13.8839,
-      "volume": 574951172.0,
-      "dollar_volume": 574951172.0,
-      "market_cap": 71040443220,
+      "change_7d": -25.0922,
+      "volume": 70948509.0,
+      "dollar_volume": 70948509.0,
+      "market_cap": 827021670,
       "session": "24/7",
-      "observed_at": "2026-11-16T22:00:00+00:00",
+      "observed_at": "2026-11-16T22:15:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -2470,172 +2380,216 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 540.26,
-      "support": 538.14,
-      "momentum_pct": -0.022220164799557907,
-      "reference_price": 539.470750624993,
-      "extension_pct": 0.08512961536373265,
+      "entry": 0.1203,
+      "support": 0.1198,
+      "momentum_pct": 0.0,
+      "reference_price": 0.11996991840003612,
+      "extension_pct": -0.058279942979522215,
       "resistance_zones": [
         {
-          "lower": 541.03,
-          "upper": 541.67,
-          "touches": 3,
-          "confirmed_at": "2026-11-15 21:20:00+00:00",
-          "pivot_times": [
-            "2026-11-15 21:10:00+00:00",
-            "2026-11-15 04:25:00+00:00",
-            "2026-11-15 04:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 541.89,
-          "upper": 542.32,
-          "touches": 4,
-          "confirmed_at": "2026-11-16 14:45:00+00:00",
-          "pivot_times": [
-            "2026-11-16 02:25:00+00:00",
-            "2026-11-16 02:40:00+00:00",
-            "2026-11-15 14:15:00+00:00",
-            "2026-11-16 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 542.74,
-          "upper": 543.18,
+          "lower": 0.1206,
+          "upper": 0.1207,
           "touches": 2,
-          "confirmed_at": "2026-11-15 23:10:00+00:00",
+          "confirmed_at": "2026-11-16 20:10:00+00:00",
+          "pivot_times": [
+            "2026-11-16 20:00:00+00:00",
+            "2026-11-16 18:25:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1208,
+          "upper": 0.1209,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 17:25:00+00:00",
+          "pivot_times": [
+            "2026-11-16 17:15:00+00:00",
+            "2026-11-16 07:55:00+00:00",
+            "2026-11-16 08:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.121,
+          "upper": 0.121,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 17:10:00+00:00",
+          "pivot_times": [
+            "2026-11-16 07:00:00+00:00",
+            "2026-11-16 09:10:00+00:00",
+            "2026-11-16 17:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1212,
+          "upper": 0.1212,
+          "touches": 3,
+          "confirmed_at": "2026-11-15 05:10:00+00:00",
+          "pivot_times": [
+            "2026-11-14 18:30:00+00:00",
+            "2026-11-14 18:35:00+00:00",
+            "2026-11-15 05:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1214,
+          "upper": 0.1215,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 09:50:00+00:00",
+          "pivot_times": [
+            "2026-11-15 06:50:00+00:00",
+            "2026-11-16 01:30:00+00:00",
+            "2026-11-16 09:40:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1216,
+          "upper": 0.1217,
+          "touches": 4,
+          "confirmed_at": "2026-11-16 09:00:00+00:00",
+          "pivot_times": [
+            "2026-11-16 00:50:00+00:00",
+            "2026-11-16 05:20:00+00:00",
+            "2026-11-16 08:50:00+00:00",
+            "2026-11-15 07:05:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1219,
+          "upper": 0.1219,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 11:10:00+00:00",
+          "pivot_times": [
+            "2026-11-14 16:40:00+00:00",
+            "2026-11-14 16:50:00+00:00",
+            "2026-11-16 11:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1225,
+          "upper": 0.1225,
+          "touches": 2,
+          "confirmed_at": "2026-11-15 23:50:00+00:00",
+          "pivot_times": [
+            "2026-11-15 09:45:00+00:00",
+            "2026-11-15 23:40:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1228,
+          "upper": 0.1229,
+          "touches": 5,
+          "confirmed_at": "2026-11-15 23:15:00+00:00",
           "pivot_times": [
             "2026-11-15 23:00:00+00:00",
-            "2026-11-14 16:00:00+00:00"
+            "2026-11-15 23:05:00+00:00",
+            "2026-11-15 10:40:00+00:00",
+            "2026-11-15 15:30:00+00:00",
+            "2026-11-15 22:30:00+00:00"
           ]
         },
         {
-          "lower": 543.77,
-          "upper": 544.47,
-          "touches": 2,
-          "confirmed_at": "2026-11-15 14:00:00+00:00",
+          "lower": 0.123,
+          "upper": 0.1231,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 14:45:00+00:00",
           "pivot_times": [
-            "2026-11-15 13:50:00+00:00",
+            "2026-11-15 18:05:00+00:00",
+            "2026-11-16 14:35:00+00:00",
             "2026-11-15 10:10:00+00:00"
           ]
         },
         {
-          "lower": 544.71,
-          "upper": 545.4,
-          "touches": 4,
-          "confirmed_at": "2026-11-15 11:45:00+00:00",
+          "lower": 0.1238,
+          "upper": 0.1239,
+          "touches": 3,
+          "confirmed_at": "2026-11-15 15:05:00+00:00",
           "pivot_times": [
-            "2026-11-14 15:45:00+00:00",
-            "2026-11-15 11:35:00+00:00",
-            "2026-11-15 09:10:00+00:00",
-            "2026-11-14 15:00:00+00:00"
+            "2026-11-15 11:05:00+00:00",
+            "2026-11-15 14:55:00+00:00",
+            "2026-11-15 09:10:00+00:00"
           ]
         },
         {
-          "lower": 546.24,
-          "upper": 546.24,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 14:55:00+00:00",
+          "lower": 0.1242,
+          "upper": 0.1242,
+          "touches": 2,
+          "confirmed_at": "2026-11-15 14:25:00+00:00",
           "pivot_times": [
-            "2026-11-14 14:45:00+00:00"
+            "2026-11-14 17:35:00+00:00",
+            "2026-11-15 14:15:00+00:00"
           ]
         },
         {
-          "lower": 550.36,
-          "upper": 550.36,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 14:30:00+00:00",
+          "lower": 0.1247,
+          "upper": 0.1247,
+          "touches": 2,
+          "confirmed_at": "2026-11-15 16:40:00+00:00",
           "pivot_times": [
-            "2026-11-14 14:20:00+00:00"
+            "2026-11-14 15:15:00+00:00",
+            "2026-11-15 16:30:00+00:00"
           ]
         },
         {
-          "lower": 553.94,
-          "upper": 553.94,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 13:45:00+00:00",
+          "lower": 0.1256,
+          "upper": 0.1256,
+          "touches": 2,
+          "confirmed_at": "2026-11-14 15:55:00+00:00",
           "pivot_times": [
-            "2026-11-14 13:35:00+00:00"
+            "2026-11-14 14:45:00+00:00",
+            "2026-11-14 15:45:00+00:00"
           ]
         },
         {
-          "lower": 559.38,
-          "upper": 559.38,
+          "lower": 0.1274,
+          "upper": 0.1274,
           "touches": 1,
-          "confirmed_at": "2026-11-14 12:40:00+00:00",
+          "confirmed_at": "2026-11-14 14:20:00+00:00",
           "pivot_times": [
-            "2026-11-14 12:30:00+00:00"
+            "2026-11-14 14:10:00+00:00"
           ]
         },
         {
-          "lower": 560.81,
-          "upper": 560.81,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 11:50:00+00:00",
+          "lower": 0.1276,
+          "upper": 0.1277,
+          "touches": 3,
+          "confirmed_at": "2026-11-14 13:50:00+00:00",
           "pivot_times": [
-            "2026-11-14 11:40:00+00:00"
+            "2026-11-14 13:20:00+00:00",
+            "2026-11-14 13:35:00+00:00",
+            "2026-11-14 13:40:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1289,
+          "upper": 0.1289,
+          "touches": 1,
+          "confirmed_at": "2026-11-14 12:10:00+00:00",
+          "pivot_times": [
+            "2026-11-14 12:00:00+00:00"
           ]
         }
       ],
-      "resistance_1": 541.03,
-      "resistance_2": 542.74,
+      "resistance_1": 0.1206,
+      "resistance_2": 0.121,
       "chart_analysis": {
-        "setups": [
-          {
-            "direction": "SHORT",
-            "pattern": "EARLY_RANGE_BREAKDOWN",
-            "entry": 536.5329300000001,
-            "support": 540.26,
-            "resistance_1": 536.15,
-            "resistance_2": 533.8800000000001,
-            "stop_reference": 540.26,
-            "target_1": 536.15,
-            "target_2": 533.8800000000001,
-            "momentum_pct": -0.022220164799557907,
-            "extension_pct": -0.08512961536374193,
-            "observed_at": "2026-11-16T22:00:00+00:00",
-            "stage": "DEVELOPING",
-            "evidence": {
-              "range_high": 540.26,
-              "range_low": 537.07
-            },
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "target_basis": {
-              "origin": 537.07,
-              "measured_height": 3.189999999999941,
-              "uncapped_targets": [
-                535.4750000000001,
-                533.8800000000001
-              ],
-              "support_levels": [
-                536.15,
-                535.13,
-                533.84,
-                532.35,
-                532.22,
-                531.22,
-                530.42,
-                527.49
-              ]
-            }
-          }
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
-        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 1.9026171932866573,
-        "observed_at": "2026-11-16T22:00:00+00:00",
+        "recent_volume_ratio": 0.0,
+        "observed_at": "2026-11-16T22:15:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-11-16T22:00:00+00:00",
-          "momentum_pct": 0.26182871573943167,
-          "trend": "RISING"
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "momentum_pct": 0.0,
+          "trend": "FLAT"
         }
       },
-      "structure_observed_at": "2026-11-16T22:00:00+00:00",
+      "structure_observed_at": "2026-11-16T22:15:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "BNBEUR",
+        "pair": "ARBEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
@@ -2645,7 +2599,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -2654,13 +2608,13 @@
         "reason": "Configured Robinhood Europe spot account does not establish short capability."
       },
       "catalyst": {
-        "title": "BNB Chain Completes $1.28B Token Burn in Q1 2026 - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOclpsWlZWQ1cxYTlTczJhaXZSSHFqN1dfUkZJQ2JmNWNfdExScHVWcWZXU2RrbTdnZWF0RlNybUg2U3RKMVhsRnQ5SkN2TjljQnltMVFRaWk2VFEzTmZtQ1VMVWZfaUs2VTZEV1EwUm1aTmtHSW15b2hDNUxPTllJVmhvNXYxeFFHR2JhWmlLdnBJRFN5anF5TDhn?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-11-16T15:16:35+00:00",
-        "id": "948d87e4b9f75b09c3b2",
+        "title": "Arbitrum Records $400K in Priority Fees as Variational Opens Public Mainnet With 550+ Markets - Cryptonews.net",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OR3UwVlA1UWVwelBLMUFIMktLSlBjMVhPOEJqRnVkMTk2bllUeU8xeTFvcGotSXloeEdoODJ5LXp0WVc0QlNpRGFlY2lidlpKbThFWktYM0ZzZw?oc=5",
+        "source": "Cryptonews.net",
+        "published_at": "2026-11-16T18:55:57+00:00",
+        "id": "63b87c0b21e1fc5f0527",
         "type": "crypto_event",
-        "age_hours": 6.8,
+        "age_hours": 3.38,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -2669,19 +2623,36 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "BNB Chain Completes $1.28B Token Burn in Q1 2026 - CoinMarketCap",
+        "summary": "Arbitrum Records $400K in Priority Fees as Variational Opens Public Mainnet With 550+ Markets - Cryptonews.net",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "BNB Chain Completes $1.28B Token Burn in Q1 2026 - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOclpsWlZWQ1cxYTlTczJhaXZSSHFqN1dfUkZJQ2JmNWNfdExScHVWcWZXU2RrbTdnZWF0RlNybUg2U3RKMVhsRnQ5SkN2TjljQnltMVFRaWk2VFEzTmZtQ1VMVWZfaUs2VTZEV1EwUm1aTmtHSW15b2hDNUxPTllJVmhvNXYxeFFHR2JhWmlLdnBJRFN5anF5TDhn?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-11-16T15:16:35+00:00",
-            "id": "948d87e4b9f75b09c3b2",
+            "title": "Arbitrum Records $400K in Priority Fees as Variational Opens Public Mainnet With 550+ Markets - Cryptonews.net",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OR3UwVlA1UWVwelBLMUFIMktLSlBjMVhPOEJqRnVkMTk2bllUeU8xeTFvcGotSXloeEdoODJ5LXp0WVc0QlNpRGFlY2lidlpKbThFWktYM0ZzZw?oc=5",
+            "source": "Cryptonews.net",
+            "published_at": "2026-11-16T18:55:57+00:00",
+            "id": "63b87c0b21e1fc5f0527",
             "type": "crypto_event",
-            "age_hours": 6.8,
+            "age_hours": 3.38,
             "confidence": "headline_evidence",
             "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Token Unlock Wave Hits ARB, KAITO, and ERA This Week Amid $2.27T Market Caution - CryptoRank",
+            "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaHBzVWxoemV0NDcwWTEwMGI5dEhhaExHRFRRZEhBeVRZYmxRQzE1SVNiZnp4d3g3T0o0RlZOWEw0TVdwUHVmVndseVZHaW1TaDRpWkFucDVXaGwzcmtPOWNlaVBLTjFnVlZEampfR2lZblUwQkl2aFR4R1VQS085MEVPVFZrUno1R3BXSl94YmlubkVCMWF1MnhISGVlMnNqSVF2TlllWDJKWFJ6N3ZYdzdKVXM?oc=5",
+            "source": "CryptoRank",
+            "published_at": "2026-11-16T18:40:40+00:00",
+            "id": "38b827e864c092dbf975",
+            "type": "crypto_event",
+            "age_hours": 3.64,
+            "confidence": "headline_evidence",
+            "adverse": true,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -2692,14 +2663,13 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "headlines_checked": 12
+        "headlines_checked": 8
       },
       "score": {
-        "score": 2,
+        "score": 1,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
+          "notional liquidity"
         ]
       },
       "qualification": {
@@ -2722,636 +2692,14 @@
             ],
             "plan": null,
             "route": "CATALYST_LED"
-          },
-          {
-            "status": "BROKER_UNAVAILABLE",
-            "reasons": [
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "direction": "SHORT",
-            "pattern": "EARLY_RANGE_BREAKDOWN",
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "pattern_evidence": {
-              "direction": "SHORT",
-              "pattern": "EARLY_RANGE_BREAKDOWN",
-              "entry": 536.5329300000001,
-              "support": 540.26,
-              "resistance_1": 536.15,
-              "resistance_2": 533.8800000000001,
-              "stop_reference": 540.26,
-              "target_1": 536.15,
-              "target_2": 533.8800000000001,
-              "momentum_pct": -0.022220164799557907,
-              "extension_pct": -0.08512961536374193,
-              "observed_at": "2026-11-16T22:00:00+00:00",
-              "stage": "DEVELOPING",
-              "evidence": {
-                "range_high": 540.26,
-                "range_low": 537.07
-              },
-              "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-              "target_basis": {
-                "origin": 537.07,
-                "measured_height": 3.189999999999941,
-                "uncapped_targets": [
-                  535.4750000000001,
-                  533.8800000000001
-                ],
-                "support_levels": [
-                  536.15,
-                  535.13,
-                  533.84,
-                  532.35,
-                  532.22,
-                  531.22,
-                  530.42,
-                  527.49
-                ]
-              }
-            }
           }
         ],
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "GRAM",
-      "name": "Gram (prev. Toncoin)",
-      "coin_id": "the-open-network",
-      "asset_type": "crypto",
-      "price": 0.956684,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 0.07715,
-      "change_1h": 0.993,
-      "acceleration": 0.9897854166666666,
-      "discovery_route": "recent_momentum",
-      "change_7d": 1.6522,
-      "volume": 31503826.0,
-      "dollar_volume": 31503826.0,
-      "market_cap": 2734442840,
-      "session": "24/7",
-      "observed_at": "2026-11-16T22:03:57.000Z",
-      "source": "coingecko EUR",
-      "history_status": "FAILED",
-      "data_issue": "Candle retrieval failed: Kraken: no available EUR pair or venue rate-limited; Coinbase: no available EUR pair or venue rate-limited",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Crypto symbol matches but name differs; identity needs verification."
-      },
-      "selection_lane": "ROTATION",
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "catalyst": {
-        "title": "Gram (prev. Toncoin): 1.08B GRAM token unlock - 21 Feb 2027 - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTU2SHhZOE9XZHBaX3hTTnBJWWY4QUhDV3VBQnJ0R3JwRkYxRE1DR1lWSlpvYWJHeHlKV1BvZFdIc25LcTNfaEVMY2dOOGZvOTN0LTNXM2IxT1FVU3pSdnFYZ0tZcjV6S3Z4b3VYNll0TTNyMFhqR2p6Qy1FZnZENkdzZXpVYVV6ZGFqbC1qUXoyM1pPWnVjcm5NQUpXeGZGYWk1OGxJNUtKWDVYSHgtWXF0MU1fVkxa?oc=5",
-        "source": "TradingView",
-        "published_at": "2026-11-16T18:00:31+00:00",
-        "id": "f6a1f3005fc41197198f",
-        "type": "crypto_event",
-        "age_hours": 4.07,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Gram (prev. Toncoin): 1.08B GRAM token unlock - 21 Feb 2027 - TradingView",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Gram (prev. Toncoin): 1.08B GRAM token unlock - 21 Feb 2027 - TradingView",
-            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTU2SHhZOE9XZHBaX3hTTnBJWWY4QUhDV3VBQnJ0R3JwRkYxRE1DR1lWSlpvYWJHeHlKV1BvZFdIc25LcTNfaEVMY2dOOGZvOTN0LTNXM2IxT1FVU3pSdnFYZ0tZcjV6S3Z4b3VYNll0TTNyMFhqR2p6Qy1FZnZENkdzZXpVYVV6ZGFqbC1qUXoyM1pPWnVjcm5NQUpXeGZGYWk1OGxJNUtKWDVYSHgtWXF0MU1fVkxa?oc=5",
-            "source": "TradingView",
-            "published_at": "2026-11-16T18:00:31+00:00",
-            "id": "f6a1f3005fc41197198f",
-            "type": "crypto_event",
-            "age_hours": 4.07,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 10
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Candle retrieval failed: Kraken: no available EUR pair or venue rate-limited; Coinbase: no available EUR pair or venue rate-limited",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "DATA_UNAVAILABLE",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Candle retrieval failed: Kraken: no available EUR pair or venue rate-limited; Coinbase: no available EUR pair or venue rate-limited",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "DATA_UNAVAILABLE",
-        "research_only": true
-      }
     }
   ],
   "comparison_signals": [
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "asset_type": "stock",
-      "price": 156.14,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -4.12036,
-      "volume": 309588032.0,
-      "dollar_volume": 48339075316.479996,
-      "session": "CLOSED",
-      "observed_at": "2026-11-16T21:00:01+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 20.474,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-        "source": "Foreign Policy Journal",
-        "published_at": "2026-11-16T18:09:00+00:00",
-        "id": "ced8441f91e2f892a193",
-        "type": "earnings",
-        "age_hours": 2.91,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-            "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-            "source": "Foreign Policy Journal",
-            "published_at": "2026-11-16T18:09:00+00:00",
-            "id": "ced8441f91e2f892a193",
-            "type": "earnings",
-            "age_hours": 2.91,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-11-16T21:03:45.972124+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "NVDA_US_EQ",
-        "isin": "US67066G1040",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T21:03:45.972124+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target",
-      "asset_type": "stock",
-      "price": 160.32,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": -0.6999007,
-      "volume": 3749911.0,
-      "dollar_volume": 601185731.52,
-      "session": "CLOSED",
-      "observed_at": "2026-11-16T20:59:56+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 13.405,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-        "source": "Foreign Policy Journal",
-        "published_at": "2026-11-16T18:09:00+00:00",
-        "id": "ced8441f91e2f892a193",
-        "type": "earnings",
-        "age_hours": 2.91,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-            "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-            "source": "Foreign Policy Journal",
-            "published_at": "2026-11-16T18:09:00+00:00",
-            "id": "ced8441f91e2f892a193",
-            "type": "earnings",
-            "age_hours": 2.91,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-11-16T21:03:45.972124+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "TGT_US_EQ",
-        "isin": "US87612E1064",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T21:03:45.972124+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart",
-      "asset_type": "stock",
-      "price": 128.41,
-      "currency": "USD",
-      "eur_per_unit": null,
-      "change": 0.24983007,
-      "volume": 16571846.0,
-      "dollar_volume": 2127990744.86,
-      "session": "CLOSED",
-      "observed_at": "2026-11-16T21:00:00+00:00",
-      "source": "Yahoo broad exchange snapshot",
-      "discovery_route": "catalyst_first",
-      "selection_evidence": {
-        "fresh_publication": true,
-        "adverse": false,
-        "broker_status": "LISTED_API",
-        "snapshot_score": 12.014,
-        "relative_volume_available": true,
-        "snapshot_change_pct": null,
-        "acceleration_status": "UNAVAILABLE_FROM_SINGLE_SNAPSHOT"
-      },
-      "selection_lane": "PRIORITY",
-      "history_status": "NOT_REQUESTED",
-      "data_issue": "Regular-session chart checks wait for the market to open.",
-      "catalyst": {
-        "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-        "source": "Foreign Policy Journal",
-        "published_at": "2026-11-16T18:09:00+00:00",
-        "id": "ced8441f91e2f892a193",
-        "type": "earnings",
-        "age_hours": 2.91,
-        "confidence": "headline_evidence",
-        "adverse": false,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "S&P 500 Q3 Earnings On Track For +28.9% Growth As Walmart (NYSE: WMT), Nvidia (NASDAQ: NVDA) And Target (NYSE: TGT) Prepare To Report - Foreign Policy Journal",
-            "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRUU1VDlQVW9ucmRjcTM5ZU91N1VYT1d2RWRRR1BFb0NJUnlfcGUxZVZqZUZObFBCOF9jZVd5MjhEMVFHbVhKZEVUOXFZei05SzVtc1ZGUll3bzVWQlRnRDVzc3Nnd0cwYzE3Y3FlMXRBRFhzWXNiRmtvcDI4LVIzLXhWTlpVSzZkT1ZuRHp3UGlnVXdaNUVuV3F4dGh6Ni1FTWJaREsxZEpHa2xNajFxbHl6LWlfYkVrbzh4b3JoMHpWZUdWcWk4T2FtOWFEcnpILUNzTFJIbkE5Ui1HWTZoTGtLdkhxdnlLOTZVcDBvRWE0cUdaRXJyeGx2SGF4dw?oc=5",
-            "source": "Foreign Policy Journal",
-            "published_at": "2026-11-16T18:09:00+00:00",
-            "id": "ced8441f91e2f892a193",
-            "type": "earnings",
-            "age_hours": 2.91,
-            "confidence": "headline_evidence",
-            "adverse": false,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "discovery_route": "broad_event_news"
-      },
-      "broker_availability": {
-        "broker": "Trading 212 Invest",
-        "status": "LISTED_API",
-        "checked_at": "2026-11-16T21:03:45.972124+00:00",
-        "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "INVEST"
-        },
-        "note": "Authenticated instrument catalogue; confirm current buy permissions and live spread before entry.",
-        "broker_instrument_id": "WMT_US_EQ",
-        "isin": "US9311421039",
-        "dealer_exclusions": [],
-        "reason": "Asset identity matched the official broker instrument catalogue."
-      },
-      "short_broker_availability": {
-        "broker": "Trading 212 CFD",
-        "status": "UNVERIFIED",
-        "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T21:03:45.972124+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "CFD",
-          "short": false
-        },
-        "reason": "CFD short-opening permission is unverified; listing alone is insufficient."
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "US regular market session is closed.",
-          "Regular-session chart checks wait for the market to open.",
-          "Recent article publication does not establish when the underlying event occurred."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "NOT_EVALUATED",
-            "reasons": [
-              "US regular market session is closed.",
-              "Regular-session chart checks wait for the market to open.",
-              "Recent article publication does not establish when the underlying event occurred."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "NOT_EVALUATED",
-        "research_only": true
-      }
-    },
     {
       "ticker": "CGON",
       "name": "CG Oncology",
@@ -5407,29 +4755,300 @@
       }
     },
     {
-      "symbol": "BNB",
-      "name": "BNB",
-      "coin_id": "binancecoin",
+      "symbol": "ATOM",
+      "name": "Cosmos Hub",
+      "coin_id": "cosmos",
       "asset_type": "crypto",
-      "price": 539.93,
+      "price": 1.2159,
       "currency": "EUR",
       "eur_per_unit": 1,
-      "change_24h": 0.38559,
-      "change_1h": 0.4079,
-      "acceleration": 0.39183375,
+      "change_24h": 2.26044,
+      "change_1h": -0.5117,
+      "acceleration": -0.605885,
       "discovery_route": "recent_momentum",
-      "change_7d": -13.8839,
-      "volume": 574951172.0,
-      "dollar_volume": 574951172.0,
-      "market_cap": 71040443220,
+      "change_7d": -2.3991,
+      "volume": 25779743.0,
+      "dollar_volume": 25779743.0,
+      "market_cap": 659755561,
       "session": "24/7",
-      "observed_at": "2026-11-16T22:00:00+00:00",
+      "observed_at": "2026-11-16T22:15:00+00:00",
+      "source": "Kraken EUR candles",
+      "history_status": "OK",
+      "broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "UNVERIFIED",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "account_verified": false,
+        "capabilities": {
+          "long": true,
+          "short": false,
+          "product": "SPOT"
+        },
+        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
+        "reason": "Crypto symbol matches but name differs; identity needs verification."
+      },
+      "selection_lane": "ROTATION",
+      "history_samples": 720,
+      "structure_status": "INCOMPLETE",
+      "structure_issues": [
+        "No second distinct historical resistance target in the lookback."
+      ],
+      "entry": 1.2249,
+      "support": 1.215,
+      "momentum_pct": -0.13141683778234992,
+      "reference_price": 1.2201348668784935,
+      "extension_pct": -0.3470818672142162,
+      "resistance_zones": [
+        {
+          "lower": 1.2318,
+          "upper": 1.2318,
+          "touches": 1,
+          "confirmed_at": "2026-11-16 21:00:00+00:00",
+          "pivot_times": [
+            "2026-11-16 20:50:00+00:00"
+          ]
+        }
+      ],
+      "resistance_1": 1.2318,
+      "chart_analysis": {
+        "setups": [
+          {
+            "direction": "SHORT",
+            "pattern": "EARLY_RANGE_BREAKDOWN",
+            "entry": 1.2137850000000001,
+            "support": 1.2208,
+            "resistance_1": 1.209,
+            "resistance_2": 1.2001,
+            "stop_reference": 1.2208,
+            "target_1": 1.209,
+            "target_2": 1.2001,
+            "momentum_pct": -0.13141683778234992,
+            "extension_pct": 0.3470818672142111,
+            "observed_at": "2026-11-16T22:15:00+00:00",
+            "stage": "DEVELOPING",
+            "evidence": {
+              "range_high": 1.2318,
+              "range_low": 1.215
+            },
+            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+            "target_basis": {
+              "origin": 1.215,
+              "measured_height": 0.016799999999999926,
+              "uncapped_targets": [
+                1.2066000000000001,
+                1.1982000000000002
+              ],
+              "support_levels": [
+                1.209,
+                1.2066,
+                1.2001,
+                1.1981,
+                1.1956,
+                1.1923,
+                1.1897,
+                1.1867
+              ]
+            }
+          }
+        ],
+        "issues": [],
+        "interval": "5m",
+        "recent_volume_ratio": 2.1951854705771496,
+        "observed_at": "2026-11-16T22:15:00+00:00",
+        "higher_timeframe": {
+          "interval": "15m",
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "momentum_pct": -0.5805396565821797,
+          "trend": "FALLING"
+        }
+      },
+      "structure_observed_at": "2026-11-16T22:15:00+00:00",
+      "structure_source": "Kraken completed 5-minute EUR OHLCV",
+      "candle_evidence": {
+        "provider": "Kraken",
+        "pair": "ATOMEUR",
+        "currency": "EUR",
+        "interval_minutes": 5,
+        "failed_attempts": [],
+        "fallback_used": false
+      },
+      "short_broker_availability": {
+        "broker": "Robinhood Europe crypto",
+        "status": "UNSUPPORTED",
+        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
+        "account_verified": false,
+        "capabilities": {
+          "product": "SPOT",
+          "short": false
+        },
+        "reason": "Configured Robinhood Europe spot account does not establish short capability."
+      },
+      "catalyst": {
+        "type": "unverified",
+        "summary": "No fresh, entity-matched event found.",
+        "eligible_for_points": false,
+        "headlines": [],
+        "freshness": "STALE/UNVERIFIED",
+        "retrieval_status": "OK",
+        "headlines_checked": 2
+      },
+      "score": {
+        "score": 1,
+        "label": "Research rank only",
+        "reasons": [
+          "notional liquidity"
+        ]
+      },
+      "qualification": {
+        "status": "BEARISH WATCH",
+        "reasons": [
+          "Bearish chart detected; no approved executable short plan.",
+          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+        ],
+        "plan": null,
+        "route": "CHART_LED",
+        "direction": "SHORT",
+        "pattern": "EARLY_RANGE_BREAKDOWN",
+        "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+        "pattern_evidence": {
+          "direction": "SHORT",
+          "pattern": "EARLY_RANGE_BREAKDOWN",
+          "entry": 1.2137850000000001,
+          "support": 1.2208,
+          "resistance_1": 1.209,
+          "resistance_2": 1.2001,
+          "stop_reference": 1.2208,
+          "target_1": 1.209,
+          "target_2": 1.2001,
+          "momentum_pct": -0.13141683778234992,
+          "extension_pct": 0.3470818672142111,
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "stage": "DEVELOPING",
+          "evidence": {
+            "range_high": 1.2318,
+            "range_low": 1.215
+          },
+          "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+          "target_basis": {
+            "origin": 1.215,
+            "measured_height": 0.016799999999999926,
+            "uncapped_targets": [
+              1.2066000000000001,
+              1.1982000000000002
+            ],
+            "support_levels": [
+              1.209,
+              1.2066,
+              1.2001,
+              1.1981,
+              1.1956,
+              1.1923,
+              1.1897,
+              1.1867
+            ]
+          }
+        },
+        "research_only": true,
+        "blockers": [
+          "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+        ],
+        "assessments": [
+          {
+            "status": "REJECTED",
+            "reasons": [
+              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
+              "No qualifying fresh catalyst found; this does not mean the asset identity is missing.",
+              "No second distinct historical resistance target in the lookback."
+            ],
+            "plan": null,
+            "missing_fields": [
+              "resistance_2"
+            ],
+            "route": "CATALYST_LED"
+          },
+          {
+            "status": "BEARISH WATCH",
+            "reasons": [
+              "Bearish chart detected; no approved executable short plan.",
+              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+            ],
+            "plan": null,
+            "route": "CHART_LED",
+            "direction": "SHORT",
+            "pattern": "EARLY_RANGE_BREAKDOWN",
+            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+            "pattern_evidence": {
+              "direction": "SHORT",
+              "pattern": "EARLY_RANGE_BREAKDOWN",
+              "entry": 1.2137850000000001,
+              "support": 1.2208,
+              "resistance_1": 1.209,
+              "resistance_2": 1.2001,
+              "stop_reference": 1.2208,
+              "target_1": 1.209,
+              "target_2": 1.2001,
+              "momentum_pct": -0.13141683778234992,
+              "extension_pct": 0.3470818672142111,
+              "observed_at": "2026-11-16T22:15:00+00:00",
+              "stage": "DEVELOPING",
+              "evidence": {
+                "range_high": 1.2318,
+                "range_low": 1.215
+              },
+              "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
+              "target_basis": {
+                "origin": 1.215,
+                "measured_height": 0.016799999999999926,
+                "uncapped_targets": [
+                  1.2066000000000001,
+                  1.1982000000000002
+                ],
+                "support_levels": [
+                  1.209,
+                  1.2066,
+                  1.2001,
+                  1.1981,
+                  1.1956,
+                  1.1923,
+                  1.1897,
+                  1.1867
+                ]
+              }
+            },
+            "research_only": true,
+            "blockers": [
+              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "coin_id": "arbitrum",
+      "asset_type": "crypto",
+      "price": 0.1199,
+      "currency": "EUR",
+      "eur_per_unit": 1,
+      "change_24h": -1.96117,
+      "change_1h": 0.4003,
+      "acceleration": 0.48201541666666664,
+      "discovery_route": "recent_momentum",
+      "change_7d": -25.0922,
+      "volume": 70948509.0,
+      "dollar_volume": 70948509.0,
+      "market_cap": 827021670,
+      "session": "24/7",
+      "observed_at": "2026-11-16T22:15:00+00:00",
       "source": "Kraken EUR candles",
       "history_status": "OK",
       "broker_availability": {
         "broker": "Robinhood Europe crypto",
         "status": "LISTED_PUBLIC",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
         "account_verified": false,
         "capabilities": {
@@ -5444,172 +5063,216 @@
       "history_samples": 720,
       "structure_status": "COMPLETE",
       "structure_issues": [],
-      "entry": 540.26,
-      "support": 538.14,
-      "momentum_pct": -0.022220164799557907,
-      "reference_price": 539.470750624993,
-      "extension_pct": 0.08512961536373265,
+      "entry": 0.1203,
+      "support": 0.1198,
+      "momentum_pct": 0.0,
+      "reference_price": 0.11996991840003612,
+      "extension_pct": -0.058279942979522215,
       "resistance_zones": [
         {
-          "lower": 541.03,
-          "upper": 541.67,
-          "touches": 3,
-          "confirmed_at": "2026-11-15 21:20:00+00:00",
-          "pivot_times": [
-            "2026-11-15 21:10:00+00:00",
-            "2026-11-15 04:25:00+00:00",
-            "2026-11-15 04:30:00+00:00"
-          ]
-        },
-        {
-          "lower": 541.89,
-          "upper": 542.32,
-          "touches": 4,
-          "confirmed_at": "2026-11-16 14:45:00+00:00",
-          "pivot_times": [
-            "2026-11-16 02:25:00+00:00",
-            "2026-11-16 02:40:00+00:00",
-            "2026-11-15 14:15:00+00:00",
-            "2026-11-16 14:35:00+00:00"
-          ]
-        },
-        {
-          "lower": 542.74,
-          "upper": 543.18,
+          "lower": 0.1206,
+          "upper": 0.1207,
           "touches": 2,
-          "confirmed_at": "2026-11-15 23:10:00+00:00",
+          "confirmed_at": "2026-11-16 20:10:00+00:00",
+          "pivot_times": [
+            "2026-11-16 20:00:00+00:00",
+            "2026-11-16 18:25:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1208,
+          "upper": 0.1209,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 17:25:00+00:00",
+          "pivot_times": [
+            "2026-11-16 17:15:00+00:00",
+            "2026-11-16 07:55:00+00:00",
+            "2026-11-16 08:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.121,
+          "upper": 0.121,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 17:10:00+00:00",
+          "pivot_times": [
+            "2026-11-16 07:00:00+00:00",
+            "2026-11-16 09:10:00+00:00",
+            "2026-11-16 17:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1212,
+          "upper": 0.1212,
+          "touches": 3,
+          "confirmed_at": "2026-11-15 05:10:00+00:00",
+          "pivot_times": [
+            "2026-11-14 18:30:00+00:00",
+            "2026-11-14 18:35:00+00:00",
+            "2026-11-15 05:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1214,
+          "upper": 0.1215,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 09:50:00+00:00",
+          "pivot_times": [
+            "2026-11-15 06:50:00+00:00",
+            "2026-11-16 01:30:00+00:00",
+            "2026-11-16 09:40:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1216,
+          "upper": 0.1217,
+          "touches": 4,
+          "confirmed_at": "2026-11-16 09:00:00+00:00",
+          "pivot_times": [
+            "2026-11-16 00:50:00+00:00",
+            "2026-11-16 05:20:00+00:00",
+            "2026-11-16 08:50:00+00:00",
+            "2026-11-15 07:05:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1219,
+          "upper": 0.1219,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 11:10:00+00:00",
+          "pivot_times": [
+            "2026-11-14 16:40:00+00:00",
+            "2026-11-14 16:50:00+00:00",
+            "2026-11-16 11:00:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1225,
+          "upper": 0.1225,
+          "touches": 2,
+          "confirmed_at": "2026-11-15 23:50:00+00:00",
+          "pivot_times": [
+            "2026-11-15 09:45:00+00:00",
+            "2026-11-15 23:40:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1228,
+          "upper": 0.1229,
+          "touches": 5,
+          "confirmed_at": "2026-11-15 23:15:00+00:00",
           "pivot_times": [
             "2026-11-15 23:00:00+00:00",
-            "2026-11-14 16:00:00+00:00"
+            "2026-11-15 23:05:00+00:00",
+            "2026-11-15 10:40:00+00:00",
+            "2026-11-15 15:30:00+00:00",
+            "2026-11-15 22:30:00+00:00"
           ]
         },
         {
-          "lower": 543.77,
-          "upper": 544.47,
-          "touches": 2,
-          "confirmed_at": "2026-11-15 14:00:00+00:00",
+          "lower": 0.123,
+          "upper": 0.1231,
+          "touches": 3,
+          "confirmed_at": "2026-11-16 14:45:00+00:00",
           "pivot_times": [
-            "2026-11-15 13:50:00+00:00",
+            "2026-11-15 18:05:00+00:00",
+            "2026-11-16 14:35:00+00:00",
             "2026-11-15 10:10:00+00:00"
           ]
         },
         {
-          "lower": 544.71,
-          "upper": 545.4,
-          "touches": 4,
-          "confirmed_at": "2026-11-15 11:45:00+00:00",
+          "lower": 0.1238,
+          "upper": 0.1239,
+          "touches": 3,
+          "confirmed_at": "2026-11-15 15:05:00+00:00",
           "pivot_times": [
-            "2026-11-14 15:45:00+00:00",
-            "2026-11-15 11:35:00+00:00",
-            "2026-11-15 09:10:00+00:00",
-            "2026-11-14 15:00:00+00:00"
+            "2026-11-15 11:05:00+00:00",
+            "2026-11-15 14:55:00+00:00",
+            "2026-11-15 09:10:00+00:00"
           ]
         },
         {
-          "lower": 546.24,
-          "upper": 546.24,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 14:55:00+00:00",
+          "lower": 0.1242,
+          "upper": 0.1242,
+          "touches": 2,
+          "confirmed_at": "2026-11-15 14:25:00+00:00",
           "pivot_times": [
-            "2026-11-14 14:45:00+00:00"
+            "2026-11-14 17:35:00+00:00",
+            "2026-11-15 14:15:00+00:00"
           ]
         },
         {
-          "lower": 550.36,
-          "upper": 550.36,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 14:30:00+00:00",
+          "lower": 0.1247,
+          "upper": 0.1247,
+          "touches": 2,
+          "confirmed_at": "2026-11-15 16:40:00+00:00",
           "pivot_times": [
-            "2026-11-14 14:20:00+00:00"
+            "2026-11-14 15:15:00+00:00",
+            "2026-11-15 16:30:00+00:00"
           ]
         },
         {
-          "lower": 553.94,
-          "upper": 553.94,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 13:45:00+00:00",
+          "lower": 0.1256,
+          "upper": 0.1256,
+          "touches": 2,
+          "confirmed_at": "2026-11-14 15:55:00+00:00",
           "pivot_times": [
-            "2026-11-14 13:35:00+00:00"
+            "2026-11-14 14:45:00+00:00",
+            "2026-11-14 15:45:00+00:00"
           ]
         },
         {
-          "lower": 559.38,
-          "upper": 559.38,
+          "lower": 0.1274,
+          "upper": 0.1274,
           "touches": 1,
-          "confirmed_at": "2026-11-14 12:40:00+00:00",
+          "confirmed_at": "2026-11-14 14:20:00+00:00",
           "pivot_times": [
-            "2026-11-14 12:30:00+00:00"
+            "2026-11-14 14:10:00+00:00"
           ]
         },
         {
-          "lower": 560.81,
-          "upper": 560.81,
-          "touches": 1,
-          "confirmed_at": "2026-11-14 11:50:00+00:00",
+          "lower": 0.1276,
+          "upper": 0.1277,
+          "touches": 3,
+          "confirmed_at": "2026-11-14 13:50:00+00:00",
           "pivot_times": [
-            "2026-11-14 11:40:00+00:00"
+            "2026-11-14 13:20:00+00:00",
+            "2026-11-14 13:35:00+00:00",
+            "2026-11-14 13:40:00+00:00"
+          ]
+        },
+        {
+          "lower": 0.1289,
+          "upper": 0.1289,
+          "touches": 1,
+          "confirmed_at": "2026-11-14 12:10:00+00:00",
+          "pivot_times": [
+            "2026-11-14 12:00:00+00:00"
           ]
         }
       ],
-      "resistance_1": 541.03,
-      "resistance_2": 542.74,
+      "resistance_1": 0.1206,
+      "resistance_2": 0.121,
       "chart_analysis": {
-        "setups": [
-          {
-            "direction": "SHORT",
-            "pattern": "EARLY_RANGE_BREAKDOWN",
-            "entry": 536.5329300000001,
-            "support": 540.26,
-            "resistance_1": 536.15,
-            "resistance_2": 533.8800000000001,
-            "stop_reference": 540.26,
-            "target_1": 536.15,
-            "target_2": 533.8800000000001,
-            "momentum_pct": -0.022220164799557907,
-            "extension_pct": -0.08512961536374193,
-            "observed_at": "2026-11-16T22:00:00+00:00",
-            "stage": "DEVELOPING",
-            "evidence": {
-              "range_high": 540.26,
-              "range_low": 537.07
-            },
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "target_basis": {
-              "origin": 537.07,
-              "measured_height": 3.189999999999941,
-              "uncapped_targets": [
-                535.4750000000001,
-                533.8800000000001
-              ],
-              "support_levels": [
-                536.15,
-                535.13,
-                533.84,
-                532.35,
-                532.22,
-                531.22,
-                530.42,
-                527.49
-              ]
-            }
-          }
+        "setups": [],
+        "issues": [
+          "No confirmed range retest, opening-range retest or trend pullback/reclaim pattern."
         ],
-        "issues": [],
         "interval": "5m",
-        "recent_volume_ratio": 1.9026171932866573,
-        "observed_at": "2026-11-16T22:00:00+00:00",
+        "recent_volume_ratio": 0.0,
+        "observed_at": "2026-11-16T22:15:00+00:00",
         "higher_timeframe": {
           "interval": "15m",
-          "observed_at": "2026-11-16T22:00:00+00:00",
-          "momentum_pct": 0.26182871573943167,
-          "trend": "RISING"
+          "observed_at": "2026-11-16T22:15:00+00:00",
+          "momentum_pct": 0.0,
+          "trend": "FLAT"
         }
       },
-      "structure_observed_at": "2026-11-16T22:00:00+00:00",
+      "structure_observed_at": "2026-11-16T22:15:00+00:00",
       "structure_source": "Kraken completed 5-minute EUR OHLCV",
       "candle_evidence": {
         "provider": "Kraken",
-        "pair": "BNBEUR",
+        "pair": "ARBEUR",
         "currency": "EUR",
         "interval_minutes": 5,
         "failed_attempts": [],
@@ -5619,7 +5282,7 @@
         "broker": "Robinhood Europe crypto",
         "status": "UNSUPPORTED",
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "account_verified": false,
         "capabilities": {
           "product": "SPOT",
@@ -5628,13 +5291,13 @@
         "reason": "Configured Robinhood Europe spot account does not establish short capability."
       },
       "catalyst": {
-        "title": "BNB Chain Completes $1.28B Token Burn in Q1 2026 - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOclpsWlZWQ1cxYTlTczJhaXZSSHFqN1dfUkZJQ2JmNWNfdExScHVWcWZXU2RrbTdnZWF0RlNybUg2U3RKMVhsRnQ5SkN2TjljQnltMVFRaWk2VFEzTmZtQ1VMVWZfaUs2VTZEV1EwUm1aTmtHSW15b2hDNUxPTllJVmhvNXYxeFFHR2JhWmlLdnBJRFN5anF5TDhn?oc=5",
-        "source": "CoinMarketCap",
-        "published_at": "2026-11-16T15:16:35+00:00",
-        "id": "948d87e4b9f75b09c3b2",
+        "title": "Arbitrum Records $400K in Priority Fees as Variational Opens Public Mainnet With 550+ Markets - Cryptonews.net",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OR3UwVlA1UWVwelBLMUFIMktLSlBjMVhPOEJqRnVkMTk2bllUeU8xeTFvcGotSXloeEdoODJ5LXp0WVc0QlNpRGFlY2lidlpKbThFWktYM0ZzZw?oc=5",
+        "source": "Cryptonews.net",
+        "published_at": "2026-11-16T18:55:57+00:00",
+        "id": "63b87c0b21e1fc5f0527",
         "type": "crypto_event",
-        "age_hours": 6.8,
+        "age_hours": 3.38,
         "confidence": "headline_evidence",
         "adverse": false,
         "event_at": null,
@@ -5643,19 +5306,36 @@
         "event_time_status": "UNVERIFIED",
         "freshness": "EVENT DATE UNVERIFIED",
         "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "BNB Chain Completes $1.28B Token Burn in Q1 2026 - CoinMarketCap",
+        "summary": "Arbitrum Records $400K in Priority Fees as Variational Opens Public Mainnet With 550+ Markets - Cryptonews.net",
         "eligible_for_points": false,
         "headlines": [
           {
-            "title": "BNB Chain Completes $1.28B Token Burn in Q1 2026 - CoinMarketCap",
-            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOclpsWlZWQ1cxYTlTczJhaXZSSHFqN1dfUkZJQ2JmNWNfdExScHVWcWZXU2RrbTdnZWF0RlNybUg2U3RKMVhsRnQ5SkN2TjljQnltMVFRaWk2VFEzTmZtQ1VMVWZfaUs2VTZEV1EwUm1aTmtHSW15b2hDNUxPTllJVmhvNXYxeFFHR2JhWmlLdnBJRFN5anF5TDhn?oc=5",
-            "source": "CoinMarketCap",
-            "published_at": "2026-11-16T15:16:35+00:00",
-            "id": "948d87e4b9f75b09c3b2",
+            "title": "Arbitrum Records $400K in Priority Fees as Variational Opens Public Mainnet With 550+ Markets - Cryptonews.net",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OR3UwVlA1UWVwelBLMUFIMktLSlBjMVhPOEJqRnVkMTk2bllUeU8xeTFvcGotSXloeEdoODJ5LXp0WVc0QlNpRGFlY2lidlpKbThFWktYM0ZzZw?oc=5",
+            "source": "Cryptonews.net",
+            "published_at": "2026-11-16T18:55:57+00:00",
+            "id": "63b87c0b21e1fc5f0527",
             "type": "crypto_event",
-            "age_hours": 6.8,
+            "age_hours": 3.38,
             "confidence": "headline_evidence",
             "adverse": false,
+            "event_at": null,
+            "event_date_source": null,
+            "event_date_precision": null,
+            "event_time_status": "UNVERIFIED",
+            "freshness": "EVENT DATE UNVERIFIED",
+            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
+          },
+          {
+            "title": "Token Unlock Wave Hits ARB, KAITO, and ERA This Week Amid $2.27T Market Caution - CryptoRank",
+            "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaHBzVWxoemV0NDcwWTEwMGI5dEhhaExHRFRRZEhBeVRZYmxRQzE1SVNiZnp4d3g3T0o0RlZOWEw0TVdwUHVmVndseVZHaW1TaDRpWkFucDVXaGwzcmtPOWNlaVBLTjFnVlZEampfR2lZblUwQkl2aFR4R1VQS085MEVPVFZrUno1R3BXSl94YmlubkVCMWF1MnhISGVlMnNqSVF2TlllWDJKWFJ6N3ZYdzdKVXM?oc=5",
+            "source": "CryptoRank",
+            "published_at": "2026-11-16T18:40:40+00:00",
+            "id": "38b827e864c092dbf975",
+            "type": "crypto_event",
+            "age_hours": 3.64,
+            "confidence": "headline_evidence",
+            "adverse": true,
             "event_at": null,
             "event_date_source": null,
             "event_date_precision": null,
@@ -5666,14 +5346,13 @@
         ],
         "verification": "Headline and asset identity matched; read source before trading.",
         "retrieval_status": "OK",
-        "headlines_checked": 12
+        "headlines_checked": 8
       },
       "score": {
-        "score": 2,
+        "score": 1,
         "label": "Research rank only",
         "reasons": [
-          "notional liquidity",
-          "not extended above recent VWAP"
+          "notional liquidity"
         ]
       },
       "qualification": {
@@ -5696,214 +5375,23 @@
             ],
             "plan": null,
             "route": "CATALYST_LED"
-          },
-          {
-            "status": "BROKER_UNAVAILABLE",
-            "reasons": [
-              "Fresh instrument-specific CFD short eligibility is unverified; bearish research only."
-            ],
-            "plan": null,
-            "route": "CHART_LED",
-            "direction": "SHORT",
-            "pattern": "EARLY_RANGE_BREAKDOWN",
-            "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-            "pattern_evidence": {
-              "direction": "SHORT",
-              "pattern": "EARLY_RANGE_BREAKDOWN",
-              "entry": 536.5329300000001,
-              "support": 540.26,
-              "resistance_1": 536.15,
-              "resistance_2": 533.8800000000001,
-              "stop_reference": 540.26,
-              "target_1": 536.15,
-              "target_2": 533.8800000000001,
-              "momentum_pct": -0.022220164799557907,
-              "extension_pct": -0.08512961536374193,
-              "observed_at": "2026-11-16T22:00:00+00:00",
-              "stage": "DEVELOPING",
-              "evidence": {
-                "range_high": 540.26,
-                "range_low": 537.07
-              },
-              "target_method": "Measured downside projections capped at confirmed swing-low support; projections are not confirmed support",
-              "target_basis": {
-                "origin": 537.07,
-                "measured_height": 3.189999999999941,
-                "uncapped_targets": [
-                  535.4750000000001,
-                  533.8800000000001
-                ],
-                "support_levels": [
-                  536.15,
-                  535.13,
-                  533.84,
-                  532.35,
-                  532.22,
-                  531.22,
-                  530.42,
-                  527.49
-                ]
-              }
-            }
           }
         ],
         "trade_assessment_status": "REJECTED",
         "research_only": true
       }
-    },
-    {
-      "symbol": "GRAM",
-      "name": "Gram (prev. Toncoin)",
-      "coin_id": "the-open-network",
-      "asset_type": "crypto",
-      "price": 0.956684,
-      "currency": "EUR",
-      "eur_per_unit": 1,
-      "change_24h": 0.07715,
-      "change_1h": 0.993,
-      "acceleration": 0.9897854166666666,
-      "discovery_route": "recent_momentum",
-      "change_7d": 1.6522,
-      "volume": 31503826.0,
-      "dollar_volume": 31503826.0,
-      "market_cap": 2734442840,
-      "session": "24/7",
-      "observed_at": "2026-11-16T22:03:57.000Z",
-      "source": "coingecko EUR",
-      "history_status": "FAILED",
-      "data_issue": "Candle retrieval failed: Kraken: no available EUR pair or venue rate-limited; Coinbase: no available EUR pair or venue rate-limited",
-      "broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNVERIFIED",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "account_verified": false,
-        "capabilities": {
-          "long": true,
-          "short": false,
-          "product": "SPOT"
-        },
-        "note": "Public listing only; verify Irish account access, buy restrictions and live spread before entry.",
-        "reason": "Crypto symbol matches but name differs; identity needs verification."
-      },
-      "selection_lane": "ROTATION",
-      "short_broker_availability": {
-        "broker": "Robinhood Europe crypto",
-        "status": "UNSUPPORTED",
-        "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
-        "account_verified": false,
-        "capabilities": {
-          "product": "SPOT",
-          "short": false
-        },
-        "reason": "Configured Robinhood Europe spot account does not establish short capability."
-      },
-      "catalyst": {
-        "title": "Gram (prev. Toncoin): 1.08B GRAM token unlock - 21 Feb 2027 - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTU2SHhZOE9XZHBaX3hTTnBJWWY4QUhDV3VBQnJ0R3JwRkYxRE1DR1lWSlpvYWJHeHlKV1BvZFdIc25LcTNfaEVMY2dOOGZvOTN0LTNXM2IxT1FVU3pSdnFYZ0tZcjV6S3Z4b3VYNll0TTNyMFhqR2p6Qy1FZnZENkdzZXpVYVV6ZGFqbC1qUXoyM1pPWnVjcm5NQUpXeGZGYWk1OGxJNUtKWDVYSHgtWXF0MU1fVkxa?oc=5",
-        "source": "TradingView",
-        "published_at": "2026-11-16T18:00:31+00:00",
-        "id": "f6a1f3005fc41197198f",
-        "type": "crypto_event",
-        "age_hours": 4.07,
-        "confidence": "headline_evidence",
-        "adverse": true,
-        "event_at": null,
-        "event_date_source": null,
-        "event_date_precision": null,
-        "event_time_status": "UNVERIFIED",
-        "freshness": "EVENT DATE UNVERIFIED",
-        "timing_reason": "Recent article publication does not establish when the underlying event occurred.",
-        "summary": "Gram (prev. Toncoin): 1.08B GRAM token unlock - 21 Feb 2027 - TradingView",
-        "eligible_for_points": false,
-        "headlines": [
-          {
-            "title": "Gram (prev. Toncoin): 1.08B GRAM token unlock - 21 Feb 2027 - TradingView",
-            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTU2SHhZOE9XZHBaX3hTTnBJWWY4QUhDV3VBQnJ0R3JwRkYxRE1DR1lWSlpvYWJHeHlKV1BvZFdIc25LcTNfaEVMY2dOOGZvOTN0LTNXM2IxT1FVU3pSdnFYZ0tZcjV6S3Z4b3VYNll0TTNyMFhqR2p6Qy1FZnZENkdzZXpVYVV6ZGFqbC1qUXoyM1pPWnVjcm5NQUpXeGZGYWk1OGxJNUtKWDVYSHgtWXF0MU1fVkxa?oc=5",
-            "source": "TradingView",
-            "published_at": "2026-11-16T18:00:31+00:00",
-            "id": "f6a1f3005fc41197198f",
-            "type": "crypto_event",
-            "age_hours": 4.07,
-            "confidence": "headline_evidence",
-            "adverse": true,
-            "event_at": null,
-            "event_date_source": null,
-            "event_date_precision": null,
-            "event_time_status": "UNVERIFIED",
-            "freshness": "EVENT DATE UNVERIFIED",
-            "timing_reason": "Recent article publication does not establish when the underlying event occurred."
-          }
-        ],
-        "verification": "Headline and asset identity matched; read source before trading.",
-        "retrieval_status": "OK",
-        "headlines_checked": 10
-      },
-      "score": {
-        "score": 1,
-        "label": "Research rank only",
-        "reasons": [
-          "notional liquidity"
-        ]
-      },
-      "qualification": {
-        "status": "CATALYST WATCH",
-        "reasons": [
-          "News lead for research; event timing and entry require verification.",
-          "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-          "Candle retrieval failed: Kraken: no available EUR pair or venue rate-limited; Coinbase: no available EUR pair or venue rate-limited",
-          "Matched headline contains an adverse event; no bullish catalyst credit."
-        ],
-        "plan": null,
-        "missing_fields": [
-          "entry",
-          "support",
-          "resistance_1",
-          "resistance_2",
-          "momentum_pct",
-          "extension_pct"
-        ],
-        "route": "CATALYST_LED",
-        "assessments": [
-          {
-            "status": "DATA_UNAVAILABLE",
-            "reasons": [
-              "Fewer than 30 minutes remain before the 22:00 Dublin intraday cutoff.",
-              "Candle retrieval failed: Kraken: no available EUR pair or venue rate-limited; Coinbase: no available EUR pair or venue rate-limited",
-              "Matched headline contains an adverse event; no bullish catalyst credit."
-            ],
-            "plan": null,
-            "missing_fields": [
-              "entry",
-              "support",
-              "resistance_1",
-              "resistance_2",
-              "momentum_pct",
-              "extension_pct"
-            ],
-            "route": "CATALYST_LED"
-          }
-        ],
-        "trade_assessment_status": "DATA_UNAVAILABLE",
-        "research_only": true
-      }
     }
   ],
   "unavailable_signals": [
-    "crypto:ripple",
-    "crypto:dogecoin",
-    "crypto:world-liberty-financial",
-    "crypto:jito-governance-token"
-  ],
-  "changed_signals": [
-    "stock:CGON",
-    "stock:EPR",
-    "stock:XNDU",
-    "stock:FTH",
-    "crypto:solana",
+    "stock:NVDA",
+    "stock:TGT",
+    "stock:WMT",
     "crypto:binancecoin",
     "crypto:the-open-network"
+  ],
+  "changed_signals": [
+    "crypto:cosmos",
+    "crypto:arbitrum"
   ],
   "invalidated_signals": [],
   "health": {
@@ -5914,8 +5402,8 @@
       "listed_assets": 5935,
       "directory_errors": [],
       "snapshots": {
-        "provider_total": 7281,
-        "snapshot_records": 7281,
+        "provider_total": 7283,
+        "snapshot_records": 7283,
         "pagination_complete": true,
         "errors": [
           "Nasdaq screener failed: ReadTimeout"
@@ -5924,9 +5412,9 @@
       },
       "catalyst_discovery": {
         "queries": 5,
-        "headlines_received": 135,
-        "matched_events": 11,
-        "matched_assets": 10,
+        "headlines_received": 134,
+        "matched_events": 8,
+        "matched_assets": 7,
         "failed_queries": 0,
         "errors": [],
         "primary_sources": {
@@ -5949,34 +5437,10 @@
       },
       "candidate_manifest": [
         {
-          "symbol": "NVDA",
-          "state": "DEFERRED",
-          "discovery_route": "catalyst_first",
-          "rank": 1,
-          "snapshot_price": 156.14,
-          "snapshot_at": 1794862801.0
-        },
-        {
-          "symbol": "TGT",
-          "state": "DEFERRED",
-          "discovery_route": "catalyst_first",
-          "rank": 2,
-          "snapshot_price": 160.32,
-          "snapshot_at": 1794863046.0
-        },
-        {
-          "symbol": "WMT",
-          "state": "DEFERRED",
-          "discovery_route": "catalyst_first",
-          "rank": 3,
-          "snapshot_price": 128.41,
-          "snapshot_at": 1794862800.0
-        },
-        {
           "symbol": "CGON",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 4,
+          "rank": 1,
           "snapshot_price": 84.78,
           "snapshot_at": 1794862801.0
         },
@@ -5984,7 +5448,7 @@
           "symbol": "HZN",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 5,
+          "rank": 2,
           "snapshot_price": 85.42,
           "snapshot_at": 1794862802.0
         },
@@ -5992,7 +5456,7 @@
           "symbol": "EPR",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 6,
+          "rank": 3,
           "snapshot_price": 60.21,
           "snapshot_at": 1794862802.0
         },
@@ -6000,7 +5464,7 @@
           "symbol": "FTH",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 7,
+          "rank": 4,
           "snapshot_price": 9.28,
           "snapshot_at": 1794862801.0
         },
@@ -6008,7 +5472,7 @@
           "symbol": "VTIX",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 8,
+          "rank": 5,
           "snapshot_price": 0.471,
           "snapshot_at": 1794862801.0
         },
@@ -6016,7 +5480,7 @@
           "symbol": "XNDU",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 9,
+          "rank": 6,
           "snapshot_price": 2.03,
           "snapshot_at": 1794862800.0
         },
@@ -6024,26 +5488,26 @@
           "symbol": "ZTG",
           "state": "DEFERRED",
           "discovery_route": "catalyst_first",
-          "rank": 10,
+          "rank": 7,
           "snapshot_price": 0.3583,
           "snapshot_at": 1794862800.0
         }
       ],
       "listed_snapshot_records": 5885,
       "rotation": {
-        "priority_slots_used": 10,
+        "priority_slots_used": 7,
         "rotation_slots_used": 0,
-        "rotation_pool": 10,
+        "rotation_pool": 7,
         "oldest_deferred_minutes": 0
       },
-      "discovered_candidates": 10,
+      "discovered_candidates": 7,
       "broker_excluded_candidates": 0,
-      "shortlisted_candidates": 10,
+      "shortlisted_candidates": 7,
       "shortlist_limit": 150,
       "deep_check_limit": 120,
       "catalyst_reserved_slots": 20,
-      "catalyst_selected": 10,
-      "selected_candidates": 10,
+      "catalyst_selected": 7,
+      "selected_candidates": 7,
       "deferred_candidates": 0,
       "outside_shortlist": 0,
       "selection_policy": "fresh catalyst in either direction, broker listing, volume/liquidity, absolute early move; extension penalty",
@@ -6051,7 +5515,7 @@
       "unquoted_listings": 50,
       "history_requested": 0,
       "history_received": 0,
-      "history_not_requested": 10,
+      "history_not_requested": 7,
       "chart_failures": 0,
       "budget_deferred": 0,
       "coverage_pct": 0.0
@@ -6060,12 +5524,12 @@
       "rotation": {
         "priority_slots_used": 20,
         "rotation_slots_used": 10,
-        "rotation_pool": 56,
-        "oldest_deferred_minutes": 44.9
+        "rotation_pool": 57,
+        "oldest_deferred_minutes": 44.3
       },
-      "discovered_candidates": 84,
+      "discovered_candidates": 85,
       "broker_or_identity_excluded": 28,
-      "deferred_candidates": 26,
+      "deferred_candidates": 27,
       "candle_providers": {
         "pairs": {
           "Kraken": 491,
@@ -6077,8 +5541,8 @@
       "screened_assets": 250,
       "price_records": 30,
       "history_requested": 30,
-      "history_received": 28,
-      "chart_failures": 2,
+      "history_received": 29,
+      "chart_failures": 1,
       "history_stale": 0,
       "history_not_requested": 0,
       "catalyst_discovery": {
@@ -6107,8 +5571,8 @@
     "errors": [],
     "cadence": {
       "target_minutes": 15,
-      "previous_scan_at": "2026-11-16T21:48:33.117402+00:00",
-      "actual_gap_minutes": 15.0,
+      "previous_scan_at": "2026-11-16T22:03:36.029767+00:00",
+      "actual_gap_minutes": 14.1,
       "status": "ON_CADENCE",
       "notice": "GitHub scheduling is best-effort; gaps are measured, not guaranteed."
     },
@@ -6117,32 +5581,32 @@
         "status": "OK",
         "records": 17187,
         "source": "https://live.trading212.com/api/v0/equity/metadata/instruments",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "evidence": "authenticated_metadata"
       },
       "crypto": {
         "status": "OK",
         "records": 97,
         "source": "https://robinhood.com/eu/en/support/articles/about-robinhood-crypto/",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00"
+        "checked_at": "2026-11-16T22:17:44.207082+00:00"
       },
       "cfd": {
         "status": "UNVERIFIED",
         "source": "https://www.trading212.com/trading-instruments/cfd",
-        "checked_at": "2026-11-16T22:03:36.029820+00:00",
+        "checked_at": "2026-11-16T22:17:44.207082+00:00",
         "error": "HTTPError",
         "api_credentials_configured": true,
         "http_status": 403
       }
     },
     "news": {
-      "checked": 40,
+      "checked": 37,
       "failed": 2
     },
     "rotation_state": {
       "status": "LOADED",
       "persistence": "PERSISTED",
-      "tracked_candidates": 4484
+      "tracked_candidates": 4483
     }
   },
   "notice": "Scores rank research only. ACTIONABLE NOW is provisional and requires live price, broker availability, spread, fees and source verification.",
